@@ -149,6 +149,36 @@ ps aux | grep '[u]vicorn' | awk '{print $2, $13}'
 lsof -a -p <pid> -d cwd | tail -1     # should be ~/MakGeography
 ```
 
+### A launchd job that changed but did not take effect
+
+Editing a plist on disk does **not** change the job launchd has already
+loaded. `launchctl print gui/$(id -u)/<label>` shows the environment the job
+is actually running with, which is the only thing that matters:
+
+```bash
+launchctl print gui/$(id -u)/com.makgeo.news | grep -A4 'environment = '
+```
+
+If that disagrees with the plist on disk, the job has to be re-bootstrapped:
+
+```bash
+launchctl bootout gui/$(id -u)/com.makgeo.news
+launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.makgeo.news.plist
+```
+
+This bit once: the news job kept the path of a temporary repository copy
+from the first day of setup, and the feed silently stopped updating while
+the site kept serving the last good `news.json`. The plist on disk had been
+corrected, but the loaded copy had not.
+
+**A scheduled job that fails quietly is worse than one that fails loudly.**
+The refresh script leaves the previous `news.json` in place on failure, so
+the site keeps working - and the staleness is invisible. Check the exit code:
+
+```bash
+launchctl print gui/$(id -u)/com.makgeo.news | grep 'last exit code'
+```
+
 ### Stale copies
 
 Work was originally done in a scratch directory before the repository
