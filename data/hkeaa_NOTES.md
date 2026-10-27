@@ -222,12 +222,33 @@ The pipeline that produced the verified file is:
 scripts/fetch_decks.py          # download the HKEAA decks (gitignored)
 scripts/extract_hkeaa_mc.py     # geometric cross-check -> hkeaa_mc_geometric.json
 scripts/merge_official_mc.py    # merge geometry + vision -> hkeaa_mc_raw.json
-scripts/render_slide_crops.py   # render the slide images + attach them
+scripts/render_question_images.py # render the question images from the decks
 scripts/add_official_mc.py      # add the official items to the MC bank
 scripts/add_figure_items.py     # add the three figure-bearing items
 scripts/repair_figure_items.py  # full stems and explanations for those three
 ```
 
 The deck PDFs are HKEAA's files and are gitignored; only the rendered
-question crops are committed. Every slide image is served behind the site's
+question images are committed. Every image is served behind the site's
 password gate with HKEAA credited on it.
+
+## What the rendered question images contain
+
+The briefing slides carry far more than the question, and two parts of
+that are actively harmful in a drilling app:
+
+- **The response percentages.** The most popular WRONG option always
+  scores higher than the correct one, so the highest number is never the
+  answer - but a student can work it backwards.
+- **The commentary box.** It spells out the misconception, which is the
+  whole point of the question.
+
+So the image carries only what the app cannot render as text: the stem,
+the figure, and the numbered statements. The options are rendered by the
+app as buttons, which is what takes the percentages and the answer
+marking with it.
+
+Two figures also carry HKEAA's analysis on top of the original exam
+image - a blue wind arrow on the 2024 Item 9 map, and a yellow outline
+plus a red pointer on the 2024 Item 13 photograph. The blue arrow gives
+the answer away, so the original embedded exam image is put back.

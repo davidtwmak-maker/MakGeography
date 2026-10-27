@@ -1,6 +1,6 @@
 {
- "updated_at": "2026-10-27 15:53 UTC",
- "n_items": 204,
+ "updated_at": "2026-10-27 19:41 UTC",
+ "n_items": 213,
  "feeds": [
   {
    "feed": "USGS Earthquakes (M4.5+, past week)",
@@ -119,7 +119,7 @@
    "url": "https://www.manufacturingdive.com/feeds/news/",
    "ok": true,
    "error": "",
-   "items": 4
+   "items": 3
   },
   {
    "feed": "Hong Kong Free Press",
@@ -215,9 +215,9 @@
   {
    "feed": "ESA Copernicus — Observing the Earth",
    "url": "https://www.esa.int/rssfeed/Our_Activities/Observing_the_Earth",
-   "ok": true,
-   "error": "",
-   "items": 15
+   "ok": false,
+   "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.",
+   "items": 0
   },
   {
    "feed": "NASA Earth Observatory",

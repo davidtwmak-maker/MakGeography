@@ -4,9 +4,13 @@ Download HKEAA's free examination briefing decks for Geography.
 
 These are HKEAA's own published slides for teachers. They are not ours to
 redistribute, so the PDFs stay out of the repository (see .gitignore) and are
-fetched locally instead. Only the rendered slide crops of the individual
-questions are committed, as those are short fair-dealing extracts of the
-question itself with HKEAA credited on each.
+fetched locally instead. Only the rendered question images are committed, as
+those are short fair-dealing extracts of the question itself with HKEAA
+credited on each.
+
+Once the decks are here, render the questions:
+
+    python scripts/render_question_images.py
 
 Usage:  python scripts/fetch_decks.py [year ...]
 """

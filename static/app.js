@@ -277,19 +277,41 @@
     $("#mcList").innerHTML = qs.map((q, i) => `
       <div class="mc-q" data-i="${i}">
         ${q.official ? `<div class="mc-official">Official HKDSE exam question &middot; ${esc(q.source || "")}</div>` : ""}
-        ${q.slide_image ? `<details class="mc-slide"><summary>Show the original HKEAA slide</summary><img src="/slide-crops/${esc(q.slide_image.split("/").pop())}" alt="HKEAA examination briefing slide for this question" loading="lazy"><span class="credit">Source: HKEAA examination briefing. &copy; HKEAA.</span></details>` : ""}
-        <div class="stem">${md(q.stem)}</div>
+        ${q.question_image
+          ? `<figure class="mc-question-image"><img src="/question-images/${esc(q.question_image.split("/").pop())}" alt="The question as it appeared in the HKDSE examination paper" width="${q.image_width || 1200}" height="${q.image_height || 600}"><figcaption>Source: HKEAA examination question paper. &copy; HKEAA.</figcaption></figure>`
+          : `<div class="stem">${md(q.stem)}</div>`}
         <div class="mc-opts">${q.options.map((o, j) =>
           `<button class="mc-opt" data-k="${String.fromCharCode(65 + j)}"><span class="k">${String.fromCharCode(65 + j)}</span><span>${esc(o)}</span></button>`).join("")}
         </div>
         <div class="mc-fb" style="display:none"></div>
       </div>`).join("");
 
-    $("#mcList").addEventListener("click", handler, { once: true });
+    // If the drill is rendered again, drop the previous listener first.
+    // The old one closed over the previous question array, so leaving it
+    // attached would answer from stale data.
+    if ($("#mcList")._mcHandler) {
+      $("#mcList").removeEventListener("click", $("#mcList")._mcHandler);
+    }
+
+    // A delegated listener on the list, NOT { once: true }.
+    //
+    // With { once: true }, any click that did not land on an option - the
+    // "Show the original HKEAA slide" summary, the question text, the gap
+    // between options - consumed the listener and then returned early. The
+    // student then clicked an answer and nothing happened at all.
+    // Safari hits that path more often than Chrome, because the click
+    // target differs.
+    //
+    // The handler now stays attached for the life of the render, and it
+    // ignores clicks on anything that is not an answer.
+    $("#mcList")._mcHandler = handler;
+    $("#mcList").addEventListener("click", handler);
     function handler(ev) {
       const opt = ev.target.closest(".mc-opt");
-      if (!opt) return;
+      if (!opt) return;                    // a click that is not an answer
+      if (opt.disabled) return;            // this question is already done
       const box = opt.closest(".mc-q");
+      if (!box) return;
       const q = qs[+box.dataset.i];
       const correct = q.answer.toUpperCase();
       const picked = opt.dataset.k;
@@ -325,8 +347,6 @@
       }
       saveStats(stats);
       loadMcStats();   // refresh the counters so the student sees the update
-      $("#mcList").removeEventListener("click", handler);
-      $("#mcList").addEventListener("click", handler, { once: true });
     }
   }
 

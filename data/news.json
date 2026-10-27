@@ -746,6 +746,81 @@
   "id": "554922af5e76"
  },
  {
+  "title": "India | Tropical cyclone ARNAB - DG ECHO Daily Map | 27/10/2026",
+  "url": "https://reliefweb.int/map/india/india-tropical-cyclone-arnab-dg-echo-daily-map-27102026",
+  "source": "ReliefWeb — Humanitarian updates",
+  "published": "2026-10-27",
+  "summary": "Country: India Source: European Commission's Directorate-General for European Civil Protection and Humanitarian Aid Operations Please refer to the attached Map.",
+  "topics": [
+   "CP7",
+   "CP5"
+  ],
+  "hk": false,
+  "id": "309a4f9afa80"
+ },
+ {
+  "title": "WFP Colombia External Situation Report, October 2026",
+  "url": "https://reliefweb.int/report/colombia/wfp-colombia-external-situation-report-october-2026",
+  "source": "ReliefWeb — Humanitarian updates",
+  "published": "2026-10-27",
+  "summary": "Country: Colombia Source: World Food Programme Please refer to the attached file.",
+  "topics": [
+   "CP5"
+  ],
+  "hk": false,
+  "id": "a72510fea53c"
+ },
+ {
+  "title": "WFP Ghana Country Brief, September 2026",
+  "url": "https://reliefweb.int/report/ghana/wfp-ghana-country-brief-september-2026",
+  "source": "ReliefWeb — Humanitarian updates",
+  "published": "2026-10-27",
+  "summary": "Country: Ghana Source: World Food Programme Please refer to the attached file.",
+  "topics": [
+   "CP5"
+  ],
+  "hk": false,
+  "id": "240cc39586d5"
+ },
+ {
+  "title": "Sudan: Updated: Rapid Protection Assessment Report - El Obeid",
+  "url": "https://reliefweb.int/report/sudan/updated-rapid-protection-assessment-report-el-obeid",
+  "source": "ReliefWeb — Humanitarian updates",
+  "published": "2026-10-27",
+  "summary": "Country: Sudan Sources: Child Protection Area of Responsibility, Gender Based Violence Area of Responsibility, Mine Action Area of Responsibility, Protection Cluster Please refer to the attached file. The report provides an overview of the evolving protection situation in El Obeid, highlighting the deteriorating protec",
+  "topics": [
+   "CP5"
+  ],
+  "hk": false,
+  "id": "3fc5e544b50a"
+ },
+ {
+  "title": "DR Congo: Afrique de l’Ouest et centrale : Derniers événements en bref (du 20 au 26 octobre 2026)",
+  "url": "https://reliefweb.int/report/democratic-republic-congo/afrique-de-louest-et-centrale-derniers-evenements-en-bref-du-20-au-26-octobre-2026",
+  "source": "ReliefWeb — Humanitarian updates",
+  "published": "2026-10-27",
+  "summary": "Countries: Democratic Republic of the Congo, Congo, Niger Source: UN Office for the Coordination of Humanitarian Affairs Please refer to the attached Infographic. Niger Un incendie touche près de 100 ménages déplacés dans la région de Diffa Le 21 octobre, un incendie s'est déclaré dans un site de déplacés internes à N'",
+  "topics": [
+   "CP6",
+   "CP5"
+  ],
+  "hk": false,
+  "id": "f55096516131"
+ },
+ {
+  "title": "DR Congo: West and Central Africa: Latest Events at a glance (20–26 October 2026)",
+  "url": "https://reliefweb.int/report/democratic-republic-congo/west-and-central-africa-latest-events-glance-20-26-october-2026",
+  "source": "ReliefWeb — Humanitarian updates",
+  "published": "2026-10-27",
+  "summary": "Countries: Democratic Republic of the Congo, Congo, Niger Source: UN Office for the Coordination of Humanitarian Affairs Please refer to the attached Infographic. Republic of the Congo Flooding affects nearly 43,000 people in northern Likouala The Government has launched an emergency response to assist nearly 43,000 pe",
+  "topics": [
+   "CP6",
+   "CP5"
+  ],
+  "hk": false,
+  "id": "9a73f1663b55"
+ },
+ {
   "title": "China’s tax offices issue disclosure orders as offshore asset grace period ends",
   "url": "https://www.scmp.com/economy/china-economy/article/3372178/chinas-tax-offices-issue-disclosure-orders-offshore-asset-grace-period-ends",
   "source": "SCMP — Business",
@@ -1733,6 +1808,30 @@
   "id": "8d95a623cfba"
  },
  {
+  "title": "M 5.4 - 210 km ENE of Nagqu, China",
+  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttis",
+  "source": "USGS Earthquakes (M4.5+, past week)",
+  "published": "1793127473",
+  "summary": "210 km ENE of Nagqu, China — magnitude 5.4",
+  "topics": [
+   "CP1"
+  ],
+  "hk": false,
+  "id": "621da434d63b"
+ },
+ {
+  "title": "M 4.9 - 70 km WNW of Callaguip, Philippines",
+  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tth4",
+  "source": "USGS Earthquakes (M4.5+, past week)",
+  "published": "1793117273",
+  "summary": "70 km WNW of Callaguip, Philippines — magnitude 4.9",
+  "topics": [
+   "CP1"
+  ],
+  "hk": false,
+  "id": "78a503ddcfa8"
+ },
+ {
   "title": "M 5.0 - south of the Fiji Islands",
   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttgq",
   "source": "USGS Earthquakes (M4.5+, past week)",
@@ -1779,6 +1878,18 @@
   ],
   "hk": false,
   "id": "4e2f5716c093"
+ },
+ {
+  "title": "M 4.6 - 41 km S of Farkhār, Afghanistan",
+  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttgc",
+  "source": "USGS Earthquakes (M4.5+, past week)",
+  "published": "1793110146",
+  "summary": "41 km S of Farkhār, Afghanistan — magnitude 4.6",
+  "topics": [
+   "CP1"
+  ],
+  "hk": false,
+  "id": "7ba9a579e641"
  },
  {
   "title": "M 4.6 - 5 km ENE of Tierra y Libertad, Mexico",

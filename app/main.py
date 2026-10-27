@@ -532,12 +532,18 @@ def api_mc(request: Request, topic: str | None = None, limit: int = 20,
     return {"questions": qs[:limit], "total": len(qs)}
 
 
-@app.get("/slide-crops/{name}")
-def slide_crop(request: Request, name: str):
-    """The HKEAA briefing slide images for the official exam questions."""
+@app.get("/question-images/{name}")
+def question_image(request: Request, name: str):
+    """The official exam questions, rendered from the HKEAA decks.
+
+    The question as it appeared in the exam paper: stem, figure and
+    numbered statements. The response percentages, the answer marking
+    and the HKEAA commentary are stripped out, because they give the
+    answer away.
+    """
     require_auth(request)
-    path = (DATA_DIR / "slide_crops" / name).resolve()
-    if not path.is_file() or path.parent != (DATA_DIR / "slide_crops").resolve():
+    path = (DATA_DIR / "question_images" / name).resolve()
+    if not path.is_file() or path.parent != (DATA_DIR / "question_images").resolve():
         raise HTTPException(status_code=404, detail="Not found.")
     return FileResponse(path, media_type="image/png")
 

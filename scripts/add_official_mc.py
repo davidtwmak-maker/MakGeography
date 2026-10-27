@@ -46,10 +46,6 @@ def main():
         q["id"] = f"hkeaa-{q['year']}-q{q['q']}"
         q["official"] = True
         if q["id"] in existing:
-            # Keep the slide image even if the question is already present.
-            for existing_q in questions:
-                if existing_q.get("id") == q["id"] and q.get("slide_image"):
-                    existing_q["slide_image"] = q["slide_image"]
             continue
         questions.append(q)
         added += 1

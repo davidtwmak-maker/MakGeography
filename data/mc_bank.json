@@ -17,7 +17,6 @@
    "explanation": "At stage 3 population density first rises with distance from the centre, so statement (1) is false. Stage 3 shows outward and suburban growth rather than people moving back to the centre, so statement (2) is false. The later-stage graph does show the city growing and expanding outward, so (3) only is correct.",
    "source_page": 18,
    "source_url": "https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/geog/GEOG-PowerPoint-2022.pdf",
-   "slide_image": "slide_crops/hkeaa-2022-p18.png",
    "topics": [
     "CP1"
    ],
@@ -25,7 +24,10 @@
    "source": "HKEAA Paper 1 2022 Item 13 (official examination briefing)",
    "id": "hkeaa-2022-q13",
    "official": true,
-   "found_by": "vision"
+   "found_by": "vision",
+   "question_image": "question_images/hkeaa-2022-q13.png",
+   "image_width": 1536,
+   "image_height": 943
   },
   {
    "paper": "Paper 1",
@@ -50,8 +52,10 @@
    "source": "HKEAA Paper 1 2024 Item 9 (official examination briefing)",
    "id": "hkeaa-2024-q9",
    "official": true,
-   "slide_image": "slide_crops/hkeaa-2024-p18.png",
-   "elect": "CP2"
+   "elect": "CP2",
+   "question_image": "question_images/hkeaa-2024-q9.png",
+   "image_width": 1410,
+   "image_height": 663
   },
   {
    "paper": "Paper 1",
@@ -76,8 +80,10 @@
    "source": "HKEAA Paper 1 2024 Item 20 (official examination briefing)",
    "id": "hkeaa-2024-q20",
    "official": true,
-   "slide_image": "slide_crops/hkeaa-2024-p21.png",
-   "elect": "CP7"
+   "elect": "CP7",
+   "question_image": "question_images/hkeaa-2024-q20.png",
+   "image_width": 1860,
+   "image_height": 396
   },
   {
    "paper": "Paper 1",
@@ -103,7 +109,6 @@
    "source_url": "https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/geog/GEOG-PowerPoint-2022.pdf",
    "source_page": 17,
    "found_by": "vision",
-   "slide_image": "slide_crops/hkeaa-2022-p17.png",
    "topics": [
     "CP3"
    ],
@@ -111,7 +116,10 @@
    "source": "HKEAA Paper 1 2022 Item 11 (official examination briefing)",
    "id": "hkeaa-2022-q11",
    "official": true,
-   "elect": "CP3"
+   "elect": "CP3",
+   "question_image": "question_images/hkeaa-2022-q11.png",
+   "image_width": 1200,
+   "image_height": 276
   },
   {
    "paper": "Paper 1",
@@ -136,8 +144,10 @@
    "source": "HKEAA Paper 1 2024 Item 12 (official examination briefing)",
    "id": "hkeaa-2024-q12",
    "official": true,
-   "slide_image": "slide_crops/hkeaa-2024-p19.png",
-   "elect": "CP3"
+   "elect": "CP3",
+   "question_image": "question_images/hkeaa-2024-q12.png",
+   "image_width": 1830,
+   "image_height": 99
   },
   {
    "paper": "Paper 1",
@@ -162,8 +172,10 @@
    "source": "HKEAA Paper 1 2024 Item 13 (official examination briefing)",
    "id": "hkeaa-2024-q13",
    "official": true,
-   "slide_image": "slide_crops/hkeaa-2024-p20.png",
-   "elect": "CP4"
+   "elect": "CP4",
+   "question_image": "question_images/hkeaa-2024-q13.png",
+   "image_width": 1878,
+   "image_height": 786
   },
   {
    "paper": "Paper 1",
@@ -189,7 +201,6 @@
    "source_url": "https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/geog/GEOG-PowerPoint-2026.pdf",
    "source_page": 12,
    "found_by": "vision",
-   "slide_image": "slide_crops/hkeaa-2026-p12.png",
    "topics": [
     "CP4"
    ],
@@ -197,7 +208,10 @@
    "source": "HKEAA Paper 1 2026 Item 14 (official examination briefing)",
    "id": "hkeaa-2026-q14",
    "official": true,
-   "elect": "CP4"
+   "elect": "CP4",
+   "question_image": "question_images/hkeaa-2026-q14.png",
+   "image_width": 1797,
+   "image_height": 402
   },
   {
    "paper": "Paper 1",
@@ -223,7 +237,6 @@
    "source_url": "https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/geog/GEOG-PowerPoint-2025.pdf",
    "source_page": 14,
    "found_by": "vision",
-   "slide_image": "slide_crops/hkeaa-2025-p14.png",
    "topics": [
     "CP4"
    ],
@@ -231,7 +244,10 @@
    "source": "HKEAA Paper 1 2025 Item 5 (official examination briefing)",
    "id": "hkeaa-2025-q5",
    "official": true,
-   "elect": "CP4"
+   "elect": "CP4",
+   "question_image": "question_images/hkeaa-2025-q5.png",
+   "image_width": 2196,
+   "image_height": 495
   },
   {
    "paper": "Paper 1",
@@ -257,7 +273,6 @@
    "source_url": "https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/geog/GEOG-PowerPoint-2022.pdf",
    "source_page": 19,
    "found_by": "vision",
-   "slide_image": "slide_crops/hkeaa-2022-p19.png",
    "topics": [
     "CP5"
    ],
@@ -265,7 +280,10 @@
    "source": "HKEAA Paper 1 2022 Item 16 (official examination briefing)",
    "id": "hkeaa-2022-q16",
    "official": true,
-   "elect": "CP5"
+   "elect": "CP5",
+   "question_image": "question_images/hkeaa-2022-q16.png",
+   "image_width": 1995,
+   "image_height": 411
   },
   {
    "paper": "Paper 1",
@@ -291,7 +309,6 @@
    "source_url": "https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/geog/GEOG-PowerPoint-2026.pdf",
    "source_page": 13,
    "found_by": "vision",
-   "slide_image": "slide_crops/hkeaa-2026-p13.png",
    "topics": [
     "CP5"
    ],
@@ -299,7 +316,10 @@
    "source": "HKEAA Paper 1 2026 Item 16 (official examination briefing)",
    "id": "hkeaa-2026-q16",
    "official": true,
-   "elect": "CP5"
+   "elect": "CP5",
+   "question_image": "question_images/hkeaa-2026-q16.png",
+   "image_width": 1833,
+   "image_height": 396
   },
   {
    "paper": "Paper 1",
@@ -325,7 +345,6 @@
    "source_url": "https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/geog/GEOG-PowerPoint-2022.pdf",
    "source_page": 20,
    "found_by": "vision",
-   "slide_image": "slide_crops/hkeaa-2022-p20.png",
    "topics": [
     "CP6"
    ],
@@ -333,7 +352,10 @@
    "source": "HKEAA Paper 1 2022 Item 17 (official examination briefing)",
    "id": "hkeaa-2022-q17",
    "official": true,
-   "elect": "CP6"
+   "elect": "CP6",
+   "question_image": "question_images/hkeaa-2022-q17.png",
+   "image_width": 1974,
+   "image_height": 300
   },
   {
    "paper": "Paper 1",
@@ -359,7 +381,6 @@
    "source_url": "https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/geog/GEOG-PowerPoint-2025.pdf",
    "source_page": 16,
    "found_by": "vision",
-   "slide_image": "slide_crops/hkeaa-2025-p16.png",
    "topics": [
     "CP7"
    ],
@@ -367,7 +388,10 @@
    "source": "HKEAA Paper 1 2025 Item 20 (official examination briefing)",
    "id": "hkeaa-2025-q20",
    "official": true,
-   "elect": "CP7"
+   "elect": "CP7",
+   "question_image": "question_images/hkeaa-2025-q20.png",
+   "image_width": 2160,
+   "image_height": 459
   },
   {
    "paper": "Paper 1",
@@ -375,7 +399,7 @@
    "q": 19,
    "stem": "Which of the following is the ecological impact brought about by climate change?",
    "options": [
-    "southward migration of biomes in the Southern",
+    "southward migration of biomes in the Southern Hemisphere",
     "intensified coral bleaching in the polar region",
     "more frequent extreme rainfall in Hong Kong",
     "fewer forest fires in the Amazon rainforest"
@@ -392,8 +416,10 @@
    "source": "HKEAA Paper 1 2025 Item 19 (official examination briefing)",
    "id": "hkeaa-2025-q19",
    "official": true,
-   "slide_image": "slide_crops/hkeaa-2025-p15.png",
-   "elect": "CP7"
+   "elect": "CP7",
+   "question_image": "question_images/hkeaa-2025-q19.png",
+   "image_width": 2211,
+   "image_height": 204
   },
   {
    "stem": "Which statement correctly describes Earth’s three main layers and their compositions?",

@@ -142,6 +142,31 @@ button.primary:disabled{opacity:.55;cursor:not-allowed}
   color: #6d7c85;
 }
 
+/* The official exam question, rendered from the HKEAA deck. The image
+   carries the stem, the figure and the numbered statements; the options
+   are rendered below as buttons. */
+.mc-question-image {
+  margin: 0 0 12px;
+}
+.mc-question-image img {
+  display: block;
+  /* The width and height attributes on the tag give the browser the
+     aspect ratio up front, so the space is reserved and the figure
+     cannot collapse. `height: auto` then keeps the real proportions
+     while the width is capped to the column. */
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #dde5e9;
+  border-radius: 6px;
+  background: #fff;
+}
+.mc-question-image figcaption {
+  display: block;
+  margin-top: 5px;
+  font-size: .72rem;
+  color: #6d7c85;
+}
+
 .mc-official {
   display: inline-block;
   font-size: .74rem;

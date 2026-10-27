@@ -50,7 +50,6 @@ FIGURE_ITEMS = [
         "source_page": 18,
         "source_url": ("https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_"
                        "Information/geog/GEOG-PowerPoint-2022.pdf"),
-        "slide_image": "slide_crops/hkeaa-2022-p18.png",
     },
     {
         "year": 2024, "q": 9, "paper": "Paper 1", "elect": "CP2",
@@ -67,7 +66,6 @@ FIGURE_ITEMS = [
         "source_page": 18,
         "source_url": ("https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_"
                        "Information/geog/GEOG-PowerPoint-2024.pdf"),
-        "slide_image": "slide_crops/hkeaa-2024-p18.png",
     },
     {
         "year": 2024, "q": 13, "paper": "Paper 1", "elect": "CP4",
@@ -86,7 +84,6 @@ FIGURE_ITEMS = [
         "source_page": 20,
         "source_url": ("https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_"
                        "Information/geog/GEOG-PowerPoint-2024.pdf"),
-        "slide_image": "slide_crops/hkeaa-2024-p20.png",
     },
 ]
 
