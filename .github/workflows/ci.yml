@@ -1,0 +1,57 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Import check
+        run: python -c "import app.main; print('app imports cleanly')"
+
+      - name: Knowledge base integrity
+        run: |
+          python - <<'PY'
+          import json, pathlib, sys
+          kb = json.loads(pathlib.Path("data/kb.json").read_text())
+          docs = kb.get("docs", [])
+          assert docs, "kb.json has no documents"
+          chunks = sum(len(d.get("chunks", [])) for d in docs)
+          assert chunks > 500, f"only {chunks} chunks — the KB looks truncated"
+          print(f"KB OK: {len(docs)} docs, {chunks} chunks")
+          PY
+
+      - name: No assessment material in the knowledge base
+        run: |
+          python - <<'PY'
+          import json, pathlib, re, sys
+          kb = json.loads(pathlib.Path("data/kb.json").read_text())
+          bad = re.compile(
+              r"(?i)(past paper|predicted grade|first term test|combo quiz|"
+              r"mark scheme|answer key|data question set|dbq angles|mc quiz)")
+          leaks = [d["path"] for d in kb["docs"] if bad.search(d["path"])]
+          if leaks:
+              print("Assessment material leaked into the KB:")
+              for p in leaks:
+                  print("  -", p)
+              sys.exit(1)
+          print("No assessment material in the KB")
+          PY
+
+      - name: Retrieval smoke test
+        run: python scripts/test_retrieval.py

@@ -1,0 +1,9 @@
+# MakGeography — runtime dependencies
+fastapi>=0.115
+uvicorn[standard]>=0.30
+jinja2>=3.1
+python-multipart>=0.0.9
+
+# Build-time only (scripts that read the Obsidian vault and PDFs).
+# Not needed to run the site itself.
+# pdfplumber>=0.11

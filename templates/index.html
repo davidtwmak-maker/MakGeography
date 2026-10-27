@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MakGeography — HKDSE Geography</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <span class="brand-mark">MG</span>
+      <div><h1>MakGeography</h1><p>HKDSE Geography</p></div>
+    </div>
+    <nav class="tabs">
+      <button class="active" data-panel="chat">Ask</button>
+      <button data-panel="notes">Notes</button>
+      <button data-panel="mc">MC Drilling</button>
+      <button data-panel="news">News Corner</button>
+    </nav>
+    <form method="post" action="/logout" style="display:inline">
+      <button class="signout" type="submit">Sign out</button>
+    </form>
+  </div>
+</header>
+
+<main>
+  <!-- ============ CHATBOT ============ -->
+  <section class="panel active" id="panel-chat">
+    <h2 class="section">Ask the study assistant</h2>
+    <p class="lede">Answers come from the MakGeography notes — the same material used in class.
+       Each answer shows which note it came from.</p>
+
+    <div class="chat-wrap">
+      <div>
+        <div class="chat-log" id="chatLog">
+          <div class="msg bot"><div class="body">Ask anything from the DSE Geography syllabus —
+            a concept, a case study, or how to write an answer. I'll answer from the notes and
+            show you where it came from.</div></div>
+        </div>
+        <form class="chat-input" id="chatForm">
+          <textarea id="q" placeholder="e.g. Why is Silicon Valley a footloose industry? Answer in DSE style." required></textarea>
+          <button class="primary" type="submit" id="sendBtn">Ask</button>
+        </form>
+        <p class="hint-small" id="chatHint">Press Enter to send, Shift+Enter for a new line.</p>
+      </div>
+
+      <aside>
+        <div class="card">
+          <h3 style="font-size:.95rem;margin-bottom:10px">Try one of these</h3>
+          <div class="examples" id="examples"></div>
+        </div>
+        <div class="card" style="margin-top:12px">
+          <h3 style="font-size:.95rem;margin-bottom:8px">Knowledge base</h3>
+          <div class="stat" id="kbChunks">–</div>
+          <p class="hint-small" id="kbDocs">loading…</p>
+          <label for="topicSel" style="font-size:.85rem;font-weight:600;display:block;margin:12px 0 5px">Focus an elective</label>
+          <select id="topicSel" style="width:100%"><option value="ALL">All topics</option></select>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ NOTES ============ -->
+  <section class="panel" id="panel-notes">
+    <h2 class="section">Geography Notes</h2>
+    <p class="lede">CP1–CP7 and EP1, organised by the official curriculum sub-questions.</p>
+    <div class="controls">
+      <select id="notesTopic"><option value="ALL">All topics</option></select>
+      <input type="text" id="notesSearch" placeholder="Filter notes…" style="min-width:240px">
+      <span id="notesCount" class="hint-small"></span>
+    </div>
+    <div id="notesList"></div>
+  </section>
+
+  <!-- ============ MC ============ -->
+  <section class="panel" id="panel-mc">
+    <h2 class="section">MC Drilling</h2>
+    <p class="lede">Practice multiple choice by elective. Wrong answers are logged so you can
+       drill the topics you keep missing.</p>
+    <div class="controls">
+      <select id="mcTopic"><option value="ALL">All topics</option></select>
+      <select id="mcCount">
+        <option value="10">10 questions</option>
+        <option value="20" selected>20 questions</option>
+        <option value="30">30 questions</option>
+      </select>
+      <button class="primary" id="mcStart">Start drilling</button>
+      <button id="mcReport">Mistake report</button>
+    </div>
+    <div id="mcStats" class="grid cols-3" style="margin-bottom:14px"></div>
+    <div id="mcList"></div>
+  </section>
+
+  <!-- ============ NEWS ============ -->
+  <section class="panel" id="panel-news">
+    <h2 class="section">Geography News Corner</h2>
+    <p class="lede">Current events that map onto the syllabus, tagged by elective.</p>
+    <div class="controls">
+      <select id="newsTopic"><option value="ALL">All topics</option></select>
+      <span id="newsUpdated" class="hint-small"></span>
+    </div>
+    <div id="newsList"></div>
+  </section>
+
+  <footer>
+    MakGeography — HKDSE Geography study site. Notes and questions for classroom use.
+  </footer>
+</main>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

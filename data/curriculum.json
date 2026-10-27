@@ -1,0 +1,1625 @@
+{
+ "electives": [
+  {
+   "code": "CP1",
+   "title": "Opportunities and Risks – Is it rational to live in hazard-prone areas?",
+   "short_title": "Earth Structure",
+   "official_module": "Compulsory Part, Module 1",
+   "verified": false,
+   "official_content_verified": true,
+   "source": "Geography Curriculum and Assessment Guide (Secondary 4-6), CDC+HKEAA, 2007 with updates July 2022",
+   "notes": "The official C&A Guide does NOT publish numbered titled sub-questions for the compulsory modules: it presents Module 1 as one table of 15 guiding questions with Explanatory Notes, Concepts and Skills columns. The four numbered sub-questions below are the teacher's own scaffold (her concept-note filenames), and every leaf has been checked line-by-line against the official Explanatory Notes and Concepts for this module. Official guiding-question mapping: GQ1-4 = sub-question 3 (hazard distribution and its link to plate boundaries) and GQ5-8 = sub-questions 1-3; GQ9-11 = sub-question 4.4 (hazard management); GQ12-15 = MISSING (see flags). The teacher's file 'CP1 Opportunities and Risks. Is it rational to live..md' is only a four-line wiki-link index into sub-questions 1-4 and contains no standalone content.",
+   "subquestions": [
+    {
+     "number": "1",
+     "id": "CP1.1",
+     "title": "Earth structure",
+     "official_guidance": "Brief description of the internal structure of the Earth; the names and types of major plates and plate boundaries and their location.",
+     "leaves": [
+      {
+       "id": "CP1.1.1",
+       "title": "Earth's internal structure",
+       "summary": "The layered structure of the Earth — crust, mantle, core and the weak asthenosphere — and why the asthenosphere matters for plate movement.",
+       "source": "CP1/Concepts/1. Earth Structure Basics.md",
+       "teacher_label": "1.1 Earth's Structure",
+       "source_hints": [
+        "1. Earth Structure Basics"
+       ]
+      },
+      {
+       "id": "CP1.1.2",
+       "title": "Plate movement",
+       "summary": "Why plates move: mantle convection, ridge push and slab pull, and the evidence for continental drift.",
+       "source": "CP1/Concepts/1. Earth Structure Basics.md",
+       "teacher_label": "1.2 Plate Movement",
+       "source_hints": [
+        "2. Internal forces and processes"
+       ]
+      },
+      {
+       "id": "CP1.1.3",
+       "title": "Plate boundaries",
+       "summary": "The three boundary types — convergent (destructive), divergent (constructive) and transform (conservative) — and what happens at each.",
+       "source": "CP1/Concepts/1. Earth Structure Basics.md",
+       "teacher_label": "1.3 Plate Boundaries",
+       "source_hints": [
+        "1. Earth Structure Basics"
+       ]
+      }
+     ]
+    },
+    {
+     "number": "2",
+     "id": "CP1.2",
+     "title": "Internal forces and processes",
+     "official_guidance": "Internal processes: folding, faulting and volcanism; the relationship between plate movement and natural hazards.",
+     "leaves": [
+      {
+       "id": "CP1.2.1",
+       "title": "Internal forces",
+       "summary": "The types of internal force and how a force is converted into a geological process.",
+       "source": "CP1/Concepts/2. Internal forces and processes.md",
+       "teacher_label": "2.1 Internal Forces",
+       "source_hints": [
+        "2. Internal forces and processes"
+       ]
+      },
+      {
+       "id": "CP1.2.2",
+       "title": "Internal processes",
+       "summary": "An overview of endogenetic (internal) processes and how they build and deform the crust.",
+       "source": "CP1/Concepts/2. Internal forces and processes.md",
+       "teacher_label": "2.2 Internal Processes",
+       "source_hints": [
+        "2. Internal forces and processes"
+       ]
+      },
+      {
+       "id": "CP1.2.3",
+       "title": "Folding",
+       "summary": "How compression folds rock — anticlines and synclines, and the formation of fold mountains.",
+       "source": "CP1/Concepts/2. Internal forces and processes.md",
+       "teacher_label": "2.2.1 Folding",
+       "source_hints": [
+        "2. Internal forces and processes",
+        "3.1 Convergent Plate Boundaries"
+       ]
+      },
+      {
+       "id": "CP1.2.4",
+       "title": "Faulting",
+       "summary": "How tension and shear fracture rock — normal, reverse and strike-slip faults, and fault-block landforms.",
+       "source": "CP1/Concepts/2. Internal forces and processes.md",
+       "teacher_label": "2.2.2 Faulting",
+       "source_hints": [
+        "2. Internal forces and processes",
+        "3.3 Transform Plate Boundary"
+       ]
+      },
+      {
+       "id": "CP1.2.5",
+       "title": "Volcanism",
+       "summary": "Intrusive and extrusive volcanic activity, the main types of volcano, and the products they produce.",
+       "source": "CP1/Concepts/2.2.3 Volcanism.md",
+       "teacher_label": "2.2.3 Volcanism",
+       "source_hints": [
+        "2.2.3 Volcanism",
+        "3.4 Intraplate Volcanism- Hot Spot & Mantle Plume"
+       ]
+      }
+     ]
+    },
+    {
+     "number": "3",
+     "id": "CP1.3",
+     "title": "Tectonic landforms and features",
+     "official_guidance": "The major landform features at plate boundaries (fold mountain, island arc, ocean trench, volcano, mid-oceanic ridge and rift valley) and their formation; earthquake and volcanic zones far from plate boundaries.",
+     "leaves": [
+      {
+       "id": "CP1.3.1",
+       "title": "Convergent plate boundaries",
+       "summary": "Oceanic–oceanic, oceanic–continental and continental–continental collision, and the landforms each produces (trenches, island arcs, fold mountains).",
+       "source": "CP1/Concepts/3.1 Convergent Plate Boundaries.md",
+       "teacher_label": "3.1",
+       "source_hints": [
+        "3.1 Convergent Plate Boundaries"
+       ]
+      },
+      {
+       "id": "CP1.3.2",
+       "title": "Divergent plate boundaries",
+       "summary": "Continental rifting and mid-oceanic ridge spreading, and the rift valleys and new ocean floor they produce.",
+       "source": "CP1/Concepts/3.2 Divergent Plate Boundaries.md",
+       "teacher_label": "3.2",
+       "source_hints": [
+        "3.2 Divergent Plate Boundaries"
+       ]
+      },
+      {
+       "id": "CP1.3.3",
+       "title": "Transform plate boundary",
+       "summary": "Conservative boundaries where plates slide past each other, and why they are quake-prone but rarely volcanic.",
+       "source": "CP1/Concepts/3.3 Transform Plate Boundary.md",
+       "teacher_label": "3.3",
+       "source_hints": [
+        "3.3 Transform Plate Boundary"
+       ]
+      },
+      {
+       "id": "CP1.3.4",
+       "title": "Intraplate volcanism: hot spots and mantle plumes",
+       "summary": "Volcanic and seismic activity far from any plate boundary, explained by hot spots and mantle plumes — the Hawaiian chain is the classic case.",
+       "source": "CP1/Concepts/3.4 Intraplate Volcanism- Hot Spot & Mantle Plume.md",
+       "teacher_label": "3.4",
+       "source_hints": [
+        "2.2.3 Volcanism",
+        "3.4 Intraplate Volcanism- Hot Spot & Mantle Plume"
+       ]
+      }
+     ]
+    },
+    {
+     "number": "4",
+     "id": "CP1.4",
+     "title": "Tectonic hazards",
+     "official_guidance": "Effects of earthquakes, volcanic eruptions and tsunamis on people and the environment; measures to reduce those effects (monitoring, prediction and warning systems, mitigation and preparation, land use zoning) and their effectiveness.",
+     "leaves": [
+      {
+       "id": "CP1.4.1",
+       "title": "Volcanic eruptions",
+       "summary": "Types of volcano and their explosivity, volcanic products, effects on people and the environment, benefits of volcanic activity, and measures used to reduce losses.",
+       "source": "CP1/Concepts/4.1 VOLCANIC ERUPTIONS.md",
+       "teacher_label": "4.1",
+       "source_hints": [
+        "4.1 VOLCANIC ERUPTIONS"
+       ]
+      },
+      {
+       "id": "CP1.4.2",
+       "title": "Earthquakes",
+       "summary": "Formation of earthquakes, the difference between magnitude and shaking intensity, why intensity varies between plate boundaries, factors affecting destructiveness, mitigation, and why people still live in quake-prone zones.",
+       "source": "CP1/Concepts/4.2 EARTHQUAKES.md",
+       "teacher_label": "4.2",
+       "source_hints": [
+        "4.2 EARTHQUAKES"
+       ]
+      },
+      {
+       "id": "CP1.4.3",
+       "title": "Tsunamis",
+       "summary": "How tsunamis are generated by submarine earthquakes, coastal landslides or submarine eruptions; their characteristics, impacts, warning systems and loss-reduction measures.",
+       "source": "CP1/Concepts/4.3 TSUNAMIS.md",
+       "teacher_label": "4.3",
+       "source_hints": [
+        "4.3 TSUNAMIS"
+       ]
+      },
+      {
+       "id": "CP1.4.4",
+       "title": "Hazard management",
+       "summary": "Prediction, preparedness and response, and the wider toolkit of monitoring, early warning systems, disaster mitigation and land use zoning used to reduce hazard losses.",
+       "source": "CP1/Concepts/4. Tectonic Hazards.md",
+       "teacher_label": "4.4 Hazard Management",
+       "source_hints": [
+        "4. Tectonic Hazards",
+        "4.1 VOLCANIC ERUPTIONS",
+        "4.2 EARTHQUAKES",
+        "4.3 TSUNAMIS"
+       ]
+      }
+     ]
+    }
+   ],
+   "flags": {
+    "extra_leaves": [],
+    "missing_official": [
+     {
+      "id": "CP1.4.5",
+      "title": "Vulnerability of less developed areas and the rationality of living in hazard-prone areas",
+      "summary": "Official GQ12-15: why less developed areas are more vulnerable to natural hazards (literacy and awareness, socio-economic and technological gaps); the advantages and disadvantages of people living in hazard-prone areas; and whether that choice is rational. None of these terms appear anywhere in the teacher's CP1 notes, so the module's titular essay question — the 'Is it rational?' decision — is currently unsupported.",
+      "official_ref": "C&A Guide Module 1, GQ12-15"
+     }
+    ]
+   }
+  },
+  {
+   "code": "CP2",
+   "title": "Managing Rivers and Coastal Environments: A continuing challenge",
+   "short_title": "Managing Coastal Environment",
+   "official_module": "Compulsory Part, Module 2",
+   "verified": false,
+   "official_content_verified": true,
+   "source": "Geography Curriculum and Assessment Guide (Secondary 4-6), CDC+HKEAA, 2007 with updates July 2022",
+   "notes": "As with CP1, the C&A Guide gives Module 2 as a table of 7 guiding questions, not numbered titled sub-questions; the two sub-questions below group the teacher's own concept files (1.1-1.5 rivers, 1.0 coastal parts + 2.5 coast management) against the official Explanatory Notes. Official mapping: GQ1 = 1.1 (partly); GQ2-3 = 1.1-1.5; GQ4-5 = 2.1-2.3; GQ6-7 = 1.5 and 2.4-2.5. Note that the teacher's file '1.0 River & Coastal environment.md' actually holds the coastal-process content (Parts 2-4), so the file numbering and the content numbering do not align.",
+   "subquestions": [
+    {
+     "number": "1",
+     "id": "CP2.1",
+     "title": "River environment",
+     "official_guidance": "Features of a drainage basin; major erosional, transportation and depositional processes and the factors influencing them; major landform features (gorges, waterfalls and rapids, meanders and associated landforms, flood plains, levees, braids and deltas).",
+     "leaves": [
+      {
+       "id": "CP2.1.1",
+       "title": "River system",
+       "summary": "Drainage basin features (watershed, source, mouth, channel network), the long profile of a river from upper to lower course, and Hong Kong examples.",
+       "source": "CP2/Concepts/1.1 River System.md",
+       "teacher_label": "1.1",
+       "source_hints": [
+        "1.0 River & Coastal environment"
+       ]
+      },
+      {
+       "id": "CP2.1.2",
+       "title": "River energy",
+       "summary": "What drives a river's energy — discharge, gradient, channel shape, roughness and flow type — how energy is distributed along and across the channel, and how this controls velocity.",
+       "source": "CP2/Concepts/1.2 River energy.md",
+       "teacher_label": "1.2",
+       "source_hints": [
+        "1.0 River & Coastal environment"
+       ]
+      },
+      {
+       "id": "CP2.1.3",
+       "title": "River processes",
+       "summary": "Erosion (hydraulic action, abrasion, attrition, solution), transportation (traction, saltation, suspension, solution) and deposition, and the landforms each produces.",
+       "source": "CP2/Concepts/1.3 River processes.md",
+       "teacher_label": "1.3",
+       "source_hints": [
+        "1.0 River & Coastal environment"
+       ]
+      },
+      {
+       "id": "CP2.1.4",
+       "title": "Fluvial landforms",
+       "summary": "V-shaped valleys, waterfalls, gorges, meanders, oxbow lakes, floodplains, deltas and levees, with the keywords needed to annotate each one.",
+       "source": "CP2/Concepts/1.4 Fluvial Landforms.md",
+       "teacher_label": "1.4",
+       "source_hints": [
+        "1.0 River & Coastal environment"
+       ]
+      },
+      {
+       "id": "CP2.1.5",
+       "title": "River management",
+       "summary": "The problems of flooding, erosion, pollution and water scarcity; hard engineering (dams, levees, channelisation, reservoirs, flood walls) and soft engineering (floodplain management, wetlands, afforestation, restoration, early warning); and how to judge which is appropriate.",
+       "source": "CP2/Concepts/1.5 River management.md",
+       "teacher_label": "1.5",
+       "source_hints": [
+        "1.0 River & Coastal environment"
+       ]
+      }
+     ]
+    },
+    {
+     "number": "2",
+     "id": "CP2.2",
+     "title": "Coastal environment",
+     "official_guidance": "Wave generation and characteristics (constructive and destructive waves); major coastal erosion, transportation and deposition processes; major coastal landforms; human activities on river and coastal environments and their consequences; 'hard' and 'soft' management strategies; and evaluation of management methods.",
+     "leaves": [
+      {
+       "id": "CP2.2.1",
+       "title": "Wave processes",
+       "summary": "How waves are generated and how fetch and wind speed control wave energy; constructive versus destructive waves; and wave erosion by hydraulic action, abrasion, attrition and solution.",
+       "source": "CP2/Concepts/1.0 River & Coastal environment.md",
+       "teacher_label": "2.1 Wave Processes",
+       "source_hints": [
+        "1.0 River & Coastal environment"
+       ]
+      },
+      {
+       "id": "CP2.2.2",
+       "title": "Coastal landforms",
+       "summary": "Sea cliffs, wave-cut platforms, caves, arches, stacks and stumps, beaches, spits, bars and tomboloes, and the sequence in which they develop.",
+       "source": "CP2/Concepts/1.0 River & Coastal environment.md",
+       "teacher_label": "2.2 Coastal Landforms",
+       "source_hints": [
+        "1.0 River & Coastal environment"
+       ]
+      },
+      {
+       "id": "CP2.2.3",
+       "title": "Longshore drift",
+       "summary": "The zigzag path of swash and backwash and the net movement of sediment along the coast, with the factors that control drift direction.",
+       "source": "CP2/Concepts/1.0 River & Coastal environment.md",
+       "teacher_label": "2.3 Longshore Drift",
+       "source_hints": [
+        "1.0 River & Coastal environment"
+       ]
+      },
+      {
+       "id": "CP2.2.4",
+       "title": "Coastal management",
+       "summary": "The problems facing coasts (erosion, flooding, sea level rise) and the hard versus soft engineering response, with the pros and cons of each.",
+       "source": "CP2/Concepts/1.0 River & Coastal environment.md",
+       "teacher_label": "2.4 Coastal Management",
+       "source_hints": [
+        "1.0 River & Coastal environment"
+       ]
+      },
+      {
+       "id": "CP2.2.5",
+       "title": "Managing coastal environment",
+       "summary": "Hong Kong's CEDD approach to coastal management — the progressive principle, its four strategies and three-pronged approach — and the hard and soft measures used, including the effect of climate change and sea level rise.",
+       "source": "CP2/Concepts/2.5 Managing coastal environment.md",
+       "teacher_label": "2.5",
+       "source_hints": [
+        "1.0 River & Coastal environment"
+       ]
+      },
+      {
+       "id": "CP2.2.6",
+       "title": "Hong Kong coastal case studies",
+       "summary": "The notable coastal landforms and management schemes in Hong Kong, used as local evidence for exam answers.",
+       "source": "CP2/Concepts/1.0 River & Coastal environment.md",
+       "teacher_label": "PART 3 Hong Kong Case Studies",
+       "source_hints": [
+        "1.0 River & Coastal environment"
+       ]
+      }
+     ]
+    }
+   ],
+   "flags": {
+    "extra_leaves": [],
+    "missing_official": [
+     {
+      "id": "CP2.1.0",
+      "title": "The hydrological cycle",
+      "summary": "Official GQ1 asks for a brief introduction of the hydrological cycle — its characteristics, stores and transfers. The teacher's CP2 notes move straight to the river system, so the cycle that drives the whole module is never set up.",
+      "official_ref": "C&A Guide Module 2, GQ1"
+     },
+     {
+      "id": "CP2.1.6",
+      "title": "Braided rivers and channel networks",
+      "summary": "Official landform list for Module 2 includes braids and the channel network as distinct features. 'Braid'/'braided' does not appear in the teacher's notes; levees and deltas are covered.",
+      "official_ref": "C&A Guide Module 2, GQ3 explanatory notes"
+     },
+     {
+      "id": "CP2.2.7",
+      "title": "Land use zoning as a management strategy",
+      "summary": "Official management list for Module 2 names land use zoning alongside channelisation, breakwaters and beach nourishment. Only the three named measures appear in the teacher's notes.",
+      "official_ref": "C&A Guide Module 2, GQ7 explanatory notes"
+     },
+     {
+      "id": "CP2.2.8",
+      "title": "Mass wasting and ecosystem disturbance as consequences",
+      "summary": "Official consequences list for Module 2 includes mass wasting and disturbance or damage to the ecosystem alongside flooding, erosion and pollution. The teacher's notes cover flooding, erosion and pollution but neither mass wasting nor ecosystem damage.",
+      "official_ref": "C&A Guide Module 2, GQ6 explanatory notes"
+     },
+     {
+      "id": "CP2.2.9",
+      "title": "Conflict and the evaluation of management strategies",
+      "summary": "Official Concepts column for Module 2 lists 'Conflict' and 'Management', and the Explanatory Notes require evaluation of the methods and strategies used and their possible impact. The word 'conflict' does not occur in the teacher's CP2 notes, and evaluation is handled only implicitly through pros-and-cons tables.",
+      "official_ref": "C&A Guide Module 2, GQ7 explanatory notes and Concepts column"
+     }
+    ]
+   }
+  },
+  {
+   "code": "CP3",
+   "title": "Changing Industrial Location – How and why does it change over space and time?",
+   "short_title": "Industrial Location",
+   "official_module": "Compulsory Part, Module 3",
+   "verified": false,
+   "official_content_verified": true,
+   "source": "Geography Curriculum and Assessment Guide (Secondary 4-6), CDC+HKEAA, 2007 with updates July 2022",
+   "notes": "Module 3's official guiding questions (GQ1-11) are grouped below into five sub-questions that follow the teacher's concept-note numbering (1.1-1.6). Official case studies named by the C&A Guide: China's iron and steel industry and the US information technology industry; the teacher's notes follow both.",
+   "subquestions": [
+    {
+     "number": "1",
+     "id": "CP3.1",
+     "title": "Industrial location factors",
+     "official_guidance": "Major factors affecting the location of industry — raw materials, power, market, labour, technology, transport, government policy and land.",
+     "leaves": [
+      {
+       "id": "CP3.1.1",
+       "title": "Industrial location factors",
+       "summary": "How raw materials, market, labour, transport, power, capital, technology, government policy and land each steer industrial location, framed as mechanism rather than list; and industrial inertia — why old plants stay put.",
+       "source": "CP3/Concepts/1.1 Industrial Location Factors (F6 Revision).md",
+       "teacher_label": "1.1",
+       "source_hints": [
+        "1.1 Industrial Location Factors — F6 Revision"
+       ]
+      }
+     ]
+    },
+    {
+     "number": "2",
+     "id": "CP3.2",
+     "title": "Industrial development in China",
+     "official_guidance": "Distribution pattern of China's iron and steel industry; how its location has changed over time (shift from coast to interior, and towards large cities); the role of technology and government policy; and reasons for industrial inertia.",
+     "leaves": [
+      {
+       "id": "CP3.2.1",
+       "title": "Industrial development in China",
+       "summary": "The distribution of iron and steel in China from before 1949, through the planned-economy shift inland, to the post-1978 reforms, the Western Development Strategy and the 2020s technology-driven shift — with the dominant location factor for each period.",
+       "source": "CP3/Concepts/1.2 Industrial Development in China (F6 Revision).md",
+       "teacher_label": "1.2",
+       "source_hints": [
+        "1.1 Industrial Location Factors — F6 Revision"
+       ]
+      }
+     ]
+    },
+    {
+     "number": "3",
+     "id": "CP3.3",
+     "title": "Silicon Valley as a global IT centre",
+     "official_guidance": "Location of the US IT industry and the factors affecting it, especially research and development, labour quality and agglomeration economies; multi-point and transnational production; the effect of globalisation and technological advances.",
+     "leaves": [
+      {
+       "id": "CP3.3.1",
+       "title": "Silicon Valley as a global IT centre",
+       "summary": "Why the US IT industry located where it did — physical, human and historical factors, with research and development, labour quality and agglomeration economies as the ones that earn marks; and how globalisation produced multi-point, transnational production.",
+       "source": "CP3/Concepts/1.3 Silicon Valley Global IT Centre (F6 Revision).md",
+       "teacher_label": "1.3",
+       "source_hints": [
+        "1.1 Industrial Location Factors — F6 Revision"
+       ]
+      }
+     ]
+    },
+    {
+     "number": "4",
+     "id": "CP3.4",
+     "title": "Industrial agglomeration",
+     "official_guidance": "Agglomeration economies as a location factor for the US IT industry.",
+     "leaves": [
+      {
+       "id": "CP3.4.1",
+       "title": "Industrial agglomeration",
+       "summary": "Cumulative causation ('growth begets growth'), internal and external agglomeration economies and the cost savings they bring, and the limits of clustering.",
+       "source": "CP3/Concepts/1.4 Industrial Agglomeration (F6 Revision).md",
+       "teacher_label": "1.4",
+       "source_hints": [
+        "1.1 Industrial Location Factors — F6 Revision"
+       ]
+      }
+     ]
+    },
+    {
+     "number": "5",
+     "id": "CP3.5",
+     "title": "Transnational corporations and deindustrialization",
+     "official_guidance": "Impacts of changes in industrial location and mode of production; measures to alleviate the problems, and the possibility and effectiveness of those measures.",
+     "leaves": [
+      {
+       "id": "CP3.5.1",
+       "title": "Transnational corporations (TNCs)",
+       "summary": "What a TNC is, why it sets up in a less developed country, and the positive and negative impacts on the host country.",
+       "source": "CP3/Concepts/1.5 Transnational Corporations TNCs (F6 Revision).md",
+       "teacher_label": "1.5",
+       "source_hints": [
+        "1.1 Industrial Location Factors — F6 Revision"
+       ]
+      },
+      {
+       "id": "CP3.5.2",
+       "title": "Deindustrialization",
+       "summary": "Why manufacturing declines in a place — rising labour costs, automation, globalisation, competition from less developed countries and service-sector growth — and the short-run and long-run consequences.",
+       "source": "CP3/Concepts/1.6 Deindustrialization (F6 Revision).md",
+       "teacher_label": "1.6",
+       "source_hints": [
+        "1.1 Industrial Location Factors — F6 Revision"
+       ]
+      }
+     ]
+    }
+   ],
+   "flags": {
+    "extra_leaves": [],
+    "missing_official": [
+     {
+      "id": "CP3.2.2",
+      "title": "Hong Kong's manufacturing industry and its relocation to the Zhujiang (Pearl River) Delta",
+      "summary": "Official GQ1-2 is the module's opening question: where Hong Kong's manufacturing industry was located in the past (1950s-1970s), where it is now, and the relocation of Hong Kong manufacturing to the Zhujiang (Pearl River) Delta Region — naming and locating the major manufacturing centres. The teacher's notes mention relocation, Shenzhen and Guangdong but never use 'Zhujiang' or 'Pearl River Delta' and never locate the major centres.",
+      "official_ref": "C&A Guide Module 3, GQ1-2"
+     },
+     {
+      "id": "CP3.5.3",
+      "title": "Impacts of industrial relocation and the measures to alleviate them",
+      "summary": "Official GQ10-11: the likely social, economic and environmental impacts of changing industrial location and modes of production (flow of technology, changes in employment structure, impact on the economy) and the measures used to alleviate them (retraining of labour, an improved social security system, development of other industries and economic sectors), including their possibility and effectiveness. The phrases 'flow of technology' and 'social security' do not occur in the teacher's CP3 notes, so this required evaluation section is currently unaddressed.",
+      "official_ref": "C&A Guide Module 3, GQ10-11"
+     },
+     {
+      "id": "CP3.2.3",
+      "title": "The Hong Kong industrial field trip",
+      "summary": "Official Skills column for GQ7-8 asks for a field trip to Cyberport / the Hong Kong Science Park to identify the factors favouring the IT industry there. 'Cyberport' is not mentioned in the teacher's CP3 notes, although the teacher does use Cyberport in the EP1 notes.",
+      "official_ref": "C&A Guide Module 3, GQ8 skills"
+     }
+    ]
+   }
+  },
+  {
+   "code": "CP4",
+   "title": "Building a Sustainable City – Are environmental conservation and urban development mutually exclusive?",
+   "short_title": "Building a Sustainable City",
+   "official_module": "Compulsory Part, Module 4",
+   "verified": false,
+   "official_content_verified": true,
+   "source": "Geography Curriculum and Assessment Guide (Secondary 4-6), CDC+HKEAA, 2007 with updates July 2022",
+   "notes": "Module 4's official guiding questions (GQ1-15) are grouped into the six sub-questions below, which match the teacher's concept-note numbering 4.1-4.6. Official case study: Hong Kong, with teachers encouraged to add other sustainable cities; the teacher's notes are Hong Kong-focused. Note that this is one of the two modules examined in Paper 1 Section B fieldwork for 2027 (with CP2).",
+   "subquestions": [
+    {
+     "number": "1",
+     "id": "CP4.1",
+     "title": "Sustainable development",
+     "official_guidance": "Definitions of 'sustainable development' and 'sustainable city'; the price of developing a sustainable city.",
+     "leaves": [
+      {
+       "id": "CP4.1.1",
+       "title": "Sustainable development",
+       "summary": "The Brundtland definition verbatim, and the economic, environmental and social pillars used as a checklist for judging whether a measure is genuinely sustainable.",
+       "source": "CP4/Concepts/4.1 Sustainable Development (F6 Revision).md",
+       "teacher_label": "4.1",
+       "source_hints": [
+        "4.1 Sustainable Development — F6 Revision"
+       ]
+      }
+     ]
+    },
+    {
+     "number": "2",
+     "id": "CP4.2",
+     "title": "Urban problems",
+     "official_guidance": "Brief description of urban problems in Hong Kong (housing, transport, pollution); urban growth and urbanisation and their causes.",
+     "leaves": [
+      {
+       "id": "CP4.2.1",
+       "title": "Urban problems",
+       "summary": "The environmental, social and infrastructure problems of a dense city — air, water, noise and waste; housing shortage, congestion, squatter settlements and inequality; ageing infrastructure — each traced to its cause rather than merely listed.",
+       "source": "CP4/Concepts/4.2 Urban Problems (F6 Revision).md",
+       "teacher_label": "4.2",
+       "source_hints": [
+        "4.1 Sustainable Development — F6 Revision"
+       ]
+      }
+     ]
+    },
+    {
+     "number": "3",
+     "id": "CP4.3",
+     "title": "Sustainable city features",
+     "official_guidance": "Characteristics of a sustainable city; indicators compiled from various sources.",
+     "leaves": [
+      {
+       "id": "CP4.3.1",
+       "title": "Sustainable city features",
+       "summary": "What makes a city sustainable in practice — green buildings, sustainable transport, waste management and green space — and the indicator each one delivers.",
+       "source": "CP4/Concepts/4.3 Sustainable City Features (F6 Revision).md",
+       "teacher_label": "4.3",
+       "source_hints": [
+        "4.1 Sustainable Development — F6 Revision"
+       ]
+      }
+     ]
+    },
+    {
+     "number": "4",
+     "id": "CP4.4",
+     "title": "Hong Kong case studies",
+     "official_guidance": "Case study: Hong Kong (the official case for this module).",
+     "leaves": [
+      {
+       "id": "CP4.4.1",
+       "title": "Hong Kong case studies",
+       "summary": "Hong Kong evidence for each part of the argument — urban renewal as the core conflict, transport, energy and waste — with a specific named scheme for each.",
+       "source": "CP4/Concepts/4.4 Hong Kong Case Studies (F6 Revision).md",
+       "teacher_label": "4.4",
+       "source_hints": [
+        "4.1 Sustainable Development — F6 Revision"
+       ]
+      }
+     ]
+    },
+    {
+     "number": "5",
+     "id": "CP4.5",
+     "title": "Planning strategies",
+     "official_guidance": "Methods of developing a city into a sustainable one, e.g. better and careful planning of the city, regenerating and re-imaging the city.",
+     "leaves": [
+      {
+       "id": "CP4.5.1",
+       "title": "Planning strategies",
+       "summary": "Who delivers sustainability: town planning (zoning, building control, green belts), the three government levers (regulation, economic incentive, provision) and community involvement through consultation, NGOs and education.",
+       "source": "CP4/Concepts/4.5 Planning Strategies (F6 Revision).md",
+       "teacher_label": "4.5",
+       "source_hints": [
+        "4.1 Sustainable Development — F6 Revision"
+       ]
+      }
+     ]
+    },
+    {
+     "number": "6",
+     "id": "CP4.6",
+     "title": "Challenges of sustainable development",
+     "official_guidance": "Conflicts arising from solving urban problems and how they are dealt with; the relationship between urban development, socio-economic development, living standards and environmental conditions; the consequences of not choosing a sustainable future.",
+     "leaves": [
+      {
+       "id": "CP4.6.1",
+       "title": "Challenges of sustainable development",
+       "summary": "The trade-offs between the pillars, why implemented measures often underdeliver, and the consequences of not choosing a sustainable future for a growing city.",
+       "source": "CP4/Concepts/4.6 Challenges of Sustainable Development (F6 Revision).md",
+       "teacher_label": "4.6",
+       "source_hints": [
+        "4.1 Sustainable Development — F6 Revision"
+       ]
+      }
+     ]
+    }
+   ],
+   "flags": {
+    "extra_leaves": [],
+    "missing_official": [
+     {
+      "id": "CP4.2.2",
+      "title": "Urban growth, urbanisation and the changing internal structure of the city",
+      "summary": "Official GQ1-4: the definition of urban growth and urbanisation; their causes (natural increase of the urban population, rural-urban migration, reclassification of areas previously defined as rural, changing employment opportunities, and economic and transport development); the cycle of urbanisation, suburbanisation, counter-urbanisation and reurbanisation; and the processes of urban decay, urban sprawl and encroachment, urban redevelopment and renewal. None of 'urbanisation', 'suburbanisation', 'counter-urbanisation' or 'reurbanisation' appears in the teacher's CP4 notes, so the official cycle of urbanisation is missing.",
+      "official_ref": "C&A Guide Module 4, GQ1-4"
+     },
+     {
+      "id": "CP4.2.3",
+      "title": "Provision of public housing and new towns",
+      "summary": "Official GQ6 names the provision of public housing and the building of new towns as specific measures for alleviating urban problems. Neither 'public housing' nor 'new town' appears in the teacher's CP4 notes, despite both being core Hong Kong measures in the official case study.",
+      "official_ref": "C&A Guide Module 4, GQ6 explanatory notes"
+     },
+     {
+      "id": "CP4.3.2",
+      "title": "Indicators of a sustainable city",
+      "summary": "Official GQ11 asks for the characteristics of a sustainable city and the Skills column requires compiling indicators or indicators from various sources, then re-designing an area of Hong Kong against them. The teacher's 4.3 lists features but contains no explicit indicator list and no re-design task.",
+      "official_ref": "C&A Guide Module 4, GQ10-12"
+     },
+     {
+      "id": "CP4.5.2",
+      "title": "Regenerating and re-imaging the city",
+      "summary": "Official GQ12 names 'regenerating and re-imaging the city' as a method of making a city sustainable. Urban renewal appears in the teacher's 4.4 as a case study and as a conflict, but regeneration and re-imaging are not treated as a named planning method.",
+      "official_ref": "C&A Guide Module 4, GQ12 explanatory notes"
+     },
+     {
+      "id": "CP4.6.2",
+      "title": "The price of developing a sustainable city",
+      "summary": "Official GQ13 makes the price of developing a sustainable city a required topic, and the module introduction states students 'will also learn about the price for developing Hong Kong into a sustainable city'. The teacher's notes touch on 'price' inside the trade-off discussion but do not cover it as a standalone topic.",
+      "official_ref": "C&A Guide Module 4, GQ13 and module introduction"
+     }
+    ]
+   }
+  },
+  {
+   "code": "CP5",
+   "title": "Combating Famine – Is technology a panacea for food shortage?",
+   "short_title": "Combating Famine",
+   "official_module": "Compulsory Part, Module 5",
+   "verified": false,
+   "official_content_verified": true,
+   "source": "Geography Curriculum and Assessment Guide (Secondary 4-6), CDC+HKEAA, 2007 with updates July 2022",
+   "notes": "Module 5's official guiding questions (GQ1-11) are grouped into the six sub-questions below, matching the teacher's concept-note numbering 5.1-5.6. Official case studies: nomadic herding in the Sahel and irrigation farming in Southern California — the teacher's 5.2 and 5.3 cover both regions but do not yet use the official farming-system names.",
+   "subquestions": [
+    {
+     "number": "1",
+     "id": "CP5.1",
+     "title": "Agricultural systems",
+     "official_guidance": "Physical, economic, social and political factors affecting agriculture, especially agricultural production and agricultural characteristics.",
+     "leaves": [
+      {
+       "id": "CP5.1.1",
+       "title": "Agricultural systems",
+       "summary": "The two sets of production factors — the biological inputs of an agricultural ecosystem against the economic inputs of a farming system — and the spectrum of farming types from subsistence to commercial to organic.",
+       "source": "CP5/Concepts/5.1 Agricultural Systems (F6 Revision).md",
+       "teacher_label": "5.1",
+       "source_hints": [
+        "5.1 Agricultural Systems — F6 Revision"
+       ]
+      }
+     ]
+    },
+    {
+     "number": "2",
+     "id": "CP5.2",
+     "title": "Sahel region",
+     "official_guidance": "Location of the Sahel; characteristics of its physical environment (climate, soil, vegetation cover, relief); and the agricultural characteristics of nomadic herding there.",
+     "leaves": [
+      {
+       "id": "CP5.2.1",
+       "title": "Sahel region",
+       "summary": "Why the Sahel is a marginal semi-arid belt — location, climate, desertification, soil erosion, water scarcity and nutrient depletion — and the human factors (population growth, overgrazing, deforestation, poverty, weak infrastructure) that turn drought into famine.",
+       "source": "CP5/Concepts/5.2 Sahel Region (F6 Revision).md",
+       "teacher_label": "5.2",
+       "source_hints": [
+        "5.1 Agricultural Systems — F6 Revision"
+       ]
+      }
+     ]
+    },
+    {
+     "number": "3",
+     "id": "CP5.3",
+     "title": "Southern California",
+     "official_guidance": "Location of Southern California; characteristics of its physical environment (climate, soil, vegetation cover, relief); and the agricultural characteristics of irrigation farming there.",
+     "leaves": [
+      {
+       "id": "CP5.3.1",
+       "title": "Southern California",
+       "summary": "The Mediterranean-climate advantages, the water constraint and salinisation risk, and the human factors — advanced technology, irrigation systems, capital, government support and research institutions — that make it one of the world's most productive farming regions.",
+       "source": "CP5/Concepts/5.3 Southern California (F6 Revision).md",
+       "teacher_label": "5.3",
+       "source_hints": [
+        "5.1 Agricultural Systems — F6 Revision"
+       ]
+      }
+     ]
+    },
+    {
+     "number": "4",
+     "id": "CP5.4",
+     "title": "Famine causes and characteristics",
+     "official_guidance": "Definition of 'famine'; causes of famine in relation to economic, technological, social and physical conditions; location and distribution of famine-prone regions.",
+     "leaves": [
+      {
+       "id": "CP5.4.1",
+       "title": "Famine causes and characteristics",
+       "summary": "A working definition of famine, the common features of famine-prone areas, and the causes split into natural triggers and human root causes so that the two are not confused.",
+       "source": "CP5/Concepts/5.4 Famine Causes & Characteristics (F6 Revision).md",
+       "teacher_label": "5.4",
+       "source_hints": [
+        "5.1 Agricultural Systems — F6 Revision"
+       ]
+      }
+     ]
+    },
+    {
+     "number": "5",
+     "id": "CP5.5",
+     "title": "Combating famine solutions",
+     "official_guidance": "To what extent technology can increase agricultural production and alleviate food shortage; whether genetically modified food is a way out; and the environmental, economic and social (including health) implications of GM food.",
+     "leaves": [
+      {
+       "id": "CP5.5.1",
+       "title": "Combating famine solutions",
+       "summary": "Short-term relief measures against long-term development measures, and the GM crop debate set out as the module's set-piece argument with arguments for and against.",
+       "source": "CP5/Concepts/5.5 Combating Famine Solutions (F6 Revision).md",
+       "teacher_label": "5.5",
+       "source_hints": [
+        "5.1 Agricultural Systems — F6 Revision"
+       ]
+      }
+     ]
+    },
+    {
+     "number": "6",
+     "id": "CP5.6",
+     "title": "Sustainable agriculture",
+     "official_guidance": "Consequences of misuse and overuse of agricultural technology; and measures taken to ensure sustainable agricultural development, e.g. multiple cropping, water and soil conservation methods, and organic farming.",
+     "leaves": [
+      {
+       "id": "CP5.6.1",
+       "title": "Sustainable agriculture",
+       "summary": "The three-pillar test for farming, the practice behind each pillar (crop rotation, organic farming, agroforestry, water management) and how to read the organic farming case data.",
+       "source": "CP5/Concepts/5.6 Sustainable Agriculture (F6 Revision).md",
+       "teacher_label": "5.6",
+       "source_hints": [
+        "5.1 Agricultural Systems — F6 Revision"
+       ]
+      }
+     ]
+    }
+   ],
+   "flags": {
+    "extra_leaves": [],
+    "missing_official": [
+     {
+      "id": "CP5.4.2",
+      "title": "Global patterns of food production, consumption and trade",
+      "summary": "Official GQ1-3: the uneven availability of food supplies relative to demand on a global scale; global patterns of food production and consumption in relation to population; global contrasts in diet and food consumption; and patterns of trade in food. The teacher's notes treat famine causes region-by-region and the words 'global', 'food production' and 'trade in food' do not occur, so the module's global-scale opening is missing.",
+      "official_ref": "C&A Guide Module 5, GQ1-3"
+     },
+     {
+      "id": "CP5.2.2",
+      "title": "Nomadic herding in the Sahel",
+      "summary": "Official GQ6: the agricultural characteristics of nomadic herding in the Sahel, with specific attention to the technological, economic, political and socio-cultural aspects. The teacher's 5.2 covers physical and human factors well, but the words 'nomadic', 'herding' and 'pastoral' do not appear, so the official agricultural system is not named or described as one.",
+      "official_ref": "C&A Guide Module 5, GQ6 explanatory notes"
+     },
+     {
+      "id": "CP5.3.2",
+      "title": "Irrigation farming in Southern California",
+      "summary": "Official GQ6: the agricultural characteristics of irrigation farming in Southern California, again with technological, economic, political and socio-cultural aspects. The teacher covers irrigation, capital and technology, but the note is framed as physical and human factors rather than as the named 'irrigation farming' system, so the official Sahel-versus-California comparison task is not set up.",
+      "official_ref": "C&A Guide Module 5, GQ6 explanatory notes"
+     },
+     {
+      "id": "CP5.6.2",
+      "title": "Consequences of misuse and overuse of agricultural technology",
+      "summary": "Official GQ10-11: reduction of biodiversity, habitat loss, land degradation, soil erosion, chemical pollution of land and watercourses, and the impact on the rural landscape. 'Habitat loss' and 'rural landscape' do not appear in the teacher's CP5 notes, although biodiversity, land degradation and soil erosion are covered.",
+      "official_ref": "C&A Guide Module 5, GQ10-11 explanatory notes"
+     },
+     {
+      "id": "CP5.6.3",
+      "title": "Multiple cropping, water conservation and soil conservation",
+      "summary": "Official GQ11 names multiple cropping and water and soil conservation methods as the measures for sustainable agricultural development, alongside organic farming. The teacher's 5.6 has crop rotation, agroforestry, organic farming and water management but not multiple cropping, water conservation or soil conservation by name.",
+      "official_ref": "C&A Guide Module 5, GQ11 explanatory notes"
+     }
+    ]
+   }
+  },
+  {
+   "code": "CP6",
+   "title": "Disappearing Green Canopy – Who should pay for the massive deforestation in rainforest regions?",
+   "short_title": "Disappearing Green Canopy",
+   "official_module": "Compulsory Part, Module 6",
+   "verified": false,
+   "official_content_verified": true,
+   "source": "Geography Curriculum and Assessment Guide (Secondary 4-6), CDC+HKEAA, 2007 with updates July 2022",
+   "notes": "The teacher holds Module 6 as a single long note (CP6_Disappearing_Green_Canopy_Detailed_Notes.md) with ten PARTS rather than one file per leaf. The five sub-questions below regroup those PARTS against the official guiding questions (GQ1-13). Official mapping: GQ1 = 2.4 (missing); GQ2-4 = 1.1-1.3; GQ5 = 2.1; GQ6-9 = 2.2, 2.3, 4.1, 4.2; GQ10-13 = 5.1, 5.2 (partly). Two teacher parts — carbon cycle (PART 3) and biofuels (PART 6) — are extensions beyond the official Explanatory Notes and are flagged.",
+   "subquestions": [
+    {
+     "number": "1",
+     "id": "CP6.1",
+     "title": "Tropical rainforest characteristics and ecosystem structure",
+     "official_guidance": "Definition of an ecosystem; abiotic and biotic components; links and interrelationships between them; energy flow; nutrient cycling; and the evidence that a rainforest is a complex but fragile ecosystem.",
+     "leaves": [
+      {
+       "id": "CP6.1.1",
+       "title": "Tropical rainforest characteristics",
+       "summary": "Where tropical rainforests are found and what their climate and vegetation are like — the hot, humid, high-rainfall conditions that create the biome.",
+       "source": "CP6_Disappearing_Green_Canopy_Detailed_Notes.md",
+       "teacher_label": "PART 1, 1.1 Characteristics",
+       "source_hints": [
+        "CP6 Disappearing Green Canopy Detailed Notes"
+       ]
+      },
+      {
+       "id": "CP6.1.2",
+       "title": "Rainforest structure",
+       "summary": "The vertical structure of the rainforest, from the emergent layer down through the canopy, understorey and forest floor.",
+       "source": "CP6_Disappearing_Green_Canopy_Detailed_Notes.md",
+       "teacher_label": "PART 1, 1.2 Structure",
+       "source_hints": [
+        "CP6 Disappearing Green Canopy Detailed Notes"
+       ]
+      },
+      {
+       "id": "CP6.1.3",
+       "title": "Nutrient cycle",
+       "summary": "How nutrients are stored and recycled in the rainforest, and why rapid cycling and heavy leaching make the system fragile.",
+       "source": "CP6_Disappearing_Green_Canopy_Detailed_Notes.md",
+       "teacher_label": "PART 1, 1.3 Nutrient Cycle",
+       "source_hints": [
+        "CP6 Disappearing Green Canopy Detailed Notes"
+       ]
+      }
+     ]
+    },
+    {
+     "number": "2",
+     "id": "CP6.2",
+     "title": "Deforestation: causes, patterns and impacts",
+     "official_guidance": "Types of destruction in the tropical rainforests and the reasons for it — economic development, agricultural development and population growth; and the impact of large-scale deforestation on climate, biosphere and lithosphere at local and global scale.",
+     "leaves": [
+      {
+       "id": "CP6.2.1",
+       "title": "Causes of deforestation",
+       "summary": "The economic, social and political drivers of forest clearance, and how they combine to accelerate the rate of loss.",
+       "source": "CP6_Disappearing_Green_Canopy_Detailed_Notes.md",
+       "teacher_label": "PART 2, 2.1 Causes",
+       "source_hints": [
+        "CP6 Disappearing Green Canopy Detailed Notes"
+       ]
+      },
+      {
+       "id": "CP6.2.2",
+       "title": "Impacts of deforestation",
+       "summary": "The consequences for the nutrient cycle and for the wider environment, from soil fertility loss to altered rainfall and climate.",
+       "source": "CP6_Disappearing_Green_Canopy_Detailed_Notes.md",
+       "teacher_label": "PART 2, 2.2 Impacts",
+       "source_hints": [
+        "CP6 Disappearing Green Canopy Detailed Notes"
+       ]
+      },
+      {
+       "id": "CP6.2.3",
+       "title": "Deforestation patterns",
+       "summary": "The contrasting patterns of clearance in the Amazon Basin and in Southeast Asia, and what drives each.",
+       "source": "CP6_Disappearing_Green_Canopy_Detailed_Notes.md",
+       "teacher_label": "PART 2, 2.3 Deforestation Patterns",
+       "source_hints": [
+        "CP6 Disappearing Green Canopy Detailed Notes"
+       ]
+      },
+      {
+       "id": "CP6.2.4",
+       "title": "The carbon cycle",
+       "summary": "The world's carbon stores, the flows of carbon into and out of the atmosphere, and how deforestation shifts the balance — the mechanism linking CP6 to CP7.",
+       "source": "CP6_Disappearing_Green_Canopy_Detailed_Notes.md",
+       "teacher_label": "PART 3 Carbon Cycle",
+       "source_hints": [
+        "CP6 Disappearing Green Canopy Detailed Notes"
+       ]
+      }
+     ]
+    },
+    {
+     "number": "3",
+     "id": "CP6.3",
+     "title": "Indigenous peoples and livelihoods",
+     "official_guidance": "The socio-economic impact of large-scale deforestation on the local community and other places in the world, including on indigenous peoples.",
+     "leaves": [
+      {
+       "id": "CP6.3.1",
+       "title": "Traditional livelihood and forest dependence",
+       "summary": "How indigenous communities depend on the forest for food, materials and medicine, and the cultural knowledge held within the forest.",
+       "source": "CP6_Disappearing_Green_Canopy_Detailed_Notes.md",
+       "teacher_label": "PART 4, 4.1 Traditional Livelihood",
+       "source_hints": [
+        "CP6 Disappearing Green Canopy Detailed Notes"
+       ]
+      },
+      {
+       "id": "CP6.3.2",
+       "title": "Impacts of deforestation on indigenous communities",
+       "summary": "What deforestation does to indigenous livelihoods and community life, and the conflict it creates between forest and people.",
+       "source": "CP6_Disappearing_Green_Canopy_Detailed_Notes.md",
+       "teacher_label": "PART 4, 4.2 Impacts",
+       "source_hints": [
+        "CP6 Disappearing Green Canopy Detailed Notes"
+       ]
+      }
+     ]
+    },
+    {
+     "number": "4",
+     "id": "CP6.4",
+     "title": "Solutions and management",
+     "official_guidance": "Measures to protect tropical rainforests such as afforestation, regulation on logging activities, setting up of national parks and natural reserves; sustainable development of tropical rainforests.",
+     "leaves": [
+      {
+       "id": "CP6.4.1",
+       "title": "Sustainable management of rainforests",
+       "summary": "Reducing demand for forest products, developing alternative livelihoods, and the policy measures that make protection workable in less developed countries.",
+       "source": "CP6_Disappearing_Green_Canopy_Detailed_Notes.md",
+       "teacher_label": "PART 5, 5.1 Sustainable Management",
+       "source_hints": [
+        "CP6 Disappearing Green Canopy Detailed Notes"
+       ]
+      },
+      {
+       "id": "CP6.4.2",
+       "title": "Reforestation",
+       "summary": "The benefits of reforestation and the challenges that limit it, including land availability and long time lags.",
+       "source": "CP6_Disappearing_Green_Canopy_Detailed_Notes.md",
+       "teacher_label": "PART 5, 5.2 Reforestation",
+       "source_hints": [
+        "CP6 Disappearing Green Canopy Detailed Notes"
+       ]
+      },
+      {
+       "id": "CP6.4.3",
+       "title": "Biofuels as an alternative",
+       "summary": "Biofuels as a substitute for fossil fuels: the definition, the arguments for and against, and the effectiveness debate.",
+       "source": "CP6_Disappearing_Green_Canopy_Detailed_Notes.md",
+       "teacher_label": "PART 6 Biofuels",
+       "source_hints": [
+        "CP6 Disappearing Green Canopy Detailed Notes"
+       ]
+      }
+     ]
+    },
+    {
+     "number": "5",
+     "id": "CP6.5",
+     "title": "Climate change and the rainforest",
+     "official_guidance": "Impact of large-scale deforestation on climate at a local and global scale.",
+     "leaves": [
+      {
+       "id": "CP6.5.1",
+       "title": "Feedback mechanisms",
+       "summary": "Positive and negative feedbacks between forest loss, albedo, carbon release and climate.",
+       "source": "CP6_Disappearing_Green_Canopy_Detailed_Notes.md",
+       "teacher_label": "PART 7, 7.1 Feedback Mechanisms",
+       "source_hints": [
+        "CP6 Disappearing Green Canopy Detailed Notes"
+       ]
+      },
+      {
+       "id": "CP6.5.2",
+       "title": "Impacts of climate change on forests",
+       "summary": "How a changing climate alters rainforest conditions and the distribution of forest biomes.",
+       "source": "CP6_Disappearing_Green_Canopy_Detailed_Notes.md",
+       "teacher_label": "PART 7, 7.2 Impact on Forests",
+       "source_hints": [
+        "CP6 Disappearing Green Canopy Detailed Notes"
+       ]
+      }
+     ]
+    }
+   ],
+   "flags": {
+    "extra_leaves": [
+     {
+      "id": "CP6.2.4",
+      "title": "The carbon cycle",
+      "teacher_note": "Teacher addition. Carbon stores and flows are not an explicit item in the official Module 6 Explanatory Notes, but the module does require the impact of deforestation on climate, and the carbon cycle is the mechanism that earns that mark. Recommend keeping it as the bridge to CP7.",
+      "official_ref": "not named in official Module 6 notes; supports GQ6-9"
+     },
+     {
+      "id": "CP6.4.3",
+      "title": "Biofuels as an alternative",
+      "teacher_note": "Teacher addition. Not an explicit item in the official Module 6 Explanatory Notes. Defensible as a current-affairs extension and a bridge to CP7, but should be flagged to students as enrichment rather than core syllabus.",
+      "official_ref": "not named in official Module 6 notes"
+     },
+     {
+      "id": "CP6.5.1",
+      "title": "Feedback mechanisms",
+      "teacher_note": "Teacher addition. Climate feedback loops belong primarily to Module 7 (Climate Change); here they are a legitimate way of answering the official requirement about the impact of deforestation on climate. Keep as a cross-reference.",
+      "official_ref": "supports GQ6-9"
+     }
+    ],
+    "missing_official": [
+     {
+      "id": "CP6.1.4",
+      "title": "Abiotic and biotic components, energy flow and ecological equilibrium",
+      "summary": "Official GQ2-4 requires the definition of an ecosystem, its abiotic and biotic components, the links and interrelationships between them, energy flow in the ecosystem, and ecological equilibrium — the evidence that a rainforest is complex but fragile. The teacher's note covers structure and the nutrient cycle, but 'abiotic', 'biotic', 'energy flow' and 'equilibrium' do not appear, so the ecosystem concept itself is not explicitly defined.",
+      "official_ref": "C&A Guide Module 6, GQ2-4"
+     },
+     {
+      "id": "CP6.2.5",
+      "title": "Global distribution and the rate of deforestation",
+      "summary": "Official GQ1: the global distribution of tropical rainforests and deforestation in rainforest regions — its rate and conditions. The teacher's note covers deforestation patterns by region (Amazon Basin, Southeast Asia) but not the global distribution of the biome itself, nor the rate and conditions of clearance.",
+      "official_ref": "C&A Guide Module 6, GQ1"
+     },
+     {
+      "id": "CP6.4.4",
+      "title": "Roles of different parties and conflicts of interest",
+      "summary": "Official GQ10-13: the roles played by native people and local dwellers, government officials, private developers and environmentalists in developing and protecting rainforests; the problems of protecting them, such as conflict of interest among these parties, the great debt borne by less developed countries and weak government control; the price of protection and who should pay; and possible compromises between development and conservation. 'Conflict of interest', 'debt' and 'weak government' do not appear in the teacher's note, so the module's titular question — who should pay — is not answered from the notes.",
+      "official_ref": "C&A Guide Module 6, GQ10-13"
+     },
+     {
+      "id": "CP6.4.5",
+      "title": "Afforestation, logging regulation, national parks and natural reserves",
+      "summary": "Official GQ10 names afforestation, regulation on logging activities, and the setting up of national parks and natural reserves as the measures to protect tropical rainforests. The teacher's note has reforestation and sustainable management, but not logging regulation or national parks and natural reserves.",
+      "official_ref": "C&A Guide Module 6, GQ10 explanatory notes"
+     }
+    ]
+   }
+  },
+  {
+   "code": "CP7",
+   "title": "Climate Change – Long-term fluctuation or irreversible trend?",
+   "short_title": "Climate Change",
+   "official_module": "Compulsory Part, Module 7",
+   "verified": false,
+   "official_content_verified": true,
+   "source": "Geography Curriculum and Assessment Guide (Secondary 4-6), CDC+HKEAA, 2007 with updates July 2022",
+   "notes": "Module 7's official guiding questions (GQ1-12) are grouped into the six sub-questions below, regrouping the ten PARTS of the teacher's CP7_Global_Warming_Detailed_Notes.md. Official mapping: GQ1-3 = 1.1-1.2; GQ4-6 = 3.1-3.2; GQ7-9 = 8.1 (heat island and microclimate missing); GQ10-12 = 4.1-4.3, 5.1-5.3, 6.1-6.2, 7.1-7.2. Official case guidance: global-scale examples for climate change, and Hong Kong and the neighbouring region for the local scale.",
+   "subquestions": [
+    {
+     "number": "1",
+     "id": "CP7.1",
+     "title": "Climate system and evidence of global warming",
+     "official_guidance": "Definition of 'weather' and 'climate'; a brief introduction of climate at local, national and global scale; and the evidence that our climate is changing all over the world.",
+     "leaves": [
+      {
+       "id": "CP7.1.1",
+       "title": "Earth's energy balance",
+       "summary": "How solar shortwave radiation is absorbed at the surface and how the Earth radiates heat back, and where that heat is trapped.",
+       "source": "CP7_Global_Warming_Detailed_Notes.md",
+       "teacher_label": "PART 1, 1.1 Earth's Energy Balance",
+       "source_hints": [
+        "CP7 Global Warming Detailed Notes"
+       ]
+      },
+      {
+       "id": "CP7.1.2",
+       "title": "The greenhouse effect",
+       "summary": "The natural greenhouse effect (CO2, H2O, CH4, N2O keeping the Earth at +15°C) and how human activity strengthens it into the enhanced greenhouse effect.",
+       "source": "CP7_Global_Warming_Detailed_Notes.md",
+       "teacher_label": "PART 1, 1.2 Greenhouse Effect",
+       "source_hints": [
+        "CP7 Global Warming Detailed Notes"
+       ]
+      },
+      {
+       "id": "CP7.1.3",
+       "title": "Evidence of global warming",
+       "summary": "Instrumental temperature records, ice-core CO2 and temperature data, and palaeoclimate proxies such as tree rings and coral.",
+       "source": "CP7_Global_Warming_Detailed_Notes.md",
+       "teacher_label": "PART 2 Evidence of Global Warming",
+       "source_hints": [
+        "CP7 Global Warming Detailed Notes"
+       ]
+      }
+     ]
+    },
+    {
+     "number": "2",
+     "id": "CP7.2",
+     "title": "Causes of global warming",
+     "official_guidance": "Greenhouse Effect: the mechanism and the role of human activities in enhancing it; natural and human causes of global warming; and supporting and opposing arguments for global warming being an irreversible trend.",
+     "leaves": [
+      {
+       "id": "CP7.2.1",
+       "title": "Greenhouse gases",
+       "summary": "The main gases and their sources and atmospheric lifetimes — CO2, CH4, N2O, CFCs and HFCs — and how each strengthens the greenhouse effect.",
+       "source": "CP7_Global_Warming_Detailed_Notes.md",
+       "teacher_label": "PART 3, 3.1 Greenhouse Gases",
+       "source_hints": [
+        "CP7 Global Warming Detailed Notes"
+       ]
+      },
+      {
+       "id": "CP7.2.2",
+       "title": "Human activities",
+       "summary": "Fossil fuel combustion and land use change as the main drivers of anthropogenic warming, with the mechanisms each one uses.",
+       "source": "CP7_Global_Warming_Detailed_Notes.md",
+       "teacher_label": "PART 3, 3.2 Human Activities",
+       "source_hints": [
+        "CP7 Global Warming Detailed Notes"
+       ]
+      }
+     ]
+    },
+    {
+     "number": "3",
+     "id": "CP7.3",
+     "title": "Impacts of climate change",
+     "official_guidance": "Consequences of climate change at local and global scale.",
+     "leaves": [
+      {
+       "id": "CP7.3.1",
+       "title": "Physical impacts",
+       "summary": "Sea level rise, extreme weather, ecosystem change and the physical mechanisms behind each.",
+       "source": "CP7_Global_Warming_Detailed_Notes.md",
+       "teacher_label": "PART 4, 4.1 Physical Impacts",
+       "source_hints": [
+        "CP7 Global Warming Detailed Notes"
+       ]
+      },
+      {
+       "id": "CP7.3.2",
+       "title": "Social impacts",
+       "summary": "The consequences for human health, food and water security, and the economy, including who carries the cost.",
+       "source": "CP7_Global_Warming_Detailed_Notes.md",
+       "teacher_label": "PART 4, 4.2 Social Impacts",
+       "source_hints": [
+        "CP7 Global Warming Detailed Notes"
+       ]
+      },
+      {
+       "id": "CP7.3.3",
+       "title": "Regional examples",
+       "summary": "Small island states and the Arctic as the two extremes of vulnerability to climate change.",
+       "source": "CP7_Global_Warming_Detailed_Notes.md",
+       "teacher_label": "PART 4, 4.3 Regional Examples",
+       "source_hints": [
+        "CP7 Global Warming Detailed Notes"
+       ]
+      }
+     ]
+    },
+    {
+     "number": "4",
+     "id": "CP7.4",
+     "title": "Climate change policies",
+     "official_guidance": "A brief review of the complexities of reaching a global agreement, in particular the conflicting views and roles of key players.",
+     "leaves": [
+      {
+       "id": "CP7.4.1",
+       "title": "International agreements",
+       "summary": "The Kyoto Protocol (1997), the Copenhagen Accord (2009) and the Paris Agreement (2015) — what each set out and how the ambition changed.",
+       "source": "CP7_Global_Warming_Detailed_Notes.md",
+       "teacher_label": "PART 5, 5.1 International Agreements",
+       "source_hints": [
+        "CP7 Global Warming Detailed Notes"
+       ]
+      },
+      {
+       "id": "CP7.4.2",
+       "title": "Countries' responses",
+       "summary": "How developed and developing countries have responded differently, and what each response implies for equity.",
+       "source": "CP7_Global_Warming_Detailed_Notes.md",
+       "teacher_label": "PART 5, 5.2 Countries' Responses",
+       "source_hints": [
+        "CP7 Global Warming Detailed Notes"
+       ]
+      },
+      {
+       "id": "CP7.4.3",
+       "title": "Challenges of a global agreement",
+       "summary": "Per capita emissions, the implementation gap, and the obstacles that block a binding global deal.",
+       "source": "CP7_Global_Warming_Detailed_Notes.md",
+       "teacher_label": "PART 5, 5.3 Challenges",
+       "source_hints": [
+        "CP7 Global Warming Detailed Notes"
+       ]
+      }
+     ]
+    },
+    {
+     "number": "5",
+     "id": "CP7.5",
+     "title": "Mitigation and adaptation",
+     "official_guidance": "Mitigation and adaptation measures at local and global levels.",
+     "leaves": [
+      {
+       "id": "CP7.5.1",
+       "title": "Reducing emissions",
+       "summary": "Mitigation across energy, transport, industry and land use, and the mechanism by which each measure cuts emissions.",
+       "source": "CP7_Global_Warming_Detailed_Notes.md",
+       "teacher_label": "PART 6, 6.1 Reducing Emissions",
+       "source_hints": [
+        "CP7 Global Warming Detailed Notes"
+       ]
+      },
+      {
+       "id": "CP7.5.2",
+       "title": "Carbon sequestration",
+       "summary": "Removing carbon from the atmosphere and storing it — reforestation and other sequestration methods — and their limits.",
+       "source": "CP7_Global_Warming_Detailed_Notes.md",
+       "teacher_label": "PART 6, 6.2 Carbon Sequestration",
+       "source_hints": [
+        "CP7 Global Warming Detailed Notes"
+       ]
+      },
+      {
+       "id": "CP7.5.3",
+       "title": "The need for adaptation",
+       "summary": "Why adaptation cannot be substituted for mitigation, and how the two measures complement each other.",
+       "source": "CP7_Global_Warming_Detailed_Notes.md",
+       "teacher_label": "PART 7, 7.1 Need for Adaptation",
+       "source_hints": [
+        "CP7 Global Warming Detailed Notes"
+       ]
+      },
+      {
+       "id": "CP7.5.4",
+       "title": "Adaptation strategies",
+       "summary": "Concrete adaptation in coastal defence, agriculture and water management, at both local and national scale.",
+       "source": "CP7_Global_Warming_Detailed_Notes.md",
+       "teacher_label": "PART 7, 7.2 Adaptation Strategies",
+       "source_hints": [
+        "CP7 Global Warming Detailed Notes"
+       ]
+      }
+     ]
+    },
+    {
+     "number": "6",
+     "id": "CP7.6",
+     "title": "Climate change in Hong Kong",
+     "official_guidance": "Observed climate change in Hong Kong; local scale climate change combining the influence of global warming and urbanisation.",
+     "leaves": [
+      {
+       "id": "CP7.6.1",
+       "title": "Observed trends in Hong Kong",
+       "summary": "Measured trends in temperature, sea level and extreme weather in Hong Kong.",
+       "source": "CP7_Global_Warming_Detailed_Notes.md",
+       "teacher_label": "PART 8, 8.1 Trends",
+       "source_hints": [
+        "CP7 Global Warming Detailed Notes"
+       ]
+      },
+      {
+       "id": "CP7.6.2",
+       "title": "Hong Kong's policy response",
+       "summary": "How Hong Kong is responding to observed climate change.",
+       "source": "CP7_Global_Warming_Detailed_Notes.md",
+       "teacher_label": "PART 8, 8.2 Policies",
+       "source_hints": [
+        "CP7 Global Warming Detailed Notes"
+       ]
+      }
+     ]
+    }
+   ],
+   "flags": {
+    "extra_leaves": [
+     {
+      "id": "CP7.5.2",
+      "title": "Carbon sequestration",
+      "teacher_note": "Teacher addition in emphasis. The official Explanatory Notes use the general term 'mitigation measures'; carbon sequestration is the standard exemplar of that and is fully examinable, but it is not separately named in the official Module 7 notes.",
+      "official_ref": "supports GQ11"
+     },
+     {
+      "id": "CP7.6.2",
+      "title": "Hong Kong climate policy",
+      "teacher_note": "Teacher addition, but directly supported: the official module states that for the local scale teachers should use Hong Kong and the neighbouring region as examples.",
+      "official_ref": "C&A Guide Module 7, case/specific examples"
+     }
+    ],
+    "missing_official": [
+     {
+      "id": "CP7.1.4",
+      "title": "Weather versus climate, and climate at local, national and global scale",
+      "summary": "Official GQ1-2 asks for the definitions of 'weather' and 'climate' and a brief introduction of climate at local, national and global scale. The teacher's note opens on the energy balance and greenhouse effect, so the weather/climate distinction is never set up as a concept and the local/national/global framing is absent.",
+      "official_ref": "C&A Guide Module 7, GQ1-2"
+     },
+     {
+      "id": "CP7.2.3",
+      "title": "Natural versus human causes, and the irreversible-trend debate",
+      "summary": "Official GQ4-6 requires natural and human causes of global warming AND the supporting and opposing arguments on whether global warming is a long-term fluctuation of temperature or an irreversible trend. The words 'fluctuation', 'irreversible' and 'long-term trend' do not occur in the teacher's CP7 notes, so the module's titular evaluative question is unanswered in the notes even though the supporting and opposing material is present.",
+      "official_ref": "C&A Guide Module 7, GQ4-6"
+     },
+     {
+      "id": "CP7.3.4",
+      "title": "Urban climate: the heat island effect and microclimate",
+      "summary": "Official GQ7-9: urban growth and development leading to local climatic variation focusing on the heat island effect; its effects on atmospheric composition, temperature, sunshine, precipitation, humidity and wind; and the contrast between urban and rural climate. 'Heat island' and 'microclimate' do not appear in the teacher's CP7 notes, and the urban-rural comparison is also a required fieldwork element (data loggers, plotting microclimate on a map, scatter diagram against distance from the urban centre).",
+      "official_ref": "C&A Guide Module 7, GQ7-9"
+     },
+     {
+      "id": "CP7.3.5",
+      "title": "Winners and losers of climate change",
+      "summary": "Official GQ10 frames the consequences around winners and losers — sea level, flood frequency, new farming opportunities, health risks, climatic prediction becoming more difficult, and extreme weather events. The teacher's 4.1-4.3 cover the impacts well but not in the winners-and-losers framing the official guide requires, and 'climatic prediction becoming more difficult' is absent.",
+      "official_ref": "C&A Guide Module 7, GQ10 explanatory notes"
+     },
+     {
+      "id": "CP7.4.4",
+      "title": "Conflicting views and roles of key players",
+      "summary": "Official GQ12: the complexities of reaching a global agreement, in particular the conflicting views and roles of key players. The teacher's 5.3 covers per capita emissions and implementation, but not the roles and conflicting views of the key players themselves.",
+      "official_ref": "C&A Guide Module 7, GQ12 explanatory notes"
+     },
+     {
+      "id": "CP7.2.4",
+      "title": "Garbage burning and other named human activities",
+      "summary": "Official GQ4-5 names the specific human activities that enhance the greenhouse effect: deforestation, burning of fossil fuels, garbage burning, emission of chlorofluorocarbons and agriculture. The teacher's note covers fossil fuels, land use change and CFCs, but garbage burning is not mentioned, and it is a standard short-answer example.",
+      "official_ref": "C&A Guide Module 7, GQ4 explanatory notes"
+     }
+    ]
+   }
+  },
+  {
+   "code": "EP1",
+   "title": "Dynamic Earth: the building of Hong Kong",
+   "short_title": "Dynamic Earth",
+   "official_module": "Elective Part, Elective 1 (of 4)",
+   "verified": true,
+   "official_content_verified": true,
+   "source": "Geography Curriculum and Assessment Guide (Secondary 4-6), CDC+HKEAA, 2007 with updates July 2022",
+   "notes": "VERIFIED: the C&A Guide publishes four numbered Topics for this elective (pp.31-33): 1. Earth's structure and processes; 2. Physical landscape of Hong Kong; 3. Processes shaping the physical landscape of Hong Kong; 4. Management of geological resources and geological hazards. These are reproduced verbatim below. IMPORTANT NUMBERING WARNING: the teacher's own note filenames use a different scheme (2.x = rock types, 3.x = internal processes, 4.x = external processes, 5.x = landforms) that does NOT match the official Topic numbers; the scaffold below re-maps every teacher file onto the correct official Topic. Official case: Hong Kong; official time allocation 24 hours.",
+   "subquestions": [
+    {
+     "number": "1",
+     "id": "EP1.1",
+     "title": "Earth's structure and processes",
+     "official_guidance": "Earth systems: interaction between the atmosphere, the lithosphere and the hydrosphere; the internal structure of the Earth and crustal movement; rock cycle and formation (volcanism, sedimentation, metamorphism). Concepts: Earth as a system; Earth structure; Plate Tectonics; Crustal movement; Rock cycle.",
+     "leaves": [
+      {
+       "id": "EP1.1.1",
+       "title": "Rock cycle and rock formation",
+       "summary": "How rock is made and destroyed — the rock cycle and its three routes (volcanism/igneous, sedimentation/sedimentary, metamorphism) — including intrusive versus extrusive igneous formation.",
+       "source": "EP1/EP1_Dynamic_Earth_HK.md; EP1/EP1_Dynamic_Earth_Glossary.md",
+       "teacher_label": "PART 3 (3.1 Igneous Rock Formation); Glossary §1, §8",
+       "source_hints": [
+        "EP1 Dynamic Earth HK"
+       ]
+      }
+     ]
+    },
+    {
+     "number": "2",
+     "id": "EP1.2",
+     "title": "Physical landscape of Hong Kong",
+     "official_guidance": "Geomorphology and geology of Hong Kong — overall landform distribution; rock types and their distribution in Hong Kong; major geological features (folds and faults) in Hong Kong; modification of Hong Kong landscapes by urban development. Concepts: Landform; Rock type; Geological feature; Spatial distribution; Spatial association; Pattern; Impact of urbanisation.",
+     "leaves": [
+      {
+       "id": "EP1.2.1",
+       "title": "Rock types in Hong Kong",
+       "summary": "The distribution of granite and volcanic tuff across Hong Kong, their formation processes, their characteristics, and how they differ.",
+       "source": "EP1/2.1 ROCK TYPES IN HONG KONG.md",
+       "teacher_label": "2.1",
+       "source_hints": [
+        "EP1 Dynamic Earth HK"
+       ]
+      },
+      {
+       "id": "EP1.2.2",
+       "title": "Sedimentary rocks",
+       "summary": "How sedimentary rock forms (deposition, compaction, cementation, lithification), its key features — bedding, stratification, fossils — and its Hong Kong context in the Lai Chi Kok Formation.",
+       "source": "EP1/2.2 Sedimentary Rocks.md",
+       "teacher_label": "2.2",
+       "source_hints": [
+        "EP1 Dynamic Earth HK"
+       ]
+      },
+      {
+       "id": "EP1.2.3",
+       "title": "Metamorphic rocks",
+       "summary": "How metamorphic rock forms and the parent-rock pairs; marble in Hong Kong, solution weathering and the karst landforms it produces, and the Yuen Long marble cavity problem.",
+       "source": "EP1/2.3 Metamorphic Rocks.md",
+       "teacher_label": "2.3",
+       "source_hints": [
+        "EP1 Dynamic Earth HK"
+       ]
+      },
+      {
+       "id": "EP1.2.4",
+       "title": "Folds and faults in Hong Kong",
+       "summary": "Hong Kong's major geological features — the NE-SW fault trend, fault zones as planes of weakness, horsts and grabens — and how faulting has shaped valleys and where people can safely build.",
+       "source": "EP1/3.3 Faults in Hong Kong.md; EP1/EP1 Geological Features in HK (F6 Revision).md",
+       "teacher_label": "3.3; Part A photo bank (Folding, Faulting)",
+       "source_hints": [
+        "EP1 Dynamic Earth HK"
+       ]
+      },
+      {
+       "id": "EP1.2.5",
+       "title": "Hong Kong UNESCO Global Geopark",
+       "summary": "What the Global Geopark is, why its areas are zoned differently, and the debate over whether opening a geopark site to tourism is appropriate.",
+       "source": "EP1/5.3 Hong Kong UNESCO Global Geopark.md",
+       "teacher_label": "5.3",
+       "source_hints": [
+        "EP1 Dynamic Earth HK"
+       ]
+      }
+     ]
+    },
+    {
+     "number": "3",
+     "id": "EP1.3",
+     "title": "Processes shaping the physical landscape of Hong Kong",
+     "official_guidance": "The major internal and external processes shaping the present physical landscape of Hong Kong — internal: folding, faulting, volcanism; external: weathering, erosion, mass wasting. Concepts: Internal process; External process; Spatial association.",
+     "leaves": [
+      {
+       "id": "EP1.3.1",
+       "title": "Internal processes: igneous formation and volcanism",
+       "summary": "How magma and lava cool to form intrusive and extrusive rock, and the volcanic areas of Hong Kong that supply 48% of its rock.",
+       "source": "EP1/EP1_Dynamic_Earth_HK.md",
+       "teacher_label": "PART 3 (3.1, 3.2)",
+       "source_hints": [
+        "2. Internal forces and processes"
+       ]
+      },
+      {
+       "id": "EP1.3.2",
+       "title": "Internal processes: folding and faulting",
+       "summary": "How compression and tension deform the crust into folds and faults, and the resulting landforms in Hong Kong.",
+       "source": "EP1/EP1 Geological Features in HK (F6 Revision).md",
+       "teacher_label": "Part A photo bank (Folding, Faulting, Volcanism)",
+       "source_hints": [
+        "2. Internal forces and processes"
+       ]
+      },
+      {
+       "id": "EP1.3.3",
+       "title": "Weathering",
+       "summary": "Physical weathering (thermal expansion, salt crystallisation and the honeycomb form it produces), chemical weathering (hydrolysis, oxidation, solution) and biological weathering, and why chemical weathering is fast in Hong Kong.",
+       "source": "EP1/4.1 Weathering.md",
+       "teacher_label": "4.1",
+       "source_hints": [
+        "EP1 Dynamic Earth HK"
+       ]
+      },
+      {
+       "id": "EP1.3.4",
+       "title": "Erosion",
+       "summary": "Water erosion from rainsplash through sheetwash, rill, gully and stream erosion, plus wave erosion, and the rill-to-gully-to-valley sequence in Hong Kong.",
+       "source": "EP1/4.2 Erosion.md",
+       "teacher_label": "4.2",
+       "source_hints": [
+        "EP1 Dynamic Earth HK"
+       ]
+      },
+      {
+       "id": "EP1.3.5",
+       "title": "Mass movement",
+       "summary": "Landslide and rockfall — shear stress against shear strength, the factor of safety, the role of water, the triggers and the factors that make Hong Kong slopes unstable.",
+       "source": "EP1/4.3 Mass Movement.md",
+       "teacher_label": "4.3",
+       "source_hints": [
+        "EP1 Dynamic Earth HK"
+       ]
+      }
+     ]
+    },
+    {
+     "number": "4",
+     "id": "EP1.4",
+     "title": "Management of geological resources and geological hazards",
+     "official_guidance": "Geological resources — reclamation materials: sources of materials and their distribution, environmental impact of the extraction of reclamation materials, local example Hong Kong International Airport. Geological hazard — landslides: causes of landslides in Hong Kong including natural and human factors, slope management and landslide prevention (strengthening slopes, restricting development on slopes, maintaining slopes, regular checking of slopes), local example Sham Wan Landslide. Concepts: Geological resource; Geological hazard; People-environment interrelationship; Interaction between physical and human factors.",
+     "leaves": [
+      {
+       "id": "EP1.4.1",
+       "title": "Landslides: causes in Hong Kong",
+       "summary": "Natural causes (heavy rainfall, steep slopes, weak granite and tuff, earthquakes) and human causes (deforestation, slope cutting, construction, poor drainage), with shear stress and factor of safety as the mechanism.",
+       "source": "EP1/4.3 Mass Movement.md; EP1/EP1_Dynamic_Earth_HK.md",
+       "teacher_label": "4.3; PART 6 Slopes & Landslides",
+       "source_hints": [
+        "EP1 Dynamic Earth HK"
+       ]
+      },
+      {
+       "id": "EP1.4.2",
+       "title": "Slope management and landslide prevention",
+       "summary": "Hard engineering (retaining walls, soil nailing, shotcrete, rock bolts), drainage measures (surface channels, weep holes, horizontal drains) and soft engineering (vegetation, bio-engineering), plus the principles of strengthening slopes and restricting development on slopes.",
+       "source": "EP1/EP1_Dynamic_Earth_HK.md; EP1/EP1_Dynamic_Earth_Glossary.md",
+       "teacher_label": "PART 7 Engineering Measures; Glossary §7",
+       "source_hints": [
+        "EP1 Dynamic Earth HK"
+       ]
+      },
+      {
+       "id": "EP1.4.3",
+       "title": "Monitoring and warning in Hong Kong",
+       "summary": "The GEO's slope inspection and warning system, public education, and the high-risk areas of Hong Kong.",
+       "source": "EP1/EP1_Dynamic_Earth_HK.md",
+       "teacher_label": "PART 8 Geological Hazards in HK (8.1, 8.2)",
+       "source_hints": [
+        "EP1 Dynamic Earth HK"
+       ]
+      },
+      {
+       "id": "EP1.4.4",
+       "title": "Hong Kong geological case studies",
+       "summary": "Hong Kong's major landslide history (Po Shan Road, Fei Tsui Road, Yiu Hing Road and others), the fault-zone and groundwater problems of the Central Kowloon Route and Hong Kong West Drainage Tunnel, and the key locations-and-rocks reference table.",
+       "source": "EP1/hk_geology_cases.md; EP1/DBQ_YiuHing_Landslide.md",
+       "teacher_label": "HK Geology case files",
+       "source_hints": [
+        "EP1 Dynamic Earth HK"
+       ]
+      },
+      {
+       "id": "EP1.4.5",
+       "title": "Reclamation and urban development on the landscape",
+       "summary": "How reclamation and urban development have modified Hong Kong's physical landscape and its implications for geological conditions.",
+       "source": "EP1/EP1 Geological Features in HK (F6 Revision).md; EP1/2.3 Metamorphic Rocks.md",
+       "teacher_label": "'What living on a fault zone actually costs'; Yuen Long trap / Tung Chung reclamation",
+       "source_hints": [
+        "EP1 Dynamic Earth HK"
+       ]
+      }
+     ]
+    }
+   ],
+   "flags": {
+    "extra_leaves": [
+     {
+      "id": "EP1.2.5",
+      "title": "Hong Kong UNESCO Global Geopark",
+      "teacher_note": "Teacher addition. Geoparks and geotourism are not named in the official Topics 1-4 Explanatory Notes. The Geopark's sites are genuine Hong Kong geological landscape examples and the topic is commonly examined, but it should be presented to students as enrichment rather than core syllabus.",
+      "official_ref": "not named in official Topics 1-4"
+     },
+     {
+      "id": "EP1.3.6",
+      "title": "Slope stability and the factor of safety",
+      "teacher_note": "Teacher addition in emphasis. The shear stress / shear strength / factor of safety framework is not an official named item, but it is the mechanism that explains the official requirement for 'causes of landslides in Hong Kong, including natural and human factors'. Keep.",
+      "official_ref": "supports Topic 4 landslide causes"
+     }
+    ],
+    "missing_official": [
+     {
+      "id": "EP1.1.2",
+      "title": "The Earth as a system and its internal structure",
+      "summary": "Official Topic 1 requires Earth systems — the interaction between the atmosphere, the lithosphere and the hydrosphere — the internal structure of the Earth, and crustal movement, with the Concepts 'Earth as a system', 'Earth structure', 'Plate Tectonics' and 'Crustal movement'. None of 'earth system', 'atmosphere', 'lithosphere', 'hydrosphere', 'internal structure' or 'crustal movement' appears anywhere in the teacher's EP1 notes, which start at rock formation. This is the single biggest gap in the elective.",
+      "official_ref": "C&A Guide EP1 Topic 1, explanatory notes and Concepts column"
+     },
+     {
+      "id": "EP1.4.6",
+      "title": "Geological resources: reclamation materials and the Hong Kong International Airport",
+      "summary": "Official Topic 4 requires sources and distribution of reclamation materials, the environmental impact of extracting them, and the local example of the Hong Kong International Airport (Chek Lap Kok), plus a fieldwork-style task of gathering information on the types and distribution of reclamation materials. 'Airport' and 'Chek Lap Kok' do not appear in the teacher's EP1 notes; 'reclamation' appears only incidentally in the marble/Yuen Long and Tseung Kwan O notes, and there is no note on quarrying or on the environmental impact of extraction.",
+      "official_ref": "C&A Guide EP1 Topic 4, geological resources"
+     },
+     {
+      "id": "EP1.4.7",
+      "title": "Sham Wan landslide as the official local example",
+      "summary": "Official Topic 4 names the Sham Wan landslide as the local example and the skills column requires a field trip to Sham Wan to identify the measures adopted to prevent landslides from happening again. The teacher's case file covers Po Shan Road, Fei Tsui Road, Yiu Hing Road, Shek O Road and others, but Sham Wan is absent.",
+      "official_ref": "C&A Guide EP1 Topic 4, geological hazard"
+     },
+     {
+      "id": "EP1.2.6",
+      "title": "Modification of Hong Kong landscapes by urban development",
+      "summary": "Official Topic 2 requires students to overlay the urban development map on the relief map (or use GIS) to show how urban development has modified Hong Kong's landscape, with 'Impact of urbanisation' listed as a required Concept. The teacher's EP1 notes treat the relationship mainly as geology constraining development (CKR, West Drainage Tunnel, the Yuen Long marble problem) rather than urban development as a modifier of the physical landscape.",
+      "official_ref": "C&A Guide EP1 Topic 2"
+     }
+    ],
+    "numbering_warning": "The teacher's EP1 filenames (2.x = rock types, 3.x = internal processes, 4.x = external processes, 5.x = landforms) do not match the official Topic numbering. Official Topic 2 covers rock types AND geological features; official Topic 3 covers processes (internal and external). Use the ids in this scaffold, not the teacher's file prefixes, when linking pages."
+   }
+  }
+ ],
+ "meta": {
+  "subject": "HKDSE Geography (Category A)",
+  "framework": "2027 HKDSE Geography Assessment Framework (revised Jun 2025)",
+  "primary_source": "Geography Curriculum and Assessment Guide (Secondary 4-6), CDC+HKEAA, 2007 with updates July 2022",
+  "framework_source": "https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/geog/2027hkdse-e-geog-rev.pdf",
+  "guide_source": "https://www.edb.gov.hk/attachment/en/curriculum-development/kla/pshe/Geography%20C&A%20Guide%202022-eng.pdf",
+  "supplement_source": "https://www.edb.gov.hk/attachment/en/curriculum-development/kla/pshe/supplementary_notes-final-eng.pdf",
+  "leaf_id_scheme": "Leaf id = <CODE>.<subquestion number>.<leaf index>, e.g. CP1.1.1. Sub-question id = <CODE>.<subquestion number>, e.g. CP1.1. Leaf ids are unique and hierarchical so a note page can be filed under its sub-question without collisions.",
+  "verification_note": "Official module titles, guiding questions, Explanatory Notes and Concepts for all seven compulsory modules and all four Topics of elective EP1 were read directly from the C&A Guide PDF. The 2027 Assessment Framework changes only Paper 1 Section B fieldwork (module options reduced to two: Managing Coastal Environment and Building a Sustainable City) and does not alter any module content structure. 'verified' is true only where the official document itself publishes numbered, titled sub-questions (EP1 Topics 1-4). For CP1-CP7 the official guide publishes guiding questions rather than titled sub-questions, so 'verified' is false and each elective's 'notes' field states the official mapping; 'official_content_verified' is true for all eight."
+ }
+}

@@ -1,0 +1,19 @@
+# Secrets — never commit real values
+.env
+.env.*
+!.env.example
+
+# Generated artefacts that may contain content derived from the teacher's vault
+# (comment these in only if the repository is to stay code-only).
+# data/kb.json
+# data/mc_bank.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# OS
+.DS_Store
