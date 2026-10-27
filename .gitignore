@@ -8,6 +8,11 @@
 # data/kb.json
 # data/mc_bank.json
 
+# HKEAA's own briefing deck PDFs. They are published free for teachers, but
+# they are HKEAA's files, not ours to redistribute. Fetch them locally with
+# scripts/fetch_decks.py; only the rendered slide crops are committed.
+data/papers/
+
 # Python
 __pycache__/
 *.py[cod]

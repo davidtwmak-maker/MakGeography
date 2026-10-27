@@ -277,6 +277,7 @@
     $("#mcList").innerHTML = qs.map((q, i) => `
       <div class="mc-q" data-i="${i}">
         ${q.official ? `<div class="mc-official">Official HKDSE exam question &middot; ${esc(q.source || "")}</div>` : ""}
+        ${q.slide_image ? `<details class="mc-slide"><summary>Show the original HKEAA slide</summary><img src="/slide-crops/${esc(q.slide_image.split("/").pop())}" alt="HKEAA examination briefing slide for this question" loading="lazy"><span class="credit">Source: HKEAA examination briefing. &copy; HKEAA.</span></details>` : ""}
         <div class="stem">${md(q.stem)}</div>
         <div class="mc-opts">${q.options.map((o, j) =>
           `<button class="mc-opt" data-k="${String.fromCharCode(65 + j)}"><span class="k">${String.fromCharCode(65 + j)}</span><span>${esc(o)}</span></button>`).join("")}

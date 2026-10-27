@@ -115,6 +115,33 @@ button.primary:disabled{opacity:.55;cursor:not-allowed}
 
 
 /* ---------- official exam questions ---------- */
+.mc-slide {
+  margin: 0 0 10px;
+  border: 1px solid #d9e2e6;
+  border-radius: 7px;
+  background: #f7fafb;
+  padding: 7px 10px;
+}
+.mc-slide summary {
+  cursor: pointer;
+  font-size: .85rem;
+  font-weight: 600;
+  color: #2c5570;
+}
+.mc-slide img {
+  display: block;
+  max-width: 100%;
+  margin-top: 9px;
+  border: 1px solid #dde5e9;
+  border-radius: 5px;
+}
+.mc-slide .credit {
+  display: block;
+  margin-top: 5px;
+  font-size: .72rem;
+  color: #6d7c85;
+}
+
 .mc-official {
   display: inline-block;
   font-size: .74rem;

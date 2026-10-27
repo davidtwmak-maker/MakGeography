@@ -21,7 +21,12 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from fastapi import FastAPI, Form, HTTPException, Request
-from fastapi.responses import HTMLResponse, JSONResponse, RedirectResponse
+from fastapi.responses import (
+    FileResponse,
+    HTMLResponse,
+    JSONResponse,
+    RedirectResponse,
+)
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from pydantic import BaseModel
@@ -360,6 +365,16 @@ def api_mc(request: Request, topic: str | None = None, limit: int = 20,
             q["id"] = f"{q.get('subtopic', 'gen')}-" + hashlib.sha1(
                 q.get("stem", "").encode()).hexdigest()[:8]
     return {"questions": qs[:limit], "total": len(qs)}
+
+
+@app.get("/slide-crops/{name}")
+def slide_crop(request: Request, name: str):
+    """The HKEAA briefing slide images for the official exam questions."""
+    require_auth(request)
+    path = (DATA_DIR / "slide_crops" / name).resolve()
+    if not path.is_file() or path.parent != (DATA_DIR / "slide_crops").resolve():
+        raise HTTPException(status_code=404, detail="Not found.")
+    return FileResponse(path, media_type="image/png")
 
 
 # --------------------------- static + error -------------------------------

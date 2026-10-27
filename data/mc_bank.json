@@ -22,7 +22,8 @@
    "subtopic_title": "Refer to the figure below, which shows a section of coast.",
    "source": "HKEAA Paper 1 2024 Item 9 (official examination briefing)",
    "id": "hkeaa-2024-q9",
-   "official": true
+   "official": true,
+   "slide_image": "slide_crops/hkeaa-2024-p18.png"
   },
   {
    "paper": "Paper 1",
@@ -46,6 +47,40 @@
    "subtopic_title": "Which of the following are possible consequences caused by t",
    "source": "HKEAA Paper 1 2024 Item 20 (official examination briefing)",
    "id": "hkeaa-2024-q20",
+   "official": true,
+   "slide_image": "slide_crops/hkeaa-2024-p21.png"
+  },
+  {
+   "paper": "Paper 1",
+   "year": 2022,
+   "q": 11,
+   "subtopic": "CP3.1.1",
+   "stem": "Plant X is still a major iron and steel plant in China because __________. (1) there is agglomeration of heavy industries (2) its production facilities have been upgraded (3) there is abundant cheap labour supply",
+   "options": [
+    "(1) and (2) only",
+    "(1) and (3) only",
+    "(2) and (3) only",
+    "(1), (2) and (3)"
+   ],
+   "answer": "A",
+   "explanation": "HKEAA briefing note: candidates choosing Option B might have mistaken iron and steel industry in China as being labour intensive. Iron and steel production is capital- and technology-intensive, so the reasons are the agglomeration of heavy industries and upgraded production facilities.",
+   "subtopic_leaf": "CP3.2.1",
+   "option_percent": [
+    "31%",
+    "32%",
+    "8%",
+    "29%"
+   ],
+   "source_url": "https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/geog/GEOG-PowerPoint-2022.pdf",
+   "source_page": 17,
+   "found_by": "vision",
+   "slide_image": "slide_crops/hkeaa-2022-p17.png",
+   "topics": [
+    "CP3"
+   ],
+   "subtopic_title": "Plant X is still a major iron and steel plant in China becau",
+   "source": "HKEAA Paper 1 2022 Item 11 (official examination briefing)",
+   "id": "hkeaa-2022-q11",
    "official": true
   },
   {
@@ -70,7 +105,8 @@
    "subtopic_title": "Which of the following manufacturing activities is raw mater",
    "source": "HKEAA Paper 1 2024 Item 12 (official examination briefing)",
    "id": "hkeaa-2024-q12",
-   "official": true
+   "official": true,
+   "slide_image": "slide_crops/hkeaa-2024-p19.png"
   },
   {
    "paper": "Paper 1",
@@ -94,6 +130,73 @@
    "subtopic_title": "Refer to the photograph below, which shows land use X in Hon",
    "source": "HKEAA Paper 1 2024 Item 13 (official examination briefing)",
    "id": "hkeaa-2024-q13",
+   "official": true,
+   "slide_image": "slide_crops/hkeaa-2024-p20.png"
+  },
+  {
+   "paper": "Paper 1",
+   "year": 2026,
+   "q": 14,
+   "subtopic": "CP4.3.1",
+   "stem": "Which of the following are the possible problems brought about by urban encroachment in Hong Kong? (1) a loss of farmland (2) a disruption of rural lifestyle (3) a higher risk of flooding",
+   "options": [
+    "(1) and (2) only",
+    "(1) and (3) only",
+    "(2) and (3) only",
+    "(1), (2) and (3)"
+   ],
+   "answer": "D",
+   "explanation": "HKEAA briefing note: candidates were unable to recognise the impact of replacing rural vegetation and farmland with built-up areas, roads and other impermeable surfaces. Such surfaces prevent infiltration and raise runoff, increasing flood risk, while the loss of farmland disrupts rural lifestyles.",
+   "subtopic_leaf": "CP4.4.1",
+   "option_percent": [
+    "55%",
+    "6%",
+    "5%",
+    "35%"
+   ],
+   "source_url": "https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/geog/GEOG-PowerPoint-2026.pdf",
+   "source_page": 12,
+   "found_by": "vision",
+   "slide_image": "slide_crops/hkeaa-2026-p12.png",
+   "topics": [
+    "CP4"
+   ],
+   "subtopic_title": "Which of the following are the possible problems brought abo",
+   "source": "HKEAA Paper 1 2026 Item 14 (official examination briefing)",
+   "id": "hkeaa-2026-q14",
+   "official": true
+  },
+  {
+   "paper": "Paper 1",
+   "year": 2025,
+   "q": 5,
+   "subtopic": "CP4.4.1",
+   "stem": "Which of the following is/are the location advantage(s) of the Kai Tak Cruise Terminal (1269 and 1369)? (1) proximity to Kwun Tong Typhoon Shelter (2) accessible by railway (3) deep waterfront",
+   "options": [
+    "(2) only",
+    "(3) only",
+    "(1) and (2) only",
+    "(1) and (3) only"
+   ],
+   "answer": "B",
+   "explanation": "HKEAA briefing note: candidates might have shown a misunderstanding of the nature and function of a cruise terminal. Large cruise ships require deep water frontage to berth, so the deep waterfront is the location advantage; a typhoon shelter and railway access are not advantages for a cruise terminal.",
+   "subtopic_leaf": "CP4.4.1",
+   "option_percent": [
+    "8%",
+    "18%",
+    "24%",
+    "51%"
+   ],
+   "source_url": "https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/geog/GEOG-PowerPoint-2025.pdf",
+   "source_page": 14,
+   "found_by": "vision",
+   "slide_image": "slide_crops/hkeaa-2025-p14.png",
+   "topics": [
+    "CP4"
+   ],
+   "subtopic_title": "Which of the following is/are the location advantage(s) of t",
+   "source": "HKEAA Paper 1 2025 Item 5 (official examination briefing)",
+   "id": "hkeaa-2025-q5",
    "official": true
   },
   {
@@ -118,6 +221,139 @@
    "subtopic_title": "Which of the following statements about grid square 0979 are",
    "source": "HKEAA Paper 1 2024 Item 6 (official examination briefing)",
    "id": "hkeaa-2024-q6",
+   "official": true,
+   "slide_image": "slide_crops/hkeaa-2024-p16.png"
+  },
+  {
+   "paper": "Paper 1",
+   "year": 2022,
+   "q": 16,
+   "subtopic": "CP5.3.1",
+   "stem": "Which of the following are the possible consequences of inappropriate use of chemical fertilizer in Southern California? (1) underground water pollution (2) eutrophication (3) salinization of soil",
+   "options": [
+    "(1) and (2) only",
+    "(1) and (3) only",
+    "(2) and (3) only",
+    "(1), (2) and (3)"
+   ],
+   "answer": "D",
+   "explanation": "HKEAA briefing note: candidates choosing this option might be unaware of the rising contaminated underground water towards the surface during the hot dry summer in Southern California. Fertilizer chemicals leach into groundwater, cause eutrophication through nutrient runoff, and build up salts in the soil.",
+   "subtopic_leaf": "CP5.3.1",
+   "option_percent": [
+    "52%",
+    "9%",
+    "11%",
+    "28%"
+   ],
+   "source_url": "https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/geog/GEOG-PowerPoint-2022.pdf",
+   "source_page": 19,
+   "found_by": "vision",
+   "slide_image": "slide_crops/hkeaa-2022-p19.png",
+   "topics": [
+    "CP5"
+   ],
+   "subtopic_title": "Which of the following are the possible consequences of inap",
+   "source": "HKEAA Paper 1 2022 Item 16 (official examination briefing)",
+   "id": "hkeaa-2022-q16",
+   "official": true
+  },
+  {
+   "paper": "Paper 1",
+   "year": 2026,
+   "q": 16,
+   "subtopic": "CP5.6.1",
+   "stem": "Which of the following is/are the example(s) of human input in organic farming? (1) sunlight (2) crop residues (3) genetically modified seeds",
+   "options": [
+    "(1) only",
+    "(2) only",
+    "(1) and (2) only",
+    "(2) and (3) only"
+   ],
+   "answer": "B",
+   "explanation": "HKEAA briefing note: organic farming emphasises natural processes. Sunlight is a natural input, not a human one. Crop residues used as compost or mulch are a human input, whereas genetically modified seeds are excluded from organic farming.",
+   "subtopic_leaf": "CP5.6.1",
+   "option_percent": [
+    "3%",
+    "36%",
+    "3%",
+    "58%"
+   ],
+   "source_url": "https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/geog/GEOG-PowerPoint-2026.pdf",
+   "source_page": 13,
+   "found_by": "vision",
+   "slide_image": "slide_crops/hkeaa-2026-p13.png",
+   "topics": [
+    "CP5"
+   ],
+   "subtopic_title": "Which of the following is/are the example(s) of human input ",
+   "source": "HKEAA Paper 1 2026 Item 16 (official examination briefing)",
+   "id": "hkeaa-2026-q16",
+   "official": true
+  },
+  {
+   "paper": "Paper 1",
+   "year": 2022,
+   "q": 17,
+   "subtopic": "CP6.2.1",
+   "stem": "What are the major causes of the high rate of deforestation in the rainforest in the Brazilian Amazon? (1) high population growth (2) poverty (3) rapid urbanisation",
+   "options": [
+    "(1) and (2) only",
+    "(1) and (3) only",
+    "(2) and (3) only",
+    "(1), (2) and (3)"
+   ],
+   "answer": "A",
+   "explanation": "HKEAA briefing note: candidates choosing this option might have mistaken urban development, which cleared a much smaller area of Amazon forest when compared with economic development, as a 'major' cause.",
+   "subtopic_leaf": "CP6.2.1",
+   "option_percent": [
+    "29%",
+    "16%",
+    "7%",
+    "48%"
+   ],
+   "source_url": "https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/geog/GEOG-PowerPoint-2022.pdf",
+   "source_page": 20,
+   "found_by": "vision",
+   "slide_image": "slide_crops/hkeaa-2022-p20.png",
+   "topics": [
+    "CP6"
+   ],
+   "subtopic_title": "What are the major causes of the high rate of deforestation ",
+   "source": "HKEAA Paper 1 2022 Item 17 (official examination briefing)",
+   "id": "hkeaa-2022-q17",
+   "official": true
+  },
+  {
+   "paper": "Paper 1",
+   "year": 2025,
+   "q": 20,
+   "subtopic": "CP7.1.3",
+   "stem": "How does tree planting mitigate the urban heat island effect? (1) increases evapotranspiration (2) absorbs more carbon dioxide (3) provides more tree shading",
+   "options": [
+    "(1) and (2) only",
+    "(1) and (3) only",
+    "(2) and (3) only",
+    "(1), (2) and (3)"
+   ],
+   "answer": "B",
+   "explanation": "HKEAA briefing note: candidates might have confused urban heat island effect with global warming. Trees cool the local urban environment through evapotranspiration and by shading surfaces from solar radiation. Absorbing carbon dioxide mitigates global warming, not the local urban heat island.",
+   "subtopic_leaf": "CP7.3.1",
+   "option_percent": [
+    "24%",
+    "15%",
+    "22%",
+    "38%"
+   ],
+   "source_url": "https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/geog/GEOG-PowerPoint-2025.pdf",
+   "source_page": 16,
+   "found_by": "vision",
+   "slide_image": "slide_crops/hkeaa-2025-p16.png",
+   "topics": [
+    "CP7"
+   ],
+   "subtopic_title": "How does tree planting mitigate the urban heat island effect",
+   "source": "HKEAA Paper 1 2025 Item 20 (official examination briefing)",
+   "id": "hkeaa-2025-q20",
    "official": true
   },
   {
@@ -142,7 +378,8 @@
    "subtopic_title": "Which of the following is the ecological impact brought abou",
    "source": "HKEAA Paper 1 2025 Item 19 (official examination briefing)",
    "id": "hkeaa-2025-q19",
-   "official": true
+   "official": true,
+   "slide_image": "slide_crops/hkeaa-2025-p15.png"
   },
   {
    "stem": "Which statement correctly describes Earth’s three main layers and their compositions?",
