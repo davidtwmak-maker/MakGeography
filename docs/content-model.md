@@ -105,6 +105,29 @@ every question is grounded in the notes the students are studying. When a
 call times out on a long prompt, it retries with a tighter context, which
 comes back reliably.
 
+### MC coverage of the scaffold
+
+Every one of the 126 curriculum leaves has at least one question, so a
+student can drill any heading in the official structure - not only the
+parts the notes happen to reach. The bank is 264 questions: 12 verified
+official HKEAA items and 252 generated from the notes.
+
+Three rules came out of building it:
+
+- **A redundant option label is stripped at parse time.** The model
+  sometimes writes "A. " itself, and the interface adds one too, so the
+  option read "A. A. Citywide average air temperature ...". The official
+  HKEAA items keep their own `(1) only` style, which is correct.
+- **A question must test the geography, not the syllabus.** One generated
+  item asked which items appeared in the Module 2 consequences list. The
+  generator prompt now says to write a Section A style question on the
+  heading, never a question about what a list contains.
+- **A longer reasoning budget, not a smaller prompt, fixes a timeout.**
+  MiniMax-M3 reasons at length, and on a big context it used the whole
+  token budget thinking and returned no text. The third attempt gives it
+  MORE room to finish with a tighter context, which is what actually
+  works.
+
 ## Mistake tracking
 
 Browser-local, keyed by sub-topic rather than elective:

@@ -20,6 +20,7 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import re
 import json
 import re
 import sys
@@ -57,10 +58,14 @@ preparing for the HKDSE Geography exam.
 Write {n} multiple-choice questions on: {topic} — {subtopic}
 {subtopic_desc}
 
+The topic is a CURRICULUM HEADING, not a list to be recalled. Write a
+question that tests the geography it names, as if you were setting a
+HKDSE Section A item. Never ask which items appear in a syllabus list.
+
 Reference material (use ONLY this):
----
+----
 {context}
----
+----
 
 Rules for every question:
 - Exactly 4 options labelled A, B, C, D. Exactly one is correct.
@@ -78,6 +83,19 @@ Return ONLY a JSON array, no prose, no markdown fence:
   {{"stem": "...", "options": ["...","...","...","..."], "answer": "A", \
 "explanation": "...", "subtopic": "{subtopic_id}"}}
 ]"""
+
+
+def strip_option_label(text: str, index: int) -> str:
+    """Remove a leading "A." style label from an option.
+
+    The model sometimes writes the label itself even though the interface
+    adds one. Left in, the option reads "A. A. Citywide average ...".
+    """
+    text = text.strip()
+    m = re.match(r"^([A-Da-d])\s*[\).:]\s*(.+)$", text, flags=re.S)
+    if m and m.group(1).upper() == chr(ord("A") + index):
+        return m.group(2).strip()
+    return text
 
 
 def load_kb():
@@ -118,13 +136,22 @@ def generate_for(kb, llm, code: str, subtopic: str, title: str, n: int,
     # Two attempts. The first gives the model the full context; if that call
     # times out (a long prompt on a busy endpoint), retry with a tighter
     # context and a smaller token budget, which reliably comes back.
+    # Three attempts, each with a smaller context and a bigger reasoning
+    # budget. The model reasons at length, so a tight context can still
+    # spend the whole budget thinking and return no text at all - giving it
+    # MORE room to finish is what fixes that, not less.
     attempts = [
         (prompt, 2600),
         (GEN_PROMPT.format(n=1, topic=code, subtopic=subtopic,
                             subtopic_desc=subtopic_desc or title,
                             context=llm.build_context(results, max_chars=2200),
                             subtopic_id=subtopic),
-         1200),
+         4000),
+        (GEN_PROMPT.format(n=1, topic=code, subtopic=subtopic,
+                            subtopic_desc=subtopic_desc or title,
+                            context=llm.build_context(results, max_chars=1200),
+                            subtopic_id=subtopic),
+         8000),
     ]
     res = {"ok": False, "error": "not attempted"}
     for attempt_prompt, max_tokens in attempts:
@@ -142,7 +169,8 @@ def generate_for(kb, llm, code: str, subtopic: str, title: str, n: int,
         if not isinstance(it, dict):
             continue
         stem = (it.get("stem") or "").strip()
-        opts = [str(o).strip() for o in (it.get("options") or [])]
+        opts = [strip_option_label(str(o), j) for j, o
+                in enumerate(it.get("options") or [])]
         ans = (it.get("answer") or "").strip().upper()
         if not stem or len(opts) != 4 or ans not in "ABCD":
             continue
@@ -197,10 +225,14 @@ def main():
             official = []
 
     # Map each official item onto the curriculum leaf it belongs to.
+    # The verified catalogue already carries a correct `subtopic` for every
+    # item (see data/hkeaa_NOTES.md for how each was checked against its
+    # source slide). This table exists only to correct an item whose tag was
+    # mis-assigned during extraction, so it is deliberately small - anything
+    # not listed keeps the tag it was verified with.
     SUBTOPIC_HINTS = {
-        (2023, 2): "CP4.4.1", (2024, 6): "CP4.4.1", (2024, 9): "CP2.2.4",
         (2024, 12): "CP3.1.1", (2024, 13): "CP4.3.1", (2024, 20): "CP7.1.1",
-        (2025, 19): "CP7.1.3",
+        (2024, 9): "CP2.2.4", (2025, 19): "CP7.1.3",
     }
 
     for q in official:

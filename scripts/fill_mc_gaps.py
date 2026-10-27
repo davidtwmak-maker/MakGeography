@@ -27,13 +27,21 @@ def load_kb():
 
 
 def curriculum_leaves():
+    """Every curriculum leaf with the official description that goes with it.
+
+    The description matters: a title like "Braided rivers and channel
+    networks" is too thin to prompt good questions on its own, whereas
+    the official summary names the landform, the process and the case
+    study, which is what the question needs.
+    """
     cur = json.loads((DATA / "curriculum.json").read_text(encoding="utf-8"))
     leaves = []
     for el in cur["electives"]:
         code = el.get("code", "")
         for sq in el.get("subquestions", []):
             for leaf in sq.get("leaves", []):
-                leaves.append((code, leaf.get("id", ""), leaf.get("title", "")))
+                leaves.append((code, leaf.get("id", ""), leaf.get("title", ""),
+                               leaf.get("summary", "")))
     return leaves
 
 
@@ -61,14 +69,16 @@ def main():
 
     for rnd in range(args.rounds):
         have = {q.get("subtopic") for q in questions}
-        gaps = [(c, i, t) for c, i, t in curriculum_leaves() if i and i not in have]
+        gaps = [(c, i, t, d) for c, i, t, d in curriculum_leaves()
+                if i and i not in have]
         if not gaps:
             print("no gaps left")
             break
         print(f"\n=== round {rnd + 1}: {len(gaps)} gap(s) ===")
-        for code, lid, title in gaps:
+        for code, lid, title, _ in gaps:
             print(f"  {lid:12s} {title[:50]}")
-            got = bmc.generate_for(kb, llm, code, lid, title, args.per_subtopic)
+            got = bmc.generate_for(kb, llm, code, lid, title,
+                                   args.per_subtopic, _)
             if got:
                 questions.extend(got)
                 print(f"    -> {len(got)}")

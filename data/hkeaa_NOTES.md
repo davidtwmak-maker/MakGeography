@@ -96,7 +96,7 @@ used as standalone drilling questions.
 |---|---|---|---|
 | 2023 | 2 | GEOG-PowerPoint-2023.pdf p.22 | Requires the Hong Kong map extract (the item asks about the symbol at grid reference 513114). The four options are map symbols — car park, green minibus terminus, restricted access, LPG filling station — and are meaningless without the map. |
 | 2025 | 3 | GEOG-PowerPoint-2025.pdf p.13 | Requires the map extract: the average gradient of a footpath between two grid references needs the contour heights and the measured distance. |
-| 2024 | 6 | GEOG-PowerPoint-2024.pdf p.16 | Requires the map extract (grid square 0979, Wong Chuk Yeung). All three statements are about what the map shows. |
+| 2024 | 6 | GEOG-PowerPoint-2024.pdf p.16 | Requires the map extract (grid square 0979, Wong Chuk Yeung). All three statements are about what the map shows. Removed from `hkeaa_mc_raw.json` as well, so a rebuild of the bank cannot reintroduce it - the raw catalogue holds only the items verified complete. |
 | 2024 | 9 | GEOG-PowerPoint-2024.pdf p.18 | Requires the coastal diagram — **but the diagram IS printed on this slide**, so this item was recovered and is now included. |
 | 2024 | 13 | GEOG-PowerPoint-2024.pdf p.20 | Requires the photograph of land use X — **but the photograph IS printed on this slide**, so this item was recovered and is now included. |
 | 2022 | 13 | GEOG-PowerPoint-2022.pdf p.18 | Requires the three population-density graphs — **but the graphs ARE printed on this slide**, so this item was recovered and is now included. |

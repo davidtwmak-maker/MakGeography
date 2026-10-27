@@ -83,26 +83,6 @@
  {
   "paper": "Paper 1",
   "year": 2024,
-  "q": 6,
-  "elect": "CP4",
-  "stem": "Which of the following statements about grid square 0979 are correct? (1) There is cultivated land located below 280 m. (2) People can freely access Wong Chuk Yeung by cars. (3) There is electricity supply.",
-  "options": [
-   "(1) and (2) only",
-   "(1) and (3) only",
-   "(2) and (3) only",
-   "(1), (2) and (3)"
-  ],
-  "answer": "B",
-  "explanation": "",
-  "source_page": 16,
-  "source_url": "https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/geog/GEOG-PowerPoint-2024.pdf",
-  "subtopic": "CP4.3.1",
-  "found_by": "geometry",
-  "slide_image": "slide_crops/hkeaa-2024-p16.png"
- },
- {
-  "paper": "Paper 1",
-  "year": 2024,
   "q": 9,
   "elect": "CP2",
   "stem": "Refer to the figure below, which shows a section of coast.",
