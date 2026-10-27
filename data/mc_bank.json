@@ -2,23 +2,147 @@
  "questions": [
   {
    "paper": "Paper 1",
-   "year": 2019,
-   "subtopic": "CP1.4",
-   "stem": "Which of the following best describes the movement of the Nazca Plate?",
+   "year": 2024,
+   "q": 9,
+   "stem": "Refer to the figure below, which shows a section of coast.",
    "options": [
-    "Eastward away from the East Pacific Rise",
-    "Westward towards the Pacific Plate",
-    "Northwestward beneath the South American Plate",
-    "Southwestward towards the Antarctic Plate"
+    "south-west",
+    "west",
+    "north",
+    "east"
    ],
-   "answer": "C",
-   "explanation": "The Nazca Plate moves northwestwards and is subducted beneath the South American Plate at a destructive (convergent) boundary, producing the Andes.",
+   "answer": "D",
+   "explanation": "",
+   "source_page": 18,
+   "source_url": "https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/geog/GEOG-PowerPoint-2024.pdf",
    "topics": [
-    "CP1"
+    "CP2"
    ],
-   "subtopic_title": "CP1.4",
-   "source": "HKEAA Paper 1 2019 (public past paper)",
-   "id": "CP1.4-0e5ef4fb"
+   "subtopic": "CP2.2.4",
+   "subtopic_title": "Refer to the figure below, which shows a section of coast.",
+   "source": "HKEAA Paper 1 2024 Item 9 (official examination briefing)",
+   "id": "hkeaa-2024-q9",
+   "official": true
+  },
+  {
+   "paper": "Paper 1",
+   "year": 2024,
+   "q": 20,
+   "stem": "Which of the following are possible consequences caused by the rise of the global mean sea level? (1) an increase in wave erosion (2) the resettlement of the people who live in coastal lowlands (3) higher frequency of tropical cyclones",
+   "options": [
+    "(1) and (2) only",
+    "(1) and (3) only",
+    "(2) and (3) only",
+    "(1), (2) and (3)"
+   ],
+   "answer": "A",
+   "explanation": "",
+   "source_page": 21,
+   "source_url": "https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/geog/GEOG-PowerPoint-2024.pdf",
+   "topics": [
+    "CP2"
+   ],
+   "subtopic": "CP7.1.1",
+   "subtopic_title": "Which of the following are possible consequences caused by t",
+   "source": "HKEAA Paper 1 2024 Item 20 (official examination briefing)",
+   "id": "hkeaa-2024-q20",
+   "official": true
+  },
+  {
+   "paper": "Paper 1",
+   "year": 2024,
+   "q": 12,
+   "stem": "Which of the following manufacturing activities is raw material-oriented?",
+   "options": [
+    "bread making",
+    "cheese making",
+    "car manufacturing",
+    "newspaper printing"
+   ],
+   "answer": "B",
+   "explanation": "",
+   "source_page": 19,
+   "source_url": "https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/geog/GEOG-PowerPoint-2024.pdf",
+   "topics": [
+    "CP3"
+   ],
+   "subtopic": "CP3.1.1",
+   "subtopic_title": "Which of the following manufacturing activities is raw mater",
+   "source": "HKEAA Paper 1 2024 Item 12 (official examination briefing)",
+   "id": "hkeaa-2024-q12",
+   "official": true
+  },
+  {
+   "paper": "Paper 1",
+   "year": 2024,
+   "q": 13,
+   "stem": "Refer to the photograph below, which shows land use X in Hong Kong.",
+   "options": [
+    "(1) only",
+    "(1) and (2) only",
+    "(2) and (3) only",
+    "(1), (2) and (3)"
+   ],
+   "answer": "D",
+   "explanation": "",
+   "source_page": 20,
+   "source_url": "https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/geog/GEOG-PowerPoint-2024.pdf",
+   "topics": [
+    "CP4"
+   ],
+   "subtopic": "CP4.3.1",
+   "subtopic_title": "Refer to the photograph below, which shows land use X in Hon",
+   "source": "HKEAA Paper 1 2024 Item 13 (official examination briefing)",
+   "id": "hkeaa-2024-q13",
+   "official": true
+  },
+  {
+   "paper": "Paper 1",
+   "year": 2024,
+   "q": 6,
+   "stem": "Which of the following statements about grid square 0979 are correct? (1) There is cultivated land located below 280 m. (2) People can freely access Wong Chuk Yeung by cars. (3) There is electricity supply.",
+   "options": [
+    "(1) and (2) only",
+    "(1) and (3) only",
+    "(2) and (3) only",
+    "(1), (2) and (3)"
+   ],
+   "answer": "B",
+   "explanation": "",
+   "source_page": 16,
+   "source_url": "https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/geog/GEOG-PowerPoint-2024.pdf",
+   "topics": [
+    "CP4"
+   ],
+   "subtopic": "CP4.4.1",
+   "subtopic_title": "Which of the following statements about grid square 0979 are",
+   "source": "HKEAA Paper 1 2024 Item 6 (official examination briefing)",
+   "id": "hkeaa-2024-q6",
+   "official": true
+  },
+  {
+   "paper": "Paper 1",
+   "year": 2025,
+   "q": 19,
+   "stem": "Which of the following is the ecological impact brought about by climate change?",
+   "options": [
+    "southward migration of biomes in the Southern",
+    "intensified coral bleaching in the polar region",
+    "more frequent extreme rainfall in Hong Kong",
+    "fewer forest fires in the Amazon rainforest"
+   ],
+   "answer": "A",
+   "explanation": "",
+   "source_page": 15,
+   "source_url": "https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/geog/GEOG-PowerPoint-2025.pdf",
+   "topics": [
+    "CP7"
+   ],
+   "subtopic": "CP7.1.3",
+   "subtopic_title": "Which of the following is the ecological impact brought abou",
+   "source": "HKEAA Paper 1 2025 Item 19 (official examination briefing)",
+   "id": "hkeaa-2025-q19",
+   "official": true
   },
   {
    "stem": "Which statement correctly describes Earth’s three main layers and their compositions?",
@@ -93,24 +217,6 @@
    "id": "CP1.1.2-0866b7ff"
   },
   {
-   "stem": "At a convergent (destructive) plate boundary, two plates move towards one another. Which combination of features is most likely to develop?",
-   "options": [
-    "A. Volcanoes, trenches and earthquakes",
-    "B. Mid-ocean ridges, new crust and undersea volcanoes",
-    "C. Fault lines, shallow frequent earthquakes and no volcanoes",
-    "D. Separation of plates, crust creation and divergent ridges"
-   ],
-   "answer": "A",
-   "explanation": "A is correct because convergent boundaries involve collision, commonly producing volcanoes, trenches and earthquakes. Option B describes a divergent (constructive) boundary, where plates move apart and new crust forms.",
-   "topics": [
-    "CP1"
-   ],
-   "subtopic": "CP1.1.3",
-   "subtopic_title": "Plate boundaries",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "CP1.1.3-ae910a00"
-  },
-  {
    "stem": "A transform plate boundary is shown where two plates slide horizontally past one another. Which statement best describes this boundary?",
    "options": [
     "A. Plates collide, destroying crust and producing volcanoes and trenches",
@@ -127,6 +233,24 @@
    "subtopic_title": "Plate boundaries",
    "source": "MakGeography notes (AI-generated)",
    "id": "CP1.1.3-83937695"
+  },
+  {
+   "stem": "At a convergent (destructive) plate boundary, two plates move towards one another. Which combination of features is most likely to develop?",
+   "options": [
+    "A. Volcanoes, trenches and earthquakes",
+    "B. Mid-ocean ridges, new crust and undersea volcanoes",
+    "C. Fault lines, shallow frequent earthquakes and no volcanoes",
+    "D. Separation of plates, crust creation and divergent ridges"
+   ],
+   "answer": "A",
+   "explanation": "A is correct because convergent boundaries involve collision, commonly producing volcanoes, trenches and earthquakes. Option B describes a divergent (constructive) boundary, where plates move apart and new crust forms.",
+   "topics": [
+    "CP1"
+   ],
+   "subtopic": "CP1.1.3",
+   "subtopic_title": "Plate boundaries",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "CP1.1.3-ae910a00"
   },
   {
    "stem": "A crustal block moves downward relative to an adjacent block along a fracture. Which force and fault type best explain this movement?",
@@ -165,24 +289,6 @@
    "id": "CP1.2.1-74cd9fe0"
   },
   {
-   "stem": "Which option correctly distinguishes the effects of tensional and compressional forces on rock?",
-   "options": [
-    "Tensional forces break and displace rock, while compressional forces squeeze, bend and wrinkle rock layers.",
-    "Tensional forces squeeze, bend and wrinkle rock layers, while compressional forces break and displace rock.",
-    "Both types of force primarily bend rock layers without breaking or displacing them.",
-    "Tensional forces build new rock layers, while compressional forces remove them through erosion."
-   ],
-   "answer": "A",
-   "explanation": "Tensional forces cause rock to break and displace, whereas compressional forces squeeze rock layers, making them bend and wrinkle. Option B reverses these effects, while C and D incorrectly describe processes that do not distinguish the two forces.",
-   "topics": [
-    "CP1"
-   ],
-   "subtopic": "CP1.2.2",
-   "subtopic_title": "Internal processes",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "CP1.2.2-2c58cee3"
-  },
-  {
    "stem": "Figure 1 shows a cross-section of rock layers bent into an arch curving upward. Which option correctly identifies the fold and the force responsible?",
    "options": [
     "Syncline; compressional force",
@@ -199,6 +305,24 @@
    "subtopic_title": "Internal processes",
    "source": "MakGeography notes (AI-generated)",
    "id": "CP1.2.2-8fa80b0a"
+  },
+  {
+   "stem": "Which option correctly distinguishes the effects of tensional and compressional forces on rock?",
+   "options": [
+    "Tensional forces break and displace rock, while compressional forces squeeze, bend and wrinkle rock layers.",
+    "Tensional forces squeeze, bend and wrinkle rock layers, while compressional forces break and displace rock.",
+    "Both types of force primarily bend rock layers without breaking or displacing them.",
+    "Tensional forces build new rock layers, while compressional forces remove them through erosion."
+   ],
+   "answer": "A",
+   "explanation": "Tensional forces cause rock to break and displace, whereas compressional forces squeeze rock layers, making them bend and wrinkle. Option B reverses these effects, while C and D incorrectly describe processes that do not distinguish the two forces.",
+   "topics": [
+    "CP1"
+   ],
+   "subtopic": "CP1.2.2",
+   "subtopic_title": "Internal processes",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "CP1.2.2-2c58cee3"
   },
   {
    "stem": "Figure 1 shows folded rock layers in cross-section. The layers in the middle curve upwards, while those on either side dip away from the centre. Which fold is at the centre?",
@@ -273,22 +397,40 @@
    "id": "CP1.2.4-6cdada85"
   },
   {
-   "stem": "Two oceanic plates move towards each other at a convergent boundary. The older, denser plate subducts beneath the younger plate. Which landform is most likely to form?",
+   "stem": "A volcanic eruption occurs along a long crack in the Earth's crust. Which combination best describes this eruption?",
    "options": [
-    "A volcanic island arc arranged parallel to the trench",
-    "A continental fold mountain range formed by crustal compression",
-    "A volcanic mountain range rising on a continental plate",
-    "A deep V-shaped ocean trench without volcanic islands"
+    "A. A vent eruption producing usually explosive activity",
+    "B. A fissure eruption through a single central opening",
+    "C. A fissure eruption producing fluid basaltic lava",
+    "D. A vent eruption forming mainly from ejected volcanic ash"
    ],
-   "answer": "A",
-   "explanation": "At an oceanic–oceanic convergent boundary, subduction generates magma that rises to form an arc-shaped chain of volcanic islands. A fold mountain range without subduction is characteristic of continental–continental collision, not oceanic–oceanic collision.",
+   "answer": "C",
+   "explanation": "A fissure eruption occurs along linear cracks and generally produces fluid basaltic lava through effusive activity. Option A is incorrect because a single central opening and frequent explosivity are characteristic of a vent eruption.",
    "topics": [
     "CP1"
    ],
-   "subtopic": "CP1.3.1",
-   "subtopic_title": "Convergent plate boundaries",
+   "subtopic": "CP1.2.5",
+   "subtopic_title": "Volcanism",
    "source": "MakGeography notes (AI-generated)",
-   "id": "CP1.3.1-36dc46f2"
+   "id": "CP1.2.5-784b5cdd"
+  },
+  {
+   "stem": "The Hawaiian Islands formed above a stationary mantle plume as the Pacific Plate moved northwest. Which statement correctly describes the island chain?",
+   "options": [
+    "A. The youngest island is in the northwest and the oldest is over the hot spot",
+    "B. All the islands formed simultaneously when the Pacific Plate passed over the hot spot",
+    "C. The islands are the oldest in the northwest and the youngest in the southeast",
+    "D. The hot spot moved northwest together with the Pacific Plate"
+   ],
+   "answer": "C",
+   "explanation": "As the Pacific Plate moves northwest over a stationary hot spot, new volcanoes form above the plume while older volcanoes move away and become extinct. Thus, the Emperor Seamounts in the northwest are older, while the Big Island over the hot spot is youngest.",
+   "topics": [
+    "CP1"
+   ],
+   "subtopic": "CP1.2.5",
+   "subtopic_title": "Volcanism",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "CP1.2.5-def072ed"
   },
   {
    "stem": "An oceanic plate moves towards a continental plate. Which sequence correctly describes the subduction process and the landforms produced?",
@@ -307,6 +449,24 @@
    "subtopic_title": "Convergent plate boundaries",
    "source": "MakGeography notes (AI-generated)",
    "id": "CP1.3.1-9201d9f4"
+  },
+  {
+   "stem": "Two oceanic plates move towards each other at a convergent boundary. The older, denser plate subducts beneath the younger plate. Which landform is most likely to form?",
+   "options": [
+    "A volcanic island arc arranged parallel to the trench",
+    "A continental fold mountain range formed by crustal compression",
+    "A volcanic mountain range rising on a continental plate",
+    "A deep V-shaped ocean trench without volcanic islands"
+   ],
+   "answer": "A",
+   "explanation": "At an oceanic–oceanic convergent boundary, subduction generates magma that rises to form an arc-shaped chain of volcanic islands. A fold mountain range without subduction is characteristic of continental–continental collision, not oceanic–oceanic collision.",
+   "topics": [
+    "CP1"
+   ],
+   "subtopic": "CP1.3.1",
+   "subtopic_title": "Convergent plate boundaries",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "CP1.3.1-36dc46f2"
   },
   {
    "stem": "At the Mid-Atlantic Ridge, which sequence best explains how new oceanic crust is formed?",
@@ -417,6 +577,26 @@
    "id": "CP1.3.4-6e47102e"
   },
   {
+   "paper": "Paper 1",
+   "year": 2019,
+   "subtopic": "CP1.4",
+   "stem": "Which of the following best describes the movement of the Nazca Plate?",
+   "options": [
+    "Eastward away from the East Pacific Rise",
+    "Westward towards the Pacific Plate",
+    "Northwestward beneath the South American Plate",
+    "Southwestward towards the Antarctic Plate"
+   ],
+   "answer": "C",
+   "explanation": "The Nazca Plate moves northwestwards and is subducted beneath the South American Plate at a destructive (convergent) boundary, producing the Andes.",
+   "topics": [
+    "CP1"
+   ],
+   "subtopic_title": "CP1.4",
+   "source": "HKEAA Paper 1 2019 (public past paper)",
+   "id": "CP1.4-0e5ef4fb"
+  },
+  {
    "stem": "A volcano has steep sides of about 30° and alternating layers of lava and ash. Which type is it?",
    "options": [
     "Shield volcano",
@@ -453,22 +633,40 @@
    "id": "CP1.4.1-97bee955"
   },
   {
-   "stem": "Which observation most strongly indicates that a submarine earthquake has generated a tsunami?",
+   "stem": "At a transform plate boundary, why are earthquakes generally strong and frequent?",
    "options": [
-    "The seabed moves horizontally along a fault.",
-    "The seabed moves vertically, pushing the water above it upwards or downwards.",
-    "Magma erupts through a single opening on the seafloor.",
-    "Rock debris falls from a coastal cliff into the ocean."
+    "Plates move apart slowly, so there is little stress accumulation and only small earthquakes.",
+    "Plates collide or subduct, causing massive strain to accumulate before a very powerful release.",
+    "Plates slide horizontally past each other; friction locks them, builds stress, and sudden releases produce frequent earthquakes.",
+    "Plates move apart rapidly, causing shallow earthquakes of moderate intensity but little stress accumulation."
    ],
-   "answer": "B",
-   "explanation": "A tsunami-generating earthquake requires vertical seabed movement, which pushes the overlying water and generates waves. Horizontal movement does not cause a tsunami, while the other processes describe volcanic eruptions and landslides.",
+   "answer": "C",
+   "explanation": "At transform boundaries, constantly grinding plates become locked by friction, so stress builds and is released suddenly, causing strong and frequent earthquakes. Option B describes convergent boundaries, where collision or subduction accumulates strain.",
    "topics": [
     "CP1"
    ],
-   "subtopic": "CP1.4.3",
-   "subtopic_title": "Tsunamis",
+   "subtopic": "CP1.4.2",
+   "subtopic_title": "Earthquakes",
    "source": "MakGeography notes (AI-generated)",
-   "id": "CP1.4.3-1fb90e76"
+   "id": "CP1.4.2-f911ed46"
+  },
+  {
+   "stem": "Which statement correctly describes the relationship between an earthquake's focus, epicentre and seismic waves?",
+   "options": [
+    "The focus is on the surface directly above the epicentre, and seismic waves originate there.",
+    "The focus is underground, the epicentre is directly above it, and seismic waves travel outward from the focus.",
+    "The focus and epicentre are the same underground point, and seismic waves form only along the fault line.",
+    "The focus is the crack where movement occurs, while the epicentre is where strain begins."
+   ],
+   "answer": "B",
+   "explanation": "The focus is the underground point where the earthquake starts, while the epicentre is the surface point directly above it. Seismic waves travel outward from the focus; option D wrongly confuses the focus with the fault line and strain.",
+   "topics": [
+    "CP1"
+   ],
+   "subtopic": "CP1.4.2",
+   "subtopic_title": "Earthquakes",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "CP1.4.2-94900ef9"
   },
   {
    "stem": "After a submarine earthquake, which sequence best describes how a tsunami warning is communicated to the public?",
@@ -489,22 +687,22 @@
    "id": "CP1.4.3-a66f896d"
   },
   {
-   "stem": "Which sequence correctly explains how an earthquake early warning system provides advance notice of damaging shaking?",
+   "stem": "Which observation most strongly indicates that a submarine earthquake has generated a tsunami?",
    "options": [
-    "Detect P-waves → calculate the earthquake's location and magnitude → issue an alert before S-waves arrive",
-    "Detect S-waves → calculate the earthquake's location and magnitude → issue an alert after surface shaking begins",
-    "Measure gas emissions → detect ground deformation → issue an alert before volcanic tremors occur",
-    "Observe a tsunami at sea → issue an alert → evacuate people to coastal shelters"
+    "The seabed moves horizontally along a fault.",
+    "The seabed moves vertically, pushing the water above it upwards or downwards.",
+    "Magma erupts through a single opening on the seafloor.",
+    "Rock debris falls from a coastal cliff into the ocean."
    ],
-   "answer": "A",
-   "explanation": "P-waves travel faster and are less damaging than S-waves, so detecting them allows warnings seconds before the damaging S-waves arrive. Option B is wrong because it reverses the sequence: warning after S-waves arrive would provide no useful advance notice.",
+   "answer": "B",
+   "explanation": "A tsunami-generating earthquake requires vertical seabed movement, which pushes the overlying water and generates waves. Horizontal movement does not cause a tsunami, while the other processes describe volcanic eruptions and landslides.",
    "topics": [
     "CP1"
    ],
-   "subtopic": "CP1.4.4",
-   "subtopic_title": "Hazard management",
+   "subtopic": "CP1.4.3",
+   "subtopic_title": "Tsunamis",
    "source": "MakGeography notes (AI-generated)",
-   "id": "CP1.4.4-f3700918"
+   "id": "CP1.4.3-1fb90e76"
   },
   {
    "stem": "Which combination represents the widest effective approach to reducing tsunami losses through land-use planning, preparedness and building measures?",
@@ -523,6 +721,24 @@
    "subtopic_title": "Hazard management",
    "source": "MakGeography notes (AI-generated)",
    "id": "CP1.4.4-0439629f"
+  },
+  {
+   "stem": "Which sequence correctly explains how an earthquake early warning system provides advance notice of damaging shaking?",
+   "options": [
+    "Detect P-waves → calculate the earthquake's location and magnitude → issue an alert before S-waves arrive",
+    "Detect S-waves → calculate the earthquake's location and magnitude → issue an alert after surface shaking begins",
+    "Measure gas emissions → detect ground deformation → issue an alert before volcanic tremors occur",
+    "Observe a tsunami at sea → issue an alert → evacuate people to coastal shelters"
+   ],
+   "answer": "A",
+   "explanation": "P-waves travel faster and are less damaging than S-waves, so detecting them allows warnings seconds before the damaging S-waves arrive. Option B is wrong because it reverses the sequence: warning after S-waves arrive would provide no useful advance notice.",
+   "topics": [
+    "CP1"
+   ],
+   "subtopic": "CP1.4.4",
+   "subtopic_title": "Hazard management",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "CP1.4.4-f3700918"
   },
   {
    "stem": "Figure 1 shows two adjacent drainage basins separated by a line. Rainwater collects within each basin, tributaries join the main river, and the river eventually enters the sea. What is the separating line?",
@@ -633,24 +849,6 @@
    "id": "CP2.1.3-25fe22d4"
   },
   {
-   "stem": "Figure 1 shows a river channel bordered by raised, sediment-built embankments. The embankments stand above the flat land on both sides of the river. Which landform is shown?",
-   "options": [
-    "A. Levee",
-    "B. Floodplain",
-    "C. Delta",
-    "D. Oxbow lake"
-   ],
-   "answer": "A",
-   "explanation": "A levee is a natural embankment formed by sediment buildup along the river bank, standing above the floodplain. A floodplain is the flat land beside the channel rather than the raised embankment itself.",
-   "topics": [
-    "CP2"
-   ],
-   "subtopic": "CP2.1.4",
-   "subtopic_title": "Fluvial landforms",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "CP2.1.4-c6012e71"
-  },
-  {
    "stem": "Figure 1 shows a former river meander cut off from the main channel. A lake occupies the abandoned meander on a flat floodplain, where deposition has occurred. Which landform is shown?",
    "options": [
     "A. Oxbow lake",
@@ -669,22 +867,22 @@
    "id": "CP2.1.4-8d37d09c"
   },
   {
-   "stem": "A flood-prone urban river urgently needs measures that take effect immediately and provide long-lasting protection. Which approach is most appropriate?",
+   "stem": "Figure 1 shows a river channel bordered by raised, sediment-built embankments. The embankments stand above the flat land on both sides of the river. Which landform is shown?",
    "options": [
-    "A Raise levees and construct flood walls",
-    "B Restore wetlands and floodplain management",
-    "C Afforest catchments to slow surface runoff",
-    "D Install forecasting, public alerts and evacuation plans"
+    "A. Levee",
+    "B. Floodplain",
+    "C. Delta",
+    "D. Oxbow lake"
    ],
    "answer": "A",
-   "explanation": "Levees and flood walls are hard-engineering measures, which take effect immediately and are generally long-lasting. The other options are softer approaches: restoration and afforestation act gradually, while early warning helps people respond but does not directly reduce flooding.",
+   "explanation": "A levee is a natural embankment formed by sediment buildup along the river bank, standing above the floodplain. A floodplain is the flat land beside the channel rather than the raised embankment itself.",
    "topics": [
     "CP2"
    ],
-   "subtopic": "CP2.1.5",
-   "subtopic_title": "River management",
+   "subtopic": "CP2.1.4",
+   "subtopic_title": "Fluvial landforms",
    "source": "MakGeography notes (AI-generated)",
-   "id": "CP2.1.5-7b77c196"
+   "id": "CP2.1.4-c6012e71"
   },
   {
    "stem": "A community seeks a relatively lower-cost strategy that works with natural river processes and accepts regular maintenance. Which combination is most suitable?",
@@ -705,22 +903,58 @@
    "id": "CP2.1.5-e8830faa"
   },
   {
-   "stem": "A rocky coast now contains a sea cliff, wave-cut platform, cave, arch, isolated sea stack and stump. Which sequence best shows the usual development of these coastal erosional landforms?",
+   "stem": "A flood-prone urban river urgently needs measures that take effect immediately and provide long-lasting protection. Which approach is most appropriate?",
    "options": [
-    "Sea cliff → wave-cut platform → cave → arch → stack → stump",
-    "Sea cliff → cave → wave-cut platform → arch → stack → stump",
-    "Wave-cut platform → sea cliff → cave → arch → stack → stump",
-    "Sea cliff → wave-cut platform → arch → cave → stack → stump"
+    "A Raise levees and construct flood walls",
+    "B Restore wetlands and floodplain management",
+    "C Afforest catchments to slow surface runoff",
+    "D Install forecasting, public alerts and evacuation plans"
    ],
    "answer": "A",
-   "explanation": "Continued wave erosion retreats the sea cliff and leaves a wave-cut platform; caves then enlarge into arches, stacks and finally stumps. Option B is incorrect because the wave-cut platform forms as the cliff retreats, before the cave develops into an arch.",
+   "explanation": "Levees and flood walls are hard-engineering measures, which take effect immediately and are generally long-lasting. The other options are softer approaches: restoration and afforestation act gradually, while early warning helps people respond but does not directly reduce flooding.",
    "topics": [
     "CP2"
    ],
-   "subtopic": "CP2.2.2",
-   "subtopic_title": "Coastal landforms",
+   "subtopic": "CP2.1.5",
+   "subtopic_title": "River management",
    "source": "MakGeography notes (AI-generated)",
-   "id": "CP2.2.2-6a813f58"
+   "id": "CP2.1.5-7b77c196"
+  },
+  {
+   "stem": "Which pair of conditions and beach outcome correctly describes constructive waves?",
+   "options": [
+    "Low, gentle waves; sediment is deposited and the beach is built.",
+    "High, powerful waves; sediment is deposited and the beach is built.",
+    "Low, gentle waves; sand is removed from the beach.",
+    "High, powerful waves; waves break more gently and build the beach."
+   ],
+   "answer": "A",
+   "explanation": "Constructive waves are low and gentle, so they deposit sediment and build beaches. Option B describes destructive waves, which are high and powerful and erode beaches.",
+   "topics": [
+    "CP2"
+   ],
+   "subtopic": "CP2.2.1",
+   "subtopic_title": "Wave processes",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "CP2.2.1-807eec8b"
+  },
+  {
+   "stem": "Winds blow steadily across a long fetch before reaching a coastal area. What is the likely effect on wave energy?",
+   "options": [
+    "Wave energy is low because energy is lost over a long fetch.",
+    "Wave energy is high because both fetch and wind speed increase wave energy.",
+    "Wave energy is unchanged because only wind speed affects wave energy.",
+    "Wave energy is high because a shorter fetch and stronger winds transfer more energy."
+   ],
+   "answer": "B",
+   "explanation": "Wave energy increases with both fetch and wind speed, so strong winds travelling over a long stretch of water produce energetic waves. Option C is incorrect because fetch also affects wave energy.",
+   "topics": [
+    "CP2"
+   ],
+   "subtopic": "CP2.2.1",
+   "subtopic_title": "Wave processes",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "CP2.2.1-270a70ab"
   },
   {
    "stem": "A narrow ridge of deposited sediment connects the mainland to an offshore island. Name this landform and the process responsible for forming it.",
@@ -739,6 +973,24 @@
    "subtopic_title": "Coastal landforms",
    "source": "MakGeography notes (AI-generated)",
    "id": "CP2.2.2-61081da2"
+  },
+  {
+   "stem": "A rocky coast now contains a sea cliff, wave-cut platform, cave, arch, isolated sea stack and stump. Which sequence best shows the usual development of these coastal erosional landforms?",
+   "options": [
+    "Sea cliff → wave-cut platform → cave → arch → stack → stump",
+    "Sea cliff → cave → wave-cut platform → arch → stack → stump",
+    "Wave-cut platform → sea cliff → cave → arch → stack → stump",
+    "Sea cliff → wave-cut platform → arch → cave → stack → stump"
+   ],
+   "answer": "A",
+   "explanation": "Continued wave erosion retreats the sea cliff and leaves a wave-cut platform; caves then enlarge into arches, stacks and finally stumps. Option B is incorrect because the wave-cut platform forms as the cliff retreats, before the cave develops into an arch.",
+   "topics": [
+    "CP2"
+   ],
+   "subtopic": "CP2.2.2",
+   "subtopic_title": "Coastal landforms",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "CP2.2.2-6a813f58"
   },
   {
    "stem": "Figure 1 shows a beach where waves approach obliquely. The swash carries sand up the beach at an angle, while the backwash moves down the beach under gravity. Which movement best describes the resulting sediment transport?",
@@ -777,24 +1029,6 @@
    "id": "CP2.2.3-194f8c59"
   },
   {
-   "stem": "A Hong Kong coastal community wants to reduce wave attack and interrupt sediment moving along the shore. Which measures perform these functions?",
-   "options": [
-    "A: Sea wall and groyne",
-    "B: Breakwater and revetment",
-    "C: Groyne and breakwater",
-    "D: Revetment and sea wall"
-   ],
-   "answer": "A",
-   "explanation": "A sea wall prevents wave attack, while a groyne interrupts longshore drift. Breakwaters absorb wave energy, whereas revetments are sloped stone or concrete defences, so options B and D do not match the stated functions.",
-   "topics": [
-    "CP2"
-   ],
-   "subtopic": "CP2.2.4",
-   "subtopic_title": "Coastal management",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "CP2.2.4-8c55ce7d"
-  },
-  {
    "stem": "A Hong Kong coast faces erosion, storm-surge flooding and sea-level rise. Which statement best evaluates using sea walls together with beach nourishment?",
    "options": [
     "A: Sea walls provide immediate protection, while beach nourishment is environmentally friendly but needs regular maintenance; both may involve high costs.",
@@ -813,22 +1047,22 @@
    "id": "CP2.2.4-42cb7498"
   },
   {
-   "stem": "Under the progressive principle, a coastal facility can be improved in stages as conditions change. Which design response best reflects this approach while accounting for climate change?",
+   "stem": "A Hong Kong coastal community wants to reduce wave attack and interrupt sediment moving along the shore. Which measures perform these functions?",
    "options": [
-    "Include projected sea-level rise in the design now, allowing greater resilience and future upgrades.",
-    "Use present-day sea level only, because progressive improvement can address later sea-level rise.",
-    "Delay all protective works until sea level has risen by about 1.2 metres.",
-    "Adopt a fixed facility height based on current conditions, with no provision for later changes."
+    "A: Sea wall and groyne",
+    "B: Breakwater and revetment",
+    "C: Groyne and breakwater",
+    "D: Revetment and sea wall"
    ],
    "answer": "A",
-   "explanation": "The progressive principle accommodates changing conditions, while Hong Kong’s design requirements include projected sea-level rise of about 1.2 metres by 2100 under a high-emission scenario. Option B is incorrect because ignoring this rise in the initial design would weaken the facility’s future resilience.",
+   "explanation": "A sea wall prevents wave attack, while a groyne interrupts longshore drift. Breakwaters absorb wave energy, whereas revetments are sloped stone or concrete defences, so options B and D do not match the stated functions.",
    "topics": [
     "CP2"
    ],
-   "subtopic": "CP2.2.5",
-   "subtopic_title": "Managing coastal environment",
+   "subtopic": "CP2.2.4",
+   "subtopic_title": "Coastal management",
    "source": "MakGeography notes (AI-generated)",
-   "id": "CP2.2.5-a9c3624e"
+   "id": "CP2.2.4-8c55ce7d"
   },
   {
    "stem": "A Hong Kong coastal area is vulnerable to flooding. Which option correctly applies the three-pronged approach and classifies coastal engineering measures?",
@@ -849,22 +1083,22 @@
    "id": "CP2.2.5-ebaf3c06"
   },
   {
-   "stem": "Which option correctly matches a notable Hong Kong coastal landform with its location?",
+   "stem": "Under the progressive principle, a coastal facility can be improved in stages as conditions change. Which design response best reflects this approach while accounting for climate change?",
    "options": [
-    "A High Island — hexagonal rock columns",
-    "B Ninepin Group — hexagonal rock columns",
-    "C Sai Kung Peninsula — largest island in Hong Kong",
-    "D Lantau — volcanic island group"
+    "Include projected sea-level rise in the design now, allowing greater resilience and future upgrades.",
+    "Use present-day sea level only, because progressive improvement can address later sea-level rise.",
+    "Delay all protective works until sea level has risen by about 1.2 metres.",
+    "Adopt a fixed facility height based on current conditions, with no provision for later changes."
    ],
    "answer": "A",
-   "explanation": "High Island is renowned for its hexagonal rock columns. The main distractor is incorrect because the Ninepin Group is a group of volcanic islands, while Lantau is Hong Kong's largest island.",
+   "explanation": "The progressive principle accommodates changing conditions, while Hong Kong’s design requirements include projected sea-level rise of about 1.2 metres by 2100 under a high-emission scenario. Option B is incorrect because ignoring this rise in the initial design would weaken the facility’s future resilience.",
    "topics": [
     "CP2"
    ],
-   "subtopic": "CP2.2.6",
-   "subtopic_title": "Hong Kong coastal case studies",
+   "subtopic": "CP2.2.5",
+   "subtopic_title": "Managing coastal environment",
    "source": "MakGeography notes (AI-generated)",
-   "id": "CP2.2.6-b98f2497"
+   "id": "CP2.2.5-a9c3624e"
   },
   {
    "stem": "A Hong Kong coastal area uses seawalls and beach nourishment to reduce erosion and flooding risk. Which evaluation best reflects the effectiveness of these measures?",
@@ -885,22 +1119,58 @@
    "id": "CP2.2.6-b50d663d"
   },
   {
-   "stem": "Which option correctly states the dominant location factors shaping China's iron and steel industry from pre-1949 to the 2020s?",
+   "stem": "Which option correctly matches a notable Hong Kong coastal landform with its location?",
    "options": [
-    "A. Pre-1949: materials/ports; 1949–78: materials and planning, with defence setting the inland bias; post-1978: export markets and incentives; WDS: policy/infrastructure; 2020s: energy, compliance and ports",
-    "B. Pre-1949: defence; 1949–78: defence at each site; post-1978: cheap labour; WDS: export markets; 2020s: raw materials alone",
-    "C. Pre-1949: cheap labour; 1949–78: coastal ports; post-1978: defence; WDS: foreign capital; 2020s: cheap labour",
-    "D. Pre-1949: automation; 1949–78: export markets; post-1978: defence; WDS: raw materials only; 2020s: coastal location and compliance"
+    "A High Island — hexagonal rock columns",
+    "B Ninepin Group — hexagonal rock columns",
+    "C Sai Kung Peninsula — largest island in Hong Kong",
+    "D Lantau — volcanic island group"
    ],
    "answer": "A",
-   "explanation": "A correctly distinguishes each period: defence explains the inland direction after 1949, not the choice of individual steel centres. B is wrong because raw materials and state planning determined those sites, while cheap labour did not dominate post-1978 or 2020s location.",
+   "explanation": "High Island is renowned for its hexagonal rock columns. The main distractor is incorrect because the Ninepin Group is a group of volcanic islands, while Lantau is Hong Kong's largest island.",
+   "topics": [
+    "CP2"
+   ],
+   "subtopic": "CP2.2.6",
+   "subtopic_title": "Hong Kong coastal case studies",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "CP2.2.6-b98f2497"
+  },
+  {
+   "stem": "After China’s Reform and Opening, why did export-oriented manufacturing concentrate in Special Economic Zones such as Shenzhen?",
+   "options": [
+    "Policy incentives attracted foreign investment, while coastal port access lowered the cost of exporting products.",
+    "Nearby iron ore and coal reduced transport costs because these raw materials are bulky and lose weight.",
+    "Low wages were the only major advantage, and Special Economic Zone status was unrelated to industrial location.",
+    "Military contracts during the Cold War guaranteed factories in these zones a continuing supply of government orders."
+   ],
+   "answer": "A",
+   "explanation": "Special Economic Zones combined policy incentives with access to export ports, helping attract foreign investment and reduce export transport costs. Option C overstates the role of cheap labour because capital and labour are footloose, while policy and market access determine the created advantage.",
    "topics": [
     "CP3"
    ],
-   "subtopic": "CP3.2.1",
-   "subtopic_title": "Industrial development in China",
+   "subtopic": "CP3.1.1",
+   "subtopic_title": "Industrial location factors",
    "source": "MakGeography notes (AI-generated)",
-   "id": "CP3.2.1-4c2dac03"
+   "id": "CP3.1.1-00e050a0"
+  },
+  {
+   "stem": "Which explanation best shows how a historical factor can keep an established defence industry in a particular location?",
+   "options": [
+    "The firm won military contracts during the Cold War, and continued government orders support remaining at its established base.",
+    "The firm is close to iron ore and coal because these bulky materials lose weight during transport, reducing production costs.",
+    "The industry is footloose, so the firm can relocate easily whenever another location offers lower wages.",
+    "The firm stays in an industrial park because government subsidies reduce the cost of its land and facilities."
+   ],
+   "answer": "A",
+   "explanation": "Military contracts secured during the Cold War are a historical location factor that can create industrial inertia, explaining why the industry remains at an established base. Government subsidies in option D may also influence location, but they do not explain the specific historical factor described.",
+   "topics": [
+    "CP3"
+   ],
+   "subtopic": "CP3.1.1",
+   "subtopic_title": "Industrial location factors",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "CP3.1.1-049a5fec"
   },
   {
    "stem": "A new electric arc furnace steelworks opens in coastal China, while some inland mills decline. Which explanation best matches the technology-driven shift of the 2020s?",
@@ -919,6 +1189,24 @@
    "subtopic_title": "Industrial development in China",
    "source": "MakGeography notes (AI-generated)",
    "id": "CP3.2.1-0658fd4f"
+  },
+  {
+   "stem": "Which option correctly states the dominant location factors shaping China's iron and steel industry from pre-1949 to the 2020s?",
+   "options": [
+    "A. Pre-1949: materials/ports; 1949–78: materials and planning, with defence setting the inland bias; post-1978: export markets and incentives; WDS: policy/infrastructure; 2020s: energy, compliance and ports",
+    "B. Pre-1949: defence; 1949–78: defence at each site; post-1978: cheap labour; WDS: export markets; 2020s: raw materials alone",
+    "C. Pre-1949: cheap labour; 1949–78: coastal ports; post-1978: defence; WDS: foreign capital; 2020s: cheap labour",
+    "D. Pre-1949: automation; 1949–78: export markets; post-1978: defence; WDS: raw materials only; 2020s: coastal location and compliance"
+   ],
+   "answer": "A",
+   "explanation": "A correctly distinguishes each period: defence explains the inland direction after 1949, not the choice of individual steel centres. B is wrong because raw materials and state planning determined those sites, while cheap labour did not dominate post-1978 or 2020s location.",
+   "topics": [
+    "CP3"
+   ],
+   "subtopic": "CP3.2.1",
+   "subtopic_title": "Industrial development in China",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "CP3.2.1-4c2dac03"
   },
   {
    "stem": "Which combination best explains why headquarters and research and development activities remain concentrated in Silicon Valley rather than moving to lower-wage locations?",
@@ -1029,6 +1317,24 @@
    "id": "CP3.5.1-d384a608"
   },
   {
+   "stem": "Hong Kong’s factories have closed and employment has shifted towards services. Which statement correctly distinguishes the short-run consequences from the long-run consequences of deindustrialization?",
+   "options": [
+    "Short run: factory closures immediately create a mature service economy. Long run: displaced workers face no adjustment.",
+    "Short run: factory closures cause some job losses. Long run: services expand, while retraining and new industry absorb part of the workforce.",
+    "Short run: all displaced workers immediately transfer into finance and tourism. Long run: government intervention becomes unnecessary.",
+    "Short run: Hong Kong’s manufacturing base remains unchanged. Long run: services gradually replace manufacturing without any disruption."
+   ],
+   "answer": "B",
+   "explanation": "Factory closures can initially cause unemployment and retraining needs, while the longer-term response is a shift towards higher-value services, with retraining and new industry absorbing some workers. Displaced workers cannot all move immediately into services because their existing skills may not match service-sector jobs.",
+   "topics": [
+    "CP3"
+   ],
+   "subtopic": "CP3.5.2",
+   "subtopic_title": "Deindustrialization",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "CP3.5.2-1a07fcd9"
+  },
+  {
    "stem": "Hong Kong’s manufacturing wage advantage disappeared after industrial wages rose. Which causal chain best explains why factories subsequently relocated to the Pearl River Delta?",
    "options": [
     "Automation made it impossible for Hong Kong factories to remain internationally competitive.",
@@ -1047,22 +1353,22 @@
    "id": "CP3.5.2-d2c3bc57"
   },
   {
-   "stem": "Hong Kong’s factories have closed and employment has shifted towards services. Which statement correctly distinguishes the short-run consequences from the long-run consequences of deindustrialization?",
+   "stem": "Hong Kong proposes installing solar panels on public-housing roofs. Which evaluation best uses the three pillars to judge whether the measure is genuinely sustainable?",
    "options": [
-    "Short run: factory closures immediately create a mature service economy. Long run: displaced workers face no adjustment.",
-    "Short run: factory closures cause some job losses. Long run: services expand, while retraining and new industry absorb part of the workforce.",
-    "Short run: all displaced workers immediately transfer into finance and tourism. Long run: government intervention becomes unnecessary.",
-    "Short run: Hong Kong’s manufacturing base remains unchanged. Long run: services gradually replace manufacturing without any disruption."
+    "It weighs installation and maintenance costs, emission cuts, resident savings and equitable access, while noting trade-offs.",
+    "It reduces carbon emissions, so the measure is sustainable because its environmental benefits outweigh every economic and social cost.",
+    "It creates local jobs and lowers electricity bills, so the measure is sustainable because its economic benefits are greatest.",
+    "It improves housing quality, so the measure is sustainable because social gains justify any pressure on resources or public funds."
    ],
-   "answer": "B",
-   "explanation": "Factory closures can initially cause unemployment and retraining needs, while the longer-term response is a shift towards higher-value services, with retraining and new industry absorbing some workers. Displaced workers cannot all move immediately into services because their existing skills may not match service-sector jobs.",
+   "answer": "A",
+   "explanation": "Option A checks economic affordability and maintenance, environmental benefits, and social access and participation, while recognising trade-offs. Option B wrongly equates sustainability with environmental improvement and ignores the other pillars.",
    "topics": [
-    "CP3"
+    "CP4"
    ],
-   "subtopic": "CP3.5.2",
-   "subtopic_title": "Deindustrialization",
+   "subtopic": "CP4.1.1",
+   "subtopic_title": "Sustainable development",
    "source": "MakGeography notes (AI-generated)",
-   "id": "CP3.5.2-1a07fcd9"
+   "id": "CP4.1.1-bca8204d"
   },
   {
    "stem": "Which statement gives the Brundtland definition of sustainable development verbatim?",
@@ -1083,22 +1389,184 @@
    "id": "CP4.1.1-bded6c58"
   },
   {
-   "stem": "Hong Kong proposes installing solar panels on public-housing roofs. Which evaluation best uses the three pillars to judge whether the measure is genuinely sustainable?",
+   "stem": "In a Hong Kong urban area, congestion causes air pollution. Which causal chain best explains how this pollution creates a social cost?",
    "options": [
-    "It weighs installation and maintenance costs, emission cuts, resident savings and equitable access, while noting trade-offs.",
-    "It reduces carbon emissions, so the measure is sustainable because its environmental benefits outweigh every economic and social cost.",
-    "It creates local jobs and lowers electricity bills, so the measure is sustainable because its economic benefits are greatest.",
-    "It improves housing quality, so the measure is sustainable because social gains justify any pressure on resources or public funds."
+    "Slow-moving vehicles emit more pollutants, worsening air quality and increasing pressure on healthcare services.",
+    "Air pollution reduces the number of vehicles, easing congestion and improving workers’ health.",
+    "Higher property prices force more people to drive, directly increasing air pollution and hospital admissions.",
+    "Waste collection vehicles become less efficient during congestion, causing more industrial emissions."
    ],
    "answer": "A",
-   "explanation": "Option A checks economic affordability and maintenance, environmental benefits, and social access and participation, while recognising trade-offs. Option B wrongly equates sustainability with environmental improvement and ignores the other pillars.",
+   "explanation": "Congestion lengthens journeys and increases idling, allowing more vehicle emissions to accumulate. The resulting poorer air quality creates social costs through health problems and greater demand for healthcare; option B reverses the causal relationship.",
    "topics": [
     "CP4"
    ],
-   "subtopic": "CP4.1.1",
-   "subtopic_title": "Sustainable development",
+   "subtopic": "CP4.2.1",
+   "subtopic_title": "Urban problems",
    "source": "MakGeography notes (AI-generated)",
-   "id": "CP4.1.1-bca8204d"
+   "id": "CP4.2.1-5b5d854a"
+  },
+  {
+   "stem": "Why are a housing shortage and high property prices essentially the same urban problem in a land-scarce city?",
+   "options": [
+    "When housing demand exceeds the limited housing supply, fewer homes are available and prices rise.",
+    "High property prices always create additional homes, so shortages and high prices cannot occur together.",
+    "Housing shortages cause property prices to fall because potential buyers can afford more homes.",
+    "A housing shortage is an environmental problem, while high property prices are only an economic issue."
+   ],
+   "answer": "A",
+   "explanation": "In a land-scarce city, limited land constrains housing supply while demand remains high. This simultaneously creates a shortage and pushes prices upward; option B wrongly assumes that high prices automatically generate enough new housing.",
+   "topics": [
+    "CP4"
+   ],
+   "subtopic": "CP4.2.1",
+   "subtopic_title": "Urban problems",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "CP4.2.1-a7682ab6"
+  },
+  {
+   "stem": "A city proposes installing green roofs on old public housing blocks. Which option best explains the feature’s mechanism, sustainability pillar and limitation?",
+   "options": [
+    "A. Vegetation absorbs less heat and provides evaporative cooling, advancing environmental sustainability, but maintenance is expensive on old buildings.",
+    "B. Green roofs absorb sunlight and improve air quality, advancing social sustainability, but they reduce residents’ quality of life.",
+    "C. Green roofs conserve natural resources and create jobs, advancing economic sustainability, but they may limit community participation.",
+    "D. Green roofs control pollution and protect ecosystems, advancing environmental sustainability, but they provide little equity or fairness."
+   ],
+   "answer": "A",
+   "explanation": "Green roofs reduce the urban heat island effect because vegetation absorbs less heat than concrete and provides evaporative cooling, supporting environmental sustainability; however, they can be expensive to maintain on old buildings. Option B is wrong because the main mechanism and stated pillar do not match.",
+   "topics": [
+    "CP4"
+   ],
+   "subtopic": "CP4.3.1",
+   "subtopic_title": "Sustainable city features",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "CP4.3.1-cdb2c26d"
+  },
+  {
+   "stem": "A neighbourhood invites residents to vote on a proposed environmental improvement project. Which sustainability benefit is most directly demonstrated?",
+   "options": [
+    "A. Greater community participation and more equitable decision-making, advancing social sustainability.",
+    "B. More efficient resource use and stronger economic growth, advancing economic sustainability.",
+    "C. Better pollution control and ecosystem protection, advancing environmental sustainability.",
+    "D. Improved job creation and higher household income, advancing economic sustainability."
+   ],
+   "answer": "A",
+   "explanation": "Allowing residents to participate in decisions promotes equity and fairness, which are key aspects of social sustainability. Option B is the main distractor because the scenario demonstrates participation and fairness, not efficient resource use or economic growth.",
+   "topics": [
+    "CP4"
+   ],
+   "subtopic": "CP4.3.1",
+   "subtopic_title": "Sustainable city features",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "CP4.3.1-5d9c4675"
+  },
+  {
+   "stem": "Hong Kong imports electricity from the Mainland. Which statement gives the most balanced evaluation of this energy strategy?",
+   "options": [
+    "It diversifies supply and can lower costs and local emissions, but dependence on the Mainland creates a vulnerability.",
+    "It removes dependence on external energy because Hong Kong controls all Mainland generating facilities.",
+    "It is sustainable only if Hong Kong stops relying on imported fossil fuels from the Mainland.",
+    "It lowers local emissions but always raises electricity prices because transmission infrastructure is costly."
+   ],
+   "answer": "A",
+   "explanation": "Importing Mainland electricity diversifies energy sources and can lower costs and local emissions, but it creates dependency. B is wrong because importing electricity does not remove external dependence or give Hong Kong control over Mainland facilities.",
+   "topics": [
+    "CP4"
+   ],
+   "subtopic": "CP4.4.1",
+   "subtopic_title": "Hong Kong case studies",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "CP4.4.1-03684504"
+  },
+  {
+   "stem": "Which is the strongest justification for using the I·PARK1 waste-to-energy facility in land-scarce Hong Kong?",
+   "options": [
+    "It moves waste up the hierarchy: incineration reduces volume and recovers energy when landfill space cannot expand.",
+    "It makes landfill extension unnecessary because incineration can recycle all materials into new products.",
+    "It removes the need for source separation because mixed waste can be converted into usable materials.",
+    "It eliminates all air pollution and ash disposal problems through energy recovery."
+   ],
+   "answer": "A",
+   "explanation": "Because disposal land cannot expand, incineration’s volume reduction and energy recovery help Hong Kong move up the waste hierarchy. D is wrong because emissions-control costs, ash disposal and public acceptance remain important limitations.",
+   "topics": [
+    "CP4"
+   ],
+   "subtopic": "CP4.4.1",
+   "subtopic_title": "Hong Kong case studies",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "CP4.4.1-a75b5bdf"
+  },
+  {
+   "stem": "A city installs recycling bins, but residents continue to litter rather than recycle. Which evaluation best explains the weakness of this strategy?",
+   "options": [
+    "A. The government has provided facilities without securing community participation; provision alone does not create recycling habits.",
+    "B. The city should use zoning to separate residential and industrial land and anticipate environmental problems before development.",
+    "C. The city should control building height and density to protect light and ventilation near recycling facilities.",
+    "D. The city should rely on education alone, because awareness campaigns always produce rapid and certain changes in behaviour."
+   ],
+   "answer": "A",
+   "explanation": "Provision without participation can fail: recycling bins are ineffective if residents lack the habits and willingness to use them. Option D is incorrect because education is slow and uncertain, and works only where suitable alternatives exist.",
+   "topics": [
+    "CP4"
+   ],
+   "subtopic": "CP4.5.1",
+   "subtopic_title": "Planning strategies",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "CP4.5.1-5105212d"
+  },
+  {
+   "stem": "Which option best evaluates green belts as a planning strategy for a sustainable, land-scarce, high-density city?",
+   "options": [
+    "A. They permanently cap urban sprawl and protect recreational or ecological space, but may raise land prices and push development beyond the boundary.",
+    "B. They separate residential and industrial land, preventing incompatible uses before they arise, but may create long commutes.",
+    "C. They control building height and density, protecting light and ventilation, but may worsen overcrowding.",
+    "D. They provide land for public consultation and NGO programmes, improving legitimacy but requiring sustained community participation."
+   ],
+   "answer": "A",
+   "explanation": "Green belts reserve land from development, permanently limiting urban sprawl and protecting open space. Their main limitation is that they may increase land prices inside the boundary and encourage development further away; option B describes zoning.",
+   "topics": [
+    "CP4"
+   ],
+   "subtopic": "CP4.5.1",
+   "subtopic_title": "Planning strategies",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "CP4.5.1-52b87669"
+  },
+  {
+   "stem": "A Hong Kong waste charge aims to reduce rubbish. Which judgement best explains why its sustainability cannot be judged by environmental benefits alone?",
+   "options": [
+    "It is sustainable if the government can finance waste collection and has enough vehicles to enforce the charge.",
+    "It is sustainable because economic costs occur now, while environmental benefits will be larger in the future.",
+    "It is sustainable only if short-term economic and social costs are acceptable and implementation is feasible, while delayed environmental benefits justify the policy.",
+    "It is sustainable if most residents accept the charge, regardless of its costs and environmental effectiveness."
+   ],
+   "answer": "C",
+   "explanation": "A sustainable measure must be feasible and create an acceptable balance between present costs and longer-term benefits. Option B addresses delayed benefits but ignores whether the costs are acceptable and whether the policy can be implemented effectively.",
+   "topics": [
+    "CP4"
+   ],
+   "subtopic": "CP4.6.1",
+   "subtopic_title": "Challenges of sustainable development",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "CP4.6.1-fc959a5b"
+  },
+  {
+   "stem": "Which explanation best applies the free-rider idea to Hong Kong's promotion of household recycling?",
+   "options": [
+    "Residents may recycle because they expect direct cash rebates rather than because they understand the environmental benefits.",
+    "Some residents may benefit from reduced landfill use while avoiding the inconvenience and costs of recycling.",
+    "Publicity can improve recycling only if every household has convenient access to recycling facilities.",
+    "Residents may support recycling in principle but reject the inconvenience of sorting materials at home."
+   ],
+   "answer": "B",
+   "explanation": "The free-rider problem occurs when people enjoy environmental benefits without bearing the associated costs. Option D describes an acceptance problem, but it does not explain why some residents benefit from others' recycling efforts.",
+   "topics": [
+    "CP4"
+   ],
+   "subtopic": "CP4.6.1",
+   "subtopic_title": "Challenges of sustainable development",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "CP4.6.1-1c18296d"
   },
   {
    "stem": "A farmer in a semi-arid region has abundant sunlight and capital for machinery, but crop yields remain low. Which analysis correctly distinguishes the production systems and identifies the binding constraint?",
@@ -1137,24 +1605,6 @@
    "id": "CP5.1.1-66e388d6"
   },
   {
-   "stem": "Which explanation best shows why the Sahel is marginal, how degradation strengthens drought, and why famine can follow?",
-   "options": [
-    "Immediately south of the Sahara, 100–400 mm rainfall is unreliable; high evapotranspiration, water scarcity and soil degradation from overgrazing and deforestation reduce yields.",
-    "The Sahel is a true desert: rainfall is consistently scarce, and drought is its only natural cause of food insecurity.",
-    "Its high rainfall makes farming stable; famine occurs only because population growth outpaces food production.",
-    "Its soils are naturally infertile, while rainfall, temperature and land management have no significant influence."
-   ],
-   "answer": "A",
-   "explanation": "The Sahel lies at the desert–savanna margin, where low, variable rainfall and high evapotranspiration already limit rain-fed farming. Overgrazing and deforestation expose soil, accelerating erosion, nutrient depletion and desertification, so drought can cause crop failure and famine. B is wrong because the Sahel is a semi-arid marginal belt, not a true desert.",
-   "topics": [
-    "CP5"
-   ],
-   "subtopic": "CP5.2.1",
-   "subtopic_title": "Sahel region",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "CP5.2.1-b558a000"
-  },
-  {
    "stem": "During a Sahel drought, grain is available in some surplus-producing areas, yet remote households go hungry. Which explanation best distinguishes famine from drought?",
    "options": [
     "Inadequate roads and storage prevented food from reaching deficit areas, so production and access both failed.",
@@ -1171,6 +1621,24 @@
    "subtopic_title": "Sahel region",
    "source": "MakGeography notes (AI-generated)",
    "id": "CP5.2.1-11d8f889"
+  },
+  {
+   "stem": "Which explanation best shows why the Sahel is marginal, how degradation strengthens drought, and why famine can follow?",
+   "options": [
+    "Immediately south of the Sahara, 100–400 mm rainfall is unreliable; high evapotranspiration, water scarcity and soil degradation from overgrazing and deforestation reduce yields.",
+    "The Sahel is a true desert: rainfall is consistently scarce, and drought is its only natural cause of food insecurity.",
+    "Its high rainfall makes farming stable; famine occurs only because population growth outpaces food production.",
+    "Its soils are naturally infertile, while rainfall, temperature and land management have no significant influence."
+   ],
+   "answer": "A",
+   "explanation": "The Sahel lies at the desert–savanna margin, where low, variable rainfall and high evapotranspiration already limit rain-fed farming. Overgrazing and deforestation expose soil, accelerating erosion, nutrient depletion and desertification, so drought can cause crop failure and famine. B is wrong because the Sahel is a semi-arid marginal belt, not a true desert.",
+   "topics": [
+    "CP5"
+   ],
+   "subtopic": "CP5.2.1",
+   "subtopic_title": "Sahel region",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "CP5.2.1-b558a000"
   },
   {
    "stem": "Which explanation best accounts for both the high productivity of Southern Californian agriculture and its main sustainability risks?",
@@ -1353,24 +1821,6 @@
    "id": "CP6.1.1-4abcc3ac"
   },
   {
-   "stem": "Which option correctly describes the emergent layer of a rainforest?",
-   "options": [
-    "A. It reaches 35–45 metres and contains about 3–5% of the forest’s trees.",
-    "B. It forms dense, continuous cover at 30–35 metres and carries out 90% of photosynthesis.",
-    "C. It contains large tree crowns at 20–30 metres, with epiphytes present.",
-    "D. It has shade-tolerant trees and climbing plants at 10–20 metres."
-   ],
-   "answer": "A",
-   "explanation": "The emergent layer contains the tallest trees, reaching 35–45 metres, and only 3–5% of the forest. Option B describes the upper canopy, which forms dense cover and carries out 90% of photosynthesis.",
-   "topics": [
-    "CP6"
-   ],
-   "subtopic": "CP6.1.2",
-   "subtopic_title": "Rainforest structure",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "CP6.1.2-269d19e5"
-  },
-  {
    "stem": "A vegetation survey finds a tree at 12 metres in the lower canopy. Which description best matches this layer?",
    "options": [
     "A. Shade-tolerant trees and climbing plants are characteristic.",
@@ -1387,6 +1837,24 @@
    "subtopic_title": "Rainforest structure",
    "source": "MakGeography notes (AI-generated)",
    "id": "CP6.1.2-f79b4bc5"
+  },
+  {
+   "stem": "Which option correctly describes the emergent layer of a rainforest?",
+   "options": [
+    "A. It reaches 35–45 metres and contains about 3–5% of the forest’s trees.",
+    "B. It forms dense, continuous cover at 30–35 metres and carries out 90% of photosynthesis.",
+    "C. It contains large tree crowns at 20–30 metres, with epiphytes present.",
+    "D. It has shade-tolerant trees and climbing plants at 10–20 metres."
+   ],
+   "answer": "A",
+   "explanation": "The emergent layer contains the tallest trees, reaching 35–45 metres, and only 3–5% of the forest. Option B describes the upper canopy, which forms dense cover and carries out 90% of photosynthesis.",
+   "topics": [
+    "CP6"
+   ],
+   "subtopic": "CP6.1.2",
+   "subtopic_title": "Rainforest structure",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "CP6.1.2-269d19e5"
   },
   {
    "stem": "Which statement best describes nutrient storage and recycling in a tropical rainforest?",
@@ -1425,22 +1893,40 @@
    "id": "CP6.1.3-fa9d91cd"
   },
   {
-   "stem": "Which sequence best explains how deforestation disrupts the nutrient cycle and reduces soil fertility?",
+   "stem": "According to the 2025 case, which two factors were the main drivers of primary-forest loss in Bolivia?",
    "options": [
-    "Less biomass, more leaching and erosion, and greater runoff reduce nutrient retention.",
-    "More biomass and slower runoff increase nutrient storage, reversing soil decline.",
-    "Greater infiltration and faster decomposition return minerals to the soil more efficiently.",
-    "Laterite formation supplies nutrients, so soil fertility rises as forest cover is removed."
+    "A. Soy cultivation and agricultural expansion",
+    "B. Shifting cultivation and charcoal production",
+    "C. Palm-oil plantations and mining",
+    "D. Oil-palm conversion of indigenous land"
    ],
    "answer": "A",
-   "explanation": "Removing trees reduces biomass storage and soil protection, while nutrients are leached away and water runs off, causing soil fertility to decline. B is wrong because deforestation reduces biomass and accelerates rather than slows runoff.",
+   "explanation": "The Bolivia case identifies agriculture and the Santa Cruz soy frontier as the main drivers. Shifting cultivation and charcoal production were linked mainly to DR Congo, while palm oil and mining were associated with Indonesia.",
    "topics": [
     "CP6"
    ],
-   "subtopic": "CP6.2.2",
-   "subtopic_title": "Impacts of deforestation",
+   "subtopic": "CP6.2.1",
+   "subtopic_title": "Causes of deforestation",
    "source": "MakGeography notes (AI-generated)",
-   "id": "CP6.2.2-41db04bc"
+   "id": "CP6.2.1-9c69fb4b"
+  },
+  {
+   "stem": "Which explanation best accounts for Indonesia's 14% year-on-year increase in primary-forest loss in 2025?",
+   "options": [
+    "A. Expansion of soy farms in Bolivia",
+    "B. Increased shifting cultivation in DR Congo",
+    "C. Palm-oil plantations and mining activities",
+    "D. Intensification of boreal forest fires in Canada"
+   ],
+   "answer": "C",
+   "explanation": "The Indonesia case states that palm oil and mining remained key drivers of forest clearance. The other options describe drivers associated with different locations and do not explain Indonesia's increase.",
+   "topics": [
+    "CP6"
+   ],
+   "subtopic": "CP6.2.1",
+   "subtopic_title": "Causes of deforestation",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "CP6.2.1-afa7ae12"
   },
   {
    "stem": "Which option correctly links the hydrological and climatic effects of deforestation?",
@@ -1459,6 +1945,60 @@
    "subtopic_title": "Impacts of deforestation",
    "source": "MakGeography notes (AI-generated)",
    "id": "CP6.2.2-fa9a8192"
+  },
+  {
+   "stem": "Which sequence best explains how deforestation disrupts the nutrient cycle and reduces soil fertility?",
+   "options": [
+    "Less biomass, more leaching and erosion, and greater runoff reduce nutrient retention.",
+    "More biomass and slower runoff increase nutrient storage, reversing soil decline.",
+    "Greater infiltration and faster decomposition return minerals to the soil more efficiently.",
+    "Laterite formation supplies nutrients, so soil fertility rises as forest cover is removed."
+   ],
+   "answer": "A",
+   "explanation": "Removing trees reduces biomass storage and soil protection, while nutrients are leached away and water runs off, causing soil fertility to decline. B is wrong because deforestation reduces biomass and accelerates rather than slows runoff.",
+   "topics": [
+    "CP6"
+   ],
+   "subtopic": "CP6.2.2",
+   "subtopic_title": "Impacts of deforestation",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "CP6.2.2-41db04bc"
+  },
+  {
+   "stem": "In 2025, DR Congo lost 560,000 ha of primary forest, while Indonesia lost 433,751 ha. Which comparison of scale and causes is supported?",
+   "options": [
+    "DR Congo had the larger loss, while Indonesia’s deforestation was driven only by palm-oil plantations.",
+    "DR Congo had the larger loss, largely linked to shifting cultivation, charcoal and displacement; Indonesia’s key drivers were palm oil and mining.",
+    "Indonesia had the larger loss, mainly because of shifting cultivation and charcoal production.",
+    "Both countries lost equal areas because palm oil and shifting cultivation had similar impacts."
+   ],
+   "answer": "B",
+   "explanation": "DR Congo’s reported loss was larger, and 86% was linked to shifting cultivation, charcoal and conflict-driven displacement. Option A is wrong because mining was also a key driver in Indonesia.",
+   "topics": [
+    "CP6"
+   ],
+   "subtopic": "CP6.2.3",
+   "subtopic_title": "Deforestation patterns",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "CP6.2.3-4047cb91"
+  },
+  {
+   "stem": "In Brazil, primary-forest clearing fell 12.07% to 5,731 km² in 2024–25, but increased 25% in Mato Grosso. Which conclusion is best supported?",
+   "options": [
+    "Clearing fell uniformly in every Brazilian state because the national rate declined.",
+    "An overall national decline can coexist with an increase in a particular region.",
+    "Mato Grosso accounted for all primary-forest clearing recorded in Brazil.",
+    "The regional increase shows that INPE/PRODES no longer detected small forest areas."
+   ],
+   "answer": "B",
+   "explanation": "Mato Grosso’s 25% increase shows that deforestation patterns can vary regionally even when the national total falls. Option A is wrong because the reported decline was not uniform across all states.",
+   "topics": [
+    "CP6"
+   ],
+   "subtopic": "CP6.2.3",
+   "subtopic_title": "Deforestation patterns",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "CP6.2.3-d81a5ca8"
   },
   {
    "stem": "The carbon stores (Gt C) are fossil fuels 5,000, ocean 38,000, soil 1,500, vegetation 450 and atmosphere 750. Which comparison is correct?",
@@ -1533,24 +2073,6 @@
    "id": "CP6.3.1-3f106638"
   },
   {
-   "stem": "Which statement best explains how deforestation affects the livelihoods and community life of indigenous peoples?",
-   "options": [
-    "It reduces access to forest resources and customary land, weakening traditional livelihoods and community ties.",
-    "It provides permanent employment and greater social equality for all indigenous communities.",
-    "It mainly improves biodiversity by allowing more species to populate forest clearings.",
-    "It transfers control of cleared land to local governments without affecting indigenous rights."
-   ],
-   "answer": "A",
-   "explanation": "Clearing native forests can deprive indigenous peoples of land and forest resources, disrupting livelihoods such as shifting cultivation and the use of non-timber forest products. The main distractor is wrong because deforestation does not necessarily improve employment, equality or biodiversity.",
-   "topics": [
-    "CP6"
-   ],
-   "subtopic": "CP6.3.2",
-   "subtopic_title": "Impacts of deforestation on indigenous communities",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "CP6.3.2-ae4193ef"
-  },
-  {
    "stem": "In Sarawak, forest clearing for oil-palm planting continued despite indigenous Penan and Kenyah claims over 54,478 hectares of native customary land. What conflict does this illustrate?",
    "options": [
     "A conflict between forest development and indigenous rights to customary land.",
@@ -1569,22 +2091,22 @@
    "id": "CP6.3.2-060aef09"
   },
   {
-   "stem": "In Sarawak, oil-palm clearing continued on native customary land despite MSPO rules introduced in 2019. Which policy measure would most directly make forest protection workable?",
+   "stem": "Which statement best explains how deforestation affects the livelihoods and community life of indigenous peoples?",
    "options": [
-    "A: Enforce the MSPO rule prohibiting conversion of forests after 2019.",
-    "B: Exempt native customary land from MSPO protection so planting can continue.",
-    "C: Use subsidies to encourage oil-palm expansion on customary forest land.",
-    "D: Focus only on controlling shifting cultivation rather than plantation expansion."
+    "It reduces access to forest resources and customary land, weakening traditional livelihoods and community ties.",
+    "It provides permanent employment and greater social equality for all indigenous communities.",
+    "It mainly improves biodiversity by allowing more species to populate forest clearings.",
+    "It transfers control of cleared land to local governments without affecting indigenous rights."
    ],
    "answer": "A",
-   "explanation": "Enforcing the MSPO prohibition directly addresses the oil-palm conversion highlighted in Sarawak. Option B weakens the safeguard, while C encourages a major driver of forest clearance and D ignores plantation expansion.",
+   "explanation": "Clearing native forests can deprive indigenous peoples of land and forest resources, disrupting livelihoods such as shifting cultivation and the use of non-timber forest products. The main distractor is wrong because deforestation does not necessarily improve employment, equality or biodiversity.",
    "topics": [
     "CP6"
    ],
-   "subtopic": "CP6.4.1",
-   "subtopic_title": "Sustainable management of rainforests",
+   "subtopic": "CP6.3.2",
+   "subtopic_title": "Impacts of deforestation on indigenous communities",
    "source": "MakGeography notes (AI-generated)",
-   "id": "CP6.4.1-4dfc23dc"
+   "id": "CP6.3.2-ae4193ef"
   },
   {
    "stem": "A forest-dependent community in a less developed country wants to reduce pressure on forests while meeting present needs. Which development strategy best fits?",
@@ -1603,6 +2125,24 @@
    "subtopic_title": "Sustainable management of rainforests",
    "source": "MakGeography notes (AI-generated)",
    "id": "CP6.4.1-9146ed6d"
+  },
+  {
+   "stem": "In Sarawak, oil-palm clearing continued on native customary land despite MSPO rules introduced in 2019. Which policy measure would most directly make forest protection workable?",
+   "options": [
+    "A: Enforce the MSPO rule prohibiting conversion of forests after 2019.",
+    "B: Exempt native customary land from MSPO protection so planting can continue.",
+    "C: Use subsidies to encourage oil-palm expansion on customary forest land.",
+    "D: Focus only on controlling shifting cultivation rather than plantation expansion."
+   ],
+   "answer": "A",
+   "explanation": "Enforcing the MSPO prohibition directly addresses the oil-palm conversion highlighted in Sarawak. Option B weakens the safeguard, while C encourages a major driver of forest clearance and D ignores plantation expansion.",
+   "topics": [
+    "CP6"
+   ],
+   "subtopic": "CP6.4.1",
+   "subtopic_title": "Sustainable management of rainforests",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "CP6.4.1-4dfc23dc"
   },
   {
    "stem": "Which benefit of reforestation is most directly relevant to reducing the effects of climate change?",
@@ -1641,24 +2181,6 @@
    "id": "CP6.4.2-c612516a"
   },
   {
-   "stem": "Which statement best defines biofuels and gives a valid argument for using them as substitutes for fossil fuels?",
-   "options": [
-    "A: Biofuels are renewable fuels from plant matter, which absorbs CO2 while growing.",
-    "B: Biofuels are non-renewable fuels from fossil reserves that release CO2 when used.",
-    "C: Biofuels are renewable fuels from plant matter, so they always reduce net carbon emissions.",
-    "D: Biofuels are renewable fuels from plant matter, whose production causes no carbon emissions."
-   ],
-   "answer": "A",
-   "explanation": "A is correct because plant matter absorbs CO2 while growing, and biofuels are renewable because they do not deplete fossil-fuel reserves. C is incorrect because production emits CO2 and plantation expansion may cause deforestation, so the net carbon benefit is not guaranteed.",
-   "topics": [
-    "CP6"
-   ],
-   "subtopic": "CP6.4.3",
-   "subtopic_title": "Biofuels as an alternative",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "CP6.4.3-625d8682"
-  },
-  {
    "stem": "Which conclusion best reflects the debate over how effective biofuels are in reducing carbon emissions?",
    "options": [
     "A: They reduce fossil-fuel use, but deforestation and production emissions make their net carbon benefit uncertain.",
@@ -1677,22 +2199,22 @@
    "id": "CP6.4.3-fa82d634"
   },
   {
-   "stem": "Which sequence correctly shows a positive feedback linking forest loss to climate change?",
+   "stem": "Which statement best defines biofuels and gives a valid argument for using them as substitutes for fossil fuels?",
    "options": [
-    "Deforestation → less CO₂ absorption and release of stored carbon → warmer climate → more deforestation",
-    "Deforestation → less CO₂ absorption → cooler climate → less deforestation",
-    "Deforestation → more CO₂ absorption → warmer climate → less deforestation",
-    "Warmer climate → more evaporation → more clouds → greater reflection of sunlight → cooler climate"
+    "A: Biofuels are renewable fuels from plant matter, which absorbs CO2 while growing.",
+    "B: Biofuels are non-renewable fuels from fossil reserves that release CO2 when used.",
+    "C: Biofuels are renewable fuels from plant matter, so they always reduce net carbon emissions.",
+    "D: Biofuels are renewable fuels from plant matter, whose production causes no carbon emissions."
    ],
    "answer": "A",
-   "explanation": "Reduced CO₂ absorption and the release of carbon stored in trees amplify warming, which can cause further deforestation. Option D instead describes a negative feedback because its cooling effect counteracts warming.",
+   "explanation": "A is correct because plant matter absorbs CO2 while growing, and biofuels are renewable because they do not deplete fossil-fuel reserves. C is incorrect because production emits CO2 and plantation expansion may cause deforestation, so the net carbon benefit is not guaranteed.",
    "topics": [
     "CP6"
    ],
-   "subtopic": "CP6.5.1",
-   "subtopic_title": "Feedback mechanisms",
+   "subtopic": "CP6.4.3",
+   "subtopic_title": "Biofuels as an alternative",
    "source": "MakGeography notes (AI-generated)",
-   "id": "CP6.5.1-3d320218"
+   "id": "CP6.4.3-625d8682"
   },
   {
    "stem": "After forest loss contributes to warming through carbon release, which sequence represents the negative feedback that could partly counter this warming?",
@@ -1711,6 +2233,24 @@
    "subtopic_title": "Feedback mechanisms",
    "source": "MakGeography notes (AI-generated)",
    "id": "CP6.5.1-6dcc086c"
+  },
+  {
+   "stem": "Which sequence correctly shows a positive feedback linking forest loss to climate change?",
+   "options": [
+    "Deforestation → less CO₂ absorption and release of stored carbon → warmer climate → more deforestation",
+    "Deforestation → less CO₂ absorption → cooler climate → less deforestation",
+    "Deforestation → more CO₂ absorption → warmer climate → less deforestation",
+    "Warmer climate → more evaporation → more clouds → greater reflection of sunlight → cooler climate"
+   ],
+   "answer": "A",
+   "explanation": "Reduced CO₂ absorption and the release of carbon stored in trees amplify warming, which can cause further deforestation. Option D instead describes a negative feedback because its cooling effect counteracts warming.",
+   "topics": [
+    "CP6"
+   ],
+   "subtopic": "CP6.5.1",
+   "subtopic_title": "Feedback mechanisms",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "CP6.5.1-3d320218"
   },
   {
    "stem": "A tropical forest region has 25–27°C temperatures throughout the year, 2,000–4,000 mm of annual rainfall and humidity above 80%. If climate change raises temperatures and lowers rainfall, what is the likely consequence?",
@@ -1749,24 +2289,6 @@
    "id": "CP6.5.2-83cedeba"
   },
   {
-   "stem": "Which sequence correctly describes how solar energy is absorbed at Earth’s surface and how Earth loses heat?",
-   "options": [
-    "A: Shortwave radiation reaches the surface and heats it; Earth then emits longwave radiation.",
-    "B: Longwave radiation from the Sun reaches the surface and heats it; Earth then emits shortwave radiation.",
-    "C: Shortwave radiation is trapped by greenhouse gases before reaching the surface; Earth then emits longwave radiation.",
-    "D: Shortwave radiation heats the surface; Earth’s longwave radiation all escapes directly to space."
-   ],
-   "answer": "A",
-   "explanation": "Solar radiation reaching Earth is shortwave radiation, which heats the surface. The surface then emits longwave radiation, some of which is trapped by greenhouse gases, so option D is incorrect.",
-   "topics": [
-    "CP7"
-   ],
-   "subtopic": "CP7.1.1",
-   "subtopic_title": "Earth's energy balance",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "CP7.1.1-20079733"
-  },
-  {
    "stem": "How do greenhouse gases trap Earth’s heat, and what happens when human activities increase their concentrations?",
    "options": [
     "A: They trap some outgoing longwave heat; more greenhouse gases trap more heat, causing global temperatures to rise.",
@@ -1785,22 +2307,58 @@
    "id": "CP7.1.1-6aa306cc"
   },
   {
-   "stem": "Which pairing correctly identifies what instrumental temperature records and palaeoclimate proxies contribute to studies of climate change?",
+   "stem": "Which sequence correctly describes how solar energy is absorbed at Earth’s surface and how Earth loses heat?",
    "options": [
-    "A. Instrumental records track modern warming; proxies include fossil records, tree rings and coral reefs.",
-    "B. Instrumental records reveal the past 800,000 years; proxies provide only modern temperature measurements.",
-    "C. Instrumental records measure ancient CO₂ from air bubbles; proxies record only global mean temperature since pre-industrialisation.",
-    "D. Instrumental records use ice-core air bubbles, while palaeoclimate proxies rely on modern thermometers."
+    "A: Shortwave radiation reaches the surface and heats it; Earth then emits longwave radiation.",
+    "B: Longwave radiation from the Sun reaches the surface and heats it; Earth then emits shortwave radiation.",
+    "C: Shortwave radiation is trapped by greenhouse gases before reaching the surface; Earth then emits longwave radiation.",
+    "D: Shortwave radiation heats the surface; Earth’s longwave radiation all escapes directly to space."
    ],
    "answer": "A",
-   "explanation": "Instrumental records document the recent warming trend, including a 1.1°C rise since pre-industrialisation. Option B wrongly reverses their roles: ice cores and other proxies reveal past climates, whereas instrumental records measure recent temperatures.",
+   "explanation": "Solar radiation reaching Earth is shortwave radiation, which heats the surface. The surface then emits longwave radiation, some of which is trapped by greenhouse gases, so option D is incorrect.",
    "topics": [
     "CP7"
    ],
-   "subtopic": "CP7.1.3",
-   "subtopic_title": "Evidence of global warming",
+   "subtopic": "CP7.1.1",
+   "subtopic_title": "Earth's energy balance",
    "source": "MakGeography notes (AI-generated)",
-   "id": "CP7.1.3-e3b6f6d2"
+   "id": "CP7.1.1-20079733"
+  },
+  {
+   "stem": "Which causal sequence best explains why global temperatures are rising as the enhanced greenhouse effect develops?",
+   "options": [
+    "A. More greenhouse gases → more heat is trapped → global temperatures rise.",
+    "B. More greenhouse gases → more heat escapes to space → global temperatures rise.",
+    "C. Fewer greenhouse gases → more heat is trapped → global temperatures rise.",
+    "D. More greenhouse gases → less heat is trapped → global temperatures rise."
+   ],
+   "answer": "A",
+   "explanation": "Human activities increase greenhouse gas concentrations, so more heat is trapped and average global temperatures rise. Option B reverses the process because enhanced greenhouse effects reduce the amount of heat escaping to space.",
+   "topics": [
+    "CP7"
+   ],
+   "subtopic": "CP7.1.2",
+   "subtopic_title": "The greenhouse effect",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "CP7.1.2-be485650"
+  },
+  {
+   "stem": "Which statement best describes how the natural greenhouse effect keeps Earth warm and supports life?",
+   "options": [
+    "A. Greenhouse gases trap some outgoing longwave radiation, keeping average temperature near +15°C.",
+    "B. Without greenhouse gases, Earth would remain near -18°C, and this cooler state is essential for life.",
+    "C. Greenhouse gases trap all longwave radiation, preventing Earth from losing heat to space.",
+    "D. Oxygen and nitrogen are the main greenhouse gases that trap heat in the atmosphere."
+   ],
+   "answer": "A",
+   "explanation": "CO2, H2O, CH4 and N2O trap some heat radiated by Earth, raising average temperature from about -18°C to +15°C. Option C is wrong because some heat still escapes to space, while a natural greenhouse effect is essential rather than harmful.",
+   "topics": [
+    "CP7"
+   ],
+   "subtopic": "CP7.1.2",
+   "subtopic_title": "The greenhouse effect",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "CP7.1.2-9123ba20"
   },
   {
    "stem": "Scientists analyse air bubbles trapped in an ice core. Which information can this evidence provide?",
@@ -1821,22 +2379,76 @@
    "id": "CP7.1.3-4f4d4970"
   },
   {
-   "stem": "Which pair of processes primarily contributes to the observed global sea-level rise of about 3 mm per year?",
+   "stem": "Which pairing correctly identifies what instrumental temperature records and palaeoclimate proxies contribute to studies of climate change?",
    "options": [
-    "A Thermal expansion of seawater and melting glaciers",
-    "B More intense rainfall and stronger typhoons",
-    "C More frequent heatwaves and stronger storms",
-    "D Droughts and floods caused by a stronger greenhouse effect"
+    "A. Instrumental records track modern warming; proxies include fossil records, tree rings and coral reefs.",
+    "B. Instrumental records reveal the past 800,000 years; proxies provide only modern temperature measurements.",
+    "C. Instrumental records measure ancient CO₂ from air bubbles; proxies record only global mean temperature since pre-industrialisation.",
+    "D. Instrumental records use ice-core air bubbles, while palaeoclimate proxies rely on modern thermometers."
    ],
    "answer": "A",
-   "explanation": "Warming seawater expands, while melting glaciers add water to the oceans, raising sea level. Option B confuses long-term sea-level rise with short-term extreme weather that may increase coastal flooding risk.",
+   "explanation": "Instrumental records document the recent warming trend, including a 1.1°C rise since pre-industrialisation. Option B wrongly reverses their roles: ice cores and other proxies reveal past climates, whereas instrumental records measure recent temperatures.",
    "topics": [
     "CP7"
    ],
-   "subtopic": "CP7.3.1",
-   "subtopic_title": "Physical impacts",
+   "subtopic": "CP7.1.3",
+   "subtopic_title": "Evidence of global warming",
    "source": "MakGeography notes (AI-generated)",
-   "id": "CP7.3.1-d080d7a8"
+   "id": "CP7.1.3-e3b6f6d2"
+  },
+  {
+   "stem": "Which option correctly identifies a greenhouse gas, its source and its lifetime?",
+   "options": [
+    "Nitrous oxide: livestock and landfills; 12 years.",
+    "Nitrous oxide: agriculture and fertilizers; 12 years.",
+    "Nitrous oxide: agriculture and fertilizers; 114 years.",
+    "Nitrous oxide: fossil fuels and deforestation; more than 100 years."
+   ],
+   "answer": "C",
+   "explanation": "Nitrous oxide is released by agriculture and fertilizers and has a lifetime of about 114 years. Option B is incorrect because 12 years is the lifetime of methane (CH4), not nitrous oxide.",
+   "topics": [
+    "CP7"
+   ],
+   "subtopic": "CP7.2.1",
+   "subtopic_title": "Greenhouse gases",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "CP7.2.1-fe99c483"
+  },
+  {
+   "stem": "Which statement best explains why the natural greenhouse effect is essential for life on Earth?",
+   "options": [
+    "Greenhouse gases trap heat, keeping Earth warm at about +15°C instead of -18°C.",
+    "Greenhouse gases allow all longwave radiation to escape into space.",
+    "Human activities strengthen the natural greenhouse effect and maintain Earth's habitability.",
+    "Greenhouse gases trap longwave radiation, causing temperatures to rise indefinitely."
+   ],
+   "answer": "A",
+   "explanation": "The natural greenhouse effect is essential because greenhouse gases trap heat and keep Earth warm. Option C confuses the natural effect with the enhanced greenhouse effect caused by human activities.",
+   "topics": [
+    "CP7"
+   ],
+   "subtopic": "CP7.2.1",
+   "subtopic_title": "Greenhouse gases",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "CP7.2.1-b3dbc331"
+  },
+  {
+   "stem": "Which causal chain correctly explains how human activities contribute to global warming?",
+   "options": [
+    "A. More greenhouse gases are emitted, trapping more heat and causing global temperatures to rise.",
+    "B. More heat is trapped first, causing human activities to emit fewer greenhouse gases.",
+    "C. Greenhouse gas emissions fall, trapping less heat and causing global temperatures to rise.",
+    "D. Global temperatures rise first, trapping more heat and increasing greenhouse gas emissions."
+   ],
+   "answer": "A",
+   "explanation": "Human activities increase greenhouse gas emissions, so more heat is trapped and global temperatures rise. Option B reverses the causal sequence by suggesting that trapped heat causes lower greenhouse gas emissions.",
+   "topics": [
+    "CP7"
+   ],
+   "subtopic": "CP7.2.2",
+   "subtopic_title": "Human activities",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "CP7.2.2-eb2ba080"
   },
   {
    "stem": "Ocean warming, glacier retreat and reduced snow cover indicate changes in Earth’s physical environment. Which explanation correctly connects these changes to ecosystem change?",
@@ -1857,22 +2469,58 @@
    "id": "CP7.3.1-a2134154"
   },
   {
-   "stem": "Which sequence best explains how human activities increase climate-change risks for Arctic communities?",
+   "stem": "Which pair of processes primarily contributes to the observed global sea-level rise of about 3 mm per year?",
    "options": [
-    "A. More greenhouse gases trap more heat, raising global temperatures and contributing to permafrost thaw and sea-ice loss.",
-    "B. More greenhouse gases trap more heat, raising global temperatures and causing permafrost thaw and sea-ice expansion.",
-    "C. Natural greenhouse gases trap more heat, raising global temperatures and causing permafrost thaw and sea-ice loss.",
-    "D. More greenhouse gases reduce heat trapping, raising global temperatures and causing permafrost thaw and sea-ice loss."
+    "A Thermal expansion of seawater and melting glaciers",
+    "B More intense rainfall and stronger typhoons",
+    "C More frequent heatwaves and stronger storms",
+    "D Droughts and floods caused by a stronger greenhouse effect"
    ],
    "answer": "A",
-   "explanation": "The notes link additional human greenhouse-gas emissions to greater heat trapping, rising temperatures, permafrost thaw and sea-ice loss. B is incorrect because a warmer Arctic environment does not explain an expansion of sea ice.",
+   "explanation": "Warming seawater expands, while melting glaciers add water to the oceans, raising sea level. Option B confuses long-term sea-level rise with short-term extreme weather that may increase coastal flooding risk.",
    "topics": [
     "CP7"
    ],
-   "subtopic": "CP7.3.3",
-   "subtopic_title": "Regional examples",
+   "subtopic": "CP7.3.1",
+   "subtopic_title": "Physical impacts",
    "source": "MakGeography notes (AI-generated)",
-   "id": "CP7.3.3-5947c56d"
+   "id": "CP7.3.1-d080d7a8"
+  },
+  {
+   "stem": "Europe experienced four back-to-back heatwaves in summer 2025, with at least 35,000 excess deaths. Which option identifies the direct social impact rather than a physical measurement or event characteristic?",
+   "options": [
+    "A: At least 35,000 excess deaths across the four heatwaves",
+    "B: Temperatures reaching 46°C in Germany",
+    "C: Over 80 million Europeans experiencing temperatures above 40°C",
+    "D: Four consecutive heatwaves increasing the frequency of extreme heat"
+   ],
+   "answer": "A",
+   "explanation": "Excess deaths are a direct social impact because they represent a severe loss of human life and public welfare. Option B gives a physical temperature measurement, while C and D describe exposure and event characteristics rather than the resulting social impact.",
+   "topics": [
+    "CP7"
+   ],
+   "subtopic": "CP7.3.2",
+   "subtopic_title": "Social impacts",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "CP7.3.2-cbc84373"
+  },
+  {
+   "stem": "Which pairing correctly distinguishes a social impact of global warming from a social impact of deindustrialization?",
+   "options": [
+    "A: Heatwave-related deaths; unemployment and out-migration of young workers",
+    "B: Higher average temperatures; falling manufacturing output and exports",
+    "C: Greater greenhouse-gas emissions; economic decline in manufacturing regions",
+    "D: More variable monsoon rainfall; community decline and regional inequality"
+   ],
+   "answer": "A",
+   "explanation": "Heatwave-related deaths affect human welfare, while unemployment and out-migration are recognized social impacts of deindustrialization. Option D is incorrect because variable monsoon rainfall is a physical impact, whereas community decline and regional inequality are social impacts.",
+   "topics": [
+    "CP7"
+   ],
+   "subtopic": "CP7.3.2",
+   "subtopic_title": "Social impacts",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "CP7.3.2-f7ee8544"
   },
   {
    "stem": "A small island state and an Arctic Indigenous community are preparing for climate-change impacts. Which measure is an example of adaptation?",
@@ -1893,22 +2541,22 @@
    "id": "CP7.3.3-1b5214cc"
   },
   {
-   "stem": "Which statement correctly describes the Kyoto Protocol adopted in 1997?",
+   "stem": "Which sequence best explains how human activities increase climate-change risks for Arctic communities?",
    "options": [
-    "It was the first binding agreement, requiring developed countries to reduce emissions from 1997 to 2012.",
-    "It required all countries to reduce emissions by the same percentage between 1997 and 2012.",
-    "It set a voluntary 2°C target for developed countries, replacing binding emission reductions.",
-    "It introduced nationally determined contributions to limit warming to 1.5–2°C."
+    "A. More greenhouse gases trap more heat, raising global temperatures and contributing to permafrost thaw and sea-ice loss.",
+    "B. More greenhouse gases trap more heat, raising global temperatures and causing permafrost thaw and sea-ice expansion.",
+    "C. Natural greenhouse gases trap more heat, raising global temperatures and causing permafrost thaw and sea-ice loss.",
+    "D. More greenhouse gases reduce heat trapping, raising global temperatures and causing permafrost thaw and sea-ice loss."
    ],
    "answer": "A",
-   "explanation": "The Kyoto Protocol was the first binding international agreement and required developed countries to reduce emissions during 1997–2012. Option D describes features of the Paris Agreement, while Kyoto did not apply the same binding target to all countries.",
+   "explanation": "The notes link additional human greenhouse-gas emissions to greater heat trapping, rising temperatures, permafrost thaw and sea-ice loss. B is incorrect because a warmer Arctic environment does not explain an expansion of sea ice.",
    "topics": [
     "CP7"
    ],
-   "subtopic": "CP7.4.1",
-   "subtopic_title": "International agreements",
+   "subtopic": "CP7.3.3",
+   "subtopic_title": "Regional examples",
    "source": "MakGeography notes (AI-generated)",
-   "id": "CP7.4.1-6a1a22d2"
+   "id": "CP7.3.3-5947c56d"
   },
   {
    "stem": "How did the ambition of international climate agreements change from the Copenhagen Accord to the Paris Agreement?",
@@ -1927,6 +2575,24 @@
    "subtopic_title": "International agreements",
    "source": "MakGeography notes (AI-generated)",
    "id": "CP7.4.1-acdf99a8"
+  },
+  {
+   "stem": "Which statement correctly describes the Kyoto Protocol adopted in 1997?",
+   "options": [
+    "It was the first binding agreement, requiring developed countries to reduce emissions from 1997 to 2012.",
+    "It required all countries to reduce emissions by the same percentage between 1997 and 2012.",
+    "It set a voluntary 2°C target for developed countries, replacing binding emission reductions.",
+    "It introduced nationally determined contributions to limit warming to 1.5–2°C."
+   ],
+   "answer": "A",
+   "explanation": "The Kyoto Protocol was the first binding international agreement and required developed countries to reduce emissions during 1997–2012. Option D describes features of the Paris Agreement, while Kyoto did not apply the same binding target to all countries.",
+   "topics": [
+    "CP7"
+   ],
+   "subtopic": "CP7.4.1",
+   "subtopic_title": "International agreements",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "CP7.4.1-6a1a22d2"
   },
   {
    "stem": "A high-income country and a lower-income country are responding to global warming. Which combination best reflects the different priorities described in the reference material?",
@@ -1965,22 +2631,76 @@
    "id": "CP7.4.2-ecba061c"
   },
   {
-   "stem": "Which land-use measure involves planting trees to restore forest cover and increase carbon sequestration?",
+   "stem": "The Paris Agreement involved 196 countries and used nationally determined contributions (NDCs). Which statement best explains a challenge in limiting warming to 1.5–2°C?",
    "options": [
-    "A. Reforestation",
-    "B. Reduce deforestation",
-    "C. Sustainable agriculture",
-    "D. Carbon capture and storage"
+    "All 196 countries must adopt the same legally binding emissions target under the Paris Agreement.",
+    "Countries’ NDCs may differ in ambition, making their collective adequacy difficult to assess.",
+    "Countries cannot participate because small island states and polar regions have conflicting climate interests.",
+    "The Kyoto Protocol’s commitments from 1997–2012 have replaced the Paris Agreement’s NDCs."
    ],
-   "answer": "A",
-   "explanation": "Reforestation involves planting trees, increasing the carbon stored in forests. Reducing deforestation protects existing forests but does not itself involve planting new ones.",
+   "answer": "B",
+   "explanation": "Because contributions are nationally determined, countries may set different targets, creating difficulty in assessing whether their combined action is sufficient. The main distractor, A, is wrong because the Paris Agreement uses NDCs rather than requiring every country to adopt an identical target.",
    "topics": [
     "CP7"
    ],
-   "subtopic": "CP7.5.2",
-   "subtopic_title": "Carbon sequestration",
+   "subtopic": "CP7.4.3",
+   "subtopic_title": "Challenges of a global agreement",
    "source": "MakGeography notes (AI-generated)",
-   "id": "CP7.5.2-c7adcd1a"
+   "id": "CP7.4.3-4ce95575"
+  },
+  {
+   "stem": "Which evidence best illustrates the challenge of achieving the Paris Agreement’s target of limiting global warming to 1.5–2°C?",
+   "options": [
+    "Global average temperature has risen 1.1°C since pre-industrial times, and the last decade was the warmest on record.",
+    "The Kyoto Protocol required developed countries to reduce emissions between 1997 and 2012.",
+    "The Paris Agreement was signed by 196 countries.",
+    "Small island states and polar regions are both affected by global warming."
+   ],
+   "answer": "A",
+   "explanation": "The recorded warming of 1.1°C and the warmest recent decade show that reaching the Paris target is increasingly difficult. The main distractor, C, only demonstrates broad participation; signing the agreement does not show that the warming target has been achieved.",
+   "topics": [
+    "CP7"
+   ],
+   "subtopic": "CP7.4.3",
+   "subtopic_title": "Challenges of a global agreement",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "CP7.4.3-ec1278eb"
+  },
+  {
+   "stem": "A company cannot immediately eliminate all its greenhouse gas emissions. Which action best matches the term “carbon offset”?",
+   "options": [
+    "A. Compensate for the emissions it cannot avoid",
+    "B. Adjust its operations to cope with climate impacts",
+    "C. Measure its total greenhouse gas emissions",
+    "D. Set a national target for lowering emissions"
+   ],
+   "answer": "A",
+   "explanation": "A carbon offset compensates for emissions that cannot be eliminated. Option B is adaptation, option C concerns measuring a carbon footprint, and option D is target-setting rather than compensation.",
+   "topics": [
+    "CP7"
+   ],
+   "subtopic": "CP7.5.1",
+   "subtopic_title": "Reducing emissions",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "CP7.5.1-5f40ab5b"
+  },
+  {
+   "stem": "Which action is an example of mitigation in the context of global warming?",
+   "options": [
+    "A. Reduce greenhouse gas emissions from human activities",
+    "B. Adapt agricultural practices to changing climate conditions",
+    "C. Increase greenhouse gases so that more heat is trapped",
+    "D. Measure the total greenhouse gas emissions of a company"
+   ],
+   "answer": "A",
+   "explanation": "Mitigation means reducing emissions, so reducing greenhouse gases from human activities is correct. Option B is adaptation, while option C strengthens the enhanced greenhouse effect and option D measures a carbon footprint.",
+   "topics": [
+    "CP7"
+   ],
+   "subtopic": "CP7.5.1",
+   "subtopic_title": "Reducing emissions",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "CP7.5.1-87007507"
   },
   {
    "stem": "A development scheme clears forest land for agriculture. Which sequence best describes a climate-related limit of relying on forests to remove atmospheric carbon?",
@@ -2001,22 +2721,22 @@
    "id": "CP7.5.2-0b907f82"
   },
   {
-   "stem": "Which statement best explains why adaptation cannot be substituted for mitigation in responding to global warming?",
+   "stem": "Which land-use measure involves planting trees to restore forest cover and increase carbon sequestration?",
    "options": [
-    "Mitigation reduces emissions, whereas adaptation adjusts to impacts; therefore adaptation does not remove the cause of global warming.",
-    "Adaptation can replace mitigation because it protects people immediately while global temperatures continue to rise.",
-    "Mitigation can replace adaptation because reducing emissions prevents all future climate impacts.",
-    "Adaptation and mitigation are interchangeable because both directly reduce society’s exposure to climate hazards."
+    "A. Reforestation",
+    "B. Reduce deforestation",
+    "C. Sustainable agriculture",
+    "D. Carbon capture and storage"
    ],
    "answer": "A",
-   "explanation": "Mitigation addresses global warming by reducing greenhouse gas emissions, while adaptation helps societies adjust to climatic impacts. C is wrong because mitigation can limit future warming but cannot provide the protection offered by adaptation.",
+   "explanation": "Reforestation involves planting trees, increasing the carbon stored in forests. Reducing deforestation protects existing forests but does not itself involve planting new ones.",
    "topics": [
     "CP7"
    ],
-   "subtopic": "CP7.5.3",
-   "subtopic_title": "The need for adaptation",
+   "subtopic": "CP7.5.2",
+   "subtopic_title": "Carbon sequestration",
    "source": "MakGeography notes (AI-generated)",
-   "id": "CP7.5.3-be0a60b1"
+   "id": "CP7.5.2-c7adcd1a"
   },
   {
    "stem": "A Hong Kong plan uses coastal improvement works to address sea-level rise, while global renewable capacity continues to grow. Which option best explains their complementary roles?",
@@ -2035,6 +2755,24 @@
    "subtopic_title": "The need for adaptation",
    "source": "MakGeography notes (AI-generated)",
    "id": "CP7.5.3-a822d2ed"
+  },
+  {
+   "stem": "Which statement best explains why adaptation cannot be substituted for mitigation in responding to global warming?",
+   "options": [
+    "Mitigation reduces emissions, whereas adaptation adjusts to impacts; therefore adaptation does not remove the cause of global warming.",
+    "Adaptation can replace mitigation because it protects people immediately while global temperatures continue to rise.",
+    "Mitigation can replace adaptation because reducing emissions prevents all future climate impacts.",
+    "Adaptation and mitigation are interchangeable because both directly reduce society’s exposure to climate hazards."
+   ],
+   "answer": "A",
+   "explanation": "Mitigation addresses global warming by reducing greenhouse gas emissions, while adaptation helps societies adjust to climatic impacts. C is wrong because mitigation can limit future warming but cannot provide the protection offered by adaptation.",
+   "topics": [
+    "CP7"
+   ],
+   "subtopic": "CP7.5.3",
+   "subtopic_title": "The need for adaptation",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "CP7.5.3-be0a60b1"
   },
   {
    "stem": "A local authority in Hong Kong responds to stronger waves by constructing a concrete seawall along an exposed shoreline. Which option correctly classifies this coastal-defence measure?",
@@ -2073,24 +2811,6 @@
    "id": "CP7.5.4-0c2edbf5"
   },
   {
-   "stem": "A graph of Hong Kong’s annual hot days shows an increase from 40 in 1980 to 50 in 2020. What is the percentage increase in hot days?",
-   "options": [
-    "A. 10%",
-    "B. 20%",
-    "C. 25%",
-    "D. 125%"
-   ],
-   "answer": "C",
-   "explanation": "The increase is 10 hot days, so the percentage increase is (10 ÷ 40) × 100% = 25%. Option A confuses the absolute increase of 10 days with the percentage increase.",
-   "topics": [
-    "CP7"
-   ],
-   "subtopic": "CP7.6.1",
-   "subtopic_title": "Observed trends in Hong Kong",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "CP7.6.1-c2689679"
-  },
-  {
    "stem": "A Hong Kong monitoring record shows rising sea levels, more hot days, fewer cold days and stronger typhoons. Which conclusion is best supported by the record?",
    "options": [
     "A. Hong Kong shows warming, rising sea levels and more intense extreme weather.",
@@ -2109,22 +2829,22 @@
    "id": "CP7.6.1-5f169653"
   },
   {
-   "stem": "Hong Kong's Climate Action Plan coordinates measures such as electric vehicle promotion, renewable energy targets and building energy codes. What is the main purpose of these measures?",
+   "stem": "A graph of Hong Kong’s annual hot days shows an increase from 40 in 1980 to 50 in 2020. What is the percentage increase in hot days?",
    "options": [
-    "A. Mitigation, to reduce greenhouse gas emissions",
-    "B. Adaptation, to prepare for the impacts of climate change",
-    "C. Global warming, to increase average temperatures",
-    "D. Carbon offsetting, to compensate for all current emissions"
+    "A. 10%",
+    "B. 20%",
+    "C. 25%",
+    "D. 125%"
    ],
-   "answer": "A",
-   "explanation": "Mitigation means reducing emissions that contribute to climate change. These measures target the causes of global warming, whereas adaptation would involve adjusting to impacts such as rising temperatures or changing rainfall.",
+   "answer": "C",
+   "explanation": "The increase is 10 hot days, so the percentage increase is (10 ÷ 40) × 100% = 25%. Option A confuses the absolute increase of 10 days with the percentage increase.",
    "topics": [
     "CP7"
    ],
-   "subtopic": "CP7.6.2",
-   "subtopic_title": "Hong Kong's policy response",
+   "subtopic": "CP7.6.1",
+   "subtopic_title": "Observed trends in Hong Kong",
    "source": "MakGeography notes (AI-generated)",
-   "id": "CP7.6.2-2545f162"
+   "id": "CP7.6.1-c2689679"
   },
   {
    "stem": "Hong Kong introduces stricter building energy codes so that buildings consume less energy. Which explanation best describes this response to climate change?",
@@ -2145,22 +2865,22 @@
    "id": "CP7.6.2-83815be9"
   },
   {
-   "stem": "Which option correctly distinguishes the formation and texture of granite and tuff in Hong Kong?",
+   "stem": "Hong Kong's Climate Action Plan coordinates measures such as electric vehicle promotion, renewable energy targets and building energy codes. What is the main purpose of these measures?",
    "options": [
-    "Granite forms when magma cools slowly underground, producing coarse crystals; tuff forms when lava cools rapidly at the surface, producing fine grains.",
-    "Granite forms when magma cools rapidly at the surface, producing coarse crystals; tuff forms when lava cools slowly underground, producing fine grains.",
-    "Granite forms from rapid cooling underground, producing fine crystals; tuff forms from slow cooling at the surface, producing coarse crystals.",
-    "Both granite and tuff are intrusive rocks formed underground; granite cools slowly and tuff cools rapidly."
+    "A. Mitigation, to reduce greenhouse gas emissions",
+    "B. Adaptation, to prepare for the impacts of climate change",
+    "C. Global warming, to increase average temperatures",
+    "D. Carbon offsetting, to compensate for all current emissions"
    ],
    "answer": "A",
-   "explanation": "Granite is intrusive igneous rock formed by slow cooling underground, so it is coarse-grained; tuff is extrusive igneous rock formed by rapid cooling at the surface, so it is fine-grained. Option B reverses both the formation conditions and their effects on texture.",
+   "explanation": "Mitigation means reducing emissions that contribute to climate change. These measures target the causes of global warming, whereas adaptation would involve adjusting to impacts such as rising temperatures or changing rainfall.",
    "topics": [
-    "EP1"
+    "CP7"
    ],
-   "subtopic": "EP1.1.1",
-   "subtopic_title": "Rock cycle and rock formation",
+   "subtopic": "CP7.6.2",
+   "subtopic_title": "Hong Kong's policy response",
    "source": "MakGeography notes (AI-generated)",
-   "id": "EP1.1.1-d17f2529"
+   "id": "CP7.6.2-2545f162"
   },
   {
    "stem": "In the rock cycle, limestone can follow the metamorphism route. Which option correctly explains how marble forms and how it differs from limestone?",
@@ -2181,22 +2901,22 @@
    "id": "EP1.1.1-f51b8cfe"
   },
   {
-   "stem": "Which statement correctly compares the distribution and formation of granite and volcanic tuff in Hong Kong?",
+   "stem": "Which option correctly distinguishes the formation and texture of granite and tuff in Hong Kong?",
    "options": [
-    "Tuff covers 48% (Tai Mo Shan, Sai Kung) and forms from compacted volcanic ash; granite covers 30% (Kowloon, Castle Peak) and forms as magma cools underground.",
-    "Tuff covers 30% (Kowloon, Castle Peak) and forms from compacted volcanic ash; granite covers 48% (Tai Mo Shan, Sai Kung) and forms as magma cools underground.",
-    "Tuff covers 48% (Kowloon, Castle Peak) and forms from compacted volcanic ash; granite covers 30% (Tai Mo Shan, Sai Kung) and forms as magma cools underground.",
-    "Tuff covers 48% (Tai Mo Shan, Sai Kung) and forms from slow underground cooling; granite covers 30% (Kowloon, Castle Peak) and forms from compacted volcanic ash."
+    "Granite forms when magma cools slowly underground, producing coarse crystals; tuff forms when lava cools rapidly at the surface, producing fine grains.",
+    "Granite forms when magma cools rapidly at the surface, producing coarse crystals; tuff forms when lava cools slowly underground, producing fine grains.",
+    "Granite forms from rapid cooling underground, producing fine crystals; tuff forms from slow cooling at the surface, producing coarse crystals.",
+    "Both granite and tuff are intrusive rocks formed underground; granite cools slowly and tuff cools rapidly."
    ],
    "answer": "A",
-   "explanation": "Tuff covers 48% of Hong Kong and forms when volcanic ash settles and is compacted, whereas granite covers 30% and forms when magma cools slowly underground. Option B reverses their coverage and examples.",
+   "explanation": "Granite is intrusive igneous rock formed by slow cooling underground, so it is coarse-grained; tuff is extrusive igneous rock formed by rapid cooling at the surface, so it is fine-grained. Option B reverses both the formation conditions and their effects on texture.",
    "topics": [
     "EP1"
    ],
-   "subtopic": "EP1.2.1",
-   "subtopic_title": "Rock types in Hong Kong",
+   "subtopic": "EP1.1.1",
+   "subtopic_title": "Rock cycle and rock formation",
    "source": "MakGeography notes (AI-generated)",
-   "id": "EP1.2.1-103755a2"
+   "id": "EP1.1.1-d17f2529"
   },
   {
    "stem": "Which description of volcanic tuff's characteristics and resulting landscape is correct?",
@@ -2217,22 +2937,22 @@
    "id": "EP1.2.1-25ed677e"
   },
   {
-   "stem": "Which sequence correctly describes how sediment becomes sedimentary rock, from deposition to the formation of a hardened rock?",
+   "stem": "Which statement correctly compares the distribution and formation of granite and volcanic tuff in Hong Kong?",
    "options": [
-    "A: Deposition → compaction → cementation; these processes together form lithification.",
-    "B: Deposition → cementation → compaction; these processes together form lithification.",
-    "C: Compaction → deposition → cementation; these processes together form lithification.",
-    "D: Cementation → deposition → compaction; these processes together form lithification."
+    "Tuff covers 48% (Tai Mo Shan, Sai Kung) and forms from compacted volcanic ash; granite covers 30% (Kowloon, Castle Peak) and forms as magma cools underground.",
+    "Tuff covers 30% (Kowloon, Castle Peak) and forms from compacted volcanic ash; granite covers 48% (Tai Mo Shan, Sai Kung) and forms as magma cools underground.",
+    "Tuff covers 48% (Kowloon, Castle Peak) and forms from compacted volcanic ash; granite covers 30% (Tai Mo Shan, Sai Kung) and forms as magma cools underground.",
+    "Tuff covers 48% (Tai Mo Shan, Sai Kung) and forms from slow underground cooling; granite covers 30% (Kowloon, Castle Peak) and forms from compacted volcanic ash."
    ],
    "answer": "A",
-   "explanation": "After deposition, burial causes compaction, which squeezes out water and packs grains tighter. Cementation then glues the grains together, and the sequence forms lithification; B reverses compaction and cementation.",
+   "explanation": "Tuff covers 48% of Hong Kong and forms when volcanic ash settles and is compacted, whereas granite covers 30% and forms when magma cools slowly underground. Option B reverses their coverage and examples.",
    "topics": [
     "EP1"
    ],
-   "subtopic": "EP1.2.2",
-   "subtopic_title": "Sedimentary rocks",
+   "subtopic": "EP1.2.1",
+   "subtopic_title": "Rock types in Hong Kong",
    "source": "MakGeography notes (AI-generated)",
-   "id": "EP1.2.2-e53c2722"
+   "id": "EP1.2.1-103755a2"
   },
   {
    "stem": "A Lai Chi Kok Formation sample shows horizontal layers and a fossil. Its bedding forms a resistant caprock over weaker rock. Which description is correct?",
@@ -2251,6 +2971,24 @@
    "subtopic_title": "Sedimentary rocks",
    "source": "MakGeography notes (AI-generated)",
    "id": "EP1.2.2-f39d2f33"
+  },
+  {
+   "stem": "Which sequence correctly describes how sediment becomes sedimentary rock, from deposition to the formation of a hardened rock?",
+   "options": [
+    "A: Deposition → compaction → cementation; these processes together form lithification.",
+    "B: Deposition → cementation → compaction; these processes together form lithification.",
+    "C: Compaction → deposition → cementation; these processes together form lithification.",
+    "D: Cementation → deposition → compaction; these processes together form lithification."
+   ],
+   "answer": "A",
+   "explanation": "After deposition, burial causes compaction, which squeezes out water and packs grains tighter. Cementation then glues the grains together, and the sequence forms lithification; B reverses compaction and cementation.",
+   "topics": [
+    "EP1"
+   ],
+   "subtopic": "EP1.2.2",
+   "subtopic_title": "Sedimentary rocks",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "EP1.2.2-e53c2722"
   },
   {
    "stem": "A rock experiences increased heat and pressure but does not melt. If its parent rock is limestone, which statement correctly describes the metamorphic product?",
@@ -2289,24 +3027,6 @@
    "id": "EP1.2.3-d16fcf7f"
   },
   {
-   "stem": "Shing Mun Valley is a long, narrow, steep-sided valley aligned NE–SW in granite, with crushed rock and groundwater along its floor. Which explanation best accounts for these features?",
-   "options": [
-    "A. Faulting created a NE–SW fault zone; crushed rock eroded faster than the surrounding granite, leaving a valley along the fault.",
-    "B. Jointing created a NE–SW fracture; the rock on either side moved apart, producing crushed material and groundwater flow.",
-    "C. A horst was uplifted between normal faults, and a river cut a narrow valley through its summit.",
-    "D. A graben subsided, and the surrounding granite walls were uplifted to form the steep sides of the valley."
-   ],
-   "answer": "A",
-   "explanation": "Hong Kong’s major faults generally follow the NE–SW trend. Their crushed rock weathers and erodes faster than granite, so fault valleys are narrow, steep-sided and aligned with the fault; jointing involves no movement, while a horst is uplifted.",
-   "topics": [
-    "EP1"
-   ],
-   "subtopic": "EP1.2.4",
-   "subtopic_title": "Folds and faults in Hong Kong",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "EP1.2.4-abbed61d"
-  },
-  {
    "stem": "A cross-section shows two normal faults bounding a down-dropped central block. A developer proposes housing on the flat floor of a fault valley. Which interpretation and building assessment are correct?",
    "options": [
     "A. The central block is a graben; its flat floor makes it automatically the safest site for housing.",
@@ -2323,6 +3043,24 @@
    "subtopic_title": "Folds and faults in Hong Kong",
    "source": "MakGeography notes (AI-generated)",
    "id": "EP1.2.4-b9269531"
+  },
+  {
+   "stem": "Shing Mun Valley is a long, narrow, steep-sided valley aligned NE–SW in granite, with crushed rock and groundwater along its floor. Which explanation best accounts for these features?",
+   "options": [
+    "A. Faulting created a NE–SW fault zone; crushed rock eroded faster than the surrounding granite, leaving a valley along the fault.",
+    "B. Jointing created a NE–SW fracture; the rock on either side moved apart, producing crushed material and groundwater flow.",
+    "C. A horst was uplifted between normal faults, and a river cut a narrow valley through its summit.",
+    "D. A graben subsided, and the surrounding granite walls were uplifted to form the steep sides of the valley."
+   ],
+   "answer": "A",
+   "explanation": "Hong Kong’s major faults generally follow the NE–SW trend. Their crushed rock weathers and erodes faster than granite, so fault valleys are narrow, steep-sided and aligned with the fault; jointing involves no movement, while a horst is uplifted.",
+   "topics": [
+    "EP1"
+   ],
+   "subtopic": "EP1.2.4",
+   "subtopic_title": "Folds and faults in Hong Kong",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "EP1.2.4-abbed61d"
   },
   {
    "stem": "Hong Kong's UNESCO Global Geopark spans a volcanic region in the southeast and a sedimentary region in the northeast. Which zoning arrangement best protects its geology?",
@@ -2433,6 +3171,42 @@
    "id": "EP1.3.2-e6d3fc0a"
   },
   {
+   "stem": "An exposed coastal granite slope at Cheung Chau has a pitted surface with small cavities. Which physical weathering process is responsible?",
+   "options": [
+    "Salt crystallisation",
+    "Honeycomb weathering",
+    "Spheroidal weathering",
+    "Hydrolysis"
+   ],
+   "answer": "A",
+   "explanation": "Salt crystallisation occurs when sea spray enters pores and the water evaporates, leaving crystals that exert pressure and break out grains. Honeycomb describes the resulting pitted form, not the physical weathering process.",
+   "topics": [
+    "EP1"
+   ],
+   "subtopic": "EP1.3.3",
+   "subtopic_title": "Weathering",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "EP1.3.3-c7f16133"
+  },
+  {
+   "stem": "Rainwater absorbs carbon dioxide, becomes weakly acidic and reacts with carbonate in marble. As joints widen into cavities, caves and sinkholes, which process is occurring?",
+   "options": [
+    "Solution",
+    "Hydrolysis",
+    "Salt crystallisation",
+    "Thermal expansion"
+   ],
+   "answer": "A",
+   "explanation": "Solution weathering occurs when acidic water dissolves soluble carbonate rock such as marble, eventually producing karst features. Salt crystallisation and thermal expansion are physical weathering processes, while hydrolysis is not the dissolution described here.",
+   "topics": [
+    "EP1"
+   ],
+   "subtopic": "EP1.3.3",
+   "subtopic_title": "Weathering",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "EP1.3.3-a224ffd0"
+  },
+  {
    "stem": "After vegetation is removed from a slope, heavy rain causes soil erosion. Which sequence correctly describes the development of the erosion features?",
    "options": [
     "Rainsplash → sheetwash → rill → gully → valley",
@@ -2469,24 +3243,6 @@
    "id": "EP1.3.4-b4ab4ff1"
   },
   {
-   "stem": "During prolonged rain on a Hong Kong hillside, rainwater fills pores in the soil. Which sequence best explains how this can trigger a landslide?",
-   "options": [
-    "A: Water reduces the soil’s mass, lowers pore water pressure and increases friction between particles.",
-    "B: Water adds weight, raises pore water pressure, reduces particle contact and friction, and can make shear stress exceed shear strength.",
-    "C: Water increases cohesion between soil particles, raising shear strength until the slope becomes more stable.",
-    "D: Water removes the weakest plane from the soil, preventing the formation of a surface of rupture."
-   ],
-   "answer": "B",
-   "explanation": "Rainwater adds weight and increases shear stress, while pore water pressure reduces particle contact and friction, lowering shear strength. When shear stress exceeds shear strength, a landslide occurs.",
-   "topics": [
-    "EP1"
-   ],
-   "subtopic": "EP1.3.5",
-   "subtopic_title": "Mass movement",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "EP1.3.5-09881403"
-  },
-  {
    "stem": "A loose rock is attached to a steep Hong Kong slope. After an earthquake, the rock breaks free. Which explanation correctly links the trigger to mass movement?",
    "options": [
     "A: Earthquake shaking strengthens the rock bonds, so gravity cannot pull the rock downslope.",
@@ -2505,22 +3261,22 @@
    "id": "EP1.3.5-d6966798"
   },
   {
-   "stem": "Which natural condition most directly lowers the factor of safety by increasing soil weight and reducing friction?",
+   "stem": "During prolonged rain on a Hong Kong hillside, rainwater fills pores in the soil. Which sequence best explains how this can trigger a landslide?",
    "options": [
-    "A. Heavy rainfall",
-    "B. A steep slope",
-    "C. Earthquake shaking",
-    "D. Weak granite or tuff"
+    "A: Water reduces the soil’s mass, lowers pore water pressure and increases friction between particles.",
+    "B: Water adds weight, raises pore water pressure, reduces particle contact and friction, and can make shear stress exceed shear strength.",
+    "C: Water increases cohesion between soil particles, raising shear strength until the slope becomes more stable.",
+    "D: Water removes the weakest plane from the soil, preventing the formation of a surface of rupture."
    ],
-   "answer": "A",
-   "explanation": "Heavy rainfall saturates the soil, increasing weight and reducing friction. This lowers shear strength relative to shear stress and therefore lowers the factor of safety; a steep slope primarily raises shear stress instead.",
+   "answer": "B",
+   "explanation": "Rainwater adds weight and increases shear stress, while pore water pressure reduces particle contact and friction, lowering shear strength. When shear stress exceeds shear strength, a landslide occurs.",
    "topics": [
     "EP1"
    ],
-   "subtopic": "EP1.4.1",
-   "subtopic_title": "Landslides: causes in Hong Kong",
+   "subtopic": "EP1.3.5",
+   "subtopic_title": "Mass movement",
    "source": "MakGeography notes (AI-generated)",
-   "id": "EP1.4.1-65f0d85a"
+   "id": "EP1.3.5-09881403"
   },
   {
    "stem": "Which human activity most directly lowers the factor of safety by removing the root reinforcement that resists sliding?",
@@ -2541,22 +3297,22 @@
    "id": "EP1.4.1-eba97ebd"
   },
   {
-   "stem": "Which option correctly matches the hard-engineering measures with their functions?",
+   "stem": "Which natural condition most directly lowers the factor of safety by increasing soil weight and reducing friction?",
    "options": [
-    "A. Retaining wall supports slope; soil nailing reinforces soil; shotcrete provides concrete coating; rock bolts secure rocks.",
-    "B. Retaining wall reinforces soil; soil nailing supports slope; shotcrete secures rocks; rock bolts provides concrete coating.",
-    "C. Retaining wall secures rocks; soil nailing provides concrete coating; shotcrete supports slope; rock bolts reinforces soil.",
-    "D. Retaining wall supports slope; soil nailing provides concrete coating; shotcrete reinforces soil; rock bolts collects runoff."
+    "A. Heavy rainfall",
+    "B. A steep slope",
+    "C. Earthquake shaking",
+    "D. Weak granite or tuff"
    ],
    "answer": "A",
-   "explanation": "A correctly states the functions of all four hard-engineering measures. B is incorrect because it swaps their functions: retaining walls support slopes, soil nails reinforce soil, shotcrete coats slopes, and rock bolts secure loose rocks.",
+   "explanation": "Heavy rainfall saturates the soil, increasing weight and reducing friction. This lowers shear strength relative to shear stress and therefore lowers the factor of safety; a steep slope primarily raises shear stress instead.",
    "topics": [
     "EP1"
    ],
-   "subtopic": "EP1.4.2",
-   "subtopic_title": "Slope management and landslide prevention",
+   "subtopic": "EP1.4.1",
+   "subtopic_title": "Landslides: causes in Hong Kong",
    "source": "MakGeography notes (AI-generated)",
-   "id": "EP1.4.2-b645680f"
+   "id": "EP1.4.1-65f0d85a"
   },
   {
    "stem": "A Hong Kong cut slope needs measures to control water and strengthen its soil. Which combination correctly matches the measures with their functions?",
@@ -2575,6 +3331,24 @@
    "subtopic_title": "Slope management and landslide prevention",
    "source": "MakGeography notes (AI-generated)",
    "id": "EP1.4.2-917a8565"
+  },
+  {
+   "stem": "Which option correctly matches the hard-engineering measures with their functions?",
+   "options": [
+    "A. Retaining wall supports slope; soil nailing reinforces soil; shotcrete provides concrete coating; rock bolts secure rocks.",
+    "B. Retaining wall reinforces soil; soil nailing supports slope; shotcrete secures rocks; rock bolts provides concrete coating.",
+    "C. Retaining wall secures rocks; soil nailing provides concrete coating; shotcrete supports slope; rock bolts reinforces soil.",
+    "D. Retaining wall supports slope; soil nailing provides concrete coating; shotcrete reinforces soil; rock bolts collects runoff."
+   ],
+   "answer": "A",
+   "explanation": "A correctly states the functions of all four hard-engineering measures. B is incorrect because it swaps their functions: retaining walls support slopes, soil nails reinforce soil, shotcrete coats slopes, and rock bolts secure loose rocks.",
+   "topics": [
+    "EP1"
+   ],
+   "subtopic": "EP1.4.2",
+   "subtopic_title": "Slope management and landslide prevention",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "EP1.4.2-b645680f"
   },
   {
    "stem": "How do the GEO’s slope inspection, warning system and public education contribute to reducing landslide risk in Hong Kong?",
@@ -2613,672 +3387,6 @@
    "id": "EP1.4.3-0284e3ae"
   },
   {
-   "stem": "Which statement best explains how reclamation and urban development modify Hong Kong's physical landscape while remaining affected by faulting?",
-   "options": [
-    "Reclamation creates flat coastal land, while works encountering fault zones must address unstable ground and groundwater.",
-    "Reclamation removes all fault-related constraints, allowing tunnels and foundations to be constructed without special measures.",
-    "Urban development is distributed entirely by fault patterns because fault valleys provide the most suitable sites for cities.",
-    "Faulting affects only distant hills and has no influence on reclaimed land or urban engineering projects."
-   ],
-   "answer": "A",
-   "explanation": "Reclamation changes the coastline by creating flat land for development, but fault zones can still produce unstable ground, groundwater ingress and higher engineering costs. Faults provide the underlying physical framework, while human, transport and economic factors determine the final urban distribution, so option C is too absolute.",
-   "topics": [
-    "EP1"
-   ],
-   "subtopic": "EP1.4.5",
-   "subtopic_title": "Reclamation and urban development on the landscape",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "EP1.4.5-f958a076"
-  },
-  {
-   "stem": "The Central Kowloon Route includes 3.9 km of tunnel and crosses seven fault zones. Which consequence best shows why geological conditions complicate Hong Kong's urban development?",
-   "options": [
-    "Fault gouge and groundwater create unstable ground, increasing risks of collapse, ground movement, water ingress and higher costs.",
-    "Fault zones are automatically the most stable ground for excavation because fractured rocks distribute loads evenly.",
-    "Faulting affects only surface drainage and has no impact on tunnel construction or nearby structures.",
-    "Groundwater in fault gouge disappears after reclamation, removing the main engineering difficulty during excavation."
-   ],
-   "answer": "A",
-   "explanation": "The Central Kowloon Route demonstrates that fault zones can contain unstable ground and groundwater, complicating excavation and threatening nearby structures. These conditions require special engineering and increase costs, whereas option B wrongly treats fractured fault zones as especially stable ground.",
-   "topics": [
-    "EP1"
-   ],
-   "subtopic": "EP1.4.5",
-   "subtopic_title": "Reclamation and urban development on the landscape",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "EP1.4.5-2f1e4283"
-  },
-  {
-   "stem": "A volcanic eruption occurs along a long crack in the Earth's crust. Which combination best describes this eruption?",
-   "options": [
-    "A. A vent eruption producing usually explosive activity",
-    "B. A fissure eruption through a single central opening",
-    "C. A fissure eruption producing fluid basaltic lava",
-    "D. A vent eruption forming mainly from ejected volcanic ash"
-   ],
-   "answer": "C",
-   "explanation": "A fissure eruption occurs along linear cracks and generally produces fluid basaltic lava through effusive activity. Option A is incorrect because a single central opening and frequent explosivity are characteristic of a vent eruption.",
-   "topics": [
-    "CP1"
-   ],
-   "subtopic": "CP1.2.5",
-   "subtopic_title": "Volcanism",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "CP1.2.5-784b5cdd"
-  },
-  {
-   "stem": "The Hawaiian Islands formed above a stationary mantle plume as the Pacific Plate moved northwest. Which statement correctly describes the island chain?",
-   "options": [
-    "A. The youngest island is in the northwest and the oldest is over the hot spot",
-    "B. All the islands formed simultaneously when the Pacific Plate passed over the hot spot",
-    "C. The islands are the oldest in the northwest and the youngest in the southeast",
-    "D. The hot spot moved northwest together with the Pacific Plate"
-   ],
-   "answer": "C",
-   "explanation": "As the Pacific Plate moves northwest over a stationary hot spot, new volcanoes form above the plume while older volcanoes move away and become extinct. Thus, the Emperor Seamounts in the northwest are older, while the Big Island over the hot spot is youngest.",
-   "topics": [
-    "CP1"
-   ],
-   "subtopic": "CP1.2.5",
-   "subtopic_title": "Volcanism",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "CP1.2.5-def072ed"
-  },
-  {
-   "stem": "Which statement correctly describes the relationship between an earthquake's focus, epicentre and seismic waves?",
-   "options": [
-    "The focus is on the surface directly above the epicentre, and seismic waves originate there.",
-    "The focus is underground, the epicentre is directly above it, and seismic waves travel outward from the focus.",
-    "The focus and epicentre are the same underground point, and seismic waves form only along the fault line.",
-    "The focus is the crack where movement occurs, while the epicentre is where strain begins."
-   ],
-   "answer": "B",
-   "explanation": "The focus is the underground point where the earthquake starts, while the epicentre is the surface point directly above it. Seismic waves travel outward from the focus; option D wrongly confuses the focus with the fault line and strain.",
-   "topics": [
-    "CP1"
-   ],
-   "subtopic": "CP1.4.2",
-   "subtopic_title": "Earthquakes",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "CP1.4.2-94900ef9"
-  },
-  {
-   "stem": "At a transform plate boundary, why are earthquakes generally strong and frequent?",
-   "options": [
-    "Plates move apart slowly, so there is little stress accumulation and only small earthquakes.",
-    "Plates collide or subduct, causing massive strain to accumulate before a very powerful release.",
-    "Plates slide horizontally past each other; friction locks them, builds stress, and sudden releases produce frequent earthquakes.",
-    "Plates move apart rapidly, causing shallow earthquakes of moderate intensity but little stress accumulation."
-   ],
-   "answer": "C",
-   "explanation": "At transform boundaries, constantly grinding plates become locked by friction, so stress builds and is released suddenly, causing strong and frequent earthquakes. Option B describes convergent boundaries, where collision or subduction accumulates strain.",
-   "topics": [
-    "CP1"
-   ],
-   "subtopic": "CP1.4.2",
-   "subtopic_title": "Earthquakes",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "CP1.4.2-f911ed46"
-  },
-  {
-   "stem": "Which pair of conditions and beach outcome correctly describes constructive waves?",
-   "options": [
-    "Low, gentle waves; sediment is deposited and the beach is built.",
-    "High, powerful waves; sediment is deposited and the beach is built.",
-    "Low, gentle waves; sand is removed from the beach.",
-    "High, powerful waves; waves break more gently and build the beach."
-   ],
-   "answer": "A",
-   "explanation": "Constructive waves are low and gentle, so they deposit sediment and build beaches. Option B describes destructive waves, which are high and powerful and erode beaches.",
-   "topics": [
-    "CP2"
-   ],
-   "subtopic": "CP2.2.1",
-   "subtopic_title": "Wave processes",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "CP2.2.1-807eec8b"
-  },
-  {
-   "stem": "Winds blow steadily across a long fetch before reaching a coastal area. What is the likely effect on wave energy?",
-   "options": [
-    "Wave energy is low because energy is lost over a long fetch.",
-    "Wave energy is high because both fetch and wind speed increase wave energy.",
-    "Wave energy is unchanged because only wind speed affects wave energy.",
-    "Wave energy is high because a shorter fetch and stronger winds transfer more energy."
-   ],
-   "answer": "B",
-   "explanation": "Wave energy increases with both fetch and wind speed, so strong winds travelling over a long stretch of water produce energetic waves. Option C is incorrect because fetch also affects wave energy.",
-   "topics": [
-    "CP2"
-   ],
-   "subtopic": "CP2.2.1",
-   "subtopic_title": "Wave processes",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "CP2.2.1-270a70ab"
-  },
-  {
-   "stem": "Which explanation best shows how a historical factor can keep an established defence industry in a particular location?",
-   "options": [
-    "The firm won military contracts during the Cold War, and continued government orders support remaining at its established base.",
-    "The firm is close to iron ore and coal because these bulky materials lose weight during transport, reducing production costs.",
-    "The industry is footloose, so the firm can relocate easily whenever another location offers lower wages.",
-    "The firm stays in an industrial park because government subsidies reduce the cost of its land and facilities."
-   ],
-   "answer": "A",
-   "explanation": "Military contracts secured during the Cold War are a historical location factor that can create industrial inertia, explaining why the industry remains at an established base. Government subsidies in option D may also influence location, but they do not explain the specific historical factor described.",
-   "topics": [
-    "CP3"
-   ],
-   "subtopic": "CP3.1.1",
-   "subtopic_title": "Industrial location factors",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "CP3.1.1-049a5fec"
-  },
-  {
-   "stem": "After China’s Reform and Opening, why did export-oriented manufacturing concentrate in Special Economic Zones such as Shenzhen?",
-   "options": [
-    "Policy incentives attracted foreign investment, while coastal port access lowered the cost of exporting products.",
-    "Nearby iron ore and coal reduced transport costs because these raw materials are bulky and lose weight.",
-    "Low wages were the only major advantage, and Special Economic Zone status was unrelated to industrial location.",
-    "Military contracts during the Cold War guaranteed factories in these zones a continuing supply of government orders."
-   ],
-   "answer": "A",
-   "explanation": "Special Economic Zones combined policy incentives with access to export ports, helping attract foreign investment and reduce export transport costs. Option C overstates the role of cheap labour because capital and labour are footloose, while policy and market access determine the created advantage.",
-   "topics": [
-    "CP3"
-   ],
-   "subtopic": "CP3.1.1",
-   "subtopic_title": "Industrial location factors",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "CP3.1.1-00e050a0"
-  },
-  {
-   "stem": "In a Hong Kong urban area, congestion causes air pollution. Which causal chain best explains how this pollution creates a social cost?",
-   "options": [
-    "Slow-moving vehicles emit more pollutants, worsening air quality and increasing pressure on healthcare services.",
-    "Air pollution reduces the number of vehicles, easing congestion and improving workers’ health.",
-    "Higher property prices force more people to drive, directly increasing air pollution and hospital admissions.",
-    "Waste collection vehicles become less efficient during congestion, causing more industrial emissions."
-   ],
-   "answer": "A",
-   "explanation": "Congestion lengthens journeys and increases idling, allowing more vehicle emissions to accumulate. The resulting poorer air quality creates social costs through health problems and greater demand for healthcare; option B reverses the causal relationship.",
-   "topics": [
-    "CP4"
-   ],
-   "subtopic": "CP4.2.1",
-   "subtopic_title": "Urban problems",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "CP4.2.1-5b5d854a"
-  },
-  {
-   "stem": "Why are a housing shortage and high property prices essentially the same urban problem in a land-scarce city?",
-   "options": [
-    "When housing demand exceeds the limited housing supply, fewer homes are available and prices rise.",
-    "High property prices always create additional homes, so shortages and high prices cannot occur together.",
-    "Housing shortages cause property prices to fall because potential buyers can afford more homes.",
-    "A housing shortage is an environmental problem, while high property prices are only an economic issue."
-   ],
-   "answer": "A",
-   "explanation": "In a land-scarce city, limited land constrains housing supply while demand remains high. This simultaneously creates a shortage and pushes prices upward; option B wrongly assumes that high prices automatically generate enough new housing.",
-   "topics": [
-    "CP4"
-   ],
-   "subtopic": "CP4.2.1",
-   "subtopic_title": "Urban problems",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "CP4.2.1-a7682ab6"
-  },
-  {
-   "stem": "A city proposes installing green roofs on old public housing blocks. Which option best explains the feature’s mechanism, sustainability pillar and limitation?",
-   "options": [
-    "A. Vegetation absorbs less heat and provides evaporative cooling, advancing environmental sustainability, but maintenance is expensive on old buildings.",
-    "B. Green roofs absorb sunlight and improve air quality, advancing social sustainability, but they reduce residents’ quality of life.",
-    "C. Green roofs conserve natural resources and create jobs, advancing economic sustainability, but they may limit community participation.",
-    "D. Green roofs control pollution and protect ecosystems, advancing environmental sustainability, but they provide little equity or fairness."
-   ],
-   "answer": "A",
-   "explanation": "Green roofs reduce the urban heat island effect because vegetation absorbs less heat than concrete and provides evaporative cooling, supporting environmental sustainability; however, they can be expensive to maintain on old buildings. Option B is wrong because the main mechanism and stated pillar do not match.",
-   "topics": [
-    "CP4"
-   ],
-   "subtopic": "CP4.3.1",
-   "subtopic_title": "Sustainable city features",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "CP4.3.1-cdb2c26d"
-  },
-  {
-   "stem": "A neighbourhood invites residents to vote on a proposed environmental improvement project. Which sustainability benefit is most directly demonstrated?",
-   "options": [
-    "A. Greater community participation and more equitable decision-making, advancing social sustainability.",
-    "B. More efficient resource use and stronger economic growth, advancing economic sustainability.",
-    "C. Better pollution control and ecosystem protection, advancing environmental sustainability.",
-    "D. Improved job creation and higher household income, advancing economic sustainability."
-   ],
-   "answer": "A",
-   "explanation": "Allowing residents to participate in decisions promotes equity and fairness, which are key aspects of social sustainability. Option B is the main distractor because the scenario demonstrates participation and fairness, not efficient resource use or economic growth.",
-   "topics": [
-    "CP4"
-   ],
-   "subtopic": "CP4.3.1",
-   "subtopic_title": "Sustainable city features",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "CP4.3.1-5d9c4675"
-  },
-  {
-   "stem": "Hong Kong imports electricity from the Mainland. Which statement gives the most balanced evaluation of this energy strategy?",
-   "options": [
-    "It diversifies supply and can lower costs and local emissions, but dependence on the Mainland creates a vulnerability.",
-    "It removes dependence on external energy because Hong Kong controls all Mainland generating facilities.",
-    "It is sustainable only if Hong Kong stops relying on imported fossil fuels from the Mainland.",
-    "It lowers local emissions but always raises electricity prices because transmission infrastructure is costly."
-   ],
-   "answer": "A",
-   "explanation": "Importing Mainland electricity diversifies energy sources and can lower costs and local emissions, but it creates dependency. B is wrong because importing electricity does not remove external dependence or give Hong Kong control over Mainland facilities.",
-   "topics": [
-    "CP4"
-   ],
-   "subtopic": "CP4.4.1",
-   "subtopic_title": "Hong Kong case studies",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "CP4.4.1-03684504"
-  },
-  {
-   "stem": "Which is the strongest justification for using the I·PARK1 waste-to-energy facility in land-scarce Hong Kong?",
-   "options": [
-    "It moves waste up the hierarchy: incineration reduces volume and recovers energy when landfill space cannot expand.",
-    "It makes landfill extension unnecessary because incineration can recycle all materials into new products.",
-    "It removes the need for source separation because mixed waste can be converted into usable materials.",
-    "It eliminates all air pollution and ash disposal problems through energy recovery."
-   ],
-   "answer": "A",
-   "explanation": "Because disposal land cannot expand, incineration’s volume reduction and energy recovery help Hong Kong move up the waste hierarchy. D is wrong because emissions-control costs, ash disposal and public acceptance remain important limitations.",
-   "topics": [
-    "CP4"
-   ],
-   "subtopic": "CP4.4.1",
-   "subtopic_title": "Hong Kong case studies",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "CP4.4.1-a75b5bdf"
-  },
-  {
-   "stem": "Which option best evaluates green belts as a planning strategy for a sustainable, land-scarce, high-density city?",
-   "options": [
-    "A. They permanently cap urban sprawl and protect recreational or ecological space, but may raise land prices and push development beyond the boundary.",
-    "B. They separate residential and industrial land, preventing incompatible uses before they arise, but may create long commutes.",
-    "C. They control building height and density, protecting light and ventilation, but may worsen overcrowding.",
-    "D. They provide land for public consultation and NGO programmes, improving legitimacy but requiring sustained community participation."
-   ],
-   "answer": "A",
-   "explanation": "Green belts reserve land from development, permanently limiting urban sprawl and protecting open space. Their main limitation is that they may increase land prices inside the boundary and encourage development further away; option B describes zoning.",
-   "topics": [
-    "CP4"
-   ],
-   "subtopic": "CP4.5.1",
-   "subtopic_title": "Planning strategies",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "CP4.5.1-52b87669"
-  },
-  {
-   "stem": "A city installs recycling bins, but residents continue to litter rather than recycle. Which evaluation best explains the weakness of this strategy?",
-   "options": [
-    "A. The government has provided facilities without securing community participation; provision alone does not create recycling habits.",
-    "B. The city should use zoning to separate residential and industrial land and anticipate environmental problems before development.",
-    "C. The city should control building height and density to protect light and ventilation near recycling facilities.",
-    "D. The city should rely on education alone, because awareness campaigns always produce rapid and certain changes in behaviour."
-   ],
-   "answer": "A",
-   "explanation": "Provision without participation can fail: recycling bins are ineffective if residents lack the habits and willingness to use them. Option D is incorrect because education is slow and uncertain, and works only where suitable alternatives exist.",
-   "topics": [
-    "CP4"
-   ],
-   "subtopic": "CP4.5.1",
-   "subtopic_title": "Planning strategies",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "CP4.5.1-5105212d"
-  },
-  {
-   "stem": "Which explanation best applies the free-rider idea to Hong Kong's promotion of household recycling?",
-   "options": [
-    "Residents may recycle because they expect direct cash rebates rather than because they understand the environmental benefits.",
-    "Some residents may benefit from reduced landfill use while avoiding the inconvenience and costs of recycling.",
-    "Publicity can improve recycling only if every household has convenient access to recycling facilities.",
-    "Residents may support recycling in principle but reject the inconvenience of sorting materials at home."
-   ],
-   "answer": "B",
-   "explanation": "The free-rider problem occurs when people enjoy environmental benefits without bearing the associated costs. Option D describes an acceptance problem, but it does not explain why some residents benefit from others' recycling efforts.",
-   "topics": [
-    "CP4"
-   ],
-   "subtopic": "CP4.6.1",
-   "subtopic_title": "Challenges of sustainable development",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "CP4.6.1-1c18296d"
-  },
-  {
-   "stem": "A Hong Kong waste charge aims to reduce rubbish. Which judgement best explains why its sustainability cannot be judged by environmental benefits alone?",
-   "options": [
-    "It is sustainable if the government can finance waste collection and has enough vehicles to enforce the charge.",
-    "It is sustainable because economic costs occur now, while environmental benefits will be larger in the future.",
-    "It is sustainable only if short-term economic and social costs are acceptable and implementation is feasible, while delayed environmental benefits justify the policy.",
-    "It is sustainable if most residents accept the charge, regardless of its costs and environmental effectiveness."
-   ],
-   "answer": "C",
-   "explanation": "A sustainable measure must be feasible and create an acceptable balance between present costs and longer-term benefits. Option B addresses delayed benefits but ignores whether the costs are acceptable and whether the policy can be implemented effectively.",
-   "topics": [
-    "CP4"
-   ],
-   "subtopic": "CP4.6.1",
-   "subtopic_title": "Challenges of sustainable development",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "CP4.6.1-fc959a5b"
-  },
-  {
-   "stem": "According to the 2025 case, which two factors were the main drivers of primary-forest loss in Bolivia?",
-   "options": [
-    "A. Soy cultivation and agricultural expansion",
-    "B. Shifting cultivation and charcoal production",
-    "C. Palm-oil plantations and mining",
-    "D. Oil-palm conversion of indigenous land"
-   ],
-   "answer": "A",
-   "explanation": "The Bolivia case identifies agriculture and the Santa Cruz soy frontier as the main drivers. Shifting cultivation and charcoal production were linked mainly to DR Congo, while palm oil and mining were associated with Indonesia.",
-   "topics": [
-    "CP6"
-   ],
-   "subtopic": "CP6.2.1",
-   "subtopic_title": "Causes of deforestation",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "CP6.2.1-9c69fb4b"
-  },
-  {
-   "stem": "Which explanation best accounts for Indonesia's 14% year-on-year increase in primary-forest loss in 2025?",
-   "options": [
-    "A. Expansion of soy farms in Bolivia",
-    "B. Increased shifting cultivation in DR Congo",
-    "C. Palm-oil plantations and mining activities",
-    "D. Intensification of boreal forest fires in Canada"
-   ],
-   "answer": "C",
-   "explanation": "The Indonesia case states that palm oil and mining remained key drivers of forest clearance. The other options describe drivers associated with different locations and do not explain Indonesia's increase.",
-   "topics": [
-    "CP6"
-   ],
-   "subtopic": "CP6.2.1",
-   "subtopic_title": "Causes of deforestation",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "CP6.2.1-afa7ae12"
-  },
-  {
-   "stem": "In Brazil, primary-forest clearing fell 12.07% to 5,731 km² in 2024–25, but increased 25% in Mato Grosso. Which conclusion is best supported?",
-   "options": [
-    "Clearing fell uniformly in every Brazilian state because the national rate declined.",
-    "An overall national decline can coexist with an increase in a particular region.",
-    "Mato Grosso accounted for all primary-forest clearing recorded in Brazil.",
-    "The regional increase shows that INPE/PRODES no longer detected small forest areas."
-   ],
-   "answer": "B",
-   "explanation": "Mato Grosso’s 25% increase shows that deforestation patterns can vary regionally even when the national total falls. Option A is wrong because the reported decline was not uniform across all states.",
-   "topics": [
-    "CP6"
-   ],
-   "subtopic": "CP6.2.3",
-   "subtopic_title": "Deforestation patterns",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "CP6.2.3-d81a5ca8"
-  },
-  {
-   "stem": "In 2025, DR Congo lost 560,000 ha of primary forest, while Indonesia lost 433,751 ha. Which comparison of scale and causes is supported?",
-   "options": [
-    "DR Congo had the larger loss, while Indonesia’s deforestation was driven only by palm-oil plantations.",
-    "DR Congo had the larger loss, largely linked to shifting cultivation, charcoal and displacement; Indonesia’s key drivers were palm oil and mining.",
-    "Indonesia had the larger loss, mainly because of shifting cultivation and charcoal production.",
-    "Both countries lost equal areas because palm oil and shifting cultivation had similar impacts."
-   ],
-   "answer": "B",
-   "explanation": "DR Congo’s reported loss was larger, and 86% was linked to shifting cultivation, charcoal and conflict-driven displacement. Option A is wrong because mining was also a key driver in Indonesia.",
-   "topics": [
-    "CP6"
-   ],
-   "subtopic": "CP6.2.3",
-   "subtopic_title": "Deforestation patterns",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "CP6.2.3-4047cb91"
-  },
-  {
-   "stem": "Which statement best describes how the natural greenhouse effect keeps Earth warm and supports life?",
-   "options": [
-    "A. Greenhouse gases trap some outgoing longwave radiation, keeping average temperature near +15°C.",
-    "B. Without greenhouse gases, Earth would remain near -18°C, and this cooler state is essential for life.",
-    "C. Greenhouse gases trap all longwave radiation, preventing Earth from losing heat to space.",
-    "D. Oxygen and nitrogen are the main greenhouse gases that trap heat in the atmosphere."
-   ],
-   "answer": "A",
-   "explanation": "CO2, H2O, CH4 and N2O trap some heat radiated by Earth, raising average temperature from about -18°C to +15°C. Option C is wrong because some heat still escapes to space, while a natural greenhouse effect is essential rather than harmful.",
-   "topics": [
-    "CP7"
-   ],
-   "subtopic": "CP7.1.2",
-   "subtopic_title": "The greenhouse effect",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "CP7.1.2-9123ba20"
-  },
-  {
-   "stem": "Which causal sequence best explains why global temperatures are rising as the enhanced greenhouse effect develops?",
-   "options": [
-    "A. More greenhouse gases → more heat is trapped → global temperatures rise.",
-    "B. More greenhouse gases → more heat escapes to space → global temperatures rise.",
-    "C. Fewer greenhouse gases → more heat is trapped → global temperatures rise.",
-    "D. More greenhouse gases → less heat is trapped → global temperatures rise."
-   ],
-   "answer": "A",
-   "explanation": "Human activities increase greenhouse gas concentrations, so more heat is trapped and average global temperatures rise. Option B reverses the process because enhanced greenhouse effects reduce the amount of heat escaping to space.",
-   "topics": [
-    "CP7"
-   ],
-   "subtopic": "CP7.1.2",
-   "subtopic_title": "The greenhouse effect",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "CP7.1.2-be485650"
-  },
-  {
-   "stem": "Which statement best explains why the natural greenhouse effect is essential for life on Earth?",
-   "options": [
-    "Greenhouse gases trap heat, keeping Earth warm at about +15°C instead of -18°C.",
-    "Greenhouse gases allow all longwave radiation to escape into space.",
-    "Human activities strengthen the natural greenhouse effect and maintain Earth's habitability.",
-    "Greenhouse gases trap longwave radiation, causing temperatures to rise indefinitely."
-   ],
-   "answer": "A",
-   "explanation": "The natural greenhouse effect is essential because greenhouse gases trap heat and keep Earth warm. Option C confuses the natural effect with the enhanced greenhouse effect caused by human activities.",
-   "topics": [
-    "CP7"
-   ],
-   "subtopic": "CP7.2.1",
-   "subtopic_title": "Greenhouse gases",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "CP7.2.1-b3dbc331"
-  },
-  {
-   "stem": "Which option correctly identifies a greenhouse gas, its source and its lifetime?",
-   "options": [
-    "Nitrous oxide: livestock and landfills; 12 years.",
-    "Nitrous oxide: agriculture and fertilizers; 12 years.",
-    "Nitrous oxide: agriculture and fertilizers; 114 years.",
-    "Nitrous oxide: fossil fuels and deforestation; more than 100 years."
-   ],
-   "answer": "C",
-   "explanation": "Nitrous oxide is released by agriculture and fertilizers and has a lifetime of about 114 years. Option B is incorrect because 12 years is the lifetime of methane (CH4), not nitrous oxide.",
-   "topics": [
-    "CP7"
-   ],
-   "subtopic": "CP7.2.1",
-   "subtopic_title": "Greenhouse gases",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "CP7.2.1-fe99c483"
-  },
-  {
-   "stem": "Which causal chain correctly explains how human activities contribute to global warming?",
-   "options": [
-    "A. More greenhouse gases are emitted, trapping more heat and causing global temperatures to rise.",
-    "B. More heat is trapped first, causing human activities to emit fewer greenhouse gases.",
-    "C. Greenhouse gas emissions fall, trapping less heat and causing global temperatures to rise.",
-    "D. Global temperatures rise first, trapping more heat and increasing greenhouse gas emissions."
-   ],
-   "answer": "A",
-   "explanation": "Human activities increase greenhouse gas emissions, so more heat is trapped and global temperatures rise. Option B reverses the causal sequence by suggesting that trapped heat causes lower greenhouse gas emissions.",
-   "topics": [
-    "CP7"
-   ],
-   "subtopic": "CP7.2.2",
-   "subtopic_title": "Human activities",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "CP7.2.2-eb2ba080"
-  },
-  {
-   "stem": "Europe experienced four back-to-back heatwaves in summer 2025, with at least 35,000 excess deaths. Which option identifies the direct social impact rather than a physical measurement or event characteristic?",
-   "options": [
-    "A: At least 35,000 excess deaths across the four heatwaves",
-    "B: Temperatures reaching 46°C in Germany",
-    "C: Over 80 million Europeans experiencing temperatures above 40°C",
-    "D: Four consecutive heatwaves increasing the frequency of extreme heat"
-   ],
-   "answer": "A",
-   "explanation": "Excess deaths are a direct social impact because they represent a severe loss of human life and public welfare. Option B gives a physical temperature measurement, while C and D describe exposure and event characteristics rather than the resulting social impact.",
-   "topics": [
-    "CP7"
-   ],
-   "subtopic": "CP7.3.2",
-   "subtopic_title": "Social impacts",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "CP7.3.2-cbc84373"
-  },
-  {
-   "stem": "Which pairing correctly distinguishes a social impact of global warming from a social impact of deindustrialization?",
-   "options": [
-    "A: Heatwave-related deaths; unemployment and out-migration of young workers",
-    "B: Higher average temperatures; falling manufacturing output and exports",
-    "C: Greater greenhouse-gas emissions; economic decline in manufacturing regions",
-    "D: More variable monsoon rainfall; community decline and regional inequality"
-   ],
-   "answer": "A",
-   "explanation": "Heatwave-related deaths affect human welfare, while unemployment and out-migration are recognized social impacts of deindustrialization. Option D is incorrect because variable monsoon rainfall is a physical impact, whereas community decline and regional inequality are social impacts.",
-   "topics": [
-    "CP7"
-   ],
-   "subtopic": "CP7.3.2",
-   "subtopic_title": "Social impacts",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "CP7.3.2-f7ee8544"
-  },
-  {
-   "stem": "Which evidence best illustrates the challenge of achieving the Paris Agreement’s target of limiting global warming to 1.5–2°C?",
-   "options": [
-    "Global average temperature has risen 1.1°C since pre-industrial times, and the last decade was the warmest on record.",
-    "The Kyoto Protocol required developed countries to reduce emissions between 1997 and 2012.",
-    "The Paris Agreement was signed by 196 countries.",
-    "Small island states and polar regions are both affected by global warming."
-   ],
-   "answer": "A",
-   "explanation": "The recorded warming of 1.1°C and the warmest recent decade show that reaching the Paris target is increasingly difficult. The main distractor, C, only demonstrates broad participation; signing the agreement does not show that the warming target has been achieved.",
-   "topics": [
-    "CP7"
-   ],
-   "subtopic": "CP7.4.3",
-   "subtopic_title": "Challenges of a global agreement",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "CP7.4.3-ec1278eb"
-  },
-  {
-   "stem": "The Paris Agreement involved 196 countries and used nationally determined contributions (NDCs). Which statement best explains a challenge in limiting warming to 1.5–2°C?",
-   "options": [
-    "All 196 countries must adopt the same legally binding emissions target under the Paris Agreement.",
-    "Countries’ NDCs may differ in ambition, making their collective adequacy difficult to assess.",
-    "Countries cannot participate because small island states and polar regions have conflicting climate interests.",
-    "The Kyoto Protocol’s commitments from 1997–2012 have replaced the Paris Agreement’s NDCs."
-   ],
-   "answer": "B",
-   "explanation": "Because contributions are nationally determined, countries may set different targets, creating difficulty in assessing whether their combined action is sufficient. The main distractor, A, is wrong because the Paris Agreement uses NDCs rather than requiring every country to adopt an identical target.",
-   "topics": [
-    "CP7"
-   ],
-   "subtopic": "CP7.4.3",
-   "subtopic_title": "Challenges of a global agreement",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "CP7.4.3-4ce95575"
-  },
-  {
-   "stem": "Which action is an example of mitigation in the context of global warming?",
-   "options": [
-    "A. Reduce greenhouse gas emissions from human activities",
-    "B. Adapt agricultural practices to changing climate conditions",
-    "C. Increase greenhouse gases so that more heat is trapped",
-    "D. Measure the total greenhouse gas emissions of a company"
-   ],
-   "answer": "A",
-   "explanation": "Mitigation means reducing emissions, so reducing greenhouse gases from human activities is correct. Option B is adaptation, while option C strengthens the enhanced greenhouse effect and option D measures a carbon footprint.",
-   "topics": [
-    "CP7"
-   ],
-   "subtopic": "CP7.5.1",
-   "subtopic_title": "Reducing emissions",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "CP7.5.1-87007507"
-  },
-  {
-   "stem": "A company cannot immediately eliminate all its greenhouse gas emissions. Which action best matches the term “carbon offset”?",
-   "options": [
-    "A. Compensate for the emissions it cannot avoid",
-    "B. Adjust its operations to cope with climate impacts",
-    "C. Measure its total greenhouse gas emissions",
-    "D. Set a national target for lowering emissions"
-   ],
-   "answer": "A",
-   "explanation": "A carbon offset compensates for emissions that cannot be eliminated. Option B is adaptation, option C concerns measuring a carbon footprint, and option D is target-setting rather than compensation.",
-   "topics": [
-    "CP7"
-   ],
-   "subtopic": "CP7.5.1",
-   "subtopic_title": "Reducing emissions",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "CP7.5.1-5f40ab5b"
-  },
-  {
-   "stem": "An exposed coastal granite slope at Cheung Chau has a pitted surface with small cavities. Which physical weathering process is responsible?",
-   "options": [
-    "Salt crystallisation",
-    "Honeycomb weathering",
-    "Spheroidal weathering",
-    "Hydrolysis"
-   ],
-   "answer": "A",
-   "explanation": "Salt crystallisation occurs when sea spray enters pores and the water evaporates, leaving crystals that exert pressure and break out grains. Honeycomb describes the resulting pitted form, not the physical weathering process.",
-   "topics": [
-    "EP1"
-   ],
-   "subtopic": "EP1.3.3",
-   "subtopic_title": "Weathering",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "EP1.3.3-c7f16133"
-  },
-  {
-   "stem": "Rainwater absorbs carbon dioxide, becomes weakly acidic and reacts with carbonate in marble. As joints widen into cavities, caves and sinkholes, which process is occurring?",
-   "options": [
-    "Solution",
-    "Hydrolysis",
-    "Salt crystallisation",
-    "Thermal expansion"
-   ],
-   "answer": "A",
-   "explanation": "Solution weathering occurs when acidic water dissolves soluble carbonate rock such as marble, eventually producing karst features. Salt crystallisation and thermal expansion are physical weathering processes, while hydrolysis is not the dissolution described here.",
-   "topics": [
-    "EP1"
-   ],
-   "subtopic": "EP1.3.3",
-   "subtopic_title": "Weathering",
-   "source": "MakGeography notes (AI-generated)",
-   "id": "EP1.3.3-a224ffd0"
-  },
-  {
    "stem": "A proposed building site in Yuen Long has flat land covered by river sediment. Why may this apparently flat terrain conceal a foundation hazard?",
    "options": [
     "A: Marble beneath the sediment has dissolved along joints, forming karst cavities, sinkholes and unstable foundations.",
@@ -3313,6 +3421,42 @@
    "subtopic_title": "Hong Kong geological case studies",
    "source": "MakGeography notes (AI-generated)",
    "id": "EP1.4.4-55e8ce45"
+  },
+  {
+   "stem": "The Central Kowloon Route includes 3.9 km of tunnel and crosses seven fault zones. Which consequence best shows why geological conditions complicate Hong Kong's urban development?",
+   "options": [
+    "Fault gouge and groundwater create unstable ground, increasing risks of collapse, ground movement, water ingress and higher costs.",
+    "Fault zones are automatically the most stable ground for excavation because fractured rocks distribute loads evenly.",
+    "Faulting affects only surface drainage and has no impact on tunnel construction or nearby structures.",
+    "Groundwater in fault gouge disappears after reclamation, removing the main engineering difficulty during excavation."
+   ],
+   "answer": "A",
+   "explanation": "The Central Kowloon Route demonstrates that fault zones can contain unstable ground and groundwater, complicating excavation and threatening nearby structures. These conditions require special engineering and increase costs, whereas option B wrongly treats fractured fault zones as especially stable ground.",
+   "topics": [
+    "EP1"
+   ],
+   "subtopic": "EP1.4.5",
+   "subtopic_title": "Reclamation and urban development on the landscape",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "EP1.4.5-2f1e4283"
+  },
+  {
+   "stem": "Which statement best explains how reclamation and urban development modify Hong Kong's physical landscape while remaining affected by faulting?",
+   "options": [
+    "Reclamation creates flat coastal land, while works encountering fault zones must address unstable ground and groundwater.",
+    "Reclamation removes all fault-related constraints, allowing tunnels and foundations to be constructed without special measures.",
+    "Urban development is distributed entirely by fault patterns because fault valleys provide the most suitable sites for cities.",
+    "Faulting affects only distant hills and has no influence on reclaimed land or urban engineering projects."
+   ],
+   "answer": "A",
+   "explanation": "Reclamation changes the coastline by creating flat land for development, but fault zones can still produce unstable ground, groundwater ingress and higher engineering costs. Faults provide the underlying physical framework, while human, transport and economic factors determine the final urban distribution, so option C is too absolute.",
+   "topics": [
+    "EP1"
+   ],
+   "subtopic": "EP1.4.5",
+   "subtopic_title": "Reclamation and urban development on the landscape",
+   "source": "MakGeography notes (AI-generated)",
+   "id": "EP1.4.5-f958a076"
   }
  ]
 }

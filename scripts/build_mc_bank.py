@@ -19,6 +19,7 @@ redistributed in a public repository.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import re
 import sys
@@ -146,6 +147,7 @@ def generate_for(kb, llm, code: str, subtopic: str, title: str, n: int,
         if not stem or len(opts) != 4 or ans not in "ABCD":
             continue
         out.append({
+            "id": f"{subtopic}-{hashlib.sha1(stem.encode()).hexdigest()[:8]}",
             "stem": stem,
             "options": opts,
             "answer": ans,
@@ -179,12 +181,49 @@ def main():
     questions: list[dict] = []
     seen_stems = set()
 
-    # 1. HKEAA past-paper questions first (authoritative wording).
+    # 1. Official HKEAA questions first (authoritative wording and answer).
+    #
+    # These come from HKEAA's own post-examination briefing decks, where a
+    # complete Section A item appears with the correct option marked. They are
+    # the genuine exam wording. See data/hkeaa_NOTES.md for what is available
+    # and why the official question papers themselves are not included (HKEAA
+    # sells those).
+    official_path = DATA / "hkeaa_mc_raw.json"
+    official = []
+    if official_path.exists():
+        try:
+            official = json.loads(official_path.read_text())
+        except Exception:
+            official = []
+
+    # Map each official item onto the curriculum leaf it belongs to.
+    SUBTOPIC_HINTS = {
+        (2023, 2): "CP4.4.1", (2024, 6): "CP4.4.1", (2024, 9): "CP2.2.4",
+        (2024, 12): "CP3.1.1", (2024, 13): "CP4.3.1", (2024, 20): "CP7.1.1",
+        (2025, 19): "CP7.1.3",
+    }
+
+    for q in official:
+        q = dict(q)
+        q["topics"] = [q.pop("elect")]
+        sub = SUBTOPIC_HINTS.get((q["year"], q["q"]))
+        if sub:
+            q["subtopic"] = sub
+        q["subtopic_title"] = q.get("stem", "")[:60]
+        q["source"] = (f"HKEAA {q['paper']} {q['year']} Item {q['q']} "
+                       f"(official examination briefing)")
+        q["id"] = f"hkeaa-{q['year']}-q{q['q']}"
+        q["official"] = True
+        questions.append(q)
+        seen_stems.add(q["stem"].lower())
+
+    # Any inline HKEAA past-paper questions (kept for future use).
     for q in HKEAA_PAST_PAPERS:
         q = dict(q)
         q["topics"] = [q.pop("elect")]
         q["subtopic_title"] = q.get("subtopic", "")
         q["source"] = f"HKEAA {q['paper']} {q['year']} (public past paper)"
+        q["id"] = f"{q.get('subtopic','gen')}-{hashlib.sha1(q['stem'].encode()).hexdigest()[:8]}"
         questions.append(q)
         seen_stems.add(q["stem"].lower())
 

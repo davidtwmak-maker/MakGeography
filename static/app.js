@@ -276,7 +276,8 @@
 
     $("#mcList").innerHTML = qs.map((q, i) => `
       <div class="mc-q" data-i="${i}">
-        <div class="stem">${esc(q.stem)}</div>
+        ${q.official ? `<div class="mc-official">Official HKDSE exam question &middot; ${esc(q.source || "")}</div>` : ""}
+        <div class="stem">${md(q.stem)}</div>
         <div class="mc-opts">${q.options.map((o, j) =>
           `<button class="mc-opt" data-k="${String.fromCharCode(65 + j)}"><span class="k">${String.fromCharCode(65 + j)}</span><span>${esc(o)}</span></button>`).join("")}
         </div>

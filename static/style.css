@@ -114,6 +114,20 @@ button.primary:disabled{opacity:.55;cursor:not-allowed}
 .note .body td,.note .body th{border:1px solid var(--line);padding:5px 8px;text-align:left}
 
 
+/* ---------- official exam questions ---------- */
+.mc-official {
+  display: inline-block;
+  font-size: .74rem;
+  font-weight: 650;
+  letter-spacing: .02em;
+  color: #0b5f53;
+  background: #e2f2ee;
+  border: 1px solid #b9ddd5;
+  border-radius: 999px;
+  padding: 2px 9px;
+  margin-bottom: 7px;
+}
+
 /* ---------- rendered note markdown ---------- */
 .note-text table {
   width: 100%;

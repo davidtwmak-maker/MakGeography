@@ -1,0 +1,104 @@
+[
+ {
+  "paper": "Paper 1",
+  "year": 2024,
+  "q": 6,
+  "elect": "CP4",
+  "stem": "Which of the following statements about grid square 0979 are correct? (1) There is cultivated land located below 280 m. (2) People can freely access Wong Chuk Yeung by cars. (3) There is electricity supply.",
+  "options": [
+   "(1) and (2) only",
+   "(1) and (3) only",
+   "(2) and (3) only",
+   "(1), (2) and (3)"
+  ],
+  "answer": "B",
+  "explanation": "",
+  "source_page": 16,
+  "source_url": "https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/geog/GEOG-PowerPoint-2024.pdf"
+ },
+ {
+  "paper": "Paper 1",
+  "year": 2024,
+  "q": 9,
+  "elect": "CP2",
+  "stem": "Refer to the figure below, which shows a section of coast.",
+  "options": [
+   "south-west",
+   "west",
+   "north",
+   "east"
+  ],
+  "answer": "D",
+  "explanation": "",
+  "source_page": 18,
+  "source_url": "https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/geog/GEOG-PowerPoint-2024.pdf"
+ },
+ {
+  "paper": "Paper 1",
+  "year": 2024,
+  "q": 12,
+  "elect": "CP3",
+  "stem": "Which of the following manufacturing activities is raw material-oriented?",
+  "options": [
+   "bread making",
+   "cheese making",
+   "car manufacturing",
+   "newspaper printing"
+  ],
+  "answer": "B",
+  "explanation": "",
+  "source_page": 19,
+  "source_url": "https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/geog/GEOG-PowerPoint-2024.pdf"
+ },
+ {
+  "paper": "Paper 1",
+  "year": 2024,
+  "q": 13,
+  "elect": "CP4",
+  "stem": "Refer to the photograph below, which shows land use X in Hong Kong.",
+  "options": [
+   "(1) only",
+   "(1) and (2) only",
+   "(2) and (3) only",
+   "(1), (2) and (3)"
+  ],
+  "answer": "D",
+  "explanation": "",
+  "source_page": 20,
+  "source_url": "https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/geog/GEOG-PowerPoint-2024.pdf"
+ },
+ {
+  "paper": "Paper 1",
+  "year": 2024,
+  "q": 20,
+  "elect": "CP2",
+  "stem": "Which of the following are possible consequences caused by the rise of the global mean sea level? (1) an increase in wave erosion (2) the resettlement of the people who live in coastal lowlands (3) higher frequency of tropical cyclones",
+  "options": [
+   "(1) and (2) only",
+   "(1) and (3) only",
+   "(2) and (3) only",
+   "(1), (2) and (3)"
+  ],
+  "answer": "A",
+  "explanation": "",
+  "source_page": 21,
+  "source_url": "https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/geog/GEOG-PowerPoint-2024.pdf"
+ },
+ {
+  "paper": "Paper 1",
+  "year": 2025,
+  "q": 19,
+  "elect": "CP7",
+  "stem": "Which of the following is the ecological impact brought about by climate change?",
+  "options": [
+   "southward migration of biomes in the Southern",
+   "intensified coral bleaching in the polar region",
+   "more frequent extreme rainfall in Hong Kong",
+   "fewer forest fires in the Amazon rainforest"
+  ],
+  "answer": "A",
+  "explanation": "",
+  "source_page": 15,
+  "source_url": "https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/geog/GEOG-PowerPoint-2025.pdf"
+ }
+]
