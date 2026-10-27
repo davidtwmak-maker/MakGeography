@@ -4,12 +4,12 @@
 
 A public, password-protected website with four sections:
 
-| Section | What it does |
-|---|---|
-| **Ask** | A chatbot that answers from the MakGeography notes and shows which note each answer came from |
-| **Notes** | CP1–CP7 and EP1, scaffolded by the official HKDSE curriculum sub-questions |
-| **MC Drilling** | Practice multiple choice by elective, with a mistake report that shows which topics to drill next |
-| **News Corner** | Current geography news, auto-tagged by elective, refreshed on a schedule |
+| Section | What it does | State |
+|---|---|---|
+| **Ask** | A chatbot that answers from the MakGeography notes and shows which note each answer came from | working |
+| **Notes** | CP1–CP7 and EP1, scaffolded by the official HKDSE curriculum sub-questions | working — 92 leaves, all sourced |
+| **MC Drilling** | Practice multiple choice by elective, with a mistake report that shows which topics to drill next | working — 184 questions, 93 sub-topics |
+| **News Corner** | Current geography news, auto-tagged by elective, refreshed on a schedule | working — 29/30 feeds |
 
 ---
 

@@ -11,6 +11,7 @@ The whole site is behind a shared password.
 """
 from __future__ import annotations
 
+import hashlib
 import hmac
 import json
 import os
@@ -342,13 +343,22 @@ def api_news(request: Request, topic: str | None = None):
 
 
 @app.get("/api/mc")
-def api_mc(request: Request, topic: str | None = None, limit: int = 20):
+def api_mc(request: Request, topic: str | None = None, limit: int = 20,
+           subtopic: str | None = None):
     require_auth(request)
     bank = load_json("mc_bank.json", {"questions": []})
     qs = bank.get("questions", [])
     want = (topic or "ALL").upper()
     if want != "ALL":
         qs = [q for q in qs if want in [t.upper() for t in q.get("topics", [])]]
+    if subtopic:
+        qs = [q for q in qs if q.get("subtopic") == subtopic]
+    # A stable id per question lets the browser remember which ones were wrong.
+    # Older banks may not carry one, so derive it here rather than trust the file.
+    for q in qs:
+        if not q.get("id"):
+            q["id"] = f"{q.get('subtopic', 'gen')}-" + hashlib.sha1(
+                q.get("stem", "").encode()).hexdigest()[:8]
     return {"questions": qs[:limit], "total": len(qs)}
 
 

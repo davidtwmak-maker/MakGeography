@@ -39,6 +39,48 @@ Three of the Section B fieldwork modules change for 2027:
 Changing Industrial Location, Managing Coastal Environment, and — new —
 **Building a Sustainable City**. Climate Change moves out of Section B.
 
+## MC questions
+
+184 questions across 93 sub-topics, every one of the 92 curriculum leaves
+covered.
+
+Two rules govern the bank:
+
+1. **Nothing derived from a test.** No mocks, no predicted papers, no
+   teacher-written question sets, no mark schemes.
+2. **Nothing from a commercial book.** The Oxford and 600MC question banks in
+   the vault are licensed for classroom use only and are excluded from the
+   repository, images included.
+
+What is in the bank:
+
+- **HKEAA past-paper questions** — published for the public examination and
+  freely reusable. The authoritative wording.
+- **Generated questions** — written from the MakGeography notes, in DSE
+  multiple-choice style. Each has four options, one answer, and an
+  explanation that teaches the concept rather than just naming the answer.
+
+The generator asks the model for questions against retrieved note chunks, so
+every question is grounded in the notes the students are studying. When a
+call times out on a long prompt, it retries with a tighter context, which
+comes back reliably.
+
+## Mistake tracking
+
+Browser-local, keyed by sub-topic rather than elective:
+
+- `makgeo_mc_stats` in `localStorage` holds attempts, correct count, and a
+  per-sub-topic breakdown.
+- **Drill my weak topics** pulls questions from the sub-topics the student is
+  weakest in, putting the ones they already got wrong first.
+- The mistake report shows a per-sub-topic bar, not just per-elective. A
+  student weak on "Silicon Valley" does not need more iron-and-steel
+  questions.
+
+There is no server-side store, so no student is identifiable and nothing is
+collected. If per-student histories are wanted later, that needs accounts and
+a database, and is a deliberate decision rather than a default.
+
 ## Exclusion rules
 
 **The rule:** a student may see material that teaches the syllabus. A student

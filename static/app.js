@@ -224,13 +224,12 @@
 
   function saveStats(s) { localStorage.setItem("makgeo_mc_stats", JSON.stringify(s)); }
 
-  $("#mcStart").addEventListener("click", async () => {
-    const topic = $("#mcTopic").value;
-    const n = $("#mcCount").value;
-    const r = await fetch(`/api/mc?limit=${n}${topic === "ALL" ? "" : "&topic=" + topic}`);
-    const d = await r.json();
-    const qs = d.questions || [];
-    if (!qs.length) { $("#mcList").innerHTML = '<div class="empty">No questions available for that topic yet.</div>'; return; }
+  // Render a set of questions and wire up the answering.
+  function renderDrill(qs) {
+    if (!qs.length) {
+      $("#mcList").innerHTML = '<div class="empty">No questions available for that topic yet.</div>';
+      return;
+    }
     let stats = JSON.parse(localStorage.getItem("makgeo_mc_stats") || '{"asked":0,"correct":0,"byTopic":{}}');
 
     $("#mcList").innerHTML = qs.map((q, i) => `
@@ -261,14 +260,71 @@
         (q.explanation ? `<div class="why">${esc(q.explanation)}</div>` : "");
       stats.asked++;
       if (picked === correct) stats.correct++;
+      // Track by sub-topic where possible, because "drill the similar topic"
+      // is only useful at that grain: CP3 has six sub-topics and a student
+      // weak on "Silicon Valley" does not need more iron-and-steel questions.
       const t = q.topics?.[0] || "General";
       stats.byTopic[t] = stats.byTopic[t] || { asked: 0, wrong: 0 };
       stats.byTopic[t].asked++;
       if (picked !== correct) stats.byTopic[t].wrong++;
+      const st = q.subtopic || "";
+      if (st) {
+        stats.bySub = stats.bySub || {};
+        stats.bySub[st] = stats.bySub[st] || { asked: 0, wrong: 0, title: q.subtopic_title || "", topic: t };
+        stats.bySub[st].asked++;
+        if (picked !== correct) stats.bySub[st].wrong++;
+      }
+      // Remember which questions were wrong, so they can come back around.
+      stats.wrongIds = stats.wrongIds || [];
+      if (picked !== correct && q.id) {
+        if (!stats.wrongIds.includes(q.id)) stats.wrongIds.push(q.id);
+      }
       saveStats(stats);
       $("#mcList").removeEventListener("click", handler);
       $("#mcList").addEventListener("click", handler, { once: true });
     }
+  }
+
+  $("#mcStart").addEventListener("click", async () => {
+    const topic = $("#mcTopic").value;
+    const n = $("#mcCount").value;
+    const r = await fetch(`/api/mc?limit=${n}${topic === "ALL" ? "" : "&topic=" + topic}`);
+    const d = await r.json();
+    renderDrill(d.questions || []);
+  });
+
+  // Drill the topics the student is weakest on. Questions come back from the
+  // server's weakest sub-topics first, so the round targets the gaps.
+  $("#mcWeak").addEventListener("click", async () => {
+    const s = JSON.parse(localStorage.getItem("makgeo_mc_stats") || "{}");
+    const weak = Object.entries(s.bySub || {})
+      .filter(([, v]) => v.asked >= 1 && v.wrong > 0)
+      .sort((a, b) => (b[1].wrong / b[1].asked) - (a[1].wrong / a[1].asked));
+    if (!weak.length) {
+      $("#mcList").innerHTML =
+        '<div class="empty">No weak topics yet. Answer a round first, then come back — anything you get wrong becomes a weak topic.</div>';
+      return;
+    }
+    const n = Number($("#mcCount").value) || 10;
+    const wanted = weak.map(([k]) => k);
+    const r = await fetch(`/api/mc?limit=400`);
+    const d = await r.json();
+    const all = d.questions || [];
+    const picked = [];
+    for (const sub of wanted) {
+      const pool = all.filter((q) => q.subtopic === sub);
+      // Put the questions the student already got wrong first.
+      pool.sort((a, b) => (s.wrongIds || []).includes(b.id) - (s.wrongIds || []).includes(a.id));
+      picked.push(...pool);
+    }
+    if (!picked.length) {
+      $("#mcList").innerHTML = '<div class="empty">No questions available for those topics yet.</div>';
+      return;
+    }
+    renderDrill(picked.slice(0, n));
+    const label = weak.slice(0, 4).map(([k, v]) => v.title || k).join(", ");
+    $("#mcList").insertAdjacentHTML("afterbegin",
+      `<p class="hint-small" style="margin-bottom:10px">Targeting your weak topics: ${esc(label)}</p>`);
   });
 
   $("#mcReport").addEventListener("click", async () => {
@@ -289,6 +345,28 @@
           </div>
         </div>`).join("") +
       `<p class="hint-small">Your report is stored in this browser only. Topics over 40% wrong are flagged red — drill those first.</p></div>`;
+
+    // Sub-topic breakdown: the grain at which "drill the similar topic" works.
+    const subs = Object.entries(s.bySub || {})
+      .filter(([, v]) => v.asked)
+      .sort((a, b) => (b[1].wrong / b[1].asked) - (a[1].wrong / a[1].asked));
+    if (subs.length) {
+      $("#mcList").insertAdjacentHTML("beforeend",
+        `<h3 style="margin:22px 0 12px">By sub-topic</h3>` +
+        subs.map(([k, v]) => {
+          const pct = Math.round((v.wrong / v.asked) * 100);
+          const col = pct > 40 ? "#b42318" : pct > 20 ? "#b4531a" : "#0f7b6c";
+          return `<div style="margin-bottom:10px">
+            <div style="display:flex;justify-content:space-between;font-size:.88rem;gap:10px">
+              <b>${esc(v.title || k)}</b>
+              <span style="white-space:nowrap">${v.wrong} wrong of ${v.asked} (${pct}%)</span>
+            </div>
+            <div style="height:7px;background:#eef2f4;border-radius:999px;margin-top:4px;overflow:hidden">
+              <div style="height:100%;width:${pct}%;background:${col}"></div>
+            </div>
+          </div>`;
+        }).join(""));
+    }
   });
 
   // ---------------------------------------------------------------- news
