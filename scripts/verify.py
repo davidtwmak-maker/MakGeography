@@ -4,7 +4,7 @@ root = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(root))
 
 # 1. App imports
-import app.main  # noqa: F401
+import app.main as am  # noqa: F401
 print("app imports cleanly")
 
 # 2. KB integrity
@@ -79,9 +79,98 @@ for q, expect in checks.items():
     blob = " ".join(c.title for c, _ in res)
     print(f"  {q[:38]:40s} -> {res[0][0].title[:44]}")
 
-# 6. The password gate is optional: with none configured the site is open.
-import app.main as am
+# 6. The Essay Generator's scope.
+#
+# It covers CP1-CP7 and EP1. F2 and F3 are a different course, so the
+# generator must refuse them AND never draw on their notes - a practice
+# essay that mixes the two syllabuses would teach the wrong content.
+import app.essay as essay
 
+assert set(essay.ESSAY_ELECTIVES) == {
+    "CP1", "CP2", "CP3", "CP4", "CP5", "CP6", "CP7", "EP1"
+}, essay.ESSAY_ELECTIVES
+assert "F2" not in essay.ESSAY_ELECTIVES and "F3" not in essay.ESSAY_ELECTIVES
+print("Essay generator scope: CP1-CP7 + EP1, F2/F3 excluded")
+
+matcher = am.get_matcher()
+cur = json.loads((root / "data" / "curriculum.json").read_text())
+for code in essay.ESSAY_ELECTIVES:
+    try:
+        sources, context = essay.collect_source(matcher, cur, code)
+    except ValueError as e:
+        print(f"  {code}: ERROR {e}")
+        sys.exit(1)
+    assert context.strip(), f"{code} has no note material for an essay"
+    assert len(context) > 1000, (
+        f"{code} only has {len(context)} chars of material - too thin to "
+        f"write an essay from")
+    # No F2/F3 note may reach the context.
+    for s in sources:
+        p = s.get("path", "")
+        assert not p.startswith(("F2 ", "F3 ")), f"F2/F3 note leaked: {p}"
+    print(f"  {code}: {len(sources)} note sections, {len(context)} chars")
+
+for bad in ("F2", "F3"):
+    try:
+        essay.collect_source(matcher, cur, bad)
+        print(f"  {bad} was accepted - it must be refused")
+        sys.exit(1)
+    except ValueError:
+        pass
+print("F2 and F3 are refused, and neither reaches the essay context")
+
+# Every sub-topic must be able to carry an essay on its own. A leaf that
+# resolves to a single paragraph cannot support a 12-mark answer.
+thin = []
+for el in cur["electives"]:
+    code = el["code"]
+    if code not in essay.ESSAY_ELECTIVES:
+        continue
+    for sq in el.get("subquestions", []):
+        for leaf in sq.get("leaves", []):
+            _s, ctx = essay.collect_source(
+                matcher, cur, code, leaf_ids=[leaf["id"]])
+            if len(ctx) < 600:
+                thin.append((leaf["id"], len(ctx)))
+if thin:
+    print(f"Sub-topics with too little material for an essay: {thin}")
+    sys.exit(1)
+n_leaves = sum(
+    len(sq.get("leaves", []))
+    for el in cur["electives"] if el["code"] in essay.ESSAY_ELECTIVES
+    for sq in el.get("subquestions", [])
+)
+print(f"Every one of the {n_leaves} sub-topics has enough material for an essay")
+
+# 7. The rate limit must be per browser, not one shared bucket.
+#
+# With the gate off nobody logs in, so keying the limit on the session
+# cookie would put every visitor in the same bucket - one person's
+# questions would lock out everyone else.
+from fastapi.testclient import TestClient
+
+_client = TestClient(am.app)
+_r = _client.get("/")
+assert "makgeo_session" in _r.cookies, (
+    "the home page must hand out a session token so the rate limit is "
+    "per browser")
+_cookies = _r.cookies.get("makgeo_session")
+assert _cookies, "the session cookie is empty"
+
+# A second visitor gets their own bucket.
+_r2 = TestClient(am.app).get("/")
+_b2 = _r2.cookies.get("makgeo_session")
+assert _b2 and _b2 != _cookies, "two visitors share one session token"
+print(f"Rate limit is per browser: {_cookies[:8]}... and {_b2[:8]}... are separate")
+
+# And the buckets are separate per operation, so an essay generation
+# does not spend the chatbot's budget.
+assert am.check_rate("x", bucket="ask")
+assert am.check_rate("x", bucket="essay"), (
+    "the essay bucket must be separate from the chatbot's")
+print("The chatbot and the essay generator have separate rate-limit buckets")
+
+# 8. The password gate is optional: with none configured the site is open.
 assert am.password_required() is False, (
     "no password is configured, so the gate should be off")
 print("Password gate: off (the site is open - no MAKGEO_PASSWORD set)")

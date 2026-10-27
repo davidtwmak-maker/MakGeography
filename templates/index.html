@@ -17,6 +17,7 @@
       <button class="active" data-panel="chat">Ask</button>
       <button data-panel="notes">Notes</button>
       <button data-panel="mc">MC Drilling</button>
+      <button data-panel="essay">Essay Generator</button>
       <button data-panel="news">News Corner</button>
     </nav>
     {% if password_required %}
@@ -94,6 +95,34 @@
     </div>
     <div id="mcStats" class="grid cols-3" style="margin-bottom:14px"></div>
     <div id="mcList"></div>
+  </section>
+
+  <!-- ============ ESSAY GENERATOR ============ -->
+  <section class="panel" id="panel-essay">
+    <h2 class="section">Essay Generator</h2>
+    <p class="lede">Build a practice essay from the MakGeography notes — a question stem, a mark
+       scheme and an exemplar answer, all drawn from the same notes you study.
+       Covers CP1–CP7 and EP1.</p>
+    <div class="controls">
+      <select id="essayElective"><option value="">Choose an elective…</option></select>
+      <select id="essayMarks">
+        <option value="12" selected>12 marks (two parts)</option>
+        <option value="8">8 marks</option>
+        <option value="16">16 marks</option>
+        <option value="20">20 marks</option>
+      </select>
+      <select id="essayCommand">
+        <option value="describe_explain">Describe and explain</option>
+        <option value="discuss">Discuss</option>
+        <option value="evaluate">Evaluate</option>
+        <option value="account">Account for</option>
+        <option value="explain">Explain</option>
+        <option value="assess">Assess</option>
+      </select>
+      <button class="primary" id="essayGo">Generate essay</button>
+    </div>
+    <div class="essay-topic-picker" id="essayTopics"></div>
+    <div id="essayOut"></div>
   </section>
 
   <!-- ============ NEWS ============ -->

@@ -269,3 +269,24 @@ button.primary:disabled{opacity:.55;cursor:not-allowed}
 .empty{color:var(--muted);padding:28px;text-align:center;border:1px dashed var(--line);
   border-radius:var(--radius);background:var(--card)}
 footer{border-top:1px solid var(--line);margin-top:44px;padding:18px 0;color:var(--muted);font-size:.84rem}
+
+/* ---------- essay generator ---------- */
+.essay-topic-picker{margin:16px 0 18px}
+.essay-topic-picker:empty{display:none}
+.essay-sq{padding:10px 0;border-top:1px solid var(--line)}
+.essay-sq:first-child{border-top:0}
+.essay-sq-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:7px}
+.essay-sq-head b{font-size:.92rem}
+.link-btn{background:none;border:0;color:var(--accent);font-family:inherit;font-size:.8rem;
+  cursor:pointer;padding:2px 4px;white-space:nowrap}
+.link-btn:hover{text-decoration:underline}
+.essay-leaves{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:4px 18px}
+.essay-leaves label{display:flex;gap:8px;align-items:flex-start;font-size:.88rem;
+  color:var(--ink);cursor:pointer;line-height:1.45}
+.essay-leaves input{margin:4px 0 0;flex:none;accent-color:var(--accent)}
+.essay-card{line-height:1.7}
+.essay-card h3{font-size:1.05rem;margin:22px 0 8px}
+.essay-card h4{font-size:.95rem;margin:18px 0 6px}
+.essay-card ul{margin:6px 0 12px;padding-left:22px}
+.essay-card li{margin:3px 0}
+.essay-card strong{color:var(--ink)}

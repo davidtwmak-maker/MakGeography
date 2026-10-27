@@ -2,13 +2,14 @@
 
 **HKDSE Geography study site for Form 6 students.**
 
-A public website with four sections:
+A public website with five sections:
 
 | Section | What it does | State |
 |---|---|---|
 | **Ask** | A chatbot that answers from the MakGeography notes and shows which note each answer came from | working |
-| **Notes** | CP1–CP7 and EP1, scaffolded by the official HKDSE curriculum sub-questions | working — 92 leaves, all sourced |
-| **MC Drilling** | Practice multiple choice by elective, with a mistake report that shows which topics to drill next | working — 184 questions, 93 sub-topics |
+| **Notes** | CP1–CP7 and EP1, scaffolded by the official HKDSE curriculum sub-questions | working — 126 leaves, all sourced |
+| **MC Drilling** | Practice multiple choice by elective, with a mistake report that shows which topics to drill next | working — 264 questions, 126 sub-topics |
+| **Essay Generator** | Builds a practice essay from the notes: a question stem, a mark scheme and an exemplar answer | working — CP1–CP7 and EP1 only |
 | **News Corner** | Current geography news, auto-tagged by elective, refreshed on a schedule | working — 29/30 feeds |
 
 ---
@@ -101,9 +102,11 @@ questions generated from the notes.
 
 ```
 app/
-  main.py     FastAPI app: password gate, API routes, session handling
-  kb.py       BM25 retrieval over the note chunks (pure Python, no sklearn)
-  llm.py      MiniMax client: prompt construction, reasoning-strip, model fallback
+  main.py       FastAPI app: password gate, API routes, session handling
+  kb.py         BM25 retrieval over the note chunks (pure Python, no sklearn)
+  curriculum.py Matches a curriculum sub-topic to the notes that cover it
+  essay.py      The Essay Generator: source collection and prompt building
+  llm.py        MiniMax client: prompt construction, reasoning-strip, model fallback
 templates/    Jinja2 templates (login, main UI)
 static/       CSS + front-end JavaScript
 scripts/      Builders for kb.json, curriculum.json, mc_bank.json, news.json
@@ -132,6 +135,24 @@ notes do not cover a question. It cites the note it used:
 > Silicon Valley is an example of a **footloose industry** because the IT
 > industry has few fixed locational requirements … (3 Silicon Valley — 3.1
 > Location Factors; 1.1 Industrial Location Factors — Other factors)
+
+### The Essay Generator
+
+`app/essay.py` turns a chosen elective and sub-topic into a practice essay:
+a question stem, a mark scheme and an exemplar answer, in the real HKDSE
+short-essay format (two paired-command parts, bands of 6 / 3–5 / 1–2 for a
+12-mark essay).
+
+It writes from the same notes the Notes section shows, reached through the
+same curriculum scaffolding, so a student can check the essay against the
+material they studied. The notes it used are listed under the essay.
+
+**The scope is CP1–CP7 and EP1.** F2 and F3 are a different course with a
+different syllabus, so the generator refuses them and never draws on their
+notes — a practice essay that mixed the two would teach the wrong content.
+`scripts/verify.py` checks this on every build: that F2 and F3 are refused,
+that no F2/F3 note reaches the essay context, and that every one of the 126
+sub-topics has enough material to carry an essay on its own.
 
 ---
 

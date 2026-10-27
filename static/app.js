@@ -25,6 +25,7 @@
       $("#panel-" + btn.dataset.panel).classList.add("active");
       if (btn.dataset.panel === "notes") loadNotes();
       if (btn.dataset.panel === "mc") loadMcStats();
+      if (btn.dataset.panel === "essay") loadEssayTree();
       if (btn.dataset.panel === "news") loadNews();
     });
   });
@@ -433,6 +434,103 @@
         }).join(""));
     }
   });
+
+  // ---------------------------------------------------------------- essay
+  let essayTree = null;
+
+  async function loadEssayTree() {
+    if (essayTree) { renderEssayTopics(); return; }
+    $("#essayOut").innerHTML = '<div class="empty">Loading the sub-topics…</div>';
+    const r = await fetch("/api/essay/tree");
+    const d = await r.json();
+    essayTree = d.electives || [];
+    $("#essayElective").insertAdjacentHTML("beforeend",
+      essayTree.map((e) => `<option value="${esc(e.code)}">${esc(e.code)} — ${esc(e.title)}</option>`).join(""));
+    $("#essayOut").innerHTML = "";
+    renderEssayTopics();
+  }
+
+  function renderEssayTopics() {
+    const code = $("#essayElective").value;
+    const box = $("#essayTopics");
+    if (!code || !essayTree) { box.innerHTML = ""; return; }
+    const el = essayTree.find((e) => e.code === code);
+    if (!el) { box.innerHTML = ""; return; }
+    // Every sub-topic is ticked by default. The generator draws on the
+    // notes for whichever ones are ticked, and a broad pick gives the
+    // model more material to build a coherent essay from.
+    box.innerHTML = `<div class="card"><h4 style="margin-bottom:10px">Sub-topics for the essay</h4>` +
+      el.subquestions.map((sq) => `
+        <div class="essay-sq">
+          <div class="essay-sq-head">
+            <b>${esc(sq.number)}. ${esc(sq.title)}</b>
+            <button class="link-btn" data-sq="${esc(sq.number)}" data-code="${esc(code)}">all / none</button>
+          </div>
+          <div class="essay-leaves" data-sq="${esc(sq.number)}">
+            ${sq.leaves.map((l) => `
+              <label><input type="checkbox" value="${esc(l.id)}" checked> ${esc(l.title)}</label>`).join("")}
+          </div>
+        </div>`).join("") +
+      `</div>`;
+  }
+
+  $("#essayElective").addEventListener("change", renderEssayTopics);
+
+  $("#essayTopics").addEventListener("click", (e) => {
+    const b = e.target.closest("button[data-sq]");
+    if (!b) return;
+    const wrap = $(`.essay-leaves[data-sq="${b.dataset.sq}"]`);
+    if (!wrap) return;
+    const boxes = $$("input", wrap);
+    const allOn = boxes.every((x) => x.checked);
+    boxes.forEach((x) => { x.checked = !allOn; });
+  });
+
+  $("#essayGo").addEventListener("click", async () => {
+    const code = $("#essayElective").value;
+    if (!code) {
+      $("#essayOut").innerHTML = '<div class="empty">Choose an elective first.</div>';
+      return;
+    }
+    const leafIds = $$("#essayTopics input:checked").map((x) => x.value);
+    const btn = $("#essayGo");
+    btn.disabled = true;
+    btn.textContent = "Writing…";
+    $("#essayOut").innerHTML = '<div class="card"><span class="loading">Building the question, the mark scheme and the exemplar answer from the notes…</span></div>';
+    try {
+      const r = await fetch("/api/essay/generate", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          topic: code,
+          leaf_ids: leafIds,
+          marks: Number($("#essayMarks").value),
+          command: $("#essayCommand").value,
+        }),
+      });
+      const d = await r.json();
+      if (!r.ok) throw new Error(d.detail || d.error || "Generation failed.");
+      if (!d.ok) throw new Error(d.error || "Generation failed.");
+      renderEssay(d);
+    } catch (err) {
+      $("#essayOut").innerHTML = `<div class="card"><span class="loading">${esc(err.message)}</span></div>`;
+    } finally {
+      btn.disabled = false;
+      btn.textContent = "Generate essay";
+    }
+  });
+
+  function renderEssay(d) {
+    const src = (d.sources && d.sources.length)
+      ? `<div class="sources"><b>Built from these notes</b>` +
+        d.sources.map((s) =>
+          `<span class="source-chip" title="${esc(s.path)}">${esc(s.title)}${s.leaf_title ? " · " + esc(s.leaf_title) : ""}</span>`
+        ).join("") + `</div>`
+      : "";
+    $("#essayOut").innerHTML = `<div class="card essay-card">${md(d.essay)}${src}
+      <p class="hint-small">Practice material written from the MakGeography notes.
+       Nothing here is from a real exam paper.</p></div>`;
+  }
 
   // ---------------------------------------------------------------- news
   async function loadNews() {

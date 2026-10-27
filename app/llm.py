@@ -113,6 +113,12 @@ def _strip_reasoning(text: str) -> str:
 # fast model leads and the stronger one is the fallback.
 MODEL_CHAIN = ["MiniMax-M2.5-highspeed", "minimax-M3", "MiniMax-M2.5"]
 
+# The chain for long generations. MiniMax-M3 is dropped here: on an essay
+# prompt it spent all 6000 tokens on reasoning and returned an empty
+# message, so it cost 46 seconds and produced nothing. The two models that
+# actually finish the essay are kept.
+LONG_CHAIN = ["MiniMax-M2.5-highspeed", "MiniMax-M2.5"]
+
 
 def _call_once(messages, model, temperature, max_tokens, timeout):
     key = _load_env_key()
@@ -139,9 +145,12 @@ def _call_once(messages, model, temperature, max_tokens, timeout):
 
 
 def chat(messages: list[dict], model: str | None = None, temperature: float = 0.3,
-         max_tokens: int = 1800) -> dict:
+         max_tokens: int = 1800, chain: list[str] | None = None) -> dict:
     """Call MiniMax, falling back through the model chain. Returns {ok, content, ...}."""
-    chain = [model] if model else MODEL_CHAIN
+    if model:
+        chain = [model]
+    else:
+        chain = list(chain) if chain else list(MODEL_CHAIN)
     last_error = "Unknown error."
     for i, m in enumerate(chain):
         timeout = TIMEOUT if i == 0 else 45
@@ -177,6 +186,13 @@ def chat(messages: list[dict], model: str | None = None, temperature: float = 0.
             "usage": data.get("usage"),
             "model": m,
             "elapsed": round(time.time() - t0, 2),
+            # "length" means the answer was cut off mid-way. The caller
+            # needs to know that, because a truncated answer is not an
+            # answer.
+            "finish_reason": finish,
+            "truncated": finish == "length",
         }
 
-    return {"ok": False, "error": last_error, "content": "", "usage": None}
+    return {"ok": False, "error": last_error, "content": "", "usage": None,
+            "model": None, "elapsed": 0, "finish_reason": None,
+            "truncated": False}

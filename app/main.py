@@ -33,22 +33,12 @@ from fastapi.templating import Jinja2Templates
 from pydantic import BaseModel
 
 from .kb import KnowledgeBase
-from . import llm
+from .curriculum import CurriculumMatcher
+from . import essay, llm
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = BASE_DIR / "data"
 
-# Words that carry no signal when deciding which section of a note is
-# relevant to a curriculum heading.
-_STOPWORDS = {
-    "the", "and", "for", "with", "from", "that", "this", "these", "those",
-    "into", "their", "there", "when", "what", "which", "while", "where",
-    "including", "include", "includes", "such", "other", "others", "than",
-    "then", "they", "them", "been", "being", "both", "each", "more", "most",
-    "some", "under", "over", "about", "using", "used", "use", "also",
-    "environment", "management", "detailed", "notes", "note", "case",
-    "cases", "study", "studies", "update", "changes", "change",
-}
 TEMPLATE_DIR = BASE_DIR / "templates"
 STATIC_DIR = BASE_DIR / "static"
 
@@ -106,7 +96,11 @@ SESSION_TTL = 60 * 60 * 12  # 12 hours
 
 _sessions: dict[str, float] = {}
 
-# Rate limit: max N questions per session per minute, to protect the API key.
+# Rate limit: max N requests per client per minute, to protect the API key.
+#
+# The limit is per BUCKET as well as per client. The chatbot and the
+# essay generator are different operations with different costs, and one
+# must not spend the other's budget.
 RATE_LIMIT = 12
 RATE_WINDOW = 60
 _rate: dict[str, list[float]] = {}
@@ -130,14 +124,24 @@ def session_valid(token: str | None) -> bool:
     return True
 
 
-def check_rate(session: str) -> bool:
+def check_rate(session: str, limit: int = RATE_LIMIT, bucket: str = "ask") -> bool:
+    """Rate limit per client, per bucket.
+
+    The client key is the session token when there is one. With the
+    password gate off, a visitor is not asked to log in, so there is no
+    session token - and keying on None would put every visitor in the
+    same bucket, where one person's 12 questions would lock out everyone
+    else. The home page therefore hands every visitor a session token,
+    so the limit is per browser.
+    """
     now = time.time()
-    hits = [t for t in _rate.get(session, []) if now - t < RATE_WINDOW]
-    if len(hits) >= RATE_LIMIT:
-        _rate[session] = hits
+    key = f"{bucket}:{session or 'anonymous'}"
+    hits = [t for t in _rate.get(key, []) if now - t < RATE_WINDOW]
+    if len(hits) >= limit:
+        _rate[key] = hits
         return False
     hits.append(now)
-    _rate[session] = hits
+    _rate[key] = hits
     return True
 
 
@@ -153,6 +157,17 @@ def get_kb() -> KnowledgeBase:
     if _kb is None:
         _kb = KnowledgeBase(DATA_DIR / "kb.json")
     return _kb
+
+
+_matcher: CurriculumMatcher | None = None
+
+
+def get_matcher() -> CurriculumMatcher:
+    """The curriculum-to-notes matcher, built once and reused."""
+    global _matcher
+    if _matcher is None:
+        _matcher = CurriculumMatcher(get_kb())
+    return _matcher
 
 
 def load_json(name: str, default):
@@ -194,9 +209,23 @@ def require_auth(request: Request):
 def home(request: Request):
     if password_required() and not session_valid(request.cookies.get(SESSION_COOKIE)):
         return templates.TemplateResponse(request, "login.html")
-    return templates.TemplateResponse(
+
+    # Hand out a session token even when the gate is off.
+    #
+    # The token is what the rate limit is keyed on. With the gate off a
+    # visitor never logs in, so without this every anonymous visitor
+    # shares one bucket and one person's questions lock out everyone.
+    # It is not an access token - it grants nothing - it just identifies
+    # the browser.
+    resp = templates.TemplateResponse(
         request, "index.html", {"password_required": password_required()}
     )
+    if not session_valid(request.cookies.get(SESSION_COOKIE)):
+        resp.set_cookie(
+            SESSION_COOKIE, new_session(), httponly=True, samesite="lax",
+            max_age=SESSION_TTL, secure=False,
+        )
+    return resp
 
 
 @app.post("/login")
@@ -314,155 +343,7 @@ def api_notes(request: Request, topic: str | None = None):
     curriculum = load_json("curriculum.json", {"electives": []})
     want = (topic or "ALL").upper()
 
-    # Index the KB by note title (lowercased) and by section heading, so a
-    # hint can point at either a whole note or one section inside it.
-    by_title: dict[str, list] = {}
-    by_heading: dict[str, list] = {}
-    for c in kb.chunks:
-        by_title.setdefault(c.title.lower(), []).append(c)
-        h = (c.heading or "").lower().strip()
-        if h:
-            by_heading.setdefault(h, []).append(c)
-
-    def match(hints: list[str], leaf_title: str = "") -> list[dict]:
-        """Find the note content for a leaf.
-
-        A hint is the title of a whole note. Returning every chunk of that
-        note for every leaf that mentions it put the same text under dozens
-        of headings - 442 distinct chunks were shown 3,450 times.
-
-        So the note is used as the SEARCH POOL, and the leaf title selects
-        the relevant sections out of it. A section is kept when it shares a
-        meaningful term with the leaf title, or when the leaf title shares
-        one with the note's own title. If nothing matches specifically, the
-        whole note is returned - broad, but complete, which beats showing
-        a student an empty page.
-        """
-        found: dict[str, dict] = {}
-
-        def add(c) -> None:
-            found[c.doc_id + "#" + str(c.n)] = {
-                "title": c.title, "heading": c.heading, "text": c.text,
-                "n": c.n, "path": c.path,
-            }
-
-        leaf_terms = {
-            w for w in re.findall(r"[a-z][a-z\-]{3,}", (leaf_title or "").lower())
-            if w not in _STOPWORDS
-        }
-
-        for hint in hints:
-            hl = hint.lower().strip()
-            if not hl:
-                continue
-            # A hint may be a note title OR a section heading. Check both:
-            # the heading match is more specific, so it wins.
-            heading_chunks = by_heading.get(hl)
-            if heading_chunks:
-                for c in heading_chunks:
-                    add(c)
-                continue
-
-            chunks = by_title.get(hl)
-            if chunks is None:
-                # Neither an exact title nor an exact heading. Try a fuzzy
-                # heading match, but only if it resolves to one section.
-                fuzzy = {
-                    (c.title, c.heading): c
-                    for head, group in by_heading.items()
-                    if hl and (hl in head or head in hl)
-                    for c in group
-                }
-                if len(fuzzy) == 1:
-                    add(next(iter(fuzzy.values())))
-                continue
-
-            # Pick the sections of this note that are actually about the leaf.
-            scored = []
-            for c in chunks:
-                head_terms = {
-                    w for w in re.findall(r"[a-z][a-z\-]{3,}", (c.heading or "").lower())
-                    if w not in _STOPWORDS
-                }
-                overlap = leaf_terms & head_terms
-                if overlap:
-                    scored.append((len(overlap), c))
-            if scored:
-                best = max(s for s, _ in scored)
-                for s, c in scored:
-                    if s == best:
-                        add(c)
-            else:
-                # No section heading matched the leaf title. Fall back to the
-                # note's own top-level structure: its introduction plus every
-                # NUMBERED section (e.g. "2.1 Types of Internal Forces"),
-                # because those are the sections a broad leaf like "Plate
-                # movement" belongs to. Sub-sections are then skipped, so
-                # the leaf shows the note's outline rather than the whole
-                # thing.
-                numbered = []
-                for c in chunks:
-                    head = (c.heading or "").strip()
-                    if not head:
-                        add(c)
-                    elif re.match(r"^\d+(\.\d+)*\s+\S", head):
-                        depth = head.split()[0].count(".")
-                        if depth == 1:
-                            numbered.append(c)
-                if not numbered:
-                    # No numbered structure. Rank the note's sections by how
-                    # well they match the leaf title and take the best run of
-                    # them, rather than dumping the whole note. If nothing
-                    # matches at all, fall back to the note's first few
-                    # sections so the page is not empty.
-                    note_terms = {
-                        w for w in re.findall(r"[a-z][a-z\-]{3,}", hl)
-                        if w not in _STOPWORDS
-                    }
-                    best_n = 0
-                    for c in chunks:
-                        head_terms = {
-                            w for w in re.findall(r"[a-z][a-z\-]{3,}", (c.heading or "").lower())
-                            if w not in _STOPWORDS
-                        }
-                        s = len(leaf_terms & head_terms) + len(note_terms & head_terms)
-                        best_n = max(best_n, s)
-                    if best_n:
-                        # Take the SECTION that matches - every chunk sharing
-                        # that heading - plus the note's untitled intro.
-                        # Walking from the match to the end of the note
-                        # pulled in 31KB of unrelated material.
-                        matched = None
-                        for c in chunks:
-                            head_terms = {
-                                w for w in re.findall(r"[a-z][a-z\-]{3,}", (c.heading or "").lower())
-                                if w not in _STOPWORDS
-                            }
-                            s = len(leaf_terms & head_terms) + len(note_terms & head_terms)
-                            if s >= best_n:
-                                matched = c
-                                break
-                        if matched is not None:
-                            target = (matched.heading or "").strip().lower()
-                            for c in chunks:
-                                head = (c.heading or "").strip().lower()
-                                if not head or head == target:
-                                    add(c)
-                    else:
-                        for c in chunks[:6]:
-                            add(c)
-                else:
-                    # Take every TOP-LEVEL numbered section and everything
-                    # under it. A leaf like "Plate movement" may belong to
-                    # more than one top-level section, and showing only the
-                    # first would misplace it.
-                    starts = [c.n for c in numbered]
-                    ends = starts[1:] + [None]
-                    for start, end in zip(starts, ends):
-                        for c in chunks:
-                            if start <= c.n and (end is None or c.n < end):
-                                add(c)
-        return sorted(found.values(), key=lambda s: (s["title"], s["n"]))
+    matcher = get_matcher()
 
     electives = []
     for el in curriculum.get("electives", []):
@@ -473,8 +354,8 @@ def api_notes(request: Request, topic: str | None = None):
         for sq in el.get("subquestions", []):
             leaves = []
             for leaf in sq.get("leaves", []):
-                content = match(leaf.get("source_hints", []),
-                                     leaf.get("title", ""))
+                content = matcher.match(leaf.get("source_hints", []),
+                                              leaf.get("title", ""))
                 leaves.append({
                     "id": leaf.get("id"),
                     "title": leaf.get("title"),
@@ -499,6 +380,95 @@ def api_notes(request: Request, topic: str | None = None):
         "topics": kb.topics,
         "kb_topics": kb.topics,
     }
+
+
+@app.get("/api/essay/tree")
+def api_essay_tree(request: Request):
+    """The sub-topics the essay generator can draw on.
+
+    Only CP1-CP7 and EP1. F2 and F3 are a different course and are not
+    offered here, so the picker cannot ask for them.
+    """
+    require_auth(request)
+    curriculum = load_json("curriculum.json", {"electives": []})
+    out = []
+    for el in curriculum.get("electives", []):
+        code = el.get("code", "").upper()
+        if code not in essay.ESSAY_ELECTIVES:
+            continue
+        subqs = []
+        for sq in el.get("subquestions", []):
+            leaves = [
+                {"id": l.get("id"), "title": l.get("title")}
+                for l in sq.get("leaves", [])
+                if l.get("id")
+            ]
+            if leaves:
+                subqs.append({
+                    "number": sq.get("number"),
+                    "title": sq.get("title"),
+                    "leaves": leaves,
+                })
+        out.append({
+            "code": code,
+            "title": el.get("title"),
+            "subquestions": subqs,
+        })
+    return {
+        "electives": out,
+        "marks": list(essay.MARK_OPTIONS),
+        "commands": [
+            {"key": k, "label": v} for k, v in essay.COMMAND_PAIRS.items()
+        ],
+    }
+
+
+class EssayPayload(BaseModel):
+    topic: str
+    leaf_ids: list[str] | None = None
+    marks: int = 12
+    command: str | None = None
+
+
+@app.post("/api/essay/generate")
+def api_essay_generate(request: Request, payload: EssayPayload):
+    """Generate one practice essay from the MakGeography notes."""
+    require_auth(request)
+    topic = (payload.topic or "").strip().upper()
+    if not check_rate(request.cookies.get(SESSION_COOKIE),
+                      limit=essay.ESSAY_RATE_LIMIT, bucket="essay"):
+        raise HTTPException(
+            status_code=429,
+            detail="You have reached the essay limit for this minute. Wait a moment, then try again.",
+        )
+    if topic in essay.EXCLUDED_ELECTIVES:
+        raise HTTPException(
+            status_code=400,
+            detail=(
+                f"{topic} is not covered by the essay generator. It covers "
+                f"CP1-CP7 and EP1 only."
+            ),
+        )
+    if topic not in essay.ESSAY_ELECTIVES:
+        raise HTTPException(
+            status_code=400,
+            detail=(
+                f"Choose one of {', '.join(essay.ESSAY_ELECTIVES)}."
+            ),
+        )
+
+    marks = payload.marks if payload.marks in essay.MARK_OPTIONS else 12
+    curriculum = load_json("curriculum.json", {"electives": []})
+    res = essay.generate(
+        get_matcher(), curriculum, topic,
+        leaf_ids=payload.leaf_ids or None,
+        marks=marks,
+        command=payload.command,
+        topic_title="",
+    )
+    if not res["ok"]:
+        return {"ok": False, "error": res["error"], "essay": None, "sources": []}
+    return res
 
 
 @app.get("/api/news")
