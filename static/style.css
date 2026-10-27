@@ -285,6 +285,11 @@ footer{border-top:1px solid var(--line);margin-top:44px;padding:18px 0;color:var
   color:var(--ink);cursor:pointer;line-height:1.45}
 .essay-leaves input{margin:4px 0 0;flex:none;accent-color:var(--accent)}
 .essay-card{line-height:1.7}
+/* The topbar is sticky, so a heading scrolled to the top of the viewport
+   would slide under it. The scroll-margin keeps it clear. */
+.essay-card h3,.essay-card h4,.panel h2.section,#essayOut h3,#essayOut h4{
+  scroll-margin-top:86px
+}
 .essay-card h3{font-size:1.05rem;margin:22px 0 8px}
 .essay-card h4{font-size:.95rem;margin:18px 0 6px}
 .essay-card ul{margin:6px 0 12px;padding-left:22px}
