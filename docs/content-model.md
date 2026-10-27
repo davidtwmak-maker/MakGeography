@@ -19,19 +19,59 @@ for each elective. The current structure:
 
 | Code | Elective | Sub-questions | Leaves |
 |---|---|---|---|
-| CP1 | Earth Structure | 4 | 16 |
-| CP2 | Managing Coastal Environments | 2 | 11 |
-| CP3 | Industrial Location | 6 | 6 |
-| CP4 | Building a Sustainable City | 6 | 6 |
-| CP5 | Combating Famine | 6 | 6 |
-| CP6 | Disappearing Green Canopy | 5 | 14 |
-| CP7 | Climate Change | 6 | 17 |
-| EP1 | Dynamic Earth — the building of Hong Kong | 5 | 16 |
+| CP1 | Earth Structure | 4 | 17 |
+| CP2 | Managing Coastal Environments | 2 | 16 |
+| CP3 | Industrial Location | 6 | 9 |
+| CP4 | Building a Sustainable City | 6 | 11 |
+| CP5 | Combating Famine | 6 | 11 |
+| CP6 | Disappearing Green Canopy | 5 | 18 |
+| CP7 | Climate Change | 6 | 23 |
+| EP1 | Dynamic Earth — the building of Hong Kong | 5 | 21 |
+| | **Total** | **38** | **126** |
 
-Each leaf carries `source_hints` — the vault note titles that hold that
-content. The Notes page matches a leaf to its note and shows the real text
-under the curriculum heading. A leaf with no matching note is shown honestly
-as "no note yet" rather than hidden, so gaps are visible.
+The scaffold was first built from the teacher's own note headings. A
+separate line-by-line read of the Guide's guiding questions, Explanatory
+Notes and Concepts columns then compared every leaf against the official
+structure and found **33 official sub-questions the teacher's headings did
+not reach** — CP1's titular "is it rational" essay, EP1's "Earth as a
+system", CP4's urbanisation cycle and public housing, CP7's heat island and
+the fluctuation-versus-irreversible debate, CP6's conflicts of interest,
+and so on.
+
+Those 33 are in the scaffold, marked `added_for_syllabus_coverage`, so a
+student following the site works through the whole official structure
+rather than only the parts the notes happen to reach. The 7 teacher
+additions that are **not** in the official guide (including the shear
+stress / factor of safety framework, which the original analysis marked
+"keep") are kept too, and marked `teacher_addition` so that nothing is
+passed off as an official heading.
+
+Each leaf carries `source_hints` — the vault note titles or section
+headings that hold that content. The Notes page matches a leaf to its
+note and shows the real text under the curriculum heading. A leaf with no
+matching note is shown honestly as "no note yet" rather than hidden, so
+gaps are visible.
+
+### How a leaf finds its note
+
+A hint names a whole note. Returning every chunk of that note for every
+leaf that mentioned it put the same text under dozens of headings — 442
+distinct chunks were shown 3,450 times, and a single leaf could display
+31 KB of unrelated material.
+
+So the note is the **search pool** and the leaf title **selects** the
+relevant sections out of it:
+
+- a hint that is an exact section heading returns only that section
+- otherwise the sections of the note whose heading shares a meaningful
+  term with the leaf title are returned
+- if nothing matches, the note's own numbered top-level structure is
+  returned, so a broad leaf like "Plate movement" still gets a sensible
+  page rather than a blank one
+
+The result: all 126 leaves show content, the duplication factor fell from
+7.8x to 3.9x (the remaining sharing is a generic command-word table that
+legitimately appears in several notes), and no leaf exceeds about 6.5 KB.
 
 ### 2027 changes
 

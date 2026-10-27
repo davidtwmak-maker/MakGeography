@@ -206,6 +206,16 @@
         "4.2 EARTHQUAKES",
         "4.3 TSUNAMIS"
        ]
+      },
+      {
+       "id": "CP1.4.5",
+       "title": "Vulnerability of less developed areas and the rationality of living in hazard-prone areas",
+       "summary": "Official GQ12-15: why less developed areas are more vulnerable to natural hazards (literacy and awareness, socio-economic and technological gaps); the advantages and disadvantages of living in hazard-prone areas.",
+       "source_hints": [
+        "CP1 Opportunities and Risks. Is it rational to live."
+       ],
+       "official": true,
+       "added_for_syllabus_coverage": true
       }
      ]
     }
@@ -238,6 +248,16 @@
      "title": "River environment",
      "official_guidance": "Features of a drainage basin; major erosional, transportation and depositional processes and the factors influencing them; major landform features (gorges, waterfalls and rapids, meanders and associated landforms, flood plains, levees, braids and deltas).",
      "leaves": [
+      {
+       "id": "CP2.1.0",
+       "title": "The hydrological cycle",
+       "summary": "Official GQ1 asks for a brief introduction to the hydrological cycle - its characteristics, stores and transfers.",
+       "source_hints": [
+        "1.0 River & Coastal environment"
+       ],
+       "official": true,
+       "added_for_syllabus_coverage": true
+      },
       {
        "id": "CP2.1.1",
        "title": "River system",
@@ -287,6 +307,17 @@
        "source_hints": [
         "1.0 River & Coastal environment"
        ]
+      },
+      {
+       "id": "CP2.1.6",
+       "title": "Braided rivers and channel networks",
+       "summary": "The official landform list for Module 2 includes braids and the channel network as distinct features.",
+       "source_hints": [
+        "1.0 River & Coastal environment",
+        "1.1 River System"
+       ],
+       "official": true,
+       "added_for_syllabus_coverage": true
       }
      ]
     },
@@ -355,6 +386,36 @@
        "source_hints": [
         "1.0 River & Coastal environment"
        ]
+      },
+      {
+       "id": "CP2.2.7",
+       "title": "Land use zoning as a management strategy",
+       "summary": "The official management list for Module 2 names land use zoning alongside channelisation, breakwaters and beach nourishment.",
+       "source_hints": [
+        "2.5 Managing coastal environment"
+       ],
+       "official": true,
+       "added_for_syllabus_coverage": true
+      },
+      {
+       "id": "CP2.2.8",
+       "title": "Mass wasting and ecosystem disturbance as consequences",
+       "summary": "The official consequences list for Module 2 includes mass wasting and disturbance or damage to the ecosystem alongside flooding, erosion and pollution.",
+       "source_hints": [
+        "2.5 Managing coastal environment"
+       ],
+       "official": true,
+       "added_for_syllabus_coverage": true
+      },
+      {
+       "id": "CP2.2.9",
+       "title": "Conflict and the evaluation of management strategies",
+       "summary": "The official Concepts column for Module 2 lists 'Conflict' and 'Management', and the Explanatory Notes require evaluation of the methods and strategies used and their possible consequences.",
+       "source_hints": [
+        "2.5 Managing coastal environment"
+       ],
+       "official": true,
+       "added_for_syllabus_coverage": true
       }
      ]
     }
@@ -438,6 +499,26 @@
        "source_hints": [
         "1.1 Industrial Location Factors — F6 Revision"
        ]
+      },
+      {
+       "id": "CP3.2.2",
+       "title": "Hong Kong's manufacturing industry and its relocation to the Zhujiang (Pearl River) Delta",
+       "summary": "Official GQ1-2: where Hong Kong's manufacturing industry was located in the past (1950s-1970s), where it is now, and the relocation of Hong Kong's manufacturing industry to the Zhujiang (Pearl River) Delta.",
+       "source_hints": [
+        "CP3 Industrial Location Detailed Notes"
+       ],
+       "official": true,
+       "added_for_syllabus_coverage": true
+      },
+      {
+       "id": "CP3.2.3",
+       "title": "The Hong Kong industrial field trip",
+       "summary": "The official Skills column for GQ7-8 asks for a field trip to Cyberport or the Hong Kong Science Park to identify the factors favouring the IT industry there.",
+       "source_hints": [
+        "CP3 Industrial Location Detailed Notes"
+       ],
+       "official": true,
+       "added_for_syllabus_coverage": true
       }
      ]
     },
@@ -502,6 +583,16 @@
        "source_hints": [
         "1.1 Industrial Location Factors — F6 Revision"
        ]
+      },
+      {
+       "id": "CP3.5.3",
+       "title": "Impacts of industrial relocation and the measures to alleviate them",
+       "summary": "Official GQ10-11: the likely social, economic and environmental impacts of changing industrial location and modes of production (flow of technology, changes in employment), and the measures to alleviate them.",
+       "source_hints": [
+        "CP3 Industrial Location Detailed Notes"
+       ],
+       "official": true,
+       "added_for_syllabus_coverage": true
       }
      ]
     }
@@ -573,6 +664,26 @@
        "source_hints": [
         "4.1 Sustainable Development — F6 Revision"
        ]
+      },
+      {
+       "id": "CP4.2.2",
+       "title": "Urban growth, urbanisation and the changing internal structure of the city",
+       "summary": "Official GQ1-4: the definition of urban growth and urbanisation; their causes (natural increase of the urban population, rural-urban migration, reclassification of areas); and the changing internal structure of the city.",
+       "source_hints": [
+        "CP4 Sustainable City Detailed Notes"
+       ],
+       "official": true,
+       "added_for_syllabus_coverage": true
+      },
+      {
+       "id": "CP4.2.3",
+       "title": "Provision of public housing and new towns",
+       "summary": "Official GQ6 names the provision of public housing and the building of new towns as specific measures for alleviating urban problems.",
+       "source_hints": [
+        "CP4 Sustainable City Detailed Notes"
+       ],
+       "official": true,
+       "added_for_syllabus_coverage": true
       }
      ]
     },
@@ -591,6 +702,16 @@
        "source_hints": [
         "4.1 Sustainable Development — F6 Revision"
        ]
+      },
+      {
+       "id": "CP4.3.2",
+       "title": "Indicators of a sustainable city",
+       "summary": "Official GQ11 asks for the characteristics of a sustainable city, and the Skills column requires compiling indicators from various sources and then re-designing the indicators.",
+       "source_hints": [
+        "CP4 Sustainable City Detailed Notes"
+       ],
+       "official": true,
+       "added_for_syllabus_coverage": true
       }
      ]
     },
@@ -627,6 +748,16 @@
        "source_hints": [
         "4.1 Sustainable Development — F6 Revision"
        ]
+      },
+      {
+       "id": "CP4.5.2",
+       "title": "Regenerating and re-imaging the city",
+       "summary": "Official GQ12 names 'regenerating and re-imaging the city' as a method of making a city sustainable.",
+       "source_hints": [
+        "CP4 Sustainable City Detailed Notes"
+       ],
+       "official": true,
+       "added_for_syllabus_coverage": true
       }
      ]
     },
@@ -645,6 +776,16 @@
        "source_hints": [
         "4.1 Sustainable Development — F6 Revision"
        ]
+      },
+      {
+       "id": "CP4.6.2",
+       "title": "The price of developing a sustainable city",
+       "summary": "Official GQ13 makes the price of developing a sustainable city a required topic.",
+       "source_hints": [
+        "CP4 Sustainable City Detailed Notes"
+       ],
+       "official": true,
+       "added_for_syllabus_coverage": true
       }
      ]
     }
@@ -728,6 +869,17 @@
        "source_hints": [
         "5.1 Agricultural Systems — F6 Revision"
        ]
+      },
+      {
+       "id": "CP5.2.2",
+       "title": "Nomadic herding in the Sahel",
+       "summary": "Official GQ6: the agricultural characteristics of nomadic herding in the Sahel, with attention to the technological, economic, political and socio-cultural aspects.",
+       "source_hints": [
+        "CP5 Combating Famine Detailed Notes",
+        "5.4 Famine — Causes & Characteristics (F6 Revision)"
+       ],
+       "official": true,
+       "added_for_syllabus_coverage": true
       }
      ]
     },
@@ -746,6 +898,17 @@
        "source_hints": [
         "5.1 Agricultural Systems — F6 Revision"
        ]
+      },
+      {
+       "id": "CP5.3.2",
+       "title": "Irrigation farming in Southern California",
+       "summary": "Official GQ6: the agricultural characteristics of irrigation farming in Southern California, with technological, economic, political and socio-cultural aspects.",
+       "source_hints": [
+        "CP5 Combating Famine Detailed Notes",
+        "5.4 Famine — Causes & Characteristics (F6 Revision)"
+       ],
+       "official": true,
+       "added_for_syllabus_coverage": true
       }
      ]
     },
@@ -764,6 +927,17 @@
        "source_hints": [
         "5.1 Agricultural Systems — F6 Revision"
        ]
+      },
+      {
+       "id": "CP5.4.2",
+       "title": "Global patterns of food production, consumption and trade",
+       "summary": "Official GQ1-3: the uneven availability of food supplies relative to demand on a global scale; global patterns of food production and consumption in relation to population and other factors.",
+       "source_hints": [
+        "CP5 Combating Famine Detailed Notes",
+        "5.4 Famine — Causes & Characteristics (F6 Revision)"
+       ],
+       "official": true,
+       "added_for_syllabus_coverage": true
       }
      ]
     },
@@ -800,6 +974,28 @@
        "source_hints": [
         "5.1 Agricultural Systems — F6 Revision"
        ]
+      },
+      {
+       "id": "CP5.6.2",
+       "title": "Consequences of misuse and overuse of agricultural technology",
+       "summary": "Official GQ10-11: reduction of biodiversity, habitat loss, land degradation, soil erosion, chemical pollution of land and watercourses, and the impact on the rural landscape.",
+       "source_hints": [
+        "CP5 Combating Famine Detailed Notes",
+        "5.4 Famine — Causes & Characteristics (F6 Revision)"
+       ],
+       "official": true,
+       "added_for_syllabus_coverage": true
+      },
+      {
+       "id": "CP5.6.3",
+       "title": "Multiple cropping, water conservation and soil conservation",
+       "summary": "Official GQ11 names multiple cropping and water and soil conservation methods as measures for sustainable agricultural development, alongside organic farming.",
+       "source_hints": [
+        "CP5 Combating Famine Detailed Notes",
+        "5.4 Famine — Causes & Characteristics (F6 Revision)"
+       ],
+       "official": true,
+       "added_for_syllabus_coverage": true
       }
      ]
     }
@@ -885,6 +1081,16 @@
        "source_hints": [
         "CP6 Disappearing Green Canopy Detailed Notes"
        ]
+      },
+      {
+       "id": "CP6.1.4",
+       "title": "Abiotic and biotic components, energy flow and ecological equilibrium",
+       "summary": "Official GQ2-4 requires the definition of an ecosystem, its abiotic and biotic components, the links and interrelationships between them, energy flow in the ecosystem, and ecological equilibrium.",
+       "source_hints": [
+        "CP6 Disappearing Green Canopy Detailed Notes"
+       ],
+       "official": true,
+       "added_for_syllabus_coverage": true
       }
      ]
     },
@@ -932,7 +1138,19 @@
        "teacher_label": "PART 3 Carbon Cycle",
        "source_hints": [
         "CP6 Disappearing Green Canopy Detailed Notes"
-       ]
+       ],
+       "teacher_addition": true,
+       "teacher_note": "Teacher addition: useful content, but not an official heading in the C&A Guide."
+      },
+      {
+       "id": "CP6.2.5",
+       "title": "Global distribution and the rate of deforestation",
+       "summary": "Official GQ1: the global distribution of tropical rainforests and deforestation in rainforest regions - its rate and conditions.",
+       "source_hints": [
+        "CP6 Disappearing Green Canopy Detailed Notes"
+       ],
+       "official": true,
+       "added_for_syllabus_coverage": true
       }
      ]
     },
@@ -998,7 +1216,29 @@
        "teacher_label": "PART 6 Biofuels",
        "source_hints": [
         "CP6 Disappearing Green Canopy Detailed Notes"
-       ]
+       ],
+       "teacher_addition": true,
+       "teacher_note": "Teacher addition: useful content, but not an official heading in the C&A Guide."
+      },
+      {
+       "id": "CP6.4.4",
+       "title": "Roles of different parties and conflicts of interest",
+       "summary": "Official GQ10-13: the roles played by native people and local dwellers, government officials, private developers and environmentalists in developing and protecting rainforest resources, and the conflicts of interest between them.",
+       "source_hints": [
+        "CP6 Disappearing Green Canopy Detailed Notes"
+       ],
+       "official": true,
+       "added_for_syllabus_coverage": true
+      },
+      {
+       "id": "CP6.4.5",
+       "title": "Afforestation, logging regulation, national parks and natural reserves",
+       "summary": "Official GQ10 names afforestation, regulation on logging activities, and the setting up of national parks and natural reserves as the measures to protect tropical rainforest.",
+       "source_hints": [
+        "CP6 Disappearing Green Canopy Detailed Notes"
+       ],
+       "official": true,
+       "added_for_syllabus_coverage": true
       }
      ]
     },
@@ -1016,7 +1256,9 @@
        "teacher_label": "PART 7, 7.1 Feedback Mechanisms",
        "source_hints": [
         "CP6 Disappearing Green Canopy Detailed Notes"
-       ]
+       ],
+       "teacher_addition": true,
+       "teacher_note": "Teacher addition: useful content, but not an official heading in the C&A Guide."
       },
       {
        "id": "CP6.5.2",
@@ -1125,6 +1367,16 @@
        "source_hints": [
         "CP7 Global Warming Detailed Notes"
        ]
+      },
+      {
+       "id": "CP7.1.4",
+       "title": "Weather versus climate, and climate at local, national and global scale",
+       "summary": "Official GQ1-2 asks for the definitions of 'weather' and 'climate' and a brief introduction to climate at local, national and global scale.",
+       "source_hints": [
+        "CP7 Global Warming Detailed Notes"
+       ],
+       "official": true,
+       "added_for_syllabus_coverage": true
       }
      ]
     },
@@ -1153,6 +1405,26 @@
        "source_hints": [
         "CP7 Global Warming Detailed Notes"
        ]
+      },
+      {
+       "id": "CP7.2.3",
+       "title": "Natural versus human causes, and the irreversible-trend debate",
+       "summary": "Official GQ4-6 requires natural and human causes of global warming AND the supporting and opposing arguments on whether global warming is a long-term fluctuation of temperature or an irreversible trend.",
+       "source_hints": [
+        "CP7 Global Warming Detailed Notes"
+       ],
+       "official": true,
+       "added_for_syllabus_coverage": true
+      },
+      {
+       "id": "CP7.2.4",
+       "title": "Garbage burning and other named human activities",
+       "summary": "Official GQ4-5 names the specific human activities that enhance the greenhouse effect: deforestation, burning of fossil fuels, garbage burning, emission of chlorofluorocarbons.",
+       "source_hints": [
+        "CP7 Global Warming Detailed Notes"
+       ],
+       "official": true,
+       "added_for_syllabus_coverage": true
       }
      ]
     },
@@ -1191,6 +1463,26 @@
        "source_hints": [
         "CP7 Global Warming Detailed Notes"
        ]
+      },
+      {
+       "id": "CP7.3.4",
+       "title": "Urban climate: the heat island effect and microclimate",
+       "summary": "Official GQ7-9: urban growth and development leading to local climatic variation focusing on the heat island effect; its effects on atmospheric composition, temperature, and precipitation.",
+       "source_hints": [
+        "CP7 Global Warming Detailed Notes"
+       ],
+       "official": true,
+       "added_for_syllabus_coverage": true
+      },
+      {
+       "id": "CP7.3.5",
+       "title": "Winners and losers of climate change",
+       "summary": "Official GQ10 frames the consequences around winners and losers - sea level, flood frequency, new farming opportunities, health risks, and climatic prediction becoming more difficult.",
+       "source_hints": [
+        "CP7 Global Warming Detailed Notes"
+       ],
+       "official": true,
+       "added_for_syllabus_coverage": true
       }
      ]
     },
@@ -1229,6 +1521,16 @@
        "source_hints": [
         "CP7 Global Warming Detailed Notes"
        ]
+      },
+      {
+       "id": "CP7.4.4",
+       "title": "Conflicting views and roles of key players",
+       "summary": "Official GQ12: the complexities of reaching a global agreement, in particular the conflicting views and roles of key players.",
+       "source_hints": [
+        "CP7 Global Warming Detailed Notes"
+       ],
+       "official": true,
+       "added_for_syllabus_coverage": true
       }
      ]
     },
@@ -1256,7 +1558,9 @@
        "teacher_label": "PART 6, 6.2 Carbon Sequestration",
        "source_hints": [
         "CP7 Global Warming Detailed Notes"
-       ]
+       ],
+       "teacher_addition": true,
+       "teacher_note": "Teacher addition: useful content, but not an official heading in the C&A Guide."
       },
       {
        "id": "CP7.5.3",
@@ -1304,7 +1608,9 @@
        "teacher_label": "PART 8, 8.2 Policies",
        "source_hints": [
         "CP7 Global Warming Detailed Notes"
-       ]
+       ],
+       "teacher_addition": true,
+       "teacher_note": "Teacher addition: useful content, but not an official heading in the C&A Guide."
       }
      ]
     }
@@ -1389,6 +1695,17 @@
        "source_hints": [
         "EP1 Dynamic Earth HK"
        ]
+      },
+      {
+       "id": "EP1.1.2",
+       "title": "The Earth as a system and its internal structure",
+       "summary": "Official Topic 1 requires Earth systems - the interaction between the atmosphere, the lithosphere and the hydrosphere - and the internal structure of the Earth.",
+       "source_hints": [
+        "EP1 Geological Features in Hong Kong — Rock Characteristics, Internal/External Processes (F6 Revision)",
+        "EP1 Dynamic Earth HK"
+       ],
+       "official": true,
+       "added_for_syllabus_coverage": true
       }
      ]
     },
@@ -1446,7 +1763,19 @@
        "teacher_label": "5.3",
        "source_hints": [
         "EP1 Dynamic Earth HK"
-       ]
+       ],
+       "teacher_addition": true,
+       "teacher_note": "Teacher addition: useful content, but not an official heading in the C&A Guide."
+      },
+      {
+       "id": "EP1.2.6",
+       "title": "Modification of Hong Kong landscapes by urban development",
+       "summary": "Official Topic 2 requires students to overlay the urban development map on the relief map (or use GIS) to show how urban development has modified Hong Kong's landscape.",
+       "source_hints": [
+        "EP1 Dynamic Earth HK"
+       ],
+       "official": true,
+       "added_for_syllabus_coverage": true
       }
      ]
     },
@@ -1505,6 +1834,18 @@
        "source_hints": [
         "EP1 Dynamic Earth HK"
        ]
+      },
+      {
+       "id": "EP1.3.6",
+       "title": "Slope stability and the factor of safety",
+       "summary": "Teacher addition in emphasis. The shear stress / shear strength / factor of safety framework is not an official named item, but it is the mechanism that explains the official requirement for the causes of landslides in Hong Kong, including natural and human factors.",
+       "source_hints": [
+        "EP1 Geological Features in Hong Kong — Rock Characteristics, Internal/External Processes (F6 Revision)"
+       ],
+       "official": true,
+       "added_for_syllabus_coverage": true,
+       "teacher_addition": true,
+       "teacher_note": "Teacher addition: useful content, but not an official heading in the C&A Guide."
       }
      ]
     },
@@ -1563,6 +1904,26 @@
        "source_hints": [
         "EP1 Dynamic Earth HK"
        ]
+      },
+      {
+       "id": "EP1.4.6",
+       "title": "Geological resources: reclamation materials and the Hong Kong International Airport",
+       "summary": "Official Topic 4 requires sources and distribution of reclamation materials, the environmental impact of extracting them, and the local example of the Hong Kong International Airport.",
+       "source_hints": [
+        "EP1 Dynamic Earth HK"
+       ],
+       "official": true,
+       "added_for_syllabus_coverage": true
+      },
+      {
+       "id": "EP1.4.7",
+       "title": "Sham Wan landslide as the official local example",
+       "summary": "Official Topic 4 names the Sham Wan landslide as the local example, and the Skills column requires a field trip to Sham Wan to identify the measures adopted to prevent landslides.",
+       "source_hints": [
+        "EP1 Dynamic Earth HK"
+       ],
+       "official": true,
+       "added_for_syllabus_coverage": true
       }
      ]
     }
