@@ -1,10 +1,37 @@
 {
  "questions": [
   {
+   "year": 2022,
+   "q": 13,
+   "paper": "Paper 1",
+   "elect": "CP1",
+   "subtopic": "CP1.1.3",
+   "stem": "The graphs below show the changes in population density at different stages of development of a city. Which of the following statements is/are correct? (1) Population density decreases with the distance from the city centre at the different stages of development. (2) More people move back to the city centre at the later stage of development. (3) The city experiences urban growth.",
+   "options": [
+    "(1) only",
+    "(3) only",
+    "(1) and (2) only",
+    "(2) and (3) only"
+   ],
+   "answer": "B",
+   "explanation": "Statement (1) is false because at stage 3 population density first rises with distance from the centre. Statement (2) is false because stage 3 shows outward and suburban growth, not movement back to the centre. Statement (3) is correct: the later-stage graph shows the city growing and expanding outward.",
+   "source_page": 18,
+   "source_url": "https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/geog/GEOG-PowerPoint-2022.pdf",
+   "slide_image": "slide_crops/hkeaa-2022-p18.png",
+   "topics": [
+    "CP1"
+   ],
+   "subtopic_title": "The graphs below show the changes in population density at d",
+   "source": "HKEAA Paper 1 2022 Item 13 (official examination briefing)",
+   "id": "hkeaa-2022-q13",
+   "official": true,
+   "found_by": "vision"
+  },
+  {
    "paper": "Paper 1",
    "year": 2024,
    "q": 9,
-   "stem": "Refer to the figure below, which shows a section of coast.",
+   "stem": "Refer to the figure below, which shows a section of coast. The prevailing wind direction of this area is __________.",
    "options": [
     "south-west",
     "west",
@@ -12,14 +39,14 @@
     "east"
    ],
    "answer": "D",
-   "explanation": "",
+   "explanation": "With north oriented upwards, the blue arrow shows the air moving towards the west. Wind directions are named for where the wind comes FROM, so the wind comes from the east. The red arrow along the spit shows the direction of spit growth, not the wind.",
    "source_page": 18,
    "source_url": "https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/geog/GEOG-PowerPoint-2024.pdf",
    "topics": [
     "CP2"
    ],
    "subtopic": "CP2.2.4",
-   "subtopic_title": "Refer to the figure below, which shows a section of coast.",
+   "subtopic_title": "Refer to the figure below, which shows a section of coast. T",
    "source": "HKEAA Paper 1 2024 Item 9 (official examination briefing)",
    "id": "hkeaa-2024-q9",
    "official": true,
@@ -112,7 +139,7 @@
    "paper": "Paper 1",
    "year": 2024,
    "q": 13,
-   "stem": "Refer to the photograph below, which shows land use X in Hong Kong.",
+   "stem": "Refer to the photograph below, which shows land use X in Hong Kong. Which of the following adverse social impacts is/are brought about by land use X? (1) traffic congestion (2) unpleasant view (3) disruption of rural lifestyle",
    "options": [
     "(1) only",
     "(1) and (2) only",
@@ -120,7 +147,7 @@
     "(1), (2) and (3)"
    ],
    "answer": "D",
-   "explanation": "",
+   "explanation": "The container yard brings heavy truck traffic into and out of the area, so traffic congestion is an impact as well as the unpleasant view and the disruption of the rural lifestyle.",
    "source_page": 20,
    "source_url": "https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/geog/GEOG-PowerPoint-2024.pdf",
    "topics": [
