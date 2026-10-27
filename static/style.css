@@ -114,6 +114,54 @@ button.primary:disabled{opacity:.55;cursor:not-allowed}
 .note .body td,.note .body th{border:1px solid var(--line);padding:5px 8px;text-align:left}
 
 
+/* ---------- rendered note markdown ---------- */
+.note-text table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0 14px;
+  font-size: .9rem;
+}
+.note-text th,
+.note-text td {
+  border: 1px solid #dfe6ea;
+  padding: 6px 9px;
+  text-align: left;
+  vertical-align: top;
+}
+.note-text th {
+  background: #f2f6f8;
+  font-weight: 650;
+}
+.note-text tr:nth-child(even) td {
+  background: #fafcfd;
+}
+.note-text ul {
+  margin: 6px 0 12px;
+  padding-left: 20px;
+}
+.note-text li {
+  margin: 3px 0;
+}
+.note-text pre {
+  background: #f4f7f8;
+  border: 1px solid #dfe6ea;
+  border-radius: 6px;
+  padding: 10px 12px;
+  overflow-x: auto;
+  font-size: .86rem;
+}
+.note-text code {
+  background: #eef3f5;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: .88em;
+}
+.note-text h3,
+.note-text h4,
+.note-text h5 {
+  margin: 14px 0 6px;
+}
+
 /* ---------- curriculum scaffold ---------- */
 .elective{margin-bottom:26px}
 .elective-title{font-size:1.12rem;margin:0 0 2px;display:flex;align-items:center;gap:9px}

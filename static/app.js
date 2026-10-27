@@ -66,17 +66,54 @@
       ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   }
 
-  // Minimal, safe markdown: bold, italics, inline code, bullets, headings.
+  // Minimal, safe markdown: bold, italics, inline code, bullets, headings,
+  // numbered lists and pipe tables.
+  //
+  // Tables matter here because the geography notes are full of comparison
+  // tables (plate boundaries, layer depths, landform processes). Rendered as
+  // raw pipes they are unreadable.
   function md(s) {
     let t = esc(s);
-    t = t.replace(/```([\s\S]*?)```/g, "<pre>$1</pre>");
+
+    // Fenced code first, so nothing inside it gets rewritten.
+    const fences = [];
+    t = t.replace(/```([\s\S]*?)```/g, (m, body) => {
+      fences.push(body);
+      return `\u0000FENCE${fences.length - 1}\u0000`;
+    });
+
+    // Pipe tables: a header row, a |---|---| separator, then body rows.
+    t = t.replace(/(^\s*\|[^\n]*\|\s*\n\s*\|\s*:?-{2,}:?\s*(\|\s*:?-{2,}:?\s*)*\|\s*\n)((?:\s*\|[^\n]*\|\s*\n?)*)/gm,
+      (m, head, body) => {
+        const rows = (head + body).trim().split("\n").map((r) =>
+          r.trim().replace(/^\|/, "").replace(/\|$/, "").split("|").map((c) => c.trim())
+        );
+        const [h, ...body2] = rows;
+        const thead = "<tr>" + h.map((c) => `<th>${c}</th>`).join("") + "</tr>";
+        const tbody = body2
+          .filter((r) => !/^[:\-\s]+$/.test(r.join("")))
+          .map((r) => "<tr>" + r.map((c) => `<td>${c}</td>`).join("") + "</tr>")
+          .join("");
+        return `<table><thead>${thead}</thead><tbody>${tbody}</tbody></table>\n`;
+      });
+
     t = t.replace(/`([^`]+)`/g, "<code>$1</code>");
     t = t.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
     t = t.replace(/(^|[^*])\*([^*\n]+)\*/g, "$1<em>$2</em>");
-    t = t.replace(/^###\s+(.+)$/gm, "<h3>$1</h3>");
+    t = t.replace(/^####\s+(.+)$/gm, "<h5>$1</h5>");
+    t = t.replace(/^###\s+(.+)$/gm, "<h4>$1</h4>");
     t = t.replace(/^##\s+(.+)$/gm, "<h3>$1</h3>");
-    t = t.replace(/^-\s+(.+)$/gm, "<li>$1</li>");
+    t = t.replace(/^#\s+(.+)$/gm, "<h3>$1</h3>");
+    t = t.replace(/^[-*]\s+(.+)$/gm, "<li>$1</li>");
+    t = t.replace(/^(\d+)\.\s+(.+)$/gm, "<li>$2</li>");
+    // Wrap runs of list items.
     t = t.replace(/(<li>[\s\S]*?<\/li>)(?!\s*<li>)/g, "<ul>$1</ul>");
+    // Line breaks inside a paragraph.
+    t = t.replace(/\n{2,}/g, "</p><p>");
+    t = t.replace(/\n/g, "<br>");
+
+    // Put the fences back.
+    t = t.replace(/\u0000FENCE(\d+)\u0000/g, (m, i) => `<pre>${fences[i]}</pre>`);
     return t;
   }
 
@@ -200,7 +237,7 @@
                   <p class="leaf-summary">${esc(lf.summary)}</p>
                   ${lf.content.length ? lf.content.map((c) => `
                     <h4>${esc(c.title)}${c.heading ? " — " + esc(c.heading) : ""}</h4>
-                    <p>${esc(c.text)}</p>`).join("")
+                    <div class="note-text">${md(c.text)}</div>`).join("")
                   : `<p class="hint-small">This sub-topic has no dedicated note in the MakGeography vault yet.</p>`}
                 </div>
               </details>`).join("")}
