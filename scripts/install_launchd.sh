@@ -50,6 +50,97 @@ API_BASE="${MINIMAX_BASE_URL:-https://api.minimax.io/v1}"
 mkdir -p "$LOG_DIR" "$AGENT_DIR" "$HOME/.hermes/cache/scratch" "$HOME/.hermes/scripts"
 
 # --------------------------------------------------------------- app service
+# The runner wraps uvicorn: it verifies the app can be imported, installs a
+# missing dependency if needed, and waits out a port conflict instead of
+# crash-looping. It is written to ~/.hermes/scripts so the plist has a
+# stable path.
+RUNNER="$HOME/.hermes/scripts/makgeo_app_run.sh"
+cat > "$RUNNER" <<'RUNNER_EOF'
+#!/bin/bash
+# Run the MakGeography FastAPI app.
+#
+# Guards:
+#   1. verify the app imports before starting uvicorn
+#   2. install a missing known dependency and retry the import
+#   3. wait out a port conflict rather than crash-looping under KeepAlive
+#
+# The password and API key come from the plist's environment. Neither is
+# written into this script.
+set -uo pipefail
+
+REPO="${MAKGEO_REPO:-$HOME/MakGeography}"
+PORT="${MAKGEO_PORT:-8781}"
+PYTHON="${MAKGEO_PYTHON:-}"
+LOGDIR="$HOME/.hermes/logs"
+
+mkdir -p "$LOGDIR"
+
+if [ -z "$PYTHON" ]; then
+  PYTHON="$(ls -d "$HOME"/.hermes/tools/python-*/bin/python3 2>/dev/null | head -1)"
+fi
+[ -z "$PYTHON" ] && PYTHON="$(command -v python3 || true)"
+
+if [ -z "$PYTHON" ]; then
+  echo "No python3 found" >&2
+  exit 1
+fi
+
+cd "$REPO" || exit 1
+
+# 1 + 2. The app must import, and a missing dependency is repairable.
+if ! "$PYTHON" -c "import app.main" >/dev/null 2>&1; then
+  echo "MakGeography: app.main failed to import; checking dependencies" >&2
+  "$PYTHON" - <<'PY' >&2
+import importlib, subprocess, sys
+need = []
+for mod, pkg in (("fastapi", "fastapi"), ("uvicorn", "uvicorn"),
+                 ("jinja2", "jinja2"), ("multipart", "python-multipart")):
+    try:
+        importlib.import_module(mod)
+    except ImportError:
+        need.append(pkg)
+if need:
+    print("installing:", " ".join(need), flush=True)
+    subprocess.run([sys.executable, "-m", "pip", "install", "-q", *need], check=False)
+else:
+    print("import failed but all known dependencies are present", flush=True)
+PY
+  if ! "$PYTHON" -c "import app.main" >/dev/null 2>&1; then
+    echo "MakGeography: app.main still fails to import; not starting" >&2
+    "$PYTHON" -c "import app.main" >&2
+    exit 1
+  fi
+fi
+
+# 3. If the port is taken, wait for it rather than crash-looping. Under
+# launchd's KeepAlive a fast failure is throttled to a restart every 10s,
+# which fills the log and never clears on its own.
+for attempt in $(seq 1 30); do
+  if "$PYTHON" - "$PORT" <<'PY'
+import socket, sys
+port = int(sys.argv[1])
+s = socket.socket()
+s.settimeout(1)
+try:
+    s.connect(("127.0.0.1", port))
+except OSError:
+    sys.exit(1)          # nothing listening -> the port is free
+finally:
+    s.close()
+sys.exit(0)              # something is already listening
+PY
+  then
+    echo "MakGeography: port $PORT is in use, waiting for it to free up" >&2
+    sleep 10
+  else
+    break
+  fi
+done
+
+exec "$PYTHON" -m uvicorn app.main:app --host 127.0.0.1 --port "$PORT"
+RUNNER_EOF
+chmod +x "$RUNNER"
+
 APP_PLIST="$AGENT_DIR/com.makgeo.app.plist"
 cat > "$APP_PLIST" <<PLIST_EOF
 <?xml version="1.0" encoding="UTF-8"?>
@@ -60,12 +151,7 @@ cat > "$APP_PLIST" <<PLIST_EOF
   <key>Label</key><string>com.makgeo.app</string>
   <key>ProgramArguments</key>
   <array>
-    <string>$PYTHON</string>
-    <string>-m</string>
-    <string>uvicorn</string>
-    <string>app.main:app</string>
-    <string>--host</string><string>127.0.0.1</string>
-    <string>--port</string><string>$PORT</string>
+    <string>$RUNNER</string>
   </array>
   <key>WorkingDirectory</key><string>$APP_DIR</string>
   <key>EnvironmentVariables</key>
