@@ -58,6 +58,10 @@ EXCLUDE_DIR_PATTERNS = [
     r"(?i)past paper analysis",
     r"(?i)ep1 dynamic earth - basic concepts quiz",
     r"(?i)combo quiz",
+    # A Kahoot drill file carries a full teacher answer key and a
+    # distractor rationale table. It has no markdown headings, so the
+    # section drop cannot reach it - exclude the file.
+    r"(?i)kahoot drill",
 ]
 
 # Substrings that mark a file as assessment material even if the path differs.
@@ -67,8 +71,21 @@ EXCLUDE_NAME_SUBSTRINGS = [
 ]
 
 # Note-level content that is fine to skip even in an included file.
+#
+# These sections are the teacher's own working material - answer keys, the
+# register of stems already used, and the distractor analysis that explains
+# why each wrong option is wrong. A student reading a note must not see
+# them. Each pattern matches a heading; everything from that heading to the
+# next heading of the same or higher level is dropped.
 DROP_SECTION_PATTERNS = [
     r"(?im)^#{1,4}\s*.*\b(mark scheme|answer key|marking scheme|suggested answers)\b.*$",
+    # The teacher-only working sections.
+    r"(?im)^#{1,4}\s*.*\b(distractor rationale|distractor analysis|distractor notes)\b.*$",
+    r"(?im)^#{1,4}\s*.*\b(register check|used-stem register|used stem register|stem register)\b.*$",
+    r"(?im)^#{1,4}\s*.*\b(coverage check|syllabus coverage check|coverage note)\b.*$",
+    r"(?im)^#{1,4}\s*.*\b(teacher only|for the teacher|teacher notes?)\b.*$",
+    # The teacher's own key for a practice set, headed at level 1.
+    r"(?im)^#{1,4}\s*.*\b(teacher key|teacher'?s key|key and rationale)\b.*$",
 ]
 
 # --------------------------------------------------------------------------

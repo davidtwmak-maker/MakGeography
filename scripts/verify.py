@@ -27,6 +27,30 @@ if leaks:
     sys.exit(1)
 print("No assessment material in the KB")
 
+# 3b. No teacher-only working material.
+#
+# A note may be fine to read, but the teacher's own answer key, the register
+# of stems already used, and the distractor rationale must never reach a
+# student. These live inside otherwise-shareable notes, so a path check is
+# not enough - the text has to be checked too.
+teacher_only = re.compile(
+    r"(?i)(register check|used[- ]stem (register|entries)|"
+    r"teacher'?s? answer key|distractor rationale|"
+    r"why this distractor|teacher key and rationale|"
+    r"key and rationale)")
+blob_leaks = []
+for d in docs:
+    for c in d.get("chunks", []):
+        if teacher_only.search(c.get("text", "")):
+            blob_leaks.append(f"{d['path']} :: {c.get('heading', '')}")
+            break
+if blob_leaks:
+    print("Teacher-only material leaked into the KB:")
+    for p in blob_leaks:
+        print("  -", p)
+    sys.exit(1)
+print("No teacher-only material in the KB")
+
 # 4. Curriculum scaffold
 cur = json.loads((root / "data" / "curriculum.json").read_text())
 codes = [e["code"] for e in cur["electives"]]

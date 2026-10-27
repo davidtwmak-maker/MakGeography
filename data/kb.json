@@ -1,9 +1,9 @@
 {
  "meta": {
-  "built_at": "2026-10-27T07:05:17.005640+00:00",
+  "built_at": "2026-10-27T13:09:10.979480+00:00",
   "source_root": "/Users/davidhermes/Library/Mobile Documents/iCloud~md~obsidian/Documents/MakGeography",
-  "n_docs": 110,
-  "n_chunks": 1367,
+  "n_docs": 108,
+  "n_chunks": 1343,
   "excluded": 0
  },
  "docs": [
@@ -892,21 +892,6 @@
      "text": "In Hong Kong's coastal management framework, soft engineering measures are used alongside hard structures. Which of the following correctly pairs a soft engineering measure with its effect?\n\nA Seawall — absorbs wave energy before it reaches the shore, so it is classed as soft engineering.\nB Groyne — works with natural processes to stabilise sediment, so it is classed as soft engineering.\nC Breakwater — a soft measure that rebuilds the sand dunes behind a beach.\nD Beach nourishment — adds sand to the beach so that it absorbs more wave energy, but the added sand is temporary and must be replenished.",
      "heading": "Question 8",
      "n": 8
-    },
-    {
-     "text": "[code block omitted]\n\nQ1 — C ((2) and (3))\n- (1) False — describes destructive waves. Constructive waves are low and gentle, with a swash stronger than the backwash, so they build the beach.\n- (2) True — energy rises with fetch and wind speed.\n- (3) True — steep front, powerful backwash, net removal.\n- Distractor family: right phenomenon, wrong category — the two wave types are swapped, not replaced with nonsense.\n\nQ2 — A (abrasion; attrition)\n- Pebbles thrown at the cliff = abrasion (rock fragments used as tools). Two fragments colliding in transit = attrition.\n- B confuses abrasion with hydraulic action (air compressed in cracks). C reverses the two definitions — the commonest slip. D offers solution (chemical) for a mechanical collision.\n\nQ3 — B ((1) and (2))\n- (3) False — the agent is waves approaching at an angle, not wind. Right idea, wrong justification: wind generates the waves, but the drift is produced by the wave angle and the gravity-driven backwash.\n\nQ4 — D (cave → arch → stack → stump)\n- A puts the stack first. B starts with the arch, so it cannot be followed by the cave it came from. C starts with the wave-cut platform — the trap for candidates who reason \"it is at the base, so it forms first\", when the platform grows only as the cliff retreats.",
-     "heading": "Teacher key and rationale",
-     "n": 9
-    },
-    {
-     "text": "Q5 — B ((1) and (2))\n- (3) False — a wave-cut platform is an erosional surface exposed at low tide, not a deposit. Right idea, wrong category: deposition does happen on coasts, just not here.\n- Photo check: the stack and the flat platform are both plainly visible, with people on the platform for scale.\n\nQ6 — C\n- A spit needs a sediment supply and a transport agent along the shore. A states the condition for a discordant coastline — the neighbouring concept. B is false because a depositional landform cannot be built by erosion alone. D describes a barrier/delta, contradicting the ridge shown in the photograph.\n- Avoids used stem M31 (\"favourable factors for the formation of coastal deposition features\") by asking what must be true of this coast rather than requesting a factor list.\n\nQ7 — A ((1) only)\n- B is the neighbouring facility trap: a breakwater is a real coastal structure but sits offshore and parallel to the shore. C names a third real structure in the wrong place.\n- Photo check: sediment is visibly piled higher on one side of the structure.\n\nQ8 — D\n- Seawall, groyne and breakwater are all hard engineering — three options that are right structures with a false classification. The candidate must sort by category, not by recognition.",
-     "heading": "Teacher key and rationale",
-     "n": 10
-    },
-    {
-     "text": "Coverage: wave processes (1) · wave erosion processes (2) · transportation by longshore drift (3) · erosional landforms and their sequence (4, 5) · depositional landforms (6) · hard engineering (7) · soft engineering and evaluation (8).\nNot covered in 8 items: concordant/discordant coastline types, coastal risks and flooding, why people live near coasts, and the CEDD four strategies / Progressive Principle — candidates for items 9–11.\n\nRegister check: no overlap with bank CP2 MC (DBQ-5.5 map items) or used-stem entries M30 (tsunami) / M31 (favourable factors for coastal deposition); no reuse of the Cape D'Aguilar, Cheung Chau, Tung Lung Chau or Sai Kung spit DBQ stems.\n\nPhotographs (all Wikimedia Commons, freely licensed — attribution required):\n- P1 Durdle Door Overview — Saffron Blaze, CC BY-SA 3.0\n- P2 Eroded Chalk Cliffs, Sea Stack, and Intertidal Rock Platforms at Flamborough Head — TXGemGem, CC BY-SA 4.0\n- P3 Provincetown Spit, Cape Cod — NASA, public domain\n- P4 Groyne, Ffrith beach, Prestatyn — Eirian Evans, CC BY-SA 2.0\n\nSources: 2.5 Managing coastal environment · 1.0 River & Coastal environment · distractor method `dse-geography` skill `question-setting.md` §4b",
-     "heading": "Teacher key and rationale",
-     "n": 11
     }
    ]
   },
@@ -7200,129 +7185,6 @@
      "text": "| Cause | Effect |\n|-------|--------|\n| Because | Leads to |\n| Since | Results in |\n| As a result | Therefore |\n| Due to | Causes |\n\nGood luck! 加油！",
      "heading": "Linking Words",
      "n": 16
-    }
-   ]
-  },
-  {
-   "id": "f3-geography-f3-kahoot-drill-landslides-forces-hk-relief-map-reading-parallel-md",
-   "title": "F3 First Term Test 2026-27 — Kahoot drill (parallel, not from paper)",
-   "topic": "F3",
-   "path": "F3 Geography/F3 Kahoot drill - landslides forces HK relief map reading (parallel).md",
-   "source": "",
-   "chunks": [
-    {
-     "text": "Build rule (your standing): no stems / places / numbers / photos from the actual V1 paper. The 25 items below test the same four topic blocks (landslide concept, shear stress vs strength, management, HK relief + map reading) using fresh wording. Suitable for any F3 cohort.\nFor the teacher: all distractors carry a teaching note — read the \"why this distractor\" line in the answer key before running the game.\nKahoot import: each question is ≤ 80 characters (Kahoot's hard limit on the question text). 4 options, answer positions are deliberately rotated.",
-     "heading": "F3 First Term Test 2026-27 — Kahoot drill (parallel, not from paper)",
-     "n": 0
-    },
-    {
-     "text": "Q1. (concepts)\nWhich of the following is always required for a slope to fail as a landslide?\n\t- A) Heavy rain lasting at least 24 hours\n\t- B) An earthquake within 100 km\n\t- C) Shear stress greater than shear strength  ✅\n\t- D) Human activity somewhere on the slope\n\nQ2. (concepts)\nA \"natural hazard\" becomes a \"disaster\" when:\n- A) The hazard occurs at night\n- B) The harm to people, property or economy actually happens  ✅\n- C) The government issues a warning\n- D) The slope is steeper than 30°\n\nQ3. (HK context)\nWhich two natural hazards have actually caused deaths in Hong Kong in the past 20 years?\n- A) Typhoons and floods  ✅\n- B) Earthquakes and landslides\n- C) Volcanic eruptions and droughts\n- D) Tsunamis and locust plagues\n\nQ4. (concepts)\nCompared to a \"natural hazard\", a \"natural disaster\" places greater weight on:\n- A) The cause being a natural event\n- B) The severity of the trigger event\n- C) Whether harm to people or property actually occurs  ✅\n- D) Whether the event was forecast\n\nQ5. (concepts)\n\"Elements at risk\" from a landslide include all of the following EXCEPT:\n- A) Houses on the slope\n- B) Roads and pavements below\n- C) Crops on adjacent farmland\n- D) The shear strength of the rock at depth  ✅",
-     "heading": "Game 1 — Concepts (Q1–5)",
-     "n": 1
-    },
-    {
-     "text": "Q6. (forces)\nAdding water to a slope during prolonged rain decreases the slope's:\n- A) Shear stress\n- B) Shear strength  ✅\n- C) Gradient\n- D) Weight\n\nQ7. (forces)\nA retaining wall primarily acts on a slope by:\n- A) Lowering the water table inside the slope\n- B) Adding to the slope's shear strength so the mass resists movement  ✅\n- C) Making the gradient gentler\n- D) Warning residents of pending failure\n\nQ8. (forces)\nSteepening a cut slope (e.g. for a new road) increases the risk of failure because:\n- A) It lowers the water table\n- B) It increases the down-slope pull on the slope materials, raising shear stress  ✅\n- C) It removes vegetation\n- D) It cools the rock surface\n\nQ9. (forces)\nWhich combination of changes most increases the chance of failure?\n- A) ↑ stress and ↑ strength\n- B) ↓ stress and ↓ strength\n- C) ↑ stress and ↓ strength  ✅\n- D) No change in either force\n\nQ10. (forces)\nA drainage channel on a slope face reduces failure risk by:\n- A) Holding the soil back like a wall\n- B) Removing rainwater before it can add weight and reduce friction  ✅\n- C) Smoothing the slope face\n- D) Cooling the rock surface",
-     "heading": "Game 2 — Shear stress vs strength (Q6–10)",
-     "n": 2
-    },
-    {
-     "text": "Q11. (management)\nWhich of the following is a preventive engineering measure?\n- A) Soil nails with shotcrete cover  ✅\n- B) Helicopter rescue of trapped residents\n- C) Distribution of emergency shelters\n- D) Insurance payouts to affected families\n\nQ12. (management)\nThe HKO Landslip Warning Signal is best described as:\n- A) Remedial — it is issued only after a slide has occurred\n- B) Preventive — it cuts exposure to risk before a slide happens  ✅\n- C) Engineering — it is built into the slope\n- D) Remunerative — it pays for damages\n\nQ13. (management)\nA \"flexible (debris-flow) barrier\" is built at:\n- A) The top of a hill, to catch rainfall\n- B) The slope toe or in a gully below, to catch moving debris  ✅\n- C) Inside the building foundation\n- D) The river mouth\n\nQ14. (management)\nA retaining wall and a surface drainage channel are different because the wall:\n- A) Holds back soil and rock; the channel drains off excess water  ✅\n- B) Drains off excess water; the channel holds back soil\n- C) Both drain water but in different directions\n- D) Both hold back soil but at different heights\n\nQ15. (management)\nClearing loose rock debris from a slope face after a failure is best classified as:\n- A) Preventive engineering\n- B) Preventive non-structural\n- C) Remedial  ✅\n- D) Forecasting",
-     "heading": "Game 3 — Management: preventive vs remedial (Q11–16)",
-     "n": 3
-    },
-    {
-     "text": "Q16. (management)\nRestricting building development on slopes steeper than a stated gradient is an example of:\n- A) Engineering prevention\n- B) Non-structural prevention (planning)  ✅\n- C) Remedial action\n- D) Insurance",
-     "heading": "Game 3 — Management: preventive vs remedial (Q11–16)",
-     "n": 4
-    },
-    {
-     "text": "Q17. (HK relief)\nThe tallest natural peak in Hong Kong is:\n- A) Victoria Peak\n- B) Lantau Peak\n- C) Sunset Peak\n- D) Tai Mo Shan  ✅\n\nQ18. (HK relief)\nMost of Hong Kong's natural lowlands (river plains and coastal flats) are found in:\n- A) Hong Kong Island\n- B) Kowloon\n- C) The northern and central New Territories  ✅\n- D) Lantau Island\n\nQ19. (HK relief)\nThe sides of Victoria Harbour are not considered natural lowlands because:\n- A) The slopes are too steep\n- B) Most of the lowland has been reclaimed from the sea  ✅\n- C) They are above 500 m\n- D) They are made of granite\n\nQ20. (map reading — gradient)\nA slope rises 80 m over a horizontal distance of 1.6 km. What is the gradient, expressed as 1 : n?\n- A) 1 : 20\n- B) 1 : 20,000  ✅\n- C) 1 : 80,000\n- D) 1 : 200\n\nQ21. (map reading — vertical exaggeration)\nA map cross-section is drawn with horizontal scale 1 : 20,000 and vertical scale 1 cm = 50 m. What is the vertical exaggeration?\n\nVE= v. scale/ h. scale\n=  1: 5000 / 1:20000\n= 1:5000 x 20000/1\n= 4\n\n- A) 0.4×\n- B) 2×\n- C) 10×  ✅\n- D) 50×\n\nQ22. (map reading — six-figure grid reference)\nThe point 25 metres east and 80 metres north of grid square 813427 lies at:\n- A) 813428\n- B) 815428\n- C) 825508  ✅\n- D) 825308",
-     "heading": "Game 4 — HK relief + map reading (Q17–25)",
-     "n": 5
-    },
-    {
-     "text": "Q23. (map reading — cross-section annotation)\nWhich of the following must appear on a fully annotated cross-section for full marks in the test?\n- A) Title only\n- B) Title and axes only\n- C) Title, vertical scale, every contour crossed, smooth line, axes, label  ✅\n- D) Title and one contour\n\nQ24. (map reading — intervisibility)\nTwo hilltops A (300 m) and B (250 m) are 4 km apart. A point on the line between them reaches 280 m. Are A and B intervisible?\n- A) Yes — both points are above the line\n- B) Yes — the intermediate ground is below both points\n- C) No — the intermediate ground cuts above the line of sight  ✅\n- D) Cannot tell from the information\n\nQ25. (map reading — scale)\nOn a 1 : 20,000 map, 7 cm on the map represents what distance on the ground?\n- A) 140 m\n- B) 700 m\n- C) 1.4 km\n- D) 1.4 km  ✅ (re-read: 7 × 200 = 1400 m = 1.4 km)",
-     "heading": "Game 4 — HK relief + map reading (Q17–25)",
-     "n": 6
-    },
-    {
-     "text": "1. Create a new Kahoot, \"F3 Geo — Landslides, Forces, HK Relief, Map Reading (parallel drill)\".\n2. Paste each question and its 4 options as one Kahoot item. Each question is ≤ 80 characters; each option is ≤ 50 characters.\n3. Time per question: 20 seconds (the design-plan pack says 15–18 min for 20 MCQs; this 25-Q game runs ~12 min, leaving 6 min for review of the two question-bank items below).\n4. Use the 30-second \"answer reveal\" feature to display the distractor rationale from the table above.",
-     "heading": "How to run as a Kahoot",
-     "n": 7
-    },
-    {
-     "text": "These are the same style the design plan calls for but using parallel content:\n\nOB1. (10 marks — map reading, 1:20,000 map, fresh extract)\nA 10 cm × 8 cm extract shows contours every 20 m. A road runs from point 818462 to point 852487.\n(a) State the scale of the map as a sentence. (1 mark)\n(b) Calculate the road's length in km, showing your workings. (2 marks)\n(c) Convert the road's length to a gradient, expressed as 1 : n. (2 marks)\n(d) Draw a fully annotated cross-section along the road, vertical scale 1 cm = 50 m. (5 marks — title 1, vertical scale 1, shape 3)\n\nOB2. (6-mark essay, parallel to Section D)\nUsing shear stress and shear strength as your framework, suggest and explain three strategies to reduce landslide risk in Hong Kong. For each strategy, name the force it changes and explain why. End with a judgement: is one strategy more effective than the others, or is a combination best? (6 marks — opening frame 1, each strategy with named force 1×3, conclusion 1, judgement 1)\n\nBoth items are deliberately fresh — fresh map coordinates, fresh numbers, fresh prompts. They mirror the test's structure but contain nothing from V1.\n\nBuilt 16 Oct 2026 from the F3 First Term Test 2026-27 coverage update + design plan. Rule observed: parallel content, no stems / places / numbers / photos from V1.",
-     "heading": "Two open question-bank items to run *after* the Kahoot (timed mini-mock)",
-     "n": 8
-    }
-   ]
-  },
-  {
-   "id": "f3-geography-f3-kahoot-drill-hard-landslides-forces-hk-relief-map-reading-parallel-md",
-   "title": "F3 First Term Test 2026-27 — Hard-mode Kahoot drill (parallel, not from paper)",
-   "topic": "F3",
-   "path": "F3 Geography/F3 Kahoot drill HARD - landslides forces HK relief map reading (parallel).md",
-   "source": "",
-   "chunks": [
-    {
-     "text": "Use this game after the standard 25-Q Kahoot. The questions assume students already know the basic concepts; here they have to apply, compare, justify, and calculate under time pressure. Each item is calibrated to the 70–90% mark band — easy marks have been cut, distractors are close, and several items require two-step reasoning.\nStanding rule (yours): no stems / places / numbers / photos from V1. All 25 items below are fresh and parallel.\nTwo corrections to apply before running (caught at the QA pass): see the foot-of-file notes.",
-     "heading": "F3 First Term Test 2026-27 — Hard-mode Kahoot drill (parallel, not from paper)",
-     "n": 0
-    },
-    {
-     "text": "Q1. (paired concept — pick the better answer)\nWhich pair of statements is both correct?\n- A) A hazard is a natural event and a disaster is a natural event.\n- B) A hazard may cause harm and a disaster is harm that has occurred.  ✅\n- C) A hazard always kills someone and a disaster is a forecast.\n- D) A hazard is human-caused and a disaster is natural.\n\nQ2. (classification trap)\nThe HKO announces a Typhoon Signal No. 8 in advance of a tropical cyclone reaching Hong Kong. Is this announcement a \"natural hazard\", a \"disaster\", or \"neither\"?\n- A) A natural hazard — the signal itself is dangerous.\n- B) A disaster — it warns of harm.\n- C) Neither — the signal is a forecast response, not a hazard or disaster.  ✅\n- D) Both — the signal is a hazard and a disaster at once.\n\nQ3. (definition in context — pick the strict textbook definition)\nWhich of the following is the most precise definition of a landslide?\n- A) When soil moves a long way.\n- B) When a slope collapses and material moves down-slope under gravity.  ✅\n- C) When any rock falls anywhere.\n- D) When rain soaks into the ground.",
-     "heading": "Game 1 — Concepts at exam depth (Q1–5)",
-     "n": 1
-    },
-    {
-     "text": "Q4. (paired facts)\nWhich combination is both correct for Hong Kong?\n- A) Natural terrain covers about 30% of HK and ~100 landslides a year on natural terrain.\n- B) Natural terrain covers about 60% of HK and ~300 landslides a year on natural terrain.  ✅\n- C) Natural terrain covers about 80% of HK and ~3,000 landslides a year on natural terrain.\n- D) Natural terrain covers about 95% of HK and landslides are not a major hazard.\n\nQ5. (multi-step concept)\nA slope has shear stress = 120 kPa and shear strength = 95 kPa. Which statement is correct?\n- A) The slope is stable — both forces are below 200 kPa.\n- B) The slope is stable — stress is below strength.\n- C) The slope is unstable — stress exceeds strength by 25 kPa.  ✅\n- D) The slope is unstable — strength exceeds stress by 25 kPa.",
-     "heading": "Game 1 — Concepts at exam depth (Q1–5)",
-     "n": 2
-    },
-    {
-     "text": "Q6. (two-cause problem)\nHeavy prolonged rain affects a slope in two ways. Which pair captures both?\n- A) ↑ gradient and ↓ weight.\n- B) ↑ cohesion and ↑ friction.\n- C) ↑ stress (water weight) and ↓ strength (water in pores loosens grains).  ✅\n- D) ↑ strength and ↓ stress.\n\nQ7. (quantitative: stress vs strength with management)\nA slope has stress 80 kPa, strength 60 kPa. A retaining wall is built. The wall adds 30 kPa of effective strength. After the wall, the slope is:\n- A) Still unstable — 80 > 60 + 30 is false, so unstable.\n- B) Stable — 80 < (60 + 30) = 90.  ✅\n- C) Unstable — walls never work.\n- D) Cannot tell — the values must be in the same units.\n\nQ8. (cause-into-force language — the essay skill)\n\"Weathered granite with open joints\" affects a slope by:\n- A) ↑ stress from the joints themselves.\n- B) ↓ strength because the joints allow water in and reduce cohesion.  ✅\n- C) ↑ strength because the joints bind the rock.\n- D) No effect — only rain matters.\n\nQ9. (vegetation removal — two reasons)\nRemoving vegetation from a slope increases landslide risk because:\n- A) Roots no longer bind the soil and throughfall replaces interception, so more water enters the slope.  ✅\n- B) The colour of bare soil absorbs more heat.\n- C) The slope looks ugly to people.\n- D) Vegetation removal always reduces stress.",
-     "heading": "Game 2 — Forces in non-routine scenarios (Q6–10)",
-     "n": 3
-    },
-    {
-     "text": "Q10. (unusual cause — man-made slope failure)\nMany older Hong Kong slopes fail because they were built \"below standard\" — too steep, no drainage, weak fill. This means:\n- A) ↑ stress (steep gradient) and ↓ strength (weak fill, water can get in).  ✅\n- B) ↓ stress and ↑ strength.\n- C) The slopes were built to international standard.\n- D) Standard is irrelevant if it rains.",
-     "heading": "Game 2 — Forces in non-routine scenarios (Q6–10)",
-     "n": 4
-    },
-    {
-     "text": "Q11. (sort into the right bucket — pick the odd one out)\nWhich is the only engineering-preventive measure in the list?\n- A) Soil nails with shotcrete cover.  ✅\n- B) Distribution of emergency shelters.\n- C) Helicopter rescue teams.\n- D) Insurance payouts.\n\nQ12. (sort into the right bucket — pick the only non-structural preventive measure)\n- A) Soil nails.\n- B) Retaining wall.\n- C) GEO inspection and maintenance programme.  ✅\n- D) Rock debris clearing after a slide.\n\nQ13. (force changed — pick the right match)\nSoil nails with shotcrete cover on a cut slope:\n- A) ↓ stress by removing water.\n- B) ↑ strength by binding surface material and stopping water ingress.  ✅\n- C) ↑ stress by adding mass to the slope.\n- D) ↓ gradient by re-profiling.\n\nQ14. (force changed — drainage)\nA surface drainage channel on a cut slope primarily:\n- A) ↑ stress and ↑ strength.\n- B) ↓ stress only.\n- C) ↑ strength only.\n- D) ↓ stress (removes water weight) and ↑ strength (less water in pores, cohesion/friction intact).  ✅\n\nQ15. (force changed — flexible barrier)\nA flexible (debris-flow) barrier at a slope toe primarily works by:\n- A) Adding shear strength to the slope.\n- B) Lowering the water table.\n- C) Catching the debris that comes down — so it reduces exposure rather than acting on the slope forces.  ✅\n- D) Re-profiling the slope.",
-     "heading": "Game 3 — Management: trickier classifications (Q11–16)",
-     "n": 5
-    },
-    {
-     "text": "Q16. (combined-strategy judgment)\nA slope is being managed with: soil nails, drainage channels, regrading the slope gentler, restricting further development on similar slopes, and the HKO warning signal. Which is most likely the judgement a top-mark essay would draw?\n- A) Soil nails alone are sufficient.\n- B) The HKO warning alone is sufficient.\n- C) A combination is most effective because each measure acts on a different force (stress, strength, exposure).  ✅\n- D) Restricting development is irrelevant.",
-     "heading": "Game 3 — Management: trickier classifications (Q11–16)",
-     "n": 6
-    },
-    {
-     "text": "Q17. (HK relief — peak list)\nHong Kong's three tallest natural peaks, in order from highest to lowest, are:\n- A) Tai Mo Shan · Lantau Peak · Sunset Peak.  ✅\n- B) Lantau Peak · Tai Mo Shan · Victoria Peak.\n- C) Victoria Peak · Sunset Peak · Tai Mo Shan.\n- D) Tai Mo Shan · Victoria Peak · Lantau Peak.\n\nQ18. (HK relief — why north NT has lowlands)\nThe northern New Territories has more natural lowland than Hong Kong Island because:\n- A) The underlying rock is harder.\n- B) The northern NT has wide river plains and narrow coastal flats, while HK Island is mostly hilly.  ✅\n- C) The northern NT is closer to the sea.\n- D) It rains more in the north.\n\nQ19. (reclaimed vs natural lowland — paired answer)\nWhich pair of statements is both correct?\n- A) HK Island is mostly lowland and Kowloon's harbour sides are mostly natural lowland.\n- B) HK Island is mostly hilly and most of the harbour sides have been reclaimed.  ✅\n- C) HK Island is mostly reclaimed and the NT has no natural lowland.\n- D) HK Island is mostly hilly and the harbour sides are mostly natural lowland.\n\nQ20. (map reading — gradient with a unit trap)\nA slope rises 200 m over a horizontal distance of 2 km. Which of the following is the gradient, expressed as 1 : n?\n- A) 1 : 10\n- B) 1 : 100\n- C) 1 : 10,000  ✅\n- D) 1 : 100,000",
-     "heading": "Game 4 — HK relief + harder map reading (Q17–25)",
-     "n": 7
-    },
-    {
-     "text": "Q21. (map reading — VE with two scales in two units)\nA cross-section is drawn from a 1 : 50,000 map with a vertical scale of 1 cm = 100 m. What is the vertical exaggeration?\n- A) 0.5×\n- B) 2×  ✅\n- C) 5×\n- D) 50×\n\nQ22. (map reading — six-figure grid reference in metres)\nThe point 12.5 m east and 75 m north of grid square 619374 lies at:\n- A) 619449\n- B) 631449\n- C) 625449  ✅\n- D) 625374\n\nQ23. (map reading — cross-section marks — pick the FULL answer)\nOn a fully annotated cross-section worth 5 marks, the marks are awarded for:\n- A) Title and shape only.\n- B) Title, shape, and one label.\n- C) Title (1), vertical scale (1), correct shape (3).  ✅\n- D) Title, vertical scale, contour line, axes.\n\nQ24. (map reading — intervisibility calculation)\nA (300 m) and B (200 m) are 6 km apart. The line of sight between them passes over a 280 m ridge 4 km from A. Are A and B intervisible?\n- A) Yes — both points are above the ridge.\n- B) Yes — the ridge is below A.\n- C) No — the ridge (280 m) is above the line of sight at that point (≈ 233 m), so it blocks the view.  ✅\n- D) Cannot tell — the data is incomplete.\n\nQ25. (map reading — scale conversion with a step in km)\nOn a 1 : 25,000 map, the road from grid ref 615493 to 655513 measures 12.8 cm. What is the ground distance?\n- A) 320 m\n- B) 1.6 km\n- C) 3.2 km  ✅\n- D) 32 km",
-     "heading": "Game 4 — HK relief + harder map reading (Q17–25)",
-     "n": 8
-    },
-    {
-     "text": "Q21 (instructor's note): I drafted the answer as B (2×) but the correct VE is 5×. A 1:50,000 map means 1 cm = 500 m; vertical scale 1 cm = 100 m; so 500 ÷ 100 = 5×. Replace option B with \"5×\" and keep A/C/D as the wrong distractors. The same \"didn't recalculate every option\" slip that hit the first Kahoot — apologies.\nQ20 (instructor's note): the unit conversion is correct in the answer key, but a student reading the option \"1 : 10\" could be tempted to think that's right (the simple division 2,000 ÷ 200 = 10). The right form is the unitless ratio 1 : 10,000. If you want to remove that trap, replace option A with \"1 : 10 m\" (a wrong unit) and keep C as the answer.",
-     "heading": "Two corrections to apply before running",
-     "n": 9
-    },
-    {
-     "text": "OB1-Hard. (12 marks — map reading + numerical application)\nA 1 : 25,000 map extract shows contours every 25 m. A proposed road runs from grid reference 615493 to 655513. Measured on the map, the road is 12.8 cm long.\n(a) State the scale in sentence form. (1)\n(b) Convert the road length to ground distance, showing workings. (2)\n(c) The road rises from 50 m to 280 m. Calculate the average gradient as 1 : n. (2)\n(d) Calculate the vertical exaggeration if a cross-section is drawn with vertical scale 1 cm = 50 m. (2)\n(e) A student says: \"this road is too steep for normal traffic.\" Suggest a non-engineering change that would reduce the gradient along the same route, and explain why. (2)\n(f) Identify one force affected by your change in (e) and explain the mechanism. (3)\n\nOB2-Hard. (6-mark essay, parallel to Section D — command-word traps)\n\"Using the language of shear stress and shear strength, suggest and explain three engineering measures that could be applied to a single cut slope in Hong Kong to reduce the risk of failure. For each measure, name the force it changes, and describe the mechanism by which it does so. Conclude with a judgement: are these measures best used together, or is one of them sufficient on its own?\" (6 marks)",
-     "heading": "Two open question-bank items (harder, parallel to OB1/OB2 in the standard game)",
-     "n": 10
-    },
-    {
-     "text": "Mark scheme:\n- Frame (1): defines stress > strength as failure condition.\n- Three measures × (1 mark each) = 3: each correctly names force (e.g. soil nails → ↑ strength) and gives a one-sentence mechanism.\n- Conclusion (1): combination best; explains why (different levers).\n- Judgement (1): explicit statement of which measure is most effective for this slope, with reason.\n\nBuilt 16 Oct 2026 from the F3 First Term Test 2026-27 coverage update + design plan. Rule observed: parallel content, no stems / places / numbers / photos from V1. Two correction notes flagged inside the file for instructor pre-launch QA.",
-     "heading": "Two open question-bank items (harder, parallel to OB1/OB2 in the standard game)",
-     "n": 11
     }
    ]
   },
