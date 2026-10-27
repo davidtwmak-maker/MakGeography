@@ -41,7 +41,7 @@ Changing Industrial Location, Managing Coastal Environment, and — new —
 
 ## MC questions
 
-184 questions across 93 sub-topics, every one of the 92 curriculum leaves
+197 questions across 93 sub-topics, every one of the 92 curriculum leaves
 covered.
 
 Two rules govern the bank:
@@ -54,8 +54,8 @@ Two rules govern the bank:
 
 What is in the bank:
 
-- **HKEAA past-paper questions** — published for the public examination and
-  freely reusable. The authoritative wording.
+- **13 official HKEAA questions** — the genuine exam wording, with the
+  official answer, and a link to the HKEAA slide it was read from.
 - **Generated questions** — written from the MakGeography notes, in DSE
   multiple-choice style. Each has four options, one answer, and an
   explanation that teaches the concept rather than just naming the answer.
@@ -87,12 +87,44 @@ a database, and is a deliberate decision rather than a default.
 may not see a test, a mock, a predicted paper, an answer key, a mark scheme,
 or anything derived from them.
 
-This is enforced in three places:
+This is enforced in four places:
 
 1. `scripts/build_kb.py` — path patterns and filename substrings
 2. `scripts/build_kb.py` — section headings dropped from inside included notes
-3. `.github/workflows/ci.yml` — a CI check that fails the build if any
-   assessment path appears in `kb.json`
+3. `scripts/verify.py` — the chunk TEXT is scanned, not just the path
+4. `.github/workflows/ci.yml` — CI runs the verifier, so a leak fails the build
+
+### The leak that a path check cannot catch
+
+**A path check is not enough.** Assessment material does not always live in a
+file called "answer key" — it lives *inside* an otherwise-shareable note, at
+the end, under a heading like "Teacher key and rationale".
+
+Two real examples from the vault:
+
+- `CP2/CP2 MC/Coastal MC.md` — student-facing questions followed by
+  `# Teacher key and rationale`: the key to all eight items, the distractor
+  reasoning, and the **register of stems already used**.
+- `F3 Geography/F3 Kahoot drill ...` — a full teacher answer key and
+  distractor rationale table, in a file with no markdown headings at all, so
+  a heading-based drop could never reach it.
+
+Both were reachable by any signed-in student through the Notes page and
+through the chatbot's citations.
+
+The rules that came out of it:
+
+- **Drop the section, keep the note.** A note with a teacher key at the end
+  is still a good note for the first part. Excluding the whole file throws
+  away the teaching content.
+- **Match on the heading, drop to the next heading.** The drop removes
+  everything from the matched heading to the next heading of the same or
+  higher level.
+- **If a file has no headings, a heading rule cannot save it.** Exclude the
+  file outright.
+- **Verify on the text, not the path.** `scripts/verify.py` scans every
+  chunk's text for the teacher-only markers, so this cannot regress
+  silently.
 
 ### Commercial MC books
 
@@ -100,11 +132,48 @@ The Oxford and 600MC books in the vault are **publisher material licensed for
 classroom use only** ("do not redistribute" per the teacher's own note). They
 are excluded from the repository entirely, images included.
 
-The MC section instead uses:
+### What HKEAA actually publishes for free
 
-- **HKEAA past papers** — published for public examination, freely reusable
-- **Generated questions** — written from the MakGeography notes, in DSE
-  multiple-choice style, with an explanation that teaches the concept
+This matters, because the obvious assumption — that HKEAA's past papers are
+free online — is **wrong**, and the difference changes what the site can
+offer.
+
+- The **Subject Examination Report and Question Papers (with Marking
+  Schemes)** is a **paid publication**. Each year page lists a price and
+  exposes only an order form. There is no free PDF of the paper or the key.
+  HKEAA also states that it holds copyright in them.
+- The **examination briefing decks** are **free**, but their Section A
+  coverage is mostly candidate performance statistics. A handful of slides do
+  carry a complete item — stem, four options, the correct option marked with
+  an asterisk, and the percentage who chose each option. That is where the 13
+  official questions come from.
+- The **Samples of Candidates' Performance** are candidate scripts, some
+  carrying seat numbers. They were found, then deleted from disk without
+  being read. Nothing from them is in the repository.
+
+So the honest position is: the official papers cannot be served without
+purchase, and the rest of the bank is generated from the MakGeography notes.
+`data/hkeaa_NOTES.md` records the full provenance, including which items
+were found and why three of them were excluded.
+
+**The asterisk is the key, not the percentage.** On these slides the option
+with the *highest* percentage is usually the most popular **wrong** answer.
+On 2022 Q11 the key had 31% against a popular wrong answer at 32%; on Q16
+the key had 28% against 52%; on Q17 the key had 29% against 48%. Reading the
+percentage column instead of the asterisk would have got all three wrong.
+
+**A question needing its figure.** An item was skipped only if the figure it
+depends on is NOT printed on its own slide. 2022 Q13, 2024 Q9 and 2024 Q13 do
+print their figure, so they are included and the site shows the slide. The
+three that genuinely need the Hong Kong map extract (2023 Q2, 2024 Q6, 2025
+Q3) stay out.
+
+**Verification.** Each transcription was checked by up to three independent
+methods — a full-slide vision read, zoomed region crops, and macOS Vision
+OCR for a literal character-level read. Where two passes disagreed, the OCR
+settled it. The deck PDFs are HKEAA's files and are gitignored; only the
+rendered question crops are committed, served behind the password gate with
+HKEAA credited on each.
 
 ## Plain-language rule
 
