@@ -10,7 +10,11 @@ candidates who picked each, and an asterisk on the correct one.
 This script pulls those complete items out. It never reconstructs a question
 from a partial one, and it never guesses an answer.
 
-Output: data/hkeaa_mc_raw.json
+Output: data/hkeaa_mc_geometric.json
+
+This script reads the PDF's word positions. It is a cross-check on the
+hand-verified record in data/hkeaa_mc_raw.json, NOT the source of truth, and
+it writes to a separate file so it can never overwrite the verified one.
 """
 from __future__ import annotations
 
@@ -23,7 +27,9 @@ from pathlib import Path
 BASE = Path(__file__).resolve().parent.parent
 DATA = BASE / "data"
 PAPER_DIR = DATA / "papers"
-OUT = DATA / "hkeaa_mc_raw.json"
+# Write to a separate file. data/hkeaa_mc_raw.json is the hand-verified
+# record; this script must never overwrite it.
+out_path = DATA / "hkeaa_mc_geometric.json"
 NOTES = DATA / "hkeaa_NOTES.md"
 
 HKEAA = "https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/geog"

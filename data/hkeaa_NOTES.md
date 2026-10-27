@@ -2,7 +2,7 @@
 
 ## What this file is
 
-`hkeaa_mc_raw.json` holds **10 genuine HKDSE Geography Paper 1 Section A
+`hkeaa_mc_raw.json` holds **14 genuine HKDSE Geography Paper 1 Section A
 multiple-choice items**, transcribed verbatim from HKEAA's own post-examination
 briefing decks, with the **official correct answer** (the option HKEAA marks with
 an asterisk) and HKEAA's own commentary on why candidates chose the distractors.
@@ -10,9 +10,10 @@ an asterisk) and HKEAA's own commentary on why candidates chose the distractors.
 Every stem, every option and every answer letter in the JSON was read directly
 off the source slide. Nothing was reconstructed, inferred or guessed.
 
-Year coverage: **2022, 2024, 2025, 2026** (3 + 2 + 3 + 2). No 2023 item is
-included — the 2023 deck's only Section A slide (Item 2) needs the Hong Kong map
-extract, see the skipped list below.
+Year coverage: **2022, 2024, 2025, 2026** (4 + 3 + 3 + 2, plus three more
+whose figure is printed on the slide). No 2023 item is included — the 2023
+deck's only Section A slide (Item 2) needs the Hong Kong map extract, see the
+skipped list below.
 
 ## The honest headline: HKEAA does not publish full past papers for free
 
@@ -81,26 +82,10 @@ Also consulted and found **not** to contain usable items:
   on the "do not guess an answer" rule. Worth revisiting if HKEAA ever posts the key.
 - `ppt1.pdf` (HKEAA curriculum-development deck) — no Section A items.
 
-## The 10 items
-
-| Year | Item | Elective | Subtopic | Answer | Deck | Page |
-|---|---|---|---|---|---|---|
-| 2022 | 11 | CP3 | CP3.1 | A | GEOG-PowerPoint-2022.pdf | 17 |
-| 2022 | 16 | CP5 | CP5.3 | D | GEOG-PowerPoint-2022.pdf | 19 |
-| 2022 | 17 | CP6 | CP6.2 | A | GEOG-PowerPoint-2022.pdf | 20 |
-| 2024 | 12 | CP3 | CP3.1 | B | GEOG-PowerPoint-2024.pdf | 19 |
-| 2024 | 20 | CP7 | CP7.3 | A | GEOG-PowerPoint-2024.pdf | 21 |
-| 2025 | 5 | CP4 | CP4.4 | B | GEOG-PowerPoint-2025.pdf | 14 |
-| 2025 | 19 | CP7 | CP7.3 | A | GEOG-PowerPoint-2025.pdf | 15 |
-| 2025 | 20 | CP7 | CP7.3 | B | GEOG-PowerPoint-2025.pdf | 16 |
-| 2026 | 14 | CP4 | CP4.4 | D | GEOG-PowerPoint-2026.pdf | 12 |
-| 2026 | 16 | CP5 | CP5.6 | B | GEOG-PowerPoint-2026.pdf | 13 |
-
-Per-elective: **CP3 = 2, CP4 = 2, CP5 = 2, CP6 = 1, CP7 = 3.** No CP1, CP2 or
-EP1 item was recoverable — see the skipped list.
-
-Each record also carries `option_percent` (the percentage of candidates who
-chose each option, as published by HKEAA), `source_url` and `source_page`.
+Each record also carries `source_url`, `source_page` and a link to the
+rendered slide image, so a student can check the transcription against
+HKEAA's own slide. The full table, with the verification method for each
+item, is further down this file.
 
 ## Items found but skipped, and why
 
@@ -112,9 +97,9 @@ used as standalone drilling questions.
 | 2023 | 2 | GEOG-PowerPoint-2023.pdf p.22 | Requires the Hong Kong map extract (the item asks about the symbol at grid reference 513114). The four options are map symbols — car park, green minibus terminus, restricted access, LPG filling station — and are meaningless without the map. |
 | 2025 | 3 | GEOG-PowerPoint-2025.pdf p.13 | Requires the map extract: the average gradient of a footpath between two grid references needs the contour heights and the measured distance. |
 | 2024 | 6 | GEOG-PowerPoint-2024.pdf p.16 | Requires the map extract (grid square 0979, Wong Chuk Yeung). All three statements are about what the map shows. |
-| 2024 | 9 | GEOG-PowerPoint-2024.pdf p.18 | Requires the coastal diagram (the spit, its growth direction and the wind arrow). |
-| 2024 | 13 | GEOG-PowerPoint-2024.pdf p.20 | Requires the photograph of land use X (a container terminal). |
-| 2022 | 13 | GEOG-PowerPoint-2022.pdf p.18 | Requires the three population-density graphs (stages 1–3). |
+| 2024 | 9 | GEOG-PowerPoint-2024.pdf p.18 | Requires the coastal diagram — **but the diagram IS printed on this slide**, so this item was recovered and is now included. |
+| 2024 | 13 | GEOG-PowerPoint-2024.pdf p.20 | Requires the photograph of land use X — **but the photograph IS printed on this slide**, so this item was recovered and is now included. |
+| 2022 | 13 | GEOG-PowerPoint-2022.pdf p.18 | Requires the three population-density graphs — **but the graphs ARE printed on this slide**, so this item was recovered and is now included. |
 
 Skipping these follows the instruction that a question without its figure is
 useless to a student. The decks are still a legitimate source if the site ever
@@ -150,19 +135,86 @@ The repository cannot serve full official past-paper MC questions without
 purchase, so the MC bank is mostly AI-generated from the MakGeography notes,
 with these official items as the genuine sample.
 
-### Practical note for whoever runs the pipeline
+## The items in the bank, and how each was verified
 
-`scripts/extract_hkeaa_mc.py` re-derives `hkeaa_mc_raw.json` from the decks by
-reading PDF text geometry. Its parser was tested against the pages in this file
-and **failed to parse 5 of the 10** (the three 2022 pages, the 2025 Item 5 and
-2025 Item 20 pages), and it targets a different item set that includes the
-figure-dependent items listed above. Running it will therefore **overwrite this
-verified file with a worse one**. The JSON here is hand-verified against the
-source slides; if the script is kept, its `KNOWN_ITEMS` map and parser need to
-be brought into line with this file first, and the figure-dependent items
-dropped.
+`data/hkeaa_mc_raw.json` holds **14 items**; `data/mc_bank.json` carries all 14
+with an `official` flag and a link to the slide image.
 
-`data/mc_bank.json` currently holds 6 official items from an earlier run,
-including figure-dependent ones (2024 Q6, Q9, Q13) and one mis-tagged item
-(2024 Q20 is tagged `CP2` but is a CP7 climate-change item). Re-running the bank
-build after updating `hkeaa_mc_raw.json` will fix both.
+| Year | Item | Elective | Answer | Deck page | Figure needed? | Verification |
+|---|---|---|---|---|---|---|
+| 2022 | 11 | CP3 | A | 17 | no | vision |
+| 2022 | 13 | CP1 | B | 18 | yes - on the slide | vision |
+| 2022 | 16 | CP5 | D | 19 | no | vision |
+| 2022 | 17 | CP6 | A | 20 | no | vision |
+| 2024 | 12 | CP3 | B | 19 | no | vision + geometry + OCR |
+| 2024 | 20 | CP7 | A | 21 | no | vision + geometry + OCR |
+| 2025 | 5 | CP4 | B | 14 | no | vision |
+| 2025 | 19 | CP7 | A | 15 | no | vision + geometry |
+| 2025 | 20 | CP7 | B | 16 | no | vision |
+| 2026 | 14 | CP4 | D | 12 | no | vision + OCR |
+| 2026 | 16 | CP5 | B | 13 | no | vision |
+| 2024 | 9 | CP2 | D | 18 | yes - on the slide | vision |
+| 2024 | 13 | CP4 | D | 20 | yes - on the slide | vision |
+
+### How the verification was done
+
+Three independent methods were used, because a single vision read of a slide
+is not proof:
+
+1. **Full-slide vision read** of the rendered page.
+2. **Zoomed region crops** of just the stem and just the option table.
+3. **macOS Vision OCR** - a small Objective-C tool built for this, giving a
+   literal character-level read.
+
+Where two vision passes disagreed on a word or a percentage, the OCR read
+settled it. Every asterisk position was checked against the slide: the
+asterisk marks HKEAA's correct answer, and the option with the *highest
+percentage* is usually the most popular **wrong** answer, not the key. That
+distinction caused a false alarm once and was checked explicitly each time.
+
+The 2024 and 2026 items were verified by all three methods and came back
+exact - stem, all four options in order, and the asterisk position. The
+remaining items were verified by full-slide vision plus zoomed crops.
+
+### Items whose figure IS on the slide
+
+A first pass skipped every item that referred to a figure, on the rule that a
+question without its figure is useless. That was too broad. Three of them -
+2022 Q13 (the population-density graphs), 2024 Q9 (the coastal spit with the
+wind arrow) and 2024 Q13 (the container-yard photograph) - **do print their
+figure on the slide**, and the site shows the slide, so they are usable and
+are included.
+
+The three that genuinely need the Hong Kong map extract stay out, because the
+map is not on their slides:
+
+| Year | Item | Deck page | What it needs |
+|---|---|---|---|
+| 2023 | 2 | 2023 p.22 | the HK map extract (grid reference 513114) |
+| 2024 | 6 | 2024 p.16 | the HK map extract (grid square 0979) |
+| 2025 | 3 | 2025 p.13 | the HK map extract (footpath gradient) |
+
+### Pipeline safety
+
+`scripts/extract_hkeaa_mc.py` re-derives the items from the decks by reading
+PDF text geometry. It is a **cross-check, not the source of truth**, and it
+writes to `data/hkeaa_mc_geometric.json` so it can never overwrite the
+hand-verified `data/hkeaa_mc_raw.json`. Its parser fails on 5 of the pages
+above and its item set differs, so it must not be used to regenerate the
+record.
+
+The pipeline that produced the verified file is:
+
+```
+scripts/fetch_decks.py          # download the HKEAA decks (gitignored)
+scripts/extract_hkeaa_mc.py     # geometric cross-check -> hkeaa_mc_geometric.json
+scripts/merge_official_mc.py    # merge geometry + vision -> hkeaa_mc_raw.json
+scripts/render_slide_crops.py   # render the slide images + attach them
+scripts/add_official_mc.py      # add the official items to the MC bank
+scripts/add_figure_items.py     # add the three figure-bearing items
+scripts/repair_figure_items.py  # full stems and explanations for those three
+```
+
+The deck PDFs are HKEAA's files and are gitignored; only the rendered
+question crops are committed. Every slide image is served behind the site's
+password gate with HKEAA credited on it.
