@@ -25,16 +25,37 @@ Logs: `~/.hermes/logs/makgeo.out.log` and `~/.hermes/logs/makgeo.err.log`.
 
 The app binds to `127.0.0.1` only. Put a tunnel in front of it.
 
-### Quick tunnel (temporary URL)
+### The built-in tunnel
 
 ```bash
-cloudflared tunnel --url http://127.0.0.1:8781
+./scripts/install_tunnel.sh
 ```
 
-The URL changes every time the tunnel restarts. Fine for a demo, not for a
-site students use daily.
+This installs `com.makgeo.tunnel`, an SSH reverse tunnel that keeps the site
+public. It tries serveo.net first and falls back to localtunnel when serveo
+rate-limits a restart.
+
+**The URL changes every time the tunnel restarts.** The current one is written
+to:
+
+```bash
+cat ~/.hermes/logs/makgeo-url.txt
+```
+
+Send students that URL, not a saved copy of an old one. The tunnel job
+rewrites the file whenever it reconnects.
+
+Two things a visitor sees before the site:
+
+- **serveo** shows a "Continue to Site" button — a standard interstitial, and
+  it works over HTTPS.
+- **localtunnel** shows a page asking for the visitor's public IP. That is
+  awkward in a classroom. Prefer serveo, or a named Cloudflare tunnel.
 
 ### Named tunnel (permanent)
+
+A quick tunnel's URL changing is fine for a demo, not for a site students use
+daily. For a permanent address, use Cloudflare:
 
 ```bash
 cloudflared tunnel login
@@ -57,6 +78,12 @@ Run it as a service:
 
 ```bash
 sudo cloudflared service install
+```
+
+Then remove the SSH tunnel so they do not fight over the port:
+
+```bash
+launchctl bootout gui/$(id -u)/com.makgeo.tunnel
 ```
 
 ### Security
