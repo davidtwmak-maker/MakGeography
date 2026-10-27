@@ -111,3 +111,48 @@ crontab -e
 
 Rebuilding the knowledge base and the MC bank is manual — they need the
 vault, and the MC bank needs an LLM pass.
+
+## Troubleshooting
+
+### The service will not start: `Form data requires "python-multipart"`
+
+`python-multipart` is needed because the login is a form POST. A service
+started before that package was installed will fail on every restart with a
+uvicorn traceback, and the site will simply be down.
+
+The service runner now imports the app **before** starting uvicorn. If the
+import fails it installs any missing known dependency and retries; if the
+import still fails it logs the real traceback and exits rather than serving
+a dead port. To repair by hand:
+
+```bash
+"$(ls -d ~/.hermes/tools/python-*/bin/python3 | head -1)" -m pip install -q \
+  fastapi uvicorn jinja2 python-multipart
+```
+
+### Checking what is actually running
+
+The app binds to `127.0.0.1:8781`. If something else is on that port, the
+launchd job will fail to start even though the code is fine.
+
+```bash
+lsof -nP -iTCP:8781 -sTCP:LISTEN     # who holds the port
+launchctl list | grep makgeo         # the three jobs
+curl -s -o /dev/null -w '%{http_code}\n' http://127.0.0.1:8781/
+```
+
+There should be exactly one uvicorn process, started from the repository
+working directory, not from a scratch copy:
+
+```bash
+ps aux | grep '[u]vicorn' | awk '{print $2, $13}'
+lsof -a -p <pid> -d cwd | tail -1     # should be ~/MakGeography
+```
+
+### Stale copies
+
+Work was originally done in a scratch directory before the repository
+existed. A copy left there can be started by mistake and will serve an
+**older** knowledge base and MC bank than the live site, without any obvious
+symptom. The live copy is always the one under `~/MakGeography`; the
+`~/.hermes/scripts/makgeo_app_run.sh` runner points at it explicitly.
