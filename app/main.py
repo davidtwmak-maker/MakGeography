@@ -40,29 +40,41 @@ templates = Jinja2Templates(directory=str(TEMPLATE_DIR))
 # Configuration
 # ---------------------------------------------------------------------------
 
+_password_cache: str | None = None
+
+
 def _load_password() -> str:
     """The site password.
 
     Read from MAKGEO_PASSWORD in the environment, or from MAKGEO_PASSWORD in
     ~/.hermes/.env. There is deliberately NO built-in default: a password
     committed to a public repository is not a password.
+
+    Resolved lazily and cached, so importing the module (CI, tooling) does not
+    require a password to be configured.
     """
+    global _password_cache
+    if _password_cache:
+        return _password_cache
     p = os.environ.get("MAKGEO_PASSWORD", "").strip()
     if p:
+        _password_cache = p
         return p
     env = Path.home() / ".hermes" / ".env"
     if env.exists():
         import re
         m = re.search(r"^MAKGEO_PASSWORD=(.+)$", env.read_text(), re.M)
         if m:
-            return m.group(1).strip().strip("'\"")
+            _password_cache = m.group(1).strip().strip("'\"")
+            return _password_cache
     raise RuntimeError(
         "MAKGEO_PASSWORD is not set. Export it, or add it to ~/.hermes/.env. "
         "There is no default password on purpose."
     )
 
 
-PASSWORD = _load_password()
+# The password is resolved lazily, on first use. Importing the module must not
+# require a password — CI and tooling need to import the app without one.
 SESSION_COOKIE = "makgeo_session"
 SESSION_TTL = 60 * 60 * 12  # 12 hours
 
@@ -149,7 +161,7 @@ def home(request: Request):
 
 @app.post("/login")
 def login(request: Request, password: str = Form(...)):
-    if hmac.compare_digest(password.strip(), PASSWORD):
+    if hmac.compare_digest(password.strip(), _load_password()):
         token = new_session()
         resp = RedirectResponse("/", status_code=303)
         resp.set_cookie(

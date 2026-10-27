@@ -55,3 +55,17 @@ jobs:
 
       - name: Retrieval smoke test
         run: python scripts/test_retrieval.py
+
+      - name: No hardcoded password in the source
+        run: |
+          if grep -rnE "MAKGEO_PASSWORD\s*=\s*['\"][^'\"]{4,}" app/ scripts/ \
+             | grep -v "os.environ"; then
+            echo "A password appears to be hardcoded in the source."
+            exit 1
+          fi
+          echo "No hardcoded password"
+
+      - name: The app starts without a password configured (lazy resolution)
+        env:
+          MAKGEO_PASSWORD: ""
+        run: python -c "import app.main; print('imports without a password, as intended')"
