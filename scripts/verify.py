@@ -1,4 +1,4 @@
-import json, pathlib, re, sys
+import json, os, pathlib, re, sys
 
 root = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(root))
@@ -78,5 +78,22 @@ for q, expect in checks.items():
     assert res, f"no results for: {q}"
     blob = " ".join(c.title for c, _ in res)
     print(f"  {q[:38]:40s} -> {res[0][0].title[:44]}")
+
+# 6. The password gate is optional: with none configured the site is open.
+import app.main as am
+
+assert am.password_required() is False, (
+    "no password is configured, so the gate should be off")
+print("Password gate: off (the site is open - no MAKGEO_PASSWORD set)")
+
+# And with one configured it comes back on.
+os.environ["MAKGEO_PASSWORD"] = "verify-only-not-a-real-password"
+am._password_cache = None
+try:
+    assert am.password_required() is True, "the gate should turn back on"
+    print("Password gate: on when MAKGEO_PASSWORD is set")
+finally:
+    del os.environ["MAKGEO_PASSWORD"]
+    am._password_cache = None
 
 print("\nALL CHECKS PASSED")

@@ -26,12 +26,18 @@ else
   [[ -z "$PYTHON" ]] && PYTHON="$(command -v python3 || true)"
 fi
 
-if [[ -z "${MAKGEO_PASSWORD:-}" ]]; then
-  echo "MAKGEO_PASSWORD is not set."
-  echo "Export it first:  export MAKGEO_PASSWORD='your-password'"
-  echo "(It is also read from ~/.hermes/.env if present.)"
-  exit 1
+PASSWORD_ENTRY=""
+if [[ -n "${MAKGEO_PASSWORD:-}" ]]; then
+  PASSWORD_ENTRY="<key>MAKGEO_PASSWORD</key><string>$MAKGEO_PASSWORD</string>"
+  echo "Site password: ON (visitors must sign in)"
+else
+  echo "Site password: OFF (the site is open to everyone)"
 fi
+
+# The site password is OPTIONAL. With none set, the site is open to
+# everyone. Export one to put the sign-in gate back:
+#   export MAKGEO_PASSWORD='your-password'
+# It is also read from ~/.hermes/.env if present.
 
 if [[ ! -x "$PYTHON" ]]; then
   echo "Python not found at $PYTHON"
@@ -156,8 +162,7 @@ cat > "$APP_PLIST" <<PLIST_EOF
   <key>WorkingDirectory</key><string>$APP_DIR</string>
   <key>EnvironmentVariables</key>
   <dict>
-    <key>MAKGEO_PASSWORD</key><string>$MAKGEO_PASSWORD</string>
-    <key>MINIMAX_API_KEY</key><string>$API_KEY</string>
+    ${PASSWORD_ENTRY}    <key>MINIMAX_API_KEY</key><string>$API_KEY</string>
     <key>MINIMAX_BASE_URL</key><string>$API_BASE</string>
     <key>PYTHONUNBUFFERED</key><string>1</string>
   </dict>

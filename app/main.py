@@ -86,14 +86,17 @@ def _load_password() -> str:
         if m:
             _password_cache = m.group(1).strip().strip("'\"")
             return _password_cache
-    raise RuntimeError(
-        "MAKGEO_PASSWORD is not set. Export it, or add it to ~/.hermes/.env. "
-        "There is no default password on purpose."
-    )
+    # No password configured means no gate. The site is open to everyone.
+    # Set MAKGEO_PASSWORD to turn the gate back on.
+    _password_cache = ""
+    return ""
 
 
 # The password is resolved lazily, on first use. Importing the module must not
 # require a password — CI and tooling need to import the app without one.
+#
+# The gate is OPTIONAL. With no MAKGEO_PASSWORD set the site is open: every
+# page and API works without signing in. Set a password to require one.
 SESSION_COOKIE = "makgeo_session"
 SESSION_TTL = 60 * 60 * 12  # 12 hours
 
@@ -162,7 +165,23 @@ def load_json(name: str, default):
         return default
 
 
+def password_required() -> bool:
+    """True when a password is configured and the gate is therefore on."""
+    try:
+        return bool(_load_password())
+    except Exception:
+        return False
+
+
 def require_auth(request: Request):
+    """Require a signed-in session, unless the site is open.
+
+    With no password configured there is nothing to check, so every route
+    works for anyone. A password is still honoured when one is set, so
+    turning the gate back on is a one-line change in the environment.
+    """
+    if not password_required():
+        return
     if not session_valid(request.cookies.get(SESSION_COOKIE)):
         raise HTTPException(status_code=401, detail="Not signed in.")
 
@@ -173,13 +192,24 @@ def require_auth(request: Request):
 
 @app.get("/", response_class=HTMLResponse)
 def home(request: Request):
-    if not session_valid(request.cookies.get(SESSION_COOKIE)):
+    if password_required() and not session_valid(request.cookies.get(SESSION_COOKIE)):
         return templates.TemplateResponse(request, "login.html")
-    return templates.TemplateResponse(request, "index.html")
+    return templates.TemplateResponse(
+        request, "index.html", {"password_required": password_required()}
+    )
 
 
 @app.post("/login")
 def login(request: Request, password: str = Form(...)):
+    if not password_required():
+        # The site is open — no password to check.
+        token = new_session()
+        resp = RedirectResponse("/", status_code=303)
+        resp.set_cookie(
+            SESSION_COOKIE, token, httponly=True, samesite="lax",
+            max_age=SESSION_TTL, secure=False,
+        )
+        return resp
     if hmac.compare_digest(password.strip(), _load_password()):
         token = new_session()
         resp = RedirectResponse("/", status_code=303)

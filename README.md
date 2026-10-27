@@ -2,7 +2,7 @@
 
 **HKDSE Geography study site for Form 6 students.**
 
-A public, password-protected website with four sections:
+A public website with four sections:
 
 | Section | What it does | State |
 |---|---|---|
@@ -25,14 +25,16 @@ pip install -r requirements.txt
 # The knowledge base is built from the Obsidian vault (see below).
 # A prebuilt copy ships in data/kb.json so you can run immediately.
 
-export MAKGEO_PASSWORD='choose-a-password'
+# Optional. With no MAKGEO_PASSWORD the site is open to everyone.
+# export MAKGEO_PASSWORD='choose-a-password'
 export MINIMAX_API_KEY='your-minimax-key'
 export MINIMAX_BASE_URL='https://api.minimax.io/v1'
 
 uvicorn app.main:app --host 127.0.0.1 --port 8781
 ```
 
-Open <http://127.0.0.1:8781> and sign in with your password.
+Open <http://127.0.0.1:8781>. If you set a password, you will be asked for it;
+if not, the site opens straight into the study tools.
 
 ---
 
@@ -42,7 +44,7 @@ Everything is read from the environment. **Never commit a real key.**
 
 | Variable | Required | Purpose |
 |---|---|---|
-| `MAKGEO_PASSWORD` | yes | The shared site password. Also read from `~/.hermes/.env`. **There is no default** — the app refuses to start without one, because a password committed to a public repository is not a password. |
+| `MAKGEO_PASSWORD` | no | The shared site password. Also read from `~/.hermes/.env`. **Optional** — with none set, the site is open to everyone and no sign-in is needed. Set one to turn the gate back on. There is no built-in default, because a password committed to a public repository is not a password. |
 | `MINIMAX_API_KEY` | yes | Key for the LLM that answers questions. |
 | `MINIMAX_BASE_URL` | no | Defaults to `https://api.minimax.io/v1`. |
 | `MAKGEO_VAULT` | no | Path to the Obsidian vault. Defaults to the path in `scripts/build_kb.py`. |
@@ -155,9 +157,10 @@ is the simplest option and needs no account for a quick tunnel:
 cloudflared tunnel --url http://127.0.0.1:8781
 ```
 
-**The site is password-protected, but a tunnel URL is guessable and the
-password is the only thing standing between the internet and the notes.**
-Use a strong password and treat the URL as secret. For a permanent deployment,
+**The site has no password by default, so the notes are readable by
+anyone who has the URL.** If you want a gate, set `MAKGEO_PASSWORD` and
+reinstall the launchd job — the sign-in page appears and the APIs require a
+session again. For a permanent deployment,
 use a named Cloudflare tunnel with access policies rather than a quick tunnel.
 
 ---

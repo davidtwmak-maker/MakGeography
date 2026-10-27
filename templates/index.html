@@ -19,9 +19,11 @@
       <button data-panel="mc">MC Drilling</button>
       <button data-panel="news">News Corner</button>
     </nav>
+    {% if password_required %}
     <form method="post" action="/logout" style="display:inline">
       <button class="signout" type="submit">Sign out</button>
     </form>
+    {% endif %}
   </div>
 </header>
 

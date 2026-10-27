@@ -5,7 +5,8 @@
 ```bash
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-export MAKGEO_PASSWORD='your-password'
+# Optional. With no MAKGEO_PASSWORD the site is open to everyone.
+# export MAKGEO_PASSWORD='your-password'
 export MINIMAX_API_KEY='your-key'
 uvicorn app.main:app --host 127.0.0.1 --port 8781
 ```
@@ -13,7 +14,8 @@ uvicorn app.main:app --host 127.0.0.1 --port 8781
 ## As a background service (this Mac)
 
 ```bash
-export MAKGEO_PASSWORD='your-password'
+# Optional - the installer says whether the gate is on or off.
+# export MAKGEO_PASSWORD='your-password'
 export MINIMAX_API_KEY='your-key'
 export MAKGEO_PYTHON="$(command -v python3)"
 ./scripts/install_launchd.sh
@@ -31,9 +33,10 @@ The app binds to `127.0.0.1` only. Put a tunnel in front of it.
 ./scripts/install_tunnel.sh
 ```
 
-This installs `com.makgeo.tunnel`, an SSH reverse tunnel that keeps the site
-public. It tries serveo.net first and falls back to localtunnel when serveo
-rate-limits a restart.
+This installs `com.makgeo.tunnel`, which keeps the site public using a
+**Cloudflare quick tunnel** (`cloudflared`). The installer downloads
+`cloudflared` if it is not already present, and falls back to localtunnel if
+that fails.
 
 **The URL changes every time the tunnel restarts.** The current one is written
 to:
@@ -45,12 +48,20 @@ cat ~/.hermes/logs/makgeo-url.txt
 Send students that URL, not a saved copy of an old one. The tunnel job
 rewrites the file whenever it reconnects.
 
-Two things a visitor sees before the site:
+A visitor sees the site directly — no interstitial. This is why the quick
+tunnel is preferred over the alternatives:
 
-- **serveo** shows a "Continue to Site" button — a standard interstitial, and
-  it works over HTTPS.
-- **localtunnel** shows a page asking for the visitor's public IP. That is
-  awkward in a classroom. Prefer serveo, or a named Cloudflare tunnel.
+- **cloudflared** serves the site straight away over HTTPS. This is what the
+  installer uses.
+- **localtunnel** shows a page asking the visitor for their public IP. It
+  works, but it is awkward in a classroom.
+- **serveo** shows a "Continue to Site" button and rate-limits restarts, so
+  it often refuses to assign a URL at all.
+
+One wrinkle worth knowing: the tunnel registers the hostname just after it
+prints the URL, and a local resolver can hold a negative DNS answer for a
+moment. The installer therefore retries the health check a few times rather
+than reporting a failure straight away.
 
 ### Named tunnel (permanent)
 
@@ -88,7 +99,9 @@ launchctl bootout gui/$(id -u)/com.makgeo.tunnel
 
 ### Security
 
-The site has one shared password and nothing else. On a public URL:
+The site has **no password by default** — anyone with the URL can read the
+notes. To put a gate back, set `MAKGEO_PASSWORD` and reinstall the launchd
+job. On a public URL:
 
 - use a long password — the password is the only barrier;
 - the session cookie is `HttpOnly` + `SameSite=Lax` but **not** `Secure`,

@@ -29,6 +29,27 @@
  {
   "paper": "Paper 1",
   "year": 2022,
+  "q": 13,
+  "elect": "CP1",
+  "subtopic": "CP1.1.3",
+  "subtopic_leaf": "CP1.1.3",
+  "stem": "The graphs below show the changes in population density at different stages of development of a city. Which of the following statements is/are correct? (1) Population density decreases with the distance from the city centre at the different stages of development. (2) More people move back to the city centre at the later stage of development. (3) The city experiences urban growth.",
+  "options": [
+   "(1) only",
+   "(3) only",
+   "(1) and (2) only",
+   "(2) and (3) only"
+  ],
+  "answer": "B",
+  "explanation": "At stage 3 population density first rises with distance from the centre, so statement (1) is false. Stage 3 shows outward and suburban growth rather than people moving back to the centre, so statement (2) is false. The later-stage graph does show the city growing and expanding outward, so (3) only is correct.",
+  "source_page": 18,
+  "source_url": "https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/geog/GEOG-PowerPoint-2022.pdf",
+  "slide_image": "slide_crops/hkeaa-2022-p18.png",
+  "found_by": "vision"
+ },
+ {
+  "paper": "Paper 1",
+  "year": 2022,
   "q": 16,
   "elect": "CP5",
   "subtopic": "CP5.3.1",

@@ -1,6 +1,6 @@
 {
- "updated_at": "2026-10-27 13:42 UTC",
- "n_items": 193,
+ "updated_at": "2026-10-27 15:53 UTC",
+ "n_items": 204,
  "feeds": [
   {
    "feed": "USGS Earthquakes (M4.5+, past week)",
@@ -203,7 +203,7 @@
    "url": "https://wmo.int/news",
    "ok": true,
    "error": "",
-   "items": 7
+   "items": 6
   },
   {
    "feed": "UNFCCC — News",
