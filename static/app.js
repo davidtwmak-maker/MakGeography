@@ -220,6 +220,11 @@
       <div class="card"><div class="stat">${s.asked}</div><p class="hint-small">questions attempted</p></div>
       <div class="card"><div class="stat">${s.asked ? Math.round((s.correct / s.asked) * 100) : 0}%</div><p class="hint-small">accuracy</p></div>
       <div class="card"><div class="stat">${s.asked ? s.asked - s.correct : 0}</div><p class="hint-small">wrong — needs drilling</p></div>`;
+    const weakCount = Object.values(s.bySub || {}).filter((v) => v.asked && v.wrong).length;
+    if (weakCount) {
+      $("#mcStats").insertAdjacentHTML("beforeend",
+        `<div class="card"><div class="stat">${weakCount}</div><p class="hint-small">weak sub-topics</p></div>`);
+    }
   }
 
   function saveStats(s) { localStorage.setItem("makgeo_mc_stats", JSON.stringify(s)); }
@@ -280,6 +285,7 @@
         if (!stats.wrongIds.includes(q.id)) stats.wrongIds.push(q.id);
       }
       saveStats(stats);
+      loadMcStats();   // refresh the counters so the student sees the update
       $("#mcList").removeEventListener("click", handler);
       $("#mcList").addEventListener("click", handler, { once: true });
     }
