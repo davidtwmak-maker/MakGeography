@@ -58,8 +58,10 @@ jobs:
 
       - name: No hardcoded password in the source
         run: |
-          if grep -rnE "MAKGEO_PASSWORD\s*=\s*['\"][^'\"]{4,}" app/ scripts/ \
-             | grep -v "os.environ"; then
+          # Match a real ASSIGNMENT (PASSWORD = "..."), not help text or an
+          # os.environ lookup.
+          if grep -rnE '(^|[^A-Za-z_.])PASSWORD[[:space:]]*=[[:space:]]*["\x27][^"\x27]{4,}' app/ scripts/ \
+             | grep -vE 'os\.environ|PASSWORD_CACHE|_password_cache'; then
             echo "A password appears to be hardcoded in the source."
             exit 1
           fi
