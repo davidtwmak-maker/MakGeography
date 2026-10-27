@@ -14,7 +14,7 @@
     "(2) and (3) only"
    ],
    "answer": "B",
-   "explanation": "Statement (1) is false because at stage 3 population density first rises with distance from the centre. Statement (2) is false because stage 3 shows outward and suburban growth, not movement back to the centre. Statement (3) is correct: the later-stage graph shows the city growing and expanding outward.",
+   "explanation": "At stage 3 population density first rises with distance from the centre, so statement (1) is false. Stage 3 shows outward and suburban growth rather than people moving back to the centre, so statement (2) is false. The later-stage graph does show the city growing and expanding outward, so (3) only is correct.",
    "source_page": 18,
    "source_url": "https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/geog/GEOG-PowerPoint-2022.pdf",
    "slide_image": "slide_crops/hkeaa-2022-p18.png",
@@ -50,7 +50,8 @@
    "source": "HKEAA Paper 1 2024 Item 9 (official examination briefing)",
    "id": "hkeaa-2024-q9",
    "official": true,
-   "slide_image": "slide_crops/hkeaa-2024-p18.png"
+   "slide_image": "slide_crops/hkeaa-2024-p18.png",
+   "elect": "CP2"
   },
   {
    "paper": "Paper 1",
@@ -64,18 +65,19 @@
     "(1), (2) and (3)"
    ],
    "answer": "A",
-   "explanation": "",
+   "explanation": "All three are consequences. A higher mean sea level increases wave erosion along the coast, the people living in coastal lowlands face resettlement because of the risk of flooding, and warmer oceans and a higher sea surface give more energy to tropical cyclones, so they form more often.",
    "source_page": 21,
    "source_url": "https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/geog/GEOG-PowerPoint-2024.pdf",
    "topics": [
-    "CP2"
+    "CP7"
    ],
    "subtopic": "CP7.1.1",
    "subtopic_title": "Which of the following are possible consequences caused by t",
    "source": "HKEAA Paper 1 2024 Item 20 (official examination briefing)",
    "id": "hkeaa-2024-q20",
    "official": true,
-   "slide_image": "slide_crops/hkeaa-2024-p21.png"
+   "slide_image": "slide_crops/hkeaa-2024-p21.png",
+   "elect": "CP7"
   },
   {
    "paper": "Paper 1",
@@ -90,7 +92,7 @@
     "(1), (2) and (3)"
    ],
    "answer": "A",
-   "explanation": "HKEAA briefing note: candidates choosing Option B might have mistaken iron and steel industry in China as being labour intensive. Iron and steel production is capital- and technology-intensive, so the reasons are the agglomeration of heavy industries and upgraded production facilities.",
+   "explanation": "Iron and steel production is capital-intensive rather than labour-intensive, so cheap labour is not a sufficient reason for the plant to stay in China. Agglomeration of heavy industries and upgraded production facilities are both genuine reasons, so (1) and (2) only is correct.",
    "subtopic_leaf": "CP3.2.1",
    "option_percent": [
     "31%",
@@ -108,7 +110,8 @@
    "subtopic_title": "Plant X is still a major iron and steel plant in China becau",
    "source": "HKEAA Paper 1 2022 Item 11 (official examination briefing)",
    "id": "hkeaa-2022-q11",
-   "official": true
+   "official": true,
+   "elect": "CP3"
   },
   {
    "paper": "Paper 1",
@@ -122,7 +125,7 @@
     "newspaper printing"
    ],
    "answer": "B",
-   "explanation": "",
+   "explanation": "A raw material-oriented activity uses its raw materials at or near the place of production. Cheese making is an example because milk is perishable and bulky, so it is processed close to where the milk is produced. Bread making uses flour that can be transported easily, and car manufacturing and newspaper printing are not raw material activities at all.",
    "source_page": 19,
    "source_url": "https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/geog/GEOG-PowerPoint-2024.pdf",
    "topics": [
@@ -133,7 +136,8 @@
    "source": "HKEAA Paper 1 2024 Item 12 (official examination briefing)",
    "id": "hkeaa-2024-q12",
    "official": true,
-   "slide_image": "slide_crops/hkeaa-2024-p19.png"
+   "slide_image": "slide_crops/hkeaa-2024-p19.png",
+   "elect": "CP3"
   },
   {
    "paper": "Paper 1",
@@ -158,7 +162,8 @@
    "source": "HKEAA Paper 1 2024 Item 13 (official examination briefing)",
    "id": "hkeaa-2024-q13",
    "official": true,
-   "slide_image": "slide_crops/hkeaa-2024-p20.png"
+   "slide_image": "slide_crops/hkeaa-2024-p20.png",
+   "elect": "CP4"
   },
   {
    "paper": "Paper 1",
@@ -173,7 +178,7 @@
     "(1), (2) and (3)"
    ],
    "answer": "D",
-   "explanation": "HKEAA briefing note: candidates were unable to recognise the impact of replacing rural vegetation and farmland with built-up areas, roads and other impermeable surfaces. Such surfaces prevent infiltration and raise runoff, increasing flood risk, while the loss of farmland disrupts rural lifestyles.",
+   "explanation": "Urban encroachment in Hong Kong replaces farmland, changes the character of rural communities and raises the risk of flooding through harder surfaces and loss of natural drainage, so all three are problems.",
    "subtopic_leaf": "CP4.4.1",
    "option_percent": [
     "55%",
@@ -191,7 +196,8 @@
    "subtopic_title": "Which of the following are the possible problems brought abo",
    "source": "HKEAA Paper 1 2026 Item 14 (official examination briefing)",
    "id": "hkeaa-2026-q14",
-   "official": true
+   "official": true,
+   "elect": "CP4"
   },
   {
    "paper": "Paper 1",
@@ -206,7 +212,7 @@
     "(1) and (3) only"
    ],
    "answer": "B",
-   "explanation": "HKEAA briefing note: candidates might have shown a misunderstanding of the nature and function of a cruise terminal. Large cruise ships require deep water frontage to berth, so the deep waterfront is the location advantage; a typhoon shelter and railway access are not advantages for a cruise terminal.",
+   "explanation": "The Kai Tak Cruise Terminal is built on the newly reclaimed Kai Tak airport site, so deep waterfront is its location advantage. It is not close to Kwun Tong Typhoon Shelter, and although a railway serves the airport, accessibility by railway is not the decisive location factor for a cruise terminal.",
    "subtopic_leaf": "CP4.4.1",
    "option_percent": [
     "8%",
@@ -224,32 +230,8 @@
    "subtopic_title": "Which of the following is/are the location advantage(s) of t",
    "source": "HKEAA Paper 1 2025 Item 5 (official examination briefing)",
    "id": "hkeaa-2025-q5",
-   "official": true
-  },
-  {
-   "paper": "Paper 1",
-   "year": 2024,
-   "q": 6,
-   "stem": "Which of the following statements about grid square 0979 are correct? (1) There is cultivated land located below 280 m. (2) People can freely access Wong Chuk Yeung by cars. (3) There is electricity supply.",
-   "options": [
-    "(1) and (2) only",
-    "(1) and (3) only",
-    "(2) and (3) only",
-    "(1), (2) and (3)"
-   ],
-   "answer": "B",
-   "explanation": "",
-   "source_page": 16,
-   "source_url": "https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/geog/GEOG-PowerPoint-2024.pdf",
-   "topics": [
-    "CP4"
-   ],
-   "subtopic": "CP4.4.1",
-   "subtopic_title": "Which of the following statements about grid square 0979 are",
-   "source": "HKEAA Paper 1 2024 Item 6 (official examination briefing)",
-   "id": "hkeaa-2024-q6",
    "official": true,
-   "slide_image": "slide_crops/hkeaa-2024-p16.png"
+   "elect": "CP4"
   },
   {
    "paper": "Paper 1",
@@ -264,7 +246,7 @@
     "(1), (2) and (3)"
    ],
    "answer": "D",
-   "explanation": "HKEAA briefing note: candidates choosing this option might be unaware of the rising contaminated underground water towards the surface during the hot dry summer in Southern California. Fertilizer chemicals leach into groundwater, cause eutrophication through nutrient runoff, and build up salts in the soil.",
+   "explanation": "All three follow from inappropriate chemical fertilizer use in a hot, dry climate: nutrients leach down to contaminate groundwater, runoff causes eutrophication in water bodies, and soluble salts accumulate in the soil, worsened by high evaporation and poor drainage.",
    "subtopic_leaf": "CP5.3.1",
    "option_percent": [
     "52%",
@@ -282,7 +264,8 @@
    "subtopic_title": "Which of the following are the possible consequences of inap",
    "source": "HKEAA Paper 1 2022 Item 16 (official examination briefing)",
    "id": "hkeaa-2022-q16",
-   "official": true
+   "official": true,
+   "elect": "CP5"
   },
   {
    "paper": "Paper 1",
@@ -297,7 +280,7 @@
     "(2) and (3) only"
    ],
    "answer": "B",
-   "explanation": "HKEAA briefing note: organic farming emphasises natural processes. Sunlight is a natural input, not a human one. Crop residues used as compost or mulch are a human input, whereas genetically modified seeds are excluded from organic farming.",
+   "explanation": "Sunlight is a natural input, not a human one, so (1) is excluded. Crop residues are human inputs because they are deliberately returned to the soil. Genetically modified seeds are also a human input, but the item asks for examples of human input in ORGANIC farming, where genetically modified seeds are not permitted, so (2) only is correct.",
    "subtopic_leaf": "CP5.6.1",
    "option_percent": [
     "3%",
@@ -315,7 +298,8 @@
    "subtopic_title": "Which of the following is/are the example(s) of human input ",
    "source": "HKEAA Paper 1 2026 Item 16 (official examination briefing)",
    "id": "hkeaa-2026-q16",
-   "official": true
+   "official": true,
+   "elect": "CP5"
   },
   {
    "paper": "Paper 1",
@@ -330,7 +314,7 @@
     "(1), (2) and (3)"
    ],
    "answer": "A",
-   "explanation": "HKEAA briefing note: candidates choosing this option might have mistaken urban development, which cleared a much smaller area of Amazon forest when compared with economic development, as a 'major' cause.",
+   "explanation": "Economic development, driven by poverty and the need for land and livelihoods, is the major cause of Amazon deforestation. Urban development cleared a much smaller area than economic development, so rapid urbanisation is not a 'major' cause.",
    "subtopic_leaf": "CP6.2.1",
    "option_percent": [
     "29%",
@@ -348,7 +332,8 @@
    "subtopic_title": "What are the major causes of the high rate of deforestation ",
    "source": "HKEAA Paper 1 2022 Item 17 (official examination briefing)",
    "id": "hkeaa-2022-q17",
-   "official": true
+   "official": true,
+   "elect": "CP6"
   },
   {
    "paper": "Paper 1",
@@ -363,7 +348,7 @@
     "(1), (2) and (3)"
    ],
    "answer": "B",
-   "explanation": "HKEAA briefing note: candidates might have confused urban heat island effect with global warming. Trees cool the local urban environment through evapotranspiration and by shading surfaces from solar radiation. Absorbing carbon dioxide mitigates global warming, not the local urban heat island.",
+   "explanation": "Tree planting cools the urban heat island directly through evapotranspiration and through shading, so (1) and (3) are correct. Absorbing more carbon dioxide is a climate benefit rather than a direct cooling mechanism, so (2) is not the answer here.",
    "subtopic_leaf": "CP7.3.1",
    "option_percent": [
     "24%",
@@ -381,7 +366,8 @@
    "subtopic_title": "How does tree planting mitigate the urban heat island effect",
    "source": "HKEAA Paper 1 2025 Item 20 (official examination briefing)",
    "id": "hkeaa-2025-q20",
-   "official": true
+   "official": true,
+   "elect": "CP7"
   },
   {
    "paper": "Paper 1",
@@ -395,7 +381,7 @@
     "fewer forest fires in the Amazon rainforest"
    ],
    "answer": "A",
-   "explanation": "",
+   "explanation": "Climate change shifts the climatic zones that support each biome, so biomes migrate towards the poles - southward in the Southern Hemisphere. Coral bleaching is a problem in warm tropical water, not the polar region; extreme rainfall in Hong Kong is a weather consequence rather than an ecological one; and the Amazon rainforest faces MORE forest fires, not fewer.",
    "source_page": 15,
    "source_url": "https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/geog/GEOG-PowerPoint-2025.pdf",
    "topics": [
@@ -406,7 +392,8 @@
    "source": "HKEAA Paper 1 2025 Item 19 (official examination briefing)",
    "id": "hkeaa-2025-q19",
    "official": true,
-   "slide_image": "slide_crops/hkeaa-2025-p15.png"
+   "slide_image": "slide_crops/hkeaa-2025-p15.png",
+   "elect": "CP7"
   },
   {
    "stem": "Which statement correctly describes Earth’s three main layers and their compositions?",

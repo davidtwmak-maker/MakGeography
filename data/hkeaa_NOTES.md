@@ -142,10 +142,10 @@ with an `official` flag and a link to the slide image.
 
 | Year | Item | Elective | Answer | Deck page | Figure needed? | Verification |
 |---|---|---|---|---|---|---|
-| 2022 | 11 | CP3 | A | 17 | no | vision |
+| 2022 | 11 | CP3 | A | 17 | no | vision, twice, independently |
 | 2022 | 13 | CP1 | B | 18 | yes - on the slide | vision |
-| 2022 | 16 | CP5 | D | 19 | no | vision |
-| 2022 | 17 | CP6 | A | 20 | no | vision |
+| 2022 | 16 | CP5 | D | 19 | no | vision, twice, independently |
+| 2022 | 17 | CP6 | A | 20 | no | vision, twice, independently |
 | 2024 | 12 | CP3 | B | 19 | no | vision + geometry + OCR |
 | 2024 | 20 | CP7 | A | 21 | no | vision + geometry + OCR |
 | 2025 | 5 | CP4 | B | 14 | no | vision |
@@ -175,6 +175,19 @@ distinction caused a false alarm once and was checked explicitly each time.
 The 2024 and 2026 items were verified by all three methods and came back
 exact - stem, all four options in order, and the asterisk position. The
 remaining items were verified by full-slide vision plus zoomed crops.
+
+The three 2022 items were each read twice, independently, and both reads
+agreed exactly on the stem, the three statements, all four options and the
+asterisk position. The same three items were also checked by a geometric
+extractor reading the PDF's word positions, which produced the identical
+answers (A, D, A).
+
+**A note on the asterisk.** The option carrying the *highest percentage* is
+usually the most popular **wrong** answer, not the key. On 2022 Q11 the
+correct answer A had 31% while the popular wrong answer B had 32%; on 2022
+Q16 the correct D had 28% against a popular A at 52%; on 2022 Q17 the
+correct A had 29% against a popular D at 48%. Reading the percentage
+column instead of the asterisk would have got all three wrong.
 
 ### Items whose figure IS on the slide
 
