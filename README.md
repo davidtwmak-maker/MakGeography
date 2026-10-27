@@ -135,12 +135,18 @@ notes do not cover a question. It cites the note it used:
 
 ## Running as a service
 
-`scripts/install_launchd.sh` installs a `launchd` job that keeps the app
-running and restarts it if it crashes.
+`scripts/install_launchd.sh` installs two `launchd` jobs:
+
+- `com.makgeo.app` — the server, restarted if it crashes
+- `com.makgeo.news` — refreshes the news feed every hour
 
 ```bash
+export MAKGEO_PASSWORD='your-password'
 ./scripts/install_launchd.sh
 ```
+
+The script reads `MINIMAX_API_KEY` from the environment, or from
+`~/.hermes/.env`. Neither the password nor the key is written into the repo.
 
 To put it on the public internet, run a tunnel in front of it. `cloudflared`
 is the simplest option and needs no account for a quick tunnel:

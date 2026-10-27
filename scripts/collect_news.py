@@ -33,84 +33,90 @@ UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) MakGeography/1.0"
 
 FEEDS = [
     # ---- CP1 Earth structure / plate tectonics / tectonic hazards ----
-    {"tag": ["CP1"], "name": "USGS Earthquakes (M4.5+, past week)", "kind": "feed",
+    {"tag": ["CP1"], "name": "USGS Earthquakes (M4.5+, past week)", "kind": "feed", "max_items": 12,
      "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson",
-     "json": True},
-    {"tag": ["CP1"], "name": "NASA Astronomy Picture of the Day", "kind": "feed",
-     "url": "https://science.nasa.gov/apod/"},
+     "json": True, "authoritative": True},
+    {"tag": ["CP1"], "name": "NASA Astronomy Picture of the Day", "kind": "feed", "max_items": 4,
+     "url": "https://science.nasa.gov/apod/", "authoritative": False},
     {"tag": ["CP1"], "name": "IVHHN — Volcano Bulletin", "kind": "feed",
-     "url": "https://www.ivhhn.org/"},
+     "url": "https://www.ivhhn.org/", "authoritative": True},
     {"tag": ["CP1", "CP7"], "name": "HKO — Weather RSS portal", "kind": "feed",
-     "url": "https://rss.weather.gov.hk/rsse.html"},
-    {"tag": ["CP1"], "name": "NGDC / NOAA Significant Earthquakes", "kind": "feed",
+     "url": "https://rss.weather.gov.hk/rsse.html", "authoritative": True},
+    {"tag": ["CP1"], "name": "NGDC / NOAA Significant Earthquakes", "kind": "feed", "max_items": 12,
      "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_month.geojson",
-     "json": True},
-    {"tag": ["EP1"], "name": "HK CEDD — RSS index", "kind": "feed",
-     "url": "https://www.cedd.gov.hk/eng/rss/index.html"},
+     "json": True, "authoritative": True},
+    {"tag": ["EP1"], "name": "HK CEDD — Recent topics", "kind": "feed",
+     "url": "https://www.cedd.gov.hk/eng/rss/recent_topics_rss.xml", "authoritative": True},
     {"tag": ["CP1", "EP1"], "name": "HK DSD — What’s New", "kind": "feed",
-     "url": "https://www.dsd.gov.hk/Menu/EN/RSS/Whats_New.xml"},
+     "url": "https://www.dsd.gov.hk/Menu/EN/RSS/Whats_New.xml", "authoritative": False},
     {"tag": ["CP1"], "name": "HK DSD — Press Releases", "kind": "feed",
-     "url": "https://www.dsd.gov.hk/Menu/EN/RSS/Press_Releases.xml"},
+     "url": "https://www.dsd.gov.hk/Menu/EN/RSS/Press_Releases.xml", "authoritative": False},
 
     # ---- CP2 River and coastal environment ----
     {"tag": ["CP2"], "name": "HK CEDD — Coastal / reclamation", "kind": "feed",
-     "url": "https://www.info.gov.hk/gia/general/202606/12/P2026061200480.htm"},
+     "url": "https://www.info.gov.hk/gia/general/202606/12/P2026061200480.htm", "authoritative": True},
     {"tag": ["CP2"], "name": "HK EPD — Highlights", "kind": "feed",
-     "url": "https://www.epd.gov.hk/epd/english/rss_feeds/highlights.xml"},
+     "url": "https://www.epd.gov.hk/epd/english/rss_feeds/highlights.xml", "authoritative": False},
     {"tag": ["CP2"], "name": "HK EPD — Events and Acts", "kind": "feed",
-     "url": "https://www.epd.gov.hk/epd/english/rss_feeds/events_acts.xml"},
+     "url": "https://www.epd.gov.hk/epd/english/rss_feeds/events_acts.xml", "authoritative": False},
     {"tag": ["CP2"], "name": "HKO — Monthly Weather Summary", "kind": "feed",
-     "url": "https://www.weather.gov.hk/en/wxinfo/pastwx/mws/mws.htm"},
+     "url": "https://www.weather.gov.hk/en/wxinfo/pastwx/mws/mws.htm", "authoritative": True},
     {"tag": ["CP2", "CP7"], "name": "HKO — Monthly climate reports", "kind": "feed",
-     "url": "https://www.weather.gov.hk/en/wxinfo/pastwx/mws2026/mws202608.htm"},
+     "url": "https://www.weather.gov.hk/en/wxinfo/pastwx/mws2026/mws202608.htm", "authoritative": True},
 
     # ---- CP3 Industrial location ----
     {"tag": ["CP3"], "name": "RTHK News (English)", "kind": "feed",
-     "url": "https://news.rthk.hk/rthk/en/rss.feed"},
+     "url": "https://news.rthk.hk/rthk/en/rss.feed", "authoritative": False},
+    {"tag": ["CP3"], "name": "SCMP — Business", "kind": "feed",
+     "url": "https://www.scmp.com/rss/92/feed", "authoritative": False, "max_items": 30},
+    {"tag": ["CP3"], "name": "SCMP — China Economy", "kind": "feed",
+     "url": "https://www.scmp.com/rss/318198/feed", "authoritative": False, "max_items": 25},
+    {"tag": ["CP3"], "name": "Manufacturing Dive", "kind": "feed",
+     "url": "https://www.manufacturingdive.com/feeds/news/", "authoritative": False, "max_items": 20},
+    {"tag": ["CP3"], "name": "Hong Kong Free Press", "kind": "feed",
+     "url": "https://hongkongfp.com/feed/", "authoritative": False, "max_items": 25},
     {"tag": ["CP3", "CP4"], "name": "HK DSD — DSD Newsletter", "kind": "feed",
-     "url": "https://www.dsd.gov.hk/Menu/EN/RSS/DSD_Newsletter.xml"},
+     "url": "https://www.dsd.gov.hk/Menu/EN/RSS/DSD_Newsletter.xml", "authoritative": False},
     {"tag": ["CP3", "CP4"], "name": "HK DSD — Press Releases", "kind": "feed",
      "url": "https://www.dsd.gov.hk/Menu/EN/RSS/Press_Releases.xml"},
 
     # ---- CP4 Building a sustainable city ----
     {"tag": ["CP4"], "name": "HK Planning Department — public consultations", "kind": "feed",
-     "url": "https://www.info.gov.hk/gia/general/202606/12/P2026061200480.htm"},
+     "url": "https://www.info.gov.hk/gia/general/202606/12/P2026061200480.htm", "authoritative": False},
     {"tag": ["CP4"], "name": "HK Gov — News in brief", "kind": "feed",
-     "url": "https://www.gov.hk/en/about/rss.htm"},
+     "url": "https://www.gov.hk/en/about/rss.htm", "authoritative": False},
 
     # ---- CP5 Combating famine ----
     {"tag": ["CP5"], "name": "UN News — Food Security", "kind": "feed",
-     "url": "https://news.un.org/feed/subscribe/en/news/topic/food-security/feed/rss.xml"},
+     "url": "https://news.un.org/feed/subscribe/en/news/topic/food-security/feed/rss.xml", "authoritative": True},
     {"tag": ["CP5"], "name": "ReliefWeb — Humanitarian updates", "kind": "feed",
-     "url": "https://reliefweb.int/updates/rss.xml"},
+     "url": "https://reliefweb.int/updates/rss.xml", "authoritative": True},
     {"tag": ["CP5", "CP6"], "name": "ScienceDaily — Environment", "kind": "feed",
-     "url": "https://www.sciencedaily.com/rss/top/environment.xml"},
+     "url": "https://www.sciencedaily.com/rss/top/environment.xml", "authoritative": False},
 
     # ---- CP6 Disappearing green canopy ----
     {"tag": ["CP6"], "name": "Global Forest Watch — Blog", "kind": "feed",
-     "url": "https://www.globalforestwatch.org/blog/feed/"},
+     "url": "https://www.globalforestwatch.org/blog/feed/", "authoritative": True},
     {"tag": ["CP6", "CP7"], "name": "UN News — Climate change", "kind": "feed",
-     "url": "https://news.un.org/feed/subscribe/en/news/topic/climate-change/feed/rss.xml"},
+     "url": "https://news.un.org/feed/subscribe/en/news/topic/climate-change/feed/rss.xml", "authoritative": True},
     {"tag": ["CP6"], "name": "UNEP — News and stories", "kind": "feed",
-     "url": "https://www.unep.org/en/whats-new/news-stories-speeches"},
+     "url": "https://www.unep.org/en/whats-new/news-stories-speeches", "authoritative": True},
 
     # ---- CP7 Global warming / climate change ----
     {"tag": ["CP7"], "name": "WMO — News", "kind": "feed",
-     "url": "https://wmo.int/news"},
+     "url": "https://wmo.int/news", "authoritative": True},
     {"tag": ["CP7"], "name": "UNFCCC — News", "kind": "feed",
-     "url": "https://unfccc.int/rss.xml"},
+     "url": "https://unfccc.int/rss.xml", "authoritative": True},
     {"tag": ["CP7"], "name": "ESA Copernicus — Observing the Earth", "kind": "feed",
-     "url": "https://www.esa.int/rssfeed/Our_Activities/Observing_the_Earth"},
+     "url": "https://www.esa.int/rssfeed/Our_Activities/Observing_the_Earth", "authoritative": True},
     {"tag": ["CP7"], "name": "NASA Earth Observatory", "kind": "feed",
-     "url": "https://earthobservatory.nasa.gov/feeds/earth-observatory.rss"},
+     "url": "https://earthobservatory.nasa.gov/feeds/earth-observatory.rss", "authoritative": True},
     {"tag": ["CP7"], "name": "ScienceDaily — Climate", "kind": "feed",
-     "url": "https://www.sciencedaily.com/rss/earth_climate/climate.xml"},
+     "url": "https://www.sciencedaily.com/rss/earth_climate/climate.xml", "authoritative": False},
 
     # ---- EP1 Dynamic Earth (HK) ----
     {"tag": ["EP1"], "name": "HK Geological Survey / GeoPark", "kind": "feed",
-     "url": "https://www.arqs.hk/en"},
-    {"tag": ["EP1"], "name": "HK Geological Survey / GeoPark", "kind": "feed",
-     "url": "https://www.arqs.hk/en"},
+     "url": "https://www.arqs.hk/en", "authoritative": True, "max_items": 20},
 ]
 
 # ---------------------------------------------------------------------------
@@ -125,14 +131,26 @@ TAGS = {
             "flood", "typhoon", "storm surge", "wave", "harbour", "estuary",
             "river", "drainage", "sediment", "beach", "mangrove", "wetland",
             "breakwater", "seawall", "dredging"],
-    "CP3": ["industrial", "industry", "factory", "manufacturing", "steel", "factory",
-            "logistics", "port", "investment", "talent", "agglomeration", "deindustrial",
-            "silicon valley", "supply chain", "plant", "industrial park", "foreign direct",
-            "fdi", "production base"],
-    "CP4": ["urban", "city", "housing", "population", "reclamation", "brownfield",
+    # CP3 terms are deliberately specific. "port" and "plant" appear in too
+    # many unrelated stories (port cities, power plants, "plant" as a verb) and
+    # produced false positives, so the geography of industry is named directly.
+    "CP3": ["industrial", "industry", "manufacturing", "steel", "logistics",
+            "agglomeration", "deindustrial", "silicon valley", "supply chain",
+            "industrial park", "industrial estate", "foreign direct investment",
+            "fdi", "production base", "assembly line", "outsourcing", "offshore",
+            "multinational", "transnational", "global production", "factory",
+            "high-tech", "high tech", "it hub", "business park",
+            "container terminal", "free trade zone", "logistics hub",
+            "port city", "port town", "seaport", "deepwater port",
+            "shipping port", "transhipment", "shipbuilding"],
+    # "population" on its own matched every refugee and displacement report,
+    # so the urban sense has to be qualified.
+    "CP4": ["urban", "city", "housing", "reclamation", "brownfield",
             "transport", "congestion", "commut", "liveable", "livable", "compact city",
             "public consultation", "master plan", "renewal", "open space", "public housing",
-            "land use", "smart city"],
+            "land use", "smart city", "urban population", "urbanisation", "urbanization",
+            "urban sprawl", "megacity", "city centre", "city center", "gentrification",
+            "urban decay", "council housing", "public housing"],
     "CP5": ["famine", "hunger", "food security", "food insecurity", "malnutrition",
             "sahel", "drought", "crop", "agricultur", "irrigation", "harvest", "yield",
             "grain", "wheat", "maize", "fertiliser", "fertilizer", "rural development",
@@ -283,7 +301,14 @@ def tag_item(title: str, summary: str) -> list[str]:
     tags = []
     for code, words in TAGS.items():
         for w in words:
-            if w in t:
+            # Word-boundary match, not substring. A plain `w in t` makes "port"
+            # fire on "report", "support" and "important", and "wave" fire on
+            # "wavelength". Multi-word terms are matched literally.
+            if " " in w:
+                hit = w in t
+            else:
+                hit = re.search(r"\b" + re.escape(w) + r"(?:s|es|ed|ing)?\b", t) is not None
+            if hit:
                 tags.append(code)
                 break
     return sorted(set(tags))
@@ -347,10 +372,39 @@ def collect() -> tuple[list[dict], list[dict]]:
             url = it.get("url") or ""
             if not url.startswith("http"):
                 continue
+            # A feed-index page lists its own feeds. Those entries have a bare
+            # URL or an RSS path as their title and are navigation, not news.
+            title_probe = (it.get("title") or "").strip()
+            if (not title_probe
+                    or title_probe.startswith("http")
+                    or re.fullmatch(r"(www\.)?\S+\.(gov|com|org|hk|int|xml|html|htm|rss|feed)/?\S*", title_probe, re.I)
+                    or re.fullmatch(r"\S+\.(rss|xml|feed)(\?\S*)?", title_probe, re.I)
+                    or "rss subscription" in title_probe.lower()
+                    or "rss feeds add-on" in title_probe.lower()
+                    or "tips on rss" in title_probe.lower()):
+                continue
             key = hashlib.sha1(url.encode()).hexdigest()
             if key in seen:
                 continue
+            # Two kinds of feed.
+            #
+            # A TOPIC feed exists for one elective (IVHHN volcano bulletins,
+            # HKO climate reports, UN News food security). Its whole purpose is
+            # that topic, so every item keeps the declared tag even when the
+            # headline is terse.
+            #
+            # A GENERAL feed is a broad news feed that merely happens to
+            # contain geography (RTHK, HK DSD, ScienceDaily). Those items must
+            # earn their tag from the keywords, or the feed floods the corner
+            # with press releases about nothing geographic.
             tags = tag_item(it.get("title", ""), it.get("summary", ""))
+            declared = feed.get("tag") or []
+            if isinstance(declared, str):
+                declared = [declared]
+            if feed.get("authoritative"):
+                for t in declared:
+                    if t not in tags:
+                        tags.append(t)
             if not tags:
                 continue
             seen.add(key)
@@ -365,17 +419,20 @@ def collect() -> tuple[list[dict], list[dict]]:
                 "id": key[:12],
             })
             added += 1
+            if added >= feed.get("max_items", 40):
+                break
         report.append({"feed": feed["name"], "url": feed["url"], "ok": True,
                        "error": "", "items": added})
-    # Hong Kong first, then newest
-    items.sort(key=lambda i: (not i["hk"], i["published"] or "0000"), reverse=False)
-    items.sort(key=lambda i: (not i["hk"], -(i["published"] or "0000")[:4].__len__()))
+    # Hong Kong first, then newest. The date is a "YYYY-MM-DD" string, so it
+    # sorts correctly by itself; negating the year makes the newest land first
+    # within each HK / non-HK group.
+    items.sort(key=lambda i: (not i["hk"], _neg_date(i["published"])))
     return items, report
 
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--keep", type=int, default=120, help="max items to keep")
+    ap.add_argument("--keep", type=int, default=300, help="max items to keep")
     args = ap.parse_args()
 
     items, report = collect()

@@ -114,8 +114,24 @@ def generate_for(kb, llm, code: str, subtopic: str, title: str, n: int,
     prompt = GEN_PROMPT.format(n=n, topic=code, subtopic=subtopic,
                                 subtopic_desc=subtopic_desc or title,
                                 context=context, subtopic_id=subtopic)
-    res = llm.chat([{"role": "user", "content": prompt}],
-                    temperature=0.7, max_tokens=2600)
+    # Two attempts. The first gives the model the full context; if that call
+    # times out (a long prompt on a busy endpoint), retry with a tighter
+    # context and a smaller token budget, which reliably comes back.
+    attempts = [
+        (prompt, 2600),
+        (GEN_PROMPT.format(n=1, topic=code, subtopic=subtopic,
+                            subtopic_desc=subtopic_desc or title,
+                            context=llm.build_context(results, max_chars=2200),
+                            subtopic_id=subtopic),
+         1200),
+    ]
+    res = {"ok": False, "error": "not attempted"}
+    for attempt_prompt, max_tokens in attempts:
+        res = llm.chat([{"role": "user", "content": attempt_prompt}],
+                        temperature=0.7, max_tokens=max_tokens)
+        if res.get("ok"):
+            break
+        print(f"    . retrying {code} {subtopic} with a tighter prompt")
     if not res.get("ok"):
         print(f"    ! {code} {subtopic}: {res.get('error')}")
         return []

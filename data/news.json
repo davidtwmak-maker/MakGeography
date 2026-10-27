@@ -1,5 +1,29 @@
 [
  {
+  "title": "Top bankers to gather in Hong Kong to learn how city has rethought ‘playbook’",
+  "url": "https://www.scmp.com/business/banking-finance/article/3372140/top-bankers-gather-hong-kong-learn-how-city-has-been-rethinking-playbook",
+  "source": "SCMP — Business",
+  "published": "2026-10-26",
+  "summary": "",
+  "topics": [
+   "CP4"
+  ],
+  "hk": true,
+  "id": "56ed4838cb4d"
+ },
+ {
+  "title": "Global gold trading hub status attracts industry leaders to set up operations in Hong Kong",
+  "url": "https://www.scmp.com/native/business/topics/domestic-global-success/article/3371711/global-gold-trading-hub-status-attracts-industry-leaders-set-operations-hong-kong",
+  "source": "SCMP — Business",
+  "published": "2026-10-26",
+  "summary": "",
+  "topics": [
+   "CP3"
+  ],
+  "hk": true,
+  "id": "802d2741524b"
+ },
+ {
   "title": "The Director of Drainage Services Interviewed by Water & Wastewater Asia and Isle Utilities on Hong Kong's Integrated Flood Management Strategy",
   "url": "https://www.dsd.gov.hk/EN/What_s_New/What_s_New/news31071.html",
   "source": "HK DSD — What’s New",
@@ -84,16 +108,17 @@
   "id": "e2ff96944c3e"
  },
  {
-  "title": "2025 Air Quality Report Published",
-  "url": "https://www.aqhi.gov.hk/common/api_history/english/report/files/AQR2025e_final.pdf",
-  "source": "HK EPD — Highlights",
-  "published": "Friday, Ju",
-  "summary": "This report presents the air quality status of Hong Kong in 2025. For details, please click to read the 2025 Air Quality Report. The overall air quality of Hong Kong has been improving in recent years, with concentrations of major air pollutants continuously decreasing and remaining at low levels since Hong Kong’s retu",
+  "title": "Extract of Meteorological Observations in Hong Kong for August 2026",
+  "url": "http://www.weather.gov.hk/wxinfo/pastwx/metob202608.htm",
+  "source": "HKO — Monthly climate reports",
+  "published": "",
+  "summary": "",
   "topics": [
-   "CP3"
+   "CP2",
+   "CP7"
   ],
   "hk": true,
-  "id": "25b825512dd2"
+  "id": "b27a9089a43f"
  },
  {
   "title": "The 2025 Air Quality Report of the Guangdong-Hong Kong-Macao Pearl River Delta Regional Air Quality Monitoring Network is Published",
@@ -102,8 +127,7 @@
   "published": "Friday, Oc",
   "summary": "This report presents the air quality status of Guangdong-Hong Kong-Macao Pearl River Delta Region in 2025. For details, please click to read the 2025 Air Quality Report of the Guangdong-Hong Kong-Macao Pearl River Delta Regional Air Quality Monitoring Network. The air quality in the Pearl River Delta region of Guangdon",
   "topics": [
-   "CP2",
-   "CP3"
+   "CP2"
   ],
   "hk": true,
   "id": "47b7a6ee49bd"
@@ -115,11 +139,72 @@
   "published": "Thursday, ",
   "summary": "The reports provide an overview of the state of Hong Kong marine and river waters in 2025. For details, please click to read the 2025 Marine Water Quality Report and 2025 River Water Quality Report. In 2025, Hong Kong’s Mirs Bay was selected as a national “Outstanding Example of Beautiful Bays” with an excellent overal",
   "topics": [
-   "CP2",
-   "CP3"
+   "CP2"
   ],
   "hk": true,
   "id": "aa1a23a718b4"
+ },
+ {
+  "title": "Escalation on Yemen’s West Coast: Patterns of harm, IHL concerns and recommendations (01 August – 22 September 2026)",
+  "url": "https://reliefweb.int/report/yemen/escalation-yemens-west-coast-patterns-harm-ihl-concerns-and-recommendations-01-august-22-september-2026",
+  "source": "ReliefWeb — Humanitarian updates",
+  "published": "2026-10-27",
+  "summary": "Country: Yemen Source: Insecurity Insight Please refer to the attached file. SUMMARY The escalation of hostilities along Yemen’s west coast is putting civilian services and humanitarian operations under increasing pressure. Attacks and disruption affecting healthcare, education, food and water systems are occurring alo",
+  "topics": [
+   "CP2",
+   "CP5"
+  ],
+  "hk": false,
+  "id": "356a9c9fa355"
+ },
+ {
+  "title": "UNHCR Rwanda - Total Forcibly Displaced Population Figures - 31 August 2026",
+  "url": "https://reliefweb.int/report/rwanda/unhcr-rwanda-total-forcibly-displaced-population-figures-31-august-2026",
+  "source": "ReliefWeb — Humanitarian updates",
+  "published": "2026-10-27",
+  "summary": "Countries: Rwanda, Afghanistan, Burundi, Democratic Republic of the Congo, Eritrea, Sudan Source: UN High Commissioner for Refugees Please refer to the attached Infographic.",
+  "topics": [
+   "CP5"
+  ],
+  "hk": false,
+  "id": "83427e17fb51"
+ },
+ {
+  "title": "UNHCR Rwanda - Population Dashboard - Overview of Refugees and Asylum-seekers - 31 August 2026",
+  "url": "https://reliefweb.int/report/rwanda/unhcr-rwanda-population-dashboard-overview-refugees-and-asylum-seekers-31-august-2026",
+  "source": "ReliefWeb — Humanitarian updates",
+  "published": "2026-10-27",
+  "summary": "Countries: Rwanda, Afghanistan, Burundi, Democratic Republic of the Congo, Eritrea, South Sudan, Sudan Source: UN High Commissioner for Refugees Please refer to the attached Infographic.",
+  "topics": [
+   "CP5"
+  ],
+  "hk": false,
+  "id": "5ceab052b085"
+ },
+ {
+  "title": "Map of New Displacement due to Escalation in the West Coast - Yemen Situation 25 Oct 2026",
+  "url": "https://reliefweb.int/map/yemen/map-new-displacement-due-escalation-west-coast-yemen-situation-25-oct-2026",
+  "source": "ReliefWeb — Humanitarian updates",
+  "published": "2026-10-27",
+  "summary": "Countries: Yemen, Djibouti, Somalia Source: UN High Commissioner for Refugees Please refer to the attached Map.",
+  "topics": [
+   "CP2",
+   "CP5"
+  ],
+  "hk": false,
+  "id": "9f215e048b20"
+ },
+ {
+  "title": "Somalia: Community Feedback & Referral Analysis – July to September 2026",
+  "url": "https://reliefweb.int/report/somalia/somalia-community-feedback-referral-analysis-july-september-2026",
+  "source": "ReliefWeb — Humanitarian updates",
+  "published": "2026-10-27",
+  "summary": "Country: Somalia Source: International Organization for Migration Please refer to the attached file. In Quarter 3 2026, 2 Site Management Partners worked together with more than 80 Site Management staff receiving & managing community feedback. Each Site Management partner covers a different number of sites and therefor",
+  "topics": [
+   "CP5"
+  ],
+  "hk": false,
+  "id": "d084ef7caebd"
  },
  {
   "title": "Cambodia: KHM: Flood - 10-2026 - Heavy rainfall caused flooding (2026-10-26)",
@@ -128,7 +213,8 @@
   "published": "2026-10-27",
   "summary": "Country: Cambodia Sources: Cambodian Red Cross, International Federation of Red Cross and Red Crescent Societies Please refer to the attached file. Sources for data marked as Other 1. CRC's facebook page : https://www.facebook.com/crcnhq/?locale=th_TH 2.CamboJA News : https://cambojanews.com/el-nino-puts-cambodias-food",
   "topics": [
-   "CP2"
+   "CP2",
+   "CP5"
   ],
   "hk": false,
   "id": "e98df3575f55"
@@ -140,7 +226,8 @@
   "published": "2026-10-27",
   "summary": "Country: Indonesia Source: Indonesia Humanitarian Coordination Platform Please refer to the attached file. Urgent Needs • The meeting of IHCP members and the Risk Communication and Community Engagement Working Group (Pokja RCCE) on October 16, 2026, identified the urgent need for emergency response as follows: ▪ Health",
   "topics": [
-   "CP6"
+   "CP6",
+   "CP5"
   ],
   "hk": false,
   "id": "21a3601a328e"
@@ -152,7 +239,7 @@
   "published": "2026-10-27",
   "summary": "Country: Panama Source: UN Children's Fund Please refer to the attached file. Hallazgos • Dos semanas después del terremoto del 9 de octubre, las necesidades humanitarias continúan siendo significativas en las provincias de Los Santos, Veraguas, Coclé y Herrera. Aunque las acciones de respuesta han permitido cubrir las",
   "topics": [
-   "CP3"
+   "CP5"
   ],
   "hk": false,
   "id": "2e34bf64d9e3"
@@ -165,7 +252,7 @@
   "summary": "Country: Panama Source: UN Children's Fund Please refer to the attached file. Highlights Two weeks after the 9 October earthquake, humanitarian needs remain significant in the provinces of Los Santos, Veraguas, Coclé and Herrera. Although response actions have addressed the most immediate needs of affected populations,",
   "topics": [
    "CP1",
-   "CP3"
+   "CP5"
   ],
   "hk": false,
   "id": "9aa1ee93911d"
@@ -177,7 +264,8 @@
   "published": "2026-10-27",
   "summary": "Countries: Armenia, India, Iraq, Japan, Philippines, Sri Lanka, Tunisia, Uzbekistan, Viet Nam, Yemen Source: UN Development Programme Please refer to the attached file. Pathways to Climate Resilience: from Local Action to Global Impact October 26, 2026 This report presents the portfolio-level results of the Climate Pro",
   "topics": [
-   "CP7"
+   "CP7",
+   "CP5"
   ],
   "hk": false,
   "id": "eea4c7bde64d"
@@ -190,7 +278,8 @@
   "summary": "Country: Somalia Source: Food and Agriculture Organization of the United Nations Please refer to the attached file. Observed Rainfall Rain returned to the upper Juba River catchment from 23 October. Satellite estimates show about 36 mm on average over the catchment above Dollow and 30 mm above Luuq during 19–26 October",
   "topics": [
    "CP2",
-   "CP7"
+   "CP7",
+   "CP5"
   ],
   "hk": false,
   "id": "9548b924cb6e"
@@ -203,7 +292,8 @@
   "summary": "Country: Somalia Source: Food and Agriculture Organization of the United Nations Please refer to the attached file. Observed Rainfall Rain returned to the Shabelle catchment from 23 October. Satellite estimates show about 19 mm on average over the catchment above Belet Weyne during 19–26 October, nearly all of it in th",
   "topics": [
    "CP2",
-   "CP7"
+   "CP7",
+   "CP5"
   ],
   "hk": false,
   "id": "96aac3d7ad08"
@@ -215,22 +305,118 @@
   "published": "2026-10-27",
   "summary": "Country: Kenya Source: REACH Initiative Please refer to the attached file. Publication: October 2026 - Data Collection: June 2026 KEY MESSAGES Needs remained widespread across assessed households: 97% were classified as being in need according to the 2026 Multi-Sectoral Needs Index (MSNI), including 59% in severe need.",
   "topics": [
-   "CP4"
+   "CP5"
   ],
   "hk": false,
   "id": "836a0fa72c23"
  },
  {
-  "title": "Anticipatory Action Framework Philippines 2026 - Tropical Cyclones",
-  "url": "https://reliefweb.int/report/philippines/anticipatory-action-framework-philippines-2026-tropical-cyclones",
+  "title": "Tchad: Groupe de Travail AAP - Presentation et analyse des feedbacks meri Lac et Est (fevrier - mai 2026)",
+  "url": "https://reliefweb.int/report/chad/tchad-groupe-de-travail-aap-presentation-et-analyse-des-feedbacks-meri-lac-et-est-fevrier-mai-2026",
   "source": "ReliefWeb — Humanitarian updates",
   "published": "2026-10-27",
-  "summary": "Country: Philippines Source: UN Office for the Coordination of Humanitarian Affairs Please refer to the attached file. The humanitarian sector is scaling up anticipatory action (AA), enabling proactive mobilization of resources to get ahead of predictable climate-related shocks and disease outbreaks through robust fore",
+  "summary": "Country: Chad Source: UN Office for the Coordination of Humanitarian Affairs Please refer to the attached file.",
   "topics": [
-   "CP7"
+   "CP5"
   ],
   "hk": false,
-  "id": "d168855e6246"
+  "id": "6b870013bdd5"
+ },
+ {
+  "title": "Kenya - Sectoral Bulletin Water, Sanitation, and Hygiene (June 2026)",
+  "url": "https://reliefweb.int/report/kenya/kenya-sectoral-bulletin-water-sanitation-and-hygiene-june-2026",
+  "source": "ReliefWeb — Humanitarian updates",
+  "published": "2026-10-27",
+  "summary": "Country: Kenya Source: REACH Initiative Please refer to the attached file. Publication: October 2026 - Data Collection: June 2026 Context & Rationale Populations in Kenya’s Arid and Semi-Arid Lands (ASAL) counties continue to face Water, Sanitation and Hygiene (WASH) challenges linked to drought, flooding, water shorta",
+  "topics": [
+   "CP5"
+  ],
+  "hk": false,
+  "id": "5cc7b1057fd4"
+ },
+ {
+  "title": "South Sudan: Research Terms of Reference - Integrated Public Health Rapid Assessment in Luakpiny/Nasir County, Upper Nile State, September 2026 (SSD2610, V1)",
+  "url": "https://reliefweb.int/report/south-sudan/south-sudan-research-terms-reference-integrated-public-health-rapid-assessment-luakpinynasir-county-upper-nile-state-september-2026-ssd2610-v1",
+  "source": "ReliefWeb — Humanitarian updates",
+  "published": "2026-10-27",
+  "summary": "Country: South Sudan Source: REACH Initiative Please refer to the attached file. 2. Rationale 2.1 Background Luakpiny/Nasir County is located in Upper Nile State, South Sudan, and shares borders with Ethiopia to the southeast, Maiwut County to the east, and Baliet and Ulang counties to the west. The county is situated ",
+  "topics": [
+   "CP5"
+  ],
+  "hk": false,
+  "id": "27d5c72efc70"
+ },
+ {
+  "title": "World: Desastre ¿para quién? Cómo el caos climático agrava la desigualdad y enriquece a una minoría",
+  "url": "https://reliefweb.int/report/world/desastre-para-quien-como-el-caos-climatico-agrava-la-desigualdad-y-enriquece-una-minoria",
+  "source": "ReliefWeb — Humanitarian updates",
+  "published": "2026-10-27",
+  "summary": "Country: World Source: Oxfam Please refer to the attached files. Max Lawson, Astrid Nilsson Lewis, Alex Maitland, Joel Chester Pagulayan, Pubudini Wickramaratne, and Mateo Adarve Zuluaga Resumen ejecutivo Los milmillonarios y los más ricos están generando emisiones de carbono a un ritmo extraordinario: el 0,1 % más ric",
+  "topics": [
+   "CP5"
+  ],
+  "hk": false,
+  "id": "c955c22fa162"
+ },
+ {
+  "title": "World: L’injustice des catastrophes : Comment le chaos climatique creuse les inégalités et enrichit l’élite",
+  "url": "https://reliefweb.int/report/world/linjustice-des-catastrophes-comment-le-chaos-climatique-creuse-les-inegalites-et-enrichit-lelite",
+  "source": "ReliefWeb — Humanitarian updates",
+  "published": "2026-10-27",
+  "summary": "Country: World Source: Oxfam Please refer to the attached files. Max Lawson, Astrid Nilsson Lewis, Alex Maitland, Joel Chester Pagulayan, Pubudini Wickramaratne, and Mateo Adarve Zuluaga Résumé Les milliardaires et les ultra-riches épuisent le budget carbone de l’humanité à une vitesse extraordinaire. Ainsi, les émissi",
+  "topics": [
+   "CP5"
+  ],
+  "hk": false,
+  "id": "04187b6ce7f2"
+ },
+ {
+  "title": "Ukraine - Humanitarian Situation Monitoring in Frontline Government-Controlled Areas: Overview of Humanitarian Needs in June 2026",
+  "url": "https://reliefweb.int/report/ukraine/ukraine-humanitarian-situation-monitoring-frontline-government-controlled-areas-overview-humanitarian-needs-june-2026",
+  "source": "ReliefWeb — Humanitarian updates",
+  "published": "2026-10-27",
+  "summary": "Country: Ukraine Source: REACH Initiative Please refer to the attached file. June 2026 | Ukraine Key findings Across assessed frontline and border areas, 75% of settlements were classified as having severe or above overall vulnerability, based on the Settlement Vulnerability Index (SVI), including 33% classified as ext",
+  "topics": [
+   "CP5"
+  ],
+  "hk": false,
+  "id": "6f1ac6673567"
+ },
+ {
+  "title": "oPt: Chair's Summary from the meeting of the Ad Hoc Liaison Committee for Palestine (AHLC) in New York on 24 September",
+  "url": "https://reliefweb.int/report/occupied-palestinian-territory/chairs-summary-meeting-ad-hoc-liaison-committee-palestine-ahlc-new-york-24-september",
+  "source": "ReliefWeb — Humanitarian updates",
+  "published": "2026-10-27",
+  "summary": "Country: occupied Palestinian territory Source: Government of Norway Set out below is the Chair’s Summary of the AHLC meeting held in New York on 24 September 2026, chaired by Minister of Foreign Affairs Mr. Espen Barth Eide. Meeting of the Ad Hoc Liaison Committee (AHLC) New York, 24th September 2026 Chair: Mr Espen B",
+  "topics": [
+   "CP5"
+  ],
+  "hk": false,
+  "id": "88c8fd02ab73"
+ },
+ {
+  "title": "China’s tax offices issue disclosure orders as offshore asset grace period ends",
+  "url": "https://www.scmp.com/economy/china-economy/article/3372178/chinas-tax-offices-issue-disclosure-orders-offshore-asset-grace-period-ends",
+  "source": "SCMP — Business",
+  "published": "2026-10-26",
+  "summary": "",
+  "topics": [
+   "CP3"
+  ],
+  "hk": false,
+  "id": "557ca97c574f"
+ },
+ {
+  "title": "The next manufacturing AI challenge isn’t adoption. It’s scale.",
+  "url": "https://www.manufacturingdive.com/spons/the-next-manufacturing-ai-challenge-isnt-adoption-its-scale/833752/",
+  "source": "Manufacturing Dive",
+  "published": "2026-10-26",
+  "summary": "As AI moves closer to production, the infrastructure supporting it matters more than ever.",
+  "topics": [
+   "CP3"
+  ],
+  "hk": false,
+  "id": "413f766b2f77"
  },
  {
   "title": "A 2,700-year-old solar eclipse just revealed something surprising about Earth",
@@ -245,16 +431,91 @@
   "id": "df185ef24106"
  },
  {
-  "title": "One of Earth’s most powerful supervolcanoes is refilling with fresh magma",
-  "url": "https://www.sciencedaily.com/releases/2026/10/261023003214.htm",
-  "source": "ScienceDaily — Environment",
+  "title": "Ice mission CRISTAL opens its wings",
+  "url": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Ice_mission_CRISTAL_opens_its_wings",
+  "source": "ESA Copernicus — Observing the Earth",
+  "published": "2026-10-26",
+  "summary": "With its solar arrays integrated and key qualification reviews under way, Europe’s new ice-monitoring satellite, CRISTAL, is moving from assembly into the demanding testing phase that will demonstrate its readiness for the rigours of launch and life in orbit.",
+  "topics": [
+   "CP7"
+  ],
+  "hk": false,
+  "id": "aa2af2fa091b"
+ },
+ {
+  "title": "Thousands evacuated and flights grounded as Typhoon Champi hits eastern China",
+  "url": "https://www.scmp.com/news/china/politics/article/3372015/thousands-evacuated-and-flights-grounded-typhoon-champi-hits-eastern-china",
+  "source": "SCMP — China Economy",
+  "published": "2026-10-24",
+  "summary": "",
+  "topics": [
+   "CP2",
+   "CP7"
+  ],
+  "hk": false,
+  "id": "7fcc33e2ae8e"
+ },
+ {
+  "title": "Typhoon Champi knocks out power to thousands in Taiwan",
+  "url": "https://hongkongfp.com/2026/10/24/typhoon-champi-knocks-out-power-to-thousands-in-taiwan/",
+  "source": "Hong Kong Free Press",
+  "published": "2026-10-24",
+  "summary": "Emergency crews scrambled on Saturday to restore power to tens of thousands of homes in Taiwan after Typhoon Champi&#8217;s fierce winds battered the island, with the storm moving towards China and Japan. Authorities evacuated more than 5,000 people from their homes ahead of the storm, which toppled trees, brought down",
+  "topics": [
+   "CP2",
+   "CP7"
+  ],
+  "hk": false,
+  "id": "4e61d074c078"
+ },
+ {
+  "title": "Even as Beijing boosts oversight, Chinese investors continue pivot to offshore assets",
+  "url": "https://www.scmp.com/economy/china-economy/article/3371785/even-beijing-boosts-oversight-chinese-investors-continue-pivot-offshore-assets",
+  "source": "SCMP — Business",
   "published": "2026-10-23",
-  "summary": "Deep beneath Japan’s Kikai caldera, a massive magma reservoir is refilling 7,300 years after one of the most powerful volcanic eruptions in Earth's recent geological history. Scientists used underwater seismic surveys to reveal a vast store of magma that appears to have accumulated since the ancient catastrophe. The di",
+  "summary": "",
+  "topics": [
+   "CP3"
+  ],
+  "hk": false,
+  "id": "f11e1427fb3d"
+ },
+ {
+  "title": "Typhoon Champi grounds hundreds of Taiwan flights, threatens Shanghai and Japan",
+  "url": "https://www.scmp.com/news/china/politics/article/3371901/typhoon-champi-grounds-hundreds-flights-taiwan-threatens-eastern-mainland-china",
+  "source": "SCMP — China Economy",
+  "published": "2026-10-23",
+  "summary": "",
+  "topics": [
+   "CP2",
+   "CP7"
+  ],
+  "hk": false,
+  "id": "dc2a64a01685"
+ },
+ {
+  "title": "China’s Xi Jinping orders urgent relief after Tibet earthquake leaves 16 dead",
+  "url": "https://www.scmp.com/news/china/politics/article/3371850/chinas-xi-jinping-orders-urgent-relief-after-tibet-earthquake-leaves-16-dead",
+  "source": "SCMP — China Economy",
+  "published": "2026-10-23",
+  "summary": "",
   "topics": [
    "CP1"
   ],
   "hk": false,
-  "id": "1cf060f9c4aa"
+  "id": "24f54e914fcb"
+ },
+ {
+  "title": "US Steel to invest nearly $3B in hot strip mill near Pittsburgh",
+  "url": "https://www.manufacturingdive.com/news/us-steel-invest-3b-hot-strip-mill-near-pittsburgh-edgar-thomson/833835/",
+  "source": "Manufacturing Dive",
+  "published": "2026-10-23",
+  "summary": "The company&rsquo;s board of directors increased project funding from an initial $2 billion to $2.5 billion range. The Edgar Thomson Plant addition would replace some operations at the nearby Irvin Plant.",
+  "topics": [
+   "CP3"
+  ],
+  "hk": false,
+  "id": "9ac838baf004"
  },
  {
   "title": "Nearly 20% of Switzerland’s glacier ice has vanished in just five years",
@@ -269,42 +530,53 @@
   "id": "a5804b9b06a0"
  },
  {
-  "title": "Soil mapping aims to boost agricultural production in Kenya",
-  "url": "https://news.un.org/feed/view/en/story/2026/10/1168657",
-  "source": "UN News — Climate change",
-  "published": "2026-10-23",
-  "summary": "A new Kenyan initiative is helping farmers better understand their soils in a bid to improve crop yields amid intensifying climate shocks.",
-  "topics": [
-   "CP5",
-   "EP1"
-  ],
-  "hk": false,
-  "id": "c1b58413a2fc"
- },
- {
   "title": "Earth from Space: The pink city",
   "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Earth_from_Space_The_pink_city",
   "source": "ESA Copernicus — Observing the Earth",
   "published": "2026-10-23",
   "summary": "Image: This image shows a detailed view of the city of Toulouse in southwest France, with its terracotta tiled rooftops lending it the nickname la ville rose, or the pink city.",
   "topics": [
-   "CP4"
+   "CP4",
+   "CP7"
   ],
   "hk": false,
   "id": "d9c8386f8e36"
  },
  {
-  "title": "Nepal’s deadly glacier flood a ‘defining moment’ for the international community",
-  "url": "https://news.un.org/feed/view/en/story/2026/10/1168651",
-  "source": "UN News — Climate change",
+  "title": "China targets offshore trusts in widening push for taxes",
+  "url": "https://www.scmp.com/plus/business/china-business/article/3371784/china-targets-offshore-trusts-widening-push-taxes",
+  "source": "SCMP — Business",
   "published": "2026-10-22",
-  "summary": "The deadly flash flood that tore through Nepal in August is a “defining moment” for both the country and the international community, according to the head of the UN field agency which builds roads, schools and clinics in crisis zones.",
+  "summary": "",
   "topics": [
-   "CP2",
-   "CP7"
+   "CP3"
   ],
   "hk": false,
-  "id": "52d4860625f8"
+  "id": "05ca5d0707fd"
+ },
+ {
+  "title": "3M expands collaboration with Amazon, forms GSEO partnership",
+  "url": "https://www.manufacturingdive.com/news/3m-amazon-gseo-expanded-beam-optical-fairmont-plant-closure-q3-2026/833615/",
+  "source": "Manufacturing Dive",
+  "published": "2026-10-22",
+  "summary": "The chemical company is working to expand and scale the R&D and manufacturing of its Expanded Beam Optical products, which it expects will generate $40 million by the end of 2026.",
+  "topics": [
+   "CP6"
+  ],
+  "hk": false,
+  "id": "7d53bb1c62e6"
+ },
+ {
+  "title": "Trump signs infrastructure manufacturing law; Eli Lilly, BAE expand",
+  "url": "https://www.manufacturingdive.com/news/trump-signs-critical-infrastructure-manufacturing-feasibility-act-lilly-bae-systems/833768/",
+  "source": "Manufacturing Dive",
+  "published": "2026-10-22",
+  "summary": "The Critical Infrastructure Manufacturing Feasibility Act directs the Department of Commerce to conduct a study. Also this week, Blue Bird, Arco Design/Build and QuantumScape announced facility investments.",
+  "topics": [
+   "CP3"
+  ],
+  "hk": false,
+  "id": "2e2358a88a01"
  },
  {
   "title": "A massive asteroid slammed into the North Sea and unleashed a 330-foot tsunami",
@@ -343,37 +615,13 @@
   "id": "004db241b9b5"
  },
  {
-  "title": "UN agencies appeal for help to protect weakest from unprecedented El Niño",
-  "url": "https://news.un.org/feed/view/en/story/2026/10/1168639",
-  "source": "UN News — Climate change",
-  "published": "2026-10-21",
-  "summary": "Two UN agencies issued a powerful appeal on Wednesday for immediate assistance to help communities already being impacted by the strongest El Niño weather pattern on record.",
-  "topics": [
-   "CP7"
-  ],
-  "hk": false,
-  "id": "ba5612a37186"
- },
- {
-  "title": "Global warming will breach 1.5°C – but deep, fast cuts can still bring it back",
-  "url": "https://news.un.org/feed/view/en/story/2026/10/1168634",
-  "source": "UN News — Climate change",
-  "published": "2026-10-21",
-  "summary": "With global temperature rise set to exceed 1.5°C above pre-industrial levels, countries “must pull out all the stops” and urgently cut emissions to minimize the overshoot and return to the internationally agreed threshold by the end of this century.",
-  "topics": [
-   "CP7"
-  ],
-  "hk": false,
-  "id": "fc5a23d697a6"
- },
- {
   "title": "MetOp-SG-B1 weather satellite arrives at Europe’s Spaceport",
   "url": "https://www.esa.int/Applications/Observing_the_Earth/Meteorological_missions/MetOp_Second_Generation/MetOp-SG-B1_weather_satellite_arrives_at_Europe_s_Spaceport",
   "source": "ESA Copernicus — Observing the Earth",
   "published": "2026-10-20",
   "summary": "Following a 10-day voyage across the Atlantic from Bordeaux in France, the MetOp Second Generation-B1 weather satellite, has arrived at Europe’s Spaceport in French Guiana. After a short storage period, this new satellite will be prepared for launch aboard an Ariane 6 rocket, expected at the end of the year.",
   "topics": [
-   "CP3"
+   "CP7"
   ],
   "hk": false,
   "id": "da66ff054b2b"
@@ -415,16 +663,16 @@
   "id": "401d47a382ee"
  },
  {
-  "title": "Protecting Earth’s fragile biodiversity takes spotlight at Armenia talks",
-  "url": "https://news.un.org/feed/view/en/story/2026/10/1168620",
-  "source": "UN News — Climate change",
+  "title": "Sentinel-3C captures Hurricane Rachel",
+  "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Sentinel-3C_captures_Hurricane_Rachel",
+  "source": "ESA Copernicus — Observing the Earth",
   "published": "2026-10-19",
-  "summary": "Biodiversity losses continue to upend the lives of billions of people whose future prosperity depends on countries taking urgent action to protect our planet, the top UN official leading talks at the UN Biodiversity Conference in Yerevan, said on Monday.",
+  "summary": "Image: Demonstrating that the visible channels of Sentinel-3C’s sea and land surface temperature radiometer are working as expected, on 2 October the instrument captured this image of Hurricane Rachel over the eastern Pacific Ocean, off the coast of Mexico and the Baja California Peninsula.",
   "topics": [
-   "CP6"
+   "CP7"
   ],
   "hk": false,
-  "id": "e0fb987709e8"
+  "id": "3fda849d11b1"
  },
  {
   "title": "Scientists discover a surprising twist in Japan's 7,300-year-old volcanic apocalypse",
@@ -476,52 +724,28 @@
   "id": "a5c3bd2b4a8c"
  },
  {
-  "title": "As disasters mount, next UN climate summit faces a test of trust",
-  "url": "https://news.un.org/feed/view/en/story/2026/10/1168617",
-  "source": "UN News — Climate change",
+  "title": "Earth from Space: West Antarctica",
+  "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Earth_from_Space_West_Antarctica",
+  "source": "ESA Copernicus — Observing the Earth",
   "published": "2026-10-16",
-  "summary": "Less than a month before the UN climate conference COP31 opens in Antalya, Türkiye, representatives of three successive summit presidencies gathered to address a pressing question: How can the world restore trust in climate action when the consequences of a warming planet are already being felt?",
+  "summary": "Image: This image over part of West Antarctica was captured by Copernicus Sentinel-3 on 30 September 2026.",
   "topics": [
    "CP7"
   ],
   "hk": false,
-  "id": "47b8a86cc4d2"
+  "id": "60edff893706"
  },
  {
-  "title": "Guterres urges faster action and financing to stop biodiversity loss",
-  "url": "https://news.un.org/feed/view/en/story/2026/10/1168610",
-  "source": "UN News — Climate change",
-  "published": "2026-10-16",
-  "summary": "The United Nations Secretary-General appealed on Friday for governments, businesses and communities to accelerate efforts to protect biodiversity for future generations and all life on Earth.",
+  "title": "From laser shields to iPhone detectors: inside China’s booming secrecy industry",
+  "url": "https://www.scmp.com/news/china/politics/article/3370572/laser-shields-iphone-detectors-inside-chinas-booming-secrecy-industry",
+  "source": "SCMP — China Economy",
+  "published": "2026-10-12",
+  "summary": "",
   "topics": [
-   "CP6"
+   "CP3"
   ],
   "hk": false,
-  "id": "f7390a4f1588"
- },
- {
-  "title": "Scientists reveal 93% of Australia's Indigenous population was lost in just 73 years",
-  "url": "https://www.sciencedaily.com/releases/2026/10/261013015807.htm",
-  "source": "ScienceDaily — Environment",
-  "published": "2026-10-14",
-  "summary": "A groundbreaking study suggests that 2.22 million Indigenous Australians lived on the continent before European colonization, far more than previously believed. Researchers estimate that 93% of this population was lost within 73 years, revealing a demographic catastrophe on a scale that dramatically changes our underst",
-  "topics": [
-   "CP4"
-  ],
-  "hk": false,
-  "id": "aa190b9de6af"
- },
- {
-  "title": "Disasters cost $228 billion in housing losses every year",
-  "url": "https://news.un.org/feed/view/en/story/2026/10/1168583",
-  "source": "UN News — Climate change",
-  "published": "2026-10-13",
-  "summary": "$228 billion is a staggering amount of money to find, but that’s exactly what communities around the world are faced with every year, to rebuild housing after disaster strikes.",
-  "topics": [
-   "CP4"
-  ],
-  "hk": false,
-  "id": "dd695144c160"
+  "id": "cce20fefb1d0"
  },
  {
   "title": "NASA spots a giant patch of Moon-like rock on Earth",
@@ -536,16 +760,28 @@
   "id": "a48122794665"
  },
  {
-  "title": "Amid heartache of Nepal flooding disaster, fear remains",
-  "url": "https://news.un.org/feed/view/en/story/2026/10/1168561",
-  "source": "UN News — Climate change",
+  "title": "Gibraltar imaged by IRIDE Eaglet II",
+  "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Gibraltar_imaged_by_IRIDE_Eaglet_II",
+  "source": "ESA Copernicus — Observing the Earth",
   "published": "2026-10-09",
-  "summary": "Six weeks after Nepal’s deadly flooding disaster, communities are still struggling to rebuild their lives, but they will need sustained help as global warming increases the risk of another Himalayan catastrophe, the UN Children’s Fund (UNICEF) said on Friday.",
+  "summary": "Image: While the final eight IRIDE Eaglet II satellites were launched a week ago, the first images from Eaglet II satellites launched earlier are being returned, including a view of Gibraltar featured here.",
   "topics": [
-   "CP2"
+   "CP7"
   ],
   "hk": false,
-  "id": "c808cef1e726"
+  "id": "d965b50b2aaa"
+ },
+ {
+  "title": "Earth from Space: Namibia’s biggest salt pan",
+  "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Earth_from_Space_Namibia_s_biggest_salt_pan",
+  "source": "ESA Copernicus — Observing the Earth",
+  "published": "2026-10-09",
+  "summary": "Image: This image from Copernicus Sentinel-2, acquired on 5 April 2026, shows the Etosha National Park in northern Namibia.",
+  "topics": [
+   "CP7"
+  ],
+  "hk": false,
+  "id": "f6569891367a"
  },
  {
   "title": "This “golden tree” coral was too strange for any known family",
@@ -560,92 +796,40 @@
   "id": "65c09097ec3d"
  },
  {
-  "title": "‘Overshoot is not a reason to surrender’: UN calls for accelerated climate action ahead of COP31 summit",
-  "url": "https://news.un.org/feed/view/en/story/2026/10/1168555",
-  "source": "UN News — Climate change",
+  "title": "Sentinel-3C returns its first views of Earth",
+  "url": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-3/Sentinel-3C_returns_its_first_views_of_Earth",
+  "source": "ESA Copernicus — Observing the Earth",
   "published": "2026-10-08",
-  "summary": "As world leaders prepare for November’s major COP31 climate summit in Türkiye, record-breaking heat, devastating floods and an unprecedented El Niño climate pattern are making global climate action ever more urgent.",
+  "summary": "Just two weeks after it was launched, the Copernicus Sentinel-3C satellite returned its first images and measurements from two of its key instruments – a major milestone that confirms the satellite is working well and on the road to monitoring the health of Earth’s oceans, land, cryosphere and atmosphere.",
   "topics": [
    "CP7"
   ],
   "hk": false,
-  "id": "4dd2e0821eea"
+  "id": "4cd97030df09"
  },
  {
-  "title": "From drought to deluge: ‘Super’ El Niño’s expanding reach",
-  "url": "https://news.un.org/feed/view/en/story/2026/10/1168537",
-  "source": "UN News — Climate change",
-  "published": "2026-10-06",
-  "summary": "Across Papua New Guinea, water sources are drying up, crops are failing and food prices are rising months before the worst agricultural impacts are expected. Behind those warning signs is an El Niño whose Pacific Ocean temperatures have already surpassed the equivalent measurements during the historic 1997 and 2015 eve",
-  "topics": [
-   "CP5",
-   "CP7"
-  ],
-  "hk": false,
-  "id": "ba75a2cad5fe"
- },
- {
-  "title": "Security, sacrifice or opportunity: Visions differ over effective climate action",
-  "url": "https://news.un.org/feed/view/en/story/2026/10/1168526",
-  "source": "UN News — Climate change",
-  "published": "2026-10-05",
-  "summary": "Should the world move away sharply from fossil fuels, or manage a slower, more careful retreat?",
-  "topics": [
-   "CP3",
-   "CP7"
-  ],
-  "hk": false,
-  "id": "d27779c22274"
- },
- {
-  "title": "Extreme heat making pregnancy a ‘new fault line’ in climate crisis",
-  "url": "https://news.un.org/feed/view/en/story/2026/10/1168522",
-  "source": "UN News — Climate change",
-  "published": "2026-10-05",
-  "summary": "Pregnancy and childbirth have become a “new fault line in the global climate crisis” as extreme heat worsens, the head of the UN climate action body (UNFCCC) warned on Monday, calling for maternal and newborn health to be built into countries’ climate plans.",
-  "topics": [
-   "CP1",
-   "CP7",
-   "EP1"
-  ],
-  "hk": false,
-  "id": "38d51ba91c04"
- },
- {
-  "title": "‘He felt heard’: How a film brought a UN report to life in Xochimilco",
-  "url": "https://news.un.org/feed/view/en/story/2026/10/1168492",
-  "source": "UN News — Climate change",
-  "published": "2026-10-04",
-  "summary": "A documentary drawn from United Nations University research was screened at the COP30 climate conference and film festivals across Europe. Its most important journey, though, was the one back to the Mexico City canals where it was filmed.",
-  "topics": [
-   "CP3"
-  ],
-  "hk": false,
-  "id": "1d2901acefc3"
- },
- {
-  "title": "Rotting food waste emits 5 times more greenhouse gases than planes",
-  "url": "https://news.un.org/feed/view/en/story/2026/10/1168507",
-  "source": "UN News — Climate change",
-  "published": "2026-10-03",
-  "summary": "Rotting food waste is causing up to 10 per cent of total global greenhouse gas emissions – five times more than the entire aviation sector, the UN’s environment agency warned this week.",
+  "title": "Introducing ESA’s Earth Virtual Expert",
+  "url": "https://www.esa.int/Applications/Observing_the_Earth/FutureEO/Introducing_ESA_s_Earth_Virtual_Expert",
+  "source": "ESA Copernicus — Observing the Earth",
+  "published": "2026-10-08",
+  "summary": "The European Space Agency (ESA) has released Earth Virtual Expert (EVE), a platform powered with Artificial Intelligence (AI), to make Earth observation information more accessible and easier to understand. Built on trusted scientific sources and created to answer questions, EVE brings complex research, data and expert",
   "topics": [
    "CP7"
   ],
   "hk": false,
-  "id": "b0e96b236244"
+  "id": "ef828bcc5f3b"
  },
  {
-  "title": "Uganda’s UN-supported wildlife forensics lab turns ivory seizures into convictions",
-  "url": "https://news.un.org/feed/view/en/story/2026/10/1168469",
-  "source": "UN News — Climate change",
-  "published": "2026-10-03",
-  "summary": "The package originated in Entebbe, Uganda, bound for Cairo, containing 10 kilograms of thumb-sized pieces that could have been either bone or elephant ivory.",
+  "title": "Italy’s IRIDE completes Eaglet II constellation",
+  "url": "https://www.esa.int/Applications/Observing_the_Earth/IRIDE/Italy_s_IRIDE_completes_Eaglet_II_constellation",
+  "source": "ESA Copernicus — Observing the Earth",
+  "published": "2026-10-02",
+  "summary": "The final batch of Eaglet II satellites for Italy’s IRIDE Earth observation programme has reached orbit, bringing the programme a step closer to providing a full range of satellite data for Italy’s environmental, emergency and security services.",
   "topics": [
-   "CP3"
+   "CP7"
   ],
   "hk": false,
-  "id": "b49be0bdb8c3"
+  "id": "f5915d41f0f6"
  },
  {
   "title": "Scientists find an “earthquake gate” as California fault stress hits a 1,000-year high",
@@ -667,35 +851,10 @@
   "published": "2026-09-30",
   "summary": "Marine heatwaves may be only the most intense part of much longer warming events, with elevated temperatures sometimes lingering for months. Researchers found that conventional measurements underestimate total heat exposure by more than 150% on average, potentially overlooking a major source of stress on marine ecosyst",
   "topics": [
-   "CP2",
    "CP7"
   ],
   "hk": false,
   "id": "9aaca8c74d79"
- },
- {
-  "title": "LIVE: World leaders approve new declaration to tackle rising sea levels",
-  "url": "https://news.un.org/feed/view/en/story/2026/09/1168423",
-  "source": "UN News — Climate change",
-  "published": "2026-09-24",
-  "summary": "Sea level rise is among the most visible consequences of global warming, but for some countries, it is an imminent existential threat. World leaders approved a new declaration on Thursday while debating the best ways to strengthen international cooperation and support vulnerable low-lying nations most at risk.",
-  "topics": [
-   "CP2"
-  ],
-  "hk": false,
-  "id": "59004f08d728"
- },
- {
-  "title": "LIVE: Climate change is here - What happens next is still in our hands",
-  "url": "https://news.un.org/feed/view/en/story/2026/09/1168372",
-  "source": "UN News — Climate change",
-  "published": "2026-09-23",
-  "summary": "From deadly floods in the Himalayas to wildfires and extreme heat across Europe, 2026 has brought a succession of stark reminders of a changing climate. The task is immediate: Protect people from the impacts already unfolding while rapidly cutting the emissions of harmful gasses driving climate change. World leaders ha",
-  "topics": [
-   "CP7"
-  ],
-  "hk": false,
-  "id": "abd56f8cfbf6"
  },
  {
   "title": "The “big one” might not come alone: Two major West Coast faults may strike back to back",
@@ -737,42 +896,6 @@
   "id": "ec4b3aee91f2"
  },
  {
-  "title": "How El Niño offers a test of whether the world can adapt to a changing climate",
-  "url": "https://news.un.org/feed/view/en/story/2026/09/1168404",
-  "source": "UN News — Climate change",
-  "published": "2026-09-22",
-  "summary": "El Niño is strengthening in a world that is already hotter, raising the risk of drought, floods and crop losses across some of the world’s most important food-producing regions. But unlike many disasters, this one can be seen coming. UN experts say the months ahead offer countries a chance not only to protect the next ",
-  "topics": [
-   "CP7"
-  ],
-  "hk": false,
-  "id": "2373d3aaad43"
- },
- {
-  "title": "The end of humanity? What would happen if the Yellowstone supervolcano erupted now",
-  "url": "https://www.sciencedaily.com/releases/2026/09/260922005655.htm",
-  "source": "ScienceDaily — Climate",
-  "published": "2026-09-22",
-  "summary": "A Yellowstone super-eruption would begin not with a sudden surprise, but with weeks of increasingly alarming warning signs such as migrating earthquake swarms, rapid ground uplift, changing geysers, and rising volcanic gases. In a worst-case scenario, those signals could culminate in a VEI 8 eruption that blasts ash te",
-  "topics": [
-   "CP1"
-  ],
-  "hk": false,
-  "id": "53cfad308158"
- },
- {
-  "title": "Why climate action now comes down to speed, finance and cooperation",
-  "url": "https://news.un.org/feed/view/en/story/2026/09/1168382",
-  "source": "UN News — Climate change",
-  "published": "2026-09-21",
-  "summary": "Temporarily exceeding the 1.5°C global warming goal set in Paris is widely considered inevitable. The challenge now is to keep that overshoot as small and short as possible by cutting emissions faster, unlocking finance and strengthening international cooperation.",
-  "topics": [
-   "CP7"
-  ],
-  "hk": false,
-  "id": "3aef58c64cf9"
- },
- {
   "title": "Irrigation’s climate benefit could equal 363 years of its own emissions",
   "url": "https://www.sciencedaily.com/releases/2026/09/260915232119.htm",
   "source": "ScienceDaily — Climate",
@@ -784,6 +907,30 @@
   ],
   "hk": false,
   "id": "408119b446c4"
+ },
+ {
+  "title": "FLEX and Sentinel-3C launch highlights",
+  "url": "https://www.esa.int/ESA_Multimedia/Videos/2026/09/FLEX_and_Sentinel-3C_launch_highlights",
+  "source": "ESA Copernicus — Observing the Earth",
+  "published": "2026-09-15",
+  "summary": "Video: 00:03:22 ESA’s state-of-the-art FLEX Earth Explorer satellite and the Copernicus Sentinel-3C satellite have been launched together aboard a Vega-C rocket from Europe’s Spaceport in French Guiana, marking a new milestone in Europe’s Earth Observation Programmes. Flight VV30 lifted off on 15 September at 03:21 (14",
+  "topics": [
+   "CP7"
+  ],
+  "hk": false,
+  "id": "4a1c4a275704"
+ },
+ {
+  "title": "Relive the launch of FLEX and Sentinel-3C",
+  "url": "https://www.esa.int/ESA_Multimedia/Videos/2026/09/Relive_the_launch_of_FLEX_and_Sentinel-3C",
+  "source": "ESA Copernicus — Observing the Earth",
+  "published": "2026-09-15",
+  "summary": "Video: 03:37:00 Watch the full replay of the launch of ESA’s state-of-the-art FLEX Earth Explorer satellite and the Copernicus Sentinel-3C satellite. Both were launched together aboard a Vega-C rocket from Europe’s Spaceport in French Guiana, marking a new milestone in Europe’s Earth Observation Programmes. Flight VV30",
+  "topics": [
+   "CP7"
+  ],
+  "hk": false,
+  "id": "fff813145dae"
  },
  {
   "title": "Scientists stunned as volcano cloud starts destroying methane",
@@ -804,7 +951,7 @@
   "published": "2026-09-14",
   "summary": "Video: 00:06:30 Plants may look still and silent, but every leaf is constantly responding to its environment. As plants photosynthesise, they emit an incredibly faint glow called fluorescence. Invisible to our eyes, this signal can reveal how plants are using sunlight and how they respond to heat, drought, pests and ot",
   "topics": [
-   "CP3"
+   "CP7"
   ],
   "hk": false,
   "id": "9decac5f3096"
@@ -871,6 +1018,18 @@
   "id": "17211fd902ba"
  },
  {
+  "title": "FLEX and Sentinel-3C launch re-watch event on 15 September at ESA's Space Operations Centre",
+  "url": "https://www.esa.int/Newsroom/Press_Releases/FLEX_and_Sentinel-3C_launch_re-watch_event_on_15_September_at_ESA_s_Space_Operations_Centre",
+  "source": "ESA Copernicus — Observing the Earth",
+  "published": "2026-09-07",
+  "summary": "Press Release N° 45&ndash;2026 Media representatives are invited to attend the launch re-watch event for the FLEX (Fluorescence Explorer) and Copernicus Sentinel-3C satellites at the European Space Operations Centre (ESA/ESOC) in Darmstadt, Germany, on Tuesday morning, 15 September 2026.",
+  "topics": [
+   "CP7"
+  ],
+  "hk": false,
+  "id": "07e032553907"
+ },
+ {
   "title": "Indonesia’s most dangerous fires are burning underground",
   "url": "https://www.sciencedaily.com/releases/2026/09/260904000318.htm",
   "source": "ScienceDaily — Climate",
@@ -881,6 +1040,18 @@
   ],
   "hk": false,
   "id": "25fa3909f294"
+ },
+ {
+  "title": "Media briefing ahead of FLEX and Sentinel-3C launch",
+  "url": "https://www.esa.int/ESA_Multimedia/Videos/2026/09/Media_briefing_ahead_of_FLEX_and_Sentinel-3C_launch",
+  "source": "ESA Copernicus — Observing the Earth",
+  "published": "2026-09-04",
+  "summary": "Video: 00:47:00 On 4 September 2026, media representatives joined an online briefing ahead of the launch of ESA’s FLEX and the Copernicus Sentinel-3C satellites. The two satellites are scheduled to launch together aboard a Vega-C rocket from Europe’s Spaceport in French Guiana on 15 September at 03:21 CEST (14 Septembe",
+  "topics": [
+   "CP7"
+  ],
+  "hk": false,
+  "id": "5c4b65d07c3c"
  },
  {
   "title": "Extreme drought now covers 44% of Puerto Rico",
@@ -930,18 +1101,6 @@
   ],
   "hk": false,
   "id": "bacf9c1404e6"
- },
- {
-  "title": "DSD Signed Contract No. DC/2025/10 “Shek Wu Hui Effluent Polishing Plant Stage 2 – Civil Works”",
-  "url": "https://www.dsd.gov.hk/EN/What_s_New/What_s_New/news31062.html",
-  "source": "HK DSD — What’s New",
-  "published": "2026-08-07",
-  "summary": "DSD Signed Contract No. DC/2025/10 “Shek Wu Hui Effluent Polishing Plant Stage 2 – Civil Works”",
-  "topics": [
-   "CP3"
-  ],
-  "hk": false,
-  "id": "2e0ecda9a336"
  },
  {
   "title": "Drainage Services Department Site Safety Forum 2026 cum Construction Sites Safety and Housekeeping Award Presentation Ceremony",
@@ -1029,26 +1188,13 @@
   "id": "cac20f9a004d"
  },
  {
-  "title": "DSD Wins Multiple Prestigious ESG and Sustainability Report Awards",
-  "url": "https://www.dsd.gov.hk/EN/What_s_New/What_s_New/news31042.html",
-  "source": "HK DSD — What’s New",
-  "published": "2026-04-24",
-  "summary": "DSD Wins Multiple Prestigious ESG and Sustainability Report Awards",
-  "topics": [
-   "CP3"
-  ],
-  "hk": false,
-  "id": "38028b8c0d0d"
- },
- {
   "title": "The Drainage Services Department has published its Environmental, Social and Governance Report 2024-25",
   "url": "https://www.dsd.gov.hk/EN/What_s_New/What_s_New/news31040.html",
   "source": "HK DSD — What’s New",
   "published": "2026-04-17",
   "summary": "The Drainage Services Department has published its Environmental, Social and Governance Report 2024-25",
   "topics": [
-   "CP2",
-   "CP3"
+   "CP2"
   ],
   "hk": false,
   "id": "0e735876a971"
@@ -1072,8 +1218,7 @@
   "published": "2026-03-25",
   "summary": "DSD Signed Five Contracts for Drainage Maintenance and Maintenance to DSD Plants and Facilities",
   "topics": [
-   "CP2",
-   "CP3"
+   "CP2"
   ],
   "hk": false,
   "id": "29e4130fe442"
@@ -1237,13 +1382,134 @@
   "id": "8d95a623cfba"
  },
  {
+  "title": "M 4.9 - 69 km WSW of Kirakira, Solomon Islands",
+  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tte4",
+  "source": "USGS Earthquakes (M4.5+, past week)",
+  "published": "1793066575",
+  "summary": "69 km WSW of Kirakira, Solomon Islands — magnitude 4.9",
+  "topics": [
+   "CP1"
+  ],
+  "hk": false,
+  "id": "d106a5c62a60"
+ },
+ {
+  "title": "M 4.6 - 203 km SSE of Tateyama, Japan",
+  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tte0",
+  "source": "USGS Earthquakes (M4.5+, past week)",
+  "published": "1793063873",
+  "summary": "203 km SSE of Tateyama, Japan — magnitude 4.6",
+  "topics": [
+   "CP1"
+  ],
+  "hk": false,
+  "id": "892a0b2912a2"
+ },
+ {
+  "title": "M 4.8 - 54 km E of Tomioka, Japan",
+  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttdt",
+  "source": "USGS Earthquakes (M4.5+, past week)",
+  "published": "1793060708",
+  "summary": "54 km E of Tomioka, Japan — magnitude 4.8",
+  "topics": [
+   "CP1"
+  ],
+  "hk": false,
+  "id": "401fc2b0031d"
+ },
+ {
+  "title": "M 4.5 - 98 km NNW of Tobelo, Indonesia",
+  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttd3",
+  "source": "USGS Earthquakes (M4.5+, past week)",
+  "published": "1793055142",
+  "summary": "98 km NNW of Tobelo, Indonesia — magnitude 4.5",
+  "topics": [
+   "CP1"
+  ],
+  "hk": false,
+  "id": "fd83cbb12b00"
+ },
+ {
+  "title": "M 4.5 - 96 km ENE of Pamandzi, Mayotte",
+  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttd1",
+  "source": "USGS Earthquakes (M4.5+, past week)",
+  "published": "1793054028",
+  "summary": "96 km ENE of Pamandzi, Mayotte — magnitude 4.5",
+  "topics": [
+   "CP1"
+  ],
+  "hk": false,
+  "id": "d32d767907d8"
+ },
+ {
+  "title": "M 4.7 - 98 km S of Encounter Bay, Australia",
+  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttci",
+  "source": "USGS Earthquakes (M4.5+, past week)",
+  "published": "1793049491",
+  "summary": "98 km S of Encounter Bay, Australia — magnitude 4.7",
+  "topics": [
+   "CP1"
+  ],
+  "hk": false,
+  "id": "85bd43bf77fd"
+ },
+ {
+  "title": "M 4.6 - 20 km NNW of La Ligua, Chile",
+  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttc8",
+  "source": "USGS Earthquakes (M4.5+, past week)",
+  "published": "1793047931",
+  "summary": "20 km NNW of La Ligua, Chile — magnitude 4.6",
+  "topics": [
+   "CP1"
+  ],
+  "hk": false,
+  "id": "d35b54d50db4"
+ },
+ {
+  "title": "M 4.5 - 89 km SSE of Pondaguitan, Philippines",
+  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttc6",
+  "source": "USGS Earthquakes (M4.5+, past week)",
+  "published": "1793047285",
+  "summary": "89 km SSE of Pondaguitan, Philippines — magnitude 4.5",
+  "topics": [
+   "CP1"
+  ],
+  "hk": false,
+  "id": "d77844143ffe"
+ },
+ {
+  "title": "M 4.9 - 100 km E of La Tirana, Chile",
+  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttbh",
+  "source": "USGS Earthquakes (M4.5+, past week)",
+  "published": "1793043376",
+  "summary": "100 km E of La Tirana, Chile — magnitude 4.9",
+  "topics": [
+   "CP1"
+  ],
+  "hk": false,
+  "id": "f238b46b2c0c"
+ },
+ {
+  "title": "M 4.5 - 74 km SE of Rasht, Tajikistan",
+  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttb5",
+  "source": "USGS Earthquakes (M4.5+, past week)",
+  "published": "1793038024",
+  "summary": "74 km SE of Rasht, Tajikistan — magnitude 4.5",
+  "topics": [
+   "CP1"
+  ],
+  "hk": false,
+  "id": "ed43aa48e845"
+ },
+ {
   "title": "M 4.6 - 154 km NW of Port-Olry, Vanuatu",
   "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttby",
   "source": "USGS Earthquakes (M4.5+, past week)",
   "published": "1793027305",
   "summary": "154 km NW of Port-Olry, Vanuatu — magnitude 4.6",
   "topics": [
-   "CP3"
+   "CP3",
+   "CP1"
   ],
   "hk": false,
   "id": "9448a327bb7c"
@@ -1255,213 +1521,433 @@
   "published": "1793016810",
   "summary": "205 km NW of Port-Olry, Vanuatu — magnitude 5.2",
   "topics": [
-   "CP3"
+   "CP3",
+   "CP1"
   ],
   "hk": false,
   "id": "dc0beb813404"
  },
  {
-  "title": "M 5.0 - 218 km NW of Port-Olry, Vanuatu",
-  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4z6",
-  "source": "USGS Earthquakes (M4.5+, past week)",
-  "published": "1793013475",
-  "summary": "218 km NW of Port-Olry, Vanuatu — magnitude 5",
-  "topics": [
-   "CP3"
-  ],
-  "hk": false,
-  "id": "49be0be5bdde"
- },
- {
-  "title": "M 4.8 - 182 km NW of Port-Olry, Vanuatu",
-  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4y2",
-  "source": "USGS Earthquakes (M4.5+, past week)",
-  "published": "1792990415",
-  "summary": "182 km NW of Port-Olry, Vanuatu — magnitude 4.8",
-  "topics": [
-   "CP3"
-  ],
-  "hk": false,
-  "id": "eccf9eabe3a6"
- },
- {
-  "title": "M 4.9 - 205 km NW of Port-Olry, Vanuatu",
-  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4xa",
-  "source": "USGS Earthquakes (M4.5+, past week)",
-  "published": "1792977740",
-  "summary": "205 km NW of Port-Olry, Vanuatu — magnitude 4.9",
-  "topics": [
-   "CP3"
-  ],
-  "hk": false,
-  "id": "74552e5495cc"
- },
- {
-  "title": "M 4.8 - 167 km WNW of Port-Olry, Vanuatu",
-  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4vy",
-  "source": "USGS Earthquakes (M4.5+, past week)",
-  "published": "1792960242",
-  "summary": "167 km WNW of Port-Olry, Vanuatu — magnitude 4.8",
-  "topics": [
-   "CP3"
-  ],
-  "hk": false,
-  "id": "67fdca3fc616"
- },
- {
-  "title": "M 4.6 - 222 km NW of Port-Olry, Vanuatu",
-  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4uv",
-  "source": "USGS Earthquakes (M4.5+, past week)",
-  "published": "1792945545",
-  "summary": "222 km NW of Port-Olry, Vanuatu — magnitude 4.6",
-  "topics": [
-   "CP3"
-  ],
-  "hk": false,
-  "id": "1b33a052075f"
- },
- {
-  "title": "M 4.6 - Volcano Islands, Japan region",
-  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4tf",
-  "source": "USGS Earthquakes (M4.5+, past week)",
-  "published": "1792919477",
-  "summary": "Volcano Islands, Japan region — magnitude 4.6",
+  "title": "M 6.5 - Bonin Islands, Japan region",
+  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4r9",
+  "source": "NGDC / NOAA Significant Earthquakes",
+  "published": "1792894163",
+  "summary": "Bonin Islands, Japan region — magnitude 6.5",
   "topics": [
    "CP1"
   ],
   "hk": false,
-  "id": "e6a4df8faf78"
+  "id": "c8dc6b295d46"
  },
  {
-  "title": "M 5.4 - 205 km NW of Port-Olry, Vanuatu",
-  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4tc",
-  "source": "USGS Earthquakes (M4.5+, past week)",
-  "published": "1792917660",
-  "summary": "205 km NW of Port-Olry, Vanuatu — magnitude 5.4",
+  "title": "M 6.3 - 170 km NW of Port-Olry, Vanuatu",
+  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4jb",
+  "source": "NGDC / NOAA Significant Earthquakes",
+  "published": "1792809357",
+  "summary": "170 km NW of Port-Olry, Vanuatu — magnitude 6.3",
   "topics": [
-   "CP3"
+   "CP3",
+   "CP1"
   ],
   "hk": false,
-  "id": "36d86f2f6930"
+  "id": "7ab9d470720e"
  },
  {
-  "title": "M 6.1 - 25 km ENE of Port-Olry, Vanuatu",
-  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4rf",
-  "source": "USGS Earthquakes (M4.5+, past week)",
-  "published": "1792895040",
-  "summary": "25 km ENE of Port-Olry, Vanuatu — magnitude 6.1",
+  "title": "M 6.9 - 197 km WNW of Port-Olry, Vanuatu",
+  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4j2",
+  "source": "NGDC / NOAA Significant Earthquakes",
+  "published": "1792809088",
+  "summary": "197 km WNW of Port-Olry, Vanuatu — magnitude 6.9",
   "topics": [
-   "CP3"
+   "CP3",
+   "CP1"
   ],
   "hk": false,
-  "id": "96c7db9453fe"
+  "id": "a758707c2826"
  },
  {
-  "title": "M 5.1 - 161 km WNW of Port-Olry, Vanuatu",
-  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4r7",
-  "source": "USGS Earthquakes (M4.5+, past week)",
-  "published": "1792893970",
-  "summary": "161 km WNW of Port-Olry, Vanuatu — magnitude 5.1",
+  "title": "M 7.0 - 191 km ENE of Nagqu, China",
+  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u43g",
+  "source": "NGDC / NOAA Significant Earthquakes",
+  "published": "1792679620",
+  "summary": "191 km ENE of Nagqu, China — magnitude 7",
   "topics": [
-   "CP3"
+   "CP1"
   ],
   "hk": false,
-  "id": "cf0fb4e6b1fc"
+  "id": "ee4a7f392d2a"
  },
  {
-  "title": "M 5.1 - 166 km WNW of Port-Olry, Vanuatu",
-  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4r3",
-  "source": "USGS Earthquakes (M4.5+, past week)",
-  "published": "1792892783",
-  "summary": "166 km WNW of Port-Olry, Vanuatu — magnitude 5.1",
+  "title": "M 6.3 - 197 km NW of Port-Olry, Vanuatu",
+  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3jl",
+  "source": "NGDC / NOAA Significant Earthquakes",
+  "published": "1792470038",
+  "summary": "197 km NW of Port-Olry, Vanuatu — magnitude 6.3",
   "topics": [
-   "CP3"
+   "CP3",
+   "CP1"
   ],
   "hk": false,
-  "id": "adf7546d2edf"
+  "id": "0bdb44aca826"
  },
  {
-  "title": "M 5.0 - 192 km NW of Port-Olry, Vanuatu",
-  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4qp",
-  "source": "USGS Earthquakes (M4.5+, past week)",
-  "published": "1792885497",
-  "summary": "192 km NW of Port-Olry, Vanuatu — magnitude 5",
+  "title": "M 5.7 - 48 km WNW of Khuzdar, Pakistan",
+  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2y1",
+  "source": "NGDC / NOAA Significant Earthquakes",
+  "published": "1792213617",
+  "summary": "48 km WNW of Khuzdar, Pakistan — magnitude 5.7",
   "topics": [
-   "CP3"
+   "CP1"
   ],
   "hk": false,
-  "id": "ddff2ed43432"
+  "id": "e7b81738d3aa"
  },
  {
-  "title": "M 4.8 - 203 km NW of Port-Olry, Vanuatu",
-  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4qm",
-  "source": "USGS Earthquakes (M4.5+, past week)",
-  "published": "1792885147",
-  "summary": "203 km NW of Port-Olry, Vanuatu — magnitude 4.8",
+  "title": "M 6.9 - 76 km NE of Ozernovskiy, Russia",
+  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u2mq",
+  "source": "NGDC / NOAA Significant Earthquakes",
+  "published": "1792121731",
+  "summary": "76 km NE of Ozernovskiy, Russia — magnitude 6.9",
   "topics": [
-   "CP3"
+   "CP1"
   ],
   "hk": false,
-  "id": "ce2dd99700c3"
+  "id": "4d5ae562cc90"
  },
  {
-  "title": "M 5.0 - 210 km NW of Port-Olry, Vanuatu",
-  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4q8",
-  "source": "USGS Earthquakes (M4.5+, past week)",
-  "published": "1792882028",
-  "summary": "210 km NW of Port-Olry, Vanuatu — magnitude 5",
+  "title": "M 6.8 - central Mid-Atlantic Ridge",
+  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u214",
+  "source": "NGDC / NOAA Significant Earthquakes",
+  "published": "1791894187",
+  "summary": "central Mid-Atlantic Ridge — magnitude 6.8",
   "topics": [
-   "CP3"
+   "CP1"
   ],
   "hk": false,
-  "id": "e171e4d091e7"
+  "id": "6fd810b4237f"
  },
  {
-  "title": "M 5.0 - 193 km NW of Port-Olry, Vanuatu",
-  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4nv",
-  "source": "USGS Earthquakes (M4.5+, past week)",
-  "published": "1792868835",
-  "summary": "193 km NW of Port-Olry, Vanuatu — magnitude 5",
+  "title": "M 6.7 - central Mid-Atlantic Ridge",
+  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1z5",
+  "source": "NGDC / NOAA Significant Earthquakes",
+  "published": "1791870286",
+  "summary": "central Mid-Atlantic Ridge — magnitude 6.7",
   "topics": [
-   "CP3"
+   "CP1"
   ],
   "hk": false,
-  "id": "cedfdfa67888"
+  "id": "0aad04dc9fdb"
  },
  {
-  "title": "M 4.8 - 153 km NW of Port-Olry, Vanuatu",
-  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4n8",
-  "source": "USGS Earthquakes (M4.5+, past week)",
-  "published": "1792860855",
-  "summary": "153 km NW of Port-Olry, Vanuatu — magnitude 4.8",
+  "title": "M 6.1 - 15 km W of Río Grande, Panama",
+  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1wn",
+  "source": "NGDC / NOAA Significant Earthquakes",
+  "published": "1791847236",
+  "summary": "15 km W of Río Grande, Panama — magnitude 6.1",
   "topics": [
-   "CP3"
+   "CP1"
   ],
   "hk": false,
-  "id": "f93429c78f58"
+  "id": "cf48bc7d060e"
  },
  {
-  "title": "M 4.7 - 238 km WNW of Port-Olry, Vanuatu",
-  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4my",
-  "source": "USGS Earthquakes (M4.5+, past week)",
-  "published": "1792856747",
-  "summary": "238 km WNW of Port-Olry, Vanuatu — magnitude 4.7",
+  "title": "M 6.0 - 7 km N of La Tronosa, Panama",
+  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1cf",
+  "source": "NGDC / NOAA Significant Earthquakes",
+  "published": "1791605641",
+  "summary": "7 km N of La Tronosa, Panama — magnitude 6",
   "topics": [
-   "CP3"
+   "CP1"
   ],
   "hk": false,
-  "id": "c8c6fcf8991f"
+  "id": "08f9d1aff0bb"
  },
  {
-  "title": "M 4.9 - 217 km NW of Port-Olry, Vanuatu",
-  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4mm",
-  "source": "USGS Earthquakes (M4.5+, past week)",
-  "published": "1792855165",
-  "summary": "217 km NW of Port-Olry, Vanuatu — magnitude 4.9",
+  "title": "M 6.6 - 12 km W of Río Grande, Panama",
+  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u19w",
+  "source": "NGDC / NOAA Significant Earthquakes",
+  "published": "1791577540",
+  "summary": "12 km W of Río Grande, Panama — magnitude 6.6",
   "topics": [
-   "CP3"
+   "CP1"
   ],
   "hk": false,
-  "id": "ed3046df0e72"
+  "id": "c93a6da4559d"
+ },
+ {
+  "title": "NEW article on IVHHN achievements",
+  "url": "https:/news/new-article-ivhhn-achievements",
+  "source": "IVHHN — Volcano Bulletin",
+  "published": "",
+  "summary": "",
+  "topics": [
+   "CP1"
+  ],
+  "hk": false,
+  "id": "0d8798fc933d"
+ },
+ {
+  "title": "NEW! IVHHN gas & aerosol pamphlet",
+  "url": "https:/news/new-ivhhn-gas-aerosol-pamphlet",
+  "source": "IVHHN — Volcano Bulletin",
+  "published": "",
+  "summary": "",
+  "topics": [
+   "CP1"
+  ],
+  "hk": false,
+  "id": "2c53218a8fb7"
+ },
+ {
+  "title": "IVHHN products receive endorsement by the WHO",
+  "url": "https:/news/ivhhn-products-receive-endorsement-who",
+  "source": "IVHHN — Volcano Bulletin",
+  "published": "",
+  "summary": "",
+  "topics": [
+   "CP1"
+  ],
+  "hk": false,
+  "id": "9ec7eebff96c"
+ },
+ {
+  "title": "Housing & Social Services",
+  "url": "https://www.gov.hk/en/residents/housing/",
+  "source": "HK Gov — News in brief",
+  "published": "",
+  "summary": "",
+  "topics": [
+   "CP4"
+  ],
+  "hk": false,
+  "id": "32ac2ed63510"
+ },
+ {
+  "title": "Finance and Accountability",
+  "url": "https:/about/secretariat/finance-and-accountability",
+  "source": "WMO — News",
+  "published": "",
+  "summary": "",
+  "topics": [
+   "CP7"
+  ],
+  "hk": false,
+  "id": "97c53cd724ea"
+ },
+ {
+  "title": "Internal Oversight Office",
+  "url": "https:/about-wmo/secretariat/internal-oversight-office",
+  "source": "WMO — News",
+  "published": "",
+  "summary": "",
+  "topics": [
+   "CP7"
+  ],
+  "hk": false,
+  "id": "5bb5fb15a713"
+ },
+ {
+  "title": "Information for Journalists",
+  "url": "https:/news/media-centre/information-journalists",
+  "source": "WMO — News",
+  "published": "",
+  "summary": "",
+  "topics": [
+   "CP7"
+  ],
+  "hk": false,
+  "id": "180e9aa90396"
+ },
+ {
+  "title": "WMO 2027 Calendar Competition",
+  "url": "https:/calendar2027",
+  "source": "WMO — News",
+  "published": "",
+  "summary": "",
+  "topics": [
+   "CP7"
+  ],
+  "hk": false,
+  "id": "dae18487650c"
+ },
+ {
+  "title": "Earth observation satellites (27)",
+  "url": "https:/news?f%5B0%5D=topic%3A21240",
+  "source": "WMO — News",
+  "published": "",
+  "summary": "",
+  "topics": [
+   "CP7"
+  ],
+  "hk": false,
+  "id": "2eed9635dd2a"
+ },
+ {
+  "title": "El Niño / La Niña Phenomena (60)",
+  "url": "https:/news?f%5B0%5D=topic%3A20322",
+  "source": "WMO — News",
+  "published": "",
+  "summary": "",
+  "topics": [
+   "CP7"
+  ],
+  "hk": false,
+  "id": "637aeff50359"
+ },
+ {
+  "title": "Glaciers and Ice Caps (12)",
+  "url": "https:/news?f%5B0%5D=topic%3A25778",
+  "source": "WMO — News",
+  "published": "",
+  "summary": "",
+  "topics": [
+   "CP7"
+  ],
+  "hk": false,
+  "id": "e1825d890a8f"
+ },
+ {
+  "title": "Sand and dust storms (10)",
+  "url": "https:/news?f%5B0%5D=topic%3A20514",
+  "source": "WMO — News",
+  "published": "",
+  "summary": "",
+  "topics": [
+   "CP7"
+  ],
+  "hk": false,
+  "id": "baa714656b59"
+ },
+ {
+  "title": "Remote Sensing Technology",
+  "url": "https://science.nasa.gov/earth/earth-observatory/topics/remote-sensing-technology/",
+  "source": "NASA Earth Observatory",
+  "published": "",
+  "summary": "",
+  "topics": [
+   "CP7"
+  ],
+  "hk": false,
+  "id": "828dd18109c5"
+ },
+ {
+  "title": "Blue Marble: Next Generation",
+  "url": "https://science.nasa.gov/earth/earth-observatory/blue-marble-next-generation/",
+  "source": "NASA Earth Observatory",
+  "published": "",
+  "summary": "",
+  "topics": [
+   "CP7"
+  ],
+  "hk": false,
+  "id": "9fa669c5f884"
+ },
+ {
+  "title": "Iceberg Grinds to a Stop off South Georgia Island",
+  "url": "https://science.nasa.gov/earth/earth-observatory/iceberg-grinds-to-a-stop-off-south-georgia-island-154022/",
+  "source": "NASA Earth Observatory",
+  "published": "",
+  "summary": "",
+  "topics": [
+   "CP7"
+  ],
+  "hk": false,
+  "id": "d97093f4ef38"
+ },
+ {
+  "title": "Antarctica’s Brunt Ice Shelf Finally Breaks",
+  "url": "https://science.nasa.gov/earth/earth-observatory/antarcticas-brunt-ice-shelf-finally-breaks-150880/",
+  "source": "NASA Earth Observatory",
+  "published": "",
+  "summary": "",
+  "topics": [
+   "CP7"
+  ],
+  "hk": false,
+  "id": "38fa6d902498"
+ },
+ {
+  "title": "An Uncommon Drifter in the Denmark Strait",
+  "url": "https://science.nasa.gov/earth/earth-observatory/an-uncommon-drifter-in-the-denmark-strait/",
+  "source": "NASA Earth Observatory",
+  "published": "",
+  "summary": "",
+  "topics": [
+   "CP7"
+  ],
+  "hk": false,
+  "id": "c1704ced8ea5"
+ },
+ {
+  "title": "A Changing World for Emperor Penguins",
+  "url": "https://science.nasa.gov/earth/earth-observatory/a-changing-world-for-emperor-penguins/",
+  "source": "NASA Earth Observatory",
+  "published": "",
+  "summary": "",
+  "topics": [
+   "CP7"
+  ],
+  "hk": false,
+  "id": "1a59f302d4a4"
+ },
+ {
+  "title": "Antarctic Sea Ice Grows to Its 2026 Maximum",
+  "url": "https://science.nasa.gov/earth/earth-observatory/antarctic-sea-ice-grows-to-its-2026-maximum/",
+  "source": "NASA Earth Observatory",
+  "published": "",
+  "summary": "",
+  "topics": [
+   "CP7"
+  ],
+  "hk": false,
+  "id": "836e985479c2"
+ },
+ {
+  "title": "Subscribe to Earth Observatory Newsletters Subscribe to the Earth Observatory and get the Earth in your inbox.",
+  "url": "https://science.nasa.gov/earth/earth-observatory/subscribe/",
+  "source": "NASA Earth Observatory",
+  "published": "",
+  "summary": "",
+  "topics": [
+   "CP7"
+  ],
+  "hk": false,
+  "id": "fcc68561e2af"
+ },
+ {
+  "title": "Earth Observatory Image of the Day NASA&#039;s Earth Observatory brings you the Earth, every day, with in-depth stories and stunning imagery.",
+  "url": "https://science.nasa.gov/earth/earth-observatory/image-of-the-day/",
+  "source": "NASA Earth Observatory",
+  "published": "",
+  "summary": "",
+  "topics": [
+   "CP7"
+  ],
+  "hk": false,
+  "id": "06a334ca6c59"
+ },
+ {
+  "title": "Earth Science Data Open access to NASA’s archive of Earth science data",
+  "url": "https://science.nasa.gov/earth/data/",
+  "source": "NASA Earth Observatory",
+  "published": "",
+  "summary": "",
+  "topics": [
+   "CP7"
+  ],
+  "hk": false,
+  "id": "312f32913b9f"
+ },
+ {
+  "title": "A-81 Reaches South Georgia",
+  "url": "https://science.nasa.gov/earth/earth-observatory/a-81-reaches-south-georgia/",
+  "source": "NASA Earth Observatory",
+  "published": "",
+  "summary": "",
+  "topics": [
+   "CP7"
+  ],
+  "hk": false,
+  "id": "bdcea22402e1"
  }
 ]

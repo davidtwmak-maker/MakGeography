@@ -1,13 +1,13 @@
 {
- "updated_at": "2026-10-27 07:56 UTC",
- "n_items": 120,
+ "updated_at": "2026-10-27 08:32 UTC",
+ "n_items": 160,
  "feeds": [
   {
    "feed": "USGS Earthquakes (M4.5+, past week)",
    "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson",
    "ok": true,
    "error": "",
-   "items": 62
+   "items": 12
   },
   {
    "feed": "NASA Astronomy Picture of the Day",
@@ -21,7 +21,7 @@
    "url": "https://www.ivhhn.org/",
    "ok": true,
    "error": "",
-   "items": 0
+   "items": 3
   },
   {
    "feed": "HKO — Weather RSS portal",
@@ -35,11 +35,11 @@
    "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_month.geojson",
    "ok": true,
    "error": "",
-   "items": 1
+   "items": 12
   },
   {
-   "feed": "HK CEDD — RSS index",
-   "url": "https://www.cedd.gov.hk/eng/rss/index.html",
+   "feed": "HK CEDD — Recent topics",
+   "url": "https://www.cedd.gov.hk/eng/rss/recent_topics_rss.xml",
    "ok": true,
    "error": "",
    "items": 0
@@ -49,7 +49,7 @@
    "url": "https://www.dsd.gov.hk/Menu/EN/RSS/Whats_New.xml",
    "ok": true,
    "error": "",
-   "items": 29
+   "items": 27
   },
   {
    "feed": "HK DSD — Press Releases",
@@ -70,7 +70,7 @@
    "url": "https://www.epd.gov.hk/epd/english/rss_feeds/highlights.xml",
    "ok": true,
    "error": "",
-   "items": 3
+   "items": 2
   },
   {
    "feed": "HK EPD — Events and Acts",
@@ -91,7 +91,7 @@
    "url": "https://www.weather.gov.hk/en/wxinfo/pastwx/mws2026/mws202608.htm",
    "ok": true,
    "error": "",
-   "items": 0
+   "items": 1
   },
   {
    "feed": "RTHK News (English)",
@@ -99,6 +99,34 @@
    "ok": true,
    "error": "",
    "items": 0
+  },
+  {
+   "feed": "SCMP — Business",
+   "url": "https://www.scmp.com/rss/92/feed",
+   "ok": true,
+   "error": "",
+   "items": 5
+  },
+  {
+   "feed": "SCMP — China Economy",
+   "url": "https://www.scmp.com/rss/318198/feed",
+   "ok": true,
+   "error": "",
+   "items": 4
+  },
+  {
+   "feed": "Manufacturing Dive",
+   "url": "https://www.manufacturingdive.com/feeds/news/",
+   "ok": true,
+   "error": "",
+   "items": 4
+  },
+  {
+   "feed": "Hong Kong Free Press",
+   "url": "https://hongkongfp.com/feed/",
+   "ok": true,
+   "error": "",
+   "items": 1
   },
   {
    "feed": "HK DSD — DSD Newsletter",
@@ -126,7 +154,7 @@
    "url": "https://www.gov.hk/en/about/rss.htm",
    "ok": true,
    "error": "",
-   "items": 2
+   "items": 1
   },
   {
    "feed": "UN News — Food Security",
@@ -140,14 +168,14 @@
    "url": "https://reliefweb.int/updates/rss.xml",
    "ok": true,
    "error": "",
-   "items": 8
+   "items": 20
   },
   {
    "feed": "ScienceDaily — Environment",
    "url": "https://www.sciencedaily.com/rss/top/environment.xml",
    "ok": true,
    "error": "",
-   "items": 16
+   "items": 14
   },
   {
    "feed": "Global Forest Watch — Blog",
@@ -175,7 +203,7 @@
    "url": "https://wmo.int/news",
    "ok": true,
    "error": "",
-   "items": 2
+   "items": 8
   },
   {
    "feed": "UNFCCC — News",
@@ -189,28 +217,21 @@
    "url": "https://www.esa.int/rssfeed/Our_Activities/Observing_the_Earth",
    "ok": true,
    "error": "",
-   "items": 3
+   "items": 15
   },
   {
    "feed": "NASA Earth Observatory",
    "url": "https://earthobservatory.nasa.gov/feeds/earth-observatory.rss",
    "ok": true,
    "error": "",
-   "items": 0
+   "items": 11
   },
   {
    "feed": "ScienceDaily — Climate",
    "url": "https://www.sciencedaily.com/rss/earth_climate/climate.xml",
    "ok": true,
    "error": "",
-   "items": 15
-  },
-  {
-   "feed": "HK Geological Survey / GeoPark",
-   "url": "https://www.arqs.hk/en",
-   "ok": true,
-   "error": "",
-   "items": 0
+   "items": 14
   },
   {
    "feed": "HK Geological Survey / GeoPark",
