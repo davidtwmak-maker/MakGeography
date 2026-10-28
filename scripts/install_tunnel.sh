@@ -112,17 +112,20 @@ SUBDOMAIN="${MAKGEO_SUBDOMAIN:-makgeography}"
 mkdir -p "$HOME/.hermes/logs"
 
 if [ ! -f "$KEY" ]; then
-  echo "The Serveo SSH key is missing at $KEY" | tee -a "$LOG"
+  echo "The Serveo SSH key is missing at $KEY"
   exit 1
 fi
 chmod 600 "$KEY" 2>/dev/null || true
 
 if ! curl -s -o /dev/null --max-time 10 "http://127.0.0.1:$PORT/"; then
-  echo "The app is not answering on port $PORT" | tee -a "$LOG"
+  echo "The app is not answering on port $PORT"
   exit 1
 fi
 
-echo "starting the Serveo tunnel for https://${SUBDOMAIN}.serveousercontent.com" | tee -a "$LOG"
+# launchd already sends stdout and stderr to the tunnel log, so these
+# messages are written with a plain echo. Using tee as well would write
+# every line twice, and the URL watcher below greps that file.
+echo "starting the Serveo tunnel for https://${SUBDOMAIN}.serveousercontent.com"
 
 ssh -i "$KEY" \
   -o StrictHostKeyChecking=no \
@@ -131,7 +134,7 @@ ssh -i "$KEY" \
   -o ServerAliveInterval=30 \
   -o ServerAliveCountMax=3 \
   -R "${SUBDOMAIN}:80:127.0.0.1:${PORT}" \
-  serveo@serveo.net >> "$LOG" 2>&1 &
+  serveo@serveo.net 2>&1 &
 SSH_PID=$!
 
 # Keep the URL file current.
