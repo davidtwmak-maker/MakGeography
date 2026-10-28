@@ -68,6 +68,47 @@ jobs:
       - name: The official HKEAA question bank is intact
         run: python scripts/test_official_bank.py
 
+      - name: Students sign in with their own SID
+        run: python scripts/test_roster.py
+
+      - name: The roster and the activity log are not in the repository
+        run: |
+          # They hold the students' names and what they asked.
+          for f in data/roster.json data/activity_log.jsonl; do
+            if git ls-files --error-unmatch "$f" >/dev/null 2>&1; then
+              echo "$f is tracked by git. It holds the students' names."
+              exit 1
+            fi
+            git check-ignore -q "$f" || {
+              echo "$f is not ignored by git."
+              exit 1
+            }
+          done
+          echo "The roster and the activity log are not committed"
+
+      - name: The app starts with no vault and no Hermes files
+        env:
+          HOME: /tmp
+        run: |
+          # A deployed container has neither the Obsidian vault nor
+          # ~/.hermes/.env. The app has to import and serve anyway.
+          rm -f /tmp/.env
+          python - <<'PY'
+          import os, sys
+          for k in ("MINIMAX_API_KEY", "MINIMAX_BASE_URL", "MAKGEO_PASSWORD",
+                    "MAKGEO_TEACHER_KEY", "MAKGEO_ROSTER_PATH",
+                    "MAKGEO_ROSTER_JSON"):
+              os.environ.pop(k, None)
+          import app.main as am
+          from fastapi.testclient import TestClient
+          c = TestClient(am.app)
+          r = c.get("/healthz")
+          assert r.status_code == 200, r.status_code
+          assert r.json() == {"ok": True}, r.text
+          assert c.get("/").status_code == 200
+          print("The app serves with no vault and no ~/.hermes/.env")
+          PY
+
       - name: No hardcoded password in the source
         run: |
           # Match a real ASSIGNMENT (PASSWORD = "..."), not help text or an

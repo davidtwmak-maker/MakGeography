@@ -8,7 +8,7 @@ A public website with five sections:
 |---|---|---|
 | **Ask** | A chatbot that answers from the MakGeography notes and shows which note each answer came from | working |
 | **Notes** | CP1–CP7 and EP1, scaffolded by the official HKDSE curriculum sub-questions | working — 126 leaves, all sourced |
-| **MC Drilling** | Practice multiple choice by elective, with a mistake report that shows which topics to drill next | working — 264 questions, 126 sub-topics |
+| **MC Drilling** | Practice multiple choice by elective, with a mistake report that shows which topics to drill next | working — 1,018 questions (767 official HKEAA exam questions, 2005–2025) |
 | **Essay Generator** | Builds a practice essay from the notes: a question stem, a mark scheme and an exemplar answer | working — CP1–CP7 and EP1 only |
 | **News Corner** | Current geography news, auto-tagged by elective, refreshed on a schedule | working — 29/30 feeds |
 
@@ -45,10 +45,14 @@ Everything is read from the environment. **Never commit a real key.**
 
 | Variable | Required | Purpose |
 |---|---|---|
-| `MAKGEO_PASSWORD` | no | The shared site password. Also read from `~/.hermes/.env`. **Optional** — with none set, the site is open to everyone and no sign-in is needed. Set one to turn the gate back on. There is no built-in default, because a password committed to a public repository is not a password. |
+| `MAKGEO_TEACHER_KEY` | no | The teacher's own sign-in. Sign in as `teacher` with this. It is not in the student roster, so it cannot be guessed from it. |
+| `MAKGEO_ROSTER_PATH` | no | Path of a `roster.json` on the server. The roster holds the students' names, so it is not committed. |
+| `MAKGEO_ROSTER_JSON` | no | The roster inline, for a server where setting a file is awkward. `MAKGEO_ROSTER_PATH` is preferred — the roster is large. |
+| `MAKGEO_ACTIVITY_LOG` | no | Where the activity log is written. Point this at a persistent disk on a hosted service. |
+| `MAKGEO_PASSWORD` | no | A shared site password — the fallback gate, used when there is no roster. Also read from `~/.hermes/.env`. With none set and no roster, the site is open to everyone. |
 | `MINIMAX_API_KEY` | yes | Key for the LLM that answers questions. |
 | `MINIMAX_BASE_URL` | no | Defaults to `https://api.minimax.io/v1`. |
-| `MAKGEO_VAULT` | no | Path to the Obsidian vault. Defaults to the path in `scripts/build_kb.py`. |
+| `MAKGEO_VAULT` | no | Path to the Obsidian vault. Only used to rebuild the knowledge base. |
 
 ### Model choice
 
@@ -102,16 +106,19 @@ questions generated from the notes.
 
 ```
 app/
-  main.py       FastAPI app: password gate, API routes, session handling
+  main.py       FastAPI app: the sign-in gate, API routes, session handling
+  roster.py     The student roster: SID sign-in, password hashing, activity log
   kb.py         BM25 retrieval over the note chunks (pure Python, no sklearn)
   curriculum.py Matches a curriculum sub-topic to the notes that cover it
   essay.py      The Essay Generator: source collection and prompt building
   llm.py        MiniMax client: prompt construction, reasoning-strip, model fallback
 templates/    Jinja2 templates (login, main UI)
 static/       CSS + front-end JavaScript
-scripts/      Builders for kb.json, curriculum.json, mc_bank.json, news.json
+scripts/      Builders for kb.json, curriculum.json, mc_bank.json, news.json, roster.json
 data/         Generated artefacts (committed so the site runs without the vault)
 docs/         Notes on the content model and the exclusion rules
+Dockerfile    The container image for a hosted deployment
+render.yaml   A Render blueprint for the same
 ```
 
 ### Retrieval
@@ -156,7 +163,89 @@ sub-topics has enough material to carry an essay on its own.
 
 ---
 
-## Running as a service
+## Signing in
+
+Students sign in with their **own Student ID** and a password, so the site
+can say who used it. The teacher signs in as `teacher` with
+`MAKGEO_TEACHER_KEY`.
+
+The roster is built from the school's own class list, so the names and SIDs
+are the school's rather than retyped:
+
+```bash
+python scripts/build_roster.py                    # from the class list workbook
+python scripts/build_roster.py --from-csv r.csv   # or from a CSV
+python scripts/set_student_password.py --all --password 'term-start'
+python scripts/set_student_password.py --sid 20233004 --print   # one random password
+```
+
+Passwords are PBKDF2-HMAC-SHA256 hashes with a per-student salt. **No
+password is ever written to a file** — a forgotten one is reset, not
+recovered. `--all --password X` gives every student the same password,
+which is convenient for the first week and a bad idea afterwards: anyone
+who knows one can sign in as anybody.
+
+Two files are deliberately **not** committed, and are in `.gitignore`:
+
+- `data/roster.json` — the students' names and their password hashes.
+- `data/activity_log.jsonl` — who signed in, what they asked, when.
+
+Both are set on a deployed server through the environment instead
+(`MAKGEO_ROSTER_PATH` or `MAKGEO_ROSTER_JSON`, and `MAKGEO_ACTIVITY_LOG`).
+
+The teacher gets a **"Who has used the site"** panel: who has signed in, how
+many questions they asked, how many essays they wrote, and when they were
+last seen, broken down by class. The server refuses the request from
+anyone who is not the teacher, so the data is not merely hidden in the page
+— it is not served.
+
+`scripts/test_roster.py` covers the sign-in rules (35 checks).
+
+---
+
+## Deploying
+
+There are two deployments, and they are different things.
+
+### The live site (the working application)
+
+The FastAPI app, with the chatbot and the essay generator working. It runs
+in a container, so it needs a host that runs one — Render, Fly, Railway,
+or anything else that takes a Dockerfile. The repository has what it
+needs:
+
+- `Dockerfile` — a slim `python:3.12-slim` image that runs uvicorn on
+  `${PORT:-10000}`.
+- `render.yaml` — a Render blueprint. It asks for `MAKGEO_TEACHER_KEY`,
+  `MINIMAX_API_KEY`, `MAKGEO_PASSWORD` and `MAKGEO_ROSTER_PATH`; the
+  values marked `sync: false` are prompted for, not committed.
+- `Procfile` — for hosts that use one.
+- `GET /healthz` — the platform's health check. It touches nothing: no
+  knowledge base, no language model, no session.
+
+The image carries the data the site reads at runtime — `kb.json`,
+`curriculum.json`, `mc_bank.json`, `news.json`, the question images and
+the official exam images. The 55 MB of HKEAA briefing decks in
+`data/papers` are removed from the image, because the site does not read
+them.
+
+The app is container-safe: it resolves everything relative to the
+repository, and a missing `~/.hermes/.env` is a normal state rather than
+an error, because on a server the key comes from the environment.
+
+### The static copy (GitHub Pages)
+
+`https://davidtwmak-maker.github.io/MakGeography/` — the read-only half
+of the site: MC Drilling, Notes, News Corner and the essay topic tree,
+built by `.github/workflows/pages.yml` into plain HTML and JSON. It is a
+stable address that never changes, which a Cloudflare quick tunnel cannot
+promise.
+
+Ask and generating an essay are **not** in the static copy, because both
+need a language model. Those panels say so and point the student at the
+live site rather than failing silently.
+
+### On the teacher's Mac
 
 `scripts/install_launchd.sh` installs two `launchd` jobs:
 
@@ -178,20 +267,19 @@ is the simplest option and needs no account for a quick tunnel:
 cloudflared tunnel --url http://127.0.0.1:8781
 ```
 
-**The site has no password by default, so the notes are readable by
-anyone who has the URL.** If you want a gate, set `MAKGEO_PASSWORD` and
-reinstall the launchd job — the sign-in page appears and the APIs require a
-session again. For a permanent deployment,
-use a named Cloudflare tunnel with access policies rather than a quick tunnel.
+A quick tunnel's hostname changes every time it restarts, so it is not
+suitable as the address handed to students. Use the hosted deployment, or
+a named Cloudflare tunnel, for that.
 
----
+### What is and is not public
 
-## Deploying
+The repo is public. The **code** is public; the **vault notes are not** —
+they are not committed. `data/kb.json` is a derived artefact of the
+teacher's own notes and is committed so the site can run standalone; if
+that changes, remove it from git and add it to `.gitignore`.
 
-The repo is public. The **code** is public; the **vault notes are not** — they
-are not committed. `data/kb.json` is a derived artefact of the teacher's own
-notes and is committed so the site can run standalone; if that changes,
-remove it from git and add it to `.gitignore`.
+The student roster and the activity log are also not committed, because
+they hold the students' names and what they asked.
 
 ---
 

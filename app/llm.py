@@ -23,13 +23,36 @@ DEFAULT_MODEL = "MiniMax-M2.5-highspeed"
 TIMEOUT = 120
 
 
+def _local_env_file() -> Path | None:
+    """The .env file to read, if there is one.
+
+    On the teacher's Mac the key lives in ~/.hermes/.env, which is where
+    Hermes keeps it. On a deployed server that file does not exist, and
+    the key comes from the environment instead - so a missing file is
+    normal, not an error. A .env next to the repository is also read, so
+    a local run can be configured without touching the Hermes file.
+    """
+    candidates = [Path.home() / ".hermes" / ".env",
+                  Path(__file__).resolve().parent.parent / ".env"]
+    for path in candidates:
+        try:
+            if path.is_file():
+                return path
+        except OSError:
+            continue
+    return None
+
+
 def _load_env_key() -> str:
     key = os.environ.get("MINIMAX_API_KEY", "").strip()
     if key:
         return key
-    env = Path.home() / ".hermes" / ".env"
-    if env.exists():
-        m = re.search(r"^MINIMAX_API_KEY=(.+)$", env.read_text(), re.M)
+    env = _local_env_file()
+    if env is not None:
+        try:
+            m = re.search(r"^MINIMAX_API_KEY=(.+)$", env.read_text(), re.M)
+        except OSError:
+            m = None
         if m:
             return m.group(1).strip().strip("'\"")
     return ""
@@ -39,9 +62,12 @@ def _load_env_base() -> str:
     base = os.environ.get("MINIMAX_BASE_URL", "").strip()
     if base:
         return base.rstrip("/")
-    env = Path.home() / ".hermes" / ".env"
-    if env.exists():
-        m = re.search(r"^MINIMAX_BASE_URL=(.+)$", env.read_text(), re.M)
+    env = _local_env_file()
+    if env is not None:
+        try:
+            m = re.search(r"^MINIMAX_BASE_URL=(.+)$", env.read_text(), re.M)
+        except OSError:
+            m = None
         if m and m.group(1).strip():
             return m.group(1).strip().strip("'\"").rstrip("/")
     return DEFAULT_BASE

@@ -76,10 +76,19 @@ def _load_password() -> str:
     if p:
         _password_cache = p
         return p
-    env = Path.home() / ".hermes" / ".env"
-    if env.exists():
-        import re
-        m = re.search(r"^MAKGEO_PASSWORD=(.+)$", env.read_text(), re.M)
+    # On the teacher's Mac the password lives in ~/.hermes/.env; on a
+    # deployed server it comes from the environment and the file is not
+    # there. A missing file is normal, not an error.
+    for candidate in (Path.home() / ".hermes" / ".env",
+                       BASE_DIR / ".env"):
+        try:
+            if not candidate.is_file():
+                continue
+            import re
+            m = re.search(r"^MAKGEO_PASSWORD=(.+)$",
+                          candidate.read_text(), re.M)
+        except OSError:
+            continue
         if m:
             _password_cache = m.group(1).strip().strip("'\"")
             return _password_cache
@@ -241,6 +250,18 @@ def require_teacher(request: Request):
 # ---------------------------------------------------------------------------
 # Routes
 # ---------------------------------------------------------------------------
+
+@app.get("/healthz")
+def healthz():
+    """A health check for the hosting platform.
+
+    Deliberately does nothing: no knowledge base, no language model, no
+    session, no authentication. The platform polls this to decide whether
+    the container is up, and a check that could fail for a reason
+    unrelated to the container being alive would take the site down.
+    """
+    return {"ok": True}
+
 
 @app.get("/", response_class=HTMLResponse)
 def home(request: Request):

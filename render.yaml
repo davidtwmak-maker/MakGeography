@@ -1,0 +1,42 @@
+# Render blueprint for the live MakGeography site.
+#
+# This is the working site: the FastAPI app, with the chatbot and the
+# essay generator working. The GitHub Pages copy is a static, read-only
+# version of the same material and is built by a separate workflow.
+#
+# To deploy: push this repository to Render, or use "New > Blueprint" and
+# point it at this repository. Render reads this file and asks for the
+# four values marked `sync: false`.
+services:
+  - type: web
+    name: makgeography
+    runtime: docker
+    plan: free
+    healthCheckPath: /healthz
+    # The site is a study tool for one class, so it never sleeps.
+    autoDeploy: true
+    envVars:
+      # The teacher signs in as "teacher" with this key. It is not in the
+      # student roster, so it cannot be guessed from it.
+      - key: MAKGEO_TEACHER_KEY
+        sync: false
+      # The MiniMax key the chatbot and the essay generator answer with.
+      - key: MINIMAX_API_KEY
+        sync: false
+      - key: MINIMAX_BASE_URL
+        value: https://api.minimax.io/v1
+      # A fallback shared password, for locking the site down before the
+      # student roster is set up.
+      - key: MAKGEO_PASSWORD
+        sync: false
+      # Where the student roster is. The roster holds the students' names,
+      # so it is not in the repository. Upload the file built by
+      # scripts/build_roster.py and point this at it, or set
+      # MAKGEO_ROSTER_JSON with the roster inline instead.
+      - key: MAKGEO_ROSTER_PATH
+        sync: false
+      # Where the activity log is written. The free plan has an ephemeral
+      # filesystem, so a persistent disk is worth attaching; without one
+      # the log is lost on every restart.
+      - key: MAKGEO_ACTIVITY_LOG
+        value: /app/data/activity_log.jsonl

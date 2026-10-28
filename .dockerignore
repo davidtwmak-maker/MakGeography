@@ -1,0 +1,47 @@
+# The static site build output - rebuilt in CI, never in the image.
+site/
+
+# The student roster and the activity log. They hold the students' names
+# and must never be baked into an image either. On the deployed server
+# they come from MAKGEO_ROSTER_PATH or MAKGEO_ROSTER_JSON.
+data/roster.json
+data/activity_log.jsonl
+data/activity_log.*.jsonl
+
+# Secrets.
+.env
+.env.*
+!.env.example
+
+# The raw OQB API records carry signed URLs and per-row access tokens.
+data/hkeaa_oqb/_raw/
+
+# The Obsidian vault is never in the repository, but the build scripts
+# point at it, so keep any local copy out of the image.
+*.numbers
+*.xlsx
+*.xlsm
+
+# Version control and tooling.
+.git
+.github
+.gitignore
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Editor and OS noise.
+.vscode/
+.idea/
+.DS_Store
+
+# The build scripts are not needed to run the site.
+scripts/
+docs/
+README.md
+LICENSE
