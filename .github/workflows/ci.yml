@@ -62,6 +62,9 @@ jobs:
       - name: The Part (b) stem names a measure, not a case study
         run: python scripts/test_named_measure.py
 
+      - name: No MC question points at a missing figure
+        run: python scripts/test_no_dangling_figures.py
+
       - name: No hardcoded password in the source
         run: |
           # Match a real ASSIGNMENT (PASSWORD = "..."), not help text or an

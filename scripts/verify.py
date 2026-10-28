@@ -289,4 +289,30 @@ assert essay.check_named_measure(_essay_with_stem(
 )) is not None
 print("Essay generator: the Part (b) stem names a measure, not a case study")
 
+# 11. No MC question may point at a figure that does not exist.
+#
+# A stem that says "Figure 1 shows ..." leaves the student hunting for a
+# picture that was never produced. A stem may describe a visual in words,
+# but it may not point at one.
+import re as _re
+_mc = json.loads(
+    (root / "data" / "mc_bank.json").read_text(encoding="utf-8")
+)["questions"]
+_dangling = [
+    q for q in _mc
+    if not q.get("question_image")
+    and _re.search(
+        r"\b(?:figure|fig\.?|photograph|photo|image|diagram|map|table|graph)"
+        r"\s*\d+\b", q.get("stem") or "", _re.I)
+]
+assert not _dangling, f"{len(_dangling)} MC questions point at a missing figure"
+_nodata = [
+    q for q in _mc
+    if _re.search(r"\b(?:the table|the graph|a graph of)\b",
+                  q.get("stem") or "", _re.I)
+    and not any(c.isdigit() for c in (q.get("stem") or ""))
+]
+assert not _nodata, f"{len(_nodata)} MC questions name a table/graph without the data"
+print(f"MC bank: {len(_mc)} questions, no dangling figure references")
+
 print("\nALL CHECKS PASSED")

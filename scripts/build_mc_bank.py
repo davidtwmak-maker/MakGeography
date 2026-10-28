@@ -71,8 +71,14 @@ Rules for every question:
 - Exactly 4 options labelled A, B, C, D. Exactly one is correct.
 - The three wrong options must be PLAUSIBLE to a student who half-knows the \
 topic — no silly distractors, no "all of the above", no "none of the above".
-- The stem must be self-contained. If it refers to a diagram, describe what the \
-diagram shows in the stem itself, e.g. "Figure 1 shows a cross-section of ...".
+- The stem must be self-contained. If it needs a diagram, DESCRIBE the diagram \
+in the stem itself, e.g. "A cross-section of rock layers bent into an arch \
+curving upward.". \
+NEVER write "Figure 1 shows ..." or "Refer to Figure 2" or "The table below" \
+- no figure or table is ever attached to a generated question, so a stem that \
+points at one leaves the student hunting for a picture that is not there. If \
+the question needs data, put the numbers in the stem: "The table shows \
+Australia has 12.3 million ha of organic land (2.8%) ...".
 - Use HKDSE syllabus terminology and Hong Kong examples where they fit.
 - The explanation is 1-3 sentences and teaches WHY the answer is right, \
 including why the main distractor is wrong. Write it for a student revising.
