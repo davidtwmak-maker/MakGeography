@@ -44,6 +44,31 @@
       $("#mcTopic").insertAdjacentHTML("beforeend", opts);
       $("#newsTopic").insertAdjacentHTML("beforeend", opts);
     } catch (e) { /* offline indicator is enough */ }
+
+    // The MC bank also holds official HKEAA map-reading questions, which
+    // sit outside the note topics ("MAP"). They are a real exam category
+    // (Topic 12 of the Geography module) so they get their own filter.
+    try {
+      const r = await fetch("/api/mc?limit=1");
+      if (r.ok) {
+        const d = await r.json();
+        const sel = $("#mcTopic");
+        const have = [...sel.options].map((o) => o.value);
+        if (d.topics && !have.includes("MAP")) {
+          const extra = d.topics
+            .filter((t) => !have.includes(t))
+            .map((t) => `<option value="${t}">${t}</option>`).join("");
+          if (extra) sel.insertAdjacentHTML("beforeend", extra);
+        }
+        const note = document.querySelector("#mcTotal");
+        if (note && d.total != null) {
+          const off = (d.official_total != null) ? d.official_total : null;
+          note.textContent = off
+            ? `${d.total} questions in the bank — ${off} of them official HKEAA exam questions.`
+            : `${d.total} questions in the bank.`;
+        }
+      }
+    } catch (e) { /* the drill still works without the extra filters */ }
   }
   loadStatus();
 
@@ -278,11 +303,16 @@
     $("#mcList").innerHTML = qs.map((q, i) => `
       <div class="mc-q" data-i="${i}">
         ${q.official ? `<div class="mc-official">Official HKDSE exam question &middot; ${esc(q.source || "")}</div>` : ""}
-        ${q.question_image
-          ? `<figure class="mc-question-image"><img src="/question-images/${esc(q.question_image.split("/").pop())}" alt="The question as it appeared in the HKDSE examination paper" width="${q.image_width || 1200}" height="${q.image_height || 600}"><figcaption>Source: HKEAA examination question paper. &copy; HKEAA.</figcaption></figure>`
-          : `<div class="stem">${md(q.stem)}</div>`}
+        ${q.map_extract
+          ? `<div class="mc-mapextract"><a href="/oqb-attachments/${esc(q.map_extract)}" target="_blank" rel="noopener">Open the map extract for this paper (${esc(q.map_extract.split("/").pop())})</a></div>`
+          : ""}
+        ${q.stem_image
+          ? `<figure class="mc-question-image"><img src="/oqb-images/${esc(q.stem_image)}" alt="The question as it appeared in the HKDSE examination paper" loading="lazy"><figcaption>Source: HKEAA examination question paper. &copy; HKEAA.</figcaption></figure>`
+          : q.question_image
+            ? `<figure class="mc-question-image"><img src="/question-images/${esc(q.question_image.split("/").pop())}" alt="The question as it appeared in the HKDSE examination paper" width="${q.image_width || 1200}" height="${q.image_height || 600}"><figcaption>Source: HKEAA examination question paper. &copy; HKEAA.</figcaption></figure>`
+            : `<div class="stem">${md(q.stem)}</div>`}
         <div class="mc-opts">${q.options.map((o, j) =>
-          `<button class="mc-opt" data-k="${String.fromCharCode(65 + j)}"><span class="k">${String.fromCharCode(65 + j)}</span><span>${esc(o)}</span></button>`).join("")}
+          `<button class="mc-opt${q.graphic_options ? " is-graphic" : ""}" data-k="${String.fromCharCode(65 + j)}"><span class="k">${String.fromCharCode(65 + j)}</span>${q.graphic_options ? "" : `<span>${esc(o)}</span>`}${q.option_images && q.option_images[j] ? `<img class="mc-opt-image" src="/oqb-images/${esc(q.option_images[j])}" alt="Option ${String.fromCharCode(65 + j)}" loading="lazy">` : ""}</button>`).join("")}
         </div>
         <div class="mc-fb" style="display:none"></div>
       </div>`).join("");

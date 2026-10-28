@@ -301,6 +301,7 @@ _mc = json.loads(
 _dangling = [
     q for q in _mc
     if not q.get("question_image")
+    and not q.get("stem_image")
     and _re.search(
         r"\b(?:figure|fig\.?|photograph|photo|image|diagram|map|table|graph)"
         r"\s*\d+\b", q.get("stem") or "", _re.I)

@@ -65,6 +65,9 @@ jobs:
       - name: No MC question points at a missing figure
         run: python scripts/test_no_dangling_figures.py
 
+      - name: The official HKEAA question bank is intact
+        run: python scripts/test_official_bank.py
+
       - name: No hardcoded password in the source
         run: |
           # Match a real ASSIGNMENT (PASSWORD = "..."), not help text or an

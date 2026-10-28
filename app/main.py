@@ -509,7 +509,22 @@ def api_mc(request: Request, topic: str | None = None, limit: int = 20,
         if not q.get("id"):
             q["id"] = f"{q.get('subtopic', 'gen')}-" + hashlib.sha1(
                 q.get("stem", "").encode()).hexdigest()[:8]
-    return {"questions": qs[:limit], "total": len(qs)}
+    # Report every topic present, so the drill filter can offer the ones
+    # that only the official HKEAA questions use (e.g. MAP for map reading).
+    topics = sorted({t for q in qs for t in (q.get("topics") or []) if t})
+    official_total = sum(1 for q in qs if q.get("official"))
+    # Official HKEAA questions first, then newest paper first, then question
+    # number. The bank otherwise starts with 251 AI questions, so a student
+    # drilling "All topics" would rarely see a real exam question.
+    def sort_key(q):
+        return (
+            0 if q.get("official") else 1,
+            -(q.get("year") or 0),
+            q.get("q") or 0,
+        )
+    qs = sorted(qs, key=sort_key)
+    return {"questions": qs[:limit], "total": len(qs), "topics": topics,
+            "official_total": official_total}
 
 
 @app.get("/question-images/{name}")
@@ -526,6 +541,59 @@ def question_image(request: Request, name: str):
     if not path.is_file() or path.parent != (DATA_DIR / "question_images").resolve():
         raise HTTPException(status_code=404, detail="Not found.")
     return FileResponse(path, media_type="image/png")
+
+
+# --- HKEAA question images from the OQB platform ----------------------------
+#
+# The 765 official HKDSE/HKCEE Geography MC questions came from the OQB
+# (網上試題學習平台) at oqb.edcity.hk. Each question is stored as images:
+# one stem image and four option images, plus the paper's map extract.
+#
+# These are served from data/hkeaa_oqb/. The path is resolved and then
+# checked to be inside that directory, so a crafted path cannot escape it.
+
+OQB_DIR = (DATA_DIR / "hkeaa_oqb").resolve()
+OQB_MEDIA = {
+    ".png": "image/png",
+    ".jpg": "image/jpeg",
+    ".jpeg": "image/jpeg",
+    ".webp": "image/webp",
+    ".pdf": "application/pdf",
+    ".gif": "image/gif",
+    ".svg": "image/svg+xml",
+}
+
+
+def _oqb_file(rel: str):
+    """Resolve a path inside the OQB media directory, or raise 404."""
+    root = OQB_DIR
+    path = (root / rel).resolve()
+    if not path.is_file():
+        raise HTTPException(status_code=404, detail="Not found.")
+    # The resolved path must still be inside the media root.
+    if root != path and root not in path.parents:
+        raise HTTPException(status_code=404, detail="Not found.")
+    return path
+
+
+@app.get("/oqb-images/{rel_path:path}")
+def oqb_image(request: Request, rel_path: str):
+    """A stem, option or map-extract image for an official HKEAA question."""
+    require_auth(request)
+    path = _oqb_file(rel_path)
+    media = OQB_MEDIA.get(path.suffix.lower(), "application/octet-stream")
+    return FileResponse(path, media_type=media, headers={"Cache-Control": "public, max-age=86400"})
+
+
+@app.get("/oqb-attachments/{rel_path:path}")
+def oqb_attachment(request: Request, rel_path: str):
+    """The paper's map extract (PDF or JPG), served as a download."""
+    require_auth(request)
+    path = _oqb_file(rel_path)
+    if path.suffix.lower() not in (".pdf", ".jpg", ".jpeg"):
+        raise HTTPException(status_code=404, detail="Not found.")
+    return FileResponse(path, media_type=OQB_MEDIA.get(path.suffix.lower()),
+                        headers={"Content-Disposition": f'inline; filename="{path.name}"'})
 
 
 # --------------------------- static + error -------------------------------

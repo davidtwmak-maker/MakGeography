@@ -1,0 +1,766 @@
+qcode,subject,publisher,year,question_no,description,itype,difficulty,nss,topic_code,dimension_code,is_dse,en_id,zh_id,en_answer,zh_answer,en_model_answer,suggested_score,suggested_time,has_en,has_zh,n_choices,stem_file,stem_type,attachments,package_id
+HKEAA_geog_2005_1,geog,HKEAA,2005,1,2005 No.1,choice,,1,geog_12,,0,50411,50409,[2],[2],[2],1,75,True,True,4,geog_eng_2005_q_01_0.png,image/png,Map of Hong Kong=2005map.ceg.pdf,15
+HKEAA_geog_2005_2,geog,HKEAA,2005,2,2005 No.2,choice,,1,geog_12,,0,50455,50453,[0],[0],[0],1,75,True,True,4,geog_eng_2005_q_02_0.png,image/png,Map of Hong Kong=2005map.ceg.pdf,15
+HKEAA_geog_2005_3,geog,HKEAA,2005,3,2005 No.3,choice,,1,geog_12,,0,50499,50497,[1],[1],[1],1,75,True,True,4,geog_eng_2005_q_03_0.png,image/png,Map of Hong Kong=2005map.ceg.pdf,15
+HKEAA_geog_2005_4,geog,HKEAA,2005,4,2005 No.4,choice,,1,geog_12,,0,50543,50541,[0],[0],[0],1,75,True,True,4,geog_eng_2005_q_04_0.png,image/png,Map of Hong Kong=2005map.ceg.pdf,15
+HKEAA_geog_2005_5,geog,HKEAA,2005,5,2005 No.5,choice,,1,geog_12,,0,50587,50585,[0],[0],[0],1,75,True,True,4,geog_eng_2005_q_05_0.png,image/png,Map of Hong Kong=2005map.ceg.pdf,15
+HKEAA_geog_2005_6,geog,HKEAA,2005,6,2005 No.6,choice,,1,geog_12,,0,50595,50593,[3],[3],[3],1,75,True,True,4,geog_eng_2005_q_06_0.png,image/png,Map of Hong Kong=2005map.ceg.pdf,15
+HKEAA_geog_2005_7,geog,HKEAA,2005,7,2005 No.7,choice,,1,geog_12,,0,50599,50597,[2],[2],[2],1,75,True,True,4,geog_eng_2005_q_07_0.png,image/png,Map of Hong Kong=2005map.ceg.pdf,15
+HKEAA_geog_2005_8,geog,HKEAA,2005,8,2005 No.8,choice,,1,geog_12,,0,50603,50601,[2],[2],[2],1,75,True,True,4,geog_eng_2005_q_08_0.png,image/png,Map of Hong Kong=2005map.ceg.pdf,15
+HKEAA_geog_2005_9,geog,HKEAA,2005,9,2005 No.9,choice,,1,geog_12,,0,50607,50605,[1],[1],[1],1,75,True,True,4,geog_eng_2005_q_09_0.png,image/png,Map of Hong Kong=2005map.ceg.pdf,15
+HKEAA_geog_2005_10,geog,HKEAA,2005,10,2005 No.10,choice,,1,geog_12,,0,50415,50413,[3],[3],[3],1,75,True,True,4,geog_eng_2005_q_10_0.png,image/png,Map of Hong Kong=2005map.ceg.pdf,15
+HKEAA_geog_2005_11,geog,HKEAA,2005,11,2005 No.11,choice,,1,geog_7,,0,50419,50417,[2],[2],[2],1,75,True,True,4,geog_eng_2005_q_11_0.png,image/png,,15
+HKEAA_geog_2005_12,geog,HKEAA,2005,12,2005 No.12,choice,,1,geog_7,,0,50423,50421,[0],[0],[0],1,75,True,True,4,geog_eng_2005_q_12_0.png,image/png,,15
+HKEAA_geog_2005_13,geog,HKEAA,2005,13,2005 No.13,choice,,1,geog_7,,0,50427,50425,[3],[3],[3],1,75,True,True,4,geog_eng_2005_q_13_0.png,image/png,,15
+HKEAA_geog_2005_14,geog,HKEAA,2005,14,2005 No.14,choice,,1,geog_2,,0,50431,50429,[3],[3],[3],1,75,True,True,4,geog_eng_2005_q_14_0.png,image/png,,15
+HKEAA_geog_2005_15,geog,HKEAA,2005,15,2005 No.15,choice,,1,geog_5,,0,50435,50433,[2],[2],[2],1,75,True,True,4,geog_eng_2005_q_15_0.png,image/png,,15
+HKEAA_geog_2005_16,geog,HKEAA,2005,16,2005 No.16,choice,,1,geog_5,,0,50439,50437,[2],[2],[2],1,75,True,True,4,geog_eng_2005_q_16_0.png,image/png,,15
+HKEAA_geog_2005_17,geog,HKEAA,2005,17,2005 No.17,choice,,1,geog_3,,0,50443,50441,[0],[0],[0],1,75,True,True,4,geog_eng_2005_q_17_0.png,image/png,,15
+HKEAA_geog_2005_18,geog,HKEAA,2005,18,2005 No.18,choice,,1,geog_3,,0,50447,50445,[1],[1],[1],1,75,True,True,4,geog_eng_2005_q_18_0.png,image/png,,15
+HKEAA_geog_2005_19,geog,HKEAA,2005,19,2005 No.19,choice,,1,geog_5,,0,50451,50449,[1],[1],[1],1,75,True,True,4,geog_eng_2005_q_19_0.png,image/png,,15
+HKEAA_geog_2005_20,geog,HKEAA,2005,20,2005 No.20,choice,,1,geog_7,,0,50459,50457,[0],[0],[0],1,75,True,True,4,geog_eng_2005_q_20_0.png,image/png,,15
+HKEAA_geog_2005_21,geog,HKEAA,2005,21,2005 No.21,choice,,1,geog_1,,0,50463,50461,[3],[3],[3],1,75,True,True,4,geog_eng_2005_q_21_0.png,image/png,,15
+HKEAA_geog_2005_22,geog,HKEAA,2005,22,2005 No.22,choice,,1,geog_8,,0,50467,50465,[1],[1],[1],1,75,True,True,4,geog_eng_2005_q_22_0.png,image/png,,15
+HKEAA_geog_2005_23,geog,HKEAA,2005,23,2005 No.23,choice,,1,geog_1,,0,50471,50469,[3],[3],[3],1,75,True,True,4,geog_eng_2005_q_23_0.png,image/png,,15
+HKEAA_geog_2005_24,geog,HKEAA,2005,24,2005 No.24,choice,,1,geog_1,,0,50475,50473,[3],[3],[3],1,75,True,True,4,geog_eng_2005_q_24_0.png,image/png,,15
+HKEAA_geog_2005_25,geog,HKEAA,2005,25,2005 No.25,choice,,1,geog_1,,0,50479,50477,[1],[1],[1],1,75,True,True,4,geog_eng_2005_q_25_0.png,image/png,,15
+HKEAA_geog_2005_26,geog,HKEAA,2005,26,2005 No.26,choice,,1,geog_1,,0,50483,50481,[3],[3],[3],1,75,True,True,4,geog_eng_2005_q_26_0.png,image/png,,15
+HKEAA_geog_2005_27,geog,HKEAA,2005,27,2005 No.27,choice,,1,geog_2,,0,50487,50485,[3],[3],[3],1,75,True,True,4,geog_eng_2005_q_27_0.png,image/png,,15
+HKEAA_geog_2005_28,geog,HKEAA,2005,28,2005 No.28,choice,,1,geog_2,,0,50491,50489,[1],[1],[1],1,75,True,True,4,geog_eng_2005_q_28_0.png,image/png,,15
+HKEAA_geog_2005_29,geog,HKEAA,2005,29,2005 No.29,choice,,1,geog_4,,0,50495,50493,[3],[3],[3],1,75,True,True,4,geog_eng_2005_q_29_0.png,image/png,,15
+HKEAA_geog_2005_30,geog,HKEAA,2005,30,2005 No.30,choice,,1,geog_4,,0,50503,50501,[3],[3],[3],1,75,True,True,4,geog_eng_2005_q_30_0.png,image/png,,15
+HKEAA_geog_2005_31,geog,HKEAA,2005,31,2005 No.31,choice,,1,geog_4,,0,50507,50505,[1],[1],[1],1,75,True,True,4,geog_eng_2005_q_31_0.png,image/png,,15
+HKEAA_geog_2005_32,geog,HKEAA,2005,32,2005 No.32,choice,,1,geog_4,,0,50511,50509,[1],[1],[1],1,75,True,True,4,geog_eng_2005_q_32_0.png,image/png,,15
+HKEAA_geog_2005_33,geog,HKEAA,2005,33,2005 No.33,choice,,1,geog_7,,0,50515,50513,[0],[0],[0],1,75,True,True,4,geog_eng_2005_q_33_0.png,image/png,,15
+HKEAA_geog_2005_34,geog,HKEAA,2005,34,2005 No.34,choice,,1,geog_2,,0,50519,50517,[0],[0],[0],1,75,True,True,4,geog_eng_2005_q_34_0.png,image/png,,15
+HKEAA_geog_2005_35,geog,HKEAA,2005,35,2005 No.35,choice,,1,geog_2,,0,50523,50521,[2],[2],[2],1,75,True,True,4,geog_eng_2005_q_35_0.png,image/png,,15
+HKEAA_geog_2005_36,geog,HKEAA,2005,36,2005 No.36,choice,,1,geog_2,,0,50527,50525,[2],[2],[2],1,75,True,True,4,geog_eng_2005_q_36_0.png,image/png,,15
+HKEAA_geog_2005_37,geog,HKEAA,2005,37,2005 No.37,choice,,1,geog_2,,0,50531,50529,[3],[3],[3],1,75,True,True,4,geog_eng_2005_q_37_0.png,image/png,,15
+HKEAA_geog_2005_38,geog,HKEAA,2005,38,2005 No.38,choice,,1,geog_5,,0,50535,50533,[0],[0],[0],1,75,True,True,4,geog_eng_2005_q_38_0.png,image/png,,15
+HKEAA_geog_2005_39,geog,HKEAA,2005,39,2005 No.39,choice,,1,geog_3,,0,50539,50537,[1],[1],[1],1,75,True,True,4,geog_eng_2005_q_39_0.png,image/png,,15
+HKEAA_geog_2005_40,geog,HKEAA,2005,40,2005 No.40,choice,,1,geog_3,,0,50547,50545,[2],[2],[2],1,75,True,True,4,geog_eng_2005_q_40_0.png,image/png,,15
+HKEAA_geog_2005_41,geog,HKEAA,2005,41,2005 No.41,choice,,1,geog_4,,0,50551,50549,[0],[0],[0],1,75,True,True,4,geog_eng_2005_q_41_0.png,image/png,,15
+HKEAA_geog_2005_42,geog,HKEAA,2005,42,2005 No.42,choice,,1,geog_4,,0,50555,50553,[2],[2],[2],1,75,True,True,4,geog_eng_2005_q_42_0.png,image/png,,15
+HKEAA_geog_2005_43,geog,HKEAA,2005,43,2005 No.43,choice,,1,geog_4,,0,50559,50557,[1],[1],[1],1,75,True,True,4,geog_eng_2005_q_43_0.png,image/png,,15
+HKEAA_geog_2005_44,geog,HKEAA,2005,44,2005 No.44,choice,,1,geog_3,,0,50563,50561,[1],[1],[1],1,75,True,True,4,geog_eng_2005_q_44_0.png,image/png,,15
+HKEAA_geog_2005_45,geog,HKEAA,2005,45,2005 No.45,choice,,1,geog_9,,0,50567,50565,[2],[2],[2],1,75,True,True,4,geog_eng_2005_q_45_0.png,image/png,,15
+HKEAA_geog_2005_46,geog,HKEAA,2005,46,2005 No.46,choice,,1,geog_9,,0,50571,50569,[0],[0],[0],1,75,True,True,4,geog_eng_2005_q_46_0.png,image/png,,15
+HKEAA_geog_2005_47,geog,HKEAA,2005,47,2005 No.47,choice,,1,geog_9,,0,50575,50573,[3],[3],[3],1,75,True,True,4,geog_eng_2005_q_47_0.png,image/png,,15
+HKEAA_geog_2005_48,geog,HKEAA,2005,48,2005 No.48,choice,,1,geog_9,,0,50579,50577,[0],[0],[0],1,75,True,True,4,geog_eng_2005_q_48_0.png,image/png,,15
+HKEAA_geog_2005_49,geog,HKEAA,2005,49,2005 No.49,choice,,1,geog_5,,0,50583,50581,[2],[2],[2],1,75,True,True,4,geog_eng_2005_q_49_0.png,image/png,,15
+HKEAA_geog_2005_50,geog,HKEAA,2005,50,2005 No.50,choice,,1,geog_5,,0,50591,50589,[2],[2],[2],1,75,True,True,4,geog_eng_2005_q_50_0.png,image/png,,15
+HKEAA_geog_2006_1,geog,HKEAA,2006,1,2006 No.1,choice,,1,geog_12,,0,50611,50609,[3],[3],[3],1,75,True,True,4,geog_eng_2006_q_01_0.png,image/png,Map of Hong Kong=2006map.ceg.pdf,15
+HKEAA_geog_2006_2,geog,HKEAA,2006,2,2006 No.2,choice,,1,geog_12,,0,50655,50653,[1],[1],[1],1,75,True,True,4,geog_eng_2006_q_02_0.png,image/png,Map of Hong Kong=2006map.ceg.pdf,15
+HKEAA_geog_2006_3,geog,HKEAA,2006,3,2006 No.3,choice,,1,geog_12,,0,50699,50697,[0],[0],[0],1,75,True,True,4,geog_eng_2006_q_03_0.png,image/png,Map of Hong Kong=2006map.ceg.pdf,15
+HKEAA_geog_2006_4,geog,HKEAA,2006,4,2006 No.4,choice,,1,geog_12,,0,50743,50741,[0],[0],[0],1,75,True,True,4,geog_eng_2006_q_04_0.png,image/png,Map of Hong Kong=2006map.ceg.pdf,15
+HKEAA_geog_2006_5,geog,HKEAA,2006,5,2006 No.5,choice,,1,geog_12,,0,50787,50785,[2],[2],[2],1,75,True,True,4,geog_eng_2006_q_05_0.png,image/png,Map of Hong Kong=2006map.ceg.pdf,15
+HKEAA_geog_2006_6,geog,HKEAA,2006,6,2006 No.6,choice,,1,geog_12,,0,50795,50793,[2],[2],[2],1,75,True,True,4,geog_eng_2006_q_06_0.png,image/png,Map of Hong Kong=2006map.ceg.pdf,15
+HKEAA_geog_2006_7,geog,HKEAA,2006,7,2006 No.7,choice,,1,geog_12,,0,50799,50797,[1],[1],[1],1,75,True,True,4,geog_eng_2006_q_07_0.png,image/png,Map of Hong Kong=2006map.ceg.pdf,15
+HKEAA_geog_2006_8,geog,HKEAA,2006,8,2006 No.8,choice,,1,geog_12,,0,50803,50801,[2],[2],[2],1,75,True,True,4,geog_eng_2006_q_08_0.png,image/png,Map of Hong Kong=2006map.ceg.pdf,15
+HKEAA_geog_2006_9,geog,HKEAA,2006,9,2006 No.9,choice,,1,geog_12,,0,50807,50805,[1],[1],[1],1,75,True,True,4,geog_eng_2006_q_09_0.png,image/png,Map of Hong Kong=2006map.ceg.pdf,15
+HKEAA_geog_2006_10,geog,HKEAA,2006,10,2006 No.10,choice,,1,geog_12,,0,50615,50613,[0],[0],[0],1,75,True,True,4,geog_eng_2006_q_10_0.png,image/png,Map of Hong Kong=2006map.ceg.pdf,15
+HKEAA_geog_2006_11,geog,HKEAA,2006,11,2006 No.11,choice,,1,geog_1,,0,50619,50617,[1],[1],[1],1,75,True,True,4,geog_eng_2006_q_11_0.png,image/png,,15
+HKEAA_geog_2006_12,geog,HKEAA,2006,12,2006 No.12,choice,,1,geog_1,,0,50623,50621,[2],[2],[2],1,75,True,True,4,geog_eng_2006_q_12_0.png,image/png,,15
+HKEAA_geog_2006_13,geog,HKEAA,2006,13,2006 No.13,choice,,1,geog_1,,0,50627,50625,[1],[1],[1],1,75,True,True,4,geog_eng_2006_q_13_0.png,image/png,,15
+HKEAA_geog_2006_14,geog,HKEAA,2006,14,2006 No.14,choice,,1,geog_1,,0,50631,50629,[2],[2],[2],1,75,True,True,4,geog_eng_2006_q_14_0.png,image/png,,15
+HKEAA_geog_2006_15,geog,HKEAA,2006,15,2006 No.15,choice,,1,geog_1,,0,50635,50633,[2],[2],[2],1,75,True,True,4,geog_eng_2006_q_15_0.png,image/png,,15
+HKEAA_geog_2006_16,geog,HKEAA,2006,16,2006 No.16,choice,,1,geog_1,,0,50639,50637,[2],[2],[2],1,75,True,True,4,geog_eng_2006_q_16_0.png,image/png,,15
+HKEAA_geog_2006_17,geog,HKEAA,2006,17,2006 No.17,choice,,1,geog_1,,0,50643,50641,[3],[3],[3],1,75,True,True,4,geog_eng_2006_q_17_0.png,image/png,,15
+HKEAA_geog_2006_18,geog,HKEAA,2006,18,2006 No.18,choice,,1,geog_4,,0,50647,50645,[3],[3],[3],1,75,True,True,4,geog_eng_2006_q_18_0.png,image/png,,15
+HKEAA_geog_2006_19,geog,HKEAA,2006,19,2006 No.19,choice,,1,geog_4,,0,50651,50649,[0],[0],[0],1,75,True,True,4,geog_eng_2006_q_19_0.png,image/png,,15
+HKEAA_geog_2006_20,geog,HKEAA,2006,20,2006 No.20,choice,,1,geog_4,,0,50659,50657,[3],[3],[3],1,75,True,True,4,geog_eng_2006_q_20_0.png,image/png,,15
+HKEAA_geog_2006_21,geog,HKEAA,2006,21,2006 No.21,choice,,1,geog_4,,0,50663,50661,[2],[2],[2],1,75,True,True,4,geog_eng_2006_q_21_0.png,image/png,,15
+HKEAA_geog_2006_22,geog,HKEAA,2006,22,2006 No.22,choice,,1,geog_4,,0,50667,50665,[0],[0],[0],1,75,True,True,4,geog_eng_2006_q_22_0.png,image/png,,15
+HKEAA_geog_2006_23,geog,HKEAA,2006,23,2006 No.23,choice,,1,geog_4,,0,50671,50669,[1],[1],[1],1,75,True,True,4,geog_eng_2006_q_23_0.png,image/png,,15
+HKEAA_geog_2006_24,geog,HKEAA,2006,24,2006 No.24,choice,,1,geog_4,,0,50675,50673,[1],[1],[1],1,75,True,True,4,geog_eng_2006_q_24_0.png,image/png,,15
+HKEAA_geog_2006_25,geog,HKEAA,2006,25,2006 No.25,choice,,1,geog_5,,0,50679,50677,[0],[0],[0],1,75,True,True,4,geog_eng_2006_q_25_0.png,image/png,,15
+HKEAA_geog_2006_26,geog,HKEAA,2006,26,2006 No.26,choice,,1,geog_5,,0,50683,50681,[3],[3],[3],1,75,True,True,4,geog_eng_2006_q_26_0.png,image/png,,15
+HKEAA_geog_2006_27,geog,HKEAA,2006,27,2006 No.27,choice,,1,geog_5,,0,50687,50685,[3],[3],[3],1,75,True,True,4,geog_eng_2006_q_27_0.png,image/png,,15
+HKEAA_geog_2006_28,geog,HKEAA,2006,28,2006 No.28,choice,,1,geog_5,,0,50691,50689,[2],[2],[2],1,75,True,True,4,geog_eng_2006_q_28_0.png,image/png,,15
+HKEAA_geog_2006_29,geog,HKEAA,2006,29,2006 No.29,choice,,1,geog_5,,0,50695,50693,[2],[2],[2],1,75,True,True,4,geog_eng_2006_q_29_0.png,image/png,,15
+HKEAA_geog_2006_30,geog,HKEAA,2006,30,2006 No.30,choice,,1,geog_5,,0,50703,50701,[0],[0],[0],1,75,True,True,4,geog_eng_2006_q_30_0.png,image/png,,15
+HKEAA_geog_2006_31,geog,HKEAA,2006,31,2006 No.31,choice,,1,geog_7,,0,50707,50705,[3],[3],[3],1,75,True,True,4,geog_eng_2006_q_31_0.png,image/png,,15
+HKEAA_geog_2006_32,geog,HKEAA,2006,32,2006 No.32,choice,,1,geog_7,,0,50711,50709,[3],[3],[3],1,75,True,True,4,geog_eng_2006_q_32_0.png,image/png,,15
+HKEAA_geog_2006_33,geog,HKEAA,2006,33,2006 No.33,choice,,1,geog_7,,0,50715,50713,[0],[0],[0],1,75,True,True,4,geog_eng_2006_q_33_0.png,image/png,,15
+HKEAA_geog_2006_34,geog,HKEAA,2006,34,2006 No.34,choice,,1,geog_9,,0,50719,50717,[0],[0],[0],1,75,True,True,4,geog_eng_2006_q_34_0.png,image/png,,15
+HKEAA_geog_2006_35,geog,HKEAA,2006,35,2006 No.35,choice,,1,geog_9,,0,50723,50721,[3],[3],[3],1,75,True,True,4,geog_eng_2006_q_35_0.png,image/png,,15
+HKEAA_geog_2006_36,geog,HKEAA,2006,36,2006 No.36,choice,,1,geog_9,,0,50727,50725,[0],[0],[0],1,75,True,True,4,geog_eng_2006_q_36_0.png,image/png,,15
+HKEAA_geog_2006_37,geog,HKEAA,2006,37,2006 No.37,choice,,1,geog_9,,0,50731,50729,[1],[1],[1],1,75,True,True,4,geog_eng_2006_q_37_0.png,image/png,,15
+HKEAA_geog_2006_38,geog,HKEAA,2006,38,2006 No.38,choice,,1,geog_3,,0,50735,50733,[1],[1],[1],1,75,True,True,4,geog_eng_2006_q_38_0.png,image/png,,15
+HKEAA_geog_2006_39,geog,HKEAA,2006,39,2006 No.39,choice,,1,geog_3,,0,50739,50737,[1],[1],[1],1,75,True,True,4,geog_eng_2006_q_39_0.png,image/png,,15
+HKEAA_geog_2006_40,geog,HKEAA,2006,40,2006 No.40,choice,,1,geog_3,,0,50747,50745,[3],[3],[3],1,75,True,True,4,geog_eng_2006_q_40_0.png,image/png,,15
+HKEAA_geog_2006_41,geog,HKEAA,2006,41,2006 No.41,choice,,1,geog_3,,0,50751,50749,[0],[0],[0],1,75,True,True,4,geog_eng_2006_q_41_0.png,image/png,,15
+HKEAA_geog_2006_42,geog,HKEAA,2006,42,2006 No.42,choice,,1,geog_7,,0,50755,50753,[2],[2],[2],1,75,True,True,4,geog_eng_2006_q_42_0.png,image/png,,15
+HKEAA_geog_2006_43,geog,HKEAA,2006,43,2006 No.43,choice,,1,geog_7,,0,50759,50757,[3],[3],[3],1,75,True,True,4,geog_eng_2006_q_43_0.png,image/png,,15
+HKEAA_geog_2006_44,geog,HKEAA,2006,44,2006 No.44,choice,,1,geog_2,,0,50763,50761,[1],[1],[1],1,75,True,True,4,geog_eng_2006_q_44_0.png,image/png,,15
+HKEAA_geog_2006_45,geog,HKEAA,2006,45,2006 No.45,choice,,1,geog_2,,0,50767,50765,[2],[2],[2],1,75,True,True,4,geog_eng_2006_q_45_0.png,image/png,,15
+HKEAA_geog_2006_46,geog,HKEAA,2006,46,2006 No.46,choice,,1,geog_2,,0,50771,50769,[3],[3],[3],1,75,True,True,4,geog_eng_2006_q_46_0.png,image/png,,15
+HKEAA_geog_2006_47,geog,HKEAA,2006,47,2006 No.47,choice,,1,geog_2,,0,50775,50773,[1],[1],[1],1,75,True,True,4,geog_eng_2006_q_47_0.png,image/png,,15
+HKEAA_geog_2006_48,geog,HKEAA,2006,48,2006 No.48,choice,,1,geog_2,,0,50779,50777,[2],[2],[2],1,75,True,True,4,geog_eng_2006_q_48_0.png,image/png,,15
+HKEAA_geog_2006_49,geog,HKEAA,2006,49,2006 No.49,choice,,1,geog_2,,0,50783,50781,[0],[0],[0],1,75,True,True,4,geog_eng_2006_q_49_0.png,image/png,,15
+HKEAA_geog_2006_50,geog,HKEAA,2006,50,2006 No.50,choice,,1,geog_2,,0,50791,50789,[3],[3],[3],1,75,True,True,4,geog_eng_2006_q_50_0.png,image/png,,15
+HKEAA_geog_2007_1,geog,HKEAA,2007,1,2007 No.1,choice,,1,geog_12,,0,50811,50809,[0],[0],[0],1,75,True,True,4,geog_eng_2007_q_01_0.png,image/png,Map of Hong Kong=2007map.ceg.pdf,15
+HKEAA_geog_2007_2,geog,HKEAA,2007,2,2007 No.2,choice,,1,geog_12,,0,50855,50853,[0],[0],[0],1,75,True,True,4,geog_eng_2007_q_02_0.png,image/png,Map of Hong Kong=2007map.ceg.pdf,15
+HKEAA_geog_2007_3,geog,HKEAA,2007,3,2007 No.3,choice,,1,geog_12,,0,50899,50897,[3],[3],[3],1,75,True,True,4,geog_eng_2007_q_03_0.png,image/png,Map of Hong Kong=2007map.ceg.pdf,15
+HKEAA_geog_2007_4,geog,HKEAA,2007,4,2007 No.4,choice,,1,geog_12,,0,50943,50941,[2],[2],[2],1,75,True,True,4,geog_eng_2007_q_04_0.png,image/png,Map of Hong Kong=2007map.ceg.pdf,15
+HKEAA_geog_2007_5,geog,HKEAA,2007,5,2007 No.5,choice,,1,geog_12,,0,50987,50985,[3],[3],[3],1,75,True,True,4,geog_eng_2007_q_05_0.png,image/png,Map of Hong Kong=2007map.ceg.pdf,15
+HKEAA_geog_2007_6,geog,HKEAA,2007,6,2007 No.6,choice,,1,geog_12,,0,50995,50993,[3],[3],[3],1,75,True,True,4,geog_eng_2007_q_06_0.png,image/png,Map of Hong Kong=2007map.ceg.pdf,15
+HKEAA_geog_2007_7,geog,HKEAA,2007,7,2007 No.7,choice,,1,geog_12,,0,50999,50997,[0],[0],[0],1,75,True,True,4,geog_eng_2007_q_07_0.png,image/png,Map of Hong Kong=2007map.ceg.pdf,15
+HKEAA_geog_2007_8,geog,HKEAA,2007,8,2007 No.8,choice,,1,geog_12,,0,51003,51001,[0],[0],[0],1,75,True,True,4,geog_eng_2007_q_08_0.png,image/png,Map of Hong Kong=2007map.ceg.pdf,15
+HKEAA_geog_2007_9,geog,HKEAA,2007,9,2007 No.9,choice,,1,geog_12,,0,51007,51005,[2],[2],[2],1,75,True,True,4,geog_eng_2007_q_09_0.png,image/png,Map of Hong Kong=2007map.ceg.pdf,15
+HKEAA_geog_2007_10,geog,HKEAA,2007,10,2007 No.10,choice,,1,geog_12,,0,50815,50813,[2],[2],[2],1,75,True,True,4,geog_eng_2007_q_10_0.png,image/png,Map of Hong Kong=2007map.ceg.pdf,15
+HKEAA_geog_2007_11,geog,HKEAA,2007,11,2007 No.11,choice,,1,geog_9,,0,50819,50817,[1],[1],[1],1,75,True,True,4,geog_eng_2007_q_11_0.png,image/png,,15
+HKEAA_geog_2007_12,geog,HKEAA,2007,12,2007 No.12,choice,,1,geog_9,,0,50823,50821,[1],[1],[1],1,75,True,True,4,geog_eng_2007_q_12_0.png,image/png,,15
+HKEAA_geog_2007_13,geog,HKEAA,2007,13,2007 No.13,choice,,1,geog_9,,0,50827,50825,[2],[2],[2],1,75,True,True,4,geog_eng_2007_q_13_0.png,image/png,,15
+HKEAA_geog_2007_14,geog,HKEAA,2007,14,2007 No.14,choice,,1,geog_9,,0,50831,50829,[0],[0],[0],1,75,True,True,4,geog_eng_2007_q_14_0.png,image/png,,15
+HKEAA_geog_2007_15,geog,HKEAA,2007,15,2007 No.15,choice,,1,geog_7,,0,50835,50833,[2],[2],[2],1,75,True,True,4,geog_eng_2007_q_15_0.png,image/png,,15
+HKEAA_geog_2007_16,geog,HKEAA,2007,16,2007 No.16,choice,,1,geog_5,,0,50839,50837,[3],[3],[3],1,75,True,True,4,geog_eng_2007_q_16_0.png,image/png,,15
+HKEAA_geog_2007_17,geog,HKEAA,2007,17,2007 No.17,choice,,1,geog_5,,0,50843,50841,[1],[1],[1],1,75,True,True,4,geog_eng_2007_q_17_0.png,image/png,,15
+HKEAA_geog_2007_18,geog,HKEAA,2007,18,2007 No.18,choice,,1,geog_5,,0,50847,50845,[3],[3],[3],1,75,True,True,4,geog_eng_2007_q_18_0.png,image/png,,15
+HKEAA_geog_2007_19,geog,HKEAA,2007,19,2007 No.19,choice,,1,geog_5,,0,50851,50849,[3],[3],[3],1,75,True,True,4,geog_eng_2007_q_19_0.png,image/png,,15
+HKEAA_geog_2007_20,geog,HKEAA,2007,20,2007 No.20,choice,,1,geog_5,,0,50859,50857,[1],[1],[1],1,75,True,True,4,geog_eng_2007_q_20_0.png,image/png,,15
+HKEAA_geog_2007_21,geog,HKEAA,2007,21,2007 No.21,choice,,1,geog_5,,0,50863,50861,[1],[1],[1],1,75,True,True,4,geog_eng_2007_q_21_0.png,image/png,,15
+HKEAA_geog_2007_22,geog,HKEAA,2007,22,2007 No.22,choice,,1,geog_5,,0,50867,50865,[2],[2],[2],1,75,True,True,4,geog_eng_2007_q_22_0.png,image/png,,15
+HKEAA_geog_2007_23,geog,HKEAA,2007,23,2007 No.23,choice,,1,geog_3,,0,50871,50869,[2],[2],[2],1,75,True,True,4,geog_eng_2007_q_23_0.png,image/png,,15
+HKEAA_geog_2007_24,geog,HKEAA,2007,24,2007 No.24,choice,,1,geog_3,,0,50875,50873,[3],[3],[3],1,75,True,True,4,geog_eng_2007_q_24_0.png,image/png,,15
+HKEAA_geog_2007_25,geog,HKEAA,2007,25,2007 No.25,choice,,1,geog_3,,0,50879,50877,[2],[2],[2],1,75,True,True,4,geog_eng_2007_q_25_0.png,image/png,,15
+HKEAA_geog_2007_26,geog,HKEAA,2007,26,2007 No.26,choice,,1,geog_7,,0,50883,50881,[2],[2],[2],1,75,True,True,4,geog_eng_2007_q_26_0.png,image/png,,15
+HKEAA_geog_2007_27,geog,HKEAA,2007,27,2007 No.27,choice,,1,geog_3,,0,50887,50885,[0],[0],[0],1,75,True,True,4,geog_eng_2007_q_27_0.png,image/png,,15
+HKEAA_geog_2007_28,geog,HKEAA,2007,28,2007 No.28,choice,,1,geog_3,,0,50891,50889,[3],[3],[3],1,75,True,True,4,geog_eng_2007_q_28_0.png,image/png,,15
+HKEAA_geog_2007_29,geog,HKEAA,2007,29,2007 No.29,choice,,1,geog_3,,0,50895,50893,[0],[0],[0],1,75,True,True,4,geog_eng_2007_q_29_0.png,image/png,,15
+HKEAA_geog_2007_30,geog,HKEAA,2007,30,2007 No.30,choice,,1,geog_3,,0,50903,50901,[1],[1],[1],1,75,True,True,4,geog_eng_2007_q_30_0.png,image/png,,15
+HKEAA_geog_2007_31,geog,HKEAA,2007,31,2007 No.31,choice,,1,geog_2,,0,50907,50905,[1],[1],[1],1,75,True,True,4,geog_eng_2007_q_31_0.png,image/png,,15
+HKEAA_geog_2007_32,geog,HKEAA,2007,32,2007 No.32,choice,,1,geog_2,,0,50911,50909,[3],[3],[3],1,75,True,True,4,geog_eng_2007_q_32_0.png,image/png,,15
+HKEAA_geog_2007_33,geog,HKEAA,2007,33,2007 No.33,choice,,1,geog_2,,0,50915,50913,[0],[0],[0],1,75,True,True,4,geog_eng_2007_q_33_0.png,image/png,,15
+HKEAA_geog_2007_34,geog,HKEAA,2007,34,2007 No.34,choice,,1,geog_2,,0,50919,50917,[0],[0],[0],1,75,True,True,4,geog_eng_2007_q_34_0.png,image/png,,15
+HKEAA_geog_2007_35,geog,HKEAA,2007,35,2007 No.35,choice,,1,geog_2,,0,50923,50921,[1],[1],[1],1,75,True,True,4,geog_eng_2007_q_35_0.png,image/png,,15
+HKEAA_geog_2007_36,geog,HKEAA,2007,36,2007 No.36,choice,,1,geog_2,,0,50927,50925,[2],[2],[2],1,75,True,True,4,geog_eng_2007_q_36_0.png,image/png,,15
+HKEAA_geog_2007_37,geog,HKEAA,2007,37,2007 No.37,choice,,1,geog_2,,0,50931,50929,[0],[0],[0],1,75,True,True,4,geog_eng_2007_q_37_0.png,image/png,,15
+HKEAA_geog_2007_38,geog,HKEAA,2007,38,2007 No.38,choice,,1,geog_2,,0,50935,50933,[1],[1],[1],1,75,True,True,4,geog_eng_2007_q_38_0.png,image/png,,15
+HKEAA_geog_2007_39,geog,HKEAA,2007,39,2007 No.39,choice,,1,geog_1,,0,50939,50937,[3],[3],[3],1,75,True,True,4,geog_eng_2007_q_39_0.png,image/png,,15
+HKEAA_geog_2007_40,geog,HKEAA,2007,40,2007 No.40,choice,,1,geog_1,,0,50947,50945,[1],[1],[1],1,75,True,True,4,geog_eng_2007_q_40_0.png,image/png,,15
+HKEAA_geog_2007_41,geog,HKEAA,2007,41,2007 No.41,choice,,1,geog_1,,0,50951,50949,[2],[2],[2],1,75,True,True,4,geog_eng_2007_q_41_0.png,image/png,,15
+HKEAA_geog_2007_42,geog,HKEAA,2007,42,2007 No.42,choice,,1,geog_1,,0,50955,50953,[0],[0],[0],1,75,True,True,4,geog_eng_2007_q_42_0.png,image/png,,15
+HKEAA_geog_2007_43,geog,HKEAA,2007,43,2007 No.43,choice,,1,geog_1,,0,50959,50957,[2],[2],[2],1,75,True,True,4,geog_eng_2007_q_43_0.png,image/png,,15
+HKEAA_geog_2007_44,geog,HKEAA,2007,44,2007 No.44,choice,,1,geog_1,,0,50963,50961,[3],[3],[3],1,75,True,True,4,geog_eng_2007_q_44_0.png,image/png,,15
+HKEAA_geog_2007_45,geog,HKEAA,2007,45,2007 No.45,choice,,1,geog_1,,0,50967,50965,[3],[3],[3],1,75,True,True,4,geog_eng_2007_q_45_0.png,image/png,,15
+HKEAA_geog_2007_46,geog,HKEAA,2007,46,2007 No.46,choice,,1,geog_4,,0,50971,50969,[3],[3],[3],1,75,True,True,4,geog_eng_2007_q_46_0.png,image/png,,15
+HKEAA_geog_2007_47,geog,HKEAA,2007,47,2007 No.47,choice,,1,geog_4,,0,50975,50973,[0],[0],[0],1,75,True,True,4,geog_eng_2007_q_47_0.png,image/png,,15
+HKEAA_geog_2007_48,geog,HKEAA,2007,48,2007 No.48,choice,,1,geog_4,,0,50979,50977,[1],[1],[1],1,75,True,True,4,geog_eng_2007_q_48_0.png,image/png,,15
+HKEAA_geog_2007_49,geog,HKEAA,2007,49,2007 No.49,choice,,1,geog_4,,0,50983,50981,[2],[2],[2],1,75,True,True,4,geog_eng_2007_q_49_0.png,image/png,,15
+HKEAA_geog_2007_50,geog,HKEAA,2007,50,2007 No.50,choice,,1,geog_4,,0,50991,50989,[1],[1],[1],1,75,True,True,4,geog_eng_2007_q_50_0.png,image/png,,15
+HKEAA_geog_2008_1,geog,HKEAA,2008,1,2008 No.1,choice,,1,geog_12,,0,51011,51009,[0],[0],[0],1,75,True,True,4,geog_eng_2008_q_01_0.png,image/png,Map of Hong Kong=2008map.ceg.pdf,15
+HKEAA_geog_2008_2,geog,HKEAA,2008,2,2008 No.2,choice,,1,geog_12,,0,51055,51053,[1],[1],[1],1,75,True,True,4,geog_eng_2008_q_02_0.png,image/png,Map of Hong Kong=2008map.ceg.pdf,15
+HKEAA_geog_2008_3,geog,HKEAA,2008,3,2008 No.3,choice,,1,geog_12,,0,51099,51097,[3],[3],[3],1,75,True,True,4,geog_eng_2008_q_03_0.png,image/png,Map of Hong Kong=2008map.ceg.pdf,15
+HKEAA_geog_2008_4,geog,HKEAA,2008,4,2008 No.4,choice,,1,geog_12,,0,51139,51137,[1],[1],[1],1,75,True,True,4,geog_eng_2008_q_04_0.png,image/png,Map of Hong Kong=2008map.ceg.pdf,15
+HKEAA_geog_2008_5,geog,HKEAA,2008,5,2008 No.5,choice,,1,geog_12,,0,51183,51181,[0],[0],[0],1,75,True,True,4,geog_eng_2008_q_05_0.png,image/png,Map of Hong Kong=2008map.ceg.pdf,15
+HKEAA_geog_2008_6,geog,HKEAA,2008,6,2008 No.6,choice,,1,geog_12,,0,51191,51189,[3],[3],[3],1,75,True,True,4,geog_eng_2008_q_06_0.png,image/png,Map of Hong Kong=2008map.ceg.pdf,15
+HKEAA_geog_2008_7,geog,HKEAA,2008,7,2008 No.7,choice,,1,geog_12,,0,51195,51193,[1],[1],[1],1,75,True,True,4,geog_eng_2008_q_07_0.png,image/png,Map of Hong Kong=2008map.ceg.pdf,15
+HKEAA_geog_2008_8,geog,HKEAA,2008,8,2008 No.8,choice,,1,geog_12,,0,51199,51197,[0],[0],[0],1,75,True,True,4,geog_eng_2008_q_08_0.png,image/png,Map of Hong Kong=2008map.ceg.pdf,15
+HKEAA_geog_2008_9,geog,HKEAA,2008,9,2008 No.9,choice,,1,geog_12,,0,51203,51201,[2],[2],[2],1,75,True,True,4,geog_eng_2008_q_09_0.png,image/png,Map of Hong Kong=2008map.ceg.pdf,15
+HKEAA_geog_2008_10,geog,HKEAA,2008,10,2008 No.10,choice,,1,geog_12,,0,51015,51013,[1],[1],[1],1,75,True,True,4,geog_eng_2008_q_10_0.png,image/png,Map of Hong Kong=2008map.ceg.pdf,15
+HKEAA_geog_2008_11,geog,HKEAA,2008,11,2008 No.11,choice,,1,geog_1,,0,51019,51017,[3],[3],[3],1,75,True,True,4,geog_eng_2008_q_11_0.png,image/png,,15
+HKEAA_geog_2008_12,geog,HKEAA,2008,12,2008 No.12,choice,,1,geog_1,,0,51023,51021,[2],[2],[2],1,75,True,True,4,geog_eng_2008_q_12_0.png,image/png,,15
+HKEAA_geog_2008_13,geog,HKEAA,2008,13,2008 No.13,choice,,1,geog_1,,0,51027,51025,[3],[3],[3],1,75,True,True,4,geog_eng_2008_q_13_0.png,image/png,,15
+HKEAA_geog_2008_14,geog,HKEAA,2008,14,2008 No.14,choice,,1,geog_8,,0,51031,51029,[2],[2],[2],1,75,True,True,4,geog_eng_2008_q_14_0.png,image/png,,15
+HKEAA_geog_2008_15,geog,HKEAA,2008,15,2008 No.15,choice,,1,geog_1,,0,51035,51033,[2],[2],[2],1,75,True,True,4,geog_eng_2008_q_15_0.png,image/png,,15
+HKEAA_geog_2008_16,geog,HKEAA,2008,16,2008 No.16,choice,,1,geog_1,,0,51039,51037,[3],[3],[3],1,75,True,True,4,geog_eng_2008_q_16_0.png,image/png,,15
+HKEAA_geog_2008_17,geog,HKEAA,2008,17,2008 No.17,choice,,1,geog_1,,0,51043,51041,[1],[1],[1],1,75,True,True,4,geog_eng_2008_q_17_0.png,image/png,,15
+HKEAA_geog_2008_18,geog,HKEAA,2008,18,2008 No.18,choice,,1,geog_4,,0,51047,51045,[1],[1],[1],1,75,True,True,4,geog_eng_2008_q_18_0.png,image/png,,15
+HKEAA_geog_2008_19,geog,HKEAA,2008,19,2008 No.19,choice,,1,geog_4,,0,51051,51049,[1],[1],[1],1,75,True,True,4,geog_eng_2008_q_19_0.png,image/png,,15
+HKEAA_geog_2008_20,geog,HKEAA,2008,20,2008 No.20,choice,,1,geog_4,,0,51059,51057,[3],[3],[3],1,75,True,True,4,geog_eng_2008_q_20_0.png,image/png,,15
+HKEAA_geog_2008_21,geog,HKEAA,2008,21,2008 No.21,choice,,1,geog_4,,0,51063,51061,[3],[3],[3],1,75,True,True,4,geog_eng_2008_q_21_0.png,image/png,,15
+HKEAA_geog_2008_22,geog,HKEAA,2008,22,2008 No.22,choice,,1,geog_4,,0,51067,51065,[1],[1],[1],1,75,True,True,4,geog_eng_2008_q_22_0.png,image/png,,15
+HKEAA_geog_2008_23,geog,HKEAA,2008,23,2008 No.23,choice,,1,geog_4,,0,51071,51069,[1],[1],[1],1,75,True,True,4,geog_eng_2008_q_23_0.png,image/png,,15
+HKEAA_geog_2008_24,geog,HKEAA,2008,24,2008 No.24,choice,,1,geog_9,,0,51075,51073,[1],[1],[1],1,75,True,True,4,geog_eng_2008_q_24_0.png,image/png,,15
+HKEAA_geog_2008_25,geog,HKEAA,2008,25,2008 No.25,choice,,1,geog_9,,0,51079,51077,[0],[0],[0],1,75,True,True,4,geog_eng_2008_q_25_0.png,image/png,,15
+HKEAA_geog_2008_26,geog,HKEAA,2008,26,2008 No.26,choice,,1,geog_9,,0,51083,51081,[2],[2],[2],1,75,True,True,4,geog_eng_2008_q_26_0.png,image/png,,15
+HKEAA_geog_2008_27,geog,HKEAA,2008,27,2008 No.27,choice,,1,geog_9,,0,51087,51085,[2],[2],[2],1,75,True,True,4,geog_eng_2008_q_27_0.png,image/png,,15
+HKEAA_geog_2008_28,geog,HKEAA,2008,28,2008 No.28,choice,,1,geog_9,,0,51091,51089,[0],[0],[0],1,75,True,True,4,geog_eng_2008_q_28_0.png,image/png,,15
+HKEAA_geog_2008_29,geog,HKEAA,2008,29,2008 No.29,choice,,1,geog_7,,0,51095,51093,[1],[1],[1],1,75,True,True,4,geog_eng_2008_q_29_0.png,image/png,,15
+HKEAA_geog_2008_30,geog,HKEAA,2008,30,2008 No.30,choice,,1,geog_7,,0,51103,51101,[2],[2],[2],1,75,True,True,4,geog_eng_2008_q_30_0.png,image/png,,15
+HKEAA_geog_2008_31,geog,HKEAA,2008,31,2008 No.31,choice,,1,geog_7,,0,51107,51105,[3],[3],[3],1,75,True,True,4,geog_eng_2008_q_31_0.png,image/png,,15
+HKEAA_geog_2008_32,geog,HKEAA,2008,32,2008 No.32,choice,,1,geog_5,,0,51111,51109,[0],[0],[0],1,75,True,True,4,geog_eng_2008_q_32_0.png,image/png,,15
+HKEAA_geog_2008_33,geog,HKEAA,2008,33,2008 No.33,choice,,1,geog_5,,0,51115,51113,[1],[1],[1],1,75,True,True,4,geog_eng_2008_q_33_0.png,image/png,,15
+HKEAA_geog_2008_35,geog,HKEAA,2008,35,2008 No.35,choice,,1,geog_5,,0,51119,51117,[0],[0],[0],1,75,True,True,4,geog_eng_2008_q_35_0.png,image/png,,15
+HKEAA_geog_2008_36,geog,HKEAA,2008,36,2008 No.36,choice,,1,geog_5,,0,51123,51121,[3],[3],[3],1,75,True,True,4,geog_eng_2008_q_36_0.png,image/png,,15
+HKEAA_geog_2008_37,geog,HKEAA,2008,37,2008 No.37,choice,,1,geog_5,,0,51127,51125,[2],[2],[2],1,75,True,True,4,geog_eng_2008_q_37_0.png,image/png,,15
+HKEAA_geog_2008_38,geog,HKEAA,2008,38,2008 No.38,choice,,1,geog_5,,0,51131,51129,[0],[0],[0],1,75,True,True,4,geog_eng_2008_q_38_0.png,image/png,,15
+HKEAA_geog_2008_39,geog,HKEAA,2008,39,2008 No.39,choice,,1,geog_3,,0,51135,51133,[2],[2],[2],1,75,True,True,4,geog_eng_2008_q_39_0.png,image/png,,15
+HKEAA_geog_2008_40,geog,HKEAA,2008,40,2008 No.40,choice,,1,geog_3,,0,51143,51141,[1],[1],[1],1,75,True,True,4,geog_eng_2008_q_40_0.png,image/png,,15
+HKEAA_geog_2008_41,geog,HKEAA,2008,41,2008 No.41,choice,,1,geog_3,,0,51147,51145,[0],[0],[0],1,75,True,True,4,geog_eng_2008_q_41_0.png,image/png,,15
+HKEAA_geog_2008_42,geog,HKEAA,2008,42,2008 No.42,choice,,1,geog_4,,0,51151,51149,[3],[3],[3],1,75,True,True,4,geog_eng_2008_q_42_0.png,image/png,,15
+HKEAA_geog_2008_43,geog,HKEAA,2008,43,2008 No.43,choice,,1,geog_4,,0,51155,51153,[2],[2],[2],1,75,True,True,4,geog_eng_2008_q_43_0.png,image/png,,15
+HKEAA_geog_2008_44,geog,HKEAA,2008,44,2008 No.44,choice,,1,geog_2,,0,51159,51157,[3],[3],[3],1,75,True,True,4,geog_eng_2008_q_44_0.png,image/png,,15
+HKEAA_geog_2008_45,geog,HKEAA,2008,45,2008 No.45,choice,,1,geog_2,,0,51163,51161,[3],[3],[3],1,75,True,True,4,geog_eng_2008_q_45_0.png,image/png,,15
+HKEAA_geog_2008_46,geog,HKEAA,2008,46,2008 No.46,choice,,1,geog_2,,0,51167,51165,[2],[2],[2],1,75,True,True,4,geog_eng_2008_q_46_0.png,image/png,,15
+HKEAA_geog_2008_47,geog,HKEAA,2008,47,2008 No.47,choice,,1,geog_2,,0,51171,51169,[0],[0],[0],1,75,True,True,4,geog_eng_2008_q_47_0.png,image/png,,15
+HKEAA_geog_2008_48,geog,HKEAA,2008,48,2008 No.48,choice,,1,geog_2,,0,51175,51173,[0],[0],[0],1,75,True,True,4,geog_eng_2008_q_48_0.png,image/png,,15
+HKEAA_geog_2008_49,geog,HKEAA,2008,49,2008 No.49,choice,,1,geog_2,,0,51179,51177,[0],[0],[0],1,75,True,True,4,geog_eng_2008_q_49_0.png,image/png,,15
+HKEAA_geog_2008_50,geog,HKEAA,2008,50,2008 No.50,choice,,1,geog_2,,0,51187,51185,[3],[3],[3],1,75,True,True,4,geog_eng_2008_q_50_0.png,image/png,,15
+HKEAA_geog_2009_1,geog,HKEAA,2009,1,2009 No.1,choice,,1,geog_12,,0,51207,51205,[2],[2],[2],1,75,True,True,4,geog_eng_2009_q_01_0.png,image/png,Map of Hong Kong=2009map.ceg.pdf,15
+HKEAA_geog_2009_2,geog,HKEAA,2009,2,2009 No.2,choice,,1,geog_12,,0,51247,51245,[1],[1],[1],1,75,True,True,4,geog_eng_2009_q_02_0.png,image/png,Map of Hong Kong=2009map.ceg.pdf,15
+HKEAA_geog_2009_3,geog,HKEAA,2009,3,2009 No.3,choice,,1,geog_12,,0,51291,51289,[3],[3],[3],1,75,True,True,4,geog_eng_2009_q_03_0.png,image/png,Map of Hong Kong=2009map.ceg.pdf,15
+HKEAA_geog_2009_4,geog,HKEAA,2009,4,2009 No.4,choice,,1,geog_12,,0,51331,51329,[2],[2],[2],1,75,True,True,4,geog_eng_2009_q_04_0.png,image/png,Map of Hong Kong=2009map.ceg.pdf,15
+HKEAA_geog_2009_5,geog,HKEAA,2009,5,2009 No.5,choice,,1,geog_12,,0,51375,51373,[3],[3],[3],1,75,True,True,4,geog_eng_2009_q_05_0.png,image/png,Map of Hong Kong=2009map.ceg.pdf,15
+HKEAA_geog_2009_6,geog,HKEAA,2009,6,2009 No.6,choice,,1,geog_12,,0,51383,51381,[0],[0],[0],1,75,True,True,4,geog_eng_2009_q_06_0.png,image/png,Map of Hong Kong=2009map.ceg.pdf,15
+HKEAA_geog_2009_7,geog,HKEAA,2009,7,2009 No.7,choice,,1,geog_12,,0,51387,51385,[1],[1],[1],1,75,True,True,4,geog_eng_2009_q_07_0.png,image/png,Map of Hong Kong=2009map.ceg.pdf,15
+HKEAA_geog_2009_8,geog,HKEAA,2009,8,2009 No.8,choice,,1,geog_12,,0,51391,51389,[3],[3],[3],1,75,True,True,4,geog_eng_2009_q_08_0.png,image/png,Map of Hong Kong=2009map.ceg.pdf,15
+HKEAA_geog_2009_9,geog,HKEAA,2009,9,2009 No.9,choice,,1,geog_12,,0,51395,51393,[3],[3],[3],1,75,True,True,4,geog_eng_2009_q_09_0.png,image/png,Map of Hong Kong=2009map.ceg.pdf,15
+HKEAA_geog_2009_10,geog,HKEAA,2009,10,2009 No.10,choice,,1,geog_12,,0,51211,51209,[0],[0],[0],1,75,True,True,4,geog_eng_2009_q_10_0.png,image/png,Map of Hong Kong=2009map.ceg.pdf,15
+HKEAA_geog_2009_11,geog,HKEAA,2009,11,2009 No.11,choice,,1,geog_1,,0,51215,51213,[3],[3],[3],1,75,True,True,4,geog_eng_2009_q_11_0.png,image/png,,15
+HKEAA_geog_2009_12,geog,HKEAA,2009,12,2009 No.12,choice,,1,geog_1,,0,51219,51217,[0],[0],[0],1,75,True,True,4,geog_eng_2009_q_12_0.png,image/png,,15
+HKEAA_geog_2009_13,geog,HKEAA,2009,13,2009 No.13,choice,,1,geog_1,,0,51223,51221,[3],[3],[3],1,75,True,True,4,geog_eng_2009_q_13_0.png,image/png,,15
+HKEAA_geog_2009_14,geog,HKEAA,2009,14,2009 No.14,choice,,1,geog_1,,0,51227,51225,[1],[1],[1],1,75,True,True,4,geog_eng_2009_q_14_0.png,image/png,,15
+HKEAA_geog_2009_15,geog,HKEAA,2009,15,2009 No.15,choice,,1,geog_1,,0,51231,51229,[0],[0],[0],1,75,True,True,4,geog_eng_2009_q_15_0.png,image/png,,15
+HKEAA_geog_2009_17,geog,HKEAA,2009,17,2009 No.17,choice,,1,geog_2,,0,51235,51233,[3],[3],[3],1,75,True,True,4,geog_eng_2009_q_17_0.png,image/png,,15
+HKEAA_geog_2009_18,geog,HKEAA,2009,18,2009 No.18,choice,,1,geog_2,,0,51239,51237,[0],[0],[0],1,75,True,True,4,geog_eng_2009_q_18_0.png,image/png,,15
+HKEAA_geog_2009_19,geog,HKEAA,2009,19,2009 No.19,choice,,1,geog_2,,0,51243,51241,[1],[1],[1],1,75,True,True,4,geog_eng_2009_q_19_0.png,image/png,,15
+HKEAA_geog_2009_20,geog,HKEAA,2009,20,2009 No.20,choice,,1,geog_2,,0,51251,51249,[0],[0],[0],1,75,True,True,4,geog_eng_2009_q_20_0.png,image/png,,15
+HKEAA_geog_2009_21,geog,HKEAA,2009,21,2009 No.21,choice,,1,geog_2,,0,51255,51253,[2],[2],[2],1,75,True,True,4,geog_eng_2009_q_21_0.png,image/png,,15
+HKEAA_geog_2009_22,geog,HKEAA,2009,22,2009 No.22,choice,,1,geog_2,,0,51259,51257,[0],[0],[0],1,75,True,True,4,geog_eng_2009_q_22_0.png,image/png,,15
+HKEAA_geog_2009_23,geog,HKEAA,2009,23,2009 No.23,choice,,1,geog_5,,0,51263,51261,[1],[1],[1],1,75,True,True,4,geog_eng_2009_q_23_0.png,image/png,,15
+HKEAA_geog_2009_24,geog,HKEAA,2009,24,2009 No.24,choice,,1,geog_5,,0,51267,51265,[0],[0],[0],1,75,True,True,4,geog_eng_2009_q_24_0.png,image/png,,15
+HKEAA_geog_2009_25,geog,HKEAA,2009,25,2009 No.25,choice,,1,geog_5,,0,51271,51269,[2],[2],[2],1,75,True,True,4,geog_eng_2009_q_25_0.png,image/png,,15
+HKEAA_geog_2009_26,geog,HKEAA,2009,26,2009 No.26,choice,,1,geog_5,,0,51275,51273,[2],[2],[2],1,75,True,True,4,geog_eng_2009_q_26_0.png,image/png,,15
+HKEAA_geog_2009_27,geog,HKEAA,2009,27,2009 No.27,choice,,1,geog_5,,0,51279,51277,[1],[1],[1],1,75,True,True,4,geog_eng_2009_q_27_0.png,image/png,,15
+HKEAA_geog_2009_28,geog,HKEAA,2009,28,2009 No.28,choice,,1,geog_5,,0,51283,51281,[0],[0],[0],1,75,True,True,4,geog_eng_2009_q_28_0.png,image/png,,15
+HKEAA_geog_2009_29,geog,HKEAA,2009,29,2009 No.29,choice,,1,geog_5,,0,51287,51285,[1],[1],[1],1,75,True,True,4,geog_eng_2009_q_29_0.png,image/png,,15
+HKEAA_geog_2009_30,geog,HKEAA,2009,30,2009 No.30,choice,,1,geog_3,,0,51295,51293,[1],[1],[1],1,75,True,True,4,geog_eng_2009_q_30_0.png,image/png,,15
+HKEAA_geog_2009_31,geog,HKEAA,2009,31,2009 No.31,choice,,1,geog_3,,0,51299,51297,[0],[0],[0],1,75,True,True,4,geog_eng_2009_q_31_0.png,image/png,,15
+HKEAA_geog_2009_32,geog,HKEAA,2009,32,2009 No.32,choice,,1,geog_3,,0,51303,51301,[3],[3],[3],1,75,True,True,4,geog_eng_2009_q_32_0.png,image/png,,15
+HKEAA_geog_2009_34,geog,HKEAA,2009,34,2009 No.34,choice,,1,geog_4,,0,51307,51305,[2],[2],[2],1,75,True,True,4,geog_eng_2009_q_34_0.png,image/png,,15
+HKEAA_geog_2009_35,geog,HKEAA,2009,35,2009 No.35,choice,,1,geog_7,,0,51311,51309,[3],[3],[3],1,75,True,True,4,geog_eng_2009_q_35_0.png,image/png,,15
+HKEAA_geog_2009_36,geog,HKEAA,2009,36,2009 No.36,choice,,1,geog_9,,0,51315,51313,[1],[1],[1],1,75,True,True,4,geog_eng_2009_q_36_0.png,image/png,,15
+HKEAA_geog_2009_37,geog,HKEAA,2009,37,2009 No.37,choice,,1,geog_9,,0,51319,51317,[3],[3],[3],1,75,True,True,4,geog_eng_2009_q_37_0.png,image/png,,15
+HKEAA_geog_2009_38,geog,HKEAA,2009,38,2009 No.38,choice,,1,geog_9,,0,51323,51321,[0],[0],[0],1,75,True,True,4,geog_eng_2009_q_38_0.png,image/png,,15
+HKEAA_geog_2009_39,geog,HKEAA,2009,39,2009 No.39,choice,,1,geog_7,,0,51327,51325,[0],[0],[0],1,75,True,True,4,geog_eng_2009_q_39_0.png,image/png,,15
+HKEAA_geog_2009_40,geog,HKEAA,2009,40,2009 No.40,choice,,1,geog_9,,0,51335,51333,[1],[1],[1],1,75,True,True,4,geog_eng_2009_q_40_0.png,image/png,,15
+HKEAA_geog_2009_41,geog,HKEAA,2009,41,2009 No.41,choice,,1,geog_7,,0,51339,51337,[3],[3],[3],1,75,True,True,4,geog_eng_2009_q_41_0.png,image/png,,15
+HKEAA_geog_2009_42,geog,HKEAA,2009,42,2009 No.42,choice,,1,geog_9,,0,51343,51341,[2],[2],[2],1,75,True,True,4,geog_eng_2009_q_42_0.png,image/png,,15
+HKEAA_geog_2009_43,geog,HKEAA,2009,43,2009 No.43,choice,,1,geog_9,,0,51347,51345,[3],[3],[3],1,75,True,True,4,geog_eng_2009_q_43_0.png,image/png,,15
+HKEAA_geog_2009_44,geog,HKEAA,2009,44,2009 No.44,choice,,1,geog_4,,0,51351,51349,[0],[0],[0],1,75,True,True,4,geog_eng_2009_q_44_0.png,image/png,,15
+HKEAA_geog_2009_45,geog,HKEAA,2009,45,2009 No.45,choice,,1,geog_4,,0,51355,51353,[2],[2],[2],1,75,True,True,4,geog_eng_2009_q_45_0.png,image/png,,15
+HKEAA_geog_2009_46,geog,HKEAA,2009,46,2009 No.46,choice,,1,geog_4,,0,51359,51357,[2],[2],[2],1,75,True,True,4,geog_eng_2009_q_46_0.png,image/png,,15
+HKEAA_geog_2009_47,geog,HKEAA,2009,47,2009 No.47,choice,,1,geog_4,,0,51363,51361,[1],[1],[1],1,75,True,True,4,geog_eng_2009_q_47_0.png,image/png,,15
+HKEAA_geog_2009_48,geog,HKEAA,2009,48,2009 No.48,choice,,1,geog_4,,0,51367,51365,[2],[2],[2],1,75,True,True,4,geog_eng_2009_q_48_0.png,image/png,,15
+HKEAA_geog_2009_49,geog,HKEAA,2009,49,2009 No.49,choice,,1,geog_4,,0,51371,51369,[1],[1],[1],1,75,True,True,4,geog_eng_2009_q_49_0.png,image/png,,15
+HKEAA_geog_2009_50,geog,HKEAA,2009,50,2009 No.50,choice,,1,geog_4,,0,51379,51377,[2],[2],[2],1,75,True,True,4,geog_eng_2009_q_50_0.png,image/png,,15
+HKEAA_geog_2010_1,geog,HKEAA,2010,1,2010 No.1,choice,,1,geog_12,,0,51399,51397,[1],[1],[1],1,75,True,True,4,geog_eng_2010_q_01_0.png,image/png,Map A and B of Hong Kong=2010map.ceg.pdf,15
+HKEAA_geog_2010_2,geog,HKEAA,2010,2,2010 No.2,choice,,1,geog_12,,0,51443,51441,[3],[3],[3],1,75,True,True,4,geog_eng_2010_q_02_0.png,image/png,Map A and B of Hong Kong=2010map.ceg.pdf,15
+HKEAA_geog_2010_3,geog,HKEAA,2010,3,2010 No.3,choice,,1,geog_12,,0,51487,51485,[0],[0],[0],1,75,True,True,4,geog_eng_2010_q_03_0.png,image/png,Map A and B of Hong Kong=2010map.ceg.pdf,15
+HKEAA_geog_2010_4,geog,HKEAA,2010,4,2010 No.4,choice,,1,geog_12,,0,51531,51529,[0],[0],[0],1,75,True,True,4,geog_eng_2010_q_04_0.png,image/png,Map A and B of Hong Kong=2010map.ceg.pdf,15
+HKEAA_geog_2010_5,geog,HKEAA,2010,5,2010 No.5,choice,,1,geog_12,,0,51575,51573,[3],[3],[3],1,75,True,True,4,geog_eng_2010_q_05_0.png,image/png,Map A and B of Hong Kong=2010map.ceg.pdf,15
+HKEAA_geog_2010_6,geog,HKEAA,2010,6,2010 No.6,choice,,1,geog_12,,0,51583,51581,[2],[2],[2],1,75,True,True,4,geog_eng_2010_q_06_0.png,image/png,Map A and B of Hong Kong=2010map.ceg.pdf,15
+HKEAA_geog_2010_7,geog,HKEAA,2010,7,2010 No.7,choice,,1,geog_12,,0,51587,51585,[1],[1],[1],1,75,True,True,4,geog_eng_2010_q_07_0.png,image/png,Map A and B of Hong Kong=2010map.ceg.pdf,15
+HKEAA_geog_2010_8,geog,HKEAA,2010,8,2010 No.8,choice,,1,geog_12,,0,51591,51589,[1],[1],[1],1,75,True,True,4,geog_eng_2010_q_08_0.png,image/png,Map A and B of Hong Kong=2010map.ceg.pdf,15
+HKEAA_geog_2010_9,geog,HKEAA,2010,9,2010 No.9,choice,,1,geog_12,,0,51595,51593,[2],[2],[2],1,75,True,True,4,geog_eng_2010_q_09_0.png,image/png,Map A and B of Hong Kong=2010map.ceg.pdf,15
+HKEAA_geog_2010_10,geog,HKEAA,2010,10,2010 No.10,choice,,1,geog_12,,0,51403,51401,[1],[1],[1],1,75,True,True,4,geog_eng_2010_q_10_0.png,image/png,Map A and B of Hong Kong=2010map.ceg.pdf,15
+HKEAA_geog_2010_11,geog,HKEAA,2010,11,2010 No.11,choice,,1,geog_9,,0,51407,51405,[3],[3],[3],1,75,True,True,4,geog_eng_2010_q_11_0.png,image/png,,15
+HKEAA_geog_2010_12,geog,HKEAA,2010,12,2010 No.12,choice,,1,geog_9,,0,51411,51409,[0],[0],[0],1,75,True,True,4,geog_eng_2010_q_12_0.png,image/png,,15
+HKEAA_geog_2010_13,geog,HKEAA,2010,13,2010 No.13,choice,,1,geog_7,,0,51415,51413,[1],[1],[1],1,75,True,True,4,geog_eng_2010_q_13_0.png,image/png,,15
+HKEAA_geog_2010_14,geog,HKEAA,2010,14,2010 No.14,choice,,1,geog_4,,0,51419,51417,[2],[2],[2],1,75,True,True,4,geog_eng_2010_q_14_0.png,image/png,,15
+HKEAA_geog_2010_15,geog,HKEAA,2010,15,2010 No.15,choice,,1,geog_5,,0,51423,51421,[2],[2],[2],1,75,True,True,4,geog_eng_2010_q_15_0.png,image/png,,15
+HKEAA_geog_2010_16,geog,HKEAA,2010,16,2010 No.16,choice,,1,geog_9,,0,51427,51425,[3],[3],[3],1,75,True,True,4,geog_eng_2010_q_16_0.png,image/png,,15
+HKEAA_geog_2010_17,geog,HKEAA,2010,17,2010 No.17,choice,,1,geog_3,,0,51431,51429,[0],[0],[0],1,75,True,True,4,geog_eng_2010_q_17_0.png,image/png,,15
+HKEAA_geog_2010_18,geog,HKEAA,2010,18,2010 No.18,choice,,1,geog_7,,0,51435,51433,[2],[2],[2],1,75,True,True,4,geog_eng_2010_q_18_0.png,image/png,,15
+HKEAA_geog_2010_19,geog,HKEAA,2010,19,2010 No.19,choice,,1,geog_5,,0,51439,51437,[3],[3],[3],1,75,True,True,4,geog_eng_2010_q_19_0.png,image/png,,15
+HKEAA_geog_2010_20,geog,HKEAA,2010,20,2010 No.20,choice,,1,geog_5,,0,51447,51445,[1],[1],[1],1,75,True,True,4,geog_eng_2010_q_20_0.png,image/png,,15
+HKEAA_geog_2010_21,geog,HKEAA,2010,21,2010 No.21,choice,,1,geog_5,,0,51451,51449,[3],[3],[3],1,75,True,True,4,geog_eng_2010_q_21_0.png,image/png,,15
+HKEAA_geog_2010_22,geog,HKEAA,2010,22,2010 No.22,choice,,1,geog_2,,0,51455,51453,[2],[2],[2],1,75,True,True,4,geog_eng_2010_q_22_0.png,image/png,,15
+HKEAA_geog_2010_23,geog,HKEAA,2010,23,2010 No.23,choice,,1,geog_2,,0,51459,51457,[0],[0],[0],1,75,True,True,4,geog_eng_2010_q_23_0.png,image/png,,15
+HKEAA_geog_2010_24,geog,HKEAA,2010,24,2010 No.24,choice,,1,geog_2,,0,51463,51461,[3],[3],[3],1,75,True,True,4,geog_eng_2010_q_24_0.png,image/png,,15
+HKEAA_geog_2010_25,geog,HKEAA,2010,25,2010 No.25,choice,,1,geog_7,,0,51467,51465,[3],[3],[3],1,75,True,True,4,geog_eng_2010_q_25_0.png,image/png,,15
+HKEAA_geog_2010_26,geog,HKEAA,2010,26,2010 No.26,choice,,1,geog_2,,0,51471,51469,[3],[3],[3],1,75,True,True,4,geog_eng_2010_q_26_0.png,image/png,,15
+HKEAA_geog_2010_27,geog,HKEAA,2010,27,2010 No.27,choice,,1,geog_4,,0,51475,51473,[2],[2],[2],1,75,True,True,4,geog_eng_2010_q_27_0.png,image/png,,15
+HKEAA_geog_2010_28,geog,HKEAA,2010,28,2010 No.28,choice,,1,geog_2,,0,51479,51477,[3],[3],[3],1,75,True,True,4,geog_eng_2010_q_28_0.png,image/png,,15
+HKEAA_geog_2010_29,geog,HKEAA,2010,29,2010 No.29,choice,,1,geog_4,,0,51483,51481,[3],[3],[3],1,75,True,True,4,geog_eng_2010_q_29_0.png,image/png,,15
+HKEAA_geog_2010_30,geog,HKEAA,2010,30,2010 No.30,choice,,1,geog_4,,0,51491,51489,[2],[2],[2],1,75,True,True,4,geog_eng_2010_q_30_0.png,image/png,,15
+HKEAA_geog_2010_31,geog,HKEAA,2010,31,2010 No.31,choice,,1,geog_3,,0,51495,51493,[3],[3],[3],1,75,True,True,4,geog_eng_2010_q_31_0.png,image/png,,15
+HKEAA_geog_2010_32,geog,HKEAA,2010,32,2010 No.32,choice,,1,geog_4,,0,51499,51497,[2],[2],[2],1,75,True,True,4,geog_eng_2010_q_32_0.png,image/png,,15
+HKEAA_geog_2010_33,geog,HKEAA,2010,33,2010 No.33,choice,,1,geog_4,,0,51503,51501,[2],[2],[2],1,75,True,True,4,geog_eng_2010_q_33_0.png,image/png,,15
+HKEAA_geog_2010_34,geog,HKEAA,2010,34,2010 No.34,choice,,1,geog_3,,0,51507,51505,[1],[1],[1],1,75,True,True,4,geog_eng_2010_q_34_0.png,image/png,,15
+HKEAA_geog_2010_35,geog,HKEAA,2010,35,2010 No.35,choice,,1,geog_8,,0,51511,51509,[0],[0],[0],1,75,True,True,4,geog_eng_2010_q_35_0.png,image/png,,15
+HKEAA_geog_2010_36,geog,HKEAA,2010,36,2010 No.36,choice,,1,geog_3,,0,51515,51513,[2],[2],[2],1,75,True,True,4,geog_eng_2010_q_36_0.png,image/png,,15
+HKEAA_geog_2010_37,geog,HKEAA,2010,37,2010 No.37,choice,,1,geog_1,,0,51519,51517,[1],[1],[1],1,75,True,True,4,geog_eng_2010_q_37_0.png,image/png,,15
+HKEAA_geog_2010_38,geog,HKEAA,2010,38,2010 No.38,choice,,1,geog_1,,0,51523,51521,[0],[0],[0],1,75,True,True,4,geog_eng_2010_q_38_0.png,image/png,,15
+HKEAA_geog_2010_39,geog,HKEAA,2010,39,2010 No.39,choice,,1,geog_1,,0,51527,51525,[1],[1],[1],1,75,True,True,4,geog_eng_2010_q_39_0.png,image/png,,15
+HKEAA_geog_2010_40,geog,HKEAA,2010,40,2010 No.40,choice,,1,geog_1,,0,51535,51533,[1],[1],[1],1,75,True,True,4,geog_eng_2010_q_40_0.png,image/png,,15
+HKEAA_geog_2010_41,geog,HKEAA,2010,41,2010 No.41,choice,,1,geog_1,,0,51539,51537,[0],[0],[0],1,75,True,True,4,geog_eng_2010_q_41_0.png,image/png,,15
+HKEAA_geog_2010_42,geog,HKEAA,2010,42,2010 No.42,choice,,1,geog_1,,0,51543,51541,[1],[1],[1],1,75,True,True,4,geog_eng_2010_q_42_0.png,image/png,,15
+HKEAA_geog_2010_43,geog,HKEAA,2010,43,2010 No.43,choice,,1,geog_2,,0,51547,51545,[0],[0],[0],1,75,True,True,4,geog_eng_2010_q_43_0.png,image/png,,15
+HKEAA_geog_2010_44,geog,HKEAA,2010,44,2010 No.44,choice,,1,geog_2,,0,51551,51549,[3],[3],[3],1,75,True,True,4,geog_eng_2010_q_44_0.png,image/png,,15
+HKEAA_geog_2010_45,geog,HKEAA,2010,45,2010 No.45,choice,,1,geog_1,,0,51555,51553,[0],[0],[0],1,75,True,True,4,geog_eng_2010_q_45_0.png,image/png,,15
+HKEAA_geog_2010_46,geog,HKEAA,2010,46,2010 No.46,choice,,1,geog_5,,0,51559,51557,[2],[2],[2],1,75,True,True,4,geog_eng_2010_q_46_0.png,image/png,,15
+HKEAA_geog_2010_47,geog,HKEAA,2010,47,2010 No.47,choice,,1,geog_4,,0,51563,51561,[0],[0],[0],1,75,True,True,4,geog_eng_2010_q_47_0.png,image/png,,15
+HKEAA_geog_2010_48,geog,HKEAA,2010,48,2010 No.48,choice,,1,geog_5,,0,51567,51565,[1],[1],[1],1,75,True,True,4,geog_eng_2010_q_48_0.png,image/png,,15
+HKEAA_geog_2010_49,geog,HKEAA,2010,49,2010 No.49,choice,,1,geog_7,,0,51571,51569,[0],[0],[0],1,75,True,True,4,geog_eng_2010_q_49_0.png,image/png,,15
+HKEAA_geog_2010_50,geog,HKEAA,2010,50,2010 No.50,choice,,1,geog_3,,0,51579,51577,[0],[0],[0],1,75,True,True,4,geog_eng_2010_q_50_0.png,image/png,,15
+HKEAA_geog_2011_1,geog,HKEAA,2011,1,2011 No.1,choice,,1,geog_12,,0,51599,51597,[1],[1],[1],1,75,True,True,4,geog_eng_2011_q_01_0.png,image/png,Map of Hong Kong=2011_map.pdf,15
+HKEAA_geog_2011_2,geog,HKEAA,2011,2,2011 No.2,choice,,1,geog_12,,0,51643,51641,[3],[3],[3],1,75,True,True,4,geog_eng_2011_q_02_0.png,image/png,Map of Hong Kong=2011_map.pdf,15
+HKEAA_geog_2011_3,geog,HKEAA,2011,3,2011 No.3,choice,,1,geog_12,,0,51687,51685,[3],[3],[3],1,75,True,True,4,geog_eng_2011_q_03_0.png,image/png,Map of Hong Kong=2011_map.pdf,15
+HKEAA_geog_2011_4,geog,HKEAA,2011,4,2011 No.4,choice,,1,geog_12,,0,51731,51729,[2],[2],[2],1,75,True,True,4,geog_eng_2011_q_04_0.png,image/png,Map of Hong Kong=2011_map.pdf,15
+HKEAA_geog_2011_5,geog,HKEAA,2011,5,2011 No.5,choice,,1,geog_12,,0,51771,51769,[2],[2],[2],1,75,True,True,4,geog_eng_2011_q_05_0.png,image/png,Map of Hong Kong=2011_map.pdf,15
+HKEAA_geog_2011_6,geog,HKEAA,2011,6,2011 No.6,choice,,1,geog_12,,0,51779,51777,[1],[1],[1],1,75,True,True,4,geog_eng_2011_q_06_0.png,image/png,Map of Hong Kong=2011_map.pdf,15
+HKEAA_geog_2011_7,geog,HKEAA,2011,7,2011 No.7,choice,,1,geog_12,,0,51783,51781,[0],[0],[0],1,75,True,True,4,geog_eng_2011_q_07_0.png,image/png,Map of Hong Kong=2011_map.pdf,15
+HKEAA_geog_2011_8,geog,HKEAA,2011,8,2011 No.8,choice,,1,geog_12,,0,51787,51785,[0],[0],[0],1,75,True,True,4,geog_eng_2011_q_08_0.png,image/png,Map of Hong Kong=2011_map.pdf,15
+HKEAA_geog_2011_9,geog,HKEAA,2011,9,2011 No.9,choice,,1,geog_12,,0,51791,51789,[3],[3],[3],1,75,True,True,4,geog_eng_2011_q_09_0.png,image/png,Map of Hong Kong=2011_map.pdf,15
+HKEAA_geog_2011_10,geog,HKEAA,2011,10,2011 No.10,choice,,1,geog_12,,0,51603,51601,[2],[2],[2],1,75,True,True,4,geog_eng_2011_q_10_0.png,image/png,Map of Hong Kong=2011_map.pdf,15
+HKEAA_geog_2011_11,geog,HKEAA,2011,11,2011 No.11,choice,,1,geog_1,,0,51607,51605,[3],[3],[3],1,75,True,True,4,geog_eng_2011_q_11_0.png,image/png,,15
+HKEAA_geog_2011_12,geog,HKEAA,2011,12,2011 No.12,choice,,1,geog_1,,0,51611,51609,[3],[3],[3],1,75,True,True,4,geog_eng_2011_q_12_0.png,image/png,,15
+HKEAA_geog_2011_13,geog,HKEAA,2011,13,2011 No.13,choice,,1,geog_1,,0,51615,51613,[0],[0],[0],1,75,True,True,4,geog_eng_2011_q_13_0.png,image/png,,15
+HKEAA_geog_2011_14,geog,HKEAA,2011,14,2011 No.14,choice,,1,geog_1,,0,51619,51617,[1],[1],[1],1,75,True,True,4,geog_eng_2011_q_14_0.png,image/png,,15
+HKEAA_geog_2011_15,geog,HKEAA,2011,15,2011 No.15,choice,,1,geog_8,,0,51623,51621,[3],[3],[3],1,75,True,True,4,geog_eng_2011_q_15_0.png,image/png,,15
+HKEAA_geog_2011_16,geog,HKEAA,2011,16,2011 No.16,choice,,1,geog_1,,0,51627,51625,[0],[0],[0],1,75,True,True,4,geog_eng_2011_q_16_0.png,image/png,,15
+HKEAA_geog_2011_17,geog,HKEAA,2011,17,2011 No.17,choice,,1,geog_2,,0,51631,51629,[1],[1],[1],1,75,True,True,4,geog_eng_2011_q_17_0.png,image/png,,15
+HKEAA_geog_2011_18,geog,HKEAA,2011,18,2011 No.18,choice,,1,geog_2,,0,51635,51633,[3],[3],[3],1,75,True,True,4,geog_eng_2011_q_18_0.png,image/png,,15
+HKEAA_geog_2011_19,geog,HKEAA,2011,19,2011 No.19,choice,,1,geog_2,,0,51639,51637,[0],[0],[0],1,75,True,True,4,geog_eng_2011_q_19_0.png,image/png,,15
+HKEAA_geog_2011_20,geog,HKEAA,2011,20,2011 No.20,choice,,1,geog_2,,0,51647,51645,[2],[2],[2],1,75,True,True,4,geog_eng_2011_q_20_0.png,image/png,,15
+HKEAA_geog_2011_21,geog,HKEAA,2011,21,2011 No.21,choice,,1,geog_2,,0,51651,51649,[1],[1],[1],1,75,True,True,4,geog_eng_2011_q_21_0.png,image/png,,15
+HKEAA_geog_2011_22,geog,HKEAA,2011,22,2011 No.22,choice,,1,geog_2,,0,51655,51653,[1],[1],[1],1,75,True,True,4,geog_eng_2011_q_22_0.png,image/png,,15
+HKEAA_geog_2011_23,geog,HKEAA,2011,23,2011 No.23,choice,,1,geog_2,,0,51659,51657,[3],[3],[3],1,75,True,True,4,geog_eng_2011_q_23_0.png,image/png,,15
+HKEAA_geog_2011_24,geog,HKEAA,2011,24,2011 No.24,choice,,1,geog_5,,0,51663,51661,[0],[0],[0],1,75,True,True,4,geog_eng_2011_q_24_0.png,image/png,,15
+HKEAA_geog_2011_25,geog,HKEAA,2011,25,2011 No.25,choice,,1,geog_5,,0,51667,51665,[3],[3],[3],1,75,True,True,4,geog_eng_2011_q_25_0.png,image/png,,15
+HKEAA_geog_2011_26,geog,HKEAA,2011,26,2011 No.26,choice,,1,geog_5,,0,51671,51669,[2],[2],[2],1,75,True,True,4,geog_eng_2011_q_26_0.png,image/png,,15
+HKEAA_geog_2011_27,geog,HKEAA,2011,27,2011 No.27,choice,,1,geog_5,,0,51675,51673,[2],[2],[2],1,75,True,True,4,geog_eng_2011_q_27_0.png,image/png,,15
+HKEAA_geog_2011_28,geog,HKEAA,2011,28,2011 No.28,choice,,1,geog_5,,0,51679,51677,[0],[0],[0],1,75,True,True,4,geog_eng_2011_q_28_0.png,image/png,,15
+HKEAA_geog_2011_29,geog,HKEAA,2011,29,2011 No.29,choice,,1,geog_5,,0,51683,51681,[1],[1],[1],1,75,True,True,4,geog_eng_2011_q_29_0.png,image/png,,15
+HKEAA_geog_2011_30,geog,HKEAA,2011,30,2011 No.30,choice,,1,geog_5,,0,51691,51689,[2],[2],[2],1,75,True,True,4,geog_eng_2011_q_30_0.png,image/png,,15
+HKEAA_geog_2011_31,geog,HKEAA,2011,31,2011 No.31,choice,,1,geog_3,,0,51695,51693,[1],[1],[1],1,75,True,True,4,geog_eng_2011_q_31_0.png,image/png,,15
+HKEAA_geog_2011_32,geog,HKEAA,2011,32,2011 No.32,choice,,1,geog_3,,0,51699,51697,[3],[3],[3],1,75,True,True,4,geog_eng_2011_q_32_0.png,image/png,,15
+HKEAA_geog_2011_33,geog,HKEAA,2011,33,2011 No.33,choice,,1,geog_3,,0,51703,51701,[2],[2],[2],1,75,True,True,4,geog_eng_2011_q_33_0.png,image/png,,15
+HKEAA_geog_2011_34,geog,HKEAA,2011,34,2011 No.34,choice,,1,geog_4,,0,51707,51705,[1],[1],[1],1,75,True,True,4,geog_eng_2011_q_34_0.png,image/png,,15
+HKEAA_geog_2011_35,geog,HKEAA,2011,35,2011 No.35,choice,,1,geog_3,,0,51711,51709,[2],[2],[2],1,75,True,True,4,geog_eng_2011_q_35_0.png,image/png,,15
+HKEAA_geog_2011_36,geog,HKEAA,2011,36,2011 No.36,choice,,1,geog_3,,0,51715,51713,[0],[0],[0],1,75,True,True,4,geog_eng_2011_q_36_0.png,image/png,,15
+HKEAA_geog_2011_37,geog,HKEAA,2011,37,2011 No.37,choice,,1,geog_7,,0,51719,51717,[0],[0],[0],1,75,True,True,4,geog_eng_2011_q_37_0.png,image/png,,15
+HKEAA_geog_2011_38,geog,HKEAA,2011,38,2011 No.38,choice,,1,geog_9,,0,51723,51721,[1],[1],[1],1,75,True,True,4,geog_eng_2011_q_38_0.png,image/png,,15
+HKEAA_geog_2011_39,geog,HKEAA,2011,39,2011 No.39,choice,,1,geog_9,,0,51727,51725,[0],[0],[0],1,75,True,True,4,geog_eng_2011_q_39_0.png,image/png,,15
+HKEAA_geog_2011_40,geog,HKEAA,2011,40,2011 No.40,choice,,1,geog_9,,0,51735,51733,[3],[3],[3],1,75,True,True,4,geog_eng_2011_q_40_0.png,image/png,,15
+HKEAA_geog_2011_41,geog,HKEAA,2011,41,2011 No.41,choice,,1,geog_7,,0,51739,51737,[2],[2],[2],1,75,True,True,4,geog_eng_2011_q_41_0.png,image/png,,15
+HKEAA_geog_2011_42,geog,HKEAA,2011,42,2011 No.42,choice,,1,geog_7,,0,51743,51741,[2],[2],[2],1,75,True,True,4,geog_eng_2011_q_42_0.png,image/png,,15
+HKEAA_geog_2011_43,geog,HKEAA,2011,43,2011 No.43,choice,,1,geog_7,,0,51747,51745,[0],[0],[0],1,75,True,True,4,geog_eng_2011_q_43_0.png,image/png,,15
+HKEAA_geog_2011_44,geog,HKEAA,2011,44,2011 No.44,choice,,1,geog_4,,0,51751,51749,[1],[1],[1],1,75,True,True,4,geog_eng_2011_q_44_0.png,image/png,,15
+HKEAA_geog_2011_45,geog,HKEAA,2011,45,2011 No.45,choice,,1,geog_4,,0,51755,51753,[0],[0],[0],1,75,True,True,4,geog_eng_2011_q_45_0.png,image/png,,15
+HKEAA_geog_2011_46,geog,HKEAA,2011,46,2011 No.46,choice,,1,geog_4,,0,51759,51757,[3],[3],[3],1,75,True,True,4,geog_eng_2011_q_46_0.png,image/png,,15
+HKEAA_geog_2011_47,geog,HKEAA,2011,47,2011 No.47,choice,,1,geog_4,,0,51763,51761,[0],[0],[0],1,75,True,True,4,geog_eng_2011_q_47_0.png,image/png,,15
+HKEAA_geog_2011_49,geog,HKEAA,2011,49,2011 No.49,choice,,1,geog_4,,0,51767,51765,[1],[1],[1],1,75,True,True,4,geog_eng_2011_q_49_0.png,image/png,,15
+HKEAA_geog_2011_50,geog,HKEAA,2011,50,2011 No.50,choice,,1,geog_4,,0,51775,51773,[3],[3],[3],1,75,True,True,4,geog_eng_2011_q_50_0.png,image/png,,15
+HKEAA_geog_2012_1,geog,HKEAA,2012,1,2012 No.1,choice,B,1,geog_12,geog_content_DIM4,1,51795,51793,[3],[3],[3],1,75,True,True,4,q_01_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2012_2,geog,HKEAA,2012,2,2012 No.2,choice,A,1,geog_12,geog_content_DIM4,1,51839,51837,[1],[1],[1],1,75,True,True,4,q_02_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2012_3,geog,HKEAA,2012,3,2012 No.3,choice,B,1,geog_12,geog_content_DIM4,1,51883,51881,[1],[1],[1],1,75,True,True,4,q_03_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2012_4,geog,HKEAA,2012,4,2012 No.4,choice,C,1,geog_12,geog_content_DIM4,1,51927,51925,[0],[0],[0],1,75,True,True,4,q_04_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2012_5,geog,HKEAA,2012,5,2012 No.5,choice,A,1,geog_12,geog_content_DIM4,1,51935,51933,[2],[2],[2],1,75,True,True,4,q_05_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2012_6,geog,HKEAA,2012,6,2012 No.6,choice,D,1,geog_1,geog_content_DIM1,1,51939,51937,[1],[1],[1],1,75,True,True,4,q_06_0.png,image/png,,15
+HKEAA_geog_2012_7,geog,HKEAA,2012,7,2012 No.7,choice,D,1,geog_1,geog_content_DIM1,1,51943,51941,[3],[3],[3],1,75,True,True,4,q_07_0.png,image/png,,15
+HKEAA_geog_2012_8,geog,HKEAA,2012,8,2012 No.8,choice,B,1,geog_1,geog_content_DIM1,1,51947,51945,[3],[3],[3],1,75,True,True,4,q_08_0.png,image/png,,15
+HKEAA_geog_2012_9,geog,HKEAA,2012,9,2012 No.9,choice,C,1,geog_1,geog_content_DIM1,1,51951,51949,[2],[2],[2],1,75,True,True,4,q_09_0.png,image/png,,15
+HKEAA_geog_2012_10,geog,HKEAA,2012,10,2012 No.10,choice,C,1,geog_1,geog_content_DIM1,1,51799,51797,[1],[1],[1],1,75,True,True,4,q_10_0.png,image/png,,15
+HKEAA_geog_2012_11,geog,HKEAA,2012,11,2012 No.11,choice,D,1,geog_2,geog_content_DIM1,1,51803,51801,[2],[2],[2],1,75,True,True,4,q_11_0.png,image/png,,15
+HKEAA_geog_2012_12,geog,HKEAA,2012,12,2012 No.12,choice,C,1,geog_2,geog_content_DIM1,1,51807,51805,[1],[1],[1],1,75,True,True,4,q_12_0.png,image/png,,15
+HKEAA_geog_2012_13,geog,HKEAA,2012,13,2012 No.13,choice,D,1,geog_2,geog_content_DIM1,1,51811,51809,[3],[3],[3],1,75,True,True,4,q_13_0.png,image/png,,15
+HKEAA_geog_2012_14,geog,HKEAA,2012,14,2012 No.14,choice,D,1,geog_2,geog_content_DIM1,1,51815,51813,[3],[3],[3],1,75,True,True,4,q_14_0.png,image/png,,15
+HKEAA_geog_2012_15,geog,HKEAA,2012,15,2012 No.15,choice,D,1,geog_2,geog_content_DIM1,1,51819,51817,[0],[0],[0],1,75,True,True,4,q_15_0.png,image/png,,15
+HKEAA_geog_2012_16,geog,HKEAA,2012,16,2012 No.16,choice,D,1,geog_3,geog_content_DIM2,1,51823,51821,[3],[3],[3],1,75,True,True,4,q_16_0.png,image/png,,15
+HKEAA_geog_2012_17,geog,HKEAA,2012,17,2012 No.17,choice,D,1,geog_3,geog_content_DIM2,1,51827,51825,[2],[2],[2],1,75,True,True,4,q_17_0.png,image/png,,15
+HKEAA_geog_2012_18,geog,HKEAA,2012,18,2012 No.18,choice,B,1,geog_3,geog_content_DIM2,1,51831,51829,[3],[3],[3],1,75,True,True,4,q_18_0.png,image/png,,15
+HKEAA_geog_2012_19,geog,HKEAA,2012,19,2012 No.19,choice,D,1,geog_3,geog_content_DIM2,1,51835,51833,[3],[3],[3],1,75,True,True,4,q_19_0.png,image/png,,15
+HKEAA_geog_2012_20,geog,HKEAA,2012,20,2012 No.20,choice,D,1,geog_3,geog_content_DIM2,1,51843,51841,[0],[0],[0],1,75,True,True,4,q_20_0.png,image/png,,15
+HKEAA_geog_2012_21,geog,HKEAA,2012,21,2012 No.21,choice,C,1,geog_4,geog_content_DIM2,1,51847,51845,[2],[2],[2],1,75,True,True,4,q_21_0.png,image/png,,15
+HKEAA_geog_2012_22,geog,HKEAA,2012,22,2012 No.22,choice,D,1,geog_4,geog_content_DIM2,1,51851,51849,[0],[0],[0],1,75,True,True,4,q_22_0.png,image/png,,15
+HKEAA_geog_2012_23,geog,HKEAA,2012,23,2012 No.23,choice,D,1,geog_4,geog_content_DIM2,1,51855,51853,[1],[1],[1],1,75,True,True,4,q_23_0.png,image/png,,15
+HKEAA_geog_2012_24,geog,HKEAA,2012,24,2012 No.24,choice,C,1,geog_4,geog_content_DIM2,1,51859,51857,[1],[1],[1],1,75,True,True,4,q_24_0.png,image/png,,15
+HKEAA_geog_2012_25,geog,HKEAA,2012,25,2012 No.25,choice,D,1,geog_4,geog_content_DIM2,1,51863,51861,[0],[0],[0],1,75,True,True,4,q_25_0.png,image/png,,15
+HKEAA_geog_2012_26,geog,HKEAA,2012,26,2012 No.26,choice,D,1,geog_5,geog_content_DIM3,1,51867,51865,[0],[0],[0],1,75,True,True,4,q_26_0.png,image/png,,15
+HKEAA_geog_2012_27,geog,HKEAA,2012,27,2012 No.27,choice,D,1,geog_5,geog_content_DIM3,1,51871,51869,[1],[1],[1],1,75,True,True,4,q_27_0.png,image/png,,15
+HKEAA_geog_2012_28,geog,HKEAA,2012,28,2012 No.28,choice,D,1,geog_5,geog_content_DIM3,1,51875,51873,[3],[3],[3],1,75,True,True,4,q_28_0.png,image/png,,15
+HKEAA_geog_2012_29,geog,HKEAA,2012,29,2012 No.29,choice,A,1,geog_5,geog_content_DIM3,1,51879,51877,[0],[0],[0],1,75,True,True,4,q_29_0.png,image/png,,15
+HKEAA_geog_2012_30,geog,HKEAA,2012,30,2012 No.30,choice,D,1,geog_5,geog_content_DIM3,1,51887,51885,[0],[0],[0],1,75,True,True,4,q_30_0.png,image/png,,15
+HKEAA_geog_2012_31,geog,HKEAA,2012,31,2012 No.31,choice,C,1,geog_6,geog_content_DIM3,1,51891,51889,[1],[1],[1],1,75,True,True,4,q_31_0.png,image/png,,15
+HKEAA_geog_2012_32,geog,HKEAA,2012,32,2012 No.32,choice,C,1,geog_6,geog_content_DIM3,1,51895,51893,[2],[2],[2],1,75,True,True,4,q_32_0.png,image/png,,15
+HKEAA_geog_2012_33,geog,HKEAA,2012,33,2012 No.33,choice,D,1,geog_6,geog_content_DIM3,1,51899,51897,[3],[3],[3],1,75,True,True,4,q_33_0.png,image/png,,15
+HKEAA_geog_2012_34,geog,HKEAA,2012,34,2012 No.34,choice,D,1,geog_6,geog_content_DIM3,1,51903,51901,[2],[2],[2],1,75,True,True,4,q_34_0.png,image/png,,15
+HKEAA_geog_2012_35,geog,HKEAA,2012,35,2012 No.35,choice,D,1,geog_6,geog_content_DIM3,1,51907,51905,[2],[2],[2],1,75,True,True,4,q_35_0.png,image/png,,15
+HKEAA_geog_2012_36,geog,HKEAA,2012,36,2012 No.36,choice,D,1,geog_7,geog_content_DIM3,1,51911,51909,[0],[0],[0],1,75,True,True,4,q_36_0.png,image/png,,15
+HKEAA_geog_2012_37,geog,HKEAA,2012,37,2012 No.37,choice,A,1,geog_7,geog_content_DIM3,1,51915,51913,[0],[0],[0],1,75,True,True,4,q_37_0.png,image/png,,15
+HKEAA_geog_2012_38,geog,HKEAA,2012,38,2012 No.38,choice,D,1,geog_7,geog_content_DIM3,1,51919,51917,[2],[2],[2],1,75,True,True,4,q_38_0.png,image/png,,15
+HKEAA_geog_2012_39,geog,HKEAA,2012,39,2012 No.39,choice,C,1,geog_7,geog_content_DIM3,1,51923,51921,[1],[1],[1],1,75,True,True,4,q_39_0.png,image/png,,15
+HKEAA_geog_2012_40,geog,HKEAA,2012,40,2012 No.40,choice,B,1,geog_7,geog_content_DIM3,1,51931,51929,[2],[2],[2],1,75,True,True,4,q_40_0.png,image/png,,15
+HKEAA_geog_2013_1,geog,HKEAA,2013,1,2013 No.1,choice,D,1,geog_12,geog_content_DIM4,1,51955,51953,[2],[2],[2],1,75,True,True,4,q_01_0.png,image/png,Hong Kong Map=map.jpg,15
+HKEAA_geog_2013_2,geog,HKEAA,2013,2,2013 No.2,choice,C,1,geog_12,geog_content_DIM4,1,51999,51997,[0],[0],[0],1,75,True,True,4,q_02_0.png,image/png,Hong Kong Map=map.jpg,15
+HKEAA_geog_2013_3,geog,HKEAA,2013,3,2013 No.3,choice,A,1,geog_12,geog_content_DIM4,1,52043,52041,[2],[2],[2],1,75,True,True,4,q_03_0.png,image/png,Hong Kong Map=map.jpg,15
+HKEAA_geog_2013_4,geog,HKEAA,2013,4,2013 No.4,choice,C,1,geog_12,geog_content_DIM4,1,52087,52085,[2],[2],[2],1,75,True,True,4,q_04_0.png,image/png,Hong Kong Map=map.jpg,15
+HKEAA_geog_2013_5,geog,HKEAA,2013,5,2013 No.5,choice,D,1,geog_12,geog_content_DIM4,1,52095,52093,[0],[0],[0],1,75,True,True,4,q_05_0.png,image/png,Hong Kong Map=map.jpg,15
+HKEAA_geog_2013_6,geog,HKEAA,2013,6,2013 No.6,choice,D,1,geog_12,geog_content_DIM4,1,52099,52097,[2],[2],[2],1,75,True,True,4,q_06_0.png,image/png,Hong Kong Map=map.jpg,15
+HKEAA_geog_2013_7,geog,HKEAA,2013,7,2013 No.7,choice,B,1,geog_12,geog_content_DIM4,1,52103,52101,[0],[0],[0],1,75,True,True,4,q_07_0.png,image/png,Hong Kong Map=map.jpg,15
+HKEAA_geog_2013_8,geog,HKEAA,2013,8,2013 No.8,choice,D,1,geog_12,geog_content_DIM4,1,52107,52105,[3],[3],[3],1,75,True,True,4,q_08_0.png,image/png,Hong Kong Map=map.jpg,15
+HKEAA_geog_2013_9,geog,HKEAA,2013,9,2013 No.9,choice,B,1,geog_1,geog_content_DIM1,1,52111,52109,[3],[3],[3],1,75,True,True,4,q_09_0.png,image/png,,15
+HKEAA_geog_2013_10,geog,HKEAA,2013,10,2013 No.10,choice,D,1,geog_1,geog_content_DIM1,1,51959,51957,[1],[1],[1],1,75,True,True,4,q_10_0.png,image/png,,15
+HKEAA_geog_2013_11,geog,HKEAA,2013,11,2013 No.11,choice,C,1,geog_1,geog_content_DIM1,1,51963,51961,[1],[1],[1],1,75,True,True,4,q_11_0.png,image/png,,15
+HKEAA_geog_2013_12,geog,HKEAA,2013,12,2013 No.12,choice,D,1,geog_1,geog_content_DIM1,1,51967,51965,[3],[3],[3],1,75,True,True,4,q_12_0.png,image/png,,15
+HKEAA_geog_2013_13,geog,HKEAA,2013,13,2013 No.13,choice,D,1,geog_1,geog_content_DIM1,1,51971,51969,[1],[1],[1],1,75,True,True,4,q_13_0.png,image/png,,15
+HKEAA_geog_2013_14,geog,HKEAA,2013,14,2013 No.14,choice,D,1,geog_2,geog_content_DIM1,1,51975,51973,[0],[0],[0],1,75,True,True,4,q_14_0.png,image/png,,15
+HKEAA_geog_2013_15,geog,HKEAA,2013,15,2013 No.15,choice,D,1,geog_2,geog_content_DIM1,1,51979,51977,[0],[0],[0],1,75,True,True,4,q_15_0.png,image/png,,15
+HKEAA_geog_2013_16,geog,HKEAA,2013,16,2013 No.16,choice,B,1,geog_2,geog_content_DIM1,1,51983,51981,[3],[3],[3],1,75,True,True,4,q_16_0.png,image/png,,15
+HKEAA_geog_2013_17,geog,HKEAA,2013,17,2013 No.17,choice,D,1,geog_2,geog_content_DIM1,1,51987,51985,[1],[1],[1],1,75,True,True,4,q_17_0.png,image/png,,15
+HKEAA_geog_2013_18,geog,HKEAA,2013,18,2013 No.18,choice,D,1,geog_2,geog_content_DIM1,1,51991,51989,[0],[0],[0],1,75,True,True,4,q_18_0.png,image/png,,15
+HKEAA_geog_2013_19,geog,HKEAA,2013,19,2013 No.19,choice,D,1,geog_3,geog_content_DIM2,1,51995,51993,[1],[1],[1],1,75,True,True,4,q_19_0.png,image/png,,15
+HKEAA_geog_2013_20,geog,HKEAA,2013,20,2013 No.20,choice,D,1,geog_3,geog_content_DIM2,1,52003,52001,[2],[2],[2],1,75,True,True,4,q_20_0.png,image/png,,15
+HKEAA_geog_2013_21,geog,HKEAA,2013,21,2013 No.21,choice,D,1,geog_3,geog_content_DIM2,1,52007,52005,[3],[3],[3],1,75,True,True,4,q_21_0.png,image/png,,15
+HKEAA_geog_2013_22,geog,HKEAA,2013,22,2013 No.22,choice,C,1,geog_3,geog_content_DIM2,1,52011,52009,[0],[0],[0],1,75,True,True,4,q_22_0.png,image/png,,15
+HKEAA_geog_2013_23,geog,HKEAA,2013,23,2013 No.23,choice,D,1,geog_4,geog_content_DIM2,1,52015,52013,[1],[1],[1],1,75,True,True,4,q_23_0.png,image/png,,15
+HKEAA_geog_2013_24,geog,HKEAA,2013,24,2013 No.24,choice,D,1,geog_4,geog_content_DIM2,1,52019,52017,[2],[2],[2],1,75,True,True,4,q_24_0.png,image/png,,15
+HKEAA_geog_2013_25,geog,HKEAA,2013,25,2013 No.25,choice,D,1,geog_4,geog_content_DIM2,1,52023,52021,[1],[1],[1],1,75,True,True,4,q_25_0.png,image/png,,15
+HKEAA_geog_2013_26,geog,HKEAA,2013,26,2013 No.26,choice,D,1,geog_4,geog_content_DIM2,1,52027,52025,[1],[1],[1],1,75,True,True,4,q_26_0.png,image/png,,15
+HKEAA_geog_2013_27,geog,HKEAA,2013,27,2013 No.27,choice,D,1,geog_5,geog_content_DIM3,1,52031,52029,[2],[2],[2],1,75,True,True,4,q_27_0.png,image/png,,15
+HKEAA_geog_2013_28,geog,HKEAA,2013,28,2013 No.28,choice,C,1,geog_5,geog_content_DIM3,1,52035,52033,[3],[3],[3],1,75,True,True,4,q_28_0.png,image/png,,15
+HKEAA_geog_2013_29,geog,HKEAA,2013,29,2013 No.29,choice,D,1,geog_5,geog_content_DIM3,1,52039,52037,[3],[3],[3],1,75,True,True,4,q_29_0.png,image/png,,15
+HKEAA_geog_2013_30,geog,HKEAA,2013,30,2013 No.30,choice,D,1,geog_5,geog_content_DIM3,1,52047,52045,[1],[1],[1],1,75,True,True,4,q_30_0.png,image/png,,15
+HKEAA_geog_2013_31,geog,HKEAA,2013,31,2013 No.31,choice,D,1,geog_5,geog_content_DIM3,1,52051,52049,[0],[0],[0],1,75,True,True,4,q_31_0.png,image/png,,15
+HKEAA_geog_2013_32,geog,HKEAA,2013,32,2013 No.32,choice,D,1,geog_6,geog_content_DIM3,1,52055,52053,[2],[2],[2],1,75,True,True,4,q_32_0.png,image/png,,15
+HKEAA_geog_2013_33,geog,HKEAA,2013,33,2013 No.33,choice,D,1,geog_6,geog_content_DIM3,1,52059,52057,[0],[0],[0],1,75,True,True,4,q_33_0.png,image/png,,15
+HKEAA_geog_2013_34,geog,HKEAA,2013,34,2013 No.34,choice,D,1,geog_6,geog_content_DIM3,1,52063,52061,[1],[1],[1],1,75,True,True,4,q_34_0.png,image/png,,15
+HKEAA_geog_2013_35,geog,HKEAA,2013,35,2013 No.35,choice,D,1,geog_6,geog_content_DIM3,1,52067,52065,[3],[3],[3],1,75,True,True,4,q_35_0.png,image/png,,15
+HKEAA_geog_2013_36,geog,HKEAA,2013,36,2013 No.36,choice,D,1,geog_7,geog_content_DIM3,1,52071,52069,[2],[2],[2],1,75,True,True,4,q_36_0.png,image/png,,15
+HKEAA_geog_2013_37,geog,HKEAA,2013,37,2013 No.37,choice,D,1,geog_7,geog_content_DIM3,1,52075,52073,[0],[0],[0],1,75,True,True,4,q_37_0.png,image/png,,15
+HKEAA_geog_2013_38,geog,HKEAA,2013,38,2013 No.38,choice,A,1,geog_7,geog_content_DIM3,1,52079,52077,[3],[3],[3],1,75,True,True,4,q_38_0.png,image/png,,15
+HKEAA_geog_2013_39,geog,HKEAA,2013,39,2013 No.39,choice,C,1,geog_7,geog_content_DIM3,1,52083,52081,[2],[2],[2],1,75,True,True,4,q_39_0.png,image/png,,15
+HKEAA_geog_2013_40,geog,HKEAA,2013,40,2013 No.40,choice,D,1,geog_7,geog_content_DIM3,1,52091,52089,[3],[3],[3],1,75,True,True,4,q_40_0.png,image/png,,15
+HKEAA_geog_2014_1,geog,HKEAA,2014,1,2014 No.1,choice,D,1,geog_12,geog_content_DIM4,1,52115,52113,[1],[1],[1],1,75,True,True,4,q_01_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2014_2,geog,HKEAA,2014,2,2014 No.2,choice,D,1,geog_12,geog_content_DIM4,1,52159,52157,[0],[0],[0],1,75,True,True,4,q_02_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2014_3,geog,HKEAA,2014,3,2014 No.3,choice,B,1,geog_12,geog_content_DIM4,1,52203,52201,[1],[1],[1],1,75,True,True,4,q_03_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2014_4,geog,HKEAA,2014,4,2014 No.4,choice,A,1,geog_12,geog_content_DIM4,1,52247,52245,[2],[2],[2],1,75,True,True,4,q_04_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2014_5,geog,HKEAA,2014,5,2014 No.5,choice,D,1,geog_12,geog_content_DIM4,1,52255,52253,[2],[2],[2],1,75,True,True,4,q_05_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2014_6,geog,HKEAA,2014,6,2014 No.6,choice,C,1,geog_12,geog_content_DIM4,1,52259,52257,[3],[3],[3],1,75,True,True,4,q_06_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2014_7,geog,HKEAA,2014,7,2014 No.7,choice,D,1,geog_12,geog_content_DIM4,1,52263,52261,[2],[2],[2],1,75,True,True,4,q_07_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2014_8,geog,HKEAA,2014,8,2014 No.8,choice,D,1,geog_12,geog_content_DIM4,1,52267,52265,[0],[0],[0],1,75,True,True,4,q_08_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2014_9,geog,HKEAA,2014,9,2014 No.9,choice,A,1,geog_1,geog_content_DIM1,1,52271,52269,[1],[1],[1],1,75,True,True,4,q_09_0.png,image/png,,15
+HKEAA_geog_2014_10,geog,HKEAA,2014,10,2014 No.10,choice,D,1,geog_1,geog_content_DIM1,1,52119,52117,[3],[3],[3],1,75,True,True,4,q_10_0.png,image/png,,15
+HKEAA_geog_2014_11,geog,HKEAA,2014,11,2014 No.11,choice,D,1,geog_1,geog_content_DIM1,1,52123,52121,[1],[1],[1],1,75,True,True,4,q_11_0.png,image/png,,15
+HKEAA_geog_2014_12,geog,HKEAA,2014,12,2014 No.12,choice,A,1,geog_1,geog_content_DIM1,1,52127,52125,[3],[3],[3],1,75,True,True,4,q_12_0.png,image/png,,15
+HKEAA_geog_2014_13,geog,HKEAA,2014,13,2014 No.13,choice,D,1,geog_1,geog_content_DIM1,1,52131,52129,[3],[3],[3],1,75,True,True,4,q_13_0.png,image/png,,15
+HKEAA_geog_2014_14,geog,HKEAA,2014,14,2014 No.14,choice,D,1,geog_2,geog_content_DIM1,1,52135,52133,[2],[2],[2],1,75,True,True,4,q_14_0.png,image/png,,15
+HKEAA_geog_2014_15,geog,HKEAA,2014,15,2014 No.15,choice,B,1,geog_2,geog_content_DIM1,1,52139,52137,[2],[2],[2],1,75,True,True,4,q_15_0.png,image/png,,15
+HKEAA_geog_2014_16,geog,HKEAA,2014,16,2014 No.16,choice,D,1,geog_2,geog_content_DIM1,1,52143,52141,[1],[1],[1],1,75,True,True,4,q_16_0.png,image/png,,15
+HKEAA_geog_2014_17,geog,HKEAA,2014,17,2014 No.17,choice,D,1,geog_2,geog_content_DIM1,1,52147,52145,[0],[0],[0],1,75,True,True,4,q_17_0.png,image/png,,15
+HKEAA_geog_2014_18,geog,HKEAA,2014,18,2014 No.18,choice,D,1,geog_2,geog_content_DIM1,1,52151,52149,[0],[0],[0],1,75,True,True,4,q_18_0.png,image/png,,15
+HKEAA_geog_2014_19,geog,HKEAA,2014,19,2014 No.19,choice,B,1,geog_3,geog_content_DIM2,1,52155,52153,[2],[2],[2],1,75,True,True,4,q_19_0.png,image/png,,15
+HKEAA_geog_2014_20,geog,HKEAA,2014,20,2014 No.20,choice,D,1,geog_3,geog_content_DIM2,1,52163,52161,[1],[1],[1],1,75,True,True,4,q_20_0.png,image/png,,15
+HKEAA_geog_2014_21,geog,HKEAA,2014,21,2014 No.21,choice,D,1,geog_3,geog_content_DIM2,1,52167,52165,[3],[3],[3],1,75,True,True,4,q_21_0.png,image/png,,15
+HKEAA_geog_2014_22,geog,HKEAA,2014,22,2014 No.22,choice,D,1,geog_3,geog_content_DIM2,1,52171,52169,[0],[0],[0],1,75,True,True,4,q_22_0.png,image/png,,15
+HKEAA_geog_2014_23,geog,HKEAA,2014,23,2014 No.23,choice,D,1,geog_4,geog_content_DIM2,1,52175,52173,[1],[1],[1],1,75,True,True,4,q_23_0.png,image/png,,15
+HKEAA_geog_2014_24,geog,HKEAA,2014,24,2014 No.24,choice,D,1,geog_4,geog_content_DIM2,1,52179,52177,[0],[0],[0],1,75,True,True,4,q_24_0.png,image/png,,15
+HKEAA_geog_2014_25,geog,HKEAA,2014,25,2014 No.25,choice,D,1,geog_4,geog_content_DIM2,1,52183,52181,[1],[1],[1],1,75,True,True,4,q_25_0.png,image/png,,15
+HKEAA_geog_2014_26,geog,HKEAA,2014,26,2014 No.26,choice,D,1,geog_4,geog_content_DIM2,1,52187,52185,[3],[3],[3],1,75,True,True,4,q_26_0.png,image/png,,15
+HKEAA_geog_2014_27,geog,HKEAA,2014,27,2014 No.27,choice,D,1,geog_4,geog_content_DIM2,1,52191,52189,[3],[3],[3],1,75,True,True,4,q_27_0.png,image/png,,15
+HKEAA_geog_2014_28,geog,HKEAA,2014,28,2014 No.28,choice,D,1,geog_5,geog_content_DIM3,1,52195,52193,[1],[1],[1],1,75,True,True,4,q_28_0.png,image/png,,15
+HKEAA_geog_2014_29,geog,HKEAA,2014,29,2014 No.29,choice,D,1,geog_5,geog_content_DIM3,1,52199,52197,[3],[3],[3],1,75,True,True,4,q_29_0.png,image/png,,15
+HKEAA_geog_2014_30,geog,HKEAA,2014,30,2014 No.30,choice,D,1,geog_5,geog_content_DIM3,1,52207,52205,[2],[2],[2],1,75,True,True,4,q_30_0.png,image/png,,15
+HKEAA_geog_2014_31,geog,HKEAA,2014,31,2014 No.31,choice,D,1,geog_5,geog_content_DIM3,1,52211,52209,[2],[2],[2],1,75,True,True,4,q_31_0.png,image/png,,15
+HKEAA_geog_2014_32,geog,HKEAA,2014,32,2014 No.32,choice,D,1,geog_6,geog_content_DIM3,1,52215,52213,[0],[0],[0],1,75,True,True,4,q_32_0.png,image/png,,15
+HKEAA_geog_2014_33,geog,HKEAA,2014,33,2014 No.33,choice,D,1,geog_6,geog_content_DIM3,1,52219,52217,[0],[0],[0],1,75,True,True,4,q_33_0.png,image/png,,15
+HKEAA_geog_2014_34,geog,HKEAA,2014,34,2014 No.34,choice,D,1,geog_6,geog_content_DIM3,1,52223,52221,[1],[1],[1],1,75,True,True,4,q_34_0.png,image/png,,15
+HKEAA_geog_2014_35,geog,HKEAA,2014,35,2014 No.35,choice,D,1,geog_6,geog_content_DIM3,1,52227,52225,[3],[3],[3],1,75,True,True,4,q_35_0.png,image/png,,15
+HKEAA_geog_2014_36,geog,HKEAA,2014,36,2014 No.36,choice,D,1,geog_7,geog_content_DIM3,1,52231,52229,[0],[0],[0],1,75,True,True,4,q_36_0.png,image/png,,15
+HKEAA_geog_2014_37,geog,HKEAA,2014,37,2014 No.37,choice,C,1,geog_7,geog_content_DIM3,1,52235,52233,[3],[3],[3],1,75,True,True,4,q_37_0.png,image/png,,15
+HKEAA_geog_2014_38,geog,HKEAA,2014,38,2014 No.38,choice,D,1,geog_7,geog_content_DIM3,1,52239,52237,[2],[2],[2],1,75,True,True,4,q_38_0.png,image/png,,15
+HKEAA_geog_2014_39,geog,HKEAA,2014,39,2014 No.39,choice,A,1,geog_7,geog_content_DIM3,1,52243,52241,[2],[2],[2],1,75,True,True,4,q_39_0.png,image/png,,15
+HKEAA_geog_2014_40,geog,HKEAA,2014,40,2014 No.40,choice,C,1,geog_7,geog_content_DIM3,1,52251,52249,[0],[0],[0],1,75,True,True,4,q_40_0.png,image/png,,15
+HKEAA_geog_2015_1,geog,HKEAA,2015,1,2015 No.1,choice,D,1,geog_12,geog_content_DIM4,1,52275,52273,[3],[3],[3],1,75,True,True,4,q_01_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2015_2,geog,HKEAA,2015,2,2015 No.2,choice,B,1,geog_12,geog_content_DIM4,1,52319,52317,[3],[3],[3],1,75,True,True,4,q_02_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2015_3,geog,HKEAA,2015,3,2015 No.3,choice,C,1,geog_12,geog_content_DIM4,1,52363,52361,[1],[1],[1],1,75,True,True,4,q_03_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2015_4,geog,HKEAA,2015,4,2015 No.4,choice,C,1,geog_12,geog_content_DIM4,1,52407,52405,[1],[1],[1],1,75,True,True,4,q_04_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2015_5,geog,HKEAA,2015,5,2015 No.5,choice,C,1,geog_12,geog_content_DIM4,1,52415,52413,[3],[3],[3],1,75,True,True,4,q_05_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2015_6,geog,HKEAA,2015,6,2015 No.6,choice,D,1,geog_12,geog_content_DIM4,1,52419,52417,[1],[1],[1],1,75,True,True,4,q_06_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2015_7,geog,HKEAA,2015,7,2015 No.7,choice,D,1,geog_12,geog_content_DIM4,1,52423,52421,[3],[3],[3],1,75,True,True,4,q_07_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2015_8,geog,HKEAA,2015,8,2015 No.8,choice,D,1,geog_12,geog_content_DIM4,1,52427,52425,[0],[0],[0],1,75,True,True,4,q_08_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2015_9,geog,HKEAA,2015,9,2015 No.9,choice,C,1,geog_1,geog_content_DIM1,1,52431,52429,[1],[1],[1],1,75,True,True,4,q_09_0.png,image/png,,15
+HKEAA_geog_2015_10,geog,HKEAA,2015,10,2015 No.10,choice,C,1,geog_1,geog_content_DIM1,1,52279,52277,[1],[1],[1],1,75,True,True,4,q_10_0.png,image/png,,15
+HKEAA_geog_2015_11,geog,HKEAA,2015,11,2015 No.11,choice,D,1,geog_1,geog_content_DIM1,1,52283,52281,[2],[2],[2],1,75,True,True,4,q_11_0.png,image/png,,15
+HKEAA_geog_2015_12,geog,HKEAA,2015,12,2015 No.12,choice,C,1,geog_1,geog_content_DIM1,1,52287,52285,[1],[1],[1],1,75,True,True,4,q_12_0.png,image/png,,15
+HKEAA_geog_2015_13,geog,HKEAA,2015,13,2015 No.13,choice,D,1,geog_2,geog_content_DIM1,1,52291,52289,[3],[3],[3],1,75,True,True,4,q_13_0.png,image/png,,15
+HKEAA_geog_2015_14,geog,HKEAA,2015,14,2015 No.14,choice,D,1,geog_2,geog_content_DIM1,1,52295,52293,[0],[0],[0],1,75,True,True,4,q_14_0.png,image/png,,15
+HKEAA_geog_2015_15,geog,HKEAA,2015,15,2015 No.15,choice,D,1,geog_2,geog_content_DIM1,1,52299,52297,[2],[2],[2],1,75,True,True,4,q_15_0.png,image/png,,15
+HKEAA_geog_2015_16,geog,HKEAA,2015,16,2015 No.16,choice,A,1,geog_2,geog_content_DIM1,1,52303,52301,[2],[2],[2],1,75,True,True,4,q_16_0.png,image/png,,15
+HKEAA_geog_2015_17,geog,HKEAA,2015,17,2015 No.17,choice,D,1,geog_2,geog_content_DIM1,1,52307,52305,[1],[1],[1],1,75,True,True,4,q_17_0.png,image/png,,15
+HKEAA_geog_2015_18,geog,HKEAA,2015,18,2015 No.18,choice,D,1,geog_3,geog_content_DIM2,1,52311,52309,[2],[2],[2],1,75,True,True,4,q_18_0.png,image/png,,15
+HKEAA_geog_2015_19,geog,HKEAA,2015,19,2015 No.19,choice,A,1,geog_3,geog_content_DIM2,1,52315,52313,[0],[0],[0],1,75,True,True,4,q_19_0.png,image/png,,15
+HKEAA_geog_2015_20,geog,HKEAA,2015,20,2015 No.20,choice,D,1,geog_3,geog_content_DIM2,1,52323,52321,[3],[3],[3],1,75,True,True,4,q_20_0.png,image/png,,15
+HKEAA_geog_2015_21,geog,HKEAA,2015,21,2015 No.21,choice,D,1,geog_3,geog_content_DIM2,1,52327,52325,[0],[0],[0],1,75,True,True,4,q_21_0.png,image/png,,15
+HKEAA_geog_2015_23,geog,HKEAA,2015,23,2015 No.23,choice,D,1,geog_4,geog_content_DIM2,1,52335,52333,[3],[3],[3],1,75,True,True,4,q_23_0.png,image/png,,15
+HKEAA_geog_2015_24,geog,HKEAA,2015,24,2015 No.24,choice,D,1,geog_4,geog_content_DIM2,1,52339,52337,[2],[2],[2],1,75,True,True,4,q_24_0.png,image/png,,15
+HKEAA_geog_2015_25,geog,HKEAA,2015,25,2015 No.25,choice,D,1,geog_4,geog_content_DIM2,1,52343,52341,[1],[1],[1],1,75,True,True,4,q_25_0.png,image/png,,15
+HKEAA_geog_2015_26,geog,HKEAA,2015,26,2015 No.26,choice,D,1,geog_4,geog_content_DIM2,1,52347,52345,[0],[0],[0],1,75,True,True,4,q_26_0.png,image/png,,15
+HKEAA_geog_2015_27,geog,HKEAA,2015,27,2015 No.27,choice,C,1,geog_4,geog_content_DIM2,1,52351,52349,[2],[2],[2],1,75,True,True,4,q_27_0.png,image/png,,15
+HKEAA_geog_2015_28,geog,HKEAA,2015,28,2015 No.28,choice,D,1,geog_5,geog_content_DIM3,1,52355,52353,[2],[2],[2],1,75,True,True,4,q_28_0.png,image/png,,15
+HKEAA_geog_2015_29,geog,HKEAA,2015,29,2015 No.29,choice,D,1,geog_5,geog_content_DIM3,1,52359,52357,[0],[0],[0],1,75,True,True,4,q_29_0.png,image/png,,15
+HKEAA_geog_2015_30,geog,HKEAA,2015,30,2015 No.30,choice,A,1,geog_5,geog_content_DIM3,1,52367,52365,[0],[0],[0],1,75,True,True,4,q_30_0.png,image/png,,15
+HKEAA_geog_2015_31,geog,HKEAA,2015,31,2015 No.31,choice,B,1,geog_5,geog_content_DIM3,1,52371,52369,[3],[3],[3],1,75,True,True,4,q_31_0.png,image/png,,15
+HKEAA_geog_2015_32,geog,HKEAA,2015,32,2015 No.32,choice,A,1,geog_6,geog_content_DIM3,1,52375,52373,[2],[2],[2],1,75,True,True,4,q_32_0.png,image/png,,15
+HKEAA_geog_2015_33,geog,HKEAA,2015,33,2015 No.33,choice,D,1,geog_6,geog_content_DIM3,1,52379,52377,[0],[0],[0],1,75,True,True,4,q_33_0.png,image/png,,15
+HKEAA_geog_2015_34,geog,HKEAA,2015,34,2015 No.34,choice,D,1,geog_6,geog_content_DIM3,1,52383,52381,[3],[3],[3],1,75,True,True,4,q_34_0.png,image/png,,15
+HKEAA_geog_2015_35,geog,HKEAA,2015,35,2015 No.35,choice,D,1,geog_6,geog_content_DIM3,1,52387,52385,[1],[1],[1],1,75,True,True,4,q_35_0.png,image/png,,15
+HKEAA_geog_2015_36,geog,HKEAA,2015,36,2015 No.36,choice,D,1,geog_6,geog_content_DIM3,1,52391,52389,[2],[2],[2],1,75,True,True,4,q_36_0.png,image/png,,15
+HKEAA_geog_2015_37,geog,HKEAA,2015,37,2015 No.37,choice,D,1,geog_7,geog_content_DIM3,1,52395,52393,[3],[3],[3],1,75,True,True,4,q_37_0.png,image/png,,15
+HKEAA_geog_2015_38,geog,HKEAA,2015,38,2015 No.38,choice,D,1,geog_7,geog_content_DIM3,1,52399,52397,[0],[0],[0],1,75,True,True,4,q_38_0.png,image/png,,15
+HKEAA_geog_2015_39,geog,HKEAA,2015,39,2015 No.39,choice,A,1,geog_7,geog_content_DIM3,1,52403,52401,[0],[0],[0],1,75,True,True,4,q_39_0.png,image/png,,15
+HKEAA_geog_2015_40,geog,HKEAA,2015,40,2015 No.40,choice,B,1,geog_7,geog_content_DIM3,1,52411,52409,[2],[2],[2],1,75,True,True,4,q_40_0.png,image/png,,15
+HKEAA_geog_2016_1,geog,HKEAA,2016,1,2016 No.1,choice,D,1,geog_12,geog_content_DIM4,1,52435,52433,[2],[2],[2],1,75,True,True,4,q_01_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2016_2,geog,HKEAA,2016,2,2016 No.2,choice,D,1,geog_12,geog_content_DIM4,1,52479,52477,[1],[1],[1],1,75,True,True,4,q_02_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2016_3,geog,HKEAA,2016,3,2016 No.3,choice,A,1,geog_12,geog_content_DIM4,1,52523,52521,[1],[1],[1],1,75,True,True,4,q_03_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2016_4,geog,HKEAA,2016,4,2016 No.4,choice,B,1,geog_12,geog_content_DIM4,1,52567,52565,[2],[2],[2],1,75,True,True,4,q_04_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2016_5,geog,HKEAA,2016,5,2016 No.5,choice,D,1,geog_12,geog_content_DIM4,1,52575,52573,[1],[1],[1],1,75,True,True,4,q_05_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2016_6,geog,HKEAA,2016,6,2016 No.6,choice,A,1,geog_12,geog_content_DIM4,1,52579,52577,[1],[1],[1],1,75,True,True,4,q_06_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2016_7,geog,HKEAA,2016,7,2016 No.7,choice,D,1,geog_12,geog_content_DIM4,1,52583,52581,[2],[2],[2],1,75,True,True,4,q_07_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2016_8,geog,HKEAA,2016,8,2016 No.8,choice,D,1,geog_12,geog_content_DIM4,1,52587,52585,[2],[2],[2],1,75,True,True,4,q_08_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2016_9,geog,HKEAA,2016,9,2016 No.9,choice,D,1,geog_1,geog_content_DIM1,1,52591,52589,[0],[0],[0],1,75,True,True,4,q_09_0.png,image/png,,15
+HKEAA_geog_2016_10,geog,HKEAA,2016,10,2016 No.10,choice,D,1,geog_1,geog_content_DIM1,1,52439,52437,[1],[1],[1],1,75,True,True,4,q_10_0.png,image/png,,15
+HKEAA_geog_2016_11,geog,HKEAA,2016,11,2016 No.11,choice,D,1,geog_1,geog_content_DIM1,1,52443,52441,[0],[0],[0],1,75,True,True,4,q_11_0.png,image/png,,15
+HKEAA_geog_2016_12,geog,HKEAA,2016,12,2016 No.12,choice,B,1,geog_1,geog_content_DIM1,1,52447,52445,[3],[3],[3],1,75,True,True,4,q_12_0.png,image/png,,15
+HKEAA_geog_2016_13,geog,HKEAA,2016,13,2016 No.13,choice,D,1,geog_1,geog_content_DIM1,1,52451,52449,[0],[0],[0],1,75,True,True,4,q_13_0.png,image/png,,15
+HKEAA_geog_2016_14,geog,HKEAA,2016,14,2016 No.14,choice,C,1,geog_2,geog_content_DIM1,1,52455,52453,[3],[3],[3],1,75,True,True,4,q_14_0.png,image/png,,15
+HKEAA_geog_2016_15,geog,HKEAA,2016,15,2016 No.15,choice,D,1,geog_2,geog_content_DIM1,1,52459,52457,[1],[1],[1],1,75,True,True,4,q_15_0.png,image/png,,15
+HKEAA_geog_2016_16,geog,HKEAA,2016,16,2016 No.16,choice,D,1,geog_2,geog_content_DIM1,1,52463,52461,[2],[2],[2],1,75,True,True,4,q_16_0.png,image/png,,15
+HKEAA_geog_2016_17,geog,HKEAA,2016,17,2016 No.17,choice,D,1,geog_2,geog_content_DIM1,1,52467,52465,[1],[1],[1],1,75,True,True,4,q_17_0.png,image/png,,15
+HKEAA_geog_2016_18,geog,HKEAA,2016,18,2016 No.18,choice,C,1,geog_3,geog_content_DIM2,1,52471,52469,[2],[2],[2],1,75,True,True,4,q_18_0.png,image/png,,15
+HKEAA_geog_2016_19,geog,HKEAA,2016,19,2016 No.19,choice,D,1,geog_3,geog_content_DIM2,1,52475,52473,[3],[3],[3],1,75,True,True,4,q_19_0.png,image/png,,15
+HKEAA_geog_2016_20,geog,HKEAA,2016,20,2016 No.20,choice,D,1,geog_3,geog_content_DIM2,1,52483,52481,[0],[0],[0],1,75,True,True,4,q_20_0.png,image/png,,15
+HKEAA_geog_2016_21,geog,HKEAA,2016,21,2016 No.21,choice,C,1,geog_3,geog_content_DIM2,1,52487,52485,[2],[2],[2],1,75,True,True,4,q_21_0.png,image/png,,15
+HKEAA_geog_2016_22,geog,HKEAA,2016,22,2016 No.22,choice,B,1,geog_4,geog_content_DIM2,1,52491,52489,[0],[0],[0],1,75,True,True,4,q_22_0.png,image/png,,15
+HKEAA_geog_2016_23,geog,HKEAA,2016,23,2016 No.23,choice,D,1,geog_4,geog_content_DIM2,1,52495,52493,[2],[2],[2],1,75,True,True,4,q_23_0.png,image/png,,15
+HKEAA_geog_2016_24,geog,HKEAA,2016,24,2016 No.24,choice,C,1,geog_4,geog_content_DIM2,1,52499,52497,[3],[3],[3],1,75,True,True,4,q_24_0.png,image/png,,15
+HKEAA_geog_2016_25,geog,HKEAA,2016,25,2016 No.25,choice,D,1,geog_4,geog_content_DIM2,1,52503,52501,[3],[3],[3],1,75,True,True,4,q_25_0.png,image/png,,15
+HKEAA_geog_2016_26,geog,HKEAA,2016,26,2016 No.26,choice,B,1,geog_4,geog_content_DIM2,1,52507,52505,[3],[3],[3],1,75,True,True,4,q_26_0.png,image/png,,15
+HKEAA_geog_2016_27,geog,HKEAA,2016,27,2016 No.27,choice,D,1,geog_5,geog_content_DIM3,1,52511,52509,[1],[1],[1],1,75,True,True,4,q_27_0.png,image/png,,15
+HKEAA_geog_2016_28,geog,HKEAA,2016,28,2016 No.28,choice,D,1,geog_5,geog_content_DIM3,1,52515,52513,[3],[3],[3],1,75,True,True,4,q_28_0.png,image/png,,15
+HKEAA_geog_2016_29,geog,HKEAA,2016,29,2016 No.29,choice,D,1,geog_5,geog_content_DIM3,1,52519,52517,[0],[0],[0],1,75,True,True,4,q_29_0.png,image/png,,15
+HKEAA_geog_2016_30,geog,HKEAA,2016,30,2016 No.30,choice,D,1,geog_5,geog_content_DIM3,1,52527,52525,[0],[0],[0],1,75,True,True,4,q_30_0.png,image/png,,15
+HKEAA_geog_2016_31,geog,HKEAA,2016,31,2016 No.31,choice,A,1,geog_5,geog_content_DIM3,1,52531,52529,[3],[3],[3],1,75,True,True,4,q_31_0.png,image/png,,15
+HKEAA_geog_2016_32,geog,HKEAA,2016,32,2016 No.32,choice,D,1,geog_6,geog_content_DIM3,1,52535,52533,[2],[2],[2],1,75,True,True,4,q_32_0.png,image/png,,15
+HKEAA_geog_2016_33,geog,HKEAA,2016,33,2016 No.33,choice,C,1,geog_6,geog_content_DIM3,1,52539,52537,[1],[1],[1],1,75,True,True,4,q_33_0.png,image/png,,15
+HKEAA_geog_2016_34,geog,HKEAA,2016,34,2016 No.34,choice,D,1,geog_6,geog_content_DIM3,1,52543,52541,[2],[2],[2],1,75,True,True,4,q_34_0.png,image/png,,15
+HKEAA_geog_2016_35,geog,HKEAA,2016,35,2016 No.35,choice,D,1,geog_6,geog_content_DIM3,1,52547,52545,[0],[0],[0],1,75,True,True,4,q_35_0.png,image/png,,15
+HKEAA_geog_2016_36,geog,HKEAA,2016,36,2016 No.36,choice,D,1,geog_7,geog_content_DIM3,1,52551,52549,[0],[0],[0],1,75,True,True,4,q_36_0.png,image/png,,15
+HKEAA_geog_2016_37,geog,HKEAA,2016,37,2016 No.37,choice,C,1,geog_7,geog_content_DIM3,1,52555,52553,[3],[3],[3],1,75,True,True,4,q_37_0.png,image/png,,15
+HKEAA_geog_2016_38,geog,HKEAA,2016,38,2016 No.38,choice,D,1,geog_7,geog_content_DIM3,1,52559,52557,[0],[0],[0],1,75,True,True,4,q_38_0.png,image/png,,15
+HKEAA_geog_2016_39,geog,HKEAA,2016,39,2016 No.39,choice,B,1,geog_7,geog_content_DIM3,1,52563,52561,[3],[3],[3],1,75,True,True,4,q_39_0.png,image/png,,15
+HKEAA_geog_2016_40,geog,HKEAA,2016,40,2016 No.40,choice,C,1,geog_7,geog_content_DIM3,1,52571,52569,[1],[1],[1],1,75,True,True,4,q_40_0.png,image/png,,15
+HKEAA_geog_2017_1,geog,HKEAA,2017,1,2017 No.1,choice,D,1,geog_12,geog_content_DIM4,1,52595,52593,[3],[3],[3],1,75,True,True,4,q_01_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2017_2,geog,HKEAA,2017,2,2017 No.2,choice,D,1,geog_12,geog_content_DIM4,1,52639,52637,[3],[3],[3],1,75,True,True,4,q_02_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2017_3,geog,HKEAA,2017,3,2017 No.3,choice,A,1,geog_12,geog_content_DIM4,1,52683,52681,[2],[2],[2],1,75,True,True,4,q_03_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2017_4,geog,HKEAA,2017,4,2017 No.4,choice,A,1,geog_12,geog_content_DIM4,1,52727,52725,[0],[0],[0],1,75,True,True,4,q_04_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2017_5,geog,HKEAA,2017,5,2017 No.5,choice,D,1,geog_12,geog_content_DIM4,1,52735,52733,[0],[0],[0],1,75,True,True,4,q_05_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2017_6,geog,HKEAA,2017,6,2017 No.6,choice,D,1,geog_12,geog_content_DIM4,1,52739,52737,[1],[1],[1],1,75,True,True,4,q_06_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2017_7,geog,HKEAA,2017,7,2017 No.7,choice,D,1,geog_12,geog_content_DIM4,1,52743,52741,[0],[0],[0],1,75,True,True,4,q_07_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2017_8,geog,HKEAA,2017,8,2017 No.8,choice,D,1,geog_12,geog_content_DIM4,1,52747,52745,[2],[2],[2],1,75,True,True,4,q_08_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2017_9,geog,HKEAA,2017,9,2017 No.9,choice,A,1,geog_1,geog_content_DIM1,1,52751,52749,[3],[3],[3],1,75,True,True,4,q_09_0.png,image/png,,15
+HKEAA_geog_2017_10,geog,HKEAA,2017,10,2017 No.10,choice,D,1,geog_1,geog_content_DIM1,1,52599,52597,[1],[1],[1],1,75,True,True,4,q_10_0.png,image/png,,15
+HKEAA_geog_2017_11,geog,HKEAA,2017,11,2017 No.11,choice,D,1,geog_1,geog_content_DIM1,1,52603,52601,[2],[2],[2],1,75,True,True,4,q_11_0.png,image/png,,15
+HKEAA_geog_2017_12,geog,HKEAA,2017,12,2017 No.12,choice,D,1,geog_1,geog_content_DIM1,1,52607,52605,[3],[3],[3],1,75,True,True,4,q_12_0.png,image/png,,15
+HKEAA_geog_2017_13,geog,HKEAA,2017,13,2017 No.13,choice,D,1,geog_2,geog_content_DIM1,1,52611,52609,[1],[1],[1],1,75,True,True,4,q_13_0.png,image/png,,15
+HKEAA_geog_2017_14,geog,HKEAA,2017,14,2017 No.14,choice,C,1,geog_2,geog_content_DIM1,1,52615,52613,[0],[0],[0],1,75,True,True,4,q_14_0.png,image/png,,15
+HKEAA_geog_2017_15,geog,HKEAA,2017,15,2017 No.15,choice,D,1,geog_2,geog_content_DIM1,1,52619,52617,[2],[2],[2],1,75,True,True,4,q_15_0.png,image/png,,15
+HKEAA_geog_2017_16,geog,HKEAA,2017,16,2017 No.16,choice,A,1,geog_2,geog_content_DIM1,1,52623,52621,[0],[0],[0],1,75,True,True,4,q_16_0.png,image/png,,15
+HKEAA_geog_2017_17,geog,HKEAA,2017,17,2017 No.17,choice,D,1,geog_2,geog_content_DIM1,1,52627,52625,[2],[2],[2],1,75,True,True,4,q_17_0.png,image/png,,15
+HKEAA_geog_2017_18,geog,HKEAA,2017,18,2017 No.18,choice,D,1,geog_3,geog_content_DIM2,1,52631,52629,[0],[0],[0],1,75,True,True,4,q_18_0.png,image/png,,15
+HKEAA_geog_2017_19,geog,HKEAA,2017,19,2017 No.19,choice,A,1,geog_3,geog_content_DIM2,1,52635,52633,[2],[2],[2],1,75,True,True,4,q_19_0.png,image/png,,15
+HKEAA_geog_2017_20,geog,HKEAA,2017,20,2017 No.20,choice,C,1,geog_3,geog_content_DIM2,1,52643,52641,[0],[0],[0],1,75,True,True,4,q_20_0.png,image/png,,15
+HKEAA_geog_2017_21,geog,HKEAA,2017,21,2017 No.21,choice,D,1,geog_3,geog_content_DIM2,1,52647,52645,[1],[1],[1],1,75,True,True,4,q_21_0.png,image/png,,15
+HKEAA_geog_2017_22,geog,HKEAA,2017,22,2017 No.22,choice,D,1,geog_3,geog_content_DIM2,1,52651,52649,[1],[1],[1],1,75,True,True,4,q_22_0.png,image/png,,15
+HKEAA_geog_2017_23,geog,HKEAA,2017,23,2017 No.23,choice,D,1,geog_4,geog_content_DIM2,1,52655,52653,[3],[3],[3],1,75,True,True,4,q_23_0.png,image/png,,15
+HKEAA_geog_2017_24,geog,HKEAA,2017,24,2017 No.24,choice,D,1,geog_4,geog_content_DIM2,1,52659,52657,[0],[0],[0],1,75,True,True,4,q_24_0.png,image/png,,15
+HKEAA_geog_2017_25,geog,HKEAA,2017,25,2017 No.25,choice,D,1,geog_4,geog_content_DIM2,1,52663,52661,[1],[1],[1],1,75,True,True,4,q_25_0.png,image/png,,15
+HKEAA_geog_2017_26,geog,HKEAA,2017,26,2017 No.26,choice,D,1,geog_4,geog_content_DIM2,1,52667,52665,[2],[2],[2],1,75,True,True,4,q_26_0.png,image/png,,15
+HKEAA_geog_2017_27,geog,HKEAA,2017,27,2017 No.27,choice,D,1,geog_4,geog_content_DIM2,1,52671,52669,[2],[2],[2],1,75,True,True,4,q_27_0.png,image/png,,15
+HKEAA_geog_2017_28,geog,HKEAA,2017,28,2017 No.28,choice,A,1,geog_5,geog_content_DIM3,1,52675,52673,[0],[0],[0],1,75,True,True,4,q_28_0.png,image/png,,15
+HKEAA_geog_2017_29,geog,HKEAA,2017,29,2017 No.29,choice,B,1,geog_5,geog_content_DIM3,1,52679,52677,[1],[1],[1],1,75,True,True,4,q_29_0.png,image/png,,15
+HKEAA_geog_2017_30,geog,HKEAA,2017,30,2017 No.30,choice,B,1,geog_5,geog_content_DIM3,1,52687,52685,[1],[1],[1],1,75,True,True,4,q_30_0.png,image/png,,15
+HKEAA_geog_2017_31,geog,HKEAA,2017,31,2017 No.31,choice,B,1,geog_5,geog_content_DIM3,1,52691,52689,[3],[3],[3],1,75,True,True,4,q_31_0.png,image/png,,15
+HKEAA_geog_2017_32,geog,HKEAA,2017,32,2017 No.32,choice,D,1,geog_6,geog_content_DIM3,1,52695,52693,[2],[2],[2],1,75,True,True,4,q_32_0.png,image/png,,15
+HKEAA_geog_2017_33,geog,HKEAA,2017,33,2017 No.33,choice,D,1,geog_6,geog_content_DIM3,1,52699,52697,[1],[1],[1],1,75,True,True,4,q_33_0.png,image/png,,15
+HKEAA_geog_2017_34,geog,HKEAA,2017,34,2017 No.34,choice,D,1,geog_6,geog_content_DIM3,1,52703,52701,[1],[1],[1],1,75,True,True,4,q_34_0.png,image/png,,15
+HKEAA_geog_2017_35,geog,HKEAA,2017,35,2017 No.35,choice,D,1,geog_6,geog_content_DIM3,1,52707,52705,[2],[2],[2],1,75,True,True,4,q_35_0.png,image/png,,15
+HKEAA_geog_2017_36,geog,HKEAA,2017,36,2017 No.36,choice,B,1,geog_6,geog_content_DIM3,1,52711,52709,[3],[3],[3],1,75,True,True,4,q_36_0.png,image/png,,15
+HKEAA_geog_2017_37,geog,HKEAA,2017,37,2017 No.37,choice,D,1,geog_7,geog_content_DIM3,1,52715,52713,[3],[3],[3],1,75,True,True,4,q_37_0.png,image/png,,15
+HKEAA_geog_2017_38,geog,HKEAA,2017,38,2017 No.38,choice,D,1,geog_7,geog_content_DIM3,1,52719,52717,[0],[0],[0],1,75,True,True,4,q_38_0.png,image/png,,15
+HKEAA_geog_2017_39,geog,HKEAA,2017,39,2017 No.39,choice,C,1,geog_7,geog_content_DIM3,1,52723,52721,[3],[3],[3],1,75,True,True,4,q_39_0.png,image/png,,15
+HKEAA_geog_2017_40,geog,HKEAA,2017,40,2017 No.40,choice,D,1,geog_7,geog_content_DIM3,1,52731,52729,[3],[3],[3],1,75,True,True,4,q_40_0.png,image/png,,15
+HKEAA_geog_2018_1,geog,HKEAA,2018,1,2018 No.1,choice,B,1,geog_12,geog_content_DIM4,1,52755,52753,[1],[1],[1],1,75,True,True,4,q_01_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2018_2,geog,HKEAA,2018,2,2018 No.2,choice,C,1,geog_12,geog_content_DIM4,1,52799,52797,[2],[2],[2],1,75,True,True,4,q_02_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2018_3,geog,HKEAA,2018,3,2018 No.3,choice,A,1,geog_12,geog_content_DIM4,1,52843,52841,[2],[2],[2],1,75,True,True,4,q_03_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2018_4,geog,HKEAA,2018,4,2018 No.4,choice,B,1,geog_12,geog_content_DIM4,1,52887,52885,[0],[0],[0],1,75,True,True,4,q_04_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2018_5,geog,HKEAA,2018,5,2018 No.5,choice,D,1,geog_12,geog_content_DIM4,1,52895,52893,[0],[0],[0],1,75,True,True,4,q_05_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2018_6,geog,HKEAA,2018,6,2018 No.6,choice,C,1,geog_12,geog_content_DIM4,1,52899,52897,[1],[1],[1],1,75,True,True,4,q_06_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2018_7,geog,HKEAA,2018,7,2018 No.7,choice,C,1,geog_12,geog_content_DIM4,1,52903,52901,[0],[0],[0],1,75,True,True,4,q_07_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2018_8,geog,HKEAA,2018,8,2018 No.8,choice,D,1,geog_12,geog_content_DIM4,1,52907,52905,[3],[3],[3],1,75,True,True,4,q_08_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2018_9,geog,HKEAA,2018,9,2018 No.9,choice,D,1,geog_1,geog_content_DIM1,1,52911,52909,[1],[1],[1],1,75,True,True,4,q_09_0.png,image/png,,15
+HKEAA_geog_2018_10,geog,HKEAA,2018,10,2018 No.10,choice,D,1,geog_1,geog_content_DIM1,1,52759,52757,[0],[0],[0],1,75,True,True,4,q_10_0.png,image/png,,15
+HKEAA_geog_2018_11,geog,HKEAA,2018,11,2018 No.11,choice,C,1,geog_1,geog_content_DIM1,1,52763,52761,[1],[1],[1],1,75,True,True,4,q_11_0.png,image/png,,15
+HKEAA_geog_2018_12,geog,HKEAA,2018,12,2018 No.12,choice,D,1,geog_1,geog_content_DIM1,1,52767,52765,[2],[2],[2],1,75,True,True,4,q_12_0.png,image/png,,15
+HKEAA_geog_2018_13,geog,HKEAA,2018,13,2018 No.13,choice,D,1,geog_2,geog_content_DIM1,1,52771,52769,[0],[0],[0],1,75,True,True,4,q_13_0.png,image/png,,15
+HKEAA_geog_2018_14,geog,HKEAA,2018,14,2018 No.14,choice,D,1,geog_2,geog_content_DIM1,1,52775,52773,[0],[0],[0],1,75,True,True,4,q_14_0.png,image/png,,15
+HKEAA_geog_2018_15,geog,HKEAA,2018,15,2018 No.15,choice,D,1,geog_2,geog_content_DIM1,1,52779,52777,[3],[3],[3],1,75,True,True,4,q_15_0.png,image/png,,15
+HKEAA_geog_2018_16,geog,HKEAA,2018,16,2018 No.16,choice,B,1,geog_2,geog_content_DIM1,1,52783,52781,[3],[3],[3],1,75,True,True,4,q_16_0.png,image/png,,15
+HKEAA_geog_2018_17,geog,HKEAA,2018,17,2018 No.17,choice,D,1,geog_2,geog_content_DIM1,1,52787,52785,[1],[1],[1],1,75,True,True,4,q_17_0.png,image/png,,15
+HKEAA_geog_2018_18,geog,HKEAA,2018,18,2018 No.18,choice,D,1,geog_3,geog_content_DIM2,1,52791,52789,[2],[2],[2],1,75,True,True,4,q_18_0.png,image/png,,15
+HKEAA_geog_2018_19,geog,HKEAA,2018,19,2018 No.19,choice,C,1,geog_3,geog_content_DIM2,1,52795,52793,[2],[2],[2],1,75,True,True,4,q_19_0.png,image/png,,15
+HKEAA_geog_2018_20,geog,HKEAA,2018,20,2018 No.20,choice,D,1,geog_3,geog_content_DIM2,1,52803,52801,[1],[1],[1],1,75,True,True,4,q_20_0.png,image/png,,15
+HKEAA_geog_2018_21,geog,HKEAA,2018,21,2018 No.21,choice,A,1,geog_3,geog_content_DIM2,1,52807,52805,[3],[3],[3],1,75,True,True,4,q_21_0.png,image/png,,15
+HKEAA_geog_2018_22,geog,HKEAA,2018,22,2018 No.22,choice,D,1,geog_3,geog_content_DIM2,1,52811,52809,[3],[3],[3],1,75,True,True,4,q_22_0.png,image/png,,15
+HKEAA_geog_2018_23,geog,HKEAA,2018,23,2018 No.23,choice,A,1,geog_4,geog_content_DIM2,1,52815,52813,[1],[1],[1],1,75,True,True,4,q_23_0.png,image/png,,15
+HKEAA_geog_2018_24,geog,HKEAA,2018,24,2018 No.24,choice,D,1,geog_4,geog_content_DIM2,1,52819,52817,[0],[0],[0],1,75,True,True,4,q_24_0.png,image/png,,15
+HKEAA_geog_2018_25,geog,HKEAA,2018,25,2018 No.25,choice,D,1,geog_4,geog_content_DIM2,1,52823,52821,[3],[3],[3],1,75,True,True,4,q_25_0.png,image/png,,15
+HKEAA_geog_2018_26,geog,HKEAA,2018,26,2018 No.26,choice,A,1,geog_4,geog_content_DIM2,1,52827,52825,[3],[3],[3],1,75,True,True,4,q_26_0.png,image/png,,15
+HKEAA_geog_2018_27,geog,HKEAA,2018,27,2018 No.27,choice,D,1,geog_5,geog_content_DIM3,1,52831,52829,[1],[1],[1],1,75,True,True,4,q_27_0.png,image/png,,15
+HKEAA_geog_2018_28,geog,HKEAA,2018,28,2018 No.28,choice,D,1,geog_5,geog_content_DIM3,1,52835,52833,[0],[0],[0],1,75,True,True,4,q_28_0.png,image/png,,15
+HKEAA_geog_2018_29,geog,HKEAA,2018,29,2018 No.29,choice,D,1,geog_5,geog_content_DIM3,1,52839,52837,[2],[2],[2],1,75,True,True,4,q_29_0.png,image/png,,15
+HKEAA_geog_2018_30,geog,HKEAA,2018,30,2018 No.30,choice,D,1,geog_5,geog_content_DIM3,1,52847,52845,[0],[0],[0],1,75,True,True,4,q_30_0.png,image/png,,15
+HKEAA_geog_2018_31,geog,HKEAA,2018,31,2018 No.31,choice,C,1,geog_5,geog_content_DIM3,1,52851,52849,[1],[1],[1],1,75,True,True,4,q_31_0.png,image/png,,15
+HKEAA_geog_2018_32,geog,HKEAA,2018,32,2018 No.32,choice,D,1,geog_6,geog_content_DIM3,1,52855,52853,[2],[2],[2],1,75,True,True,4,q_32_0.png,image/png,,15
+HKEAA_geog_2018_33,geog,HKEAA,2018,33,2018 No.33,choice,D,1,geog_6,geog_content_DIM3,1,52859,52857,[2],[2],[2],1,75,True,True,4,q_33_0.png,image/png,,15
+HKEAA_geog_2018_34,geog,HKEAA,2018,34,2018 No.34,choice,D,1,geog_6,geog_content_DIM3,1,52863,52861,[0],[0],[0],1,75,True,True,4,q_34_0.png,image/png,,15
+HKEAA_geog_2018_35,geog,HKEAA,2018,35,2018 No.35,choice,D,1,geog_6,geog_content_DIM3,1,52867,52865,[3],[3],[3],1,75,True,True,4,q_35_0.png,image/png,,15
+HKEAA_geog_2018_36,geog,HKEAA,2018,36,2018 No.36,choice,D,1,geog_7,geog_content_DIM3,1,52871,52869,[3],[3],[3],1,75,True,True,4,q_36_0.png,image/png,,15
+HKEAA_geog_2018_37,geog,HKEAA,2018,37,2018 No.37,choice,D,1,geog_7,geog_content_DIM3,1,52875,52873,[1],[1],[1],1,75,True,True,4,q_37_0.png,image/png,,15
+HKEAA_geog_2018_38,geog,HKEAA,2018,38,2018 No.38,choice,B,1,geog_7,geog_content_DIM3,1,52879,52877,[3],[3],[3],1,75,True,True,4,q_38_0.png,image/png,,15
+HKEAA_geog_2018_39,geog,HKEAA,2018,39,2018 No.39,choice,D,1,geog_7,geog_content_DIM3,1,52883,52881,[2],[2],[2],1,75,True,True,4,q_39_0.png,image/png,,15
+HKEAA_geog_2018_40,geog,HKEAA,2018,40,2018 No.40,choice,D,1,geog_7,geog_content_DIM3,1,52891,52889,[2],[2],[2],1,75,True,True,4,q_40_0.png,image/png,,15
+HKEAA_geog_2019_1,geog,HKEAA,2019,1,2019 No.1,choice,D,1,geog_12,geog_content_DIM4,1,71399,71359,[1],[1],[1],1,90,True,True,4,q_01_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2019_2,geog,HKEAA,2019,2,2019 No.2,choice,D,1,geog_12,geog_content_DIM4,1,71401,71361,[2],[2],[2],1,90,True,True,4,q_02_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2019_3,geog,HKEAA,2019,3,2019 No.3,choice,C,1,geog_12,geog_content_DIM4,1,71403,71363,[3],[3],[3],1,90,True,True,4,q_03_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2019_4,geog,HKEAA,2019,4,2019 No.4,choice,D,1,geog_12,geog_content_DIM4,1,71405,71365,[1],[1],[1],1,90,True,True,4,q_04_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2019_5,geog,HKEAA,2019,5,2019 No.5,choice,B,1,geog_12,geog_content_DIM4,1,71407,71367,[0],[0],[0],1,90,True,True,4,q_05_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2019_6,geog,HKEAA,2019,6,2019 No.6,choice,B,1,geog_12,geog_content_DIM4,1,71409,71369,[2],[2],[2],1,90,True,True,4,q_06_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2019_7,geog,HKEAA,2019,7,2019 No.7,choice,C,1,geog_1,geog_content_DIM1,1,71411,71371,[1],[1],[1],1,90,True,True,4,q_07_0.png,image/png,,15
+HKEAA_geog_2019_8,geog,HKEAA,2019,8,2019 No.8,choice,C,1,geog_1,geog_content_DIM1,1,71413,71373,[3],[3],[3],1,90,True,True,4,q_08_0.png,image/png,,15
+HKEAA_geog_2019_9,geog,HKEAA,2019,9,2019 No.9,choice,D,1,geog_2,geog_content_DIM1,1,71415,71375,[1],[1],[1],1,90,True,True,4,q_09_0.png,image/png,,15
+HKEAA_geog_2019_10,geog,HKEAA,2019,10,2019 No.10,choice,D,1,geog_2,geog_content_DIM1,1,71417,71377,[0],[0],[0],1,90,True,True,4,q_10_0.png,image/png,,15
+HKEAA_geog_2019_11,geog,HKEAA,2019,11,2019 No.11,choice,D,1,geog_3,geog_content_DIM2,1,71419,71379,[3],[3],[3],1,90,True,True,4,q_11_0.png,image/png,,15
+HKEAA_geog_2019_12,geog,HKEAA,2019,12,2019 No.12,choice,D,1,geog_3,geog_content_DIM2,1,71421,71381,[2],[2],[2],1,90,True,True,4,q_12_0.png,image/png,,15
+HKEAA_geog_2019_13,geog,HKEAA,2019,13,2019 No.13,choice,B,1,geog_4,geog_content_DIM2,1,71423,71383,[3],[3],[3],1,90,True,True,4,q_13_0.png,image/png,,15
+HKEAA_geog_2019_14,geog,HKEAA,2019,14,2019 No.14,choice,D,1,geog_4,geog_content_DIM2,1,71425,71385,[0],[0],[0],1,90,True,True,4,q_14_0.png,image/png,,15
+HKEAA_geog_2019_15,geog,HKEAA,2019,15,2019 No.15,choice,B,1,geog_5,geog_content_DIM3,1,71427,71387,[2],[2],[2],1,90,True,True,4,q_15_0.png,image/png,,15
+HKEAA_geog_2019_16,geog,HKEAA,2019,16,2019 No.16,choice,D,1,geog_5,geog_content_DIM3,1,71429,71389,[0],[0],[0],1,90,True,True,4,q_16_0.png,image/png,,15
+HKEAA_geog_2019_17,geog,HKEAA,2019,17,2019 No.17,choice,C,1,geog_6,geog_content_DIM3,1,71431,71391,[1],[1],[1],1,90,True,True,4,q_17_0.png,image/png,,15
+HKEAA_geog_2019_18,geog,HKEAA,2019,18,2019 No.18,choice,D,1,geog_6,geog_content_DIM3,1,71433,71393,[2],[2],[2],1,90,True,True,4,q_18_0.png,image/png,,15
+HKEAA_geog_2019_19,geog,HKEAA,2019,19,2019 No.19,choice,C,1,geog_7,geog_content_DIM3,1,71435,71395,[0],[0],[0],1,90,True,True,4,q_19_0.png,image/png,,15
+HKEAA_geog_2019_20,geog,HKEAA,2019,20,2019 No.20,choice,D,1,geog_7,geog_content_DIM3,1,71437,71397,[3],[3],[3],1,90,True,True,4,q_20_0.png,image/png,,15
+HKEAA_geog_2020_1,geog,HKEAA,2020,1,2020 No.1,choice,D,1,geog_12,geog_content_DIM4,1,72911,72871,[0],[0],[0],1,90,True,True,4,q_01_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2020_2,geog,HKEAA,2020,2,2020 No.2,choice,A,1,geog_12,geog_content_DIM4,1,72913,72873,[3],[3],[3],1,90,True,True,4,q_02_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2020_3,geog,HKEAA,2020,3,2020 No.3,choice,A,1,geog_12,geog_content_DIM4,1,72915,72875,[3],[3],[3],1,90,True,True,4,q_03_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2020_4,geog,HKEAA,2020,4,2020 No.4,choice,D,1,geog_12,geog_content_DIM4,1,72917,72877,[0],[0],[0],1,90,True,True,4,q_04_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2020_5,geog,HKEAA,2020,5,2020 No.5,choice,A,1,geog_12,geog_content_DIM4,1,72919,72879,[2],[2],[2],1,90,True,True,4,q_05_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2020_6,geog,HKEAA,2020,6,2020 No.6,choice,C,1,geog_12,geog_content_DIM4,1,72921,72881,[1],[1],[1],1,90,True,True,4,q_06_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2020_7,geog,HKEAA,2020,7,2020 No.7,choice,D,1,geog_1,geog_content_DIM1,1,72923,72883,[2],[2],[2],1,90,True,True,4,q_07_0.png,image/png,,15
+HKEAA_geog_2020_8,geog,HKEAA,2020,8,2020 No.8,choice,D,1,geog_1,geog_content_DIM1,1,72925,72885,[1],[1],[1],1,90,True,True,4,q_08_0.png,image/png,,15
+HKEAA_geog_2020_9,geog,HKEAA,2020,9,2020 No.9,choice,D,1,geog_2,geog_content_DIM1,1,72927,72887,[3],[3],[3],1,90,True,True,4,q_09_0.png,image/png,,15
+HKEAA_geog_2020_10,geog,HKEAA,2020,10,2020 No.10,choice,C,1,geog_2,geog_content_DIM1,1,72929,72889,[3],[3],[3],1,90,True,True,4,q_10_0.png,image/png,,15
+HKEAA_geog_2020_11,geog,HKEAA,2020,11,2020 No.11,choice,D,1,geog_3,geog_content_DIM2,1,72931,72891,[1],[1],[1],1,90,True,True,4,q_11_0.png,image/png,,15
+HKEAA_geog_2020_12,geog,HKEAA,2020,12,2020 No.12,choice,A,1,geog_3,geog_content_DIM2,1,72933,72893,[1],[1],[1],1,90,True,True,4,q_12_0.png,image/png,,15
+HKEAA_geog_2020_13,geog,HKEAA,2020,13,2020 No.13,choice,D,1,geog_4,geog_content_DIM2,1,72935,72895,[2],[2],[2],1,90,True,True,4,q_13_0.png,image/png,,15
+HKEAA_geog_2020_14,geog,HKEAA,2020,14,2020 No.14,choice,B,1,geog_4,geog_content_DIM2,1,72937,72897,[0],[0],[0],1,90,True,True,4,q_14_0.png,image/png,,15
+HKEAA_geog_2020_15,geog,HKEAA,2020,15,2020 No.15,choice,D,1,geog_5,geog_content_DIM3,1,72939,72899,[2],[2],[2],1,90,True,True,4,q_15_0.png,image/png,,15
+HKEAA_geog_2020_16,geog,HKEAA,2020,16,2020 No.16,choice,D,1,geog_5,geog_content_DIM3,1,72941,72901,[0],[0],[0],1,90,True,True,4,q_16_0.png,image/png,,15
+HKEAA_geog_2020_17,geog,HKEAA,2020,17,2020 No.17,choice,D,1,geog_6,geog_content_DIM3,1,72943,72903,[1],[1],[1],1,90,True,True,4,q_17_0.png,image/png,,15
+HKEAA_geog_2020_18,geog,HKEAA,2020,18,2020 No.18,choice,D,1,geog_6,geog_content_DIM3,1,72945,72905,[0],[0],[0],1,90,True,True,4,q_18_0.png,image/png,,15
+HKEAA_geog_2020_19,geog,HKEAA,2020,19,2020 No.19,choice,D,1,geog_7,geog_content_DIM3,1,72947,72907,[2],[2],[2],1,90,True,True,4,q_19_0.png,image/png,,15
+HKEAA_geog_2020_20,geog,HKEAA,2020,20,2020 No.20,choice,C,1,geog_7,geog_content_DIM3,1,72949,72909,[3],[3],[3],1,90,True,True,4,q_20_0.png,image/png,,15
+HKEAA_geog_2021_1,geog,HKEAA,2021,1,2021 No.1,choice,D,1,geog_12,geog_content_DIM4,1,74439,74399,[3],[3],[3],1,90,True,True,4,q_01_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2021_2,geog,HKEAA,2021,2,2021 No.2,choice,B,1,geog_12,geog_content_DIM4,1,74441,74401,[2],[2],[2],1,90,True,True,4,q_02_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2021_3,geog,HKEAA,2021,3,2021 No.3,choice,A,1,geog_12,geog_content_DIM4,1,74443,74403,[1],[1],[1],1,90,True,True,4,q_03_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2021_4,geog,HKEAA,2021,4,2021 No.4,choice,C,1,geog_12,geog_content_DIM4,1,74445,74405,[2],[2],[2],1,90,True,True,4,q_04_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2021_5,geog,HKEAA,2021,5,2021 No.5,choice,C,1,geog_12,geog_content_DIM4,1,74447,74407,[2],[2],[2],1,90,True,True,4,q_05_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2021_6,geog,HKEAA,2021,6,2021 No.6,choice,D,1,geog_12,geog_content_DIM4,1,74449,74409,[1],[1],[1],1,90,True,True,4,q_06_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2021_7,geog,HKEAA,2021,7,2021 No.7,choice,A,1,geog_1,geog_content_DIM1,1,74451,74411,[0],[0],[0],1,90,True,True,4,q_07_0.png,image/png,,15
+HKEAA_geog_2021_8,geog,HKEAA,2021,8,2021 No.8,choice,A,1,geog_1,geog_content_DIM1,1,74453,74413,[1],[1],[1],1,90,True,True,4,q_08_0.png,image/png,,15
+HKEAA_geog_2021_9,geog,HKEAA,2021,9,2021 No.9,choice,D,1,geog_2,geog_content_DIM1,1,74455,74415,[0],[0],[0],1,90,True,True,4,q_09_0.png,image/png,,15
+HKEAA_geog_2021_10,geog,HKEAA,2021,10,2021 No.10,choice,A,1,geog_2,geog_content_DIM1,1,74457,74417,[2],[2],[2],1,90,True,True,4,q_10_0.png,image/png,,15
+HKEAA_geog_2021_11,geog,HKEAA,2021,11,2021 No.11,choice,B,1,geog_3,geog_content_DIM2,1,74459,74419,[1],[1],[1],1,90,True,True,4,q_11_0.png,image/png,,15
+HKEAA_geog_2021_12,geog,HKEAA,2021,12,2021 No.12,choice,A,1,geog_3,geog_content_DIM2,1,74461,74421,[0],[0],[0],1,90,True,True,4,q_12_0.png,image/png,,15
+HKEAA_geog_2021_13,geog,HKEAA,2021,13,2021 No.13,choice,D,1,geog_4,geog_content_DIM2,1,74463,74423,[1],[1],[1],1,90,True,True,4,q_13_0.png,image/png,,15
+HKEAA_geog_2021_14,geog,HKEAA,2021,14,2021 No.14,choice,C,1,geog_4,geog_content_DIM2,1,74465,74425,[3],[3],[3],1,90,True,True,4,q_14_0.png,image/png,,15
+HKEAA_geog_2021_15,geog,HKEAA,2021,15,2021 No.15,choice,D,1,geog_5,geog_content_DIM3,1,74467,74427,[3],[3],[3],1,90,True,True,4,q_15_0.png,image/png,,15
+HKEAA_geog_2021_16,geog,HKEAA,2021,16,2021 No.16,choice,D,1,geog_5,geog_content_DIM3,1,74469,74429,[2],[2],[2],1,90,True,True,4,q_16_0.png,image/png,,15
+HKEAA_geog_2021_17,geog,HKEAA,2021,17,2021 No.17,choice,A,1,geog_6,geog_content_DIM3,1,74471,74431,[0],[0],[0],1,90,True,True,4,q_17_0.png,image/png,,15
+HKEAA_geog_2021_18,geog,HKEAA,2021,18,2021 No.18,choice,B,1,geog_6,geog_content_DIM3,1,74473,74433,[3],[3],[3],1,90,True,True,4,q_18_0.png,image/png,,15
+HKEAA_geog_2021_19,geog,HKEAA,2021,19,2021 No.19,choice,A,1,geog_7,geog_content_DIM3,1,74475,74435,[3],[3],[3],1,90,True,True,4,q_19_0.png,image/png,,15
+HKEAA_geog_2021_20,geog,HKEAA,2021,20,2021 No.20,choice,D,1,geog_7,geog_content_DIM3,1,74477,74437,[0],[0],[0],1,90,True,True,4,q_20_0.png,image/png,,15
+HKEAA_geog_2022_1,geog,HKEAA,2022,1,2022 No.1,choice,C,1,geog_12,geog_content_DIM4,1,75955,75915,[2],[2],[2],1,90,True,True,4,q_01_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2022_2,geog,HKEAA,2022,2,2022 No.2,choice,C,1,geog_12,geog_content_DIM4,1,75957,75917,[3],[3],[3],1,90,True,True,4,q_02_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2022_3,geog,HKEAA,2022,3,2022 No.3,choice,C,1,geog_12,geog_content_DIM4,1,75959,75919,[3],[3],[3],1,90,True,True,4,q_03_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2022_4,geog,HKEAA,2022,4,2022 No.4,choice,D,1,geog_12,geog_content_DIM4,1,75961,75921,[1],[1],[1],1,90,True,True,4,q_04_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2022_5,geog,HKEAA,2022,5,2022 No.5,choice,C,1,geog_12,geog_content_DIM4,1,75963,75923,[2],[2],[2],1,90,True,True,4,q_05_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2022_6,geog,HKEAA,2022,6,2022 No.6,choice,D,1,geog_12,geog_content_DIM4,1,75965,75925,[2],[2],[2],1,90,True,True,4,q_06_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2022_7,geog,HKEAA,2022,7,2022 No.7,choice,C,1,geog_1,geog_content_DIM1,1,75967,75927,[1],[1],[1],1,90,True,True,4,q_07_0.png,image/png,,15
+HKEAA_geog_2022_8,geog,HKEAA,2022,8,2022 No.8,choice,D,1,geog_1,geog_content_DIM1,1,75969,75929,[0],[0],[0],1,90,True,True,4,q_08_0.png,image/png,,15
+HKEAA_geog_2022_9,geog,HKEAA,2022,9,2022 No.9,choice,C,1,geog_2,geog_content_DIM1,1,75971,75931,[3],[3],[3],1,90,True,True,4,q_09_0.png,image/png,,15
+HKEAA_geog_2022_10,geog,HKEAA,2022,10,2022 No.10,choice,C,1,geog_2,geog_content_DIM1,1,75973,75933,[0],[0],[0],1,90,True,True,4,q_10_0.png,image/png,,15
+HKEAA_geog_2022_11,geog,HKEAA,2022,11,2022 No.11,choice,A,1,geog_3,geog_content_DIM2,1,75975,75935,[0],[0],[0],1,90,True,True,4,q_11_0.png,image/png,,15
+HKEAA_geog_2022_12,geog,HKEAA,2022,12,2022 No.12,choice,D,1,geog_3,geog_content_DIM2,1,75977,75937,[1],[1],[1],1,90,True,True,4,q_12_0.png,image/png,,15
+HKEAA_geog_2022_13,geog,HKEAA,2022,13,2022 No.13,choice,A,1,geog_4,geog_content_DIM2,1,75979,75939,[1],[1],[1],1,90,True,True,4,q_13_0.png,image/png,,15
+HKEAA_geog_2022_14,geog,HKEAA,2022,14,2022 No.14,choice,D,1,geog_4,geog_content_DIM2,1,75981,75941,[2],[2],[2],1,90,True,True,4,q_14_0.png,image/png,,15
+HKEAA_geog_2022_15,geog,HKEAA,2022,15,2022 No.15,choice,D,1,geog_5,geog_content_DIM3,1,75983,75943,[0],[0],[0],1,90,True,True,4,q_15_0.png,image/png,,15
+HKEAA_geog_2022_16,geog,HKEAA,2022,16,2022 No.16,choice,A,1,geog_5,geog_content_DIM3,1,75985,75945,[3],[3],[3],1,90,True,True,4,q_16_0.png,image/png,,15
+HKEAA_geog_2022_17,geog,HKEAA,2022,17,2022 No.17,choice,A,1,geog_6,geog_content_DIM3,1,75987,75947,[0],[0],[0],1,90,True,True,4,q_17_0.png,image/png,,15
+HKEAA_geog_2022_18,geog,HKEAA,2022,18,2022 No.18,choice,D,1,geog_6,geog_content_DIM3,1,75989,75949,[1],[1],[1],1,90,True,True,4,q_18_0.png,image/png,,15
+HKEAA_geog_2022_19,geog,HKEAA,2022,19,2022 No.19,choice,D,1,geog_7,geog_content_DIM3,1,75991,75951,[2],[2],[2],1,90,True,True,4,q_19_0.png,image/png,,15
+HKEAA_geog_2022_20,geog,HKEAA,2022,20,2022 No.20,choice,D,1,geog_7,geog_content_DIM3,1,75993,75953,[3],[3],[3],1,90,True,True,4,q_20_0.png,image/png,,15
+HKEAA_geog_2023_1,geog,HKEAA,2023,1,2023 No.1,choice,D,1,geog_12,geog_content_DIM4,1,77275,77235,[0],[0],[0],1,90,True,True,4,q_01_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2023_2,geog,HKEAA,2023,2,2023 No.2,choice,A,1,geog_12,geog_content_DIM4,1,77277,77237,[3],[3],[3],1,90,True,True,4,q_02_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2023_3,geog,HKEAA,2023,3,2023 No.3,choice,C,1,geog_12,geog_content_DIM4,1,77279,77239,[1],[1],[1],1,90,True,True,4,q_03_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2023_4,geog,HKEAA,2023,4,2023 No.4,choice,D,1,geog_12,geog_content_DIM4,1,77281,77241,[2],[2],[2],1,90,True,True,4,q_04_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2023_5,geog,HKEAA,2023,5,2023 No.5,choice,B,1,geog_12,geog_content_DIM4,1,77283,77243,[2],[2],[2],1,90,True,True,4,q_05_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2023_6,geog,HKEAA,2023,6,2023 No.6,choice,B,1,geog_12,geog_content_DIM4,1,77285,77245,[3],[3],[3],1,90,True,True,4,q_06_0.png,image/png,Hong Kong Map=map.pdf,15
+HKEAA_geog_2023_7,geog,HKEAA,2023,7,2023 No.7,choice,B,1,geog_1,geog_content_DIM1,1,77287,77247,[1],[1],[1],1,90,True,True,4,q_07_0.png,image/png,,15
+HKEAA_geog_2023_8,geog,HKEAA,2023,8,2023 No.8,choice,D,1,geog_1,geog_content_DIM1,1,77289,77249,[3],[3],[3],1,90,True,True,4,q_08_0.png,image/png,,15
+HKEAA_geog_2023_9,geog,HKEAA,2023,9,2023 No.9,choice,C,1,geog_2,geog_content_DIM1,1,77291,77251,[0],[0],[0],1,90,True,True,4,q_09_0.png,image/png,,15
+HKEAA_geog_2023_10,geog,HKEAA,2023,10,2023 No.10,choice,D,1,geog_2,geog_content_DIM1,1,77293,77253,[2],[2],[2],1,90,True,True,4,q_10_0.png,image/png,,15
+HKEAA_geog_2023_11,geog,HKEAA,2023,11,2023 No.11,choice,C,1,geog_3,geog_content_DIM2,1,77295,77255,[3],[3],[3],1,90,True,True,4,q_11_0.png,image/png,,15
+HKEAA_geog_2023_12,geog,HKEAA,2023,12,2023 No.12,choice,D,1,geog_3,geog_content_DIM2,1,77297,77257,[0],[0],[0],1,90,True,True,4,q_12_0.png,image/png,,15
+HKEAA_geog_2023_13,geog,HKEAA,2023,13,2023 No.13,choice,D,1,geog_4,geog_content_DIM2,1,77299,77259,[1],[1],[1],1,90,True,True,4,q_13_0.png,image/png,,15
+HKEAA_geog_2023_14,geog,HKEAA,2023,14,2023 No.14,choice,D,1,geog_4,geog_content_DIM2,1,77301,77261,[0],[0],[0],1,90,True,True,4,q_14_0.png,image/png,,15
+HKEAA_geog_2023_15,geog,HKEAA,2023,15,2023 No.15,choice,D,1,geog_5,geog_content_DIM3,1,77303,77263,[3],[3],[3],1,90,True,True,4,q_15_0.png,image/png,,15
+HKEAA_geog_2023_16,geog,HKEAA,2023,16,2023 No.16,choice,D,1,geog_5,geog_content_DIM3,1,77305,77265,[0],[0],[0],1,90,True,True,4,q_16_0.png,image/png,,15
+HKEAA_geog_2023_17,geog,HKEAA,2023,17,2023 No.17,choice,D,1,geog_6,geog_content_DIM3,1,77307,77267,[1],[1],[1],1,90,True,True,4,q_17_0.png,image/png,,15
+HKEAA_geog_2023_18,geog,HKEAA,2023,18,2023 No.18,choice,D,1,geog_6,geog_content_DIM3,1,77309,77269,[2],[2],[2],1,90,True,True,4,q_18_0.png,image/png,,15
+HKEAA_geog_2023_19,geog,HKEAA,2023,19,2023 No.19,choice,D,1,geog_7,geog_content_DIM3,1,77311,77271,[1],[1],[1],1,90,True,True,4,q_19_0.png,image/png,,15
+HKEAA_geog_2023_20,geog,HKEAA,2023,20,2023 No.20,choice,D,1,geog_7,geog_content_DIM3,1,77313,77273,[2],[2],[2],1,90,True,True,4,q_20_0.png,image/png,,15
+HKEAA_geog_2024_1,geog,HKEAA,2024,1,2024 No.1,choice,C,1,geog_12,geog_content_DIM4,1,78995,78955,[3],[3],[3],1,90,True,True,4,q_01_0.png,image/png,香港地圖=map.pdf,15
+HKEAA_geog_2024_2,geog,HKEAA,2024,2,2024 No.2,choice,D,1,geog_12,geog_content_DIM4,1,78997,78957,[1],[1],[1],1,90,True,True,4,q_02_0.png,image/png,香港地圖=map.pdf,15
+HKEAA_geog_2024_3,geog,HKEAA,2024,3,2024 No.3,choice,C,1,geog_12,geog_content_DIM4,1,78999,78959,[2],[2],[2],1,90,True,True,4,q_03_0.png,image/png,香港地圖=map.pdf,15
+HKEAA_geog_2024_4,geog,HKEAA,2024,4,2024 No.4,choice,D,1,geog_12,geog_content_DIM4,1,79001,78961,[0],[0],[0],1,90,True,True,4,q_04_0.png,image/png,香港地圖=map.pdf,15
+HKEAA_geog_2024_5,geog,HKEAA,2024,5,2024 No.5,choice,D,1,geog_12,geog_content_DIM4,1,79003,78963,[2],[2],[2],1,90,True,True,4,q_05_0.png,image/png,香港地圖=map.pdf,15
+HKEAA_geog_2024_6,geog,HKEAA,2024,6,2024 No.6,choice,A,1,geog_12,geog_content_DIM4,1,79005,78965,[1],[1],[1],1,90,True,True,4,q_06_0.png,image/png,香港地圖=map.pdf,15
+HKEAA_geog_2024_7,geog,HKEAA,2024,7,2024 No.7,choice,D,1,geog_1,geog_content_DIM1,1,79007,78967,[3],[3],[3],1,90,True,True,4,q_07_0.png,image/png,,15
+HKEAA_geog_2024_8,geog,HKEAA,2024,8,2024 No.8,choice,C,1,geog_1,geog_content_DIM1,1,79009,78969,[1],[1],[1],1,90,True,True,4,q_08_0.png,image/png,,15
+HKEAA_geog_2024_9,geog,HKEAA,2024,9,2024 No.9,choice,A,1,geog_2,geog_content_DIM1,1,79011,78971,[3],[3],[3],1,90,True,True,4,q_09_0.png,image/png,,15
+HKEAA_geog_2024_10,geog,HKEAA,2024,10,2024 No.10,choice,D,1,geog_2,geog_content_DIM1,1,79013,78973,[0],[0],[0],1,90,True,True,4,q_10_0.png,image/png,,15
+HKEAA_geog_2024_11,geog,HKEAA,2024,11,2024 No.11,choice,D,1,geog_3,geog_content_DIM2,1,79015,78975,[2],[2],[2],1,90,True,True,4,q_11_0.png,image/png,,15
+HKEAA_geog_2024_12,geog,HKEAA,2024,12,2024 No.12,choice,B,1,geog_3,geog_content_DIM2,1,79017,78977,[1],[1],[1],1,90,True,True,4,q_12_0.png,image/png,,15
+HKEAA_geog_2024_13,geog,HKEAA,2024,13,2024 No.13,choice,B,1,geog_4,geog_content_DIM2,1,79019,78979,[3],[3],[3],1,90,True,True,4,q_13_0.png,image/png,,15
+HKEAA_geog_2024_14,geog,HKEAA,2024,14,2024 No.14,choice,A,1,geog_4,geog_content_DIM2,1,79021,78981,[3],[3],[3],1,90,True,True,4,q_14_0.png,image/png,,15
+HKEAA_geog_2024_15,geog,HKEAA,2024,15,2024 No.15,choice,D,1,geog_5,geog_content_DIM3,1,79023,78983,[0],[0],[0],1,90,True,True,4,q_15_0.png,image/png,,15
+HKEAA_geog_2024_16,geog,HKEAA,2024,16,2024 No.16,choice,D,1,geog_5,geog_content_DIM3,1,79025,78985,[2],[2],[2],1,90,True,True,4,q_16_0.png,image/png,,15
+HKEAA_geog_2024_17,geog,HKEAA,2024,17,2024 No.17,choice,C,1,geog_6,geog_content_DIM3,1,79027,78987,[2],[2],[2],1,90,True,True,4,q_17_0.png,image/png,,15
+HKEAA_geog_2024_18,geog,HKEAA,2024,18,2024 No.18,choice,D,1,geog_6,geog_content_DIM3,1,79029,78989,[0],[0],[0],1,90,True,True,4,q_18_0.png,image/png,,15
+HKEAA_geog_2024_19,geog,HKEAA,2024,19,2024 No.19,choice,D,1,geog_7,geog_content_DIM3,1,79031,78991,[1],[1],[1],1,90,True,True,4,q_19_0.png,image/png,,15
+HKEAA_geog_2024_20,geog,HKEAA,2024,20,2024 No.20,choice,A,1,geog_7,geog_content_DIM3,1,79033,78993,[0],[0],[0],1,90,True,True,4,q_20_0.png,image/png,,15
+HKEAA_geog_2025_1,geog,HKEAA,2025,1,2025 No.1,choice,,1,geog_12,,1,82383,82423,[0],[0],[0],1,90,True,True,4,q_01_0.png,image/png,map=map.pdf,15
+HKEAA_geog_2025_2,geog,HKEAA,2025,2,2025 No.2,choice,,1,geog_12,,1,82385,82425,[2],[2],[2],1,90,True,True,4,q_02_0.png,image/png,map=map.pdf,15
+HKEAA_geog_2025_3,geog,HKEAA,2025,3,2025 No.3,choice,,1,geog_12,,1,82387,82427,[2],[2],[2],1,90,True,True,4,q_03_0.png,image/png,map=map.pdf,15
+HKEAA_geog_2025_4,geog,HKEAA,2025,4,2025 No.4,choice,,1,geog_12,,1,82389,82429,[3],[3],[3],1,90,True,True,4,q_04_0.png,image/png,map=map.pdf,15
+HKEAA_geog_2025_5,geog,HKEAA,2025,5,2025 No.5,choice,,1,geog_12,,1,82391,82431,[1],[1],[1],1,90,True,True,4,q_05_0.png,image/png,map=map.pdf,15
+HKEAA_geog_2025_6,geog,HKEAA,2025,6,2025 No.6,choice,,1,geog_12,,1,82393,82433,[3],[3],[3],1,90,True,True,4,q_06_0.png,image/png,map=map.pdf,15
+HKEAA_geog_2025_7,geog,HKEAA,2025,7,2025 No.7,choice,,1,geog_1,,1,82395,82435,[0],[0],[0],1,90,True,True,4,q_07_0.png,image/png,,15
+HKEAA_geog_2025_8,geog,HKEAA,2025,8,2025 No.8,choice,,1,geog_1,,1,82397,82437,[3],[3],[3],1,90,True,True,4,q_08_0.png,image/png,,15
+HKEAA_geog_2025_9,geog,HKEAA,2025,9,2025 No.9,choice,,1,geog_2,,1,82399,82439,[2],[2],[2],1,90,True,True,4,q_09_0.png,image/png,,15
+HKEAA_geog_2025_10,geog,HKEAA,2025,10,2025 No.10,choice,,1,geog_2,,1,82401,82441,[1],[1],[1],1,90,True,True,4,q_10_0.png,image/png,,15
+HKEAA_geog_2025_11,geog,HKEAA,2025,11,2025 No.11,choice,,1,geog_4,,1,82403,82443,[2],[2],[2],1,90,True,True,4,q_11_0.png,image/png,,15
+HKEAA_geog_2025_12,geog,HKEAA,2025,12,2025 No.12,choice,,1,geog_4,,1,82405,82445,[0],[0],[0],1,90,True,True,4,q_12_0.png,image/png,,15
+HKEAA_geog_2025_13,geog,HKEAA,2025,13,2025 No.13,choice,,1,geog_3,,1,82407,82447,[1],[1],[1],1,90,True,True,4,q_13_0.png,image/png,,15
+HKEAA_geog_2025_14,geog,HKEAA,2025,14,2025 No.14,choice,,1,geog_3,,1,82409,82449,[3],[3],[3],1,90,True,True,4,q_14_0.png,image/png,,15
+HKEAA_geog_2025_15,geog,HKEAA,2025,15,2025 No.15,choice,,1,geog_5,,1,82411,82451,[2],[2],[2],1,90,True,True,4,q_15_0.png,image/png,,15
+HKEAA_geog_2025_16,geog,HKEAA,2025,16,2025 No.16,choice,,1,geog_5,,1,82413,82453,[3],[3],[3],1,90,True,True,4,q_16_0.png,image/png,,15
+HKEAA_geog_2025_17,geog,HKEAA,2025,17,2025 No.17,choice,,1,geog_6,,1,82415,82455,[0],[0],[0],1,90,True,True,4,q_17_0.png,image/png,,15
+HKEAA_geog_2025_18,geog,HKEAA,2025,18,2025 No.18,choice,,1,geog_6,,1,82417,82457,[1],[1],[1],1,90,True,True,4,q_18_0.png,image/png,,15
+HKEAA_geog_2025_19,geog,HKEAA,2025,19,2025 No.19,choice,,1,geog_7,,1,82419,82459,[0],[0],[0],1,90,True,True,4,q_19_0.png,image/png,,15
+HKEAA_geog_2025_20,geog,HKEAA,2025,20,2025 No.20,choice,,1,geog_7,,1,82421,82461,[1],[1],[1],1,90,True,True,4,q_20_0.png,image/png,,15

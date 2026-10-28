@@ -189,6 +189,53 @@ button.primary:disabled{opacity:.55;cursor:not-allowed}
   margin-bottom: 7px;
 }
 
+/* The official HKEAA questions arrive as images: one for the stem, one for
+   each option, and a map extract for the paper. The map link sits above
+   the question because the student may need it to answer. */
+.mc-mapextract {
+  margin: 0 0 10px;
+  font-size: .86rem;
+}
+.mc-mapextract a {
+  display: inline-block;
+  padding: 6px 12px;
+  border: 1px solid #b9ddd5;
+  background: #e2f2ee;
+  color: #0b5f53;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.mc-mapextract a:hover {
+  background: #d3ebe5;
+}
+.mc-opt-image {
+  display: block;
+  margin-top: 6px;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #dde5e9;
+  border-radius: 6px;
+  background: #fff;
+}
+/* When the option itself is a table or a diagram, the image IS the option.
+   The letter sits beside it rather than above it, and the button lays out
+   as a row so the image can use the full width. */
+.mc-opt.is-graphic {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  gap: 10px;
+  padding: 10px 12px;
+}
+.mc-opt.is-graphic .mc-opt-image {
+  margin-top: 0;
+  border: none;
+}
+.mc-opt.is-graphic .k {
+  padding-top: 2px;
+}
+
 /* ---------- rendered note markdown ---------- */
 .note-text table {
   width: 100%;

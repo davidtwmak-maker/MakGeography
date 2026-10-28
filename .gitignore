@@ -13,6 +13,11 @@
 # scripts/fetch_decks.py; only the rendered slide crops are committed.
 data/papers/
 
+# The raw OQB API records for the official HKEAA question bank. They carry
+# Azure signed URLs and per-row access tokens, so they are never committed.
+# Re-fetch them with the OQB downloader if the raw export is needed.
+data/hkeaa_oqb/_raw/
+
 # Python
 __pycache__/
 *.py[cod]
