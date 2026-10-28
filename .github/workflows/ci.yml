@@ -92,20 +92,51 @@ jobs:
         run: |
           # A deployed container has neither the Obsidian vault nor
           # ~/.hermes/.env. The app has to import and serve anyway.
+          #
+          # This does not use Starlette's test client: that needs httpx2,
+          # which is a test-only dependency and has no place in the
+          # runtime image. The route is checked by calling it directly.
           rm -f /tmp/.env
           python - <<'PY'
-          import os, sys
+          import os
           for k in ("MINIMAX_API_KEY", "MINIMAX_BASE_URL", "MAKGEO_PASSWORD",
                     "MAKGEO_TEACHER_KEY", "MAKGEO_ROSTER_PATH",
                     "MAKGEO_ROSTER_JSON"):
               os.environ.pop(k, None)
           import app.main as am
-          from fastapi.testclient import TestClient
-          c = TestClient(am.app)
-          r = c.get("/healthz")
-          assert r.status_code == 200, r.status_code
-          assert r.json() == {"ok": True}, r.text
-          assert c.get("/").status_code == 200
+
+          # The health check touches nothing and needs no session.
+          assert am.healthz() == {"ok": True}
+
+          # The home page serves: with no roster and no password the site
+          # is open, so it must not ask for a sign-in.
+          from starlette.requests import Request
+          scope = {
+              "type": "http", "method": "GET", "path": "/",
+              "headers": [], "query_string": b"", "client": ("test", 1),
+              "server": ("test", 80), "scheme": "http", "root_path": "",
+              "http_version": "1.1",
+          }
+          resp = am.home(Request(scope))
+          assert resp.status_code == 200, resp.status_code
+          body = resp.body.decode()
+          assert "MakGeography" in body, "the home page did not render"
+
+          # With a roster the home page is the sign-in page, and it must
+          # ask for a Student ID. Without one the site is open and the
+          # study panels render. Either is correct; what matters is that
+          # the page serves.
+          if am.roster_mod.allowed_sids():
+              assert 'name="identifier"' in body, \\
+                  "the sign-in page is not asking for a Student ID"
+              print("The roster is present, so the site asks for a Student ID")
+          else:
+              assert "MC Drilling" in body, \\
+                  "the home page is missing its panels"
+              print("No roster, so the site opens straight into the tools")
+
+          # The knowledge base still loads from the committed data.
+          assert am.get_kb() is not None
           print("The app serves with no vault and no ~/.hermes/.env")
           PY
 
