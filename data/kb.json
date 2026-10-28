@@ -1,9 +1,9 @@
 {
  "meta": {
-  "built_at": "2026-10-27T13:09:10.979480+00:00",
+  "built_at": "2026-10-28T03:15:42.170957+00:00",
   "source_root": "/Users/davidhermes/Library/Mobile Documents/iCloud~md~obsidian/Documents/MakGeography",
   "n_docs": 108,
-  "n_chunks": 1343,
+  "n_chunks": 1370,
   "excluded": 0
  },
  "docs": [
@@ -2691,19 +2691,34 @@
      "n": 1
     },
     {
-     "text": "Don't just list them. Use them as a checklist for judging any urban measure:\n\n1. Economic — can the city afford it, and does it keep working?\n- Mechanism: efficiency + growth + jobs pay for maintenance; a scheme nobody can afford to run decays within a decade.\n- Look for: cost, funding source, jobs created, ongoing revenue.\n\n2. Environmental — does it stay within the resource base?\n- Mechanism: resources conserved and pollution controlled now = the future generation's stock is intact.\n- Look for: energy saved, emissions cut, waste reduced, land/habitat protected.\n\n3. Social — do people actually gain, and is it fair?\n- Mechanism: benefits concentrated on the wealthy create long-run instability; community participation increases compliance (people maintain what they helped design).\n- Look for: equity, access, quality of life, participation.\n\nAnswer structure for \"Discuss/Evaluate a sustainable measure\"\n1. One line of definition (the three pillars).\n2. Pillar by pillar: evidence the measure delivers economic, environmental, social gains — one specific HK example each.\n3. The tension: name where the pillars conflict (e.g. green space = environmental win, but land that could be housing = economic/social cost).\n4. Verdict sentence: net contribution to sustainability, and under what condition.",
+     "text": "Don't just list them. Use them as a checklist for judging any urban measure:\n\n1. Economic — can the city afford it, and does it keep working?\n- Mechanism: efficiency + growth + jobs pay for maintenance; a scheme nobody can afford to run decays within a decade.\n- Look for: cost, funding source, jobs created, ongoing revenue.\n\n2. Environmental — does it stay within the resource base?\n- Mechanism: resources conserved and pollution controlled now = the future generation's stock is intact.\n- Look for: energy saved, emissions cut, waste reduced, land/habitat protected.\n\n3. Social — do people actually gain, and is it fair?\n- Mechanism: benefits concentrated on the wealthy create long-run instability; community participation increases compliance (people maintain what they helped design).\n- Look for: equity, access, quality of life, participation.",
      "heading": "The three pillars — and how to actually use them",
      "n": 2
     },
     {
-     "text": "The move that separates bands: you are not asked whether a measure is good, but whether it is sustainable — i.e. whether the gain survives the trade-off over time.\n\nCommon marks lost\n- Quoting the definition but never using it again — it must return in your judgement.\n- Treating the pillars as three unrelated bullet lists instead of a trade-off.\n- \"Sustainable\" used as a synonym for \"environmental\" — social and economic pillars disappear.\n- No named example: the syllabus demands Hong Kong or a real place, not hypotheticals.",
-     "heading": "The three pillars — and how to actually use them",
+     "text": "Examiners assess a measure under the three pillars in this order: economic, social, environmental. Under each pillar, give a gain and a cost. A one-sided answer is a mid-band answer; the trade-off under each pillar is what the top band looks like.",
+     "heading": "2. Judging a measure — the three-pillar assessment",
      "n": 3
     },
     {
-     "text": "1. Rewrite the 1987 definition in one sentence without using the word \"future\".\n2. Why does a policy that maximises jobs but pollutes a river fail as sustainable development?\n3. Give a HK example that scores on the social pillar only — then say what it costs the other two.\n4. Explain the difference between sustainability and conservation.\n5. Use the three pillars to judge one measure you know. Which pillar wins, and which loses?\n\nSource notes: CP4_Sustainable_City_Detailed_Notes · index DSE_SUMMARY · fieldwork link 2027 HKDSE Geography Assessment Framework",
-     "heading": "Quick self-check",
+     "text": "| Pillar | The gain to look for | The cost to look for | Hong Kong case |\n|---|---|---|---|\n| Economic | Jobs, investment, higher land value, efficient use of land, ongoing revenue | Land resumption and compensation cost, infrastructure cost, rising rents that close local shops | A hotel at Tseung Kwan O: attracts investors and creates jobs, but raises land rent and traffic demand |\n| Social | Better housing quality, more open space and community facilities, retained social networks, heritage and local character | Resettlement breaks social networks, long commutes for low-income households, loss of collective memory, gentrification raises living costs | Kwun Tong town centre: new housing and open space, but resettlement and higher rents for shops |\n| Environmental | Less demolition waste, more greenery, energy saving, lower heat island effect, better air quality | Construction waste loading the landfills, new traffic noise and air pollution, loss of habitat, building height and density incompatible with the area | Redevelopment generates construction waste; underground space cuts ground-level air pollution but has no natural light or ventilation |",
+     "heading": "2. Judging a measure — the three-pillar assessment",
      "n": 4
+    },
+    {
+     "text": "The stakeholders to name when a measure is contested: enterprises, environmentalists, government, the general public, service providers and heritage protection groups. A development that satisfies one stakeholder group usually conflicts with another — that conflict is the evaluation.\n\nThe finding the examiners actually reported\nOn the sustainable-city discussion in the 2021 DSE, candidates' \"understanding of the social and economic aspects of a sustainable city was rather poor\": they cited only the provision of green space, and offered explanations with weak reasoning such as \"building railways and shopping malls to promote tourism\". The pillars must be applied as a judging framework, not listed.\n\nAnswer structure for \"Discuss/Evaluate a sustainable measure\"\n1. One line of definition (the three pillars).\n2. Pillar by pillar: evidence the measure delivers economic, environmental, social gains — one specific HK example each.\n3. The tension: name where the pillars conflict (e.g. green space = environmental win, but land that could be housing = economic/social cost).\n4. Verdict sentence: net contribution to sustainability, and under what condition.",
+     "heading": "2. Judging a measure — the three-pillar assessment",
+     "n": 5
+    },
+    {
+     "text": "The move that separates bands: you are not asked whether a measure is good, but whether it is sustainable — i.e. whether the gain survives the trade-off over time.\n\nCommon marks lost\n- Quoting the definition but never using it again — it must return in your judgement.\n- Treating the pillars as three unrelated bullet lists instead of a trade-off.\n- \"Sustainable\" used as a synonym for \"environmental\" — social and economic pillars disappear.\n- No named example: the syllabus demands Hong Kong or a real place, not hypotheticals.\n- Giving only the gain under each pillar, with no cost — the top band needs the trade-off under each pillar, not once at the end.",
+     "heading": "2. Judging a measure — the three-pillar assessment",
+     "n": 6
+    },
+    {
+     "text": "1. Rewrite the 1987 definition in one sentence without using the word \"future\".\n2. Why does a policy that maximises jobs but pollutes a river fail as sustainable development?\n3. Give a HK example that scores on the social pillar only — then say what it costs the other two.\n4. Explain the difference between sustainability and conservation.\n5. Use the three pillars to judge one measure you know. Which pillar wins, and which loses?\n6. The 2021 DSE reported that candidates' understanding of the social and economic pillars was \"rather poor\". Write one argument for each of those two pillars that does not involve green space.\n\nPast papers and examiner guidance: CP4 Question Collection - Past Papers and Examiner Guidance · Source notes: CP4_Sustainable_City_Detailed_Notes · index DSE_SUMMARY · fieldwork link 2027 HKDSE Geography Assessment Framework",
+     "heading": "Quick self-check",
+     "n": 7
     }
    ]
   },
@@ -2735,19 +2750,29 @@
      "n": 3
     },
     {
-     "text": "- Aging facilities — infrastructure built for an earlier population needs replacement, and deferred maintenance compounds the cost.\n- Insufficient services — healthcare and education provision lags population growth in expanding districts.\n- Energy supply — rising demand (air-conditioning, electronics) strains generation and supply; in import-dependent cities this becomes an economic and security issue, not just a technical one.\n\nAnswer structure for \"Explain urban environmental / social problems\"\n1. State the problem in one line (definition or evidence).\n2. Give one cause with a mechanism — \"because …, which leads to …\".\n3. Give one consequence (who is affected, and how badly).\n4. Link to another problem where genuine (congestion → air pollution → health).\nFor a full essay: two problems from different groups, each fully developed, then a sentence on why they are interconnected — that linkage is the top-band move.",
+     "text": "- Aging facilities — infrastructure built for an earlier population needs replacement, and deferred maintenance compounds the cost.\n- Insufficient services — healthcare and education provision lags population growth in expanding districts.\n- Energy supply — rising demand (air-conditioning, electronics) strains generation and supply; in import-dependent cities this becomes an economic and security issue, not just a technical one.",
      "heading": "3. Infrastructure problems (the systems symptom)",
      "n": 4
     },
     {
-     "text": "Common marks lost\n- Listing 8 problems in 8 fragments — one developed problem beats four named ones.\n- Describing rural or global problems in an urban question.\n- Cause and effect reversed (\"air pollution causes traffic\").\n- Facts without a Hong Kong anchor when the question implies a city case.\n- Treating social problems as only \"poor people\" — housing, congestion and inequality are structural, not personal.",
-     "heading": "3. Infrastructure problems (the systems symptom)",
+     "text": "Urban decay is the Hong Kong term for the condition of the ageing inner city: buildings and facilities past their design life, a shrinking and ageing population, and economic activity drained away. It is the problem the whole of CP4's urban-renewal literature responds to.\n\nExaminers ask you to account for decay, and the mark scheme separates the three causes cleanly:\n\n| Cause | Mechanism |\n|---|---|\n| Early development to a lower building standard, and outdated town planning and design | Districts laid out decades ago lack the space, services and infrastructure a modern city needs; replacement is expensive, so repair is deferred and deterioration compounds. |\n| Suburbanisation — relocation of population and economic activity to new towns and suburbs | The inner city loses the footfall, jobs and investment that kept its shops, services and buildings viable; the buildings then decay because nobody maintains them. |\n| Subdivided flats, and the in-migration of low-income residents | Demand for cheap housing inside the city exceeds what the stock can legally provide, so units are subdivided and overcrowded while the fabric of the district carries more load than it was designed for. |\n\nDeterioration of buildings and rising maintenance cost is the outcome that turns all three causes into visible decay.",
+     "heading": "4. Urban decay — causes, not symptoms",
      "n": 5
     },
     {
-     "text": "1. Explain how congestion causes air pollution, then how that air pollution creates a social cost.\n2. Why are housing shortage and high property prices essentially one problem?\n3. A city builds new roads to solve congestion. Using mechanisms, explain why congestion may return.\n4. Distinguish an environmental from an infrastructure problem using the example of waste.\n5. Name one urban problem in Hong Kong and one in an LDC city — what differs, and why?\n\nSource notes: CP4_Sustainable_City_Detailed_Notes · index DSE_SUMMARY · framework 2027 HKDSE Geography Assessment Framework",
-     "heading": "Quick self-check",
+     "text": "The trap the examiner named\nSome candidates incorrectly stated gentrification as a cause of urban decay. Gentrification is a consequence of redevelopment and renewal, not a cause of decay — it appears in the economic and social cost column of a renewal scheme, never in the causes column.\n\nHong Kong specifics worth quoting:\n\n| Specific | Use it for |\n|---|---|\n| The average speed of vehicles in Central and Wan Chai is just 10 km/hr | Traffic congestion, inner city |\n| Pre-war old buildings in Mong Kok and Wan Chai; the Ma Tau Wai 45J building collapse | Poor living conditions and deferred maintenance |\n| Portland Street | Social problems in the inner city |\n| The population of Wan Chai and Hong Kong Island has decreased for decades | Population decline in the inner city |\n| Sham Shui Po is the poorest region, with a mean salary of 10,420 at the 2011 census | Poverty and the rural-to-urban migration that drives inner-city crowding |",
+     "heading": "4. Urban decay — causes, not symptoms",
      "n": 6
+    },
+    {
+     "text": "Answer structure for \"Explain urban environmental / social problems\"\n1. State the problem in one line (definition or evidence).\n2. Give one cause with a mechanism — \"because …, which leads to …\".\n3. Give one consequence (who is affected, and how badly).\n4. Link to another problem where genuine (congestion → air pollution → health).\nFor a full essay: two problems from different groups, each fully developed, then a sentence on why they are interconnected — that linkage is the top-band move.\n\nCommon marks lost\n- Listing 8 problems in 8 fragments — one developed problem beats four named ones.\n- Describing rural or global problems in an urban question.\n- Cause and effect reversed (\"air pollution causes traffic\").\n- Facts without a Hong Kong anchor when the question implies a city case.\n- Treating social problems as only \"poor people\" — housing, congestion and inequality are structural, not personal.\n- Describing decay (old buildings, lack of open space) instead of accounting for it — examiners mark the causes, not the symptoms.\n- Listing gentrification as a cause of urban decay; it is a consequence of renewal.",
+     "heading": "4. Urban decay — causes, not symptoms",
+     "n": 7
+    },
+    {
+     "text": "1. Explain how congestion causes air pollution, then how that air pollution creates a social cost.\n2. Why are housing shortage and high property prices essentially one problem?\n3. A city builds new roads to solve congestion. Using mechanisms, explain why congestion may return.\n4. Distinguish an environmental from an infrastructure problem using the example of waste.\n5. Name one urban problem in Hong Kong and one in an LDC city — what differs, and why?\n6. Write the three causes of urban decay in Hong Kong as a causal chain, then say which one a renewal scheme can actually reverse.\n\nPast papers and examiner guidance: CP4 Question Collection - Past Papers and Examiner Guidance · Source notes: CP4_Sustainable_City_Detailed_Notes · index DSE_SUMMARY · framework 2027 HKDSE Geography Assessment Framework",
+     "heading": "Quick self-check",
+     "n": 8
     }
    ]
   },
@@ -2779,14 +2804,29 @@
      "n": 3
     },
     {
-     "text": "- Parks — recreation, mental health, and permeable surface for drainage.\n- Urban forestry / tree planting — shade + evapotranspiration cools streets; absorbs CO₂ and filters pollutants.\n- Vertical gardens and roof gardens — green the built-up core where ground land is unavailable; reduce roof temperatures and building energy use.\n\nAnswer structure for \"Discuss measures to build a sustainable city\"\nPick three features from different groups (one building, one transport, one waste/green) → for each: mechanism + a named HK example + one limitation → close by judging which feature gives the largest gain for a land-scarce city.\n\nCommon marks lost\n- Feature named, mechanism missing (\"trees are good\").\n- No example — HK specifics (MTR, three-colour bins, I·PARK1, BEAM Plus) are cheap marks.\n- Claiming EVs = zero pollution without the energy-generation caveat.\n- Ignoring land scarcity: in Hong Kong, every measure competes for space — that trade-off is the evaluation.\n- Repeating the same pillar three times instead of showing economic, environmental and social gains.",
+     "text": "- Parks — recreation, mental health, and permeable surface for drainage.\n- Urban forestry / tree planting — shade + evapotranspiration cools streets; absorbs CO₂ and filters pollutants.\n- Vertical gardens and roof gardens — green the built-up core where ground land is unavailable; reduce roof temperatures and building energy use.",
      "heading": "4. Green space",
      "n": 4
     },
     {
-     "text": "1. Explain how a green roof cools a city — give the physical mechanism, not just the label.\n2. Why does public transport reduce two different urban problems?\n3. Using the waste hierarchy, explain why incineration is a step above landfill but below recycling.\n4. Give one limitation of each: green building, electric buses, urban parks.\n5. A city can fund one measure only. Which do you choose for a land-scarce city, and why?\n\nSource notes: CP4_Sustainable_City_Detailed_Notes · index DSE_SUMMARY · fieldwork module 2027 HKDSE Geography Assessment Framework",
-     "heading": "Quick self-check",
+     "text": "The examiners keep finding that students narrow \"sustainable city\" down to green space alone. The 2021 DSE report is explicit: most candidates \"explained only generally the provision of 'green space', but with an incomplete understanding of the term\", and their \"understanding of the social and economic aspects of a sustainable city was rather poor\".\n\nSo a sustainable-city answer must reach beyond parks and trees to the features that carry the other two pillars:\n\n| Feature group | The feature examiners expect you to name | Which pillar it carries |\n|---|---|---|\n| Green space | Parks and urban parks as the 'city lungs' — fresh air, outdoor recreation, reduced heat island effect, habitat retained inside the urban area | Environmental, with a social gain |\n| Environmental infrastructure | Sewage treatment facilities — the 2021 report notes only a few candidates explained their role in environmental protection | Environmental |\n| Transport | Rail-based public transport, underground pedestrian links, cycling paths and pedestrian corridors separated from vehicle traffic | Environmental and social |\n| Urban renewal | Rehabilitation and retrofitting — better building safety, extended useful life, improved appearance and living environment, and no demolition waste | Economic, environmental and social |",
+     "heading": "5. What the examiner means by a sustainable city",
      "n": 5
+    },
+    {
+     "text": "Two terminology traps the HKEAA briefings name repeatedly\n- \"Green belt\" is not \"green space\". A green belt is land withheld from development; urban green space is space provided inside the built-up area. They are opposites. The 2022, 2024 and 2026 briefings all penalise candidates who confused them.\n- The country park and the nature reserve are not urban green space. They sit outside the urban area. The 2021 report rules that citing them as examples of urban green space is inappropriate.\n\nAnswer structure for \"Discuss measures to build a sustainable city\"\nPick three features from different groups (one building, one transport, one waste/green) → for each: mechanism + a named HK example + one limitation → close by judging which feature gives the largest gain for a land-scarce city.",
+     "heading": "5. What the examiner means by a sustainable city",
+     "n": 6
+    },
+    {
+     "text": "Common marks lost\n- Feature named, mechanism missing (\"trees are good\").\n- No example — HK specifics (MTR, three-colour bins, I·PARK1, BEAM Plus) are cheap marks.\n- Claiming EVs = zero pollution without the energy-generation caveat.\n- Ignoring land scarcity: in Hong Kong, every measure competes for space — that trade-off is the evaluation.\n- Repeating the same pillar three times instead of showing economic, environmental and social gains.\n- Treating \"sustainable city\" as a synonym for \"green space\" — sewage treatment, transport and renewal features carry the other pillars.\n- Citing the country park or nature reserve as urban green space; they are outside the urban area.",
+     "heading": "5. What the examiner means by a sustainable city",
+     "n": 7
+    },
+    {
+     "text": "1. Explain how a green roof cools a city — give the physical mechanism, not just the label.\n2. Why does public transport reduce two different urban problems?\n3. Using the waste hierarchy, explain why incineration is a step above landfill but below recycling.\n4. Give one limitation of each: green building, electric buses, urban parks.\n5. A city can fund one measure only. Which do you choose for a land-scarce city, and why?\n6. Name a feature of a sustainable city that earns a mark without being green space, and say which pillar it carries.\n\nPast papers and examiner guidance: CP4 Question Collection - Past Papers and Examiner Guidance · Source notes: CP4_Sustainable_City_Detailed_Notes · index DSE_SUMMARY · fieldwork module 2027 HKDSE Geography Assessment Framework",
+     "heading": "Quick self-check",
+     "n": 8
     }
    ]
   },
@@ -2818,19 +2858,34 @@
      "n": 3
     },
     {
-     "text": "- Three-colour recycling bins — source separation raises recovery, but participation and market prices for recyclables determine success.\n- Landfill extension — all three strategic landfills have been approaching capacity for years; extension buys time, costs money and faces NIMBY siting opposition.\n- Incinerator (I·PARK1 / the WTE facility) — volume reduction plus energy recovery; trade-offs are emissions control costs, ash disposal, and public acceptance.\n- The structural narrative examiners like: no land → disposal cannot expand → the city must move up the waste hierarchy (reduce/reuse/recycle).\n\nAnswer structure for a HK case study question\n1. Name the scheme/project precisely.\n2. Explain the mechanism of benefit (what it changes, physically or behaviourally).\n3. State which pillar(s) it advances.\n4. Give one limitation specific to Hong Kong (land, density, cost, dependency, participation).\n5. Verdict: effective to what extent — and under what condition.",
+     "text": "- Three-colour recycling bins — source separation raises recovery, but participation and market prices for recyclables determine success.\n- Landfill extension — all three strategic landfills have been approaching capacity for years; extension buys time, costs money and faces NIMBY siting opposition.\n- Incinerator (I·PARK1 / the WTE facility) — volume reduction plus energy recovery; trade-offs are emissions control costs, ash disposal, and public acceptance.\n- The structural narrative examiners like: no land → disposal cannot expand → the city must move up the waste hierarchy (reduce/reuse/recycle).",
      "heading": "4. Waste",
      "n": 4
     },
     {
-     "text": "Common marks lost\n- Describing the scheme without saying why it helps (no mechanism).\n- Inventing numbers — if you don't know a figure, argue from structure instead of guessing.\n- Claiming success where the mechanism is weak (bins exist ≠ recycling happens; EVs ≠ clean grid).\n- Ignoring land scarcity, the single most Hong Kong-specific constraint.\n- Using an LDC example in a Hong Kong question.",
-     "heading": "4. Waste",
+     "text": "Locational-advantage questions are the most common 4- and 6-mark items in CP4, and they are marked in a fixed way: every advantage must be paired with the map evidence that proves it. The advantage alone earns nothing; the evidence alone earns nothing. The pairing is what earns the mark.\n\nRAISE PLS is the eight-factor checklist that covers virtually every locational advantage:\n\n| | Factor | The question it answers |\n|---|---|---|\n| R | Relief | Is the land gentle or steep? Is there coastal land that can be reclaimed to provide flat ground? |\n| A | Accessibility | Are there enough transport facilities — railway, road, highway? |\n| I | Industrial land use | Is there industrial land use that enhances employment — or threatens the project with pollution? |\n| S | Scenery | Is the area in beautiful landscape, with a hillside view or a sea view? |\n| E | Environment | Is there enough greenery and open space? |\n| P | Public utilities | Are there enough public facilities — power lines, water pipes? |\n| L | Labour | Is there enough labour, such as a public housing estate or middle-class residential area? |\n| S | Space | Is there enough space for further development? |",
+     "heading": "5. RAISE PLS — the locational-advantage checklist",
      "n": 5
     },
     {
-     "text": "1. Explain the urban-renewal trade-off using two of the three pillars.\n2. How does MTR expansion reduce both congestion and air pollution?\n3. Why is importing Mainland electricity both a gain and a risk?\n4. Use the waste hierarchy to justify incineration in a land-scarce city, then give its strongest objection.\n5. Name three Hong Kong waste measures and state, for each, what determines whether it actually works.\n\nSource notes: CP4_Sustainable_City_Detailed_Notes · index DSE_SUMMARY · fieldwork module 2027 HKDSE Geography Assessment Framework",
-     "heading": "Quick self-check",
+     "text": "| Locational advantage | Map evidence |\n|---|---|\n| Space for further development | Abundant space on the runway; adequate space for the berthing of cruises |\n| Deep sea (relief) | Submarine contour lines show depth of 5–10 m; a runway of 2,800 m bordering the sea |\n| Wide bay for navigation | Located in the spacious part of Victoria Harbour / Kowloon Bay |\n| Convenient land transport (accessibility) | A named main road (Prince Edward Road, Tseung Kwan O Road), trunk road or railway connecting to other districts |\n\nThe evidence must be specific\n\"Good accessibility\" is not evidence. \"Served by the MTR station and Prince Edward Road\" is. Use a grid square, a place name, a named road, or a contour value. The 2012 DSE mark scheme credited answers such as \"cross-boundary linkage with Shenzhen — Kong Sham Western Highway / Shenzhen Bay Bridge\" and \"sewage treatment plant at grid reference 069855\".",
+     "heading": "The worked example: the cruise terminal at Kai Tak (2008 AL Q1)",
      "n": 6
+    },
+    {
+     "text": "| Case | Use it for |\n|---|---|\n| Tai Po New Town | Self-containment: clear land use zoning; industrial and residential land separated (Tai Po Industrial Estate, Science Park); abundant open space (Waterfront Park, golf course); low-density housing at the outskirts (Hong Lok Yuen); private and public housing coexisting (Tai Po Centre, Tai Yuen Estate); the old market and declared monuments preserved (Tai Po Market, Tai Po Old Market); the mall and hotel; the transport interchange |\n| Hung Shui Kiu New Development Area | Urban sprawl and land use conflict: proximity to Tin Shui Wai and Yuen Long; cross-boundary linkage with Shenzhen; vacant land and scattered container yards; Yeung Hau Temple and Tang Ancestral Hall; hills at grid squares 0685 and 0686 conserved as green area |\n| Sheung Wan / Sai Ying Pun | Inner-city urban renewal; Wing Lee Street, PMQ and the Blue House as preservation and revitalisation cases |\n| Lantau Island and the Tung Chung New Town Extension | Reclamation; land use planning in a new district — commercial land concentrated in the south/southeast near the highway and MTR, low-density residential in the north/northwest along the coast |\n| Kowloon City | Urban renewal at site X and the proposed plan for area Y: new building blocks, improved air ventilation and quality, a basement car park, a pedestrian street and open space, and a community facility |",
+     "heading": "Other quotable Hong Kong cases from the paper",
+     "n": 7
+    },
+    {
+     "text": "Answer structure for a HK case study question\n1. Name the scheme/project precisely.\n2. Explain the mechanism of benefit (what it changes, physically or behaviourally).\n3. State which pillar(s) it advances.\n4. Give one limitation specific to Hong Kong (land, density, cost, dependency, participation).\n5. Verdict: effective to what extent — and under what condition.\n\nCommon marks lost\n- Describing the scheme without saying why it helps (no mechanism).\n- Inventing numbers — if you don't know a figure, argue from structure instead of guessing.\n- Claiming success where the mechanism is weak (bins exist ≠ recycling happens; EVs ≠ clean grid).\n- Ignoring land scarcity, the single most Hong Kong-specific constraint.\n- Using an LDC example in a Hong Kong question.\n- Giving the locational advantage with no map evidence, or the evidence with no advantage — the mark scheme is a two-column table and each pair is worth the mark.\n- Vague evidence. \"Good transport\" scores nothing; \"the West Rail station and Kong Sham Western Highway\" scores.",
+     "heading": "Other quotable Hong Kong cases from the paper",
+     "n": 8
+    },
+    {
+     "text": "1. Explain the urban-renewal trade-off using two of the three pillars.\n2. How does MTR expansion reduce both congestion and air pollution?\n3. Why is importing Mainland electricity both a gain and a risk?\n4. Use the waste hierarchy to justify incineration in a land-scarce city, then give its strongest objection.\n5. Name three Hong Kong waste measures and state, for each, what determines whether it actually works.\n6. Write two RAISE PLS factors for the Kai Tak cruise terminal, each with the specific map evidence that would earn the mark.\n\nPast papers and examiner guidance: CP4 Question Collection - Past Papers and Examiner Guidance · Source notes: CP4_Sustainable_City_Detailed_Notes · index DSE_SUMMARY · fieldwork module 2027 HKDSE Geography Assessment Framework",
+     "heading": "Quick self-check",
+     "n": 9
     }
    ]
   },
@@ -2857,19 +2912,49 @@
      "n": 2
     },
     {
-     "text": "- Public consultation — residents' knowledge (noise, traffic, local use) improves decisions; mechanism = better information + perceived legitimacy, so schemes face less opposition.\n- NGO participation — environmental groups monitor, campaign and run programmes that government does not have capacity for; they also hold decision-makers accountable.\n- Education/awareness — changes individual behaviour (littering, recycling, energy use). Honest evaluation: education is slow and uncertain — it works only where alternatives exist. A person told to recycle with no nearby facility will not.\n\nAnswer structure for \"Evaluate planning strategies for a sustainable city\"\n1. Group measures by actor: planning (regulation) / government (incentive + provision) / community (participation).\n2. For each: mechanism → named example → one strength and one limitation.\n3. Show interaction: regulation without provision fails; provision without participation fails (bins without habits).\n4. Conclude: which combination suits a land-scarce, high-density city, and why.",
+     "text": "- Public consultation — residents' knowledge (noise, traffic, local use) improves decisions; mechanism = better information + perceived legitimacy, so schemes face less opposition.\n- NGO participation — environmental groups monitor, campaign and run programmes that government does not have capacity for; they also hold decision-makers accountable.\n- Education/awareness — changes individual behaviour (littering, recycling, energy use). Honest evaluation: education is slow and uncertain — it works only where alternatives exist. A person told to recycle with no nearby facility will not.",
      "heading": "3. Community involvement — the social pillar in action",
      "n": 3
     },
     {
-     "text": "Common marks lost\n- Confusing a policy with its outcome (\"the government bans pollution\" ≠ cleaner air).\n- Treating community involvement as free support — consultation costs time and can delay projects.\n- Missing the green-belt counter-argument (higher prices / displaced development).\n- No actor named: \"something should be done\" scores nothing.\n- Forgetting Hong Kong's context — density and land scarcity change which lever works best.",
-     "heading": "3. Community involvement — the social pillar in action",
+     "text": "\"Identify the urban renewal strategy\" is a 1-mark question, so the answer is the strategy name and nothing else. Discrimination is by the defining feature:",
+     "heading": "4. The five urban-renewal strategies — and how to tell them apart",
      "n": 4
     },
     {
-     "text": "1. Explain how zoning reduces an environmental problem before it occurs.\n2. Distinguish an environmental tax from an emission standard — mechanism and trade-off.\n3. Why does a recycling campaign fail if no collection system exists?\n4. Give one way green belts help sustainability and one way they harm it.\n5. Which lever would you use to make buildings more energy-efficient — regulation, incentive, or provision? Justify with a mechanism.\n\nSource notes: CP4_Sustainable_City_Detailed_Notes · index DSE_SUMMARY · framework 2027 HKDSE Geography Assessment Framework",
-     "heading": "Quick self-check",
+     "text": "| Strategy | Suitable for | Hong Kong example | Defining feature |\n|---|---|---|---|\n| Redevelopment | Very old buildings in poor condition or with structural danger; buildings with or without historical, cultural or architectural value | Kwun Tong Town Centre; Lei Tung Street, Wan Chai | Demolish and rebuild; greatly increases floor space; involves resettlement and high land-resumption cost |\n| Preservation | Buildings with historical, cultural or architectural value | Wing Lee Street, Sheung Wan; Blue House, Wan Chai; PMQ | Keeps the building; no resettlement; preserves heritage and local character; does not increase floor space |\n| Revitalisation | Using the special features of heritage sites to revive the community; turning heritage sites into new community hubs | PMQ, Sheung Wan; Tai Kwun, Central | Keeps the building but gives it new uses and new life — new activities, new jobs, tourism |\n| Rehabilitation | Proper repair and maintenance of old buildings | General old buildings in the inner city | Slows urban decay by extending the life of the building; low cost and time-efficient; no demolition, no extra floor space |\n| Retrofitting | Upgrading buildings to meet modern standards and enhance living quality | — | Upgrades facilities (appearance, hygiene, services) rather than repairing structure; no demolition, no extra floor space |",
+     "heading": "4. The five urban-renewal strategies — and how to tell them apart",
      "n": 5
+    },
+    {
+     "text": "The one-line discriminator\nRedevelopment demolishes and rebuilds (more floor space, resettlement, high cost). Preservation keeps the building exactly as it is. Revitalisation keeps the building but changes what happens inside it. Rehabilitation and retrofitting repair or upgrade in place — cheapest, no new floor space, no demolition waste.",
+     "heading": "4. The five urban-renewal strategies — and how to tell them apart",
+     "n": 6
+    },
+    {
+     "text": "The exam asks candidates to compare land development methods. Each method has a gain and a cost under all three pillars, and each comes with a named example:",
+     "heading": "5. Ways of increasing Hong Kong's land supply",
+     "n": 7
+    },
+    {
+     "text": "| Method | Gain | Cost / conflict | Example |\n|---|---|---|---|\n| Building new towns and NDAs/PDAs | Land for commercial and other uses; owners can sell and profit; local jobs; a well-planned community with more open space; eases overcrowding by dispersing population | Higher farmland rents; higher infrastructure cost at remote sites; congestion on trunk roads; land resumption costly and slow; urban encroachment harms habitats; loss of traditional rural culture; green-group and villager opposition; longer, more expensive commutes | Nine new towns since the 1970s–90s; NDAs/PDAs in the north-east and north-west New Territories |\n| Developing brownfield sites | Uses land more efficiently; releases land for uses; cheap to develop because infrastructure usually exists; eases rural land use conflict | Land resumption costly and slow; congestion if it becomes a large residential area; existing operations may not be relocatable, so businesses close and unemployment follows; opposition from owners and users, e.g. open storage operators | Former container yards in the New Territories |\n| Reclamation | Large pieces of flat land; planning and development easier on new land; no land resumption needed | High reclamation and infrastructure cost; causes water pollution; damages wildlife habitats and marine life; loses natural coastal scenery; opposition from green groups, fishermen and the public | Victoria Harbour historically; the Protection of Harbour Ordinance now keeps new reclamation outside the harbour |\n| Rock cavern development | Releases ground space; excavated rock can be used for construction and reclamation; placing unpopular facilities in caverns eases land use conflict | High construction and relocation cost; digging may disturb natural drainage and soil structure; no natural light or ventilation, so the environment is less desirable | The Sha Tin sewage treatment work moving to Ah Kung Kok, Tai Shui Hang |\n| Reuse of ex-quarry sites | Releases land for housing, commercial and community facilities; cheap in the main urban area as infrastructure exists; improves a poor landscape | A large residential area increases traffic and crowding; a suburban site raises transport costs and commuting time | Anderson Road Quarry, Sau Mau Ping; Lamma Island |\n| Underground space development | Frees above-ground space; underground pedestrian links relieve crowd and traffic congestion; reduces ground-level air pollution; land for community facilities | High construction cost; no natural light or ventilation; prolonged disruption to traffic, businesses and residents during construction | Victoria and Causeway Bay underground space development |\n| Developing the Fanling golf course | 1.72 km² of complete or 0.32 km² of partial development; government-owned, so no land resumption needed; serves only about 2,200 members | High infrastructure cost; urban encroachment damages the countryside; around 30,000 trees, some old and valuable, may be removed; three historical buildings and around 150 ancestral graves and urns may face indigenous opposition; hosts international golf events, so development damages Hong Kong's image as an international city | The Fanling golf course |\n| Converting industrial buildings | Makes good use of idle space; owners earn profit; eases land use conflict with nearby residential areas; can promote creative industries as art studios | Difficult and costly to renovate to the building codes for residential or commercial use | Fo Tan, Kowloon Bay, Kwun Tong |\n| Redevelopment | Uses land resources more effectively; stimulates the property market; more floor space eases overcrowding and improves the living environment | High compensation cost and time for land resumption; higher rents close local shops; construction waste; loss of heritage and character; resettlement destroys social networks; heavier transport burden on low-income households resettled to suburbs; gentrification raises living costs | Kwun Tong; Lei Tung Street, Wan Chai |",
+     "heading": "5. Ways of increasing Hong Kong's land supply",
+     "n": 8
+    },
+    {
+     "text": "\"Green belt\" is not \"green space\"\nA green belt is land withheld from development; urban green space is space provided inside the built-up area. The HKEAA briefings for 2022, 2024 and 2026 each penalise candidates who confuse the two. If a question asks you to develop green belts, you are arguing to remove a constraint on development — so the answer must address what the green belt was protecting.\n\nAnswer structure for \"Evaluate planning strategies for a sustainable city\"\n1. Group measures by actor: planning (regulation) / government (incentive + provision) / community (participation).\n2. For each: mechanism → named example → one strength and one limitation.\n3. Show interaction: regulation without provision fails; provision without participation fails (bins without habits).\n4. Conclude: which combination suits a land-scarce, high-density city, and why.",
+     "heading": "5. Ways of increasing Hong Kong's land supply",
+     "n": 9
+    },
+    {
+     "text": "Common marks lost\n- Confusing a policy with its outcome (\"the government bans pollution\" ≠ cleaner air).\n- Treating community involvement as free support — consultation costs time and can delay projects.\n- Missing the green-belt counter-argument (higher prices / displaced development).\n- No actor named: \"something should be done\" scores nothing.\n- Forgetting Hong Kong's context — density and land scarcity change which lever works best.\n- Confusing redevelopment with rehabilitation or revitalisation — identify the strategy by its defining feature, not by its name.\n- Treating \"green belt\" and \"green space\" as the same thing; they are opposites.\n- Comparing land development methods by listing only gains, with no cost under the economic, environmental and social pillars.",
+     "heading": "5. Ways of increasing Hong Kong's land supply",
+     "n": 10
+    },
+    {
+     "text": "1. Explain how zoning reduces an environmental problem before it occurs.\n2. Distinguish an environmental tax from an emission standard — mechanism and trade-off.\n3. Why does a recycling campaign fail if no collection system exists?\n4. Give one way green belts help sustainability and one way they harm it.\n5. Which lever would you use to make buildings more energy-efficient — regulation, incentive, or provision? Justify with a mechanism.\n6. A photograph shows an old tenement with its façade repaired, services upgraded and the building still standing. Name the strategy, and name the strategy it is not, with the reason.\n\nPast papers and examiner guidance: CP4 Question Collection - Past Papers and Examiner Guidance · Source notes: CP4_Sustainable_City_Detailed_Notes · index DSE_SUMMARY · framework 2027 HKDSE Geography Assessment Framework",
+     "heading": "Quick self-check",
+     "n": 11
     }
    ]
   },
@@ -2891,19 +2976,34 @@
      "n": 1
     },
     {
-     "text": "- Cost — sustainable technology and retrofits are expensive; budgets compete with housing, health and transport. Public acceptance of charges/taxes is weak, so funding is politically fragile.\n- Technology — solutions are not equally available: renewable generation is limited by land and weather in a dense city; some treatments need skills or infrastructure the city lacks. \"Technically possible\" ≠ \"available here\".\n- Public acceptance / behavioural change — measures that change routines (separation of waste, fewer car trips, higher charges) meet habit and resistance; without compliance, the mechanism never fires. This is the single most common reason a well-designed scheme fails.\n\nAnswer structure for the top-band evaluation\n1. Acknowledge the measure's benefit (one sentence, with mechanism).\n2. Name the specific conflict it creates (which two pillars clash).\n3. State the implementation constraint (cost / technology / acceptance) in this city's context.\n4. Resolve or weigh them: under what condition does the benefit survive the trade-off?\nA closing sentence of this form is worth a mark on its own: \"The measure is sustainable only if its upfront cost is met and public compliance is secured; otherwise it shifts rather than solves the problem.\"",
+     "text": "- Cost — sustainable technology and retrofits are expensive; budgets compete with housing, health and transport. Public acceptance of charges/taxes is weak, so funding is politically fragile.\n- Technology — solutions are not equally available: renewable generation is limited by land and weather in a dense city; some treatments need skills or infrastructure the city lacks. \"Technically possible\" ≠ \"available here\".\n- Public acceptance / behavioural change — measures that change routines (separation of waste, fewer car trips, higher charges) meet habit and resistance; without compliance, the mechanism never fires. This is the single most common reason a well-designed scheme fails.",
      "heading": "2. Implementation issues — why measures underdeliver",
      "n": 2
     },
     {
-     "text": "Common marks lost\n- Listing conflicts as abstract nouns with no mechanism (\"there are trade-offs\").\n- No Hong Kong context — these arguments must be attached to a real case.\n- Evaluating only cost, ignoring acceptance and technology (examiners award each distinct constraint).\n- Treating conflict as failure: sustainability is managed conflict — say how it is managed.\n- Contradicting yourself: praising a measure earlier, then denying all costs later.",
-     "heading": "2. Implementation issues — why measures underdeliver",
+     "text": "These are the specific obstacles Hong Kong's own renewal projects ran into. Each one is a mechanism you can attach to a real case.",
+     "heading": "3. Why implementation underdelivers — the six recurring obstacles",
      "n": 3
     },
     {
-     "text": "1. Explain the development-vs-conservation conflict using one Hong Kong site or project.\n2. Why do environmental benefits arrive later than economic costs — and why does that matter for policy?\n3. Use the free-rider idea to explain why education alone may not deliver recycling.\n4. Give one cost, one technology limit and one acceptance problem facing a waste measure in Hong Kong.\n5. Complete: \"This measure is sustainable only if …\" — then defend the sentence with two mechanisms.\n\nSource notes: CP4_Sustainable_City_Detailed_Notes · index DSE_SUMMARY · 4.3 Sustainable City Features (F6 Revision) · 4.5 Planning Strategies (F6 Revision)",
-     "heading": "Quick self-check",
+     "text": "| Obstacle | The mechanism, as it actually works |\n|---|---|\n| Land assembly | Inner-city land ownership is commonly complicated. Some owners have emigrated or died, so the government cannot even approach them; others are unsatisfied with the compensation and will not sell. The project cannot start until the site can be assembled. |\n| Relocation and resettlement | Residents are reluctant to move because of close social networks and neighbourhood relationships. They cannot resettle in the original location because rents rise. After moving they live far from their workplace and face higher commuting costs, while businesses lose their customer network and cannot afford higher rents in the original or other districts. |\n| Time | The government needs a long period to persuade owners and residents to accept compensation and resettlement. The Kwun Tong town centre project commenced in 2007 and land resumption was still not completed in 2016. |\n| Financial | High burden from land resumption, compensation and resettlement of owners of domestic and non-domestic properties and tenants. The estimated cost of the Kwun Tong town centre was multi-billion dollars. |\n| Conflicting stakeholder interests | Renewal projects may not gain the agreement of conservation groups and communities. Revitalisation and preservation may emphasise the external appearance of a building without reshaping its internal cultural and historical context; redevelopment may destroy buildings with historical, cultural or architectural value. |\n| New environmental problems | Redevelopment creates construction waste, exerting further pressure on the landfills. Without comprehensive planning — particularly in projects carried out by private developers — the height and density of new commercial and residential buildings may be incompatible with the area. |",
+     "heading": "3. Why implementation underdelivers — the six recurring obstacles",
      "n": 4
+    },
+    {
+     "text": "Link each obstacle to the right pillar\nLand assembly, time and finance are economic and implementation obstacles. Resettlement is a social obstacle that also feeds back into the economy through commuting costs and lost customer networks. Conflicting stakeholder interests is the social pillar in difficulty form. New environmental problems are the environmental pillar in difficulty form.\nA top-band answer names the obstacle, the mechanism, and the case it happened in.\n\nAnswer structure for the top-band evaluation\n1. Acknowledge the measure's benefit (one sentence, with mechanism).\n2. Name the specific conflict it creates (which two pillars clash).\n3. State the implementation constraint (cost / technology / acceptance) in this city's context.\n4. Resolve or weigh them: under what condition does the benefit survive the trade-off?\nA closing sentence of this form is worth a mark on its own: \"The measure is sustainable only if its upfront cost is met and public compliance is secured; otherwise it shifts rather than solves the problem.\"",
+     "heading": "3. Why implementation underdelivers — the six recurring obstacles",
+     "n": 5
+    },
+    {
+     "text": "Common marks lost\n- Listing conflicts as abstract nouns with no mechanism (\"there are trade-offs\").\n- No Hong Kong context — these arguments must be attached to a real case.\n- Evaluating only cost, ignoring acceptance and technology (examiners award each distinct constraint).\n- Treating conflict as failure: sustainability is managed conflict — say how it is managed.\n- Contradicting yourself: praising a measure earlier, then denying all costs later.\n- Writing the pros and cons of renewal strategies and stopping there. The 2020 DSE report noted \"few candidates applied the concepts of sustainable city in their discussions\" — the evaluation has to be run through the pillars, not left as a list.\n- Failing to make a judgement. \"Redesign of the old urban areas is an important measure\" is not a verdict.",
+     "heading": "3. Why implementation underdelivers — the six recurring obstacles",
+     "n": 6
+    },
+    {
+     "text": "1. Explain the development-vs-conservation conflict using one Hong Kong site or project.\n2. Why do environmental benefits arrive later than economic costs — and why does that matter for policy?\n3. Use the free-rider idea to explain why education alone may not deliver recycling.\n4. Give one cost, one technology limit and one acceptance problem facing a waste measure in Hong Kong.\n5. Complete: \"This measure is sustainable only if …\" — then defend the sentence with two mechanisms.\n6. Pick one of the six obstacles above and explain it as a chain: obstacle → mechanism → who carries the cost → pillar affected.\n\nPast papers and examiner guidance: CP4 Question Collection - Past Papers and Examiner Guidance · Source notes: CP4_Sustainable_City_Detailed_Notes · index DSE_SUMMARY · 4.3 Sustainable City Features (F6 Revision) · 4.5 Planning Strategies (F6 Revision)",
+     "heading": "Quick self-check",
+     "n": 7
     }
    ]
   },
@@ -3015,19 +3115,54 @@
      "n": 19
     },
     {
+     "text": "Source: `CP4 Question Collection.pdf` (Po Leung Kuk Ngan Po Ling College revision pack, 80 pages), now saved in the `CP4/` folder. The full transcription — every question, mark scheme and examiner report — is in CP4 Question Collection - Past Papers and Examiner Guidance. This section carries only the examinable facts that belong in the detailed notes.",
+     "heading": "PART 6A: ADDITION — EXAM QUESTION COLLECTION (added 2026-10-28)",
+     "n": 20
+    },
+    {
+     "text": "- CP4 appeared as a structured question (SQ) in every CE year from 1999 to 2011, and in DSE years 12, 13, 15, 17, 18, 19 and 21.\n- CP4 MC ran every CE year: 6, 7, 6, 12, 9, 9, 6, 7, 5, 6, 7, 8 items for 1999-2010. The 2002 paper carried 12 items — double a normal year.\n- The short essay (ES) began with the DSE: 2015, 2018 and 2021, plus the 2012 practice paper.",
+     "heading": "6A.1 Examination tendency (pack page 2)",
+     "n": 21
+    },
+    {
+     "text": "Relief · Accessibility · Industrial land use · Scenery · Environment · Public utilities · Labour · Space.\nEvery advantage must be paired with the map evidence that proves it. The pack's worked example is the 2008 Kai Tak cruise terminal: space on the runway; submarine contours showing 5-10 m depth; a wide bay in Victoria Harbour / Kowloon Bay; named trunk roads or railways.",
+     "heading": "6A.2 The locational-advantage checklist: RAISE PLS (pack page 6)",
+     "n": 22
+    },
+    {
+     "text": "- Redevelopment — demolish and rebuild; greatly increases floor space; example Kwun Tong Town Centre.\n- Preservation — keep the building; no resettlement; keeps local character; example Wing Lee Street, Sheung Wan.\n- Revitalisation — keep the building, give it new uses and new life; example PMQ, Sheung Wan.\n- Rehabilitation — proper repair and maintenance; slow urban decay; low cost; cannot increase floor space.\n- Retrofitting — upgrade facilities to modern standards and enhance living quality.",
+     "heading": "6A.3 The five urban-renewal strategies (pack page 9)",
+     "n": 23
+    },
+    {
+     "text": "Building new towns and NDAs/PDAs · Developing brownfield sites · Reclamation · Rock cavern development (Sha Tin sewage treatment work moving to Ah Kung Kok) · Reuse of ex-quarry sites (Anderson Road Quarry; Lamma) · Underground space development (Victoria and Causeway Bay) · Developing the Fanling golf course (1.72 km² complete / 0.32 km² partial; ~2,200 members; ~30,000 trees; ~150 ancestral graves) · Converting industrial buildings (Fo Tan, Kowloon Bay, Kwun Tong) · Redevelopment (Kwun Tong; Lei Tung Street, Wan Chai).",
+     "heading": "6A.5 Land supply methods (pack pages 10-15)",
+     "n": 24
+    },
+    {
+     "text": "- Describing urban decay instead of accounting for it (2020 DSE).\n- Confusing \"green belt\" with \"green space\" — named in the 2021 report and again in the 2022, 2024 and 2026 HKEAA briefings.\n- Citing the country park or nature reserve as urban green space — ruled out in the 2021 report.\n- Stating gentrification as a cause of urban decay — it is a consequence of renewal (2020 report).\n- Listing the merits of urban planning without referring to the setting (2021 report).\n- Answering about urban problems but describing the site's locational characteristics instead (2021 report).\n- Mixing up land use zoning and self-contained (2021 report).\n- Listing only land-use types read off the map instead of analysing them (2021 report).\n- Writing renewal strategies' pros and cons without applying the sustainable city concepts (2020 report).\n- Answering locational advantage from a real-estate developer's perspective when the question asked about sustainable development (2021 report).",
+     "heading": "6A.6 The examiner's named traps",
+     "n": 25
+    },
+    {
+     "text": "Average traffic speed in Central and Wan Chai 10 km/hr · Lion Rock Tunnel congestion 8-10 am · less than 1% of Hong Kong farmland remaining · 19 km² abandoned land · Ma Tau Wai 45J building collapse · Portland Street social problems · Mapopo farm, Ma Shi Po · Choi Yuen Village · Nam San Wai illegal dumping · Sham Shui Po mean salary 10,420 (2011 census) · Tai Po as the case of a self-contained new town (Tai Po Industrial Estate, Science Park, Waterfront Park, Hong Lok Yuen, Tai Po Market).",
+     "heading": "6A.7 Quotation-ready Hong Kong specifics",
+     "n": 26
+    },
+    {
      "text": "1. Sustainable development definition\n2. Three pillars of sustainability\n3. Urban problems (environmental & social)\n4. Sustainable city features\n5. Hong Kong case studies",
      "heading": "Key Concepts to Know:",
-     "n": 20
+     "n": 27
     },
     {
      "text": "- Describe: Say what you see\n- Explain: Give reasons\n- Discuss: For and against\n- Evaluate: Judge with evidence",
      "heading": "Command Words:",
-     "n": 21
+     "n": 28
     },
     {
      "text": "1. Explain the concept of sustainable development\n2. Describe urban environmental problems\n3. Discuss measures to build a sustainable city\n4. Evaluate Hong Kong's sustainability efforts",
      "heading": "Possible Questions:",
-     "n": 22
+     "n": 29
     }
    ]
   },
@@ -4050,7 +4185,7 @@
      "n": 1
     },
     {
-     "text": "4.1 Sustainable Development (F6 Revision)\n4.2 Urban Problems (F6 Revision)\n4.3 Sustainable City Features (F6 Revision)\n4.4 Hong Kong Case Studies (F6 Revision)\n4.5 Planning Strategies (F6 Revision)\n4.6 Challenges of Sustainable Development (F6 Revision)",
+     "text": "4.1 Sustainable Development (F6 Revision)\n4.2 Urban Problems (F6 Revision)\n4.3 Sustainable City Features (F6 Revision)\n4.4 Hong Kong Case Studies (F6 Revision)\n4.5 Planning Strategies (F6 Revision)\n4.6 Challenges of Sustainable Development (F6 Revision)\nCP4 Question Collection - Past Papers and Examiner Guidance — CP4 past papers 1999-2021, mark schemes and examiner reports (question-side of the module)",
      "heading": "CP4 — Building a Sustainable City (F6 revision series)",
      "n": 2
     },

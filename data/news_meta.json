@@ -1,6 +1,6 @@
 {
- "updated_at": "2026-10-27 21:52 UTC",
- "n_items": 214,
+ "updated_at": "2026-10-28 01:51 UTC",
+ "n_items": 230,
  "feeds": [
   {
    "feed": "USGS Earthquakes (M4.5+, past week)",
@@ -105,7 +105,7 @@
    "url": "https://www.scmp.com/rss/92/feed",
    "ok": true,
    "error": "",
-   "items": 5
+   "items": 4
   },
   {
    "feed": "SCMP — China Economy",
