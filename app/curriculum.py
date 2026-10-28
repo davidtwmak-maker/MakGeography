@@ -33,8 +33,12 @@ class CurriculumMatcher:
         # hint can point at either a whole note or one section inside it.
         self.by_title: dict[str, list] = {}
         self.by_heading: dict[str, list] = {}
+        self.path_of_title: dict[str, str] = {}
         for c in kb.chunks:
             self.by_title.setdefault(c.title.lower(), []).append(c)
+            # The note title does not carry the module ("1.2 River energy"
+            # could be CP2 or CP3), but its PATH does.
+            self.path_of_title.setdefault(c.title.lower(), c.path or "")
             h = (c.heading or "").lower().strip()
             if h:
                 self.by_heading.setdefault(h, []).append(c)
@@ -82,6 +86,102 @@ class CurriculumMatcher:
                     continue
                 titles.append(s)
         return titles
+
+    def resolve_source(self, source: str) -> str | None:
+        """Turn a curriculum `source` path into the matching KB note title.
+
+        The curriculum names the source note by its FILEPATH
+        ("CP4/Concepts/4.4 Hong Kong Case Studies (F6 Revision).md"),
+        but the KB indexes notes by their frontmatter title, where the
+        dash is an em-dash and the "(F6 Revision)" suffix is dropped
+        ("4.4 Hong Kong Case Studies — F6 Revision"). Matching the two
+        exactly fails, so the path stem is normalised and then looked up
+        by the note's leading label.
+        """
+        if not source:
+            return None
+        stem = source.split("/")[-1]
+        if stem.lower().endswith(".md"):
+            stem = stem[:-3]
+        # Drop a trailing "(F6 Revision)" - the KB title has no suffix.
+        stem = re.sub(r"\s*\(F6 Revision\)\s*$", "", stem).strip()
+        if not stem:
+            return None
+
+        # Exact title after normalisation.
+        target = self._normalise(stem)
+        for t in self.by_title:
+            if self._normalise(t) == target:
+                return t
+
+        # The note's PATH is the authoritative name - a note's frontmatter
+        # title can drop the number ("1.2 Industrial Development in China"
+        # is titled "2 Industrial Development in China"), so the filename
+        # is matched before the title is.
+        for t in self.by_title:
+            p = self.path_of_title.get(t.lower(), "")
+            if not p:
+                continue
+            pstem = p.split("/")[-1]
+            if pstem.lower().endswith(".md"):
+                pstem = pstem[:-3]
+            pstem = re.sub(r"\s*\(F6 Revision\)\s*$", "", pstem).strip()
+            if self._normalise(pstem) == target:
+                return t
+
+        # Otherwise match on the leading label ("4.4", "1.2", "CP6_...").
+        # The label alone is ambiguous across modules - "1.2" is both
+        # CP2's "1.2 River energy" and CP3's "1.2 Industrial Development
+        # in China" - so the module in the source path decides first, and
+        # the bare label is only a last resort.
+        label = self._normalise(stem.split(" ")[0])
+        if not label:
+            return None
+        module = self._module_of(source)
+        same_module = []
+        for t in self.by_title:
+            tn = self._normalise(t)
+            if not (tn.startswith(label + " ") or tn.startswith(label)):
+                continue
+            if module:
+                tpath = self.path_of_title.get(t.lower(), "")
+                if tpath and not self._module_of(tpath).startswith(module):
+                    continue
+                if not tpath and not self._module_of(t).startswith(module):
+                    continue
+            same_module.append(t)
+        if same_module:
+            return same_module[0]
+        for t in self.by_title:
+            tn = self._normalise(t)
+            if tn.startswith(label + " ") or tn.startswith(label):
+                return t
+        return None
+
+    @staticmethod
+    def _module_of(text: str) -> str:
+        """The module a path or note title belongs to ("CP3", "EP1", ...)."""
+        m = re.search(r"(?i)(CP[1-7]|EP1|F[1-6])", text or "")
+        return m.group(1).upper() if m else ""
+
+    @staticmethod
+    def _normalise(text: str) -> str:
+        """Lowercase, collapse punctuation to spaces, squeeze the spaces."""
+        t = re.sub(r"[^a-z0-9]+", " ", (text or "").lower())
+        return re.sub(r"\s+", " ", t).strip()
+
+    def hints_for(self, leaf: dict) -> list[str]:
+        """The notes a curriculum leaf should draw on.
+
+        The `source` field names the note the leaf came from, and it is
+        the authoritative link. `source_hints` is a secondary, looser
+        list, so it is only consulted when `source` does not resolve.
+        """
+        src_title = self.resolve_source(str(leaf.get("source", "")))
+        hints = list(leaf.get("source_hints", []) or [])
+        if src_title:
+            return [src_title] + [h for h in hints if h != src_title]
+        return hints
 
     def match_notes(self, hints: list[str]) -> list[dict]:
         """Return every chunk of the notes named by the hints.
@@ -167,19 +267,27 @@ class CurriculumMatcher:
             if w not in STOPWORDS
         }
 
-        for hint in hints:
+        for hint_index, hint in enumerate(hints):
             hl = hint.lower().strip()
             if not hl:
                 continue
-            # A hint may be a note title OR a section heading. Check both:
-            # the heading match is more specific, so it wins.
-            heading_chunks = self.by_heading.get(hl)
-            if heading_chunks:
-                for c in heading_chunks:
-                    add(c)
-                continue
-
+            # A hint may be a note title OR a section heading. The title is
+            # checked FIRST: a note's own title is also its top-level
+            # heading, so testing the heading first would match the note's
+            # introduction and stop there, never reaching the sections that
+            # actually suit the leaf.
             chunks = self.by_title.get(hl)
+            if chunks is not None:
+                pass
+            else:
+                # Not a note title - it may name one section.
+                heading_chunks = self.by_heading.get(hl)
+                if heading_chunks:
+                    for c in heading_chunks:
+                        add(c)
+                    continue
+                chunks = None
+
             if chunks is None:
                 # Neither an exact title nor an exact heading. Try a fuzzy
                 # heading match, but only if it resolves to one section.
@@ -194,6 +302,10 @@ class CurriculumMatcher:
                 continue
 
             # Pick the sections of this note that are actually about the leaf.
+            # The FIRST hint is the note the leaf was scaffolded from, so it
+            # is authoritative: its sections are preferred over those of a
+            # later, looser hint.
+            primary = hint_index == 0
             scored = []
             for c in chunks:
                 head_terms = {
@@ -203,7 +315,15 @@ class CurriculumMatcher:
                 overlap = leaf_terms & head_terms
                 if overlap:
                     scored.append((len(overlap), c))
-            if scored:
+            if primary:
+                # The primary note is the note the leaf was scaffolded
+                # from, so the whole of it is relevant - a leaf on "Hong
+                # Kong case studies" needs the note's case list, its
+                # worked example and its self-check, not only the section
+                # whose heading happened to share a word with the title.
+                for c in chunks:
+                    add(c)
+            elif scored:
                 best = max(s for s, _ in scored)
                 for s, c in scored:
                     if s == best:

@@ -61,7 +61,7 @@ unhinted = sum(
     for e in cur["electives"]
     for s in e["subquestions"]
     for l in s.get("leaves", [])
-    if not l.get("source_hints")
+    if not (l.get("source_hints") or l.get("source"))
 )
 print(f"Curriculum OK: {len(codes)} electives, {n} leaves, {unhinted} without source hints")
 
@@ -201,5 +201,41 @@ assert (_pa, _pb) == (6, 6), (_pa, _pb)
 assert essay.resolve_commands("describe_explain", "discuss", 8)[1] == "", (
     "an 8-mark essay is a single part and takes one command word")
 print("Essay generator: two command lists, 12 marks -> 6+6, 8 marks -> one part")
+
+# 10. Every curriculum leaf must resolve to the note it was written from.
+#
+# The notes API picks a note for each leaf by matching the leaf's
+# `source` field. If the match is wrong the student silently gets
+# another topic's notes - which is how every CP4 leaf ended up
+# serving the 4.1 note. This check fails loudly instead.
+def _norm(s):
+    return re.sub(r"\s+", " ", re.sub(r"[^a-z0-9]+", " ", (s or "").lower())).strip()
+
+_matcher = am.get_matcher()
+_wrong = []
+_thin = []
+for _e in cur["electives"]:
+    for _s in _e.get("subquestions", []):
+        for _l in _s.get("leaves", []):
+            _matched = _matcher.match(
+                _matcher.hints_for(_l), _l.get("title", ""))
+            if not _matched:
+                _wrong.append((_e["code"], _l["id"], "no note matched"))
+                continue
+            _src = str(_l.get("source", "")).strip()
+            if not _src:
+                continue
+            _want = [
+                _norm(p.strip().split("/")[-1].removesuffix(".md"))
+                for p in _src.split(";")
+            ]
+            _got = [
+                _norm(c.get("path", "").split("/")[-1].removesuffix(".md"))
+                for c in _matched
+            ]
+            if not any(any(w == g or w in g for g in _got) for w in _want):
+                _wrong.append((_e["code"], _l["id"], _want[:1], _got[:2]))
+assert not _wrong, f"leaves matched to the wrong note: {_wrong[:5]}"
+print(f"Curriculum: all {n} leaves resolve to the note their source names")
 
 print("\nALL CHECKS PASSED")

@@ -354,7 +354,7 @@ def api_notes(request: Request, topic: str | None = None):
         for sq in el.get("subquestions", []):
             leaves = []
             for leaf in sq.get("leaves", []):
-                content = matcher.match(leaf.get("source_hints", []),
+                content = matcher.match(matcher.hints_for(leaf),
                                               leaf.get("title", ""))
                 leaves.append({
                     "id": leaf.get("id"),

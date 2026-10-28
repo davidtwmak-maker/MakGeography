@@ -185,7 +185,7 @@ def _leaf_content(matcher, leaf: dict) -> list[dict]:
     full note is taken, and the narrowed match is added on top for any
     section the full-note lookup did not reach.
     """
-    hints = leaf.get("source_hints", [])
+    hints = matcher.hints_for(leaf)
     whole = matcher.match_notes(hints)
     if whole:
         return whole
@@ -197,7 +197,7 @@ def collect_source(
     curriculum: dict,
     code: str,
     leaf_ids: list[str] | None = None,
-    max_chars: int = 12000,
+    max_chars: int = 20000,
 ) -> tuple[list[dict], str]:
     """Collect the note content for the chosen sub-topics.
 
@@ -225,6 +225,18 @@ def collect_source(
                 if wanted and lid not in wanted:
                     continue
                 content = _leaf_content(matcher, leaf)
+                # The leaf's OWN note comes first, so the context budget is
+                # spent on the material that belongs to this sub-topic
+                # rather than on a supporting note that was pulled in
+                # first by accident.
+                primary = matcher.resolve_source(str(leaf.get("source", "")))
+                if primary:
+                    # resolve_source returns a normalised (lower-case) title,
+                    # while a chunk keeps the note's own capitalisation.
+                    want = primary.strip().lower()
+                    content.sort(
+                        key=lambda c: 0 if c["title"].strip().lower() == want else 1
+                    )
                 for c in content:
                     key = c["title"] + "#" + str(c["n"])
                     if key in seen:

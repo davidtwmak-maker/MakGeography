@@ -237,7 +237,7 @@
                 <div class="body">
                   <p class="leaf-summary">${esc(lf.summary)}</p>
                   ${lf.content.length ? lf.content.map((c) => `
-                    <h4>${esc(c.title)}${c.heading ? " — " + esc(c.heading) : ""}</h4>
+                    <h4>${esc(c.title)}${c.heading && c.heading !== c.title ? " — " + esc(c.heading) : ""}</h4>
                     <div class="note-text">${md(c.text)}</div>`).join("")
                   : `<p class="hint-small">This sub-topic has no dedicated note in the MakGeography vault yet.</p>`}
                 </div>
