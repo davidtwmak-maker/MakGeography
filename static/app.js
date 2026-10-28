@@ -4,6 +4,41 @@
   const $ = (s, r = document) => r.querySelector(s);
   const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 
+  // ---------------------------------------------------------------- static build
+  //
+  // The live site is FastAPI. The GitHub Pages copy is static, so the
+  // read-only data is fetched from JSON files instead of /api/*. The two
+  // features that need a language model - Ask and Generate an essay - are
+  // unavailable there, and the page says so rather than failing silently.
+  const STATIC = window.MAKGEO_STATIC === true;
+  const STATIC_ROOT = "";
+
+  // A fetch that reads the static JSON in the static build, and the API
+  // on the live server.
+  //
+  // The static files are named after the endpoint: /api/mc -> api/mc.json,
+  // /api/kb/status -> api/kb/status.json. A query string on the live
+  // server (the topic filter, the limit) is dropped, because the static
+  // file already holds everything and the filter runs in the browser.
+  async function getJSON(path) {
+    if (!STATIC) {
+      const r = await fetch(path);
+      if (!r.ok) throw new Error(`${path} -> ${r.status}`);
+      return r.json();
+    }
+    const clean = path.split("?")[0].replace(/\/api\/?/, "");
+    const r = await fetch(`api/${clean}.json`);
+    if (!r.ok) throw new Error(`${path} -> ${r.status}`);
+    return r.json();
+  }
+
+  // The path prefix every media URL needs. On the live server the media is
+  // served from /oqb-images/...; in the static build the same files sit
+  // under oqb-media/....
+  const MEDIA = STATIC ? "oqb-media/" : "/oqb-images/";
+  const ATTACH = STATIC ? "oqb-media/" : "/oqb-attachments/";
+  const QIMG = STATIC ? "question-images/" : "/question-images/";
+
   const EXAMPLES = [
     ["CP1", "Explain the formation of a tsunami and how Hong Kong coastal management reduces its impact."],
     ["CP2", "Compare the characteristics of a destructive and a constructive plate boundary, with examples."],
@@ -33,9 +68,7 @@
   // ---------------------------------------------------------------- kb status
   async function loadStatus() {
     try {
-      const r = await fetch("/api/kb/status");
-      if (!r.ok) return;
-      const d = await r.json();
+      const d = await getJSON("/api/kb/status");
       $("#kbChunks").textContent = d.chunks ?? "–";
       $("#kbDocs").textContent = `${d.docs} notes · built ${(d.built_at || "").slice(0, 10)}`;
       const opts = (d.topics || []).map((t) => `<option value="${t}">${t}</option>`).join("");
@@ -49,9 +82,8 @@
     // sit outside the note topics ("MAP"). They are a real exam category
     // (Topic 12 of the Geography module) so they get their own filter.
     try {
-      const r = await fetch("/api/mc?limit=1");
-      if (r.ok) {
-        const d = await r.json();
+      const d = await getJSON("/api/mc?limit=1");
+      {
         const sel = $("#mcTopic");
         const have = [...sel.options].map((o) => o.value);
         if (d.topics && !have.includes("MAP")) {
@@ -177,6 +209,14 @@
     const btn = $("#sendBtn");
     btn.disabled = true;
     try {
+      if (STATIC) {
+        pending.querySelector(".body").innerHTML =
+          `<span class="loading">Asking a question needs the live site. ` +
+          `<a href="https://sunday-answer-prepare-companies.trycloudflare.com">Open MakGeography</a> ` +
+          `and ask there &mdash; this page is the static copy.</span>`;
+        btn.disabled = false;
+        return;
+      }
       const r = await fetch("/api/ask", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -215,8 +255,7 @@
   async function loadNotes() {
     if (notesCache) return renderNotes();
     $("#notesList").innerHTML = '<div class="empty">Loading notes…</div>';
-    const r = await fetch("/api/notes");
-    const d = await r.json();
+    const d = await getJSON("/api/notes");
     notesCache = d.electives || [];
     renderNotes();
   }
@@ -275,8 +314,7 @@
 
   // ---------------------------------------------------------------- mc
   async function loadMcStats() {
-    const r = await fetch("/api/mc?limit=1000");
-    const d = await r.json();
+    const d = await getJSON("/api/mc?limit=1000");
     const st = localStorage.getItem("makgeo_mc_stats");
     const s = st ? JSON.parse(st) : { asked: 0, correct: 0, byTopic: {} };
     $("#mcStats").innerHTML = `
@@ -304,15 +342,15 @@
       <div class="mc-q" data-i="${i}">
         ${q.official ? `<div class="mc-official">Official HKDSE exam question &middot; ${esc(q.source || "")}</div>` : ""}
         ${q.map_extract
-          ? `<div class="mc-mapextract"><a href="/oqb-attachments/${esc(q.map_extract)}" target="_blank" rel="noopener">Open the map extract for this paper (${esc(q.map_extract.split("/").pop())})</a></div>`
+          ? `<div class="mc-mapextract"><a href="${ATTACH}${esc(q.map_extract)}" target="_blank" rel="noopener">Open the map extract for this paper (${esc(q.map_extract.split("/").pop())})</a></div>`
           : ""}
         ${q.stem_image
-          ? `<figure class="mc-question-image"><img src="/oqb-images/${esc(q.stem_image)}" alt="The question as it appeared in the HKDSE examination paper" loading="lazy"><figcaption>Source: HKEAA examination question paper. &copy; HKEAA.</figcaption></figure>`
+          ? `<figure class="mc-question-image"><img src="${MEDIA}${esc(q.stem_image)}" alt="The question as it appeared in the HKDSE examination paper" loading="lazy"><figcaption>Source: HKEAA examination question paper. &copy; HKEAA.</figcaption></figure>`
           : q.question_image
-            ? `<figure class="mc-question-image"><img src="/question-images/${esc(q.question_image.split("/").pop())}" alt="The question as it appeared in the HKDSE examination paper" width="${q.image_width || 1200}" height="${q.image_height || 600}"><figcaption>Source: HKEAA examination question paper. &copy; HKEAA.</figcaption></figure>`
+            ? `<figure class="mc-question-image"><img src="${QIMG}${esc(q.question_image.split("/").pop())}" alt="The question as it appeared in the HKDSE examination paper" width="${q.image_width || 1200}" height="${q.image_height || 600}"><figcaption>Source: HKEAA examination question paper. &copy; HKEAA.</figcaption></figure>`
             : `<div class="stem">${md(q.stem)}</div>`}
         <div class="mc-opts">${q.options.map((o, j) =>
-          `<button class="mc-opt${q.graphic_options ? " is-graphic" : ""}" data-k="${String.fromCharCode(65 + j)}"><span class="k">${String.fromCharCode(65 + j)}</span>${q.graphic_options ? "" : `<span>${esc(o)}</span>`}${q.option_images && q.option_images[j] ? `<img class="mc-opt-image" src="/oqb-images/${esc(q.option_images[j])}" alt="Option ${String.fromCharCode(65 + j)}" loading="lazy">` : ""}</button>`).join("")}
+          `<button class="mc-opt${q.graphic_options ? " is-graphic" : ""}" data-k="${String.fromCharCode(65 + j)}"><span class="k">${String.fromCharCode(65 + j)}</span>${q.graphic_options ? "" : `<span>${esc(o)}</span>`}${q.option_images && q.option_images[j] ? `<img class="mc-opt-image" src="${MEDIA}${esc(q.option_images[j])}" alt="Option ${String.fromCharCode(65 + j)}" loading="lazy">` : ""}</button>`).join("")}
         </div>
         <div class="mc-fb" style="display:none"></div>
       </div>`).join("");
@@ -381,12 +419,34 @@
     }
   }
 
+  // The static build holds the whole bank in one file, so the topic filter
+  // and the limit run here rather than on the server.
+  let staticBank = null;
+  async function pickQuestions(topic, n, subtopic) {
+    if (!STATIC) {
+      const d = await getJSON(
+        `/api/mc?limit=${n}${topic === "ALL" ? "" : "&topic=" + topic}` +
+        (subtopic ? `&subtopic=${encodeURIComponent(subtopic)}` : ""));
+      return d.questions || [];
+    }
+    if (!staticBank) {
+      const d = await getJSON("/api/mc");
+      staticBank = d.questions || [];
+    }
+    let qs = staticBank;
+    if (topic && topic !== "ALL") {
+      qs = qs.filter((q) => (q.topics || []).some((t) => t.toUpperCase() === topic.toUpperCase()));
+    }
+    if (subtopic) qs = qs.filter((q) => q.subtopic === subtopic);
+    const limit = Number(n);
+    return limit > 0 ? qs.slice(0, limit) : qs;
+  }
+
   $("#mcStart").addEventListener("click", async () => {
     const topic = $("#mcTopic").value;
     const n = $("#mcCount").value;
-    const r = await fetch(`/api/mc?limit=${n}${topic === "ALL" ? "" : "&topic=" + topic}`);
-    const d = await r.json();
-    renderDrill(d.questions || []);
+    const qs = await pickQuestions(topic, n);
+    renderDrill(qs);
   });
 
   // Drill the topics the student is weakest on. Questions come back from the
@@ -403,9 +463,7 @@
     }
     const n = Number($("#mcCount").value) || 10;
     const wanted = weak.map(([k]) => k);
-    const r = await fetch(`/api/mc?limit=400`);
-    const d = await r.json();
-    const all = d.questions || [];
+    const all = await pickQuestions("ALL", 0);
     const picked = [];
     for (const sub of wanted) {
       const pool = all.filter((q) => q.subtopic === sub);
@@ -471,8 +529,7 @@
   async function loadEssayTree() {
     if (essayTree) { renderEssayTopics(); return; }
     $("#essayOut").innerHTML = '<div class="empty">Loading the sub-topics…</div>';
-    const r = await fetch("/api/essay/tree");
-    const d = await r.json();
+    const d = await getJSON("/api/essay/tree");
     essayTree = d.electives || [];
     $("#essayElective").insertAdjacentHTML("beforeend",
       essayTree.map((e) => `<option value="${esc(e.code)}">${esc(e.code)} — ${esc(e.title)}</option>`).join(""));
@@ -560,6 +617,14 @@
     btn.textContent = "Writing…";
     $("#essayOut").innerHTML = '<div class="card"><span class="loading">Building the question, the mark scheme and the exemplar answer from the notes…</span></div>';
     try {
+      if (STATIC) {
+        $("#essayOut").innerHTML = `<div class="card"><span class="loading">Writing an essay needs the live site. ` +
+          `<a href="https://sunday-answer-prepare-companies.trycloudflare.com">Open MakGeography</a> ` +
+          `and generate it there &mdash; this page is the static copy.</span></div>`;
+        btn.disabled = false;
+        btn.textContent = "Generate";
+        return;
+      }
       const r = await fetch("/api/essay/generate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -600,8 +665,7 @@
   async function loadNews() {
     $("#newsList").innerHTML = '<div class="empty">Loading news…</div>';
     const t = $("#newsTopic").value;
-    const r = await fetch("/api/news" + (t === "ALL" ? "" : "?topic=" + t));
-    const d = await r.json();
+    const d = await getJSON("/api/news" + (t === "ALL" ? "" : "?topic=" + t));
     $("#newsUpdated").textContent = d.updated_at ? "updated " + d.updated_at : "";
     if (!d.items?.length) {
       $("#newsList").innerHTML = '<div class="empty">No news items yet — the news job has not run yet, or nothing matches this tag.</div>';

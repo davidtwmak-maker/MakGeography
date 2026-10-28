@@ -1,0 +1,96 @@
+name: Publish the static site
+
+# The live site is FastAPI on the teacher's Mac behind a Cloudflare tunnel.
+# GitHub Pages can only serve static files, so this workflow builds the
+# read-only half of the site - MC Drilling, Notes, News and the essay
+# topic tree - and publishes it under a stable, memorable address:
+#
+#     https://davidtwmak-maker.github.io/MakGeography/
+#
+# The two features that need a language model (Ask, and generating an
+# essay) are not part of the static copy. The page says so and links to
+# the live site rather than pretending to work.
+#
+# The build output is the site/ directory, which is produced by
+# scripts/build_static_site.py.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "app/**"
+      - "data/**"
+      - "static/**"
+      - "templates/**"
+      - "scripts/build_static_site.py"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pillow
+
+      - name: Build the static site
+        run: python scripts/build_static_site.py
+
+      - name: Check the build
+        run: |
+          python - <<'PY'
+          import json, pathlib, sys
+          site = pathlib.Path("site")
+          for rel in ("index.html", "api/mc.json", "api/notes.json",
+                      "api/news.json", "api/kb/status.json",
+                      "api/essay/tree.json", "static/app.js"):
+              f = site / rel
+              assert f.is_file(), f"{rel} is missing from the build"
+          mc = json.loads((site / "api" / "mc.json").read_text())
+          assert mc["total"] > 900, f"only {mc['total']} questions in the bank"
+          assert mc["official_total"] > 700, f"only {mc['official_total']} official questions"
+          # Every image the bank points at must be in the build.
+          media = site / "oqb-media"
+          missing = []
+          for q in mc["questions"]:
+              for rel2 in [q.get("stem_image")] + list(q.get("option_images") or []):
+                  if rel2 and not (media / rel2).is_file():
+                      missing.append(rel2)
+          assert not missing, f"{len(missing)} images missing, e.g. {missing[:3]}"
+          print(f"static build OK: {mc['total']} questions, "
+                f"{mc['official_total']} official, all images present")
+          PY
+
+      - name: Upload the artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

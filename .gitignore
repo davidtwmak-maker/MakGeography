@@ -18,6 +18,10 @@ data/papers/
 # Re-fetch them with the OQB downloader if the raw export is needed.
 data/hkeaa_oqb/_raw/
 
+# The static site build output (scripts/build_static_site.py).
+# GitHub Pages builds it in CI, so it is not committed.
+site/
+
 # Python
 __pycache__/
 *.py[cod]
