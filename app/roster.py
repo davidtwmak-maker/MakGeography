@@ -56,10 +56,11 @@ ROSTER_JSON_ENV = "MAKGEO_ROSTER_JSON"
 PBKDF2_ROUNDS = 120_000
 SID_RE = re.compile(r"^\d{8}$")
 
-# The teacher's own sign-in name. It is not a Student ID, so the login
-# form must not insist on eight digits - otherwise the teacher cannot
-# sign in at all through the browser.
-TEACHER_IDENTIFIER = "teacher1"
+# The teacher's own sign-in identifier: an eight-digit number, so it
+# fits the same Student ID format as every student. It is not a real
+# Student ID - it is not on the roster - so nothing can be signed in
+# under it by accident.
+TEACHER_IDENTIFIER = "20190901"
 
 
 # ---------------------------------------------------------------------------
@@ -161,7 +162,8 @@ def teacher_key() -> str:
 def sign_in(identifier: str, password: str) -> dict | None:
     """Try to sign in. Returns the identity on success, or None.
 
-    The identifier is a SID (eight digits) or the teacher's own name.
+    The identifier is an eight-digit SID: either a student's or the
+    teacher's own.
     """
     ident = (identifier or "").strip()
 

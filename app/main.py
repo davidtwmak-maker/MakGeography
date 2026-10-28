@@ -296,8 +296,8 @@ def home(request: Request):
 def login(request: Request, identifier: str = Form(""), password: str = Form("")):
     """Sign in.
 
-    The identifier is a student's SID (eight digits) or the word
-    "teacher1". A student must be on the roster; the teacher needs the
+    The identifier is an eight-digit SID: a student's, or the teacher's
+    own. A student must be on the roster; the teacher needs the
     MAKGEO_TEACHER_KEY, which is not in the roster and so cannot be
     guessed from it.
 

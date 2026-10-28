@@ -152,6 +152,13 @@ def main() -> int:
     existing = roster_mod.load_roster().get("students", {})
     out: dict[str, dict] = {}
     for s in students:
+        # The teacher's own login is an eight-digit number, so it would
+        # look exactly like a Student ID to a class list. Skip it here,
+        # or a future class list could hand the teacher's identifier to
+        # a real student and quietly take over the teacher's account.
+        if s["sid"] == roster_mod.TEACHER_IDENTIFIER:
+            print(f"skipping {s['sid']}: that is the teacher's own login")
+            continue
         rec = {
             "name_en": s["name_en"],
             "name_zh": s["name_zh"],

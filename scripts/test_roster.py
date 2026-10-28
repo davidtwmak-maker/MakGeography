@@ -20,6 +20,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import sys
 import tempfile
 from pathlib import Path
@@ -85,12 +86,35 @@ def main() -> int:
     # --- the teacher -------------------------------------------------
     os.environ["MAKGEO_TEACHER_KEY"] = "teacher-secret"
     check("the teacher key signs in",
-          (r.sign_in("teacher1", "teacher-secret") or {}).get("role") == "teacher")
-    check("a wrong teacher key is refused", r.sign_in("teacher1", "nope") is None)
-    check("the teacher is not in the roster", "teacher1" not in r.allowed_sids())
+          (r.sign_in("20190901", "teacher-secret") or {}).get("role") == "teacher")
+    check("a wrong teacher key is refused", r.sign_in("20190901", "nope") is None)
+    check("the teacher is not in the roster", "20190901" not in r.allowed_sids())
+
+    # --- the teacher's identifier looks like a Student ID ------------
+    check("the teacher's identifier is eight digits",
+          bool(re.fullmatch(r"\d{8}", r.TEACHER_IDENTIFIER)),
+          r.TEACHER_IDENTIFIER)
+    check("the teacher's identifier is not a student's",
+          r.TEACHER_IDENTIFIER not in students, r.TEACHER_IDENTIFIER)
+    check("the teacher signs in with the eight-digit identifier",
+          r.sign_in(r.TEACHER_IDENTIFIER, "teacher-secret") is not None)
+    check("the teacher signs in with leading or trailing spaces too",
+          r.sign_in(f"  {r.TEACHER_IDENTIFIER}  ", "teacher-secret") is not None)
+    check("the teacher's identifier is not in the allowed SIDs",
+          r.TEACHER_IDENTIFIER not in r.allowed_sids())
     del os.environ["MAKGEO_TEACHER_KEY"]
     check("with no teacher key set the teacher cannot sign in",
-          r.sign_in("teacher1", "teacher-secret") is None)
+          r.sign_in("20190901", "teacher-secret") is None)
+
+    # --- a class list cannot take over the teacher's login -----------
+    # The teacher's identifier is eight digits, so a class list that
+    # happens to contain it must not turn into a student account.
+    sys.path.insert(0, str(ROOT / "scripts"))
+    import importlib
+    build_roster = importlib.import_module("build_roster")
+    check("the roster builder skips the teacher's identifier",
+          getattr(build_roster.roster_mod, "TEACHER_IDENTIFIER", "") ==
+          r.TEACHER_IDENTIFIER)
 
     # --- the roster file holds no password ---------------------------
     raw = r.ROSTER_PATH.read_text(encoding="utf-8")

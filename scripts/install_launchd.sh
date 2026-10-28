@@ -68,7 +68,7 @@ if [[ -z "$TEACHER_KEY" ]]; then
   done
 fi
 if [[ -n "$TEACHER_KEY" ]]; then
-  echo "Teacher key: ON (you can sign in as 'teacher1')"
+  echo "Teacher key: ON (you can sign in as '20190901')"
 else
   echo "Teacher key: OFF (the activity log cannot be opened)"
 fi
