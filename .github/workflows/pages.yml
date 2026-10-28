@@ -75,8 +75,40 @@ jobs:
                   if rel2 and not (media / rel2).is_file():
                       missing.append(rel2)
           assert not missing, f"{len(missing)} images missing, e.g. {missing[:3]}"
+
+          # Each JSON file has to have the shape the front end expects. A
+          # file that holds only part of the response leaves the page
+          # looking like it works but showing empty dropdowns, so the keys
+          # are checked here rather than by clicking through the page.
+          def load(rel):
+              return json.loads((site / rel).read_text())
+
+          for rel, keys in (
+              ("api/mc.json", ("questions", "total", "topics", "official_total")),
+              ("api/notes.json", ("electives", "topics", "kb_topics")),
+              ("api/news.json", ("items", "updated_at")),
+              ("api/kb/status.json", ("docs", "chunks", "built_at", "topics")),
+              ("api/essay/tree.json", ("electives", "marks", "commands_a", "commands_b")),
+          ):
+              d = load(rel)
+              assert isinstance(d, dict), f"{rel} is a {type(d).__name__}, not an object"
+              absent = [k for k in keys if k not in d]
+              assert not absent, f"{rel} is missing {absent}"
+
+          tree = load("api/essay/tree.json")
+          assert tree["electives"], "the essay picker has no electives"
+          assert tree["commands_a"], "the Part (a) command list is empty"
+          assert tree["commands_b"], "the Part (b) command list is empty"
+          assert tree["marks"], "the mark options are empty"
+          assert load("api/notes.json")["electives"], "the notes tree is empty"
+          assert load("api/news.json")["items"], "the news list is empty"
+
+          # The page must load its own data, not the API.
+          html = (site / "index.html").read_text()
+          assert "MAKGEO_STATIC" in html, "the page is not marked as the static build"
           print(f"static build OK: {mc['total']} questions, "
-                f"{mc['official_total']} official, all images present")
+                f"{mc['official_total']} official, all images present, "
+                f"all JSON shapes correct")
           PY
 
       - name: Upload the artifact

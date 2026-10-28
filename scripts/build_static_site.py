@@ -131,7 +131,21 @@ def build_essay_tree_json():
                 subqs.append({"number": sq.get("number"), "title": sq.get("title"),
                               "leaves": leaves})
         out.append({"code": code, "title": el.get("title"), "subquestions": subqs})
-    return out
+
+    # The full shape /api/essay/tree returns. The front end reads the
+    # command lists and the mark options from here, so a build that
+    # leaves them out shows empty dropdowns.
+    return {
+        "electives": out,
+        "marks": list(essay_mod.MARK_OPTIONS),
+        # Two command lists, one per half of the essay. The Part (b) list
+        # carries the judgement commands; the Part (a) list carries the
+        # knowledge-and-mechanism commands.
+        "commands_a": [{"key": k, "label": v}
+                       for k, v in essay_mod.PART_A_COMMANDS.items()],
+        "commands_b": [{"key": k, "label": v}
+                       for k, v in essay_mod.PART_B_COMMANDS.items()],
+    }
 
 
 def build_kb_status_json():
