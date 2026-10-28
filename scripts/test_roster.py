@@ -85,12 +85,12 @@ def main() -> int:
     # --- the teacher -------------------------------------------------
     os.environ["MAKGEO_TEACHER_KEY"] = "teacher-secret"
     check("the teacher key signs in",
-          (r.sign_in("teacher", "teacher-secret") or {}).get("role") == "teacher")
-    check("a wrong teacher key is refused", r.sign_in("teacher", "nope") is None)
-    check("the teacher is not in the roster", "teacher" not in r.allowed_sids())
+          (r.sign_in("teacher1", "teacher-secret") or {}).get("role") == "teacher")
+    check("a wrong teacher key is refused", r.sign_in("teacher1", "nope") is None)
+    check("the teacher is not in the roster", "teacher1" not in r.allowed_sids())
     del os.environ["MAKGEO_TEACHER_KEY"]
     check("with no teacher key set the teacher cannot sign in",
-          r.sign_in("teacher", "teacher-secret") is None)
+          r.sign_in("teacher1", "teacher-secret") is None)
 
     # --- the roster file holds no password ---------------------------
     raw = r.ROSTER_PATH.read_text(encoding="utf-8")

@@ -166,7 +166,7 @@ def _signed_in_client() -> tuple[TestClient, str]:
             am.roster_mod.ROSTER_PATH = pathlib.Path("/nonexistent/roster.json")
             client = TestClient(am.app)
         else:
-            client.post("/login", data={"identifier": "teacher",
+            client.post("/login", data={"identifier": "teacher1",
                                         "password": key},
                         follow_redirects=False)
     client.get("/")

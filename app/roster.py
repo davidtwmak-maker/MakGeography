@@ -24,7 +24,7 @@ running scripts/set_student_password.py, which writes a new hash.
 
 The teacher keeps their own door open with MAKGEO_TEACHER_KEY, a
 separate secret that is never part of the roster. The teacher can sign in
-as "teacher" and see the activity log; students cannot.
+as TEACHER_IDENTIFIER and see the activity log; students cannot.
 """
 
 from __future__ import annotations
@@ -55,6 +55,11 @@ ROSTER_JSON_ENV = "MAKGEO_ROSTER_JSON"
 
 PBKDF2_ROUNDS = 120_000
 SID_RE = re.compile(r"^\d{8}$")
+
+# The teacher's own sign-in name. It is not a Student ID, so the login
+# form must not insist on eight digits - otherwise the teacher cannot
+# sign in at all through the browser.
+TEACHER_IDENTIFIER = "teacher1"
 
 
 # ---------------------------------------------------------------------------
@@ -156,16 +161,16 @@ def teacher_key() -> str:
 def sign_in(identifier: str, password: str) -> dict | None:
     """Try to sign in. Returns the identity on success, or None.
 
-    The identifier is a SID (eight digits) or the word "teacher".
+    The identifier is a SID (eight digits) or the teacher's own name.
     """
     ident = (identifier or "").strip()
 
-    if ident.lower() == "teacher":
+    if ident.lower() == TEACHER_IDENTIFIER:
         key = teacher_key()
         if key and hmac.compare_digest(password or "", key):
             return {
                 "role": "teacher",
-                "sid": "teacher",
+                "sid": TEACHER_IDENTIFIER,
                 "name": "Teacher",
                 "name_zh": "老師",
                 "class": "",
