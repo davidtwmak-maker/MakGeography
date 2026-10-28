@@ -185,6 +185,25 @@ recovered. `--all --password X` gives every student the same password,
 which is convenient for the first week and a bad idea afterwards: anyone
 who knows one can sign in as anybody.
 
+To give each student their own password, and print a list to hand out:
+
+```bash
+python scripts/set_student_password.py --all --print
+```
+
+That sets a random password for every student and prints the list. The
+printed list is the only place the passwords exist — save it somewhere
+private, and delete it afterwards. A student who forgets theirs gets a
+new one:
+
+```bash
+python scripts/set_student_password.py --sid 20233004 --print
+```
+
+**A student with no password set cannot sign in.** That is deliberate: a
+roster that lists a student without a password is a student the teacher
+has not issued a password to yet, not a student with an empty password.
+
 Two files are deliberately **not** committed, and are in `.gitignore`:
 
 - `data/roster.json` — the students' names and their password hashes.
@@ -199,7 +218,7 @@ last seen, broken down by class. The server refuses the request from
 anyone who is not the teacher, so the data is not merely hidden in the page
 — it is not served.
 
-`scripts/test_roster.py` covers the sign-in rules (35 checks).
+`scripts/test_roster.py` covers the sign-in rules (41 checks).
 
 ---
 

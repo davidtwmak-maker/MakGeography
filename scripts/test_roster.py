@@ -123,6 +123,31 @@ def main() -> int:
           summary["by_class"] == {"6A": 1, "6B": 1},
           str(summary["by_class"]))
 
+    # --- a roster with no passwords still closes the door ------------
+    #
+    # This is the bug worth guarding. allowed_sids() once returned only
+    # the students who had a password, so a freshly built roster - where
+    # no student has one yet - looked like no roster at all, and the
+    # sign-in gate silently opened the site to anyone.
+    r.save_roster({"students": {
+        "20233004": {"name_en": "CAI XUEWEI", "class": "6A"},
+        "20234011": {"name_en": "CHEN JIAKANGBO", "class": "6A"},
+    }})
+    check("a roster with no passwords still lists its SIDs",
+          r.allowed_sids() == ["20233004", "20234011"],
+          str(r.allowed_sids()))
+    check("a student with no password cannot sign in",
+          r.sign_in("20233004", "") is None)
+    check("a student with no password cannot sign in with any password",
+          r.sign_in("20233004", "anything") is None)
+    check("a SID not on the roster cannot sign in",
+          r.sign_in("99999999", "anything") is None)
+    stats = r.roster_stats()
+    check("the stats count every student on the roster",
+          stats["total"] == 2, str(stats["total"]))
+    check("the stats count separately who can sign in",
+          stats["with_password"] == 0, str(stats["with_password"]))
+
     # --- an empty roster closes the door ------------------------------
     r.save_roster({"students": {}})
     check("an empty roster allows nobody", r.allowed_sids() == [])

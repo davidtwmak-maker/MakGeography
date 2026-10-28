@@ -193,10 +193,21 @@ def sign_in(identifier: str, password: str) -> dict | None:
 
 
 def allowed_sids() -> list[str]:
-    """The SIDs that may sign in, sorted."""
+    """Every SID on the roster, sorted.
+
+    This is the list of SIDs the site recognises, not the list of
+    students who can sign in. Those are different questions: a student
+    with no password set yet is still on the roster, and the roster
+    being present is what turns the sign-in gate on.
+
+    Getting this wrong is silent and dangerous. It once returned only
+    the students who had a password, so a freshly built roster - where
+    no student has a password yet - looked like no roster at all, and
+    the gate silently opened the site to anyone.
+    """
     roster = load_roster()
     return sorted(k for k, v in roster.get("students", {}).items()
-                  if isinstance(v, dict) and v.get("password"))
+                  if isinstance(v, dict))
 
 
 def roster_stats() -> dict:
