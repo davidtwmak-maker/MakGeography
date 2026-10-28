@@ -75,33 +75,32 @@
       const opts = (d.topics || []).map((t) => `<option value="${t}">${t}</option>`).join("");
       $("#topicSel").insertAdjacentHTML("beforeend", opts);
       $("#notesTopic").insertAdjacentHTML("beforeend", opts);
-      $("#mcTopic").insertAdjacentHTML("beforeend", opts);
       $("#newsTopic").insertAdjacentHTML("beforeend", opts);
     } catch (e) { /* offline indicator is enough */ }
 
-    // The MC bank also holds official HKEAA map-reading questions, which
-    // sit outside the note topics ("MAP"). They are a real exam category
-    // (Topic 12 of the Geography module) so they get their own filter.
+    // The MC filter is built from the question bank's own topics, not from
+    // the note topics. The two are different sets: the bank also holds
+    // official HKEAA map-reading questions ("MAP"), and it has no questions
+    // at all for some note topics. Listing a note topic with nothing to
+    // drill is a filter that silently returns an empty set.
     try {
       const d = await getJSON("/api/mc?limit=1");
-      {
-        const sel = $("#mcTopic");
+      const sel = $("#mcTopic");
+      if (d.topics && d.topics.length) {
         const have = [...sel.options].map((o) => o.value);
-        if (d.topics && !have.includes("MAP")) {
-          const extra = d.topics
-            .filter((t) => !have.includes(t))
-            .map((t) => `<option value="${t}">${t}</option>`).join("");
-          if (extra) sel.insertAdjacentHTML("beforeend", extra);
-        }
-        const note = document.querySelector("#mcTotal");
-        if (note && d.total != null) {
-          const off = (d.official_total != null) ? d.official_total : null;
-          note.textContent = off
-            ? `${d.total} questions in the bank — ${off} of them official HKEAA exam questions.`
-            : `${d.total} questions in the bank.`;
-        }
+        const extra = d.topics
+          .filter((t) => !have.includes(t))
+          .map((t) => `<option value="${t}">${t}</option>`).join("");
+        if (extra) sel.insertAdjacentHTML("beforeend", extra);
       }
-    } catch (e) { /* the drill still works without the extra filters */ }
+      const note = document.querySelector("#mcTotal");
+      if (note && d.total != null) {
+        const off = (d.official_total != null) ? d.official_total : null;
+        note.textContent = off
+          ? `${d.total} questions in the bank — ${off} of them official HKEAA exam questions.`
+          : `${d.total} questions in the bank.`;
+      }
+    } catch (e) { /* the drill still works without the filters */ }
   }
   loadStatus();
 
