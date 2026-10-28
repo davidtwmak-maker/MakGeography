@@ -75,6 +75,20 @@ COMMAND_MARKERS = {
 DEFAULT_COMMAND_A = "describe_explain"
 DEFAULT_COMMAND_B = "discuss"
 
+# A command word does not have to appear as one contiguous phrase. "Describe
+# and explain" and "Describe the pattern and explain the process" are the
+# same command word, so the part check also accepts a half that carries
+# every verb of the command word, in any order.
+COMMAND_VERBS = {
+    "describe_explain": ("describe", "explain"),
+    "explain_why": ("explain",),
+    "account": ("account",),
+    "explain": ("explain",),
+    "discuss": ("discuss",),
+    "evaluate": ("evaluate",),
+    "assess": ("assess",),
+}
+
 
 def _band_text(part_marks: int) -> str:
     """The band ladder for a part worth `part_marks` marks.
@@ -443,7 +457,14 @@ def _question_stem(text: str) -> str:
     b = up.find("MARK SCHEME", a + 1)
     if a < 0 or b < 0:
         return ""
-    return text[a:b]
+    stem = text[a:b]
+    # The model writes "QUESTION." with a full stop, and sometimes a
+    # heading marker under it. The label's own punctuation is not part of
+    # the question, and leaving it in put a stray "." at the head of the
+    # stem - which then read as the end of an empty first sentence, so
+    # the stem was split in the wrong place and Part (a) looked empty.
+    stem = re.sub(r"^[#\s]*QUESTION\b[.:\-]?\s*", "", stem, count=1, flags=re.I)
+    return stem
 
 
 def _mark_scheme_parts(text: str) -> dict[str, str]:
@@ -461,14 +482,36 @@ def _mark_scheme_parts(text: str) -> dict[str, str]:
     end = up.find("EXEMPLAR ANSWER", start)
     scheme = text[start:end if end > start else len(text)]
 
-    # Each part may carry SEVERAL headings - "Part (a) - Relevant concepts"
-    # and "Part (a) - Performance bands" are both Part (a). So the split is
-    # on the FIRST occurrence of each label: part (a) runs from its first
-    # label to part (b)'s first label, and part (b) runs to the end.
+    # A part's own heading may be written as markdown ("### Part (a) -
+    # Relevant concepts"), as bold text ("**Part (a)** - Relevant
+    # concepts") or as a plain line ("Part (a) - Relevant concepts"). All
+    # three are headings. A mention inside a sentence - the "Notes to
+    # Markers" paragraph says "Part (a) rewards ..." - is not, so the
+    # label must sit at the START of a line to count.
+    #
+    # The label is also followed by the name of a part section. That is
+    # what separates a real heading from the notes prose, which continues
+    # with a sentence rather than a section name.
+    _PART_SECTIONS = (
+        "relevant concepts", "performance bands", "marking scheme",
+        "mark scheme", "key points", "concepts",
+    )
+    _label_re = re.compile(
+        r"(?m)^[ \t]*(?:#{1,6}[ \t]*)?(?:\*\*)?PART\s*\(\s*([AB])\s*\)",
+        re.I,
+    )
     first: dict[str, tuple[int, int]] = {}
-    for m in re.finditer(r"PART\s*\(\s*([AB])\s*\)", scheme, re.I):
-        label = m.group(1).lower()
-        first.setdefault(label, (m.start(), m.end()))
+    for _m in _label_re.finditer(scheme):
+        _label = _m.group(1).lower()
+        if _label in first:
+            continue
+        # The rest of the line, with the markdown and bold markers off.
+        _line_end = scheme.find("\n", _m.end())
+        _line = scheme[_m.end():(_line_end if _line_end > 0 else len(scheme))]
+        _line = re.sub(r"[*_#`]", " ", _line).lower()
+        if not any(s in _line for s in _PART_SECTIONS):
+            continue  # prose mention, not a heading
+        first[_label] = (_m.start(), _m.end())
 
     out: dict[str, str] = {}
     if "a" in first and "b" in first:
@@ -565,7 +608,7 @@ def check_two_parts(
         return "the question stem was missing"
 
     # The stem after the word QUESTION and before the mark allocation.
-    body = stem[len("QUESTION"):].strip()
+    body = re.sub(r"^[#\s]*QUESTION\b[.:\-]?\s*", "", stem, count=1, flags=re.I).strip()
     body = re.sub(r"\s*\[\d+\]\s*$", "", body).strip()
     if not body:
         return "the question stem was missing"
@@ -615,10 +658,17 @@ def check_two_parts(
     part_a_text, part_b_text = parts
 
     if markers_a and not _has_command(part_a_text, markers_a):
-        return (
-            f"the first half of the question stem did not use the Part (a) "
-            f"command word \"{cmd_a}\""
-        )
+        # Try the looser form: every verb of the command word present, in
+        # any order.
+        _verbs = COMMAND_VERBS.get(key_a, ())
+        if not (_verbs and all(
+            re.search(r"\b" + re.escape(v) + r"\b", part_a_text.lower())
+            for v in _verbs
+        )):
+            return (
+                f"the first half of the question stem did not use the "
+                f"Part (a) command word \"{cmd_a}\""
+            )
     if markers_b and not _has_command(part_b_text, markers_b):
         return (
             f"the second half of the question stem did not use the Part (b) "

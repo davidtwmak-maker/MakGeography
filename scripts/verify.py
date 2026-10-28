@@ -238,4 +238,26 @@ for _e in cur["electives"]:
 assert not _wrong, f"leaves matched to the wrong note: {_wrong[:5]}"
 print(f"Curriculum: all {n} leaves resolve to the note their source names")
 
+# 11. The mark scheme must split into its two parts on HEADINGS.
+#
+# The "Notes to Markers" paragraph says "Part (a) rewards ..." and
+# "Part (b) rewards ...", and those prose mentions come before the real
+# headings. Splitting on the bare label therefore cut the mark scheme in
+# the wrong place, and every generated essay was rejected with "Part (a)
+# had no relevant concepts of its own" even though it was complete.
+_ms_cases = {
+    "bold heading": "## MARK SCHEME\n\n### **Part (a)** - Relevant concepts\n\na\n\n### **Part (b)** - Relevant concepts\n\nb\n\n## EXEMPLAR ANSWER",
+    "plain heading": "## MARK SCHEME\n\n### Part (a) - Relevant concepts\n\na\n\n### Part (b) - Relevant concepts\n\nb\n\n## EXEMPLAR ANSWER",
+    "h2 heading": "## MARK SCHEME\n\n## Part (a) - Relevant concepts\n\na\n\n## Part (b) - Relevant concepts\n\nb\n\n## EXEMPLAR ANSWER",
+    "no markup": "## MARK SCHEME\n\nPart (a) - Relevant concepts\n\na\n\nPart (b) - Relevant concepts\n\nb\n\n## EXEMPLAR ANSWER",
+    "notes prose": "## MARK SCHEME\n\n### Notes to Markers\n\nPart (a) rewards x. Part (b) rewards y.\n\n### Part (a) - Relevant concepts\n\na\n\n### Part (b) - Relevant concepts\n\nb\n\n## EXEMPLAR ANSWER",
+    "notes line start": "## MARK SCHEME\n\nNotes to Markers\n\nPart (a) rewards x.\nPart (b) rewards y.\n\nPart (a) - Relevant concepts\n\na\n\nPart (b) - Relevant concepts\n\nb\n\n## EXEMPLAR ANSWER",
+}
+for _name, _txt in _ms_cases.items():
+    _secs = essay._mark_scheme_parts(_txt)
+    assert "a" in _secs and "b" in _secs, f"{_name}: {_secs}"
+    for _k in ("a", "b"):
+        assert "RELEVANT CONCEPTS" in _secs[_k].upper(), f"{_name}: part {_k}"
+print(f"Mark scheme: splits into two parts on headings ({len(_ms_cases)} heading shapes)")
+
 print("\nALL CHECKS PASSED")
