@@ -446,8 +446,39 @@
     essayTree = d.electives || [];
     $("#essayElective").insertAdjacentHTML("beforeend",
       essayTree.map((e) => `<option value="${esc(e.code)}">${esc(e.code)} — ${esc(e.title)}</option>`).join(""));
+    // Two command lists, one per half of the essay. The server is the
+    // authority on which words belong to which half.
+    $("#essayCommandA").innerHTML = (d.commands_a || []).map((c) =>
+      `<option value="${esc(c.key)}">${esc(c.label)}</option>`).join("");
+    $("#essayCommandB").innerHTML = (d.commands_b || []).map((c) =>
+      `<option value="${esc(c.key)}">${esc(c.label)}</option>`).join("");
+    // Default to the pairing the recent real papers use.
+    $("#essayCommandA").value = "describe_explain";
+    $("#essayCommandB").value = "discuss";
     $("#essayOut").innerHTML = "";
     renderEssayTopics();
+    syncEssayCommands();
+  }
+
+  // An 8-mark essay is a single part, so it only needs one command word.
+  // Hiding the second one keeps the form honest about what will be
+  // generated.
+  function syncEssayCommands() {
+    const marks = Number($("#essayMarks").value);
+    const two = marks >= 12;
+    const b = $("#essayCommandB");
+    const label = b.closest(".field");
+    b.disabled = !two;
+    if (label) label.style.display = two ? "" : "none";
+    const note = $("#essayCommandNote");
+    if (note) {
+      note.innerHTML = two
+        ? "A DSE short essay is two parts with two different command words. " +
+          "Part (a) earns marks for knowledge and mechanism; part (b) for " +
+          "explanation and judgement. The same command word is not used for " +
+          "both halves."
+        : "An 8-mark essay is a single part, so it takes one command word.";
+    }
   }
 
   function renderEssayTopics() {
@@ -475,6 +506,7 @@
   }
 
   $("#essayElective").addEventListener("change", renderEssayTopics);
+  $("#essayMarks").addEventListener("change", syncEssayCommands);
 
   $("#essayTopics").addEventListener("click", (e) => {
     const b = e.target.closest("button[data-sq]");
@@ -505,7 +537,9 @@
           topic: code,
           leaf_ids: leafIds,
           marks: Number($("#essayMarks").value),
-          command: $("#essayCommand").value,
+          command_a: $("#essayCommandA").value,
+          command_b: Number($("#essayMarks").value) >= 12
+            ? $("#essayCommandB").value : null,
         }),
       });
       const d = await r.json();

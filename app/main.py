@@ -417,8 +417,14 @@ def api_essay_tree(request: Request):
     return {
         "electives": out,
         "marks": list(essay.MARK_OPTIONS),
-        "commands": [
-            {"key": k, "label": v} for k, v in essay.COMMAND_PAIRS.items()
+        # Two command lists, one per half of the essay. The Part (b) list
+        # carries the judgement commands; the Part (a) list carries the
+        # knowledge-and-mechanism commands.
+        "commands_a": [
+            {"key": k, "label": v} for k, v in essay.PART_A_COMMANDS.items()
+        ],
+        "commands_b": [
+            {"key": k, "label": v} for k, v in essay.PART_B_COMMANDS.items()
         ],
     }
 
@@ -427,7 +433,10 @@ class EssayPayload(BaseModel):
     topic: str
     leaf_ids: list[str] | None = None
     marks: int = 12
-    command: str | None = None
+    # The command word for each half of the essay. A DSE short essay is two
+    # parts with two different command words, so they are set separately.
+    command_a: str | None = None
+    command_b: str | None = None
 
 
 @app.post("/api/essay/generate")
@@ -463,7 +472,8 @@ def api_essay_generate(request: Request, payload: EssayPayload):
         get_matcher(), curriculum, topic,
         leaf_ids=payload.leaf_ids or None,
         marks=marks,
-        command=payload.command,
+        command_a=payload.command_a,
+        command_b=payload.command_b,
         topic_title="",
     )
     if not res["ok"]:

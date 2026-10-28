@@ -71,6 +71,15 @@ button.primary{background:var(--accent);color:#fff;border:0;border-radius:9px;
 button.primary:hover{background:#0c6659}
 button.primary:disabled{opacity:.55;cursor:not-allowed}
 
+/* A labelled control - a caption above the input. Used for the two
+   essay command-word selects, where the caption carries the meaning
+   ("Part (a) command" is not obvious from the option list alone). */
+.field{display:flex;flex-direction:column;gap:4px}
+.field>span{font-size:.78rem;font-weight:600;color:var(--muted);
+  letter-spacing:.02em;text-transform:uppercase}
+.field>select{min-width:190px}
+.hint-small{font-size:.82rem;color:var(--muted);margin:2px 0 14px;max-width:70ch}
+
 /* ---------- chat ---------- */
 .chat-wrap{display:grid;grid-template-columns:1fr 290px;gap:18px;align-items:start}
 @media(max-width:860px){.chat-wrap{grid-template-columns:1fr}}

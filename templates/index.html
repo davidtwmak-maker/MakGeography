@@ -111,16 +111,22 @@
         <option value="16">16 marks</option>
         <option value="20">20 marks</option>
       </select>
-      <select id="essayCommand">
-        <option value="describe_explain">Describe and explain</option>
-        <option value="discuss">Discuss</option>
-        <option value="evaluate">Evaluate</option>
-        <option value="account">Account for</option>
-        <option value="explain">Explain</option>
-        <option value="assess">Assess</option>
-      </select>
       <button class="primary" id="essayGo">Generate essay</button>
     </div>
+    <div class="controls" id="essayCommands">
+      <label class="field">
+        <span>Part (a) command</span>
+        <select id="essayCommandA"></select>
+      </label>
+      <label class="field">
+        <span>Part (b) command</span>
+        <select id="essayCommandB"></select>
+      </label>
+    </div>
+    <p class="hint-small" id="essayCommandNote">A DSE short essay is two parts with
+      two different command words. Part (a) earns marks for knowledge and mechanism;
+      part (b) for explanation and judgement. The same command word is not used
+      for both halves.</p>
     <div class="essay-topic-picker" id="essayTopics"></div>
     <div id="essayOut"></div>
   </section>

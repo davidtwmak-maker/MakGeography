@@ -185,4 +185,21 @@ finally:
     del os.environ["MAKGEO_PASSWORD"]
     am._password_cache = None
 
+# 9. The essay generator's two-part command structure.
+#
+# A DSE short essay is two parts with two DIFFERENT command words. One
+# command word running across all 12 marks is a single-command question
+# wearing a 12-mark label, not the exam format.
+assert set(essay.PART_A_COMMANDS) == {"account", "describe_explain", "explain"}
+assert set(essay.PART_B_COMMANDS) == {
+    "discuss", "explain_why", "evaluate", "assess"
+}
+assert not (set(essay.PART_A_COMMANDS) & set(essay.PART_B_COMMANDS))
+_ca, _cb, _pa, _pb = essay.resolve_commands(
+    "describe_explain", "discuss", 12)
+assert (_pa, _pb) == (6, 6), (_pa, _pb)
+assert essay.resolve_commands("describe_explain", "discuss", 8)[1] == "", (
+    "an 8-mark essay is a single part and takes one command word")
+print("Essay generator: two command lists, 12 marks -> 6+6, 8 marks -> one part")
+
 print("\nALL CHECKS PASSED")

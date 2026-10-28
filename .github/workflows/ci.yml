@@ -56,6 +56,9 @@ jobs:
       - name: Retrieval smoke test
         run: python scripts/test_retrieval.py
 
+      - name: The essay generator writes a two-part question
+        run: python scripts/test_essay_parts.py
+
       - name: No hardcoded password in the source
         run: |
           # Match a real ASSIGNMENT (PASSWORD = "..."), not help text or an
