@@ -53,6 +53,26 @@ if [[ -z "$API_KEY" && -f "$HOME/.hermes/.env" ]]; then
 fi
 API_BASE="${MINIMAX_BASE_URL:-https://api.minimax.io/v1}"
 
+# The teacher's own sign-in key. It is read from ~/.hermes/makgeo.env or
+# ~/.hermes/.env, never from the repository. It is NOT written into the
+# plist: the plist is a plain-text file that anyone who can read the
+# LaunchAgents directory can read, and this key is what opens the
+# activity log. The app runner reads it at start-up instead.
+TEACHER_KEY="${MAKGEO_TEACHER_KEY:-}"
+if [[ -z "$TEACHER_KEY" ]]; then
+  for F in "$HOME/.hermes/makgeo.env" "$HOME/.hermes/.env"; do
+    if [[ -f "$F" ]]; then
+      TEACHER_KEY="$(sed -n 's/^MAKGEO_TEACHER_KEY=//p' "$F" | tail -1 | tr -d "'\"" || true)"
+      [[ -n "$TEACHER_KEY" ]] && break
+    fi
+  done
+fi
+if [[ -n "$TEACHER_KEY" ]]; then
+  echo "Teacher key: ON (you can sign in as 'teacher')"
+else
+  echo "Teacher key: OFF (the activity log cannot be opened)"
+fi
+
 mkdir -p "$LOG_DIR" "$AGENT_DIR" "$HOME/.hermes/cache/scratch" "$HOME/.hermes/scripts"
 
 # --------------------------------------------------------------- app service
@@ -80,6 +100,20 @@ PYTHON="${MAKGEO_PYTHON:-}"
 LOGDIR="$HOME/.hermes/logs"
 
 mkdir -p "$LOGDIR"
+
+# The teacher's sign-in key. It is read here, at start-up, rather than
+# being written into the plist: the plist is a plain-text file that
+# anyone who can read the LaunchAgents directory can read, and this key
+# is what opens the activity log.
+if [ -z "${MAKGEO_TEACHER_KEY:-}" ]; then
+  for F in "$HOME/.hermes/makgeo.env" "$HOME/.hermes/.env"; do
+    if [ -f "$F" ]; then
+      MAKGEO_TEACHER_KEY="$(sed -n 's/^MAKGEO_TEACHER_KEY=//p' "$F" | tail -1 | tr -d "'\"" || true)"
+      [ -n "$MAKGEO_TEACHER_KEY" ] && break
+    fi
+  done
+fi
+export MAKGEO_TEACHER_KEY
 
 if [ -z "$PYTHON" ]; then
   PYTHON="$(ls -d "$HOME"/.hermes/tools/python-*/bin/python3 2>/dev/null | head -1)"
