@@ -147,19 +147,44 @@ print(f"Every one of the {n_leaves} sub-topics has enough material for an essay"
 # With the gate off nobody logs in, so keying the limit on the session
 # cookie would put every visitor in the same bucket - one person's
 # questions would lock out everyone else.
+#
+# With a roster in place the gate is on, so the home page is the login
+# page and hands out no cookie until the student signs in. The test
+# signs in as the teacher either way, so the check holds in both modes.
 from fastapi.testclient import TestClient
 
-_client = TestClient(am.app)
-_r = _client.get("/")
-assert "makgeo_session" in _r.cookies, (
-    "the home page must hand out a session token so the rate limit is "
-    "per browser")
-_cookies = _r.cookies.get("makgeo_session")
+
+def _signed_in_client() -> tuple[TestClient, str]:
+    """A client with a session cookie, signing in if the gate is on."""
+    client = TestClient(am.app)
+    if am.password_required():
+        key = os.environ.get("MAKGEO_TEACHER_KEY", "").strip()
+        if not key:
+            # No teacher key in this environment: put a temporary roster
+            # out of the way so the gate is off, which is the case this
+            # check is really about.
+            am.roster_mod.ROSTER_PATH = pathlib.Path("/nonexistent/roster.json")
+            client = TestClient(am.app)
+        else:
+            client.post("/login", data={"identifier": "teacher",
+                                        "password": key},
+                        follow_redirects=False)
+    client.get("/")
+    # The cookie has to be read from the client's jar, not from the
+    # response: the home page only sets a cookie when it has none, so a
+    # signed-in visitor's response carries no Set-Cookie header.
+    cookie = client.cookies.get("makgeo_session")
+    assert cookie, (
+        "the home page must hand out a session token so the rate limit is "
+        "per browser")
+    return client, cookie
+
+
+_client, _cookies = _signed_in_client()
 assert _cookies, "the session cookie is empty"
 
 # A second visitor gets their own bucket.
-_r2 = TestClient(am.app).get("/")
-_b2 = _r2.cookies.get("makgeo_session")
+_client2, _b2 = _signed_in_client()
 assert _b2 and _b2 != _cookies, "two visitors share one session token"
 print(f"Rate limit is per browser: {_cookies[:8]}... and {_b2[:8]}... are separate")
 
@@ -171,19 +196,34 @@ assert am.check_rate("x", bucket="essay"), (
 print("The chatbot and the essay generator have separate rate-limit buckets")
 
 # 8. The password gate is optional: with none configured the site is open.
-assert am.password_required() is False, (
-    "no password is configured, so the gate should be off")
-print("Password gate: off (the site is open - no MAKGEO_PASSWORD set)")
-
-# And with one configured it comes back on.
-os.environ["MAKGEO_PASSWORD"] = "verify-only-not-a-real-password"
-am._password_cache = None
+#
+# The roster is a separate gate. This check is about the shared password
+# on its own, so the roster is put out of the way for it.
+_roster_path = am.roster_mod.ROSTER_PATH
+am.roster_mod.ROSTER_PATH = pathlib.Path("/nonexistent/roster.json")
 try:
-    assert am.password_required() is True, "the gate should turn back on"
-    print("Password gate: on when MAKGEO_PASSWORD is set")
-finally:
-    del os.environ["MAKGEO_PASSWORD"]
+    assert am.password_required() is False, (
+        "no password is configured, so the gate should be off")
+    print("Password gate: off (the site is open - no MAKGEO_PASSWORD set)")
+
+    # And with one configured it comes back on.
+    os.environ["MAKGEO_PASSWORD"] = "verify-only-not-a-real-password"
     am._password_cache = None
+    try:
+        assert am.password_required() is True, "the gate should turn back on"
+        print("Password gate: on when MAKGEO_PASSWORD is set")
+    finally:
+        del os.environ["MAKGEO_PASSWORD"]
+        am._password_cache = None
+
+    # And a roster on its own is enough to gate the site.
+    am.roster_mod.ROSTER_PATH = _roster_path
+    if am.roster_mod.allowed_sids():
+        assert am.password_required() is True, (
+            "a roster with passwords must gate the site on its own")
+        print("Password gate: on when a student roster is present")
+finally:
+    am.roster_mod.ROSTER_PATH = _roster_path
 
 # 9. The essay generator's two-part command structure.
 #

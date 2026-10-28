@@ -22,6 +22,18 @@ data/hkeaa_oqb/_raw/
 # GitHub Pages builds it in CI, so it is not committed.
 site/
 
+# The student roster and the activity log. The roster holds the names of
+# the Form 6 students and a hash of each password; the log holds what
+# each student asked. Neither belongs in a public repository, and the
+# log grows with every question.
+#
+# The roster is built with scripts/build_roster.py and the passwords set
+# with scripts/set_student_password.py. On the deployed site these are
+# set as environment variables and a mounted file instead.
+data/roster.json
+data/activity_log.jsonl
+data/activity_log.*.jsonl
+
 # Python
 __pycache__/
 *.py[cod]

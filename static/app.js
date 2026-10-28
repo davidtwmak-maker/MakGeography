@@ -62,6 +62,7 @@
       if (btn.dataset.panel === "mc") loadMcStats();
       if (btn.dataset.panel === "essay") loadEssayTree();
       if (btn.dataset.panel === "news") loadNews();
+      if (btn.dataset.panel === "activity") loadActivity();
     });
   });
 
@@ -680,4 +681,50 @@
       </article>`).join("") + "</div>";
   }
   $("#newsTopic").addEventListener("change", loadNews);
+
+  // ------------------------------------------------------------- activity
+  // The teacher's own view of who has used the site. Only the teacher
+  // has this panel, and the server refuses the request from anyone else,
+  // so the data is not merely hidden here - it is not served.
+  async function loadActivity() {
+    const days = $("#activityDays").value;
+    const box = $("#activitySummary");
+    const table = $("#activityTable");
+    box.innerHTML = '<div class="empty">Loading…</div>';
+    table.innerHTML = "";
+    let d;
+    try {
+      d = await getJSON(`/api/teacher/activity?days=${days}`);
+    } catch (e) {
+      box.innerHTML = '<div class="empty">Could not load the activity log.</div>';
+      return;
+    }
+    const classes = Object.entries(d.by_class || {})
+      .map(([k, v]) => `${esc(k)}: ${v}`).join(" · ");
+    box.innerHTML = `<div class="card">
+        <div class="stat-row">
+          <div><strong>${d.active_students}</strong><span>students active</span></div>
+          <div><strong>${d.total_logins}</strong><span>sign-ins</span></div>
+          <div><strong>${d.total_asks}</strong><span>questions asked</span></div>
+          <div><strong>${d.total_essays}</strong><span>essays written</span></div>
+        </div>
+        ${classes ? `<p class="meta">By class — ${classes}</p>` : ""}
+      </div>`;
+    if (!d.students?.length) {
+      table.innerHTML = '<div class="empty">Nobody has signed in yet in this period.</div>';
+      return;
+    }
+    table.innerHTML = `<div class="card"><table class="activity">
+        <thead><tr><th>Student ID</th><th>Name</th><th>Class</th>
+          <th>Sign-ins</th><th>Questions</th><th>Essays</th><th>Last seen</th></tr></thead>
+        <tbody>${d.students.map((s) => `<tr>
+          <td>${esc(s.sid)}</td>
+          <td>${esc(s.name)}</td>
+          <td>${esc(s.class)}</td>
+          <td>${s.logins}</td><td>${s.asks}</td><td>${s.essays}</td>
+          <td>${esc(s.last)}</td></tr>`).join("")}</tbody>
+      </table></div>`;
+  }
+  $("#activityDays").addEventListener("change", loadActivity);
+  $("#activityRefresh").addEventListener("click", loadActivity);
 })();

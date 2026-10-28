@@ -42,7 +42,7 @@
     "geog/50411/geog_eng_2005_q_01_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2005_2005map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -87,7 +87,7 @@
     "geog/50455/geog_eng_2005_q_02_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2005_2005map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -132,7 +132,7 @@
     "geog/50499/geog_eng_2005_q_03_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2005_2005map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -177,7 +177,7 @@
     "geog/50543/geog_eng_2005_q_04_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2005_2005map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -222,7 +222,7 @@
     "geog/50587/geog_eng_2005_q_05_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2005_2005map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -267,7 +267,7 @@
     "geog/50595/geog_eng_2005_q_06_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2005_2005map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -312,7 +312,7 @@
     "geog/50599/geog_eng_2005_q_07_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2005_2005map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -357,7 +357,7 @@
     "geog/50603/geog_eng_2005_q_08_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2005_2005map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -402,7 +402,7 @@
     "geog/50607/geog_eng_2005_q_09_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2005_2005map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -447,7 +447,7 @@
     "geog/50415/geog_eng_2005_q_10_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2005_2005map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -2212,7 +2212,7 @@
     "geog/50611/geog_eng_2006_q_01_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2006_2006map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -2257,7 +2257,7 @@
     "geog/50655/geog_eng_2006_q_02_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2006_2006map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -2302,7 +2302,7 @@
     "geog/50699/geog_eng_2006_q_03_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2006_2006map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -2347,7 +2347,7 @@
     "geog/50743/geog_eng_2006_q_04_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2006_2006map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -2392,7 +2392,7 @@
     "geog/50787/geog_eng_2006_q_05_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2006_2006map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -2437,7 +2437,7 @@
     "geog/50795/geog_eng_2006_q_06_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2006_2006map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -2482,7 +2482,7 @@
     "geog/50799/geog_eng_2006_q_07_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2006_2006map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -2527,7 +2527,7 @@
     "geog/50803/geog_eng_2006_q_08_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2006_2006map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -2572,7 +2572,7 @@
     "geog/50807/geog_eng_2006_q_09_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2006_2006map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -2617,7 +2617,7 @@
     "geog/50615/geog_eng_2006_q_10_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2006_2006map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -4382,7 +4382,7 @@
     "geog/50811/geog_eng_2007_q_01_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2007_2007map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -4427,7 +4427,7 @@
     "geog/50855/geog_eng_2007_q_02_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2007_2007map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -4472,7 +4472,7 @@
     "geog/50899/geog_eng_2007_q_03_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2007_2007map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -4517,7 +4517,7 @@
     "geog/50943/geog_eng_2007_q_04_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2007_2007map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -4562,7 +4562,7 @@
     "geog/50987/geog_eng_2007_q_05_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2007_2007map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -4607,7 +4607,7 @@
     "geog/50995/geog_eng_2007_q_06_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2007_2007map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -4652,7 +4652,7 @@
     "geog/50999/geog_eng_2007_q_07_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2007_2007map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -4697,7 +4697,7 @@
     "geog/51003/geog_eng_2007_q_08_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2007_2007map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -4742,7 +4742,7 @@
     "geog/51007/geog_eng_2007_q_09_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2007_2007map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -4787,7 +4787,7 @@
     "geog/50815/geog_eng_2007_q_10_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2007_2007map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -6552,7 +6552,7 @@
     "geog/51011/geog_eng_2008_q_01_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2008_2008map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -6597,7 +6597,7 @@
     "geog/51055/geog_eng_2008_q_02_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2008_2008map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -6642,7 +6642,7 @@
     "geog/51099/geog_eng_2008_q_03_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2008_2008map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -6687,7 +6687,7 @@
     "geog/51139/geog_eng_2008_q_04_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2008_2008map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -6732,7 +6732,7 @@
     "geog/51183/geog_eng_2008_q_05_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2008_2008map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -6777,7 +6777,7 @@
     "geog/51191/geog_eng_2008_q_06_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2008_2008map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -6822,7 +6822,7 @@
     "geog/51195/geog_eng_2008_q_07_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2008_2008map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -6867,7 +6867,7 @@
     "geog/51199/geog_eng_2008_q_08_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2008_2008map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -6912,7 +6912,7 @@
     "geog/51203/geog_eng_2008_q_09_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2008_2008map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -6957,7 +6957,7 @@
     "geog/51015/geog_eng_2008_q_10_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2008_2008map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -8679,7 +8679,7 @@
     "geog/51207/geog_eng_2009_q_01_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2009_2009map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -8724,7 +8724,7 @@
     "geog/51247/geog_eng_2009_q_02_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2009_2009map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -8769,7 +8769,7 @@
     "geog/51291/geog_eng_2009_q_03_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2009_2009map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -8814,7 +8814,7 @@
     "geog/51331/geog_eng_2009_q_04_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2009_2009map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -8859,7 +8859,7 @@
     "geog/51375/geog_eng_2009_q_05_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2009_2009map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -8904,7 +8904,7 @@
     "geog/51383/geog_eng_2009_q_06_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2009_2009map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -8949,7 +8949,7 @@
     "geog/51387/geog_eng_2009_q_07_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2009_2009map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -8994,7 +8994,7 @@
     "geog/51391/geog_eng_2009_q_08_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2009_2009map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -9039,7 +9039,7 @@
     "geog/51395/geog_eng_2009_q_09_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2009_2009map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -9084,7 +9084,7 @@
     "geog/51211/geog_eng_2009_q_10_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2009_2009map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -10763,7 +10763,7 @@
     "geog/51399/geog_eng_2010_q_01_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2010_2010map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -10808,7 +10808,7 @@
     "geog/51443/geog_eng_2010_q_02_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2010_2010map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -10853,7 +10853,7 @@
     "geog/51487/geog_eng_2010_q_03_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2010_2010map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -10898,7 +10898,7 @@
     "geog/51531/geog_eng_2010_q_04_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2010_2010map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -10943,7 +10943,7 @@
     "geog/51575/geog_eng_2010_q_05_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2010_2010map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -10988,7 +10988,7 @@
     "geog/51583/geog_eng_2010_q_06_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2010_2010map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -11033,7 +11033,7 @@
     "geog/51587/geog_eng_2010_q_07_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2010_2010map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -11078,7 +11078,7 @@
     "geog/51591/geog_eng_2010_q_08_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2010_2010map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -11123,7 +11123,7 @@
     "geog/51595/geog_eng_2010_q_09_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2010_2010map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -11168,7 +11168,7 @@
     "geog/51403/geog_eng_2010_q_10_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2010_2010map.ceg.pdf",
    "graphic_options": false
   },
   {
@@ -12933,7 +12933,7 @@
     "geog/51599/geog_eng_2011_q_01_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2011_2011_map.pdf",
    "graphic_options": false
   },
   {
@@ -12978,7 +12978,7 @@
     "geog/51643/geog_eng_2011_q_02_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2011_2011_map.pdf",
    "graphic_options": false
   },
   {
@@ -13023,7 +13023,7 @@
     "geog/51687/geog_eng_2011_q_03_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2011_2011_map.pdf",
    "graphic_options": false
   },
   {
@@ -13068,7 +13068,7 @@
     "geog/51731/geog_eng_2011_q_04_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2011_2011_map.pdf",
    "graphic_options": false
   },
   {
@@ -13113,7 +13113,7 @@
     "geog/51771/geog_eng_2011_q_05_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2011_2011_map.pdf",
    "graphic_options": false
   },
   {
@@ -13158,7 +13158,7 @@
     "geog/51779/geog_eng_2011_q_06_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2011_2011_map.pdf",
    "graphic_options": false
   },
   {
@@ -13203,7 +13203,7 @@
     "geog/51783/geog_eng_2011_q_07_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2011_2011_map.pdf",
    "graphic_options": false
   },
   {
@@ -13248,7 +13248,7 @@
     "geog/51787/geog_eng_2011_q_08_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2011_2011_map.pdf",
    "graphic_options": false
   },
   {
@@ -13293,7 +13293,7 @@
     "geog/51791/geog_eng_2011_q_09_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2011_2011_map.pdf",
    "graphic_options": false
   },
   {
@@ -13338,7 +13338,7 @@
     "geog/51603/geog_eng_2011_q_10_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2011_2011_map.pdf",
    "graphic_options": false
   },
   {
@@ -15060,7 +15060,7 @@
     "geog/51795/q_01_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2012_map.pdf",
    "graphic_options": false
   },
   {
@@ -15105,7 +15105,7 @@
     "geog/51839/q_02_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2012_map.pdf",
    "graphic_options": false
   },
   {
@@ -15150,7 +15150,7 @@
     "geog/51883/q_03_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2012_map.pdf",
    "graphic_options": false
   },
   {
@@ -15195,7 +15195,7 @@
     "geog/51927/q_04_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2012_map.pdf",
    "graphic_options": false
   },
   {
@@ -15240,7 +15240,7 @@
     "geog/51935/q_05_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2012_map.pdf",
    "graphic_options": false
   },
   {
@@ -16790,7 +16790,7 @@
     "geog/51955/q_01_04.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2013_map.jpg",
    "graphic_options": false
   },
   {
@@ -16835,7 +16835,7 @@
     "geog/51999/q_02_04.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2013_map.jpg",
    "graphic_options": false
   },
   {
@@ -16880,7 +16880,7 @@
     "geog/52043/q_03_04.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2013_map.jpg",
    "graphic_options": false
   },
   {
@@ -16925,7 +16925,7 @@
     "geog/52087/q_04_04.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2013_map.jpg",
    "graphic_options": false
   },
   {
@@ -16970,7 +16970,7 @@
     "geog/52095/q_05_04.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2013_map.jpg",
    "graphic_options": false
   },
   {
@@ -17015,7 +17015,7 @@
     "geog/52099/q_06_04.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2013_map.jpg",
    "graphic_options": false
   },
   {
@@ -17060,7 +17060,7 @@
     "geog/52103/q_07_04.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2013_map.jpg",
    "graphic_options": false
   },
   {
@@ -17105,7 +17105,7 @@
     "geog/52107/q_08_04.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2013_map.jpg",
    "graphic_options": false
   },
   {
@@ -18526,7 +18526,7 @@
     "geog/52115/q_01_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2014_map.pdf",
    "graphic_options": false
   },
   {
@@ -18571,7 +18571,7 @@
     "geog/52159/q_02_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2014_map.pdf",
    "graphic_options": false
   },
   {
@@ -18616,7 +18616,7 @@
     "geog/52203/q_03_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2014_map.pdf",
    "graphic_options": false
   },
   {
@@ -18661,7 +18661,7 @@
     "geog/52247/q_04_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2014_map.pdf",
    "graphic_options": false
   },
   {
@@ -18706,7 +18706,7 @@
     "geog/52255/q_05_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2014_map.pdf",
    "graphic_options": false
   },
   {
@@ -18751,7 +18751,7 @@
     "geog/52259/q_06_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2014_map.pdf",
    "graphic_options": false
   },
   {
@@ -18796,7 +18796,7 @@
     "geog/52263/q_07_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2014_map.pdf",
    "graphic_options": false
   },
   {
@@ -18841,7 +18841,7 @@
     "geog/52267/q_08_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2014_map.pdf",
    "graphic_options": false
   },
   {
@@ -20262,7 +20262,7 @@
     "geog/52275/q_01_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2015_map.pdf",
    "graphic_options": false
   },
   {
@@ -20307,7 +20307,7 @@
     "geog/52319/q_02_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2015_map.pdf",
    "graphic_options": false
   },
   {
@@ -20352,7 +20352,7 @@
     "geog/52363/q_03_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2015_map.pdf",
    "graphic_options": false
   },
   {
@@ -20397,7 +20397,7 @@
     "geog/52407/q_04_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2015_map.pdf",
    "graphic_options": false
   },
   {
@@ -20442,7 +20442,7 @@
     "geog/52415/q_05_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2015_map.pdf",
    "graphic_options": false
   },
   {
@@ -20487,7 +20487,7 @@
     "geog/52419/q_06_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2015_map.pdf",
    "graphic_options": false
   },
   {
@@ -20532,7 +20532,7 @@
     "geog/52423/q_07_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2015_map.pdf",
    "graphic_options": false
   },
   {
@@ -20577,7 +20577,7 @@
     "geog/52427/q_08_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2015_map.pdf",
    "graphic_options": false
   },
   {
@@ -21955,7 +21955,7 @@
     "geog/52435/q_01_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2016_map.pdf",
    "graphic_options": false
   },
   {
@@ -22000,7 +22000,7 @@
     "geog/52479/q_02_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2016_map.pdf",
    "graphic_options": false
   },
   {
@@ -22045,7 +22045,7 @@
     "geog/52523/q_03_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2016_map.pdf",
    "graphic_options": false
   },
   {
@@ -22090,7 +22090,7 @@
     "geog/52567/q_04_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2016_map.pdf",
    "graphic_options": false
   },
   {
@@ -22135,7 +22135,7 @@
     "geog/52575/q_05_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2016_map.pdf",
    "graphic_options": false
   },
   {
@@ -22180,7 +22180,7 @@
     "geog/52579/q_06_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2016_map.pdf",
    "graphic_options": false
   },
   {
@@ -22225,7 +22225,7 @@
     "geog/52583/q_07_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2016_map.pdf",
    "graphic_options": false
   },
   {
@@ -22270,7 +22270,7 @@
     "geog/52587/q_08_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2016_map.pdf",
    "graphic_options": false
   },
   {
@@ -23691,7 +23691,7 @@
     "geog/52595/q_01_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2017_map.pdf",
    "graphic_options": false
   },
   {
@@ -23736,7 +23736,7 @@
     "geog/52639/q_02_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2017_map.pdf",
    "graphic_options": false
   },
   {
@@ -23781,7 +23781,7 @@
     "geog/52683/q_03_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2017_map.pdf",
    "graphic_options": false
   },
   {
@@ -23826,7 +23826,7 @@
     "geog/52727/q_04_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2017_map.pdf",
    "graphic_options": false
   },
   {
@@ -23871,7 +23871,7 @@
     "geog/52735/q_05_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2017_map.pdf",
    "graphic_options": false
   },
   {
@@ -23916,7 +23916,7 @@
     "geog/52739/q_06_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2017_map.pdf",
    "graphic_options": false
   },
   {
@@ -23961,7 +23961,7 @@
     "geog/52743/q_07_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2017_map.pdf",
    "graphic_options": false
   },
   {
@@ -24006,7 +24006,7 @@
     "geog/52747/q_08_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2017_map.pdf",
    "graphic_options": false
   },
   {
@@ -25427,7 +25427,7 @@
     "geog/52755/q_01_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2018_map.pdf",
    "graphic_options": false
   },
   {
@@ -25472,7 +25472,7 @@
     "geog/52799/q_02_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2018_map.pdf",
    "graphic_options": false
   },
   {
@@ -25517,7 +25517,7 @@
     "geog/52843/q_03_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2018_map.pdf",
    "graphic_options": false
   },
   {
@@ -25562,7 +25562,7 @@
     "geog/52887/q_04_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2018_map.pdf",
    "graphic_options": false
   },
   {
@@ -25607,7 +25607,7 @@
     "geog/52895/q_05_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2018_map.pdf",
    "graphic_options": false
   },
   {
@@ -25652,7 +25652,7 @@
     "geog/52899/q_06_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2018_map.pdf",
    "graphic_options": false
   },
   {
@@ -25697,7 +25697,7 @@
     "geog/52903/q_07_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2018_map.pdf",
    "graphic_options": false
   },
   {
@@ -25742,7 +25742,7 @@
     "geog/52907/q_08_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2018_map.pdf",
    "graphic_options": false
   },
   {
@@ -27163,7 +27163,7 @@
     "geog/71399/q_01_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2019_map.pdf",
    "graphic_options": false
   },
   {
@@ -27208,7 +27208,7 @@
     "geog/71401/q_02_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2019_map.pdf",
    "graphic_options": false
   },
   {
@@ -27253,7 +27253,7 @@
     "geog/71403/q_03_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2019_map.pdf",
    "graphic_options": false
   },
   {
@@ -27298,7 +27298,7 @@
     "geog/71405/q_04_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2019_map.pdf",
    "graphic_options": false
   },
   {
@@ -27343,7 +27343,7 @@
     "geog/71407/q_05_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2019_map.pdf",
    "graphic_options": false
   },
   {
@@ -27388,7 +27388,7 @@
     "geog/71409/q_06_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2019_map.pdf",
    "graphic_options": false
   },
   {
@@ -28035,7 +28035,7 @@
     "geog/72911/q_01_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2020_map.pdf",
    "graphic_options": false
   },
   {
@@ -28080,7 +28080,7 @@
     "geog/72913/q_02_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2020_map.pdf",
    "graphic_options": false
   },
   {
@@ -28125,7 +28125,7 @@
     "geog/72915/q_03_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2020_map.pdf",
    "graphic_options": false
   },
   {
@@ -28170,7 +28170,7 @@
     "geog/72917/q_04_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2020_map.pdf",
    "graphic_options": false
   },
   {
@@ -28215,7 +28215,7 @@
     "geog/72919/q_05_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2020_map.pdf",
    "graphic_options": false
   },
   {
@@ -28260,7 +28260,7 @@
     "geog/72921/q_06_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2020_map.pdf",
    "graphic_options": false
   },
   {
@@ -28907,7 +28907,7 @@
     "geog/74439/q_01_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2021_map.pdf",
    "graphic_options": false
   },
   {
@@ -28952,7 +28952,7 @@
     "geog/74441/q_02_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2021_map.pdf",
    "graphic_options": false
   },
   {
@@ -28997,7 +28997,7 @@
     "geog/74443/q_03_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2021_map.pdf",
    "graphic_options": false
   },
   {
@@ -29042,7 +29042,7 @@
     "geog/74445/q_04_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2021_map.pdf",
    "graphic_options": false
   },
   {
@@ -29087,7 +29087,7 @@
     "geog/74447/q_05_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2021_map.pdf",
    "graphic_options": false
   },
   {
@@ -29132,7 +29132,7 @@
     "geog/74449/q_06_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2021_map.pdf",
    "graphic_options": false
   },
   {
@@ -29779,7 +29779,7 @@
     "geog/75955/q_01_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2022_map.pdf",
    "graphic_options": false
   },
   {
@@ -29824,7 +29824,7 @@
     "geog/75957/q_02_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2022_map.pdf",
    "graphic_options": false
   },
   {
@@ -29869,7 +29869,7 @@
     "geog/75959/q_03_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2022_map.pdf",
    "graphic_options": false
   },
   {
@@ -29914,7 +29914,7 @@
     "geog/75961/q_04_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2022_map.pdf",
    "graphic_options": false
   },
   {
@@ -29959,7 +29959,7 @@
     "geog/75963/q_05_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2022_map.pdf",
    "graphic_options": false
   },
   {
@@ -30004,7 +30004,7 @@
     "geog/75965/q_06_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2022_map.pdf",
    "graphic_options": false
   },
   {
@@ -30651,7 +30651,7 @@
     "geog/77275/q_01_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2023_map.pdf",
    "graphic_options": false
   },
   {
@@ -30696,7 +30696,7 @@
     "geog/77277/q_02_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2023_map.pdf",
    "graphic_options": false
   },
   {
@@ -30741,7 +30741,7 @@
     "geog/77279/q_03_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2023_map.pdf",
    "graphic_options": false
   },
   {
@@ -30786,7 +30786,7 @@
     "geog/77281/q_04_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2023_map.pdf",
    "graphic_options": false
   },
   {
@@ -30831,7 +30831,7 @@
     "geog/77283/q_05_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2023_map.pdf",
    "graphic_options": false
   },
   {
@@ -30876,7 +30876,7 @@
     "geog/77285/q_06_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2023_map.pdf",
    "graphic_options": false
   },
   {
@@ -31523,7 +31523,7 @@
     "geog/78995/q_01_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2024_map.pdf",
    "graphic_options": false
   },
   {
@@ -31568,7 +31568,7 @@
     "geog/78997/q_02_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2024_map.pdf",
    "graphic_options": false
   },
   {
@@ -31613,7 +31613,7 @@
     "geog/78999/q_03_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2024_map.pdf",
    "graphic_options": false
   },
   {
@@ -31658,7 +31658,7 @@
     "geog/79001/q_04_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2024_map.pdf",
    "graphic_options": false
   },
   {
@@ -31703,7 +31703,7 @@
     "geog/79003/q_05_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2024_map.pdf",
    "graphic_options": false
   },
   {
@@ -31748,7 +31748,7 @@
     "geog/79005/q_06_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2024_map.pdf",
    "graphic_options": false
   },
   {
@@ -32395,7 +32395,7 @@
     "geog/82383/q_01_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2025_map.pdf",
    "graphic_options": false
   },
   {
@@ -32440,7 +32440,7 @@
     "geog/82385/q_02_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2025_map.pdf",
    "graphic_options": false
   },
   {
@@ -32485,7 +32485,7 @@
     "geog/82387/q_03_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2025_map.pdf",
    "graphic_options": false
   },
   {
@@ -32530,7 +32530,7 @@
     "geog/82389/q_04_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2025_map.pdf",
    "graphic_options": false
   },
   {
@@ -32575,7 +32575,7 @@
     "geog/82391/q_05_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2025_map.pdf",
    "graphic_options": false
   },
   {
@@ -32620,7 +32620,7 @@
     "geog/82393/q_06_4.png"
    ],
    "has_map_extract": true,
-   "map_extract": null,
+   "map_extract": "geog/_attachments/_files/2025_map.pdf",
    "graphic_options": false
   },
   {

@@ -7,7 +7,9 @@ Four sections:
   3. MC Drilling      — practice questions with a mistake report
   4. Chatbot          — answers grounded in the MakGeography notes
 
-The whole site is behind a shared password.
+The whole site is behind a sign-in. Students sign in with their own SID
+and password (see app/roster.py); the teacher signs in with a separate
+key. The roster also records who used the site.
 """
 from __future__ import annotations
 
@@ -34,7 +36,7 @@ from pydantic import BaseModel
 
 from .kb import KnowledgeBase
 from .curriculum import CurriculumMatcher
-from . import essay, llm
+from . import essay, llm, roster as roster_mod
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = BASE_DIR / "data"
@@ -59,8 +61,13 @@ def _load_password() -> str:
     ~/.hermes/.env. There is deliberately NO built-in default: a password
     committed to a public repository is not a password.
 
-    Resolved lazily and cached, so importing the module (CI, tooling) does not
-    require a password to be configured.
+    This is the FALLBACK gate, used when no roster exists. Once
+    data/roster.json is present, students sign in with their own SID
+    instead (see app/roster.py) and this shared password is only the
+    teacher's own door.
+
+    Resolved lazily and cached, so importing the module (CI, tooling) does
+    not require a password to be configured.
     """
     global _password_cache
     if _password_cache:
@@ -94,7 +101,12 @@ SESSION_TTL = 60 * 60 * 12  # 12 hours
 # Session store (in-process; single-worker deployment)
 # ---------------------------------------------------------------------------
 
-_sessions: dict[str, float] = {}
+# token -> (created_at, identity)
+#
+# The identity is who signed in: the SID, the name, the class, the role.
+# It is kept in the session so every request knows who is asking - that is
+# what makes the activity log possible.
+_sessions: dict[str, tuple[float, dict]] = {}
 
 # Rate limit: max N requests per client per minute, to protect the API key.
 #
@@ -106,22 +118,32 @@ RATE_WINDOW = 60
 _rate: dict[str, list[float]] = {}
 
 
-def new_session() -> str:
+def new_session(identity: dict | None = None) -> str:
     token = secrets.token_urlsafe(32)
-    _sessions[token] = time.time()
+    _sessions[token] = (time.time(), identity or {})
     return token
 
 
 def session_valid(token: str | None) -> bool:
     if not token:
         return False
-    created = _sessions.get(token)
-    if not created:
+    entry = _sessions.get(token)
+    if not entry:
         return False
+    created = entry[0]
     if time.time() - created > SESSION_TTL:
         _sessions.pop(token, None)
         return False
     return True
+
+
+def current_identity(request: Request) -> dict:
+    """Who is making this request. Empty dict if nobody is signed in."""
+    entry = _sessions.get(request.cookies.get(SESSION_COOKIE) or "")
+    if not entry:
+        return {}
+    identity = entry[1]
+    return identity if isinstance(identity, dict) else {}
 
 
 def check_rate(session: str, limit: int = RATE_LIMIT, bucket: str = "ask") -> bool:
@@ -181,7 +203,15 @@ def load_json(name: str, default):
 
 
 def password_required() -> bool:
-    """True when a password is configured and the gate is therefore on."""
+    """True when the site is gated.
+
+    The site is gated when a roster exists (students sign in with their
+    SID) or when a shared password is configured (the fallback gate).
+    With neither, the site is open, which is what the local copy on the
+    teacher's Mac does.
+    """
+    if roster_mod.allowed_sids():
+        return True
     try:
         return bool(_load_password())
     except Exception:
@@ -191,14 +221,21 @@ def password_required() -> bool:
 def require_auth(request: Request):
     """Require a signed-in session, unless the site is open.
 
-    With no password configured there is nothing to check, so every route
-    works for anyone. A password is still honoured when one is set, so
-    turning the gate back on is a one-line change in the environment.
+    With no roster and no password configured there is nothing to check,
+    so every route works for anyone. Both are honoured when set, so
+    turning the gate on is a one-line change in the environment.
     """
     if not password_required():
         return
     if not session_valid(request.cookies.get(SESSION_COOKIE)):
         raise HTTPException(status_code=401, detail="Not signed in.")
+
+
+def require_teacher(request: Request):
+    """Only the teacher may use this route."""
+    identity = current_identity(request)
+    if identity.get("role") != "teacher":
+        raise HTTPException(status_code=403, detail="Teacher only.")
 
 
 # ---------------------------------------------------------------------------
@@ -208,7 +245,9 @@ def require_auth(request: Request):
 @app.get("/", response_class=HTMLResponse)
 def home(request: Request):
     if password_required() and not session_valid(request.cookies.get(SESSION_COOKIE)):
-        return templates.TemplateResponse(request, "login.html")
+        return templates.TemplateResponse(request, "login.html", {
+            "use_roster": bool(roster_mod.allowed_sids()),
+        })
 
     # Hand out a session token even when the gate is off.
     #
@@ -218,21 +257,56 @@ def home(request: Request):
     # It is not an access token - it grants nothing - it just identifies
     # the browser.
     resp = templates.TemplateResponse(
-        request, "index.html", {"password_required": password_required()}
+        request, "index.html", {
+            "password_required": password_required(),
+            "is_teacher": current_identity(request).get("role") == "teacher",
+        }
     )
     if not session_valid(request.cookies.get(SESSION_COOKIE)):
         resp.set_cookie(
-            SESSION_COOKIE, new_session(), httponly=True, samesite="lax",
+            SESSION_COOKIE, new_session(current_identity(request)),
+            httponly=True, samesite="lax",
             max_age=SESSION_TTL, secure=False,
         )
     return resp
 
 
 @app.post("/login")
-def login(request: Request, password: str = Form(...)):
+def login(request: Request, identifier: str = Form(""), password: str = Form("")):
+    """Sign in.
+
+    The identifier is a student's SID (eight digits) or the word
+    "teacher". A student must be on the roster; the teacher needs the
+    MAKGEO_TEACHER_KEY, which is not in the roster and so cannot be
+    guessed from it.
+
+    When there is no roster the old shared password still works, so the
+    teacher can lock the site down before the roster is set up.
+    """
+    ident = (identifier or "").strip()
+
+    # A roster exists: sign in against it.
+    if roster_mod.allowed_sids():
+        identity = roster_mod.sign_in(ident, password)
+        if identity is None:
+            return templates.TemplateResponse(
+                request, "login.html", {
+                    "error": "That SID and password do not match.",
+                    "use_roster": True,
+                }, status_code=401,
+            )
+        roster_mod.log_event(identity, "login")
+        token = new_session(identity)
+        resp = RedirectResponse("/", status_code=303)
+        resp.set_cookie(
+            SESSION_COOKIE, token, httponly=True, samesite="lax",
+            max_age=SESSION_TTL, secure=False,
+        )
+        return resp
+
+    # No roster: the shared password is the gate.
     if not password_required():
-        # The site is open — no password to check.
-        token = new_session()
+        token = new_session({})
         resp = RedirectResponse("/", status_code=303)
         resp.set_cookie(
             SESSION_COOKIE, token, httponly=True, samesite="lax",
@@ -240,7 +314,8 @@ def login(request: Request, password: str = Form(...)):
         )
         return resp
     if hmac.compare_digest(password.strip(), _load_password()):
-        token = new_session()
+        identity = {"role": "teacher", "sid": "teacher", "name": "Teacher"}
+        token = new_session(identity)
         resp = RedirectResponse("/", status_code=303)
         resp.set_cookie(
             SESSION_COOKIE, token, httponly=True, samesite="lax",
@@ -248,7 +323,10 @@ def login(request: Request, password: str = Form(...)):
         )
         return resp
     return templates.TemplateResponse(
-        request, "login.html", {"error": "Wrong password."}, status_code=401
+        request, "login.html", {
+            "error": "Wrong password.",
+            "use_roster": False,
+        }, status_code=401,
     )
 
 
@@ -282,6 +360,10 @@ def api_ask(request: Request, payload: AskPayload):
         raise HTTPException(status_code=400, detail="Empty question.")
     if len(q) > 1200:
         raise HTTPException(status_code=400, detail="Question too long (max 1200 characters).")
+
+    # Record who asked what, so the teacher can see which students are
+    # using the site and on what.
+    roster_mod.log_event(current_identity(request), "ask", q)
 
     kb = get_kb()
     results = kb.search(q, k=7, topic=payload.topic)
@@ -468,6 +550,12 @@ def api_essay_generate(request: Request, payload: EssayPayload):
 
     marks = payload.marks if payload.marks in essay.MARK_OPTIONS else 12
     curriculum = load_json("curriculum.json", {"electives": []})
+
+    # Record the essay, so the teacher can see who is practising what.
+    roster_mod.log_event(
+        current_identity(request), "essay",
+        f"{topic} {marks} marks ({payload.command_a or '-'}/{payload.command_b or '-'})",
+    )
     res = essay.generate(
         get_matcher(), curriculum, topic,
         leaf_ids=payload.leaf_ids or None,
@@ -523,8 +611,52 @@ def api_mc(request: Request, topic: str | None = None, limit: int = 20,
             q.get("q") or 0,
         )
     qs = sorted(qs, key=sort_key)
+
+    # Record that this student started a drill, and on what topic.
+    if limit >= 20:
+        roster_mod.log_event(
+            current_identity(request), "mc_drill",
+            f"{want} — {len(qs)} questions available",
+        )
+
     return {"questions": qs[:limit], "total": len(qs), "topics": topics,
             "official_total": official_total}
+
+
+# ---------------------------------------------------------------------------
+# The teacher's own view: who is using the site
+# ---------------------------------------------------------------------------
+
+@app.get("/api/teacher/activity")
+def api_teacher_activity(request: Request, days: int = 7):
+    """Who used the site, and how much. Teacher only."""
+    require_auth(request)
+    require_teacher(request)
+    return roster_mod.summarise_log(days=max(1, min(days, 90)))
+
+
+@app.get("/api/teacher/roster")
+def api_teacher_roster(request: Request):
+    """The roster, and who has signed in at least once."""
+    require_auth(request)
+    require_teacher(request)
+    stats = roster_mod.roster_stats()
+    signed_in = {e.get("sid") for e in roster_mod.read_log(limit=5000)}
+    return {
+        "stats": stats,
+        "students": [
+            {
+                "sid": sid,
+                "name": rec.get("name_en", ""),
+                "name_zh": rec.get("name_zh", ""),
+                "class": rec.get("class", ""),
+                "has_password": bool(rec.get("password")),
+                "signed_in": sid in signed_in,
+            }
+            for sid, rec in sorted(roster_mod.load_roster()
+                                   .get("students", {}).items())
+        ],
+    }
 
 
 @app.get("/question-images/{name}")
