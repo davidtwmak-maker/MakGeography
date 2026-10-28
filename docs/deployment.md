@@ -33,40 +33,38 @@ The app binds to `127.0.0.1` only. Put a tunnel in front of it.
 ./scripts/install_tunnel.sh
 ```
 
-This installs `com.makgeo.tunnel`, which keeps the site public using a
-**Cloudflare quick tunnel** (`cloudflared`). The installer downloads
-`cloudflared` if it is not already present, and falls back to localtunnel if
-that fails.
-
-**The URL changes every time the tunnel restarts.** The current one is written
-to:
+This installs `com.makgeo.tunnel`, which keeps the site public. The current
+URL is written to:
 
 ```bash
 cat ~/.hermes/logs/makgeo-url.txt
 ```
 
-Send students that URL, not a saved copy of an old one. The tunnel job
-rewrites the file whenever it reconnects.
+The installer picks the best of three ways to publish the site:
 
-A visitor sees the site directly — no interstitial. This is why the quick
-tunnel is preferred over the alternatives:
+- **Serveo over SSH** — the subdomain is reserved against the SSH key, so
+  the address is the same every time the tunnel restarts. This is what the
+  site uses: `https://makgeography.serveousercontent.com`. The key is
+  `~/.ssh/serveo_rsa`; its fingerprint is registered to a Serveo account,
+  and the account password is never needed by the installer.
+- **Cloudflare quick tunnel** (`cloudflared`) — the fallback. It needs no
+  account and serves the site straight away over HTTPS, but the hostname
+  is random and changes on every restart, so it is not an address to hand
+  to students.
+- **localtunnel** — the last resort. It shows the visitor a page asking for
+  their public IP before the site appears.
 
-- **cloudflared** serves the site straight away over HTTPS. This is what the
-  installer uses.
-- **localtunnel** shows a page asking the visitor for their public IP. It
-  works, but it is awkward in a classroom.
-- **serveo** shows a "Continue to Site" button and rate-limits restarts, so
-  it often refuses to assign a URL at all.
+A visitor sees the site directly — no interstitial — on all three.
 
 One wrinkle worth knowing: the tunnel registers the hostname just after it
 prints the URL, and a local resolver can hold a negative DNS answer for a
 moment. The installer therefore retries the health check a few times rather
 than reporting a failure straight away.
 
-### Named tunnel (permanent)
+### A named Cloudflare tunnel, on your own domain
 
-A quick tunnel's URL changing is fine for a demo, not for a site students use
-daily. For a permanent address, use Cloudflare:
+If you would rather use a domain of your own, Serveo's subdomain can be
+replaced with a Cloudflare named tunnel:
 
 ```bash
 cloudflared tunnel login
@@ -110,6 +108,21 @@ job. On a public URL:
 - the rate limit (12 questions per minute per session) protects the API key
   from a runaway, not from a determined attacker;
 - consider putting Cloudflare Access in front for a second layer.
+
+### The student roster
+
+Students sign in with their own Student ID, so the site can record who used
+it. On the Mac the roster is `data/roster.json`; it is **not committed**,
+because it holds the students' names. On a deployed server it is set with:
+
+- `MAKGEO_ROSTER_PATH` — the path of a `roster.json` on the server
+- `MAKGEO_ROSTER_JSON` — the roster inline, for a server where setting a
+  file is awkward (it can be large, so the path is preferred)
+
+`MAKGEO_ACTIVITY_LOG` says where the activity log is written. It records
+each sign-in, each question asked, each essay generated and each MC drill,
+with the student's SID, name and class. The teacher reads it from the
+**Who has used the site** tab; students cannot see it.
 
 ## Scheduled jobs
 

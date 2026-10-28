@@ -1,6 +1,6 @@
 {
- "updated_at": "2026-10-28 01:51 UTC",
- "n_items": 230,
+ "updated_at": "2026-10-28 13:39 UTC",
+ "n_items": 277,
  "feeds": [
   {
    "feed": "USGS Earthquakes (M4.5+, past week)",
@@ -105,7 +105,7 @@
    "url": "https://www.scmp.com/rss/92/feed",
    "ok": true,
    "error": "",
-   "items": 4
+   "items": 3
   },
   {
    "feed": "SCMP — China Economy",
@@ -126,7 +126,7 @@
    "url": "https://hongkongfp.com/feed/",
    "ok": true,
    "error": "",
-   "items": 1
+   "items": 2
   },
   {
    "feed": "HK DSD — DSD Newsletter",
@@ -175,7 +175,7 @@
    "url": "https://www.sciencedaily.com/rss/top/environment.xml",
    "ok": true,
    "error": "",
-   "items": 14
+   "items": 0
   },
   {
    "feed": "Global Forest Watch — Blog",
@@ -231,7 +231,7 @@
    "url": "https://www.sciencedaily.com/rss/earth_climate/climate.xml",
    "ok": true,
    "error": "",
-   "items": 14
+   "items": 26
   },
   {
    "feed": "HK Geological Survey / GeoPark",

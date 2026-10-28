@@ -7,14 +7,26 @@
 # The assigned URL is written to ~/.hermes/logs/makgeo-url.txt so it can be
 # read without digging in logs.
 #
-# The default is a Cloudflare quick tunnel (cloudflared). It is used in
-# preference to localtunnel because localtunnel shows a one-time
-# interstitial asking the visitor for their public IP before the site
-# appears - a quick tunnel goes straight to the site.
+# Three ways to publish the site, in order of preference:
 #
-# A quick-tunnel URL changes when the tunnel restarts. For a permanent URL,
-# set up a named Cloudflare tunnel with your own domain (see
-# docs/deployment.md).
+#   1. Serveo, over SSH. The subdomain is reserved against the SSH key, so
+#      the address is the same every time the tunnel restarts:
+#
+#          https://<subdomain>.serveousercontent.com
+#
+#      This is what the site uses. A student who saved the address has it
+#      still working next week.
+#
+#   2. A Cloudflare quick tunnel. The hostname is random and changes on
+#      every restart. It needs no account, so it is the fallback when
+#      there is no Serveo key.
+#
+#   3. localtunnel. The last resort: it shows the visitor a one-time
+#      interstitial asking for their public IP before the site appears.
+#
+# To use Serveo, the key at ~/.ssh/serveo_rsa must exist and its
+# fingerprint must be registered to a Serveo account. The account password
+# is not needed here and is never written into the script or the plist.
 set -uo pipefail
 
 PORT="${MAKGEO_PORT:-8781}"
@@ -24,6 +36,8 @@ URL_FILE="$LOG_DIR/makgeo-url.txt"
 RUNNER="$HOME/.hermes/scripts/makgeo_tunnel_run.sh"
 TOOLS_BIN="$HOME/.hermes/tools/bin"
 CLOUDFLARED="$TOOLS_BIN/cloudflared"
+SERVEO_KEY="${MAKGEO_SERVEO_KEY:-$HOME/.ssh/serveo_rsa}"
+SUBDOMAIN="${MAKGEO_SUBDOMAIN:-makgeography}"
 
 mkdir -p "$LOG_DIR" "$TOOLS_BIN" "$HOME/.hermes/scripts"
 
@@ -60,6 +74,8 @@ write_plist() {
   <dict>
     <key>PATH</key><string>__PATH__</string>
     <key>HOME</key><string>__HOME__</string>
+    <key>MAKGEO_PORT</key><string>__PORT__</string>
+    <key>MAKGEO_SUBDOMAIN</key><string>__SUBDOMAIN__</string>
   </dict>
   <key>RunAtLoad</key><true/>
   <key>KeepAlive</key><true/>
@@ -68,27 +84,88 @@ write_plist() {
 </dict>
 </plist>
 PLIST_EOF
-  sed -i '' "s|__HOME__|$HOME_ESC|g; s|__LOG_DIR__|$LOG_ESC|g; s|__PATH__|$PATH_ESC|g" "$PLIST"
+  sed -i '' "s|__HOME__|$HOME_ESC|g; s|__LOG_DIR__|$LOG_ESC|g; s|__PATH__|$PATH_ESC|g; s|__PORT__|$PORT|g; s|__SUBDOMAIN__|$SUBDOMAIN|g" "$PLIST"
   plutil -lint "$PLIST" >/dev/null || { echo "Plist malformed"; exit 1; }
 }
 
+# The Serveo runner. The subdomain is reserved against the key, so the
+# address survives a restart.
+install_serveo() {
+  cat > "$RUNNER" <<'RUN_EOF'
+#!/bin/bash
+# Public tunnel for MakGeography, using Serveo over SSH.
+#
+# The subdomain is reserved against the registered SSH key, so the
+# address is the same every time the tunnel restarts:
+#
+#     https://<subdomain>.serveousercontent.com
+#
+# The key is ~/.ssh/serveo_rsa (override with MAKGEO_SERVEO_KEY). The
+# account password is not needed and is never written into this script.
+set -uo pipefail
+PORT="${MAKGEO_PORT:-8781}"
+URL_FILE="$HOME/.hermes/logs/makgeo-url.txt"
+LOG="$HOME/.hermes/logs/makgeo-tunnel.log"
+KEY="${MAKGEO_SERVEO_KEY:-$HOME/.ssh/serveo_rsa}"
+SUBDOMAIN="${MAKGEO_SUBDOMAIN:-makgeography}"
+
+mkdir -p "$HOME/.hermes/logs"
+
+if [ ! -f "$KEY" ]; then
+  echo "The Serveo SSH key is missing at $KEY" | tee -a "$LOG"
+  exit 1
+fi
+chmod 600 "$KEY" 2>/dev/null || true
+
+if ! curl -s -o /dev/null --max-time 10 "http://127.0.0.1:$PORT/"; then
+  echo "The app is not answering on port $PORT" | tee -a "$LOG"
+  exit 1
+fi
+
+echo "starting the Serveo tunnel for https://${SUBDOMAIN}.serveousercontent.com" | tee -a "$LOG"
+
+ssh -i "$KEY" \
+  -o StrictHostKeyChecking=no \
+  -o UserKnownHostsFile=/dev/null \
+  -o ExitOnForwardFailure=yes \
+  -o ServerAliveInterval=30 \
+  -o ServerAliveCountMax=3 \
+  -R "${SUBDOMAIN}:80:127.0.0.1:${PORT}" \
+  serveo@serveo.net >> "$LOG" 2>&1 &
+SSH_PID=$!
+
+# Keep the URL file current.
+while kill -0 "$SSH_PID" 2>/dev/null; do
+  url="$(grep -oE 'https://[a-zA-Z0-9-]+\.serveousercontent\.com' "$LOG" 2>/dev/null | tail -1)"
+  if [ -n "$url" ]; then
+    echo "$url" > "$URL_FILE"
+  fi
+  sleep 3
+done
+
+# ssh exited - let launchd restart us.
+wait "$SSH_PID"
+exit $?
+RUN_EOF
+  chmod +x "$RUNNER"
+  write_plist
+  launchctl bootout "gui/$(id -u)/com.makgeo.tunnel" 2>/dev/null || true
+  launchctl bootstrap "gui/$(id -u)" "$PLIST"
+  wait_for_url 'https://[a-zA-Z0-9-]+\.serveousercontent\.com' "$LOG_DIR/makgeo-tunnel.log"
+}
+
 install_cloudflared() {
-  local url="$1"
   cat > "$RUNNER" <<'RUN_EOF'
 #!/bin/bash
 # Public tunnel for MakGeography, using Cloudflare's quick tunnel.
 #
-# Why cloudflared rather than localtunnel: localtunnel serves a one-time
-# interstitial asking the visitor for their public IP before the site
-# appears. A quick tunnel goes straight to the site - no interstitial, and
-# it is a real HTTPS URL.
-#
-# The URL changes every time the tunnel restarts, so the current one is
-# written to a file that survives the restart. Otherwise a restarted tunnel
-# leaves a dead URL in the student's hands.
+# The fallback when there is no Serveo key. The hostname is random and
+# changes on every restart, so the current one is written to a file that
+# survives the restart - otherwise a restarted tunnel leaves a dead URL
+# in the student's hands.
 set -uo pipefail
-PORT="__PORT__"
-URL_FILE="__URL_FILE__"
+PORT="${MAKGEO_PORT:-8781}"
+URL_FILE="$HOME/.hermes/logs/makgeo-url.txt"
 LOG="$HOME/.hermes/logs/makgeo-tunnel.log"
 CLOUDFLARED="$HOME/.hermes/tools/bin/cloudflared"
 
@@ -105,7 +182,6 @@ fi
   2>&1 | tee -a "$LOG" &
 CF_PID=$!
 
-# Watch the log for the assigned URL and record it.
 while kill -0 "$CF_PID" 2>/dev/null; do
   url="$(grep -oE 'https://[a-zA-Z0-9-]+\.trycloudflare\.com' "$LOG" 2>/dev/null | tail -1)"
   if [ -n "$url" ]; then
@@ -123,18 +199,18 @@ RUN_EOF
   write_plist
   launchctl bootout "gui/$(id -u)/com.makgeo.tunnel" 2>/dev/null || true
   launchctl bootstrap "gui/$(id -u)" "$PLIST"
-  wait_for_url "$url" "$LOG_DIR/makgeo-tunnel.log"
+  wait_for_url 'https://[a-zA-Z0-9-]+\.trycloudflare\.com' "$LOG_DIR/makgeo-tunnel.log"
 }
 
 install_localtunnel() {
   cat > "$RUNNER" <<'RUN_EOF'
 #!/bin/bash
-# localtunnel forward for MakGeography. This is the FALLBACK: localtunnel
-# shows a one-time interstitial asking the visitor for their public IP
+# localtunnel forward for MakGeography. The last resort: localtunnel
+# shows the visitor a one-time interstitial asking for their public IP
 # before the site appears.
 set -uo pipefail
-PORT="__PORT__"
-URL_FILE="__URL_FILE__"
+PORT="${MAKGEO_PORT:-8781}"
+URL_FILE="$HOME/.hermes/logs/makgeo-url.txt"
 LOG="$HOME/.hermes/logs/makgeo-tunnel.log"
 
 mkdir -p "$HOME/.hermes/logs"
@@ -164,8 +240,10 @@ RUN_EOF
 
 echo "Installing com.makgeo.tunnel..."
 
-# Fetch cloudflared if it is not already there.
-if [ ! -x "$CLOUDFLARED" ]; then
+# Fetch cloudflared if it is not already there. It is the fallback, so it
+# is only fetched when Serveo is not available.
+fetch_cloudflared() {
+  [ -x "$CLOUDFLARED" ] && return 0
   echo "Fetching cloudflared..."
   ARCH="$(uname -m)"
   case "$ARCH" in
@@ -184,18 +262,32 @@ if [ ! -x "$CLOUDFLARED" ]; then
       rm -rf "$tmp"
     fi
   fi
-fi
+}
 
-if [ -x "$CLOUDFLARED" ]; then
-  echo "Using a Cloudflare quick tunnel (no interstitial)."
-  url="$(install_cloudflared 'https://[a-zA-Z0-9-]+\.trycloudflare\.com')"
+if [ -f "$SERVEO_KEY" ]; then
+  echo "Using Serveo with the reserved subdomain '$SUBDOMAIN'."
+  url="$(install_serveo)"
+  if [ -z "$url" ]; then
+    echo "The Serveo tunnel did not come up. Falling back to a quick tunnel."
+    fetch_cloudflared
+    if [ -x "$CLOUDFLARED" ]; then
+      url="$(install_cloudflared)"
+    fi
+  fi
 else
-  echo "cloudflared is unavailable. Falling back to localtunnel."
-  command -v npx >/dev/null 2>&1 || {
-    echo "npx is not available either. Install Node, or download cloudflared."
-    exit 1
-  }
-  url="$(install_localtunnel)"
+  echo "No Serveo key at $SERVEO_KEY, so the address would change on every"
+  echo "restart. To get a permanent address, register a key and run this"
+  echo "again. Falling back to a Cloudflare quick tunnel for now."
+  fetch_cloudflared
+  if [ -x "$CLOUDFLARED" ]; then
+    url="$(install_cloudflared)"
+  else
+    command -v npx >/dev/null 2>&1 || {
+      echo "Neither cloudflared nor npx is available."
+      exit 1
+    }
+    url="$(install_localtunnel)"
+  fi
 fi
 
 if [ -z "$url" ]; then

@@ -260,16 +260,28 @@ export MAKGEO_PASSWORD='your-password'
 The script reads `MINIMAX_API_KEY` from the environment, or from
 `~/.hermes/.env`. Neither the password nor the key is written into the repo.
 
-To put it on the public internet, run a tunnel in front of it. `cloudflared`
-is the simplest option and needs no account for a quick tunnel:
+### The live address
+
+`scripts/install_tunnel.sh` installs a third `launchd` job,
+`com.makgeo.tunnel`, which publishes the site:
 
 ```bash
-cloudflared tunnel --url http://127.0.0.1:8781
+./scripts/install_tunnel.sh
 ```
 
-A quick tunnel's hostname changes every time it restarts, so it is not
-suitable as the address handed to students. Use the hosted deployment, or
-a named Cloudflare tunnel, for that.
+The site lives at:
+
+```
+https://makgeography.serveousercontent.com
+```
+
+That address is **permanent**. Serveo reserves the subdomain against the
+SSH key at `~/.ssh/serveo_rsa`, so the tunnel can restart and the URL is
+unchanged. A Cloudflare quick tunnel is the fallback when there is no
+Serveo key — it needs no account, but its hostname is random and changes
+on every restart, so it is not an address to hand to students.
+
+The current URL is written to `~/.hermes/logs/makgeo-url.txt`.
 
 ### What is and is not public
 
