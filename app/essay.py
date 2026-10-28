@@ -168,10 +168,30 @@ restatement.
 mark scheme or answer key. This is freshly written practice material.
 10. Do not reference F2 or F3 material. Those are a different course and are \
 out of scope.
-11. The Part (b) command word judges a NAMED thing - a specific measure, \
-mode or policy taken from the notes (for example channelisation, agroforestry, \
-advanced technology). Never make the second half a free-topic "is \
-sustainability possible" question. Name the thing in the stem.
+11. The Part (b) command word judges a NAMED MEASURE - a specific policy, \
+strategy, mode or technique taken from the notes (for example channelisation, \
+agroforestry, advanced technology, redevelopment, zoning, underground space \
+development).
+
+    Name the MEASURE in the stem, not a case study. The measure is the thing \
+being judged. A case study is only where the measure was carried out, and it \
+belongs in the EXEMPLAR ANSWER as evidence.
+
+    RIGHT: "Discuss whether redevelopment is the most appropriate urban renewal \
+strategy in these areas."
+    WRONG: "Discuss whether the Kwun Tong redevelopment scheme is the most \
+appropriate approach."
+
+    The stem judges the measure against its ALTERNATIVES. So the alternatives \
+must be the ones the notes actually set beside it - for a renewal strategy, \
+the other renewal strategies; for a land supply method, the other land supply \
+methods. The student weighs the named measure against the others in the same \
+set, rather than evaluating the measure on its own.
+
+    The stem may still name a PLACE to fix the setting, as the real papers do \
+- "in Hong Kong", "in these areas", "in the long run". A place is context; a \
+case study is evidence. Do not put a named case study where the measure should \
+go.
 
 REFERENCE NOTES:
 {context}
@@ -354,8 +374,10 @@ def build_prompt(
             f"process. The relevant concepts must carry the mechanism.\n"
             f"  Part (b) - {part_b_marks} marks - command word: "
             f"\"{cmd_b}\". This part is written for explanation and "
-            f"judgement: it must require the student to weigh the named "
-            f"measure against the alternatives and reach a judgement.\n"
+            f"judgement: the stem must name the MEASURE being judged - a "
+            f"policy, strategy, mode or technique from the notes, NOT a case "
+            f"study - and the student must weigh that measure against the "
+            f"ALTERNATIVES in the same set and reach a judgement.\n"
             f"  Part (a) performance bands: {_band_text(part_a_marks)}.\n"
             f"  Part (b) performance bands: {_band_text(part_b_marks)}."
         )
@@ -363,8 +385,13 @@ def build_prompt(
             "QUESTION\n"
             "[ONE stem, written as TWO sentences: the first opens with the "
             "Part (a) command word, the second opens with the Part (b) "
-            "command word. End with the total marks in square brackets, "
-            "e.g. [12].]"
+            "command word.\n"
+            "The second sentence names the MEASURE to be judged, taken from "
+            "the notes, and asks whether it is the most appropriate / most "
+            "effective / most important option - with the alternatives "
+            "implied as the other options in the same set. Name a PLACE only "
+            "to fix the setting, not a case study.\n"
+            "End with the total marks in square brackets, e.g. [12].]"
         )
         scheme_rule = (
             "MARK SCHEME\n"
@@ -706,6 +733,113 @@ def check_two_parts(
     return None
 
 
+# ---------------------------------------------------------------------------
+# The Part (b) stem must name a MEASURE, not a case study.
+#
+# The real papers judge a policy or strategy and let the case study appear
+# only in the mark scheme:
+#   2020 DSE Q7  "Discuss whether REDEVELOPMENT is the most appropriate
+#                 urban renewal strategy in these areas."
+#   2023 DSE Q6  "Discuss whether the CHANNELISATION implemented in recent
+#                 years can manage the river environment in a sustainable way."
+#
+# A stem that names the case instead ("the Kwun Tong redevelopment scheme")
+# asks the wrong question: the student would be judging one scheme rather
+# than the measure, and the alternatives would never come into it.
+#
+# The test is structural, not a keyword list. A case study in the stem is
+# signalled by the stem naming a SPECIFIC PLACE, and a place that is the
+# subject of the judgement is a case study. A place used to fix the setting
+# ("in Hong Kong", "in these areas") is fine.
+# ---------------------------------------------------------------------------
+
+# Words that introduce a specific site, district or project. A stem that
+# names one of these as the thing being judged is judging a case study.
+CASE_STUDY_PLACE_MARKERS = (
+    "scheme", "project", "development area", "nda", "pda", "town centre",
+    "town center", "redevelopment scheme", "new town", "estate", "site",
+)
+
+# A named site inside a stem: the words that make a place specific rather
+# than a setting. "in Hong Kong" is a setting; "the Kwun Tong town centre"
+# is a case study.
+SPECIFIC_SITE_PATTERNS = (
+    r"\b(?:the\s+)?[A-Z][a-z]+\s+[A-Z][a-z]+\s+(?:town\s+centre|town\s+center|"
+    r"shopping\s+centre|shopping\s+center|redevelopment\s+scheme|new\s+town|"
+    r"estate|development\s+area|mall|plaza)\b",
+    r"\b[A-Z][a-z]+\s+(?:Redevelopment|Revitalisation|Rehabilitation|"
+    r"Preservation)\s+[Ss]cheme\b",
+    # A proper-noun place immediately before the measure turns the measure
+    # into a named project: "the Kowloon City redevelopment". The measure
+    # word is lower case here, so the place is what makes it specific.
+    r"\b[A-Z][a-z]+\s+[A-Z][a-z]+\s+"
+    r"(?:redevelopment|revitalisation|rehabilitation|preservation|retrofitting)"
+    r"\b",
+)
+
+
+def _part_b_stem_text(text: str) -> str:
+    """The second half of the question stem, or "" if it cannot be found."""
+    stem = _question_stem(text)
+    if not stem:
+        return ""
+    body = re.sub(r"\s*\[\d+\]\s*$", "", stem[len("QUESTION"):]).strip()
+    # The second sentence onward - the Part (b) half.
+    parts = re.split(r"(?<=[.?!])\s+", body)
+    if len(parts) < 2:
+        return body
+    return " ".join(parts[1:])
+
+
+def check_named_measure(text: str) -> str | None:
+    """Return why the Part (b) stem names a case study instead of a measure.
+
+    Only applies to a two-part question, and only to a Part (b) command that
+    asks for a judgement against alternatives.
+    """
+    part_b = _part_b_stem_text(text)
+    if not part_b:
+        return None
+
+    # A "judge the measure against the alternatives" question has to point
+    # at one of them. If it does not, the stem is not asking the right
+    # question at all.
+    judgement_words = (
+        "most appropriate", "most important", "most effective", "most suitable",
+        "best ", "can be justified", "should be", "the most",
+    )
+    low = part_b.lower()
+    if not any(w in low for w in judgement_words):
+        return None
+
+    # A scheme or project name in the stem is the clearest signal.
+    for marker in CASE_STUDY_PLACE_MARKERS:
+        if marker in low:
+            # "...redevelopment scheme" or "...new town" - is it a case
+            # study or a measure? It is a case study when it names a
+            # specific place. A bare "the redevelopment scheme" is still
+            # a scheme, not a measure, so it is rejected either way.
+            return (
+                f"the second half of the question stem named a case study "
+                f"(\"{marker}\") instead of the MEASURE being judged - the "
+                f"stem should name the policy, strategy, mode or technique, "
+                f"and weigh it against the alternatives in the same set"
+            )
+
+    for pat in SPECIFIC_SITE_PATTERNS:
+        hit = re.search(pat, part_b)
+        if hit:
+            return (
+                f"the second half of the question stem named the case study "
+                f"\"{hit.group(0).strip()}\" instead of the MEASURE being "
+                f"judged - the stem should name the policy, strategy, mode or "
+                f"technique, and weigh it against the alternatives in the "
+                f"same set"
+            )
+
+    return None
+
+
 def check_structure(text: str) -> str | None:
     """Return why the essay is unusable, or None if it is fine."""
     if not text or len(text) < 800:
@@ -781,6 +915,9 @@ def generate(
             why = check_two_parts(
                 res["content"], command_a, command_b, marks
             )
+        if why is None:
+            # The Part (b) stem must judge a MEASURE, not a case study.
+            why = check_named_measure(res["content"])
         if why is None:
             break
         problems.append(why)

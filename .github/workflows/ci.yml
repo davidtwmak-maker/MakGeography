@@ -59,6 +59,9 @@ jobs:
       - name: The essay generator writes a two-part question
         run: python scripts/test_essay_parts.py
 
+      - name: The Part (b) stem names a measure, not a case study
+        run: python scripts/test_named_measure.py
+
       - name: No hardcoded password in the source
         run: |
           # Match a real ASSIGNMENT (PASSWORD = "..."), not help text or an

@@ -260,4 +260,33 @@ for _name, _txt in _ms_cases.items():
         assert "RELEVANT CONCEPTS" in _secs[_k].upper(), f"{_name}: part {_k}"
 print(f"Mark scheme: splits into two parts on headings ({len(_ms_cases)} heading shapes)")
 
+# 10. The Part (b) stem must name a MEASURE, not a case study.
+#
+# The real papers judge a policy or strategy and let the case study appear
+# only in the mark scheme: 2020 Q7 "whether REDEVELOPMENT is the most
+# appropriate urban renewal strategy in these areas".
+def _essay_with_stem(stem: str) -> str:
+    """Wrap a question stem the way a generated essay is shaped."""
+    return (
+        f"QUESTION\n{stem} [12]\n\nMARK SCHEME\nNotes to Markers\nx\n\n"
+        f"Part (a) - Relevant concepts\n- a concept\n\n"
+        f"Part (a) - Performance bands\nTop: 6\n\n"
+        f"Part (b) - Relevant concepts\n- a concept\n\n"
+        f"Part (b) - Performance bands\nTop: 6\n\n"
+        f"EXEMPLAR ANSWER\ny\n"
+    )
+
+
+assert essay.check_named_measure(_essay_with_stem(
+    "Account for the decay of the old urban areas in Hong Kong. Discuss "
+    "whether redevelopment is the most appropriate urban renewal strategy "
+    "in these areas."
+)) is None
+assert essay.check_named_measure(_essay_with_stem(
+    "Account for the decay of the old urban areas in Hong Kong. Discuss "
+    "whether the Kwun Tong redevelopment scheme is the most appropriate "
+    "approach."
+)) is not None
+print("Essay generator: the Part (b) stem names a measure, not a case study")
+
 print("\nALL CHECKS PASSED")
