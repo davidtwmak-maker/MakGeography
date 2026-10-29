@@ -172,10 +172,21 @@ ssh -i "$KEY" \
 SSH_PID=$!
 
 # Keep the URL file current.
+#
+# The address written is the one a student should open. Serveo shows a
+# warning page to real browsers on an HTTP tunnel, and that page is
+# served by Serveo's edge before the request reaches the app - so the
+# app cannot redirect around it.
+#
+# Serveo does skip the page for a request that carries
+# "serveo-skip-browser-warning", and answers it with a 302 that sets
+# the cookie for a year. So the URL written here carries that
+# parameter: a student's first visit sets the cookie and lands on the
+# real site, and every visit after that is clean.
 while kill -0 "$SSH_PID" 2>/dev/null; do
   url="$(grep -oE 'https://[a-zA-Z0-9-]+\.serveousercontent\.com' "$LOG" 2>/dev/null | tail -1)"
   if [ -n "$url" ]; then
-    echo "$url" > "$URL_FILE"
+    echo "${url}/?serveo-skip-browser-warning=true" > "$URL_FILE"
   fi
   sleep 3
 done

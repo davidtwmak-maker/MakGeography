@@ -298,25 +298,36 @@ That address is **permanent**. Serveo reserves the subdomain against the
 SSH key at `~/.ssh/serveo_rsa`, so the tunnel can restart and the URL is
 unchanged.
 
-**Serveo now shows a warning interstitial to real browsers.** A student
-opening the address sees a "Serveo - Warning" page and a "Continue to
-Site" button instead of the site — the interstitial is served by
-Serveo's edge, before the request reaches the app, so the app cannot
-redirect around it. Clicking through once sets a cookie and the site
-works after that, but the first visit looks broken.
+**Serveo shows a warning page to real browsers.** A student opening the
+address used to see a "Serveo - Warning" page and a "Continue to Site"
+button instead of the site. The interstitial is served by Serveo's edge,
+before the request reaches the app, so the app cannot redirect around it
+— and every path gets it, including the `fetch()` the Ask panel makes.
 
-So a **second tunnel runs alongside it**: a Cloudflare quick tunnel,
-which serves the site directly with no interstitial. Its hostname is
-random and changes on every restart, so it is not an address to keep —
-it is the one to hand to a student who needs the site right now:
+Serveo does skip the page for a request that carries
+`?serveo-skip-browser-warning`, and answers that with a redirect that
+sets a cookie for a year. So the address the tunnel script writes to
+`~/.hermes/logs/makgeo-url.txt` carries the parameter:
+
+```
+https://makgeography.serveousercontent.com/?serveo-skip-browser-warning=true
+```
+
+A student's first visit sets the cookie and lands on the real site;
+every visit after that is clean. **Hand out that link**, not the bare
+address.
+
+A **second tunnel runs alongside it**: a Cloudflare quick tunnel, which
+serves the site with no interstitial at all and needs no parameter. Its
+hostname is random and changes on every restart, so it is not an
+address to keep — it is the fallback if the Serveo tunnel is down:
 
 ```bash
 cat ~/.hermes/logs/makgeo-url-cf.txt
 ```
 
-The Serveo address remains the permanent one, written to
-`~/.hermes/logs/makgeo-url.txt`. For an address that is both permanent
-**and** free of interstitials, deploy the container (see `render.yaml`)
+For an address that is permanent **and** free of interstitials without
+relying on Serveo's cookie, deploy the container (see `render.yaml`)
 rather than tunnelling from the teacher's Mac.
 
 ### What is and is not public

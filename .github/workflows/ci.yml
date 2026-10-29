@@ -97,6 +97,15 @@ jobs:
           python scripts/test_static_live_url.py
           kill %1 || true
 
+      - name: The address a student is given serves the site
+        # Serveo shows a warning page to browsers on an HTTP tunnel. The
+        # address carries ?serveo-skip-browser-warning so the first
+        # visit sets the cookie and lands on the real site.
+        #
+        # The checks that need a live tunnel are skipped where there is
+        # none; the script and URL-file checks still run.
+        run: python scripts/test_tunnel_address.py
+
       - name: The roster and the activity log are not in the repository
         run: |
           # They hold the students' names and what they asked.
