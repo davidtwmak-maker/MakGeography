@@ -22,6 +22,7 @@ import json
 import re
 
 from . import llm
+from . import essay_patterns
 
 # The electives the generator covers. F2 and F3 are excluded on purpose.
 ESSAY_ELECTIVES = ("CP1", "CP2", "CP3", "CP4", "CP5", "CP6", "CP7", "EP1")
@@ -165,7 +166,10 @@ restatement.
 7. Use the Hong Kong syllabus terminology throughout.
 8. Write in English, in the same register as the notes.
 9. Do NOT discuss or reveal any real test paper, mock, predicted paper, \
-mark scheme or answer key. This is freshly written practice material.
+mark scheme or answer key. This is freshly written practice material. The \
+stem must be freshly written too - do not reproduce the wording of any \
+past paper question, even where a question pattern points at one. The \
+pattern gives the SHAPE; the wording must be your own.
 10. Do not reference F2 or F3 material. Those are a different course and are \
 out of scope.
 11. The Part (b) command word judges a NAMED MEASURE - a specific policy, \
@@ -176,6 +180,11 @@ development).
     Name the MEASURE in the stem, not a case study. The measure is the thing \
 being judged. A case study is only where the measure was carried out, and it \
 belongs in the EXEMPLAR ANSWER as evidence.
+
+    Follow the QUESTION PATTERN given in the user message. It names the \
+command pairing, what Part (a) must cover, and the measure Part (b) weighs. \
+The two parts must answer each other: Part (b) must reach a verdict on the \
+Part (a) question, using the Part (a) material as its evidence.
 
     RIGHT: "Discuss whether redevelopment is the most appropriate urban renewal \
 strategy in these areas."
@@ -445,6 +454,26 @@ def build_prompt(
         f"Part (a) command word: {cmd_a}"
         + (f"\nPart (b) command word: {cmd_b}" if cmd_b else "")
     )
+    # The question patterns are the backbone: they tell the model the shape
+    # a real DSE essay question takes for this elective, so the stem it
+    # writes is in the house form rather than an invented one.
+    #
+    # The pattern's command pairing must match the one this essay uses.
+    # A pattern describes how ITS two parts relate, so a pattern with a
+    # different pairing describes a different question. And an 8-mark
+    # essay is a single part, so no pattern applies to it at all - the
+    # pattern block talks about a Part (b) that must not exist.
+    key_a = command_a if command_a in PART_A_COMMANDS else DEFAULT_COMMAND_A
+    key_b = command_b if command_b in PART_B_COMMANDS else DEFAULT_COMMAND_B
+    if part_b_marks:
+        patterns = essay_patterns.patterns_block(code.upper(), key_a, key_b)
+    else:
+        patterns = ""
+    pattern_note = (
+        f"\n{patterns}\n"
+        if patterns
+        else ""
+    )
     user = f"""\
 Write a practice essay for the HKDSE Geography short essay.
 
@@ -453,7 +482,7 @@ Sub-topic(s) covered: {subs}
 {cmd_line}
 
 {shape}
-
+{pattern_note}
 Follow the required output structure exactly:
 
 {stem_rule}

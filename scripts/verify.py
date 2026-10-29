@@ -389,4 +389,25 @@ assert "window.MAKGEO_LIVE_URL" in _src, (
 )
 print("Static copy: the live address is injected at build time, not hardcoded")
 
+# 14. A question pattern must match the command pairing it is shown for.
+#
+# A pattern describes how ITS two parts relate, so a pattern with a
+# different pairing describes a different question. And an 8-mark essay
+# is a single part, so no pattern applies to it - the pattern block talks
+# about a Part (b) that must not exist.
+_pat_src = (root / "app" / "essay_patterns.py").read_text(encoding="utf-8")
+assert "def matching_patterns(" in _pat_src, (
+    "the patterns have no pairing filter - a pattern with a different "
+    "command pairing would be shown for the wrong question"
+)
+_pat_essay = (root / "app" / "essay.py").read_text(encoding="utf-8")
+assert "patterns_block(code.upper(), key_a, key_b)" in _pat_essay, (
+    "the prompt does not filter the patterns by the chosen pairing"
+)
+assert "if part_b_marks:" in _pat_essay, (
+    "the pattern block is not gated on the essay having two parts - an "
+    "8-mark single-part essay would be asked for a Part (b)"
+)
+print("Essay generator: patterns match the command pairing, and skip single-part essays")
+
 print("\nALL CHECKS PASSED")
