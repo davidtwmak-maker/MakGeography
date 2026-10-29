@@ -24,6 +24,7 @@ Usage:  python scripts/build_static_site.py
 from __future__ import annotations
 
 import json
+import os
 import pathlib
 import re
 import shutil
@@ -40,29 +41,49 @@ OUT = ROOT / "site"
 LIVE = "http://127.0.0.1:8781"
 
 
+# The permanent address. Serveo reserves this subdomain against the SSH
+# key, so the tunnel can restart and the URL is unchanged. It is a
+# constant, so it is safe to name here - unlike a Cloudflare quick
+# tunnel, whose hostname changes on every restart.
+PERMANENT_URL = "https://makgeography.serveousercontent.com"
+
+
 def read_live_url() -> str:
     """The address of the live site, for the static copy to point at.
 
     The static build is published to GitHub Pages, which cannot answer a
     question. The Ask and essay panels there say so and link here.
 
-    The Cloudflare quick tunnel is preferred: it serves the site with no
-    warning page. The Serveo address is permanent but shows an interstitial
-    to browsers, so it is the fallback. Neither address is written into
-    the source - both are read from the files the tunnel scripts keep
-    current, because a hardcoded hostname goes dead on the next restart.
+    In order of preference:
+
+    1. MAKGEO_LIVE_URL in the environment - an explicit override.
+    2. The Cloudflare quick tunnel's address, read from the file the
+       tunnel script keeps current. It serves the site with no warning
+       page, but its hostname changes on every restart, so it cannot be
+       written into the source.
+    3. The Serveo address from its file.
+    4. The permanent Serveo address. It shows a warning page to browsers
+       on a first visit, but it never goes dead.
+
+    A build with no tunnel at all - a CI runner - falls through to the
+    permanent address, so the published page always points somewhere
+    real.
     """
+    override = os.environ.get("MAKGEO_LIVE_URL", "").strip()
+    if override.startswith("https://"):
+        return override
+
     home = pathlib.Path.home()
-    cf = home / ".hermes" / "logs" / "makgeo-url-cf.txt"
-    serveo = home / ".hermes" / "logs" / "makgeo-url.txt"
-    for path in (cf, serveo):
+    for name in ("makgeo-url-cf.txt", "makgeo-url.txt"):
+        path = home / ".hermes" / "logs" / name
         try:
             url = path.read_text(encoding="utf-8").strip()
         except OSError:
             continue
         if url.startswith("https://"):
             return url
-    return ""
+
+    return PERMANENT_URL
 
 
 def load_json(name, default):
