@@ -80,15 +80,17 @@ else:
     check("the built page sets MAKGEO_LIVE_URL", bool(m))
     if m:
         url = m.group(1)
-        check("the built address is an https URL",
-              url.startswith("https://"), url)
-        # The whole point: the address must actually answer. On a CI
-        # runner there is no tunnel, so the address is empty - the source
-        # checks above are the ones that matter there.
         if not url:
-            print("  --   no live address on this machine; "
-                  "skipping the fetch check")
+            # No tunnel on this machine - a CI runner, for instance. The
+            # page then says "ask on the live site" with no link, which
+            # is honest rather than wrong. The source checks above are
+            # the ones that matter here.
+            print("  --   no live address on this machine; the page will "
+                  "point at the live site without a link")
         else:
+            check("the built address is an https URL",
+                  url.startswith("https://"), url)
+            # The whole point: the address must actually answer.
             import urllib.error
             import urllib.request
             req = urllib.request.Request(
