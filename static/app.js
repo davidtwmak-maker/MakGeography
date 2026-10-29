@@ -13,6 +13,15 @@
   const STATIC = window.MAKGEO_STATIC === true;
   const STATIC_ROOT = "";
 
+  // The live site's address, used by the static build to point a student
+  // at the server that can actually answer a question. The static build
+  // injects it as window.MAKGEO_LIVE_URL.
+  //
+  // It is read at build time, never hardcoded: a Cloudflare quick tunnel
+  // changes its hostname on every restart, and a hardcoded one goes dead
+  // without anyone noticing.
+  const LIVE_URL = window.MAKGEO_LIVE_URL || "";
+
   // A fetch that reads the static JSON in the static build, and the API
   // on the live server.
   //
@@ -241,10 +250,12 @@
     btn.disabled = true;
     try {
       if (STATIC) {
+        const where = LIVE_URL
+          ? ` <a href="${esc(LIVE_URL)}">Open MakGeography</a> and ask there`
+          : " Ask on the live site";
         pending.querySelector(".body").innerHTML =
-          `<span class="loading">Asking a question needs the live site. ` +
-          `<a href="https://sunday-answer-prepare-companies.trycloudflare.com">Open MakGeography</a> ` +
-          `and ask there &mdash; this page is the static copy.</span>`;
+          `<span class="loading">Asking a question needs the live site.` +
+          `${where} &mdash; this page is the static copy.</span>`;
         btn.disabled = false;
         return;
       }
@@ -649,9 +660,11 @@
     $("#essayOut").innerHTML = '<div class="card"><span class="loading">Building the question, the mark scheme and the exemplar answer from the notes…</span></div>';
     try {
       if (STATIC) {
-        $("#essayOut").innerHTML = `<div class="card"><span class="loading">Writing an essay needs the live site. ` +
-          `<a href="https://sunday-answer-prepare-companies.trycloudflare.com">Open MakGeography</a> ` +
-          `and generate it there &mdash; this page is the static copy.</span></div>`;
+        const where = LIVE_URL
+          ? ` <a href="${esc(LIVE_URL)}">Open MakGeography</a> and generate it there`
+          : " Generate it on the live site";
+        $("#essayOut").innerHTML = `<div class="card"><span class="loading">Writing an essay needs the live site.` +
+          `${where} &mdash; this page is the static copy.</span></div>`;
         btn.disabled = false;
         btn.textContent = "Generate";
         return;

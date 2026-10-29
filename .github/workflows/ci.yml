@@ -78,6 +78,25 @@ jobs:
         # The helper is JavaScript, so it is checked in JavaScriptCore.
         run: python scripts/test_frontend_json.py
 
+      - name: The static build points at a live address
+        # The Pages copy cannot answer a question; it links to the live
+        # site instead. That link used to be a hostname in the source, and
+        # it went dead when the tunnel changed its hostname.
+        #
+        # The build needs the live server's read-only JSON, so it runs
+        # against a local server started here. The tunnel address is not
+        # available on the runner, so the check that the address answers
+        # is skipped there and the source checks still run.
+        run: |
+          python -m uvicorn app.main:app --port 8781 &
+          for i in $(seq 1 30); do
+            curl -sf http://127.0.0.1:8781/ >/dev/null && break
+            sleep 1
+          done
+          python scripts/build_static_site.py
+          python scripts/test_static_live_url.py
+          kill %1 || true
+
       - name: The roster and the activity log are not in the repository
         run: |
           # They hold the students' names and what they asked.

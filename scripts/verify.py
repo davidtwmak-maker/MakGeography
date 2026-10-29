@@ -373,4 +373,20 @@ assert _front.count("readJSON(r,") >= 2, (
 )
 print("Front end: every JSON reply is read through readJSON, not r.json()")
 
+# 13. The static copy must not carry a dead link to the live site.
+#
+# The Pages copy cannot answer a question, so it links to the live site.
+# That link used to be a tunnel hostname written into the source, and it
+# went dead the moment the tunnel changed its hostname - with nothing on
+# the page to show that it had.
+_src = (root / "static" / "app.js").read_text(encoding="utf-8")
+assert "trycloudflare.com" not in _src, (
+    "a tunnel hostname is written into the front end - it will go dead on "
+    "the next tunnel restart"
+)
+assert "window.MAKGEO_LIVE_URL" in _src, (
+    "the front end does not read the live address that the build injects"
+)
+print("Static copy: the live address is injected at build time, not hardcoded")
+
 print("\nALL CHECKS PASSED")

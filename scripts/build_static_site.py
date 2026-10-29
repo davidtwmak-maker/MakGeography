@@ -40,6 +40,31 @@ OUT = ROOT / "site"
 LIVE = "http://127.0.0.1:8781"
 
 
+def read_live_url() -> str:
+    """The address of the live site, for the static copy to point at.
+
+    The static build is published to GitHub Pages, which cannot answer a
+    question. The Ask and essay panels there say so and link here.
+
+    The Cloudflare quick tunnel is preferred: it serves the site with no
+    warning page. The Serveo address is permanent but shows an interstitial
+    to browsers, so it is the fallback. Neither address is written into
+    the source - both are read from the files the tunnel scripts keep
+    current, because a hardcoded hostname goes dead on the next restart.
+    """
+    home = pathlib.Path.home()
+    cf = home / ".hermes" / "logs" / "makgeo-url-cf.txt"
+    serveo = home / ".hermes" / "logs" / "makgeo-url.txt"
+    for path in (cf, serveo):
+        try:
+            url = path.read_text(encoding="utf-8").strip()
+        except OSError:
+            continue
+        if url.startswith("https://"):
+            return url
+    return ""
+
+
 def load_json(name, default):
     p = DATA / name
     if not p.is_file():
@@ -220,9 +245,17 @@ def main():
 
     # A marker the script reads to know it is running from a static build.
     # It must come BEFORE app.js, because app.js reads it on load.
+    #
+    # The live address is injected here, not hardcoded in app.js: a
+    # Cloudflare quick tunnel changes its hostname on every restart, and a
+    # hardcoded one goes dead without anyone noticing. The Serveo address
+    # is preferred - it is permanent - but it shows a warning page to
+    # browsers, so the Cloudflare one is used when it is available.
+    live_url = read_live_url()
     html = html.replace(
         '<script src="static/app.js"></script>',
-        '<script>window.MAKGEO_STATIC = true;</script>\n'
+        '<script>window.MAKGEO_STATIC = true;\n'
+        f'window.MAKGEO_LIVE_URL = {json.dumps(live_url)};</script>\n'
         '<script src="static/app.js"></script>')
     (OUT / "index.html").write_text(html, encoding="utf-8")
 
