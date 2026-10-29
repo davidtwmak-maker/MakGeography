@@ -241,14 +241,56 @@ fi
 # every line twice, and the URL watcher below greps that file.
 echo "starting the Cloudflare tunnel for the MakGeography app"
 
-"$CLOUDFLARED" tunnel --no-autoupdate --url "http://127.0.0.1:$PORT" \
+# The metrics port.
+#
+# cloudflared listens on 127.0.0.1:20242 by default. Two tunnels on one
+# machine - the launchd one and one started by hand to test something -
+# collide on that port, and the loser gets a hostname it never owns.
+# Its registration is then rejected ("Tunnel not found") and it retries
+# forever while the process stays alive, so launchd never notices and the
+# address is dead. Each tunnel gets its own port.
+METRICS_PORT="${MAKGEO_CF_METRICS_PORT:-20242}"
+
+"$CLOUDFLARED" tunnel --no-autoupdate \
+  --metrics "127.0.0.1:${METRICS_PORT}" \
+  --url "http://127.0.0.1:$PORT" \
   2>&1 &
 CF_PID=$!
 
+# The URL for THIS episode of the tunnel.
+#
+# It is read from the log from the point where this run started, not from
+# the whole file. A quick tunnel gets a new hostname every time, so the
+# last hostname in the log belongs to the PREVIOUS episode - reading it
+# would hand out a dead address and the watchdog would then restart the
+# tunnel in a loop, never reaching a working one.
+LOG_START="$(wc -c < "$LOG" 2>/dev/null || echo 0)"
+
 while kill -0 "$CF_PID" 2>/dev/null; do
-  url="$(grep -oE 'https://[a-zA-Z0-9-]+\.trycloudflare\.com' "$LOG" 2>/dev/null | tail -1)"
+  url="$(tail -c "+$((LOG_START + 1))" "$LOG" 2>/dev/null \
+    | grep -oE 'https://[a-zA-Z0-9-]+\.trycloudflare\.com' | tail -1)"
   if [ -n "$url" ]; then
     echo "$url" > "$URL_FILE"
+
+    # The watchdog matters: cloudflared can lose its tunnel registration
+    # ("Unauthorized: Tunnel not found") and then sit there retrying
+    # forever. The process stays alive, so launchd never notices, and the
+    # hostname stops resolving - the tunnel looks up in the process table
+    # and the address is dead. So the URL is checked, not just the process.
+    if [ $((SECONDS % 300)) -lt 4 ]; then
+      code="$(curl -s -o /dev/null -w '%{http_code}' --max-time 20 "$url" 2>/dev/null)"
+      # curl prints 000 when it cannot reach the host; treat anything
+      # that is not 200 as a dead tunnel.
+      if [ "$code" != "200" ]; then
+        echo "the Cloudflare tunnel at $url stopped answering (HTTP $code); restarting it"
+        # Clear the URL file first. Otherwise the next start reads this
+        # same dead hostname from the log, finds it is not answering, and
+        # restarts again - a loop that never reaches a working tunnel.
+        : > "$URL_FILE"
+        kill "$CF_PID" 2>/dev/null
+        break
+      fi
+    fi
   fi
   sleep 3
 done
@@ -293,10 +335,37 @@ fi
   2>&1 | tee -a "$LOG" &
 CF_PID=$!
 
+# The URL for THIS episode of the tunnel. The log was emptied above, so
+# everything in it belongs to this run - but the URL is still read from
+# the point where this run started, so a later append of an old hostname
+# cannot make the watchdog restart a healthy tunnel.
+LOG_START="$(wc -c < "$LOG" 2>/dev/null || echo 0)"
+
 while kill -0 "$CF_PID" 2>/dev/null; do
-  url="$(grep -oE 'https://[a-zA-Z0-9-]+\.trycloudflare\.com' "$LOG" 2>/dev/null | tail -1)"
+  url="$(tail -c "+$((LOG_START + 1))" "$LOG" 2>/dev/null \
+    | grep -oE 'https://[a-zA-Z0-9-]+\.trycloudflare\.com' | tail -1)"
   if [ -n "$url" ]; then
     echo "$url" > "$URL_FILE"
+
+    # The watchdog matters: cloudflared can lose its tunnel registration
+    # ("Unauthorized: Tunnel not found") and then sit there retrying
+    # forever. The process stays alive, so launchd never notices, and the
+    # hostname stops resolving - the tunnel looks up in the process table
+    # and the address is dead. So the URL is checked, not just the process.
+    if [ $((SECONDS % 300)) -lt 4 ]; then
+      code="$(curl -s -o /dev/null -w '%{http_code}' --max-time 20 "$url" 2>/dev/null)"
+      # curl prints 000 when it cannot reach the host; treat anything
+      # that is not 200 as a dead tunnel.
+      if [ "$code" != "200" ]; then
+        echo "the Cloudflare tunnel at $url stopped answering (HTTP $code); restarting it"
+        # Clear the URL file first. Otherwise the next start reads this
+        # same dead hostname from the log, finds it is not answering, and
+        # restarts again - a loop that never reaches a working tunnel.
+        : > "$URL_FILE"
+        kill "$CF_PID" 2>/dev/null
+        break
+      fi
+    fi
   fi
   sleep 3
 done
