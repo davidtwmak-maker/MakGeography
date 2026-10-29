@@ -296,11 +296,28 @@ https://makgeography.serveousercontent.com
 
 That address is **permanent**. Serveo reserves the subdomain against the
 SSH key at `~/.ssh/serveo_rsa`, so the tunnel can restart and the URL is
-unchanged. A Cloudflare quick tunnel is the fallback when there is no
-Serveo key — it needs no account, but its hostname is random and changes
-on every restart, so it is not an address to hand to students.
+unchanged.
 
-The current URL is written to `~/.hermes/logs/makgeo-url.txt`.
+**Serveo now shows a warning interstitial to real browsers.** A student
+opening the address sees a "Serveo - Warning" page and a "Continue to
+Site" button instead of the site — the interstitial is served by
+Serveo's edge, before the request reaches the app, so the app cannot
+redirect around it. Clicking through once sets a cookie and the site
+works after that, but the first visit looks broken.
+
+So a **second tunnel runs alongside it**: a Cloudflare quick tunnel,
+which serves the site directly with no interstitial. Its hostname is
+random and changes on every restart, so it is not an address to keep —
+it is the one to hand to a student who needs the site right now:
+
+```bash
+cat ~/.hermes/logs/makgeo-url-cf.txt
+```
+
+The Serveo address remains the permanent one, written to
+`~/.hermes/logs/makgeo-url.txt`. For an address that is both permanent
+**and** free of interstitials, deploy the container (see `render.yaml`)
+rather than tunnelling from the teacher's Mac.
 
 ### What is and is not public
 

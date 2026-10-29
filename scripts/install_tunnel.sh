@@ -32,8 +32,11 @@ set -uo pipefail
 PORT="${MAKGEO_PORT:-8781}"
 LOG_DIR="$HOME/.hermes/logs"
 PLIST="$HOME/Library/LaunchAgents/com.makgeo.tunnel.plist"
+PLIST_CF="$HOME/Library/LaunchAgents/com.makgeo.tunnel.cf.plist"
 URL_FILE="$LOG_DIR/makgeo-url.txt"
+URL_FILE_CF="$LOG_DIR/makgeo-url-cf.txt"
 RUNNER="$HOME/.hermes/scripts/makgeo_tunnel_run.sh"
+RUNNER_CF="$HOME/.hermes/scripts/makgeo_tunnel_cf_run.sh"
 TOOLS_BIN="$HOME/.hermes/tools/bin"
 CLOUDFLARED="$TOOLS_BIN/cloudflared"
 SERVEO_KEY="${MAKGEO_SERVEO_KEY:-$HOME/.ssh/serveo_rsa}"
@@ -86,6 +89,37 @@ write_plist() {
 PLIST_EOF
   sed -i '' "s|__HOME__|$HOME_ESC|g; s|__LOG_DIR__|$LOG_ESC|g; s|__PATH__|$PATH_ESC|g; s|__PORT__|$PORT|g; s|__SUBDOMAIN__|$SUBDOMAIN|g" "$PLIST"
   plutil -lint "$PLIST" >/dev/null || { echo "Plist malformed"; exit 1; }
+}
+
+# The Cloudflare tunnel gets its own job, so it can run alongside the
+# Serveo one. Its address is the clean one; Serveo's is the permanent one.
+write_plist_cf() {
+  cat > "$PLIST_CF" <<PLIST_EOF
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.makgeo.tunnel.cf</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>__HOME__/.hermes/scripts/makgeo_tunnel_cf_run.sh</string>
+  </array>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key><string>__PATH__</string>
+    <key>HOME</key><string>__HOME__</string>
+    <key>MAKGEO_PORT</key><string>__PORT__</string>
+  </dict>
+  <key>RunAtLoad</key><true/>
+  <key>KeepAlive</key><true/>
+  <key>StandardOutPath</key><string>__LOG_DIR__/makgeo-tunnel-cf.log</string>
+  <key>StandardErrorPath</key><string>__LOG_DIR__/makgeo-tunnel-cf.log</string>
+</dict>
+</plist>
+PLIST_EOF
+  sed -i '' "s|__HOME__|$HOME_ESC|g; s|__LOG_DIR__|$LOG_ESC|g; s|__PATH__|$PATH_ESC|g; s|__PORT__|$PORT|g" "$PLIST_CF"
+  plutil -lint "$PLIST_CF" >/dev/null || { echo "Plist malformed"; exit 1; }
 }
 
 # The Serveo runner. The subdomain is reserved against the key, so the
@@ -158,6 +192,69 @@ RUN_EOF
 }
 
 install_cloudflared() {
+  cat > "$RUNNER_CF" <<'RUN_EOF'
+#!/bin/bash
+# Public tunnel for MakGeography, using Cloudflare's quick tunnel.
+#
+# This one runs ALONGSIDE the Serveo tunnel, not instead of it.
+#
+# Serveo serves a warning interstitial to real browsers on an HTTP
+# tunnel: a student opening the site saw "Serveo - Warning" and a
+# "Continue to Site" button instead of the site. The interstitial is
+# served by Serveo's edge before the request reaches the app, so the app
+# cannot redirect around it, and a fetch() to any path gets the same
+# HTML page - which is what broke the Ask panel.
+#
+# The Cloudflare quick tunnel serves the site directly, with no
+# interstitial. The hostname is random and changes on every restart, so
+# the current one is written to a file that survives the restart -
+# otherwise a restarted tunnel leaves a dead URL in the student's hands.
+#
+# The Serveo address stays the permanent one; this is the clean one to
+# hand to a student who needs the site right now.
+set -uo pipefail
+PORT="${MAKGEO_PORT:-8781}"
+URL_FILE="$HOME/.hermes/logs/makgeo-url-cf.txt"
+LOG="$HOME/.hermes/logs/makgeo-tunnel-cf.log"
+CLOUDFLARED="$HOME/.hermes/tools/bin/cloudflared"
+
+mkdir -p "$HOME/.hermes/logs" "$HOME/.hermes/tools/bin"
+
+if [ ! -x "$CLOUDFLARED" ]; then
+  echo "cloudflared is not installed at $CLOUDFLARED" | tee -a "$LOG"
+  exit 1
+fi
+
+# launchd already captures stdout and stderr to the tunnel log, so these
+# messages are written with a plain echo. Using tee as well would write
+# every line twice, and the URL watcher below greps that file.
+echo "starting the Cloudflare tunnel for the MakGeography app"
+
+"$CLOUDFLARED" tunnel --no-autoupdate --url "http://127.0.0.1:$PORT" \
+  2>&1 &
+CF_PID=$!
+
+while kill -0 "$CF_PID" 2>/dev/null; do
+  url="$(grep -oE 'https://[a-zA-Z0-9-]+\.trycloudflare\.com' "$LOG" 2>/dev/null | tail -1)"
+  if [ -n "$url" ]; then
+    echo "$url" > "$URL_FILE"
+  fi
+  sleep 3
+done
+
+# cloudflared exited - let launchd restart us.
+wait "$CF_PID"
+exit $?
+RUN_EOF
+  chmod +x "$RUNNER_CF"
+  write_plist_cf
+  launchctl bootout "gui/$(id -u)/com.makgeo.tunnel.cf" 2>/dev/null || true
+  launchctl bootstrap "gui/$(id -u)" "$PLIST_CF" 2>/dev/null \
+    || launchctl load -w "$PLIST_CF"
+  wait_for_url 'https://[a-zA-Z0-9-]+\.trycloudflare\.com' "$LOG_DIR/makgeo-tunnel-cf.log"
+}
+
+install_cloudflared_as_fallback() {
   cat > "$RUNNER" <<'RUN_EOF'
 #!/bin/bash
 # Public tunnel for MakGeography, using Cloudflare's quick tunnel.
@@ -270,12 +367,25 @@ fetch_cloudflared() {
 if [ -f "$SERVEO_KEY" ]; then
   echo "Using Serveo with the reserved subdomain '$SUBDOMAIN'."
   url="$(install_serveo)"
-  if [ -z "$url" ]; then
-    echo "The Serveo tunnel did not come up. Falling back to a quick tunnel."
-    fetch_cloudflared
-    if [ -x "$CLOUDFLARED" ]; then
-      url="$(install_cloudflared)"
+
+  # Serveo also serves a warning interstitial to real browsers on an HTTP
+  # tunnel, so a second tunnel runs alongside it: a Cloudflare quick
+  # tunnel, which serves the site with no interstitial. The Serveo
+  # address stays the permanent one; the Cloudflare one is the clean one
+  # to hand to a student who needs the site right now.
+  fetch_cloudflared
+  if [ -x "$CLOUDFLARED" ]; then
+    cf_url="$(install_cloudflared)"
+    if [ -n "$cf_url" ]; then
+      echo "$cf_url" > "$URL_FILE_CF"
+      echo "Clean URL (no interstitial): $cf_url"
+      echo "Read it later with: cat $URL_FILE_CF"
     fi
+  fi
+
+  if [ -z "$url" ]; then
+    echo "The Serveo tunnel did not come up. The Cloudflare one may be up."
+    url="$cf_url"
   fi
 else
   echo "No Serveo key at $SERVEO_KEY, so the address would change on every"
@@ -283,7 +393,7 @@ else
   echo "again. Falling back to a Cloudflare quick tunnel for now."
   fetch_cloudflared
   if [ -x "$CLOUDFLARED" ]; then
-    url="$(install_cloudflared)"
+    url="$(install_cloudflared_as_fallback)"
   else
     command -v npx >/dev/null 2>&1 || {
       echo "Neither cloudflared nor npx is available."

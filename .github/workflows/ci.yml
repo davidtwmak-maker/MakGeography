@@ -71,6 +71,13 @@ jobs:
       - name: Students sign in with their own SID
         run: python scripts/test_roster.py
 
+      - name: The front end reads a JSON reply without a raw Safari error
+        # Safari throws "The string did not match the expected pattern."
+        # when response.json() is handed a non-JSON body, which is what
+        # the Ask panel showed when the tunnel returned an error page.
+        # The helper is JavaScript, so it is checked in JavaScriptCore.
+        run: python scripts/test_frontend_json.py
+
       - name: The roster and the activity log are not in the repository
         run: |
           # They hold the students' names and what they asked.

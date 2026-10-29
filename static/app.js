@@ -175,6 +175,37 @@
     return t;
   }
 
+  // Read a JSON response, with a readable error when the body is not JSON.
+  //
+  // A response body that is not JSON - an HTML error page from the
+  // tunnel, an empty 502, a proxy's own error page - makes
+  // `response.json()` throw in Safari: "The string did not match the
+  // expected pattern." That message says nothing about the real
+  // problem, and it is what a student saw in the Ask panel when the
+  // tunnel was flapping. Reading the body as text first lets this say
+  // what actually happened.
+  async function readJSON(r, what) {
+    const text = await r.text();
+    try {
+      return JSON.parse(text);
+    } catch (e) {
+      const body = (text || "").trim();
+      if (!body) {
+        throw new Error(
+          `${what} returned an empty response (HTTP ${r.status}). ` +
+          `The site may be restarting - try again in a moment.`);
+      }
+      if (body.startsWith("<")) {
+        throw new Error(
+          `${what} returned a web page instead of an answer (HTTP ${r.status}). ` +
+          `The public tunnel may be showing an error page - try again shortly.`);
+      }
+      throw new Error(
+        `${what} returned an unreadable reply (HTTP ${r.status}): ` +
+        body.slice(0, 120));
+    }
+  }
+
   function addUser(text) {
     const d = document.createElement("div");
     d.className = "msg user";
@@ -226,7 +257,7 @@
           history,
         }),
       });
-      const d = await r.json();
+      const d = await readJSON(r, "the assistant");
       if (!r.ok) throw new Error(d.detail || d.error || "Request failed");
       if (d.error) { pending.querySelector(".body").innerHTML = `<span class="loading">${esc(d.error)}</span>`; }
       else {
@@ -637,7 +668,7 @@
             ? $("#essayCommandB").value : null,
         }),
       });
-      const d = await r.json();
+      const d = await readJSON(r, "the essay generator");
       if (!r.ok) throw new Error(d.detail || d.error || "Generation failed.");
       if (!d.ok) throw new Error(d.error || "Generation failed.");
       renderEssay(d);

@@ -356,4 +356,21 @@ _nodata = [
 assert not _nodata, f"{len(_nodata)} MC questions name a table/graph without the data"
 print(f"MC bank: {len(_mc)} questions, no dangling figure references")
 
+# 12. The front end must not hand a raw browser error to a student.
+#
+# Safari throws "The string did not match the expected pattern." when
+# response.json() is called on a body that is not JSON - which is what
+# the tunnel's error page is. The Ask panel showed that message to a
+# student instead of saying what had gone wrong.
+_front = (root / "static" / "app.js").read_text(encoding="utf-8")
+assert "async function readJSON(" in _front, "the front end has no readJSON helper"
+assert "await r.json()" not in _front, (
+    "an unguarded r.json() remains - it will throw a raw Safari error "
+    "when the body is not JSON"
+)
+assert _front.count("readJSON(r,") >= 2, (
+    "readJSON is not used by both the Ask panel and the essay generator"
+)
+print("Front end: every JSON reply is read through readJSON, not r.json()")
+
 print("\nALL CHECKS PASSED")
