@@ -570,6 +570,10 @@ def api_essay_generate(request: Request, payload: EssayPayload):
             ),
         )
 
+    # Only the 12-mark two-part essay is offered. A request for any
+    # other mark count is coerced rather than rejected: a student with
+    # the old page still cached would otherwise get an error, and the
+    # 12-mark essay is the one they wanted anyway.
     marks = payload.marks if payload.marks in essay.MARK_OPTIONS else 12
     curriculum = load_json("curriculum.json", {"electives": []})
 

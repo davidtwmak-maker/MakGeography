@@ -581,6 +581,14 @@
       `<option value="${esc(c.key)}">${esc(c.label)}</option>`).join("");
     $("#essayCommandB").innerHTML = (d.commands_b || []).map((c) =>
       `<option value="${esc(c.key)}">${esc(c.label)}</option>`).join("");
+    // The mark options come from the server, which is the authority on
+    // what the generator supports. The exam's short essay is 12 marks in
+    // two parts, so that is the only option - but the list is still read
+    // from the server rather than written here, so the two cannot drift.
+    const marks = d.marks || [12];
+    $("#essayMarks").innerHTML = marks.map((m) =>
+      `<option value="${esc(m)}">${esc(m)} marks (two parts)</option>`).join("");
+    $("#essayMarks").value = String(marks[0]);
     // Default to the pairing the recent real papers use.
     $("#essayCommandA").value = "describe_explain";
     $("#essayCommandB").value = "discuss";
@@ -589,9 +597,10 @@
     syncEssayCommands();
   }
 
-  // An 8-mark essay is a single part, so it only needs one command word.
-  // Hiding the second one keeps the form honest about what will be
-  // generated.
+  // The exam's short essay is always two parts, so both command words
+  // are always shown and the note never changes. The single-part case
+  // (8 marks) is gone: an 8-mark essay has no Part (b), so it is a
+  // different generator, not a different setting.
   function syncEssayCommands() {
     const marks = Number($("#essayMarks").value);
     const two = marks >= 12;

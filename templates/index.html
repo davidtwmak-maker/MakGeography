@@ -109,12 +109,9 @@
        Covers CP1–CP7 and EP1.</p>
     <div class="controls">
       <select id="essayElective"><option value="">Choose an elective…</option></select>
-      <select id="essayMarks">
-        <option value="12" selected>12 marks (two parts)</option>
-        <option value="8">8 marks</option>
-        <option value="16">16 marks</option>
-        <option value="20">20 marks</option>
-      </select>
+      <!-- The mark options are filled in from the server, which is the
+           authority on what the generator supports. -->
+      <select id="essayMarks"></select>
       <button class="primary" id="essayGo">Generate essay</button>
     </div>
     <div class="controls" id="essayCommands">

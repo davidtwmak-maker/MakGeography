@@ -29,9 +29,17 @@ ESSAY_ELECTIVES = ("CP1", "CP2", "CP3", "CP4", "CP5", "CP6", "CP7", "EP1")
 EXCLUDED_ELECTIVES = ("F2", "F3")
 
 # The DSE short essay is 12 marks: two paired-command parts of 6 marks
-# each. The two-part split is the format the exam actually uses, so the
-# generator offers it as the default.
-MARK_OPTIONS = (12, 8, 16, 20)
+# each. That is the format the exam actually uses, so it is the only
+# format offered.
+#
+# The 8/16/20-mark options are gone. The 8-mark essay is a single part,
+# so it has no Part (b) and no question pattern applies to it - a
+# different generator, not a different setting. The 16- and 20-mark
+# essays were never the exam's short-essay format either; the 20-mark
+# paper is the elective's long question. MARK_OPTIONS stays a tuple so
+# the API and the front end still read the list from one place, but it
+# holds the format that is actually used.
+MARK_OPTIONS = (12,)
 
 # Requests per browser per minute. An essay is a long generation, so the
 # limit is tighter than the chatbot's.

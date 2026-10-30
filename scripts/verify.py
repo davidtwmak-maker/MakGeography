@@ -410,4 +410,20 @@ assert "if part_b_marks:" in _pat_essay, (
 )
 print("Essay generator: patterns match the command pairing, and skip single-part essays")
 
+# 15. The generator offers only the 12-mark two-part essay.
+#
+# The 8-mark essay is a single part with no Part (b) and no applicable
+# question pattern; the 16- and 20-mark essays are not the exam's
+# short-essay format. The options are published by the server and read
+# from it by the front end, so the two cannot drift.
+assert "MARK_OPTIONS = (12,)" in (root / "app" / "essay.py").read_text(
+    encoding="utf-8"
+), "the generator offers mark counts other than 12"
+_front_js = (root / "static" / "app.js").read_text(encoding="utf-8")
+assert "d.marks" in _front_js, (
+    "the front end does not read the mark options from the server, so "
+    "they can drift from what the generator supports"
+)
+print("Essay generator: only the 12-mark two-part essay is offered")
+
 print("\nALL CHECKS PASSED")

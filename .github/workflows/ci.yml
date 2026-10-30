@@ -68,6 +68,11 @@ jobs:
         # 8-mark essay is single-part, so no pattern applies to it.
         run: python scripts/test_essay_patterns.py
 
+      - name: The generator offers only the 12-mark two-part essay
+        # The 8-mark essay is single-part with no Part (b); the 16- and
+        # 20-mark essays are not the exam's short-essay format.
+        run: python scripts/test_essay_marks.py
+
       - name: No MC question points at a missing figure
         run: python scripts/test_no_dangling_figures.py
 
