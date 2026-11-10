@@ -304,6 +304,9 @@ button.primary:disabled{opacity:.55;cursor:not-allowed}
 .tags{display:flex;gap:5px;flex-wrap:wrap;margin-top:7px}
 .tag{font-size:.72rem;padding:2px 8px;border-radius:999px;background:var(--bg);
   border:1px solid var(--line);color:var(--muted)}
+/* A sub-topic tag is a curriculum sub-question, so it reads as a finer
+   grain than the elective tag it sits beside. */
+.tag.sub{background:#eef4fb;border-color:#c3d6ea;color:#2b5580;font-weight:600}
 
 /* ---------- mc ---------- */
 .mc-q{border:1px solid var(--line);border-radius:var(--radius);background:var(--card);

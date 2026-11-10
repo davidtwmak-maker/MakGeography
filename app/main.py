@@ -211,6 +211,28 @@ def load_json(name: str, default):
         return default
 
 
+def news_subtopics() -> list[dict]:
+    """The curriculum sub-questions the News Corner can be filtered by.
+
+    The titles come from the curriculum itself, so the filter always names
+    the official sub-question ("CP4.2 Urban problems") and never drifts from
+    the syllabus. A sub-question with no news in the feed is still listed -
+    a student asking for it is asking a valid question, and the empty answer
+    says so rather than hiding the option.
+    """
+    curriculum = load_json("curriculum.json", {"electives": []})
+    out = []
+    for el in curriculum.get("electives", []):
+        code = el.get("code", "")
+        for q in el.get("subquestions") or []:
+            out.append({
+                "code": q.get("id", ""),
+                "elective": code,
+                "title": q.get("title", ""),
+            })
+    return out
+
+
 def password_required() -> bool:
     """True when the site is gated.
 
@@ -596,14 +618,27 @@ def api_essay_generate(request: Request, payload: EssayPayload):
 
 
 @app.get("/api/news")
-def api_news(request: Request, topic: str | None = None):
+def api_news(request: Request, topic: str | None = None,
+             subtopic: str | None = None):
     require_auth(request)
     items = load_json("news.json", [])
     want = (topic or "ALL").upper()
     if want != "ALL":
         items = [i for i in items if want in [t.upper() for t in i.get("topics", [])]]
+    # The sub-topic filter is the "focused viewing" the News Corner was
+    # specified for: a student can drill to one curriculum sub-question
+    # (CP4.2 public housing, EP1.3 weathering) rather than reading every
+    # CP4 story.
+    if subtopic:
+        want_sub = subtopic.upper()
+        items = [i for i in items
+                 if want_sub in [s.upper() for s in i.get("subtopics", [])]]
     items.sort(key=lambda i: i.get("published", ""), reverse=True)
-    return {"items": items, "updated_at": load_json("news_meta.json", {}).get("updated_at")}
+    return {
+        "items": items,
+        "updated_at": load_json("news_meta.json", {}).get("updated_at"),
+        "subtopics": news_subtopics(),
+    }
 
 
 @app.get("/api/mc")

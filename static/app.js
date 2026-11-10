@@ -715,24 +715,60 @@
   }
 
   // ---------------------------------------------------------------- news
+  // The News Corner is specified as news "tagged for focused viewing", so
+  // each item carries its elective AND the curriculum sub-questions it
+  // touches. The elective filter is the coarse one; the sub-topic filter
+  // is the focused one - a student can drill to CP4.2 public housing
+  // rather than reading every CP4 story.
   async function loadNews() {
     $("#newsList").innerHTML = '<div class="empty">Loading news…</div>';
     const t = $("#newsTopic").value;
-    const d = await getJSON("/api/news" + (t === "ALL" ? "" : "?topic=" + t));
+    const sel = $("#newsSubtopic");
+    let st = sel.value;
+    let url = "/api/news" + (t === "ALL" ? "" : "?topic=" + t);
+    if (st) url += (url.includes("?") ? "&" : "?") + "subtopic=" + encodeURIComponent(st);
+    let d = await getJSON(url);
+    // The sub-topic filter belongs to ONE elective. When the elective
+    // changes, the old sub-topic is still in the dropdown and it was being
+    // sent with the request - so switching from CP1.4 to CP2 asked for
+    // "CP2 AND CP1.4" and showed 12 items instead of 58.
+    //
+    // The server sends the whole sub-question list in every reply, so the
+    // stale filter has to be spotted by asking whether the sub-topic
+    // belongs to the SELECTED elective - not merely whether the code
+    // exists somewhere in the curriculum.
+    const ownsIt = (d) => (d.subtopics || []).some(
+      (s) => s.code === st && (t === "ALL" || s.elective === t));
+    if (st && !ownsIt(d)) {
+      st = "";
+      sel.value = "";
+      url = "/api/news" + (t === "ALL" ? "" : "?topic=" + t);
+      d = await getJSON(url);
+    }
     $("#newsUpdated").textContent = d.updated_at ? "updated " + d.updated_at : "";
     if (!d.items?.length) {
       $("#newsList").innerHTML = '<div class="empty">No news items yet — the news job has not run yet, or nothing matches this tag.</div>';
       return;
+    }
+    // Build the sub-topic dropdown from the official curriculum list the
+    // server sends, narrowed to the selected elective.
+    const subs = (d.subtopics || []).filter((s) => t === "ALL" || s.elective === t);
+    const opts = subs.map((s) => `<option value="${esc(s.code)}">${esc(s.code)} · ${esc(s.title)}</option>`).join("");
+    if (sel.dataset.built !== String(subs.length) + t) {
+      sel.innerHTML = '<option value="">All sub-topics</option>' + opts;
+      sel.dataset.built = String(subs.length) + t;
+      if (st) sel.value = st;
     }
     $("#newsList").innerHTML = '<div class="card">' + d.items.map((i) => `
       <article class="news-item">
         <h3><a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.title)}</a></h3>
         <div class="meta">${esc(i.source || "")}${i.published ? " · " + esc(i.published) : ""}</div>
         <p>${esc(i.summary || "")}</p>
-        <div class="tags">${(i.topics || []).map((x) => `<span class="tag">${esc(x)}</span>`).join("")}</div>
+        <div class="tags">${(i.topics || []).map((x) => `<span class="tag">${esc(x)}</span>`).join("")}${(i.subtopics || []).map((x) => `<span class="tag sub">${esc(x)}</span>`).join("")}</div>
       </article>`).join("") + "</div>";
   }
   $("#newsTopic").addEventListener("change", loadNews);
+  $("#newsSubtopic").addEventListener("change", loadNews);
 
   // ------------------------------------------------------------- activity
   // The teacher's own view of who has used the site. Only the teacher

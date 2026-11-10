@@ -53,6 +53,13 @@ jobs:
           print("No assessment material in the KB")
           PY
 
+      - name: The News Corner covers every elective, and CP1 is tectonic
+        # The CP1 list was full of food-security bulletins and US election
+        # stories: "landslide" in an election matched the tectonic hazards
+        # sub-topic, and the sub-topic match promotes an item into the
+        # elective. This checks the tagger, the feed and the dates.
+        run: python scripts/test_news_coverage.py
+
       - name: Retrieval smoke test
         run: python scripts/test_retrieval.py
 
