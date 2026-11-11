@@ -1,6 +1,6 @@
 {
- "updated_at": "2026-11-11 03:12 UTC",
- "n_items": 292,
+ "updated_at": "2026-11-11 04:18 UTC",
+ "n_items": 298,
  "feeds": [
   {
    "feed": "USGS Earthquakes (M4.5+, past week)",
@@ -147,7 +147,7 @@
    "url": "https://reliefweb.int/updates/rss.xml",
    "ok": true,
    "error": "",
-   "items": 4
+   "items": 5
   },
   {
    "feed": "ScienceDaily — Food & Nutrition",
@@ -273,21 +273,21 @@
    "url": "https://news.google.com/rss/search?q=(Indonesia+OR+Brazil+OR+Congo+OR+Peru+OR+Malaysia+OR+Amazon+OR+%22Central+Africa%22)+AND+(deforestation+OR+%22rainforest+management%22+OR+indigenous+OR+%22forest+community%22+OR+reforestation)+when:30d&hl=en-HK&gl=HK&ceid=HK:en",
    "ok": true,
    "error": "",
-   "items": 23
+   "items": 22
   },
   {
    "feed": "Search — urban renewal & public housing",
    "url": "https://news.google.com/rss/search?q=(Hong+Kong+OR+Singapore+OR+Seoul+OR+Tokyo)+AND+(%22urban+renewal%22+OR+%22public+housing%22+OR+%22redevelopment%22+OR+%22urban+planning%22+OR+%22master+plan%22)+when:30d&hl=en-HK&gl=HK&ceid=HK:en",
    "ok": true,
    "error": "",
-   "items": 18
+   "items": 17
   },
   {
    "feed": "Search — Hong Kong geology & landslides",
    "url": "https://news.google.com/rss/search?q=(Hong+Kong)+AND+(landslide+OR+%22slope+stability%22+OR+%22rock+formation%22+OR+%22geological+hazard%22+OR+%22reclamation+material%22)+when:60d&hl=en-HK&gl=HK&ceid=HK:en",
    "ok": true,
    "error": "",
-   "items": 6
+   "items": 7
   },
   {
    "feed": "Search — climate policy & adaptation",

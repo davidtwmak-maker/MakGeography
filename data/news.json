@@ -323,6 +323,107 @@
   "gates": {}
  },
  {
+  "title": "GIEWS Country Brief: Iran (Islamic Republic of) 10-November-2026",
+  "url": "https://reliefweb.int/report/iran-islamic-republic/giews-country-brief-iran-islamic-republic-10-november-2026",
+  "source": "ReliefWeb — Humanitarian updates",
+  "published": "2026-11-11",
+  "summary": "Country: Iran (Islamic Republic of) Source: Food and Agriculture Organization of the United Nations Please refer to the attached file. FOOD SECURITY SNAPSHOT Planting of 2027 winter cereals underway amid low water reservoir levels Near‑average cereal harvest in 2026 supported by favourable weather conditions Wheat impo",
+  "topics": [
+   "CP5"
+  ],
+  "subtopics": [],
+  "hk": false,
+  "id": "ef30fe9cedc9",
+  "gates": {
+   "CP5": [
+    "famine",
+    "hunger",
+    "food security",
+    "food insecurity",
+    "malnutrition",
+    "food shortage",
+    "food supply",
+    "undernourishment",
+    "crop",
+    "harvest",
+    "agricultur",
+    "crop failure",
+    "locust",
+    "desertification",
+    "food price",
+    "grain",
+    "wheat",
+    "maize",
+    "nutrition"
+   ]
+  }
+ },
+ {
+  "title": "Report on Climate-Sensitive and Shock-Responsive Social Protection in Uganda (October, 2026)",
+  "url": "https://reliefweb.int/report/uganda/report-climate-sensitive-and-shock-responsive-social-protection-uganda-october-2026",
+  "source": "ReliefWeb — Humanitarian updates",
+  "published": "2026-11-11",
+  "summary": "Country: Uganda Source: Government of Uganda Please refer to the attached file. Executive Summary Uganda is increasingly exposed to climate related shocks that affect livelihoods, food security and household wellbeing. At the same time, the Government has made significant progress in strengthening the social protection",
+  "topics": [
+   "CP5",
+   "CP7"
+  ],
+  "subtopics": [],
+  "hk": false,
+  "id": "bea18fe01cba",
+  "gates": {
+   "CP5": [
+    "famine",
+    "hunger",
+    "food security",
+    "food insecurity",
+    "malnutrition",
+    "food shortage",
+    "food supply",
+    "undernourishment",
+    "crop",
+    "harvest",
+    "agricultur",
+    "crop failure",
+    "locust",
+    "desertification",
+    "food price",
+    "grain",
+    "wheat",
+    "maize",
+    "nutrition"
+   ]
+  }
+ },
+ {
+  "title": "In Suriname’s Amazon, the Wayana community struggling to keep gold miners at bay",
+  "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOcDBzTElqeWlHdFVtRFJ3UmF0c0NvXzlFQUVKd2U5dDJ5eWtWZE5PR2xROGx0T1lJYkJUSkxmTEhHVS1QZm92RTQ5RVZiUi14a1d0bUFvLW9oVmxaZE1pX2ctM3ZZaG5EVTRHRm5BU3RveVhyc0ljUkJ0bUpWUGZMdkxPbDNpdGhNRk5wb3Jwa2Q1Tkpxak83T2JrNXVoUU1VSnFKQUhDNW5tUllyZjNVa1B0UUY?oc=5",
+  "source": "Search — indigenous peoples & forest livelihoods",
+  "published": "2026-11-11",
+  "summary": "In Suriname’s Amazon, the Wayana community struggling to keep gold miners at bay National Indigenous Times",
+  "topics": [
+   "CP6"
+  ],
+  "subtopics": [],
+  "hk": false,
+  "id": "8857af7354be",
+  "gates": {}
+ },
+ {
+  "title": "Minister Hong urges Seoul to speed urban housing approvals, resists legal shift",
+  "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQSFBLU3lCNWZoNG1BOE9ZNDN5WXYweG96ZUFyNHVjX1NpSG44aGFiTE56RGpnaEJ3VmZnY25mdVU0eWdHVjMwNkpDaTVrd1pSSjAwM0dzZUJHVXNGampKUFIxVV9JRW9yU21jZnVQeUFYZnIwaHRqNEpFMDhPYml2VXFsTGzSAZgBQVVfeXFMT3RHOVpuYndsSGtOT3ppRUx5RjIwT2h1Q0d3eEZiaHZDT2g2OHVHYi0xNTZIdFN5cGRTRFBKamQtbk90Z2dBZlVrVFdXYmRrYTZyWU03MEdnamdCTVJKQ2ctMlRPeVA2Rm9CRUJ4T2gteUNZb3MxUElZamlJWXhqVVNnVWMwMlVfQ2l6b0plOHA3Nm5HTVdub0o?oc=5",
+  "source": "Search — urban renewal & public housing",
+  "published": "2026-11-11",
+  "summary": "Minister Hong urges Seoul to speed urban housing approvals, resists legal shift Chosunbiz",
+  "topics": [
+   "CP4"
+  ],
+  "subtopics": [],
+  "hk": false,
+  "id": "9a85d0dabbb9",
+  "gates": {}
+ },
+ {
   "title": "Red flags hoisted at some beaches",
   "url": "https://www.info.gov.hk/gia/general/202611/10/P2026111000201.htm",
   "source": "HK Government — News in brief",
@@ -1845,6 +1946,60 @@
   ],
   "hk": false,
   "id": "9fd562eb14df",
+  "gates": {}
+ },
+ {
+  "title": "Colombia Earthquake Response Situation Report #14 | 3 November 2026",
+  "url": "https://reliefweb.int/report/colombia/colombia-earthquake-response-situation-report-14-3-november-2026",
+  "source": "ReliefWeb — Humanitarian updates",
+  "published": "2026-11-10",
+  "summary": "Country: Colombia Source: International Organization for Migration Please refer to the attached file. SITUATION OVERVIEW According to the consolidated information from the Unified Registry of Disaster-Affected People (RUD), sectoral information and the EDANPRI assessment, as of the end of October, 778,281 people have b",
+  "topics": [
+   "CP1"
+  ],
+  "subtopics": [
+   "CP1.4"
+  ],
+  "hk": false,
+  "id": "e150fba7cce6",
+  "gates": {
+   "CP5": [
+    "famine",
+    "hunger",
+    "food security",
+    "food insecurity",
+    "malnutrition",
+    "food shortage",
+    "food supply",
+    "undernourishment",
+    "crop",
+    "harvest",
+    "agricultur",
+    "crop failure",
+    "locust",
+    "desertification",
+    "food price",
+    "grain",
+    "wheat",
+    "maize",
+    "nutrition"
+   ]
+  }
+ },
+ {
+  "title": "NE Oregon has strongest earthquake in more than 30 years",
+  "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNVTA0NFVkZFRFTWJfODhYb196V244bE9laUVidFlEMDBRUlVqYmx6d05qbWFTLUctWFNOUWczcjhhQnlwQ1ZtcHZuSDdfNTM1dDZnMGs1NlFPR05iVkV4SE5sUTV4Yk1qMTF1NlZGWks1TDRtY1VncW9KSDNWdXNjdlRJZW1KS2w2VE5ibmgwM0V3b0k?oc=5",
+  "source": "Search — tectonic hazards",
+  "published": "2026-11-10",
+  "summary": "NE Oregon has strongest earthquake in more than 30 years Rogue Valley Times",
+  "topics": [
+   "CP1"
+  ],
+  "subtopics": [
+   "CP1.4"
+  ],
+  "hk": false,
+  "id": "abd44ec543ab",
   "gates": {}
  },
  {
@@ -3610,20 +3765,6 @@
   "gates": {}
  },
  {
-  "title": "Corporate commitment to net zero is stable but more needs to be done",
-  "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNWFJwanZfbXZ4MXJFOFZfNllTZXJsQzFUUlZaZ294NTJJY0tMdTFyUS0wal9TLXVCMWx6ODhWOEYwdjhCMUdyZU5OMHVScWRLVXRLSGpsRTFReVhqNGM4Y05lZnV3QThaSVU2cXpCYW80TDVGUzFjYTE4eGNkZ2NOaWU1ZW5kYVZ2R3ZyQi1BNklaRUJrMHYwUTYxZWZWdVNIRWhOT3F5cHFrRTlJeUMtVA?oc=5",
-  "source": "Search — climate policy & adaptation",
-  "published": "2026-11-06",
-  "summary": "Corporate commitment to net zero is stable but more needs to be done Sustainable Views",
-  "topics": [
-   "CP7"
-  ],
-  "subtopics": [],
-  "hk": false,
-  "id": "759d0d872bc7",
-  "gates": {}
- },
- {
   "title": "COP31 Opens in Antalya With Food Security on the Agenda",
   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPZzYwM2lKZk1rZVBtTG9Zb3o4YnVKSjhjQmpKZlBwemZDTUlWaHN0cWhrNEZXSWx2NUZlVVJ0Y2JIdTlhUmU2RGoyQURLZkV0M3d5U0ttNHl5dzVId1pLQ2ZmTWJzekZTdURrM1c4ZHpfSDI2TkVhZ2JrY0JRUXRQYXlpNXljWi1iR1dnOERxMURQU3pSZ0FlT003Ul9ZQ2Q5NXYyYUw3b2pmYnpNWkd3?oc=5",
   "source": "Search — famine & food security",
@@ -3727,6 +3868,22 @@
   ],
   "hk": false,
   "id": "3d74c8d1af33",
+  "gates": {}
+ },
+ {
+  "title": "Magnitude 6.1 quake hits off Tokyo, but no tsunami alert issued",
+  "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9mSTAwNkVDNkswUXRxYlBoZ3hMRGF3YmZfaTR0SmpOYlJvY2h0R1FUY25wWGNBRHdqRkhXalNLcmZXT2EtTVdEaU9tZlNGdm1LLXAxRlBmeUl0UEpJdjZQVFFEbXhQV2Y4VnI4Sm1qOGljX2dUd1d6NVhnYw?oc=5",
+  "source": "Search — tectonic hazards",
+  "published": "2026-11-06",
+  "summary": "Magnitude 6.1 quake hits off Tokyo, but no tsunami alert issued The Japan Times",
+  "topics": [
+   "CP1"
+  ],
+  "subtopics": [
+   "CP1.4"
+  ],
+  "hk": false,
+  "id": "8923cbcd9e1f",
   "gates": {}
  },
  {
@@ -4229,52 +4386,6 @@
   "gates": {}
  },
  {
-  "title": "Seven innovations that buy time before a tsunami reaches the shore",
-  "url": "https://www.undrr.org/news/seven-innovations-buy-time-tsunami-reaches-shore",
-  "source": "UNDRR — Disaster risk reduction",
-  "published": "2026-11-01",
-  "summary": "A tsunami warning is a race against time. A wave triggered close to shore can arrive within minutes, and when a volcano or landslide is the source, systems designed around earthquakes may register the threat late or not at all.",
-  "topics": [
-   "CP1",
-   "CP2"
-  ],
-  "subtopics": [
-   "CP1.4"
-  ],
-  "hk": false,
-  "id": "6041bfc247da",
-  "gates": {
-   "CP1": [
-    "earthquake",
-    "volcan",
-    "tsunami",
-    "tectonic hazard",
-    "seismic hazard",
-    "tsunami readiness",
-    "tsunami ready",
-    "tsunami warning",
-    "tsunami awareness",
-    "tsunami innovation",
-    "multi-hazard",
-    "hazard management"
-   ],
-   "CP2": [
-    "earthquake",
-    "volcan",
-    "tsunami",
-    "tectonic hazard",
-    "seismic hazard",
-    "tsunami readiness",
-    "tsunami ready",
-    "tsunami warning",
-    "tsunami awareness",
-    "tsunami innovation",
-    "multi-hazard",
-    "hazard management"
-   ]
-  }
- },
- {
   "title": "COP17: Key outcomes agreed at the UN biodiversity conference in Yerevan",
   "url": "https://www.carbonbrief.org/cop17-key-outcomes-agreed-at-the-un-biodiversity-conference-in-yerevan",
   "source": "CarbonBrief — Climate policy",
@@ -4364,52 +4475,6 @@
   "gates": {}
  },
  {
-  "title": "Let’s take charge of resilience. By working together we can be tsunami ready says UN Secretary-General António Guterres",
-  "url": "https://www.undrr.org/news/lets-take-charge-resilience-working-together-we-can-be-tsunami-ready-says-un-secretary-general",
-  "source": "UNDRR — Disaster risk reduction",
-  "published": "2026-10-30",
-  "summary": "On this World Tsunami Awareness Day, let’s take charge of resilience. By working together we can be tsunami ready – and save lives whenever the waves strike.",
-  "topics": [
-   "CP1",
-   "CP2"
-  ],
-  "subtopics": [
-   "CP1.4"
-  ],
-  "hk": false,
-  "id": "715ac0d02cf7",
-  "gates": {
-   "CP1": [
-    "earthquake",
-    "volcan",
-    "tsunami",
-    "tectonic hazard",
-    "seismic hazard",
-    "tsunami readiness",
-    "tsunami ready",
-    "tsunami warning",
-    "tsunami awareness",
-    "tsunami innovation",
-    "multi-hazard",
-    "hazard management"
-   ],
-   "CP2": [
-    "earthquake",
-    "volcan",
-    "tsunami",
-    "tectonic hazard",
-    "seismic hazard",
-    "tsunami readiness",
-    "tsunami ready",
-    "tsunami warning",
-    "tsunami awareness",
-    "tsunami innovation",
-    "multi-hazard",
-    "hazard management"
-   ]
-  }
- },
- {
   "title": "Gyeonggi Greenbelts Released for 76,700 Public Housing Units",
   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPbGtnZmVaMHdBNzVMU19mc18wbml5NmlpU0ZmWUJ1UWZNdzFRclpSSDhUM2NMYVB5N0JZSVEwYXBoZHh2WnBVSktDQXlqeS16WURNZVo1Y1psVU9td2J0dERuejBKaldXcGw0UVZybTlYSGNhT0YzMWEya1lBOVF4LVdBSWVWT2Yx?oc=5",
   "source": "Search — urban renewal & public housing",
@@ -4475,52 +4540,6 @@
   "gates": {}
  },
  {
-  "title": "Concept note: World Tsunami Awareness Day 2026",
-  "url": "https://www.undrr.org/publication/documents-and-publications/concept-note-world-tsunami-awareness-day-2026",
-  "source": "UNDRR — Disaster risk reduction",
-  "published": "2026-10-29",
-  "summary": "The theme of World Tsunami Awareness Day 2026, on 5 November, is “Be Tsunami Ready: Resilience Starts With You”. It builds on WTAD 2025’s emphasis on investment in preparedness by focusing on individual and community action.",
-  "topics": [
-   "CP1",
-   "CP2"
-  ],
-  "subtopics": [
-   "CP1.4"
-  ],
-  "hk": false,
-  "id": "22dbaf156ce2",
-  "gates": {
-   "CP1": [
-    "earthquake",
-    "volcan",
-    "tsunami",
-    "tectonic hazard",
-    "seismic hazard",
-    "tsunami readiness",
-    "tsunami ready",
-    "tsunami warning",
-    "tsunami awareness",
-    "tsunami innovation",
-    "multi-hazard",
-    "hazard management"
-   ],
-   "CP2": [
-    "earthquake",
-    "volcan",
-    "tsunami",
-    "tectonic hazard",
-    "seismic hazard",
-    "tsunami readiness",
-    "tsunami ready",
-    "tsunami warning",
-    "tsunami awareness",
-    "tsunami innovation",
-    "multi-hazard",
-    "hazard management"
-   ]
-  }
- },
- {
   "title": "[Photo] Minister Hong Jiseon Announces Housing Supply at New Public Housing Sites",
   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1OMG5DTnZRZklqMUt2b0h0OGNxdEVraElRQmtHZkk3dF9wMjNIR05nc2RUU1kydUlHcjQ1REJTakdpOTliNzJuT0RzVzJQVFk4NVBTOXoyM193bTVDRXd4OWxPR1o?oc=5",
   "source": "Search — urban renewal & public housing",
@@ -4583,6 +4602,23 @@
   "gates": {}
  },
  {
+  "title": "Beach erosion leaves buildings perched on of California coast",
+  "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQbHhhcmZKVldTMHpKV3M5a1B6dWdKZnlIaGdFb0NVSzc2c2x5Z3FKdUhOdmhycGpua0xWTU4tQlZEMFZJTUpDeFdRQWE5Mkw3RGxfdnNyMDZEandXYUg0c2xfbGEzazJYOHk1MUV4QnBfd2tsVUk1RnlkTlI5dkRNZWc0a192VXlzSU9UWjhn?oc=5",
+  "source": "Search — coastal & river management",
+  "published": "2026-10-27",
+  "summary": "Beach erosion leaves buildings perched on of California coast CNN",
+  "topics": [
+   "CP2",
+   "EP1"
+  ],
+  "subtopics": [
+   "CP2.2"
+  ],
+  "hk": false,
+  "id": "2fffcda8a60b",
+  "gates": {}
+ },
+ {
   "title": "Landslide victim Dr Wong helped couple realise 12-year dream of parenthood",
   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPdDJydlUyQzJ4QThmbHhNRUpDMGs0OU9McnRpdHk5WFoza3kwaW5ZcURUTWYyaE1vX2xoUU8wS0ZXMmxmNTFUUVRfeWk4Tnc2QmhWV0JBT0pWVjZNRm5PT3NaUHk1R1VUQ3BtakNfbDdXZ01BNUViU1R4X3NNNjBxQnlpMkdNeEpFQlZpNFVTSDNweTJKUFlWd0FicEZQNHdNX3Y3UmtlN0daclhvTktONWN1SdIBuAFBVV95cUxPaXdjaEZySkthNlhXbmtNLXNKOEpnalM0ZWdTVHM3UmxaTFVHTW9TWkVNUUZsX2h6YXVEbHpEQ3ByenRNZEtRaTlzVUx6RkkxVHZXVy1SRHlVb3M0a3liVmEwc0IxNDlkWmRxc3dPVnNzRU4zMzdJMmxNUk0zUEtKek5sQlNlMzFYWTdBNHlfZTlRdnJNdGI2VUtEQ3Z4dG0zM2VOOTJaaTl2UUhMaVN0ZXk2WktjdkhF?oc=5",
   "source": "Search — Hong Kong geology & slope safety",
@@ -4611,6 +4647,22 @@
   "gates": {}
  },
  {
+  "title": "A breezy, sunny day ahead with a Coastal Flood Warning in effect",
+  "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZnU1OEhDMnRlcnNOaTFlZmRxWHlJXzB3LXA2YzZCVTQ0M2kySHJhM1A3clR5Z2NqRDF2cTJYeWpFY1Nld0tEMzg1UW0xUVZSajdOVTJCRW1YMnRxUjdCNFRCQ2k4bnVZNERSZzRNSEVlQkk2Zk9BZGdtdGdrVGlQcmk0aDd0aFd2NWZQb194dVM3MWFra19FWmR5bmhlYTR3NTNadUhrRUFVOEM1Yi1iMA?oc=5",
+  "source": "Search — coastal & river management",
+  "published": "2026-10-26",
+  "summary": "A breezy, sunny day ahead with a Coastal Flood Warning in effect News4JAX",
+  "topics": [
+   "CP2"
+  ],
+  "subtopics": [
+   "CP2.1"
+  ],
+  "hk": false,
+  "id": "2aacc458311d",
+  "gates": {}
+ },
+ {
   "title": "Penang landslide kills doctor, hillside condo construction and roadworks halted",
   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPZ0xMcUMtVDhxWlgxR1FteWh4RW9wYlJuakxpVmtQWGdpeFl0RDZEZjdzVGhQVzJOUkVsRnlzNU5nYV93WXFWOEV5dVEtMzRaRHN2b2VrY3VzdUJrOW03OGNVWUp0RE5QUWNwYUU5ZXpLaWhUWExkalQ1MFp6WEs5VXQ4RFExYzJvVlQxUlhZZlkwbVAyRmtEZE1fVHJET0hvamUyZVZXU2YxZw?oc=5",
   "source": "Search — Hong Kong geology & slope safety",
@@ -4636,6 +4688,22 @@
   "subtopics": [],
   "hk": false,
   "id": "69e1f520b92f",
+  "gates": {}
+ },
+ {
+  "title": "Coastal Flood Advisory in effect as full moon approaches",
+  "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPWFloaDFZZ3ZnWGlYNlM2M3JELWNheFliWXBpVzdrNTFySEVNbGRoUkZGdmpTbGxadzM2OF9LYV9sQ1gzX1JZbVFjY00yVHZWVVVGSGlTSXVYbGpEdG5mbloxSC05emxjcy0yLTRqVWswNnpGeDZaMmd1dEtQbHhMejNpX2F2SVBoOGgxZkt5MDNRazVnWE45SFJR?oc=5",
+  "source": "Search — coastal & river management",
+  "published": "2026-10-24",
+  "summary": "Coastal Flood Advisory in effect as full moon approaches KSBW",
+  "topics": [
+   "CP2"
+  ],
+  "subtopics": [
+   "CP2.1"
+  ],
+  "hk": false,
+  "id": "ff5f81b06c49",
   "gates": {}
  },
  {

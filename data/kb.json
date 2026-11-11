@@ -1,9 +1,9 @@
 {
  "meta": {
-  "built_at": "2026-11-02T05:09:33.698564+00:00",
+  "built_at": "2026-11-11T05:29:45.296081+00:00",
   "source_root": "/Users/davidhermes/Library/Mobile Documents/iCloud~md~obsidian/Documents/MakGeography",
-  "n_docs": 149,
-  "n_chunks": 1845,
+  "n_docs": 150,
+  "n_chunks": 1859,
   "excluded": 0
  },
  "docs": [
@@ -603,7 +603,7 @@
      "n": 4
     },
     {
-     "text": "| Plate Boundary | Earthquake Examples | Location | Year | Magnitude |\n|---------------|------------------|----------|------|------------|\n| Convergent | Japan (Tohoku) | Pacific Plate subducting under Okhotsk Plate | 2011 | 9.1 |\n| Convergent | Indonesia (Sumatra) | Indian Plate subducting under Burma Plate | 2004 | 9.1-9.3 |\n| Convergent | Chile | Nazca Plate subducting under South American Plate | 1960 | 9.5 (largest ever recorded) |\n| Transform | San Andreas Fault | Pacific Plate sliding past North American Plate | 1906 | 7.9 |\n| Transform | Turkey (North Anatolian) | Anatolian Plate sliding past Eurasian Plate | 1999 | 7.6 |\n| Divergent | Iceland | Eurasian Plate separating from North American Plate | 2010 | 6.3 |",
+     "text": "| Plate Boundary | Earthquake Examples      | Location                                            | Year | Magnitude                   |\n| -------------- | ------------------------ | --------------------------------------------------- | ---- | --------------------------- |\n| Convergent | Japan (Tohoku)           | Pacific Plate subducting under Okhotsk Plate    | 2011 | 9.1                         |\n| Convergent | Indonesia (Sumatra)      | Indian Plate subducting under Burma Plate           | 2004 | 9.1-9.3                     |\n| Convergent | Chile                    | Nazca Plate subducting under South American Plate   | 1960 | 9.5 (largest ever recorded) |\n| Transform  | San Andreas Fault        | Pacific Plate sliding past North American Plate     | 1906 | 7.9                         |\n| Transform  | Turkey (North Anatolian) | Anatolian Plate sliding past Eurasian Plate         | 1999 | 7.6                         |\n| Divergent  | Iceland                  | Eurasian Plate separating from North American Plate | 2010 | 6.3                         |",
      "heading": "4.2.2 Examples at Different Plate Boundaries",
      "n": 5
     },
@@ -7032,9 +7032,24 @@
      "n": 4
     },
     {
+     "text": "Conglomerate vs sandstone vs mudstone/shale.",
+     "heading": "Why conglomerate resists denudation better than other sedimentary rocks",
+     "n": 5
+    },
+    {
+     "text": "1. Clasts are pre-selected for durability — the key point. Conglomerate pebbles are laid down by high-energy flows after long transport, so only the hardest, most weathering-resistant fragments survive: quartz, quartzite, chert, hard igneous and volcanic rock. Softer clasts (shale, limestone, marble, schist) are abraded and chemically broken down to mud before burial. The longer the transport, the greater the concentration of high-durability clasts — the finished rock is built from material already proven tough.\n2. Coarse grains, no clay minerals. Chemical weathering acts on exposed surface, and pebbles present far less surface area per unit volume than the microscopic grains of mudstone/shale. Mudstone and shale are dominated by clay minerals, which swell when wet and slake apart; conglomerate's framework contains none.\n3. Few planes of weakness. Conglomerate bedding is usually not as distinct as in sandstone, and jointing is typically sparse. Mudstone/shale is fissile — it splits along closely spaced laminations, giving water countless entry routes. Fewer planes → slower water penetration → slower denudation.\n4. Strong cementation. Clasts are bound by silica, calcite or iron-oxide cement; in clast-supported (orthoconglomerate) types the framework is competent rock, and denudation must break the cement first.\n5. Hard to entrain. Pebbles are large and heavy, so a stream needs far more energy to lift them than sand or mud (competence); fine sediment is carried away almost as soon as it weathers loose.",
+     "heading": "Why conglomerate resists denudation better than other sedimentary rocks",
+     "n": 6
+    },
+    {
+     "text": "| Rock | Why it denudes faster |\n|---|---|\n| Mudstone / shale | Clay minerals + fissile → weathers rapidly to mud, easily transported. Weakest of the three. |\n| Sandstone | Quartz grains resistant, but porous so water penetrates; joints and bedding focus weathering. Intermediate. |\n| Conglomerate | Coarse, massive, sparse joints, durable clasts. Most resistant. |\n\nCaveats — do not lose these marks:\n- The argument holds for well-cemented, clast-supported conglomerate; a poorly cemented, muddy paraconglomerate can be weak.\n- Once cement fails, large clasts are often the first to dislodge — conglomerate fails by clast release, not grain-by-grain.\n- Do not argue sediment maturity — conglomerate is texturally immature (poorly sorted). Maturity favours quartz sandstone and shale. That is a trap.\n\nHK examples: conglomerate at NE Kat O (oldest HK sedimentary rock) · sandstone at Pat Sin Leng / Tai O / Bluff Head `黃竹角` · mudstone at Tung Ping Chau.",
+     "heading": "Why conglomerate resists denudation better than other sedimentary rocks",
+     "n": 7
+    },
+    {
      "text": "1. A rock shows clear layers and a fossil. Name the rock type and the process that bound its grains. → Sedimentary; cementation (with compaction).\n2. What forms a bedding plane? → A surface between two layers, formed when deposition conditions change.\n3. Layers in the rock are bent into a curve — external or internal process? → Internal (compression/deformation after the rock formed).",
      "heading": "Self-check",
-     "n": 5
+     "n": 8
     }
    ]
   },
@@ -7871,59 +7886,64 @@
      "n": 0
     },
     {
-     "text": "| Term | Definition |\n|------|------------|\n| Intrusive igneous rock | Formed from magma cooling underground (e.g., granite) |\n| Extrusive igneous rock | Formed from lava cooling on surface (e.g., tuff, volcanic ash) |\n| Sedimentary rock | Formed from deposition of sediments in layers, then compaction and cementation (e.g., sandstone) |\n| Granite | Coarse-grained intrusive igneous rock in HK |\n| Tuff | Fine-grained extrusive igneous rock (volcanic ash compacted) |",
+     "text": "| Term                       | Definition                                                                                                                                                                                                                                                                 |\n| -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| Intrusive igneous rock | Formed from magma cooling underground (e.g., granite)                                                                                                                                                                                                                      |\n| Extrusive igneous rock | Formed from lava cooling on surface (e.g., tuff, volcanic ash)                                                                                                                                                                                                             |\n| Sedimentary rock       | Formed from deposition of sediments in layers, then compaction and cementation (e.g., sandstone)                                                                                                                                                                           |\n| Granite                | Coarse-grained intrusive igneous rock in HK                                                                                                                                                                                                                                |\n| Tuff                   | Fine-grained extrusive igneous rock (volcanic ash compacted)                                                                                                                                                                                                               |\n| Metamorphic rock           | an existing rock (called a protolith or parent rock) is transformed by high heat, intense pressure, or hot mineral-rich fluids deep within the Earth. [[1](https://www.usgs.gov/faqs/what-are-metamorphic-rocks), [2](https://en.wikipedia.org/wiki/Metamorphic_rock)] |",
      "heading": "1. Types of Rock in Hong Kong",
      "n": 1
     },
     {
-     "text": "| Term | Definition |\n|------|------------|\n| Weathering | Breakdown of rocks in situ (no transport) |\n| Physical weathering | Breakdown by mechanical forces (e.g., frost wedging, thermal expansion) |\n| Chemical weathering | Breakdown by chemical reactions (e.g., oxidation, hydrolysis) |\n| Biological weathering | Breakdown by organisms (e.g., roots, lichens) |\n| Hydrolysis | Chemical reaction with water breaking down minerals |\n| Oxidation | Reaction with oxygen causing rusting |\n| Frost wedging | Water freezes in cracks, expands and splits rock |\n| Salt crystallisation (salt weathering) | Physical weathering. Sea spray → salt enters pores → evaporation → crystals grow → pressure → grains break out. Common on exposed coastal granite (Cheung Chau, Lamma) |\n| Honeycomb weathering | The FORM produced by salt crystallisation on coastal granite — a pitted, cavernous surface of small cavities. Not a process |\n| Spheroidal weathering | The FORM produced by chemical weathering on jointed granite — rounded block, corestone at centre |",
-     "heading": "2. Weathering",
-     "n": 2
-    },
-    {
-     "text": "Form vs Process — the most common Paper 2 mistake\n| Question asks for | Answer |\n|---|---|\n| the process | the agent: salt crystallisation, thermal expansion, hydrolysis, solution |\n| the form / feature | the appearance: honeycomb, spheroidal, block disintegration, granular disintegration |\nHKEAA 2024 Paper 2 Section D Q1(c)(i) asked \"What is the physical weathering process shown?\" — most candidates wrongly answered \"honeycomb weathering\". Expected: salt crystallisation.\nException: honeycomb-like cavities in carbonate rock (Tung Chung / Tolo Harbour marble clasts) are chemical (solution / karst). Check the rock type.",
+     "text": "| Term                                       | Definition                                                                                                                                                                 |\n| ------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| Weathering                             | Breakdown of rocks in situ (no transport)                                                                                                                                  |\n| Physical weathering                    | Breakdown by mechanical forces (e.g., frost wedging ((not in HK)), thermal expansion, pressure release)                                                                    |\n| Chemical weathering                    | Breakdown by chemical reactions (e.g., oxidation, hydrolysis, carbonation, hydration)                                                                                      |\n| Biological weathering                  | Breakdown by organisms (e.g., roots, lichens)                                                                                                                              |\n| Hydrolysis                             | Chemical reaction with water breaking down minerals, for example, feldspar reacts with water and becomes Kaolin                                                            |\n| Oxidation                              | Reaction with oxygen causing rusting, eg, mica oxidized into reddish oxides                                                                                                |\n| Frost wedging                          | Water freezes in cracks, expands and splits rock                                                                                                                           |\n| Salt crystallisation (salt weathering) | Physical weathering. Sea spray → salt enters pores → evaporation → crystals grow → pressure → grains break out. Common on exposed coastal granite (Cheung Chau, Lamma) |\n| Honeycomb weathering                   | The FORM produced by salt crystallisation on coastal granite — a pitted, cavernous surface of small cavities. Not a process                                          |\n| Spheroidal weathering                  | The FORM produced by chemical weathering on jointed granite — rounded block, corestone at centre                                                                       |",
      "heading": "2. Weathering",
      "n": 3
     },
     {
-     "text": "| Term | Definition |\n|------|------------|\n| Erosion | Removal of weathered materials by agents (water, wind, ice) |\n| Transportation | Movement of eroded materials |\n| Deposition | Settling of transported materials |",
-     "heading": "3. Erosion",
+     "text": "Form vs Process — the most common Paper 2 mistake\n| Question asks for | Answer |\n|---|---|\n| the process | the agent: salt crystallisation, thermal expansion, hydrolysis, solution, pressure release |\n| the form / feature | the appearance: honeycomb, spheroidal, block disintegration, granular disintegration, sheeting joints |\nHKEAA 2024 Paper 2 Section D Q1(c)(i) asked \"What is the physical weathering process shown?\" — most candidates wrongly answered \"honeycomb weathering\". Expected: salt crystallisation.\nException: honeycomb-like cavities in carbonate rock (Tung Chung / Tolo Harbour marble clasts) are chemical (solution / karst). Check the rock type.",
+     "heading": "2. Weathering",
      "n": 4
     },
     {
-     "text": "| Term | Definition |\n|------|------------|\n| Spheroidal weathering | Rounding of rock corners due to chemical weathering |\n| Corestone | Rounded boulder formed by spheroidal weathering |\n| Tor | Exposed rock outcrop with rounded boulders |\n| Grus | Sandy residual material from weathered granite |",
-     "heading": "4. Spheroidal Weathering & Landforms",
+     "text": "| Term                  | Definition                                                                                                                                                                     |\n| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |\n| Erosion           | Removal of weathered materials by agents (water, wind, ice)                                                                                                                    |\n| Transportation    | Movement of eroded materials                                                                                                                                                   |\n| Deposition        | Settling of transported materials                                                                                                                                              |\n| Rainsplash effect     | falling raindrops hit bare soil or water surfaces, ==exerting kinetic energy that detaches soil particles and redistributes them==                                             |\n| Sheetwash erosion     | ==the uniform removal of a thin, even layer of soil or substrate from a wide area by broad, continuous sheets of running water (sheet flow) rather than concentrated streams== |\n| Cracks                | Formed when soil dried and contracts in winter                                                                                                                                 |\n| Rills→ Gully →Badland | Further widened and deepened by rainsplash and sheetwash                                                                                                                       |",
+     "heading": "3. Erosion and landforms",
      "n": 5
+    },
+    {
+     "text": "| Term                      | Definition                                                                                                                                          |\n| ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |\n| Spheroidal weathering | Rounding of rock corners due to chemical weathering                                                                                                 |\n| Corestone             | Rounded boulder formed by spheroidal weathering                                                                                                     |\n| Tor                   | Exposed rock outcrop with rounded boulders                                                                                                          |\n| Regolith              | Sandy residual material from weathered granite; Upper part: zone of completely weathered material; Low part: zone of incomplete weathered materials |",
+     "heading": "4. Spheroidal Weathering & Landforms",
+     "n": 7
     },
     {
      "text": "| Term | Definition |\n|------|------------|\n| Landslide | Downward movement of rock/soil on slope |\n| Shear stress | Force trying to cause sliding down slope |\n| Shear strength | Resistance to sliding |\n| Slope stability | Balance between shear stress and shear strength |\n| Trigger | Event that initiates landslide (e.g., heavy rain) |",
      "heading": "5. Landslide Causes",
-     "n": 6
-    },
-    {
-     "text": "| Term | Definition |\n|------|------------|\n| Pore water pressure | Pressure of water in soil pores |\n| Effective stress | Stress between soil particles (reduced by water) |\n| Lubricating effect | Water reduces friction between particles |\n| Surface of rupture | Curved surface where sliding occurs |\n| Saturated soil | Soil with all pores filled with water |\n| Antecedent rainfall | Rainfall before landslide that saturates soil |",
-     "heading": "6. Role of Water",
-     "n": 7
-    },
-    {
-     "text": "| Term | Definition |\n|------|------------|\n| Retaining wall | Concrete wall supporting slope |\n| Shotcrete | Sprayed concrete on slope surface |\n| Rock bolt/anchor | Steel bolt securing loose rock |\n| Drainage | Channels/drains to remove water |\n| Slope flattening | Reducing slope angle |\n| Vegetation | Plants with roots to bind soil |\n| Terracing | Creating steps on slope |\n| Rockfall mesh | Steel mesh to catch falling rocks |",
-     "heading": "7. Landslide Prevention Measures",
      "n": 8
+    },
+    {
+     "text": "| Term                    | Definition                                                                |\n| ----------------------- | ------------------------------------------------------------------------- |\n| Pore water pressure | Pressure of water in soil pores, water reduces friction between particles |\n| Effective stress    | Stress between soil particles (reduced by water)                          |\n| Surface of rupture  | Curved surface where sliding occurs                                       |\n| Saturated soil      | Soil with all pores filled with water                                     |\n| Antecedent rainfall | Rainfall before landslide that saturates soil                             |",
+     "heading": "6. Role of Water in landslide",
+     "n": 9
+    },
+    {
+     "text": "| Term                 | Definition                        |\n| -------------------- | --------------------------------- |\n| Retaining wall   | Concrete wall supporting slope    |\n| Shotcrete        | Sprayed concrete on slope surface |\n| Rock bolt/anchor | Steel bolt securing loose rock    |\n| Drainage         | Channels/drains to remove water   |\n| Slope flattening | Reducing slope angle              |\n| Vegetation       | Plants with roots to bind soil    |\n| Terracing        | Creating steps on slope           |\n| Rockfall mesh    | Steel mesh to catch falling rocks |",
+     "heading": "7.1 Landslide Prevention Measures",
+     "n": 10
+    },
+    {
+     "text": "| Term                 | Definition                                          |\n| -------------------- | --------------------------------------------------- |\n| Flexible barrier | To catch falling materials along slope/contour      |\n| Rigid barrier        | To catch falling materials near important land uses |\n| Checkdam             | To catch falling materials at base of valley        |",
+     "heading": "7.2 Landslide Protective Measures",
+     "n": 11
     },
     {
      "text": "| Term | Definition |\n|------|------------|\n| Bedding plane | Surface separating two sedimentary layers, formed when deposition conditions change |\n| Stratification | Layering visible in sedimentary rocks |\n| Compaction | Burial squeezes sediment: water squeezed out, grains packed tighter |\n| Cementation | Minerals precipitate in pore spaces and glue the grains together |\n| Lithification | The full process turning sediment into rock: deposition → compaction → cementation |\n| Fossil | Remains/traces of organisms preserved in sedimentary rock (not found in igneous) |",
      "heading": "8. Sedimentary structures",
-     "n": 9
+     "n": 12
     },
     {
      "text": "| Term | Definition |\n|------|------------|\n| Fault | Fracture in rock with movement of the two sides along it |\n| Fault zone | Band of fractured, crushed rock along a fault — a plane of weakness (groundwater often flows here) |\n| Joint | Crack in rock with NO movement along it |\n| Plane of weakness | Any fracture along which weathering, erosion or sliding works faster |\n| Horst | Block uplifted between two normal faults |\n| Graben | Block dropped down between two normal faults |\n| NE–SW trend | Dominant direction of Hong Kong's major faults — valleys and gorges often follow it |",
      "heading": "9. Faults & structures",
-     "n": 10
+     "n": 13
     },
     {
      "text": "| Term | Definition |\n|------|------------|\n| Geopark | Area protecting geological heritage, used for education and sustainable tourism |\n| Core zone | Most protected area — visitor access kept minimal, sightseeing from the water |\n| Special zone | Limited basic facilities — suited to education and training visits |\n| Integrated zone | Concentrates visitors with full facilities, protecting the more sensitive areas |\n| Carrying capacity | Maximum number of visitors an area can take without degrading its values |\n| Geotourism | Tourism based on geological landscapes, managed so the resource lasts |",
      "heading": "10. Geopark & geotourism",
-     "n": 11
+     "n": 14
     }
    ]
   },
@@ -9664,6 +9684,65 @@
      "text": "| Your Score | Result |\n|-----------|-------|\n| 14/20 | 70% |\n\nFocus areas:\n- Q7, Q10, Q11, Q14, Q18 - concepts need strengthening\n\nGood luck for your exam!\n加油!",
      "heading": "2526 Exam Results",
      "n": 28
+    }
+   ]
+  },
+  {
+   "id": "f2-geography-f2-geography-final-exam-skills-2526-md",
+   "title": "F2 Geography Final Exam 2526",
+   "topic": "F2",
+   "path": "F2 Geography/F2_Geography_Final_Exam_Skills_2526.md",
+   "source": "",
+   "chunks": [
+    {
+     "text": "| Section | Type | Marks |\n|---------|------|-------|\n| A | 20 Multiple-Choice | 20 |\n| B | 1 Map-Reading | 18 |\n| C | 1-2 Data-based | 16 |\n| D | 1 Essay | 6 |\n| Total | | 60 |",
+     "heading": "Paper Structure",
+     "n": 0
+    },
+    {
+     "text": "| English | 中文 | Example |\n|---------|------|---------|\n| Identify | 指出話係咩 | \"Identify the farming method...\" |\n| Match | 配對邊個 | \"Match the examples...\" |\n| Calculate | 計算 | \"Calculate the natural increase...\" |\n| Write down | 寫低 | \"Write down the grid square...\" |\n| Describe | 描述趨勢 | \"Describe the trend...\" |\n| Explain why | 解釋點解 | \"Explain why birth rate is high...\" |\n| Explain how | 解釋點樣 | \"Explain how eutrophication occurs...\" |\n| Suggest | 提議 | \"Suggest ways to increase food...\" |\n| What characteristics | 咩特徵 | \"What characteristics of...\" |\n| Suitable? | 啱唔啱？ | \"Is the location suitable? Why?\" |",
+     "heading": "Question Words (題目用詞)",
+     "n": 1
+    },
+    {
+     "text": "- Grid reference (格仔編號)\n- Direction (方向：N/S/E/W)\n- Distance calculation (距離)\n- Location analysis (位置分析)\n- Map legend interpretation (圖例)",
+     "heading": "1. Map-reading (Section B - 18 marks)",
+     "n": 2
+    },
+    {
+     "text": "- 睇相片認農業方法\n- Identify farming activities\n- Analyse environmental impacts",
+     "heading": "2. Photo interpretation (Section B/C)",
+     "n": 3
+    },
+    {
+     "text": "- Read temperature (溫度)\n- Read rainfall (雨量)\n- Calculate range (溫差/年溫差)\n- Identify climate type (氣候類型)",
+     "heading": "3. Climatic Graph (Section C)",
+     "n": 4
+    },
+    {
+     "text": "- Natural increase = Birth rate - Death rate\n- Population growth rate\n- Mean temperature\n- Annual rainfall",
+     "heading": "4. Data Calculation (Section C)",
+     "n": 5
+    },
+    {
+     "text": "- \"Increasing/decreasing trend\"\n- \"Fluctuating\"\n- \"Remained stable\"",
+     "heading": "5. Trend Description (Section C/D)",
+     "n": 6
+    },
+    {
+     "text": "- Explain + Discuss format\n- Give pros and cons\n- Use examples",
+     "heading": "7. Essay Writing (Section D - 6 marks)",
+     "n": 7
+    },
+    {
+     "text": "- \"Which of the following...\"\n- \"Match the correct pairs...\"\n- \"Refer to Figure X...\"\n- \"Based on the information...\"",
+     "heading": "Common Question Patterns (MC)",
+     "n": 8
+    },
+    {
+     "text": "1. 用.keyword搵答案\n2. Circle key words in question\n3. Check all options before choosing\n4. Section B/C - show working for calculation\n5. Section D - write in points, not paragraphs\n\nGood luck! 加油！",
+     "heading": "Exam Tips",
+     "n": 9
     }
    ]
   },
