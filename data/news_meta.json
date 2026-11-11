@@ -1,6 +1,6 @@
 {
- "updated_at": "2026-11-11 01:41 UTC",
- "n_items": 300,
+ "updated_at": "2026-11-11 03:09 UTC",
+ "n_items": 292,
  "feeds": [
   {
    "feed": "USGS Earthquakes (M4.5+, past week)",
@@ -77,7 +77,7 @@
    "url": "https://www.sciencedaily.com/rss/earth_climate/water.xml",
    "ok": true,
    "error": "",
-   "items": 11
+   "items": 12
   },
   {
    "feed": "SCMP — Business",
@@ -168,7 +168,7 @@
    "url": "https://news.mongabay.com/feed/",
    "ok": true,
    "error": "",
-   "items": 13
+   "items": 12
   },
   {
    "feed": "ScienceDaily — Forests",
@@ -194,9 +194,9 @@
   {
    "feed": "NASA Earth Observatory",
    "url": "https://earthobservatory.nasa.gov/feeds/earth-observatory.rss",
-   "ok": false,
-   "error": "The read operation timed out",
-   "items": 0
+   "ok": true,
+   "error": "",
+   "items": 11
   },
   {
    "feed": "ScienceDaily — Climate",
@@ -273,14 +273,14 @@
    "url": "https://news.google.com/rss/search?q=(Indonesia+OR+Brazil+OR+Congo+OR+Peru+OR+Malaysia+OR+Amazon+OR+%22Central+Africa%22)+AND+(deforestation+OR+%22rainforest+management%22+OR+indigenous+OR+%22forest+community%22+OR+reforestation)+when:30d&hl=en-HK&gl=HK&ceid=HK:en",
    "ok": true,
    "error": "",
-   "items": 24
+   "items": 22
   },
   {
    "feed": "Search — urban renewal & public housing",
    "url": "https://news.google.com/rss/search?q=(Hong+Kong+OR+Singapore+OR+Seoul+OR+Tokyo)+AND+(%22urban+renewal%22+OR+%22public+housing%22+OR+%22redevelopment%22+OR+%22urban+planning%22+OR+%22master+plan%22)+when:30d&hl=en-HK&gl=HK&ceid=HK:en",
    "ok": true,
    "error": "",
-   "items": 16
+   "items": 18
   },
   {
    "feed": "Search — Hong Kong geology & landslides",
@@ -301,7 +301,7 @@
    "url": "https://news.google.com/rss/search?q=(Sahel+OR+Africa+OR+Ethiopia+OR+global+OR+world)+AND+(famine+OR+%22food+security%22+OR+%22food+insecurity%22+OR+agriculture)+when:30d&hl=en-HK&gl=HK&ceid=HK:en",
    "ok": true,
    "error": "",
-   "items": 20
+   "items": 21
   },
   {
    "feed": "Search — coastal & river management",

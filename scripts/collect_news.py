@@ -694,6 +694,19 @@ def clean_date(s: str) -> str:
     return s[:10]
 
 
+def _title_key(title: str) -> str:
+    """A title reduced to the words that identify the STORY.
+
+    Two items are the same story when their titles agree once the publisher
+    suffix (" - The New York Times") and the punctuation are removed. The
+    merge uses this to recognise a story that a search feed has handed out
+    again under a NEW url - Google News rewrites the link every time, so the
+    url-keyed id changes and the story would otherwise be added again.
+    """
+    t = re.sub(r"\s+-\s+[^-]{2,40}$", "", (title or "")).strip()
+    return re.sub(r"[^a-z0-9]+", " ", t.lower()).strip()
+
+
 def collect() -> tuple[list[dict], list[dict]]:
     seen = set()
     seen_titles: set[str] = set()
@@ -931,9 +944,43 @@ def main():
         except Exception:
             existing = []
     by_id = {i["id"]: i for i in existing}
+    # A story kept by its url-id is not enough. A search feed (Google News)
+    # rewrites the link every time it serves a story, so the same headline
+    # comes back under a new id and the feed grows a second copy of it -
+    # which is how the JBS and Chile stories ended up in the feed two and
+    # four times. The title key catches those before they are added.
+    by_title = {_title_key(i.get("title", "")): i for i in existing}
+    added = 0
     for i in items:
+        tkey = _title_key(i.get("title", ""))
+        if tkey and tkey in by_title:
+            # The story is already in the feed. Keep the newer copy's tags
+            # (the re-tag pass below recomputes them anyway) but do not
+            # add a second entry.
+            continue
         by_id.setdefault(i["id"], i)
+        if tkey:
+            by_title[tkey] = i
+        added += 1
     merged = list(by_id.values())
+    # The feed may ALREADY hold duplicate titles - a bug in an earlier run
+    # let them in - so they are collapsed here, not only prevented.
+    deduped: dict[str, dict] = {}
+    for i in merged:
+        tkey = _title_key(i.get("title", ""))
+        if not tkey:
+            deduped["id:" + str(i.get("id"))] = i
+            continue
+        if tkey in deduped:
+            # Keep the copy that carries the most tags and sub-topics: it
+            # is the one that matched the most of the curriculum.
+            old = deduped[tkey]
+            if (len(i.get("topics") or []) + len(i.get("subtopics") or [])
+                    > len(old.get("topics") or []) + len(old.get("subtopics") or [])):
+                deduped[tkey] = i
+            continue
+        deduped[tkey] = i
+    merged = list(deduped.values())
     # The feed accumulates, so it also accumulates stale items. The News
     # Corner is about CURRENT events: an item older than the window is
     # dropped, and so is an item whose date could not be read.

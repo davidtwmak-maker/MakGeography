@@ -353,6 +353,23 @@ dupes = [t for t, n in Counter(it["title"] for it in items).items() if n > 1]
 check(not dupes, f"{len(dupes)} titles appear more than once, e.g. {dupes[:2]}")
 print(f"duplicate titles: {len(dupes)}")
 
+# The same story can also come back with the publisher suffix attached, so
+# the exact-title check above misses it. The story key strips the suffix.
+dupes2 = [t for t, n in
+          Counter(CN._title_key(it["title"]) for it in items).items() if n > 1]
+check(not dupes2,
+      f"{len(dupes2)} stories appear more than once under different "
+      f"publisher suffixes, e.g. {dupes2[:2]}")
+print(f"duplicate stories: {len(dupes2)}")
+
+# A search feed rewrites the link every time it serves a story, so the
+# url-keyed id changes and the merge would add the story again. The merge
+# keys on the title, so a re-collected story must not be added twice.
+check(CN._title_key("Chile puts tsunami preparedness into practice - UNDRR")
+      == CN._title_key("Chile puts tsunami preparedness into practice"),
+      "the title key does not strip the publisher suffix")
+print("title key: the publisher suffix is stripped")
+
 # ------------------------------------------ a re-tag must clear bad tags
 #
 # The feed keeps an item by id, so it keeps the tags it was given when it

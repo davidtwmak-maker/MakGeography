@@ -307,6 +307,22 @@
   "gates": {}
  },
  {
+  "title": "Truckee River flood awareness",
+  "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPcFdPSFVIZUpBVDZpS0VUeGNYbDZGNmtFWHlQdXduS0Qxd1FDTzMyUERQYXRuYllGaEJkaGhDb0xKN0lHanh1ZnRsV1hiOFBZZFV1bndKZE9WMHlEUnRhU2o4dmJCakRZcjJlMkVrbmRMOHpkTlZwMGJ1VVd0SllRTl9BLTJKSVI3bUlzNHFLWkp5OW5ReC1XeXJDZEJQVlU2VHMxUU9jQTFLUmRoNGpv?oc=5",
+  "source": "Search — coastal & river management",
+  "published": "2026-11-11",
+  "summary": "Truckee River flood awareness KTVN",
+  "topics": [
+   "CP2"
+  ],
+  "subtopics": [
+   "CP2.1"
+  ],
+  "hk": false,
+  "id": "6e05e2604b09",
+  "gates": {}
+ },
+ {
   "title": "Red flags hoisted at some beaches",
   "url": "https://www.info.gov.hk/gia/general/202611/10/P2026111000201.htm",
   "source": "HK Government — News in brief",
@@ -722,22 +738,6 @@
   "subtopics": [],
   "hk": false,
   "id": "89e42ef09c43",
-  "gates": {}
- },
- {
-  "title": "Magnitude 4.9 earthquake - 78 km ESE of Hitachi, Japan",
-  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tx96",
-  "source": "USGS Earthquakes (M4.5+, past week)",
-  "published": "2026-11-10",
-  "summary": "78 km ESE of Hitachi, Japan — magnitude 4.9",
-  "topics": [
-   "CP1"
-  ],
-  "subtopics": [
-   "CP1.4"
-  ],
-  "hk": false,
-  "id": "5ca3b273e003",
   "gates": {}
  },
  {
@@ -1266,54 +1266,6 @@
   "gates": {}
  },
  {
-  "title": "Magnitude 4.8 earthquake - 20 km SSW of Lata, Solomon Islands",
-  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000txbj",
-  "source": "USGS Earthquakes (M4.5+, past week)",
-  "published": "2026-11-10",
-  "summary": "20 km SSW of Lata, Solomon Islands — magnitude 4.8",
-  "topics": [
-   "CP1"
-  ],
-  "subtopics": [
-   "CP1.4"
-  ],
-  "hk": false,
-  "id": "2acaf5db71b8",
-  "gates": {}
- },
- {
-  "title": "Magnitude 5.2 earthquake - 140 km ESE of Labuha, Indonesia",
-  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000txbi",
-  "source": "USGS Earthquakes (M4.5+, past week)",
-  "published": "2026-11-10",
-  "summary": "140 km ESE of Labuha, Indonesia — magnitude 5.2",
-  "topics": [
-   "CP1"
-  ],
-  "subtopics": [
-   "CP1.4"
-  ],
-  "hk": false,
-  "id": "dad9e28e62df",
-  "gates": {}
- },
- {
-  "title": "Magnitude 4.7 earthquake - 111 km WNW of Höfn, Iceland",
-  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000txay",
-  "source": "USGS Earthquakes (M4.5+, past week)",
-  "published": "2026-11-10",
-  "summary": "111 km WNW of Höfn, Iceland — magnitude 4.7",
-  "topics": [
-   "CP1"
-  ],
-  "subtopics": [
-   "CP1.4"
-  ],
-  "hk": false,
-  "id": "92ebde470a79",
-  "gates": {}
- },
- {
   "title": "Greta Thunberg arrives at UN climate talks saying ‘everything we love is at stake’",
   "url": "https://news.mongabay.com/short-article/2026/11/greta-thunberg-arrives-at-un-climate-talks-saying-everything-we-love-is-at-stake/",
   "source": "Mongabay — Environment",
@@ -1418,22 +1370,6 @@
   ],
   "hk": false,
   "id": "9053fb115b93",
-  "gates": {}
- },
- {
-  "title": "Magnitude 4.7 earthquake - Java, Indonesia",
-  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000txb6",
-  "source": "USGS Earthquakes (M4.5+, past week)",
-  "published": "2026-11-10",
-  "summary": "Java, Indonesia — magnitude 4.7",
-  "topics": [
-   "CP1"
-  ],
-  "subtopics": [
-   "CP1.4"
-  ],
-  "hk": false,
-  "id": "820207112bfb",
   "gates": {}
  },
  {
@@ -1666,20 +1602,6 @@
   "gates": {}
  },
  {
-  "title": "No Global Net Zero Without India': Economist Nicki Hutley To NDTV At COP31",
-  "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOTWJnYUFocUR6U3E1WEdfWVpOZ2JMcnVRcklWTy1nQkZJcndMdHN2VWdLQm1PaU8zOHBETWhER1ZKSHBuc0M0VFV6V3NyalF1dkdwYjR6d0l3cFdZWUhDUmFNaDZYVm1WMjhkSk9hZWF2VGQxN0piZXE0TTV1SzNsS3dNN3NSRU95a2d4bHVDTlVpY0ZxNWxuT0pBdUswRURmdFhJM2dBeG5PT2t5cXdnTHY3c9IBuwFBVV95cUxQTFBQSXpOOEpLXzJGZjhWOHZUTF91SnBMeGpMOWlEYmtvVTBNUkpfUzVMaXdVVlRiNTNnYmJ3RTd2YUJtMGFreUNqQkdac2VFTXpna1ZLZFVKelh5Zzl2cHZseWpEOXUxRWxHdGNlSWtMZ1hnQUc3LTJENktRNzNMQzZkT3BYbDRjNlRNYVpEUmE0OXBRSnpUTDdTSU5sS2hCV2ZaLW1aZVBXTGRJMVZmdDhuM2dHem5HY1ow?oc=5",
-  "source": "Search — climate policy & adaptation",
-  "published": "2026-11-10",
-  "summary": "No Global Net Zero Without India': Economist Nicki Hutley To NDTV At COP31 NDTV",
-  "topics": [
-   "CP7"
-  ],
-  "subtopics": [],
-  "hk": false,
-  "id": "34b53b6e16c1",
-  "gates": {}
- },
- {
   "title": "Video | Nicki Hutley Exclusive: 'The World Can't Reach Net Zero Without India' | COP31 Summit",
   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOR245dGFmTFBqWEV2d3BqamJOSEpYQTlUSHY1UEtXdjFTZmVLczlfcmU2bG93UGFUeWs5UnJZcGhSZ2RTQnphaDJyUDBkYm04MTRFRDdsckxXNkpGc2hFSnY1a1RkZjJ1WG9TLXVUdlNwTjUyVmpyM2RZeTM4S0dVYzg3V2VqMkV6MFVhcGNnV0FKb2FFdzJVZnVhZDlfNENaZHBSQXlmMWVPSUNseGdyemdxR1RLdw?oc=5",
   "source": "Search — climate policy & adaptation",
@@ -1838,35 +1760,91 @@
   "gates": {}
  },
  {
-  "title": "Magnitude 4.9 earthquake - south of the Fiji Islands",
-  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tx7v",
-  "source": "USGS Earthquakes (M4.5+, past week)",
-  "published": "2026-11-09",
-  "summary": "south of the Fiji Islands — magnitude 4.9",
+  "title": "Global fossil fuel emissions set to fall in 2026, but total CO2 keeps rising",
+  "url": "https://www.sciencedaily.com/releases/2026/11/261109205358.htm",
+  "source": "ScienceDaily — Water",
+  "published": "2026-11-10",
+  "summary": "Global fossil fuel emissions are projected to fall in 2026 as renewable energy and electric vehicles gain ground, but rising emissions from deforestation threaten to push total CO2 emissions to a new record. Scientists warn that the world's remaining carbon budget for limiting warming to 1.5°C could be exhausted in les",
   "topics": [
-   "CP1"
+   "CP7"
   ],
   "subtopics": [
-   "CP1.4"
+   "CP7.2",
+   "CP7.5"
   ],
   "hk": false,
-  "id": "e0e98f1430ae",
+  "id": "6dcd2c5dbde1",
   "gates": {}
  },
  {
-  "title": "Magnitude 4.7 earthquake - 103 km W of Attu Station, Alaska",
-  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tx7h",
-  "source": "USGS Earthquakes (M4.5+, past week)",
-  "published": "2026-11-09",
-  "summary": "103 km W of Attu Station, Alaska — magnitude 4.7",
+  "title": "WFP Northern Nigeria - Situation Report #93 (October 2026)",
+  "url": "https://reliefweb.int/report/nigeria/wfp-northern-nigeria-situation-report-93-october-2026",
+  "source": "ReliefWeb — Humanitarian updates",
+  "published": "2026-11-10",
+  "summary": "Country: Nigeria Source: World Food Programme Please refer to the attached file. Situation Update • October harvests are expected to improve food access for households with farmland across northern Nigeria. However, insecurity, repeated displacement and access constraints continue to restrict cultivation and the moveme",
   "topics": [
-   "CP1"
+   "CP5"
   ],
   "subtopics": [
-   "CP1.4"
+   "CP5.5"
   ],
   "hk": false,
-  "id": "6b2b54559a21",
+  "id": "a0ab8f6ff67c",
+  "gates": {
+   "CP5": [
+    "famine",
+    "hunger",
+    "food security",
+    "food insecurity",
+    "malnutrition",
+    "food shortage",
+    "food supply",
+    "undernourishment",
+    "crop",
+    "harvest",
+    "agricultur",
+    "crop failure",
+    "locust",
+    "desertification",
+    "food price",
+    "grain",
+    "wheat",
+    "maize",
+    "nutrition"
+   ]
+  }
+ },
+ {
+  "title": "Hunger makes it hard to focus at school: what learners in South Africa told us about food insecurity",
+  "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNQjlOUlpxZHVVUDlwRXUzYlBtTU1EVUk5SUxuanJ0YkgwWkhORmYwZFZFT0YxQ1l0eW9BYVZxdXBPaEtiQmpYTTBBbVU4QWJBamhVVFZyR0hGT0lFOVJUWWQ4VUxuLU8xamI2MDNoVGhfdTRsN1FoYm5GUkw5b1oyTFRBejJoNXFfTkVPcmYyaHdYRjkwM2QxamtHTlh5X0xsLUtHdUxJU29OemszUGdENm12OWtUV3VBN3JESDlZWEd6MTgwT1JILW5peDhKMm8?oc=5",
+  "source": "Search — famine & food security",
+  "published": "2026-11-10",
+  "summary": "Hunger makes it hard to focus at school: what learners in South Africa told us about food insecurity The Conversation",
+  "topics": [
+   "CP5"
+  ],
+  "subtopics": [
+   "CP5.4"
+  ],
+  "hk": false,
+  "id": "37bcc1296e76",
+  "gates": {}
+ },
+ {
+  "title": "Ocean Shores declares emergency after storm damage, coastal erosion",
+  "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxPV1hvS3Jic1BGSFBoVXgwWUxidWduNmNSWGF6bTVjOE9jTEdfQjhDMnlzTjdsUXZyZnlyZC1iSkZhWUs3SGtmd1NRY09vT1lPYTJvY0hGeGNtQ3owMGU5eFoyWUFQV0g2d0N3ZXZGSmpJQnZIcC1fcmxqU2d1TWR3VHd6dFdEUzZVSzNJWFpqTVVEeENVLWxfRzAyVGJrTGhuNG1veWJNVjhwVGlKRDlvWU1KSXRSSHpDQm40ZWlyaFdEd0Y1aXRPV1hhYTlxcU9qZFp4cFRMNGs3UnZOX21manIwNmlDY1F3WU9zeVRpcVlEamhxdjUtYWljTXJOY3JXQmpFVmV6bHFiaVAtQXNBc3V1RlFXT1ppX2NjNWhR?oc=5",
+  "source": "Search — coastal & river management",
+  "published": "2026-11-10",
+  "summary": "Ocean Shores declares emergency after storm damage, coastal erosion KOMO",
+  "topics": [
+   "CP2",
+   "EP1"
+  ],
+  "subtopics": [
+   "CP2.2"
+  ],
+  "hk": false,
+  "id": "9fd562eb14df",
   "gates": {}
  },
  {
@@ -1883,22 +1861,6 @@
   ],
   "hk": false,
   "id": "56ff7f59c696",
-  "gates": {}
- },
- {
-  "title": "Magnitude 4.6 earthquake - south of the Fiji Islands",
-  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tx6l",
-  "source": "USGS Earthquakes (M4.5+, past week)",
-  "published": "2026-11-09",
-  "summary": "south of the Fiji Islands — magnitude 4.6",
-  "topics": [
-   "CP1"
-  ],
-  "subtopics": [
-   "CP1.4"
-  ],
-  "hk": false,
-  "id": "f6ab620d915d",
   "gates": {}
  },
  {
@@ -1931,38 +1893,6 @@
   ],
   "hk": false,
   "id": "ada80e00fbe0",
-  "gates": {}
- },
- {
-  "title": "Magnitude 4.8 earthquake - 183 km E of Masohi, Indonesia",
-  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tx34",
-  "source": "USGS Earthquakes (M4.5+, past week)",
-  "published": "2026-11-09",
-  "summary": "183 km E of Masohi, Indonesia — magnitude 4.8",
-  "topics": [
-   "CP1"
-  ],
-  "subtopics": [
-   "CP1.4"
-  ],
-  "hk": false,
-  "id": "e1a17bd9a6c6",
-  "gates": {}
- },
- {
-  "title": "Magnitude 5.4 earthquake - 160 km E of Masohi, Indonesia",
-  "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tx32",
-  "source": "USGS Earthquakes (M4.5+, past week)",
-  "published": "2026-11-09",
-  "summary": "160 km E of Masohi, Indonesia — magnitude 5.4",
-  "topics": [
-   "CP1"
-  ],
-  "subtopics": [
-   "CP1.4"
-  ],
-  "hk": false,
-  "id": "1ebaf694182b",
   "gates": {}
  },
  {
@@ -2705,54 +2635,6 @@
  },
  {
   "title": "Chile puts tsunami preparedness into practice as 328,000+ join a region-wide evacuation drill",
-  "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQM1hlVVZ4dXlEMEVMYnc1ZzlGYWVfbE5ISDJYc0ZZYzhwSzNOS0FMZ0VxUUFnVUxubzFTdlJRZ1pqOVJ5N3djT0xzQ3d3Uy0ybTdwX3Vsc3czREhzY0NzT1RTQkg1Zm5jWC1fVTlHbGM4QnpXOWdKZER6YXJmaUs2THNVN25mZmNtUmU2UjUtMjV5dGVQUWc1M2g3bkowT29vTFF6VmVBcjU0LVZCVzNlX1Njd09CMTg?oc=5",
-  "source": "Search — tectonic hazards",
-  "published": "2026-11-09",
-  "summary": "Chile puts tsunami preparedness into practice as 328,000+ join a region-wide evacuation drill PreventionWeb.net",
-  "topics": [
-   "CP1"
-  ],
-  "subtopics": [
-   "CP1.4"
-  ],
-  "hk": false,
-  "id": "a3ed0afb5116",
-  "gates": {}
- },
- {
-  "title": "Faceless workers and a tsunami of Post-it notes: the surreal world of Japan’s salarymen – in pictures",
-  "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNRGJ1TWdlXzJMS1ZSenBiVGgtcVRqQllqMVlZLTRMcUZHeXZka2lFa3JvVjNkTEhJLU5oaXV1dlBDMGM5dGpxR2dwcndYQTRqWnFVcnpPODNnUDh3a3NwZkJVdUJJZGZMSm9BNGVxelpWajdYbVdsTC11Zk1XRVlNNV96TEpBX1dHbEFtdUJudkhFYkZQa3hXYUdydEI1VEhaZlJfN1dCZ185d2l0VEkweXZsOV9wb2dUSUp5TURlSVZ0MDdkZmxfazdjZGR2Si10aExqbmswV3JZVHZtZGVCaUF5Z2J3Z3pUdDJfR1hFTQ?oc=5",
-  "source": "Search — tectonic hazards",
-  "published": "2026-11-09",
-  "summary": "Faceless workers and a tsunami of Post-it notes: the surreal world of Japan’s salarymen – in pictures The Guardian",
-  "topics": [
-   "CP1"
-  ],
-  "subtopics": [
-   "CP1.4"
-  ],
-  "hk": false,
-  "id": "a5804a060aa0",
-  "gates": {}
- },
- {
-  "title": "Jensen Beach residents struggle with flooding and damaged homes after historic rainfall",
-  "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPUkprYnMxUFFPZnBkT2k1RXZYelB2S0JNT2FOaVcxVUdPNE8yZ3hPRU5XX0xnSnF4Y2Q4aV9faEhrazkzTVFGbWltVE5qQXNEclBOTGMwcTJoTHhtS1hSOUR0SzhvZVR2b0lKeGItNG9nZUo0Ym9JVmFKYzdhajUzd0tYUW1tTWQ1Z3FCSTNSSmprcFpKdEdpMlBCUGc2Q2RXT0FzSWlMckp3NktwM05qQkk1WUliWkF6OW5UblloUk5FVnM?oc=5",
-  "source": "Search — coastal & river management",
-  "published": "2026-11-09",
-  "summary": "Jensen Beach residents struggle with flooding and damaged homes after historic rainfall WPBF",
-  "topics": [
-   "CP2"
-  ],
-  "subtopics": [
-   "CP2.1"
-  ],
-  "hk": false,
-  "id": "31af320539fd",
-  "gates": {}
- },
- {
-  "title": "Chile puts tsunami preparedness into practice as 328,000+ join a region-wide evacuation drill",
   "url": "https://www.undrr.org/news/chile-puts-tsunami-preparedness-practice-328000-join-region-wide-evacuation-drill",
   "source": "UNDRR — Disaster risk reduction",
   "published": "2026-11-09",
@@ -2798,6 +2680,38 @@
   }
  },
  {
+  "title": "Faceless workers and a tsunami of Post-it notes: the surreal world of Japan’s salarymen – in pictures",
+  "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNRGJ1TWdlXzJMS1ZSenBiVGgtcVRqQllqMVlZLTRMcUZHeXZka2lFa3JvVjNkTEhJLU5oaXV1dlBDMGM5dGpxR2dwcndYQTRqWnFVcnpPODNnUDh3a3NwZkJVdUJJZGZMSm9BNGVxelpWajdYbVdsTC11Zk1XRVlNNV96TEpBX1dHbEFtdUJudkhFYkZQa3hXYUdydEI1VEhaZlJfN1dCZ185d2l0VEkweXZsOV9wb2dUSUp5TURlSVZ0MDdkZmxfazdjZGR2Si10aExqbmswV3JZVHZtZGVCaUF5Z2J3Z3pUdDJfR1hFTQ?oc=5",
+  "source": "Search — tectonic hazards",
+  "published": "2026-11-09",
+  "summary": "Faceless workers and a tsunami of Post-it notes: the surreal world of Japan’s salarymen – in pictures The Guardian",
+  "topics": [
+   "CP1"
+  ],
+  "subtopics": [
+   "CP1.4"
+  ],
+  "hk": false,
+  "id": "a5804a060aa0",
+  "gates": {}
+ },
+ {
+  "title": "Jensen Beach residents struggle with flooding and damaged homes after historic rainfall",
+  "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPUkprYnMxUFFPZnBkT2k1RXZYelB2S0JNT2FOaVcxVUdPNE8yZ3hPRU5XX0xnSnF4Y2Q4aV9faEhrazkzTVFGbWltVE5qQXNEclBOTGMwcTJoTHhtS1hSOUR0SzhvZVR2b0lKeGItNG9nZUo0Ym9JVmFKYzdhajUzd0tYUW1tTWQ1Z3FCSTNSSmprcFpKdEdpMlBCUGc2Q2RXT0FzSWlMckp3NktwM05qQkk1WUliWkF6OW5UblloUk5FVnM?oc=5",
+  "source": "Search — coastal & river management",
+  "published": "2026-11-09",
+  "summary": "Jensen Beach residents struggle with flooding and damaged homes after historic rainfall WPBF",
+  "topics": [
+   "CP2"
+  ],
+  "subtopics": [
+   "CP2.1"
+  ],
+  "hk": false,
+  "id": "31af320539fd",
+  "gates": {}
+ },
+ {
   "title": "Mediterranean coastal resilience workshop advances regional dialogue on early warning, preparedness, and anticipatory action",
   "url": "https://www.undrr.org/news/mediterranean-coastal-resilience-workshop-advances-regional-dialogue-early-warning",
   "source": "UNDRR — Disaster risk reduction",
@@ -2839,22 +2753,6 @@
     "hazard management"
    ]
   }
- },
- {
-  "title": "Crystals hint at a volcano's ability to erupt",
-  "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE4xelFxSmVDbWVMT1RpajhEME1aaHZQdmE2d1RaeFNMQW9jcEx4dWRQMzRzbFNCRmJtanBSMTllY2xKZENqUnJzbmFrZHNjRExiSm5PTjQxanJfUzRXRTk0a29ndEpnUXNNbW5QbUt2VFJmeUttc1M2a0Nn?oc=5",
-  "source": "Search — tectonic hazards",
-  "published": "2026-11-09",
-  "summary": "Crystals hint at a volcano's ability to erupt Phys.org",
-  "topics": [
-   "CP1"
-  ],
-  "subtopics": [
-   "CP1.4"
-  ],
-  "hk": false,
-  "id": "e0320cf3d574",
-  "gates": {}
  },
  {
   "title": "A Decade After the Paris Agreement, How Far Has Global Climate Policy Come?",
@@ -3195,6 +3093,38 @@
   "gates": {}
  },
  {
+  "title": "Strong earthquake shakes central Japan, shattering store windows and injuring at least 22",
+  "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOWUdHZWFQdzh4U25aT0hXNC16czN1X1NmMzFMYXZleGZ6SWU1bWswdzktZ0pFbXRXQTBTajJTRGg3MFhMMzE5Q1NzMHIwU1dKMW1vUE5LTGdBU2dZa2NqN2J4TjN2aVU0ZDZaLWRaVjhqTjFqMXl3M0dRNUJrY3NSNnhB?oc=5",
+  "source": "Search — tectonic hazards",
+  "published": "2026-11-08",
+  "summary": "Strong earthquake shakes central Japan, shattering store windows and injuring at least 22 AP News",
+  "topics": [
+   "CP1"
+  ],
+  "subtopics": [
+   "CP1.4"
+  ],
+  "hk": false,
+  "id": "5f3dc5c8fd35",
+  "gates": {}
+ },
+ {
+  "title": "Mayon Volcano | Eruption, Height, History, Map, & Facts",
+  "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBhSC1wbnl0RFZ4YlI3bzVBUXFNam9ZVVZQSXFjVW91Z3ltSUh2aC16VVo0UDJOVUVDV3hQd3RfeVhDUWEzNk94ekRzdHlaZTY5UndKSTdzM1pKQQ?oc=5",
+  "source": "Search — tectonic hazards",
+  "published": "2026-11-08",
+  "summary": "Mayon Volcano | Eruption, Height, History, Map, & Facts Britannica",
+  "topics": [
+   "CP1"
+  ],
+  "subtopics": [
+   "CP1.4"
+  ],
+  "hk": false,
+  "id": "1240d7085eac",
+  "gates": {}
+ },
+ {
   "title": "These divers are killing a beautiful coral to save Brazil’s marine life",
   "url": "https://news.mongabay.com/video/2026/11/these-divers-are-killing-a-beautiful-coral-to-save-brazils-marine-life/",
   "source": "Mongabay — Environment",
@@ -3300,6 +3230,23 @@
   ],
   "hk": false,
   "id": "9af29e7871e4",
+  "gates": {}
+ },
+ {
+  "title": "US East Coast could face 'cataclysmic' megatsunami from unstable Spain volcano, scientist warns",
+  "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPNEpwbE80Mjk3NVQxWGJfSFpfWjd4Vm1wbGpPcWswdHd1WmRldGxhVVBaemZlak1pajVtQlQwaFJ5RTBOLWQ2MlljU2d3Rk9lcWlOT0NzQm9hWG1WOHk0Ty1xOFhOem1Yd2ZvOEJ5Y3dOSEJZcWlsd25CQzNMdWxhcVZkRWFST0dKcl90bHQ3cXkzTE1JVUIyOWJ1UGNPSTFoS01yQ3kxZ0I2TUpkYzU3YkVHcXBaclJLdHhkVzlwSDRFeUhDeGNKVGVpVQ?oc=5",
+  "source": "Search — tectonic hazards",
+  "published": "2026-11-07",
+  "summary": "US East Coast could face 'cataclysmic' megatsunami from unstable Spain volcano, scientist warns New York Post",
+  "topics": [
+   "CP1",
+   "CP2"
+  ],
+  "subtopics": [
+   "CP1.4"
+  ],
+  "hk": false,
+  "id": "deb95eafc7ca",
   "gates": {}
  },
  {
@@ -3767,6 +3714,22 @@
   "gates": {}
  },
  {
+  "title": "Kilauea volcano erupts: See the 660-foot lava fountain",
+  "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNZWswRjdxeEF4NWJiMDJkN2lyUHUxcl9GM3pvSnFrQWx0YXY0WGpDNjQ5Y0lwX3RjalBtSXJmc0UtVzNPQmVCZDc5NVBIWFZkT1JsQ2ZpRmN4QkRza2xKMlNqaEpja0RScGZDeGdpeDVKN2ZnRVI1YW0zeDl2N0NBb2hwWV9mY1lKX3A1ZnpZYmpVTjJ3bmJzdEFNSlBsMG5q?oc=5",
+  "source": "Search — tectonic hazards",
+  "published": "2026-11-06",
+  "summary": "Kilauea volcano erupts: See the 660-foot lava fountain The Weather Channel",
+  "topics": [
+   "CP1"
+  ],
+  "subtopics": [
+   "CP1.4"
+  ],
+  "hk": false,
+  "id": "3d74c8d1af33",
+  "gates": {}
+ },
+ {
   "title": "Regional workshop on coastal resilience: from early warning to anticipatory action in the Mediterranean",
   "url": "https://www.undrr.org/event/regional-workshop-coastal-resilience-early-warning-anticipatory-action-mediterranean",
   "source": "UNDRR — Disaster risk reduction",
@@ -3914,22 +3877,6 @@
   "gates": {}
  },
  {
-  "title": "Meat-packer JBS faces complaints filed in Europe over alleged links to illegal Amazon deforestation",
-  "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNYm9GQks3WGhUMjZjWlZmMGxGSjFaeHFvam1IT3Q1R085aEdTdWxGX21ub2puRksyRWk2VUVrQWhRMXFPdUpwVmppN2xtdEtZNTlJWkZYVnYwOXUwZGQtNmFyWVU4QVNvY19KRU9DNW5oUUpOUnU3TmNxQ3hRamE2a1NwOTBMbXRKZVBPblJxZzNoT0liSGhSbjJ3eUdFODFKeEUxdEdmanUyYkxQaXh2Yw?oc=5",
-  "source": "Search — indigenous peoples & forest livelihoods",
-  "published": "2026-11-05",
-  "summary": "Meat-packer JBS faces complaints filed in Europe over alleged links to illegal Amazon deforestation Washington Times",
-  "topics": [
-   "CP6"
-  ],
-  "subtopics": [
-   "CP6.2"
-  ],
-  "hk": false,
-  "id": "bf8faddf0912",
-  "gates": {}
- },
- {
   "title": "South Korea Land Minister Hong Ji-seon Says Seoul Housing Supply Must Be Solved With the City Government, Mobilizing Redevelopment and Yongsan",
   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1XZU16V245X1hXZzEtSlJiZlVrN21TTUEyWU44UUNXdG11QVRVZlRZUjJmU2V0VW9GTVdhSWRmWnkyX2lHeWxpaUlURlNPbFlCalNjQy15anRWdmlic1RaYVhfdXB0RUpaaEswVzk1VGFzck1Lamc?oc=5",
   "source": "Search — urban renewal & public housing",
@@ -3976,51 +3923,111 @@
   "gates": {}
  },
  {
-  "title": "Meat-packer JBS faces complaints filed in Europe over alleged links to illegal Amazon deforestation",
-  "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPTXkxNTBGQWJnTVl4WGRXTFNkbEFuelJBUE1mNjh0Yll6c196TDgzM092T3hnMlNZUm5yZFBvdTVleFRzR2xQT1drY0NiRGRtMmZsR0xQY2NRb1l3UkV1WmVJUHUwVnRqc255TXFfS19tVmJ3enFlcmk5VVQ1NWNwclBaVFJUU0U4dGxRaGNjb3FqQ3o5dUdEZ0V6aHd2WUo4eE9QV0hobUVqU0VJcmMxM2UyZHNXcUhxZktKaWFWVDdzTzhvRDFfbUZRRQ?oc=5",
-  "source": "Search — indigenous peoples & forest livelihoods",
+  "title": "Lebanon marks World Tsunami Awareness Day with national workshop on coastal resilience, science, and youth engagement",
+  "url": "https://www.undrr.org/news/lebanon-marks-world-tsunami-awareness-day-national-workshop-coastal-resilience-science-and",
+  "source": "UNDRR — Disaster risk reduction",
   "published": "2026-11-05",
-  "summary": "Meat-packer JBS faces complaints filed in Europe over alleged links to illegal Amazon deforestation WTOP News",
+  "summary": "On World Tsunami Awareness Day, more than 80 university students in Lebanon engaged in a national workshop and student competition focused on coastal resilience, early warning systems, and translating scientific knowledge into anticipatory action.",
   "topics": [
-   "CP6"
+   "CP1",
+   "CP2"
   ],
   "subtopics": [
-   "CP6.2"
+   "CP1.4"
   ],
   "hk": false,
-  "id": "7d82bfaac772",
-  "gates": {}
+  "id": "83053add0585",
+  "gates": {
+   "CP1": [
+    "earthquake",
+    "volcan",
+    "tsunami",
+    "tectonic hazard",
+    "seismic hazard",
+    "tsunami readiness",
+    "tsunami ready",
+    "tsunami warning",
+    "tsunami awareness",
+    "tsunami innovation",
+    "multi-hazard",
+    "hazard management"
+   ],
+   "CP2": [
+    "earthquake",
+    "volcan",
+    "tsunami",
+    "tectonic hazard",
+    "seismic hazard",
+    "tsunami readiness",
+    "tsunami ready",
+    "tsunami warning",
+    "tsunami awareness",
+    "tsunami innovation",
+    "multi-hazard",
+    "hazard management"
+   ]
+  }
  },
  {
-  "title": "Money laundering complaints target JBS, Barclays over profits linked to illegal deforestation - news",
-  "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNbEhtR19rZWQ2Y3dFVzJmQ2g1eGQ2SVRXNlZENjVZa0FmWVluRmYwa0ZTUXh5blB4OGNveXVfU2cwNEllSG55MjBHRThSZ1RVWTFFWnFZNlpBSEV2MUtDQ2gyRXpRdE5nLUhVZjNVOTA1anFaZ1dWbWYtMlNkWGQyTHBJc3E1dTJJTHZSdlRuWVdUTWwtWWRZZU5FMWJCamhLUFY1T2UwNldTRXM5eGNaYzR0bmhFQU9lZktpZk12X3pVRlAzR0pFRWozYkYyYkI0aDRmWnhia2E?oc=5",
-  "source": "Search — indigenous peoples & forest livelihoods",
+  "title": "On World Tsunami Awareness Day, a reminder to be Tsunami Ready, because resilience starts with you.",
+  "url": "https://www.undrr.org/news/world-tsunami-awareness-day-reminder-be-tsunami-ready-because-resilience-starts-you",
+  "source": "UNDRR — Disaster risk reduction",
   "published": "2026-11-05",
-  "summary": "Money laundering complaints target JBS, Barclays over profits linked to illegal deforestation news - Mongabay",
+  "summary": "SRSG Kamal Kishore's official statement on 2026 World Tsunami Awareness Day, which follows the theme \"Be Tsunami Ready: Resilience starts with you.\"",
   "topics": [
-   "CP6"
+   "CP1",
+   "CP2"
   ],
   "subtopics": [
-   "CP6.2"
+   "CP1.4"
   ],
   "hk": false,
-  "id": "b123796db28d",
-  "gates": {}
+  "id": "29629ea7d355",
+  "gates": {
+   "CP1": [
+    "earthquake",
+    "volcan",
+    "tsunami",
+    "tectonic hazard",
+    "seismic hazard",
+    "tsunami readiness",
+    "tsunami ready",
+    "tsunami warning",
+    "tsunami awareness",
+    "tsunami innovation",
+    "multi-hazard",
+    "hazard management"
+   ],
+   "CP2": [
+    "earthquake",
+    "volcan",
+    "tsunami",
+    "tectonic hazard",
+    "seismic hazard",
+    "tsunami readiness",
+    "tsunami ready",
+    "tsunami warning",
+    "tsunami awareness",
+    "tsunami innovation",
+    "multi-hazard",
+    "hazard management"
+   ]
+  }
  },
  {
-  "title": "Meat-packer JBS faces complaints filed in Europe over alleged links to illegal Amazon deforestation",
-  "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPQXRXaHd1THcxNHVBLWRfeHV6U3daLTFrLWkySmE2TTBIT28xV0xtWGMtdGRubFU1aTd3VXB2bGlldndqdl9ISGVmdThCcmhqaXl3Zl8tdWpPNk9fSGJSVEZRVTBrbzNkQi04MlpIcTFTVEZsdzR0WGxiNWpPOTBQT2VnTEwtSzZBanQyZXdhc2FmT3BFbWlCVVBVZXZySHZJX0poSkNWMF81Qkh1OTZqQ1BR?oc=5",
-  "source": "Search — indigenous peoples & forest livelihoods",
+  "title": "Volcano Watch — Such great heights: measuring Kīlauea’s lava fountains",
+  "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQTi1JbHNha1lNWUczWGN5amRLdTZDT3ZPbFkxcG5tQjRqTUVLVGNEVkhhVjBjSlMwNFRjTlhpVnh6OEI5dHdOdE5UU3dBYkdXYmVTV0J4ak9mSER5d3ZVZEtKcWFzbjRPYlIya3h6a1AzWllOT1Z1RUFScjQ5SjNoSnVFVHBiMmgyd0JYaEw1TnZ2T0VsMDVOdnVOc0xiYmFSQ3hLWkZneEx0c2o4RlVB?oc=5",
+  "source": "Search — tectonic hazards",
   "published": "2026-11-05",
-  "summary": "Meat-packer JBS faces complaints filed in Europe over alleged links to illegal Amazon deforestation AP News",
+  "summary": "Volcano Watch — Such great heights: measuring Kīlauea’s lava fountains USGS (.gov)",
   "topics": [
-   "CP6"
+   "CP1"
   ],
   "subtopics": [
-   "CP6.2"
+   "CP1.4"
   ],
   "hk": false,
-  "id": "45b351f269fa",
+  "id": "d20eec277cad",
   "gates": {}
  },
  {
@@ -4102,6 +4109,68 @@
   "gates": {}
  },
  {
+  "title": "UNDRR and Japan showcase tsunami innovation at Geneva policy dialogue",
+  "url": "https://www.undrr.org/news/undrr-and-japan-showcase-tsunami-innovation-geneva-policy-dialogue",
+  "source": "UNDRR — Disaster risk reduction",
+  "published": "2026-11-04",
+  "summary": "To commemorate World Tsunami Awareness Day – marked each year on 5 November – UNDRR held an innovation showcase and policy dialogue, generously hosted by the Permanent Mission of Japan in Geneva.",
+  "topics": [
+   "CP1",
+   "CP2"
+  ],
+  "subtopics": [
+   "CP1.4"
+  ],
+  "hk": false,
+  "id": "385a72e969bf",
+  "gates": {
+   "CP1": [
+    "earthquake",
+    "volcan",
+    "tsunami",
+    "tectonic hazard",
+    "seismic hazard",
+    "tsunami readiness",
+    "tsunami ready",
+    "tsunami warning",
+    "tsunami awareness",
+    "tsunami innovation",
+    "multi-hazard",
+    "hazard management"
+   ],
+   "CP2": [
+    "earthquake",
+    "volcan",
+    "tsunami",
+    "tectonic hazard",
+    "seismic hazard",
+    "tsunami readiness",
+    "tsunami ready",
+    "tsunami warning",
+    "tsunami awareness",
+    "tsunami innovation",
+    "multi-hazard",
+    "hazard management"
+   ]
+  }
+ },
+ {
+  "title": "Tsunami Warning Center History - Pacific Tsunami Warning Center (.gov)",
+  "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE11UVU4Wlg5N2V4SHBvVXMyclJ5RnRzOGNXMzE5YXhYVUQ4NFVsRTQ0VVA4bUp2NFRSQ1hXLVNBeENKVDZyOThDekhkUkwwQQ?oc=5",
+  "source": "Search — tectonic hazards",
+  "published": "2026-11-04",
+  "summary": "Tsunami Warning Center History Pacific Tsunami Warning Center (.gov)",
+  "topics": [
+   "CP1"
+  ],
+  "subtopics": [
+   "CP1.4"
+  ],
+  "hk": false,
+  "id": "af2e7bde99c1",
+  "gates": {}
+ },
+ {
   "title": "Canada, EU agree deeper cooperation on energy and cleantech supply chains",
   "url": "https://www.climatechangenews.com/2026/11/03/canada-eu-agree-deeper-cooperation-on-energy-and-cleantech-supply-chains/",
   "source": "Climate Home News",
@@ -4158,6 +4227,52 @@
   "hk": false,
   "id": "7e8e940eeb74",
   "gates": {}
+ },
+ {
+  "title": "Seven innovations that buy time before a tsunami reaches the shore",
+  "url": "https://www.undrr.org/news/seven-innovations-buy-time-tsunami-reaches-shore",
+  "source": "UNDRR — Disaster risk reduction",
+  "published": "2026-11-01",
+  "summary": "A tsunami warning is a race against time. A wave triggered close to shore can arrive within minutes, and when a volcano or landslide is the source, systems designed around earthquakes may register the threat late or not at all.",
+  "topics": [
+   "CP1",
+   "CP2"
+  ],
+  "subtopics": [
+   "CP1.4"
+  ],
+  "hk": false,
+  "id": "6041bfc247da",
+  "gates": {
+   "CP1": [
+    "earthquake",
+    "volcan",
+    "tsunami",
+    "tectonic hazard",
+    "seismic hazard",
+    "tsunami readiness",
+    "tsunami ready",
+    "tsunami warning",
+    "tsunami awareness",
+    "tsunami innovation",
+    "multi-hazard",
+    "hazard management"
+   ],
+   "CP2": [
+    "earthquake",
+    "volcan",
+    "tsunami",
+    "tectonic hazard",
+    "seismic hazard",
+    "tsunami readiness",
+    "tsunami ready",
+    "tsunami warning",
+    "tsunami awareness",
+    "tsunami innovation",
+    "multi-hazard",
+    "hazard management"
+   ]
+  }
  },
  {
   "title": "COP17: Key outcomes agreed at the UN biodiversity conference in Yerevan",
@@ -4249,6 +4364,52 @@
   "gates": {}
  },
  {
+  "title": "Let’s take charge of resilience. By working together we can be tsunami ready says UN Secretary-General António Guterres",
+  "url": "https://www.undrr.org/news/lets-take-charge-resilience-working-together-we-can-be-tsunami-ready-says-un-secretary-general",
+  "source": "UNDRR — Disaster risk reduction",
+  "published": "2026-10-30",
+  "summary": "On this World Tsunami Awareness Day, let’s take charge of resilience. By working together we can be tsunami ready – and save lives whenever the waves strike.",
+  "topics": [
+   "CP1",
+   "CP2"
+  ],
+  "subtopics": [
+   "CP1.4"
+  ],
+  "hk": false,
+  "id": "715ac0d02cf7",
+  "gates": {
+   "CP1": [
+    "earthquake",
+    "volcan",
+    "tsunami",
+    "tectonic hazard",
+    "seismic hazard",
+    "tsunami readiness",
+    "tsunami ready",
+    "tsunami warning",
+    "tsunami awareness",
+    "tsunami innovation",
+    "multi-hazard",
+    "hazard management"
+   ],
+   "CP2": [
+    "earthquake",
+    "volcan",
+    "tsunami",
+    "tectonic hazard",
+    "seismic hazard",
+    "tsunami readiness",
+    "tsunami ready",
+    "tsunami warning",
+    "tsunami awareness",
+    "tsunami innovation",
+    "multi-hazard",
+    "hazard management"
+   ]
+  }
+ },
+ {
   "title": "Gyeonggi Greenbelts Released for 76,700 Public Housing Units",
   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPbGtnZmVaMHdBNzVMU19mc18wbml5NmlpU0ZmWUJ1UWZNdzFRclpSSDhUM2NMYVB5N0JZSVEwYXBoZHh2WnBVSktDQXlqeS16WURNZVo1Y1psVU9td2J0dERuejBKaldXcGw0UVZybTlYSGNhT0YzMWEya1lBOVF4LVdBSWVWT2Yx?oc=5",
   "source": "Search — urban renewal & public housing",
@@ -4314,6 +4475,68 @@
   "gates": {}
  },
  {
+  "title": "Concept note: World Tsunami Awareness Day 2026",
+  "url": "https://www.undrr.org/publication/documents-and-publications/concept-note-world-tsunami-awareness-day-2026",
+  "source": "UNDRR — Disaster risk reduction",
+  "published": "2026-10-29",
+  "summary": "The theme of World Tsunami Awareness Day 2026, on 5 November, is “Be Tsunami Ready: Resilience Starts With You”. It builds on WTAD 2025’s emphasis on investment in preparedness by focusing on individual and community action.",
+  "topics": [
+   "CP1",
+   "CP2"
+  ],
+  "subtopics": [
+   "CP1.4"
+  ],
+  "hk": false,
+  "id": "22dbaf156ce2",
+  "gates": {
+   "CP1": [
+    "earthquake",
+    "volcan",
+    "tsunami",
+    "tectonic hazard",
+    "seismic hazard",
+    "tsunami readiness",
+    "tsunami ready",
+    "tsunami warning",
+    "tsunami awareness",
+    "tsunami innovation",
+    "multi-hazard",
+    "hazard management"
+   ],
+   "CP2": [
+    "earthquake",
+    "volcan",
+    "tsunami",
+    "tectonic hazard",
+    "seismic hazard",
+    "tsunami readiness",
+    "tsunami ready",
+    "tsunami warning",
+    "tsunami awareness",
+    "tsunami innovation",
+    "multi-hazard",
+    "hazard management"
+   ]
+  }
+ },
+ {
+  "title": "[Photo] Minister Hong Jiseon Announces Housing Supply at New Public Housing Sites",
+  "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1OMG5DTnZRZklqMUt2b0h0OGNxdEVraElRQmtHZkk3dF9wMjNIR05nc2RUU1kydUlHcjQ1REJTakdpOTliNzJuT0RzVzJQVFk4NVBTOXoyM193bTVDRXd4OWxPR1o?oc=5",
+  "source": "Search — urban renewal & public housing",
+  "published": "2026-10-29",
+  "summary": "[Photo] Minister Hong Jiseon Announces Housing Supply at New Public Housing Sites 아시아경제",
+  "topics": [
+   "CP4"
+  ],
+  "subtopics": [
+   "CP4.2"
+  ],
+  "hk": false,
+  "id": "90a96fa6f6be",
+  "gates": {}
+ },
+ {
   "title": "Coastal Flood Warnings continue, Increasing rain chances this weekend",
   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQOHBCZVVEX1RIYkQ3MXlMMG9sZXJzREoxUXEyYWtCdDIxRHBpd2xjaDM0b2VrSUYyZWpDRlVkeHczVFJiV0czRDRIOF9FeV9fSmNXTDZYMjZKSURIeUx5WWJGUnhQVmRmWUwta1ZCeFJEbUhSYzFpUU5nUHhSNll5N3RCYnhaeHRrbS1PNS0yRTFRWHhZenhjVFlWVXdIZGFVcnhoMlBqLVZNX2xTN0VBcHRwbw?oc=5",
   "source": "Search — coastal & river management",
@@ -4346,23 +4569,6 @@
   "gates": {}
  },
  {
-  "title": "Beach erosion leaves buildings perched on of California coast",
-  "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQbHhhcmZKVldTMHpKV3M5a1B6dWdKZnlIaGdFb0NVSzc2c2x5Z3FKdUhOdmhycGpua0xWTU4tQlZEMFZJTUpDeFdRQWE5Mkw3RGxfdnNyMDZEandXYUg0c2xfbGEzazJYOHk1MUV4QnBfd2tsVUk1RnlkTlI5dkRNZWc0a192VXlzSU9UWjhn?oc=5",
-  "source": "Search — coastal & river management",
-  "published": "2026-10-27",
-  "summary": "Beach erosion leaves buildings perched on of California coast CNN",
-  "topics": [
-   "CP2",
-   "EP1"
-  ],
-  "subtopics": [
-   "CP2.2"
-  ],
-  "hk": false,
-  "id": "2fffcda8a60b",
-  "gates": {}
- },
- {
   "title": "Environmentalists celebrate Lula's reelection in Brazil: 'The Amazon can breathe a sigh of relief'",
   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQUFVNMXZTOG5GVU9icVZFTEE5QXJzdE5VLTlWSUQwN2x5T1FMX2c1LUZyZzlGRnRtQ3daUVF5WDJKRG9TLXNTMWtLYUlQem12eFZRNDR3eTZLaFlrWW9WWFlBRGVPcDBvZzJiVzF5b0oxcEtpTVBUNWZZZTJPYXVFckdEdEs3TTlPa05Ec3BnOExMbHBITkh3SnlSY2ZLcV9sdFFSLVVGUmg5VG9JRjhIWjZjczYySXM3QkVORWswUkZkSWRJTUx0ctIBzgFBVV95cUxOSVhlR24zeTJTQTBpUDVHVVpkcUtRV3J2WmdJb1dRb1g2dzY5Q21sNUdNYm0xNF95NGhzZWoyMnh2eXNTSGNuSWFJUmhpcG53dU9OQlM0TUN0eHlaTWdoUGdSUXczY0RkWFpvQVJCQkdoYXVEQnA5eFFwNDNtT2EwUGVXQ2JBS1NfU0dOZVpxcndOV1dINlFEQkIwU09ETE1JcEo5N0JVbkVtb0VzYVJNbjUwbVN2TXZqRW96ZkR3aUpHVEo5WFg0b3pVQnV0UQ?oc=5",
   "source": "Search — indigenous peoples & forest livelihoods",
@@ -4374,55 +4580,6 @@
   "subtopics": [],
   "hk": false,
   "id": "30be73111d3a",
-  "gates": {}
- },
- {
-  "title": "UPDATE: Coastal flood advisory in place for Coastal Pender and Coastal Brunswick for Wednesday",
-  "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5EN0UxUGZ4LW4zUlBwcGRUR3JNMVB6QW5ObUM1bl9Rd1h3Z2lPNE1DQTRCZVl6ZkFtVjJocXp2Z2N6eHR4M0NWMG1OSGFORU52RGt4NVkzeTFEcEwxRHBHSDlKOHpBdHFmeXpCMHMzeXM0d1kxTWoxbW5RT3lEdw?oc=5",
-  "source": "Search — coastal & river management",
-  "published": "2026-10-27",
-  "summary": "UPDATE: Coastal flood advisory in place for Coastal Pender and Coastal Brunswick for Wednesday Charlotte Observer",
-  "topics": [
-   "CP2"
-  ],
-  "subtopics": [
-   "CP2.1"
-  ],
-  "hk": false,
-  "id": "fd33f853f2a3",
-  "gates": {}
- },
- {
-  "title": "A breezy, sunny day ahead with a Coastal Flood Warning in effect",
-  "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZnU1OEhDMnRlcnNOaTFlZmRxWHlJXzB3LXA2YzZCVTQ0M2kySHJhM1A3clR5Z2NqRDF2cTJYeWpFY1Nld0tEMzg1UW0xUVZSajdOVTJCRW1YMnRxUjdCNFRCQ2k4bnVZNERSZzRNSEVlQkk2Zk9BZGdtdGdrVGlQcmk0aDd0aFd2NWZQb194dVM3MWFra19FWmR5bmhlYTR3NTNadUhrRUFVOEM1Yi1iMA?oc=5",
-  "source": "Search — coastal & river management",
-  "published": "2026-10-26",
-  "summary": "A breezy, sunny day ahead with a Coastal Flood Warning in effect News4JAX",
-  "topics": [
-   "CP2"
-  ],
-  "subtopics": [
-   "CP2.1"
-  ],
-  "hk": false,
-  "id": "2aacc458311d",
-  "gates": {}
- },
- {
-  "title": "Rough surf causes significant beach erosion at Cape Canaveral",
-  "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNNmhYdmVKTDcxcnp4R1MzUTgzcVFuQ0JvZUxPelVVcW1KR18zLUYyNkd5aGlLUGdQSmtWSndQUF9zaW9zUGdIVVJ6bHVPNUpfbEJ5ZF94V3QyZ2doalRBb01UbTNJZi1HVjNXemVCX1VQR29MNjlpdFhwcngxMnYwTklQZw?oc=5",
-  "source": "Search — coastal & river management",
-  "published": "2026-10-26",
-  "summary": "Rough surf causes significant beach erosion at Cape Canaveral WESH",
-  "topics": [
-   "CP2",
-   "EP1"
-  ],
-  "subtopics": [
-   "CP2.2"
-  ],
-  "hk": false,
-  "id": "f0bd55773c25",
   "gates": {}
  },
  {
@@ -4468,38 +4625,6 @@
   "gates": {}
  },
  {
-  "title": "Coastal Flood Advisory in effect as full moon approaches",
-  "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPWFloaDFZZ3ZnWGlYNlM2M3JELWNheFliWXBpVzdrNTFySEVNbGRoUkZGdmpTbGxadzM2OF9LYV9sQ1gzX1JZbVFjY00yVHZWVVVGSGlTSXVYbGpEdG5mbloxSC05emxjcy0yLTRqVWswNnpGeDZaMmd1dEtQbHhMejNpX2F2SVBoOGgxZkt5MDNRazVnWE45SFJR?oc=5",
-  "source": "Search — coastal & river management",
-  "published": "2026-10-24",
-  "summary": "Coastal Flood Advisory in effect as full moon approaches KSBW",
-  "topics": [
-   "CP2"
-  ],
-  "subtopics": [
-   "CP2.1"
-  ],
-  "hk": false,
-  "id": "ff5f81b06c49",
-  "gates": {}
- },
- {
-  "title": "Coastal flood warning issued as SoCal beach communities brace for more unusually high tides",
-  "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOMVNqSDMxWGpfUVZxV2Y0eHlFamU4RnR1cy1icmJVUUVVRDNKRDVWMGJMM1dHTS1lcHRINENIeHppbG5oamJ0V25waS1ncHdMTVM0OVdfMHhxVHhDdFZUMHdOaDRjWWs2ZFVHcUlXU0I3SGJqOUtNUWNxTGttY2RLWUhqU2lZZ0tfaEdLWG0xa2xaUDZYWXg2OGEwd2s4anV5Y0lUOTJ5M3dwZ20zVjZyY2VVT3Mtd0RBUWVvWDZQMDgyb2l3R2gtRg?oc=5",
-  "source": "Search — coastal & river management",
-  "published": "2026-10-24",
-  "summary": "Coastal flood warning issued as SoCal beach communities brace for more unusually high tides ABC7 Los Angeles",
-  "topics": [
-   "CP2"
-  ],
-  "subtopics": [
-   "CP2.1"
-  ],
-  "hk": false,
-  "id": "e573778fa3b4",
-  "gates": {}
- },
- {
   "title": "Unfinished slope section hit by fatal landslide in Paya Terubong, says exco",
   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNdllGdk9oemw1Yl83NGhpbTlYV3g3ajlCTnhQbHpsNld1ZjlpMl9LSDNRa25acTQ1aDJRR0NFTW1QRmlEbHpPd180d0QwdVMwUmFfck4tX0ljdEcyZUtmVHlBcC0yYldaazhZOHZvNktCTzVqNmhTeThrdFpTaG9BRjlSdW5DRGxFQTB4YlZ2MEd5N1diczhJc1M1T2NQVTJWOWlsNy0zSC1KTG5pYWpmU1hzSElIVWR5NVduckh30gHDAUFVX3lxTE10dTg1YUgwUVczbDlGQnJsYmRfSXVrdngxVGgxempCeER5bThVTjdlRktsdkh3U2dtUVR1c0JOZGg1eGVKOEZyV29YQWdTTDBRVGVwamhLNl9SMVViOGVhNDBvMnl5bjhpVXhxSENPeElKTDRMb1ZmSzd5ZXZsZzMwTEpYaFJRZFZTa000YUwwT0NkT3pEQkF6Q0wxYmlrdG1IWXRkZVJOTFQ3cFlnR2RrM016LURubGExeVl5NHF5MDQydw?oc=5",
   "source": "Search — Hong Kong geology & slope safety",
@@ -4525,22 +4650,6 @@
   "subtopics": [],
   "hk": false,
   "id": "896c688e2d65",
-  "gates": {}
- },
- {
-  "title": "Deforestation in Brazil’s Amazon and Cerrado savanna at lowest rate ever recorded - news",
-  "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOSkhvellpUkpwMDNHa3A5cncwOExSYVhlRy1kVWlSQUIwYlMzS3FoZjBtT2lCU25wRlNXQ0RIYWlqTzlKTHMtRTNENG8wdlFfdU5MbUFRY3VOTS0wTFM1Zzh5eXNiNDR5VzFjVWExakFtZDllN0stQXBBSzB2NW1QNW9fZ1RFTDJ0c1lldlZKaDlFS25lOS1iSXFnNUMza2dUZ1Btb09BQTFZelpjMDZDSnNpczNSOFBLOGZ0aURB?oc=5",
-  "source": "Search — indigenous peoples & forest livelihoods",
-  "published": "2026-10-22",
-  "summary": "Deforestation in Brazil’s Amazon and Cerrado savanna at lowest rate ever recorded news - Mongabay",
-  "topics": [
-   "CP6"
-  ],
-  "subtopics": [
-   "CP6.2"
-  ],
-  "hk": false,
-  "id": "383116c54cd3",
   "gates": {}
  },
  {
@@ -4585,53 +4694,6 @@
   "subtopics": [],
   "hk": false,
   "id": "7ee095a92d42",
-  "gates": {}
- },
- {
-  "title": "Truckee River restoration project at Idlewild Park receives $550,000 in state funding",
-  "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxORE5SSFpzb3d0bklqYVh0aC1fckFHZEZfYXBmOVJqSW1OX2h0UzJqMUxIdDRYdmlPdjhyd3pxSWhjaWk4aDVlVjBmZUdpZmYxODVoLW1zVDlwXzVZYmxnT3E5aWl6ZmpTSE5KNjFTdmdzTzBBNmxvSkJtbWxienJRTXdaYVpWOEh5TU4xdjlySW55M294dGF2dUNSVTJJbjJZMVlDQVozejlhNGtLMldkZ1ZUX3B4dw?oc=5",
-  "source": "Search — coastal & river management",
-  "published": "2026-10-21",
-  "summary": "Truckee River restoration project at Idlewild Park receives $550,000 in state funding This Is Reno",
-  "topics": [
-   "CP2"
-  ],
-  "subtopics": [],
-  "hk": false,
-  "id": "972afd61960e",
-  "gates": {}
- },
- {
-  "title": "Jersey Shore beaches battered by more erosion as waves pound coastline",
-  "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQQl9KdERmbFlaZXpGMldkYjVvVzlaUEZmWDMzOFpITWtOS0NHV05rbktwYUtxQjhyemk4WG5sd3FRNFpJRUliTXVRZ0djS1hKVDlKWXJjekVKaTN0Tkd0cFp3TkVZb0pyZWFzWVIyY0RhVy05ZWlGLWt4eGFXNmlWV3liaER1Um1WTmFtcTVkQlRzLUxuTV93RWtJM0JlTWZCTnhGNjFDa3ZEcHhKUDBEbERKa19XTkJndDBqaFh2d9IBxwFBVV95cUxOLTNtYTJhUGU1OXQzOWlGZGhVek5zaVV4UXpjTFFRRHFKNy1QOGNveGJlNUMwRkVWMFlNTGpsVGdEZ0NqdTlGRG9STFVFell5cnBOdG5zeEJlVmdmTkxhcWhWaGE5RjBqNW45V0RlcFNEeGJRTWdlb3UtU2dmZWNlb1RDOHBfTU41WWN0VkVMa3JXNGlRd0tYU3BnMkJWd29qelNoMFdza1hOdUdDMlphVzZ1Ni1Fd2ZmTGtORS1kVDUyYUFSeDVz?oc=5",
-  "source": "Search — coastal & river management",
-  "published": "2026-10-21",
-  "summary": "Jersey Shore beaches battered by more erosion as waves pound coastline NBC10 Philadelphia",
-  "topics": [
-   "CP2",
-   "EP1"
-  ],
-  "subtopics": [],
-  "hk": false,
-  "id": "e53816230a6e",
-  "gates": {}
- },
- {
-  "title": "USGS Tracks Beach Erosion and Shoreline Change Along California Coast - environment coastal & offshore",
-  "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQd1RRcnVId05sdmQ0bTJBbUk0cExhaGd6Y0MyM1kydW9nRC1uVTZER3Y5ZWF1cEtUU1FFOXpJNEJfamxjUEg5b0ExOUhJY0FEbElaTlVpVHhfM0YtUFlRaE1HNkFibHI1c09DUTNsQThqX3BlWHMxaDdsVGJ5d0FKUzdUR05FdTN0dW1wRjhvSmZFeTlXTEw4UkJnMl80bW9HbzhTbk54SzBIQlk?oc=5",
-  "source": "Search — coastal & river management",
-  "published": "2026-10-21",
-  "summary": "USGS Tracks Beach Erosion and Shoreline Change Along California Coast - environment coastal & offshore environment coastal & offshore",
-  "topics": [
-   "CP2",
-   "CP3",
-   "EP1"
-  ],
-  "subtopics": [
-   "CP2.2"
-  ],
-  "hk": false,
-  "id": "3c4afe6b4fa5",
   "gates": {}
  },
  {
@@ -4997,20 +5059,6 @@
   "gates": {}
  },
  {
-  "title": "Deep Tech Pioneer Switch Bioworks Announces Collaboration with Global Agriculture Leader Bayer Crop Science to Advance Biological Nitrogen",
-  "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPbnV2U19yaXgzTWlIY0JWRlpoSVZmbUFoQTFjb0NsaGVpWE9jLV96RVZDTFhsRkRSQ0FxOWh3Z0dXRWRrZ2owSGtoelMtV2dLd0JaSUxYU0MtUGdlNWlfR29wWkJDWVhFUC13TXp1TjRFLVZPR1htSGdHZ0Q0RzZ6N2ZJUF9FZnlDWEc2S1ZpVWVMZnBuUHFBVEVB?oc=5",
-  "source": "Search — famine & food security",
-  "published": "2026-10-13",
-  "summary": "Deep Tech Pioneer Switch Bioworks Announces Collaboration with Global Agriculture Leader Bayer Crop Science to Advance Biological Nitrogen Yahoo Finance",
-  "topics": [
-   "CP5"
-  ],
-  "subtopics": [],
-  "hk": false,
-  "id": "58a3ae4c7bef",
-  "gates": {}
- },
- {
   "title": "IPC Sudan Food Insecurity and Malnutrition Alert",
   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPRG0xVFh2Ykh1REh1NVM4dUdHQnNVQkZ6a1Q4S096SGdlYTZDVmYxZ1JWaFAwSXptNmpsZUdVaVYyUEdWQkVFTU1FeF9ER2k0bEFpQmhJdTdmM3dsOUlhWkNDc3Y3dHE3V2xiZmdCWS1VQWpkd2ZRQkRKak52UGN5Z2RVdHJ4NjJTWlMyZEdYZkplSDg?oc=5",
   "source": "Search — famine & food security",
@@ -5096,6 +5144,36 @@
   "subtopics": [],
   "hk": false,
   "id": "3cf2a67faf73",
+  "gates": {}
+ },
+ {
+  "title": "3 missing after landslide-mudflow in East China's Fujian",
+  "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5YRnlpRWVOelJiX3Etek83Qk9hM0YxUzQ2c25pdXRHbjVXN0llaGMzQmVSSlVhVzNzbTNOZ3ZFd3pROHVYV05QclVtUHRQWEQ4ajRsZl83X2hNdw?oc=5",
+  "source": "Search — Hong Kong geology & landslides",
+  "published": "2026-09-26",
+  "summary": "3 missing after landslide-mudflow in East China's Fujian chinadailyhk",
+  "topics": [
+   "EP1"
+  ],
+  "subtopics": [],
+  "hk": false,
+  "id": "dd70a9d28ad7",
+  "gates": {}
+ },
+ {
+  "title": "Highest-level landslide warning issued for island near Tokyo",
+  "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5DanlYLTVWUkhoQ09iV2ZnT3dvN2R4ejVFSWlOVmVBTG9rSXZBancxZGhPUHp1WVF3Z1ZvdmlmSXdndjJMaVVKTlFTMjFMNjlCNzBESEZPSGdBZw?oc=5",
+  "source": "Search — Hong Kong geology & landslides",
+  "published": "2026-09-21",
+  "summary": "Highest-level landslide warning issued for island near Tokyo chinadailyhk",
+  "topics": [
+   "EP1"
+  ],
+  "subtopics": [
+   "EP1.4"
+  ],
+  "hk": false,
+  "id": "2bb7839c6df5",
   "gates": {}
  }
 ]
