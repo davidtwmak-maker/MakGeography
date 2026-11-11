@@ -118,7 +118,34 @@ check("the hand-checked questions kept their explanations",
 gen = [q for q in qs if not q.get("official")]
 check("the generated questions were kept", len(gen) >= 200, f"({len(gen)})")
 
+# 13. The answer letter must not be a writing habit.
+#
+# The model that wrote the generated questions put the correct option first
+# for 78% of the CP6 set and 91% of the CP7 set. A student drilling that
+# would learn to press A and nothing else. The options are permuted by a
+# hash of the stem, so the letters spread out - and the same question
+# always gets the same order.
+gen_answers = Counter(q.get("answer") for q in gen)
+worst = max(gen_answers.values()) / max(len(gen), 1)
+check("the generated answers are spread across A-D", worst <= 0.40,
+      f"the most common letter takes {worst:.0%} of the set "
+      f"({dict(gen_answers)})")
+check("the generated questions cover all four letters",
+      set(gen_answers) == {"A", "B", "C", "D"},
+      f"({sorted(gen_answers)})")
+
+# 14. The official questions keep the exam's own options and letters.
+#
+# The permutation is only for the questions the model wrote. The HKEAA
+# questions are the exam's own, and a student preparing for the exam must
+# meet them exactly as they were printed.
+official_opts = {q["id"]: (q.get("options"), q.get("answer"))
+                 for q in official}
+check("the official questions still carry their printed options",
+      all(q.get("options") for q in official),
+      f"({sum(1 for q in official if not q.get('options'))} without options)")
+
 if fail:
     print(f"\n{len(fail)} check(s) failed")
     sys.exit(1)
-print(f"\nALL {13} CHECKS PASSED")
+print(f"\nALL {15} CHECKS PASSED")

@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-11 03:09 UTC",
+ "updated_at": "2026-11-11 03:12 UTC",
  "n_items": 292,
  "feeds": [
   {
@@ -259,7 +259,7 @@
    "url": "https://news.google.com/rss/search?q=(Hong+Kong+OR+China)+AND+(landslide+OR+weathering+OR+%22slope+stability%22+OR+geology+OR+%22geological+hazard%22+OR+%22rock+formation%22)+when:30d&hl=en-HK&gl=HK&ceid=HK:en",
    "ok": true,
    "error": "",
-   "items": 4
+   "items": 2
   },
   {
    "feed": "Search — tectonic hazards",
@@ -273,7 +273,7 @@
    "url": "https://news.google.com/rss/search?q=(Indonesia+OR+Brazil+OR+Congo+OR+Peru+OR+Malaysia+OR+Amazon+OR+%22Central+Africa%22)+AND+(deforestation+OR+%22rainforest+management%22+OR+indigenous+OR+%22forest+community%22+OR+reforestation)+when:30d&hl=en-HK&gl=HK&ceid=HK:en",
    "ok": true,
    "error": "",
-   "items": 22
+   "items": 23
   },
   {
    "feed": "Search — urban renewal & public housing",

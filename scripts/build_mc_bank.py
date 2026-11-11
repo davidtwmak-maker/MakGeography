@@ -180,6 +180,10 @@ def generate_for(kb, llm, code: str, subtopic: str, title: str, n: int,
         ans = (it.get("answer") or "").strip().upper()
         if not stem or len(opts) != 4 or ans not in "ABCD":
             continue
+        # The model almost always writes the correct option as A. The
+        # options are permuted so the answer letter is not the model's
+        # writing habit - deterministic, so a retry shows the same order.
+        opts, ans = shuffle_options(opts, ans, stem)
         out.append({
             "id": f"{subtopic}-{hashlib.sha1(stem.encode()).hexdigest()[:8]}",
             "stem": stem,
@@ -192,6 +196,47 @@ def generate_for(kb, llm, code: str, subtopic: str, title: str, n: int,
             "source": "MakGeography notes (AI-generated)",
         })
     return out
+
+
+def shuffle_options(options: list[str], answer: str, key: str,
+                    correct_text: str = "") -> tuple[list[str], str]:
+    """Permute the options so the correct one is not always in one place.
+
+    The model writes the answer it chose, and it chose "A" for 78% of the
+    CP6 questions (91% for CP7) - it put the right answer first because that
+    is how it writes. A student who learns to press A learns nothing, and a
+    drill where every answer is A is not a drill.
+
+    The permutation is driven by a hash of the question's stem, so the same
+    question always gets the same order - a student who retries sees the
+    same layout. `correct_text` identifies the right option by its WORDS
+    rather than its position, which makes the operation idempotent.
+    """
+    if len(options) != 4 or answer not in "ABCD":
+        return options, answer
+    correct = correct_text or options["ABCD".index(answer)]
+    if correct not in options:
+        correct = options["ABCD".index(answer)]
+    others = [o for o in options if o != correct]
+    if len(others) != 3:
+        return options, answer
+    # The distractors are sorted before the shuffle so the permutation is
+    # applied to a CANONICAL order. Without that, the operation is not
+    # idempotent: a second run starts from a different order, shuffles it
+    # again, and the distractor letters shift even though the answer
+    # letter does not.
+    others = sorted(others)
+    digest = hashlib.sha256(key.encode()).digest()
+    # Fisher-Yates with the digest as the source of the swaps. The digest
+    # is 32 bytes, so the first three drive the shuffle and the fourth
+    # picks where the correct option lands.
+    order = list(others)
+    for i in range(len(order) - 1, 0, -1):
+        j = digest[i] % (i + 1)
+        order[i], order[j] = order[j], order[i]
+    pos = digest[3] % 4
+    order.insert(pos, correct)
+    return order, "ABCD"[pos]
 
 
 def main():
