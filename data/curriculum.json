@@ -1056,30 +1056,33 @@
        "id": "CP6.1.1",
        "title": "Tropical rainforest characteristics",
        "summary": "Where tropical rainforests are found and what their climate and vegetation are like — the hot, humid, high-rainfall conditions that create the biome.",
-       "source": "CP6_Disappearing_Green_Canopy_Detailed_Notes.md",
+       "source": "CP6/Concepts/6.1 Tropical Rainforest Characteristics (F6 Revision).md",
        "teacher_label": "PART 1, 1.1 Characteristics",
        "source_hints": [
-        "CP6 Disappearing Green Canopy Detailed Notes"
+        "CP6 Disappearing Green Canopy Detailed Notes",
+        "CP6_Disappearing_Green_Canopy_Detailed_Notes.md"
        ]
       },
       {
        "id": "CP6.1.2",
        "title": "Rainforest structure",
        "summary": "The vertical structure of the rainforest, from the emergent layer down through the canopy, understorey and forest floor.",
-       "source": "CP6_Disappearing_Green_Canopy_Detailed_Notes.md",
+       "source": "CP6/Concepts/6.2 Rainforest Structure (F6 Revision).md",
        "teacher_label": "PART 1, 1.2 Structure",
        "source_hints": [
-        "CP6 Disappearing Green Canopy Detailed Notes"
+        "CP6 Disappearing Green Canopy Detailed Notes",
+        "CP6_Disappearing_Green_Canopy_Detailed_Notes.md"
        ]
       },
       {
        "id": "CP6.1.3",
        "title": "Nutrient cycle",
        "summary": "How nutrients are stored and recycled in the rainforest, and why rapid cycling and heavy leaching make the system fragile.",
-       "source": "CP6_Disappearing_Green_Canopy_Detailed_Notes.md",
+       "source": "CP6/Concepts/6.3 Nutrient Cycle (F6 Revision).md",
        "teacher_label": "PART 1, 1.3 Nutrient Cycle",
        "source_hints": [
-        "CP6 Disappearing Green Canopy Detailed Notes"
+        "CP6 Disappearing Green Canopy Detailed Notes",
+        "CP6_Disappearing_Green_Canopy_Detailed_Notes.md"
        ]
       },
       {
@@ -1087,10 +1090,12 @@
        "title": "Abiotic and biotic components, energy flow and ecological equilibrium",
        "summary": "Official GQ2-4 requires the definition of an ecosystem, its abiotic and biotic components, the links and interrelationships between them, energy flow in the ecosystem, and ecological equilibrium.",
        "source_hints": [
-        "CP6 Disappearing Green Canopy Detailed Notes"
+        "CP6 Disappearing Green Canopy Detailed Notes",
+        "CP6_Disappearing_Green_Canopy_Detailed_Notes.md"
        ],
        "official": true,
-       "added_for_syllabus_coverage": true
+       "added_for_syllabus_coverage": true,
+       "source": "CP6/Concepts/6.4 Energy Flow and Ecological Equilibrium (F6 Revision).md"
       }
      ]
     },
@@ -1104,40 +1109,44 @@
        "id": "CP6.2.1",
        "title": "Causes of deforestation",
        "summary": "The economic, social and political drivers of forest clearance, and how they combine to accelerate the rate of loss.",
-       "source": "CP6_Disappearing_Green_Canopy_Detailed_Notes.md",
+       "source": "CP6/Concepts/6.5 Causes of Deforestation (F6 Revision).md",
        "teacher_label": "PART 2, 2.1 Causes",
        "source_hints": [
-        "CP6 Disappearing Green Canopy Detailed Notes"
+        "CP6 Disappearing Green Canopy Detailed Notes",
+        "CP6_Disappearing_Green_Canopy_Detailed_Notes.md"
        ]
       },
       {
        "id": "CP6.2.2",
        "title": "Impacts of deforestation",
        "summary": "The consequences for the nutrient cycle and for the wider environment, from soil fertility loss to altered rainfall and climate.",
-       "source": "CP6_Disappearing_Green_Canopy_Detailed_Notes.md",
+       "source": "CP6/Concepts/6.6 Impacts of Deforestation (F6 Revision).md",
        "teacher_label": "PART 2, 2.2 Impacts",
        "source_hints": [
-        "CP6 Disappearing Green Canopy Detailed Notes"
+        "CP6 Disappearing Green Canopy Detailed Notes",
+        "CP6_Disappearing_Green_Canopy_Detailed_Notes.md"
        ]
       },
       {
        "id": "CP6.2.3",
        "title": "Deforestation patterns",
        "summary": "The contrasting patterns of clearance in the Amazon Basin and in Southeast Asia, and what drives each.",
-       "source": "CP6_Disappearing_Green_Canopy_Detailed_Notes.md",
+       "source": "CP6/Concepts/6.7 Deforestation Patterns (F6 Revision).md",
        "teacher_label": "PART 2, 2.3 Deforestation Patterns",
        "source_hints": [
-        "CP6 Disappearing Green Canopy Detailed Notes"
+        "CP6 Disappearing Green Canopy Detailed Notes",
+        "CP6_Disappearing_Green_Canopy_Detailed_Notes.md"
        ]
       },
       {
        "id": "CP6.2.4",
        "title": "The carbon cycle",
        "summary": "The world's carbon stores, the flows of carbon into and out of the atmosphere, and how deforestation shifts the balance — the mechanism linking CP6 to CP7.",
-       "source": "CP6_Disappearing_Green_Canopy_Detailed_Notes.md",
+       "source": "CP6/Concepts/6.8 Carbon Cycle (F6 Revision).md",
        "teacher_label": "PART 3 Carbon Cycle",
        "source_hints": [
-        "CP6 Disappearing Green Canopy Detailed Notes"
+        "CP6 Disappearing Green Canopy Detailed Notes",
+        "CP6_Disappearing_Green_Canopy_Detailed_Notes.md"
        ],
        "teacher_addition": true,
        "teacher_note": "Teacher addition: useful content, but not an official heading in the C&A Guide."
@@ -1147,10 +1156,12 @@
        "title": "Global distribution and the rate of deforestation",
        "summary": "Official GQ1: the global distribution of tropical rainforests and deforestation in rainforest regions - its rate and conditions.",
        "source_hints": [
-        "CP6 Disappearing Green Canopy Detailed Notes"
+        "CP6 Disappearing Green Canopy Detailed Notes",
+        "CP6_Disappearing_Green_Canopy_Detailed_Notes.md"
        ],
        "official": true,
-       "added_for_syllabus_coverage": true
+       "added_for_syllabus_coverage": true,
+       "source": "CP6/Concepts/6.9 Global Distribution and Rate (F6 Revision).md"
       }
      ]
     },
@@ -1164,20 +1175,22 @@
        "id": "CP6.3.1",
        "title": "Traditional livelihood and forest dependence",
        "summary": "How indigenous communities depend on the forest for food, materials and medicine, and the cultural knowledge held within the forest.",
-       "source": "CP6_Disappearing_Green_Canopy_Detailed_Notes.md",
+       "source": "CP6/Concepts/6.10 Traditional Livelihood and Forest Dependence (F6 Revision).md",
        "teacher_label": "PART 4, 4.1 Traditional Livelihood",
        "source_hints": [
-        "CP6 Disappearing Green Canopy Detailed Notes"
+        "CP6 Disappearing Green Canopy Detailed Notes",
+        "CP6_Disappearing_Green_Canopy_Detailed_Notes.md"
        ]
       },
       {
        "id": "CP6.3.2",
        "title": "Impacts of deforestation on indigenous communities",
        "summary": "What deforestation does to indigenous livelihoods and community life, and the conflict it creates between forest and people.",
-       "source": "CP6_Disappearing_Green_Canopy_Detailed_Notes.md",
+       "source": "CP6/Concepts/6.11 Impacts on Indigenous Communities (F6 Revision).md",
        "teacher_label": "PART 4, 4.2 Impacts",
        "source_hints": [
-        "CP6 Disappearing Green Canopy Detailed Notes"
+        "CP6 Disappearing Green Canopy Detailed Notes",
+        "CP6_Disappearing_Green_Canopy_Detailed_Notes.md"
        ]
       }
      ]
@@ -1192,30 +1205,33 @@
        "id": "CP6.4.1",
        "title": "Sustainable management of rainforests",
        "summary": "Reducing demand for forest products, developing alternative livelihoods, and the policy measures that make protection workable in less developed countries.",
-       "source": "CP6_Disappearing_Green_Canopy_Detailed_Notes.md",
+       "source": "CP6/Concepts/6.12 Sustainable Management of Rainforests (F6 Revision).md",
        "teacher_label": "PART 5, 5.1 Sustainable Management",
        "source_hints": [
-        "CP6 Disappearing Green Canopy Detailed Notes"
+        "CP6 Disappearing Green Canopy Detailed Notes",
+        "CP6_Disappearing_Green_Canopy_Detailed_Notes.md"
        ]
       },
       {
        "id": "CP6.4.2",
        "title": "Reforestation",
        "summary": "The benefits of reforestation and the challenges that limit it, including land availability and long time lags.",
-       "source": "CP6_Disappearing_Green_Canopy_Detailed_Notes.md",
+       "source": "CP6/Concepts/6.13 Reforestation (F6 Revision).md",
        "teacher_label": "PART 5, 5.2 Reforestation",
        "source_hints": [
-        "CP6 Disappearing Green Canopy Detailed Notes"
+        "CP6 Disappearing Green Canopy Detailed Notes",
+        "CP6_Disappearing_Green_Canopy_Detailed_Notes.md"
        ]
       },
       {
        "id": "CP6.4.3",
        "title": "Biofuels as an alternative",
        "summary": "Biofuels as a substitute for fossil fuels: the definition, the arguments for and against, and the effectiveness debate.",
-       "source": "CP6_Disappearing_Green_Canopy_Detailed_Notes.md",
+       "source": "CP6/Concepts/6.14 Biofuels as an Alternative (F6 Revision).md",
        "teacher_label": "PART 6 Biofuels",
        "source_hints": [
-        "CP6 Disappearing Green Canopy Detailed Notes"
+        "CP6 Disappearing Green Canopy Detailed Notes",
+        "CP6_Disappearing_Green_Canopy_Detailed_Notes.md"
        ],
        "teacher_addition": true,
        "teacher_note": "Teacher addition: useful content, but not an official heading in the C&A Guide."
@@ -1225,20 +1241,24 @@
        "title": "Roles of different parties and conflicts of interest",
        "summary": "Official GQ10-13: the roles played by native people and local dwellers, government officials, private developers and environmentalists in developing and protecting rainforest resources, and the conflicts of interest between them.",
        "source_hints": [
-        "CP6 Disappearing Green Canopy Detailed Notes"
+        "CP6 Disappearing Green Canopy Detailed Notes",
+        "CP6_Disappearing_Green_Canopy_Detailed_Notes.md"
        ],
        "official": true,
-       "added_for_syllabus_coverage": true
+       "added_for_syllabus_coverage": true,
+       "source": "CP6/Concepts/6.15 Roles of Different Parties (F6 Revision).md"
       },
       {
        "id": "CP6.4.5",
        "title": "Afforestation, logging regulation, national parks and natural reserves",
        "summary": "Official GQ10 names afforestation, regulation on logging activities, and the setting up of national parks and natural reserves as the measures to protect tropical rainforest.",
        "source_hints": [
-        "CP6 Disappearing Green Canopy Detailed Notes"
+        "CP6 Disappearing Green Canopy Detailed Notes",
+        "CP6_Disappearing_Green_Canopy_Detailed_Notes.md"
        ],
        "official": true,
-       "added_for_syllabus_coverage": true
+       "added_for_syllabus_coverage": true,
+       "source": "CP6/Concepts/6.16 Afforestation and Protected Areas (F6 Revision).md"
       }
      ]
     },
@@ -1252,10 +1272,11 @@
        "id": "CP6.5.1",
        "title": "Feedback mechanisms",
        "summary": "Positive and negative feedbacks between forest loss, albedo, carbon release and climate.",
-       "source": "CP6_Disappearing_Green_Canopy_Detailed_Notes.md",
+       "source": "CP6/Concepts/6.17 Feedback Mechanisms (F6 Revision).md",
        "teacher_label": "PART 7, 7.1 Feedback Mechanisms",
        "source_hints": [
-        "CP6 Disappearing Green Canopy Detailed Notes"
+        "CP6 Disappearing Green Canopy Detailed Notes",
+        "CP6_Disappearing_Green_Canopy_Detailed_Notes.md"
        ],
        "teacher_addition": true,
        "teacher_note": "Teacher addition: useful content, but not an official heading in the C&A Guide."
@@ -1264,10 +1285,11 @@
        "id": "CP6.5.2",
        "title": "Impacts of climate change on forests",
        "summary": "How a changing climate alters rainforest conditions and the distribution of forest biomes.",
-       "source": "CP6_Disappearing_Green_Canopy_Detailed_Notes.md",
+       "source": "CP6/Concepts/6.18 Climate Change Impacts on Forests (F6 Revision).md",
        "teacher_label": "PART 7, 7.2 Impact on Forests",
        "source_hints": [
-        "CP6 Disappearing Green Canopy Detailed Notes"
+        "CP6 Disappearing Green Canopy Detailed Notes",
+        "CP6_Disappearing_Green_Canopy_Detailed_Notes.md"
        ]
       }
      ]
@@ -1342,30 +1364,33 @@
        "id": "CP7.1.1",
        "title": "Earth's energy balance",
        "summary": "How solar shortwave radiation is absorbed at the surface and how the Earth radiates heat back, and where that heat is trapped.",
-       "source": "CP7_Global_Warming_Detailed_Notes.md",
+       "source": "CP7/Concepts/7.1 Earth's Energy Balance (F6 Revision).md",
        "teacher_label": "PART 1, 1.1 Earth's Energy Balance",
        "source_hints": [
-        "CP7 Global Warming Detailed Notes"
+        "CP7 Global Warming Detailed Notes",
+        "CP7_Global_Warming_Detailed_Notes.md"
        ]
       },
       {
        "id": "CP7.1.2",
        "title": "The greenhouse effect",
        "summary": "The natural greenhouse effect (CO2, H2O, CH4, N2O keeping the Earth at +15°C) and how human activity strengthens it into the enhanced greenhouse effect.",
-       "source": "CP7_Global_Warming_Detailed_Notes.md",
+       "source": "CP7/Concepts/7.2 The Greenhouse Effect (F6 Revision).md",
        "teacher_label": "PART 1, 1.2 Greenhouse Effect",
        "source_hints": [
-        "CP7 Global Warming Detailed Notes"
+        "CP7 Global Warming Detailed Notes",
+        "CP7_Global_Warming_Detailed_Notes.md"
        ]
       },
       {
        "id": "CP7.1.3",
        "title": "Evidence of global warming",
        "summary": "Instrumental temperature records, ice-core CO2 and temperature data, and palaeoclimate proxies such as tree rings and coral.",
-       "source": "CP7_Global_Warming_Detailed_Notes.md",
+       "source": "CP7/Concepts/7.3 Evidence of Global Warming (F6 Revision).md",
        "teacher_label": "PART 2 Evidence of Global Warming",
        "source_hints": [
-        "CP7 Global Warming Detailed Notes"
+        "CP7 Global Warming Detailed Notes",
+        "CP7_Global_Warming_Detailed_Notes.md"
        ]
       },
       {
@@ -1373,10 +1398,12 @@
        "title": "Weather versus climate, and climate at local, national and global scale",
        "summary": "Official GQ1-2 asks for the definitions of 'weather' and 'climate' and a brief introduction to climate at local, national and global scale.",
        "source_hints": [
-        "CP7 Global Warming Detailed Notes"
+        "CP7 Global Warming Detailed Notes",
+        "CP7_Global_Warming_Detailed_Notes.md"
        ],
        "official": true,
-       "added_for_syllabus_coverage": true
+       "added_for_syllabus_coverage": true,
+       "source": "CP7/Concepts/7.4 Weather, Climate & Scales (F6 Revision).md"
       }
      ]
     },
@@ -1390,20 +1417,22 @@
        "id": "CP7.2.1",
        "title": "Greenhouse gases",
        "summary": "The main gases and their sources and atmospheric lifetimes — CO2, CH4, N2O, CFCs and HFCs — and how each strengthens the greenhouse effect.",
-       "source": "CP7_Global_Warming_Detailed_Notes.md",
+       "source": "CP7/Concepts/7.5 Greenhouse Gases (F6 Revision).md",
        "teacher_label": "PART 3, 3.1 Greenhouse Gases",
        "source_hints": [
-        "CP7 Global Warming Detailed Notes"
+        "CP7 Global Warming Detailed Notes",
+        "CP7_Global_Warming_Detailed_Notes.md"
        ]
       },
       {
        "id": "CP7.2.2",
        "title": "Human activities",
        "summary": "Fossil fuel combustion and land use change as the main drivers of anthropogenic warming, with the mechanisms each one uses.",
-       "source": "CP7_Global_Warming_Detailed_Notes.md",
+       "source": "CP7/Concepts/7.6 Human Activities (F6 Revision).md",
        "teacher_label": "PART 3, 3.2 Human Activities",
        "source_hints": [
-        "CP7 Global Warming Detailed Notes"
+        "CP7 Global Warming Detailed Notes",
+        "CP7_Global_Warming_Detailed_Notes.md"
        ]
       },
       {
@@ -1411,20 +1440,24 @@
        "title": "Natural versus human causes, and the irreversible-trend debate",
        "summary": "Official GQ4-6 requires natural and human causes of global warming AND the supporting and opposing arguments on whether global warming is a long-term fluctuation of temperature or an irreversible trend.",
        "source_hints": [
-        "CP7 Global Warming Detailed Notes"
+        "CP7 Global Warming Detailed Notes",
+        "CP7_Global_Warming_Detailed_Notes.md"
        ],
        "official": true,
-       "added_for_syllabus_coverage": true
+       "added_for_syllabus_coverage": true,
+       "source": "CP7/Concepts/7.7 Natural vs Human Causes (F6 Revision).md"
       },
       {
        "id": "CP7.2.4",
        "title": "Garbage burning and other named human activities",
        "summary": "Official GQ4-5 names the specific human activities that enhance the greenhouse effect: deforestation, burning of fossil fuels, garbage burning, emission of chlorofluorocarbons.",
        "source_hints": [
-        "CP7 Global Warming Detailed Notes"
+        "CP7 Global Warming Detailed Notes",
+        "CP7_Global_Warming_Detailed_Notes.md"
        ],
        "official": true,
-       "added_for_syllabus_coverage": true
+       "added_for_syllabus_coverage": true,
+       "source": "CP7/Concepts/7.8 Garbage Burning & Human Activities (F6 Revision).md"
       }
      ]
     },
@@ -1438,30 +1471,33 @@
        "id": "CP7.3.1",
        "title": "Physical impacts",
        "summary": "Sea level rise, extreme weather, ecosystem change and the physical mechanisms behind each.",
-       "source": "CP7_Global_Warming_Detailed_Notes.md",
+       "source": "CP7/Concepts/7.9 Physical Impacts (F6 Revision).md",
        "teacher_label": "PART 4, 4.1 Physical Impacts",
        "source_hints": [
-        "CP7 Global Warming Detailed Notes"
+        "CP7 Global Warming Detailed Notes",
+        "CP7_Global_Warming_Detailed_Notes.md"
        ]
       },
       {
        "id": "CP7.3.2",
        "title": "Social impacts",
        "summary": "The consequences for human health, food and water security, and the economy, including who carries the cost.",
-       "source": "CP7_Global_Warming_Detailed_Notes.md",
+       "source": "CP7/Concepts/7.10 Social Impacts (F6 Revision).md",
        "teacher_label": "PART 4, 4.2 Social Impacts",
        "source_hints": [
-        "CP7 Global Warming Detailed Notes"
+        "CP7 Global Warming Detailed Notes",
+        "CP7_Global_Warming_Detailed_Notes.md"
        ]
       },
       {
        "id": "CP7.3.3",
        "title": "Regional examples",
        "summary": "Small island states and the Arctic as the two extremes of vulnerability to climate change.",
-       "source": "CP7_Global_Warming_Detailed_Notes.md",
+       "source": "CP7/Concepts/7.11 Regional Examples (F6 Revision).md",
        "teacher_label": "PART 4, 4.3 Regional Examples",
        "source_hints": [
-        "CP7 Global Warming Detailed Notes"
+        "CP7 Global Warming Detailed Notes",
+        "CP7_Global_Warming_Detailed_Notes.md"
        ]
       },
       {
@@ -1469,20 +1505,24 @@
        "title": "Urban climate: the heat island effect and microclimate",
        "summary": "Official GQ7-9: urban growth and development leading to local climatic variation focusing on the heat island effect; its effects on atmospheric composition, temperature, and precipitation.",
        "source_hints": [
-        "CP7 Global Warming Detailed Notes"
+        "CP7 Global Warming Detailed Notes",
+        "CP7_Global_Warming_Detailed_Notes.md"
        ],
        "official": true,
-       "added_for_syllabus_coverage": true
+       "added_for_syllabus_coverage": true,
+       "source": "CP7/Concepts/7.12 Urban Climate & Heat Island (F6 Revision).md"
       },
       {
        "id": "CP7.3.5",
        "title": "Winners and losers of climate change",
        "summary": "Official GQ10 frames the consequences around winners and losers - sea level, flood frequency, new farming opportunities, health risks, and climatic prediction becoming more difficult.",
        "source_hints": [
-        "CP7 Global Warming Detailed Notes"
+        "CP7 Global Warming Detailed Notes",
+        "CP7_Global_Warming_Detailed_Notes.md"
        ],
        "official": true,
-       "added_for_syllabus_coverage": true
+       "added_for_syllabus_coverage": true,
+       "source": "CP7/Concepts/7.13 Winners & Losers (F6 Revision).md"
       }
      ]
     },
@@ -1496,30 +1536,33 @@
        "id": "CP7.4.1",
        "title": "International agreements",
        "summary": "The Kyoto Protocol (1997), the Copenhagen Accord (2009) and the Paris Agreement (2015) — what each set out and how the ambition changed.",
-       "source": "CP7_Global_Warming_Detailed_Notes.md",
+       "source": "CP7/Concepts/7.14 International Agreements (F6 Revision).md",
        "teacher_label": "PART 5, 5.1 International Agreements",
        "source_hints": [
-        "CP7 Global Warming Detailed Notes"
+        "CP7 Global Warming Detailed Notes",
+        "CP7_Global_Warming_Detailed_Notes.md"
        ]
       },
       {
        "id": "CP7.4.2",
        "title": "Countries' responses",
        "summary": "How developed and developing countries have responded differently, and what each response implies for equity.",
-       "source": "CP7_Global_Warming_Detailed_Notes.md",
+       "source": "CP7/Concepts/7.15 Countries' Responses (F6 Revision).md",
        "teacher_label": "PART 5, 5.2 Countries' Responses",
        "source_hints": [
-        "CP7 Global Warming Detailed Notes"
+        "CP7 Global Warming Detailed Notes",
+        "CP7_Global_Warming_Detailed_Notes.md"
        ]
       },
       {
        "id": "CP7.4.3",
        "title": "Challenges of a global agreement",
        "summary": "Per capita emissions, the implementation gap, and the obstacles that block a binding global deal.",
-       "source": "CP7_Global_Warming_Detailed_Notes.md",
+       "source": "CP7/Concepts/7.16 Challenges of a Global Agreement (F6 Revision).md",
        "teacher_label": "PART 5, 5.3 Challenges",
        "source_hints": [
-        "CP7 Global Warming Detailed Notes"
+        "CP7 Global Warming Detailed Notes",
+        "CP7_Global_Warming_Detailed_Notes.md"
        ]
       },
       {
@@ -1527,10 +1570,12 @@
        "title": "Conflicting views and roles of key players",
        "summary": "Official GQ12: the complexities of reaching a global agreement, in particular the conflicting views and roles of key players.",
        "source_hints": [
-        "CP7 Global Warming Detailed Notes"
+        "CP7 Global Warming Detailed Notes",
+        "CP7_Global_Warming_Detailed_Notes.md"
        ],
        "official": true,
-       "added_for_syllabus_coverage": true
+       "added_for_syllabus_coverage": true,
+       "source": "CP7/Concepts/7.17 Conflicting Views & Key Players (F6 Revision).md"
       }
      ]
     },
@@ -1544,20 +1589,22 @@
        "id": "CP7.5.1",
        "title": "Reducing emissions",
        "summary": "Mitigation across energy, transport, industry and land use, and the mechanism by which each measure cuts emissions.",
-       "source": "CP7_Global_Warming_Detailed_Notes.md",
+       "source": "CP7/Concepts/7.18 Reducing Emissions (F6 Revision).md",
        "teacher_label": "PART 6, 6.1 Reducing Emissions",
        "source_hints": [
-        "CP7 Global Warming Detailed Notes"
+        "CP7 Global Warming Detailed Notes",
+        "CP7_Global_Warming_Detailed_Notes.md"
        ]
       },
       {
        "id": "CP7.5.2",
        "title": "Carbon sequestration",
        "summary": "Removing carbon from the atmosphere and storing it — reforestation and other sequestration methods — and their limits.",
-       "source": "CP7_Global_Warming_Detailed_Notes.md",
+       "source": "CP7/Concepts/7.19 Carbon Sequestration (F6 Revision).md",
        "teacher_label": "PART 6, 6.2 Carbon Sequestration",
        "source_hints": [
-        "CP7 Global Warming Detailed Notes"
+        "CP7 Global Warming Detailed Notes",
+        "CP7_Global_Warming_Detailed_Notes.md"
        ],
        "teacher_addition": true,
        "teacher_note": "Teacher addition: useful content, but not an official heading in the C&A Guide."
@@ -1566,20 +1613,22 @@
        "id": "CP7.5.3",
        "title": "The need for adaptation",
        "summary": "Why adaptation cannot be substituted for mitigation, and how the two measures complement each other.",
-       "source": "CP7_Global_Warming_Detailed_Notes.md",
+       "source": "CP7/Concepts/7.20 The Need for Adaptation (F6 Revision).md",
        "teacher_label": "PART 7, 7.1 Need for Adaptation",
        "source_hints": [
-        "CP7 Global Warming Detailed Notes"
+        "CP7 Global Warming Detailed Notes",
+        "CP7_Global_Warming_Detailed_Notes.md"
        ]
       },
       {
        "id": "CP7.5.4",
        "title": "Adaptation strategies",
        "summary": "Concrete adaptation in coastal defence, agriculture and water management, at both local and national scale.",
-       "source": "CP7_Global_Warming_Detailed_Notes.md",
+       "source": "CP7/Concepts/7.21 Adaptation Strategies (F6 Revision).md",
        "teacher_label": "PART 7, 7.2 Adaptation Strategies",
        "source_hints": [
-        "CP7 Global Warming Detailed Notes"
+        "CP7 Global Warming Detailed Notes",
+        "CP7_Global_Warming_Detailed_Notes.md"
        ]
       }
      ]
@@ -1594,20 +1643,22 @@
        "id": "CP7.6.1",
        "title": "Observed trends in Hong Kong",
        "summary": "Measured trends in temperature, sea level and extreme weather in Hong Kong.",
-       "source": "CP7_Global_Warming_Detailed_Notes.md",
+       "source": "CP7/Concepts/7.22 Observed Trends in Hong Kong (F6 Revision).md",
        "teacher_label": "PART 8, 8.1 Trends",
        "source_hints": [
-        "CP7 Global Warming Detailed Notes"
+        "CP7 Global Warming Detailed Notes",
+        "CP7_Global_Warming_Detailed_Notes.md"
        ]
       },
       {
        "id": "CP7.6.2",
        "title": "Hong Kong's policy response",
        "summary": "How Hong Kong is responding to observed climate change.",
-       "source": "CP7_Global_Warming_Detailed_Notes.md",
+       "source": "CP7/Concepts/7.23 Hong Kong's Policy Response (F6 Revision).md",
        "teacher_label": "PART 8, 8.2 Policies",
        "source_hints": [
-        "CP7 Global Warming Detailed Notes"
+        "CP7 Global Warming Detailed Notes",
+        "CP7_Global_Warming_Detailed_Notes.md"
        ],
        "teacher_addition": true,
        "teacher_note": "Teacher addition: useful content, but not an official heading in the C&A Guide."

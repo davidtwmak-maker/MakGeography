@@ -60,6 +60,14 @@ jobs:
         # elective. This checks the tagger, the feed and the dates.
         run: python scripts/test_news_coverage.py
 
+      - name: Every curriculum leaf serves its own note content
+        # CP6 and CP7 both had all 41 leaves pointing at one module note,
+        # so the Notes page showed the same outline under every heading and
+        # the essay generator had only the outline to write from. The
+        # teacher's 18 CP6 and 23 CP7 concept notes were in the knowledge
+        # base the whole time, never connected.
+        run: python scripts/test_leaf_sources.py
+
       - name: Retrieval smoke test
         run: python scripts/test_retrieval.py
 

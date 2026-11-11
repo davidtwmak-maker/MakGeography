@@ -426,4 +426,43 @@ assert "d.marks" in _front_js, (
 )
 print("Essay generator: only the 12-mark two-part essay is offered")
 
+# 16. No curriculum elective may collapse onto a single note.
+#
+# CP6 and CP7 both had every leaf pointing at one module note, so the
+# Notes page showed the same outline under all 41 headings and the essay
+# generator had only that outline to write from. The teacher's 18 CP6 and
+# 23 CP7 concept notes were in the knowledge base the whole time and were
+# never reached. The check is that an elective serves more than one note
+# when the vault holds several.
+_kb = json.loads((root / "data" / "kb.json").read_text(encoding="utf-8"))
+_kb_paths = {d.get("path", "").split("/")[-1] for d in _kb.get("docs", [])}
+_cur = json.loads((root / "data" / "curriculum.json").read_text(encoding="utf-8"))
+for _el in _cur.get("electives", []):
+    _code = _el.get("code", "")
+    _served = set()
+    _leaves = 0
+    for _sq in _el.get("subquestions", []):
+        for _leaf in _sq.get("leaves", []):
+            _leaves += 1
+            _src = _leaf.get("source") or ""
+            if _src:
+                assert _src.split("/")[-1] in _kb_paths, (
+                    f"{_leaf.get('id')}: source note is not in the knowledge "
+                    f"base - {_src}"
+                )
+            for _h in (_leaf.get("source_hints") or []):
+                if _h.endswith(".md"):
+                    assert _h.split("/")[-1] in _kb_paths, (
+                        f"{_leaf.get('id')}: hint note is not in the "
+                        f"knowledge base - {_h}"
+                    )
+            _served.add(_src)
+    _distinct = len({s for s in _served if s})
+    if _leaves >= 3:
+        assert _distinct >= 2, (
+            f"{_code}: all {_leaves} leaves point at one note - the "
+            f"elective's concept notes are never used"
+        )
+print("Curriculum: no elective collapses onto a single note")
+
 print("\nALL CHECKS PASSED")

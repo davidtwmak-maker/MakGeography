@@ -1,6 +1,6 @@
 {
- "updated_at": "2026-11-10 01:53 UTC",
- "n_items": 255,
+ "updated_at": "2026-11-11 01:41 UTC",
+ "n_items": 300,
  "feeds": [
   {
    "feed": "USGS Earthquakes (M4.5+, past week)",
@@ -14,7 +14,7 @@
    "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_month.geojson",
    "ok": true,
    "error": "",
-   "items": 8
+   "items": 10
   },
   {
    "feed": "UNDRR — Disaster risk reduction",
@@ -84,7 +84,7 @@
    "url": "https://www.scmp.com/rss/92/feed",
    "ok": true,
    "error": "",
-   "items": 3
+   "items": 2
   },
   {
    "feed": "SCMP — China Economy",
@@ -98,14 +98,14 @@
    "url": "https://www.manufacturingdive.com/feeds/news/",
    "ok": true,
    "error": "",
-   "items": 7
+   "items": 4
   },
   {
    "feed": "Hong Kong Free Press",
    "url": "https://hongkongfp.com/feed/",
    "ok": true,
    "error": "",
-   "items": 0
+   "items": 1
   },
   {
    "feed": "HK DSD — DSD Newsletter",
@@ -126,28 +126,28 @@
    "url": "https://www.info.gov.hk/gia/rss/general_en.xml",
    "ok": true,
    "error": "",
-   "items": 4
+   "items": 3
   },
   {
    "feed": "SCMP — Hong Kong",
    "url": "https://www.scmp.com/rss/4/feed",
    "ok": true,
    "error": "",
-   "items": 0
+   "items": 2
   },
   {
    "feed": "SCMP — News",
    "url": "https://www.scmp.com/rss/91/feed",
    "ok": true,
    "error": "",
-   "items": 2
+   "items": 1
   },
   {
    "feed": "ReliefWeb — Humanitarian updates",
    "url": "https://reliefweb.int/updates/rss.xml",
    "ok": true,
    "error": "",
-   "items": 3
+   "items": 4
   },
   {
    "feed": "ScienceDaily — Food & Nutrition",
@@ -168,7 +168,7 @@
    "url": "https://news.mongabay.com/feed/",
    "ok": true,
    "error": "",
-   "items": 10
+   "items": 13
   },
   {
    "feed": "ScienceDaily — Forests",
@@ -194,9 +194,9 @@
   {
    "feed": "NASA Earth Observatory",
    "url": "https://earthobservatory.nasa.gov/feeds/earth-observatory.rss",
-   "ok": true,
-   "error": "",
-   "items": 9
+   "ok": false,
+   "error": "The read operation timed out",
+   "items": 0
   },
   {
    "feed": "ScienceDaily — Climate",
@@ -210,14 +210,14 @@
    "url": "https://www.carbonbrief.org/feed/",
    "ok": true,
    "error": "",
-   "items": 7
+   "items": 6
   },
   {
    "feed": "Climate Home News",
    "url": "https://www.climatechangenews.com/feed/",
    "ok": true,
    "error": "",
-   "items": 14
+   "items": 12
   },
   {
    "feed": "Mongabay — Climate",
@@ -231,7 +231,7 @@
    "url": "https://phys.org/rss-feed/earth-news/",
    "ok": true,
    "error": "",
-   "items": 15
+   "items": 13
   },
   {
    "feed": "HK Gov — Geotechnical and engineering works",
@@ -259,7 +259,7 @@
    "url": "https://news.google.com/rss/search?q=(Hong+Kong+OR+China)+AND+(landslide+OR+weathering+OR+%22slope+stability%22+OR+geology+OR+%22geological+hazard%22+OR+%22rock+formation%22)+when:30d&hl=en-HK&gl=HK&ceid=HK:en",
    "ok": true,
    "error": "",
-   "items": 6
+   "items": 4
   },
   {
    "feed": "Search — tectonic hazards",
@@ -273,7 +273,7 @@
    "url": "https://news.google.com/rss/search?q=(Indonesia+OR+Brazil+OR+Congo+OR+Peru+OR+Malaysia+OR+Amazon+OR+%22Central+Africa%22)+AND+(deforestation+OR+%22rainforest+management%22+OR+indigenous+OR+%22forest+community%22+OR+reforestation)+when:30d&hl=en-HK&gl=HK&ceid=HK:en",
    "ok": true,
    "error": "",
-   "items": 25
+   "items": 24
   },
   {
    "feed": "Search — urban renewal & public housing",
@@ -294,7 +294,7 @@
    "url": "https://news.google.com/rss/search?q=(UN+OR+global+OR+world+OR+Europe+OR+Africa+OR+Asia)+AND+(%22Paris+Agreement%22+OR+%22net+zero%22+OR+%22carbon+tax%22+OR+%22climate+adaptation%22)+when:30d&hl=en-HK&gl=HK&ceid=HK:en",
    "ok": true,
    "error": "",
-   "items": 29
+   "items": 28
   },
   {
    "feed": "Search — famine & food security",
