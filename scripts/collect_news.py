@@ -54,12 +54,19 @@ FEEDS = [
     # The gate has to name the TECTONIC hazard. "resilien" and "early
     # warning" on their own let eight general disaster-preparedness
     # workshops into the CP1 list, none of them about earthquakes.
+    #
+    # "multi-hazard" was added for multi-hazard early-warning stories and
+    # immediately let general disaster-preparedness reporting through
+    # ("Algeria advances multi-hazard early warning systems",
+    # "Global Status of Multi-Hazard Early Warning Systems 2026") — neither
+    # is about plate tectonics. The gate must name the hazard, not the
+    # warning system built around it.
     {"tag": ["CP1", "CP2"], "name": "UNDRR — Disaster risk reduction", "kind": "feed", "max_items": 30,
      "url": "https://www.undrr.org/rss.xml", "authoritative": True,
      "gate": ["earthquake", "volcan", "tsunami", "tectonic hazard",
               "seismic hazard", "tsunami readiness", "tsunami ready",
               "tsunami warning", "tsunami awareness", "tsunami innovation",
-              "multi-hazard", "hazard management"]},
+              "tsunami day", "tsunami risk", "tsunami drill", "tsunami exercise"]},
     {"tag": ["CP1", "EP1"], "name": "HK DSD — What’s New", "kind": "feed",
      "url": "https://www.dsd.gov.hk/Menu/EN/RSS/Whats_New.xml", "authoritative": False},
     {"tag": ["CP1"], "name": "HK DSD — Press Releases", "kind": "feed",
@@ -407,7 +414,21 @@ POLITICAL_METAPHOR = re.compile(
     r"\bwave\s+of\s+(votes|support)\b|"
     r"[''\u2018\u2019\u201c\u201d\"]an\s+earthquake[''\u2018\u2019\u201c\u201d\"]\s*:|"
     r"\blike\s+an\s+earthquake\b|"
-    r"\ban\s+earthquake\s+of\s+(a|the|democratic|republican)\b"
+    r"\ban\s+earthquake\s+of\s+(a|the|democratic|republican)\b|"
+    # "AI earthquake", "tech earthquake", "market earthquake" - a hazard
+    # word used as a metaphor for a fast change in something that is not
+    # the Earth. "Jensen Huang's looming ouster triggers an AI earthquake"
+    # was tagged CP1.4 (tectonic hazards) and reached the CP1 index.
+    r"\b(ai|artificial\s+intelligence|tech|technology|digital|silicon|semiconductor|"
+    r"market|financial|media|social|political|industry|business|corporate|"
+    r"startup|tech)\s+earthquake\b|"
+    r"\bearthquake\s+in\s+(the\s+)?(ai|tech|technology|digital|silicon|"
+    r"semiconductor|market|media|social)\b|"
+    # The same metaphor shape with "landslide" - "political landslide in the
+    # primaries" was tagged EP1 (Hong Kong slope management).
+    r"\b(political|election|electoral|party|voter|primary|primaries|"
+    r"parliamentary|campaign|campaigns)\s+landslide\b|"
+    r"\blandslide\s+(victory|win|voters?|votes|turnout|primaries)\b"
     r")"
 )
 
@@ -560,7 +581,7 @@ def tag_item(title: str, summary: str) -> list[str]:
     return sorted(set(tags))
 
 
-def _matches_gate(gate: list[str], title: str, summary: str) -> bool:
+def _matches_gate(gate, title: str, summary: str) -> bool:
     """True when an item looks on-topic for a feed that declares a gate.
 
     A gate is the list of words that make a story belong to the feed's
@@ -570,15 +591,32 @@ def _matches_gate(gate: list[str], title: str, summary: str) -> bool:
     bulletins, school reports and telecom dashboards. Forcing CP5 onto
     those put 59 unrelated humanitarian documents into the Combating
     Famine list, so the feed has to say what its topic is.
+
+    `gate` may be the bare list of terms, or a dict with a "terms" key and
+    an "electives" key (the shape used by _GATE_BY_FEED).
     """
+    if isinstance(gate, dict):
+        terms = gate.get("terms") or []
+    else:
+        terms = gate or []
     t = title.lower()
     s = summary.lower()
-    for term in gate:
+    for term in terms:
         if _term_hit(term, t):
             return True
         if " " in term and s and _term_hit(term, s):
             return True
     return False
+
+
+# Live lookup of every gated feed, by feed name. The re-tag pass uses this
+# so that editing a gate in the FEEDS table applies to the WHOLE feed at
+# once - including items collected before the edit. Storing a frozen copy of
+# the gate on each item meant a tightened gate never reached the old items.
+_GATE_BY_FEED: dict[str, dict] = {
+    f["name"]: {"terms": f.get("gate") or [], "electives": f.get("tag") or []}
+    for f in FEEDS if f.get("gate")
+}
 
 
 def _term_hit(term: str, text: str) -> bool:
@@ -848,11 +886,15 @@ def collect() -> tuple[list[dict], list[dict]]:
                 "subtopics": subs,
                 "hk": bool(HK_BOOST.search(f"{it.get('title','')} {it.get('summary','')}")),
                 "id": key[:12],
-                # The gate is kept with the item so the re-tag pass can
-                # re-apply it. Without it, a terse authoritative bulletin
-                # would lose its declared topic on the next run.
-                "gates": ({t: feed["gate"] for t in declared if feed.get("gate")}
-                          if feed.get("gate") else {}),
+                # The feed NAME is kept, not a frozen copy of the gate.
+                # A frozen copy means a tightened gate never reaches the
+                # items already in the feed: the "multi-hazard" term was
+                # removed from the UNDRR gate, but every item already
+                # collected still carried the old list, so the CP1 index
+                # kept its general disaster-preparedness stories. The
+                # re-tag pass now looks the LIVE gate up by feed name, so
+                # a gate edit applies to the whole feed at once.
+                "gated_feed": feed["name"] if feed.get("gate") else "",
             })
             added += 1
             if added >= feed.get("max_items", 40):
@@ -1084,9 +1126,36 @@ def retag_items(items: list[dict]) -> list[dict]:
         # this, the tagger alone would strip the topic off a terse
         # authoritative bulletin ("Crystals hint at a volcano's ability to
         # erupt") and the feed would lose its best sources.
-        for elective, gate in (it.get("gates") or {}).items():
-            if elective not in tags and _matches_gate(gate, title, summary):
-                tags.append(elective)
+        #
+        # The gate is looked up LIVE by feed name (see "gated_feed"), so a
+        # tightened gate applies to every item in the feed, not only to
+        # items collected after the edit. The gate is also RESTRICTIVE:
+        # an item that no longer passes its feed's gate loses that
+        # elective even if the general keyword tagger matched it.
+        # Without that, "multi-hazard" kept a story about a general
+        # early-warning workshop in the CP1 tectonic index.
+        gated = it.get("gated_feed") or ""
+        if not gated:
+            # Migrate an item collected before the "gated_feed" field
+            # existed: it carries the feed's name in "source", and the
+            # live gate is looked up by that name. The old frozen "gates"
+            # copy is deliberately NOT used - it is the stale copy that
+            # kept a tightened gate from ever applying.
+            src = it.get("source") or ""
+            if src in _GATE_BY_FEED:
+                gated = src
+        feed_gate = _GATE_BY_FEED.get(gated)
+        if feed_gate is not None:
+            if not _matches_gate(feed_gate, title, summary):
+                # The story no longer matches the topic this feed serves.
+                # It must not sit in that elective's list.
+                for elective in list(tags):
+                    if elective in (feed_gate.get("electives") or []):
+                        tags.remove(elective)
+            else:
+                for elective in (feed_gate.get("electives") or []):
+                    if elective not in tags:
+                        tags.append(elective)
         if not tags:
             continue
         it = dict(it)

@@ -53,6 +53,9 @@ EXCLUDE_DIR_PATTERNS = [
     r"(?i)cp6 dbq prep",
     r"(?i)dbq angles",
     r"(?i)data question set",
+    # An EP1 DBQ carries its mark scheme, examiner notes and the worked
+    # reasoning for every sub-part — teacher material, not student material.
+    r"(?i)ep1 dbq - metamorphic rock",
     r"(?i)mc question bank",
     r"(?i)mc quiz",
     r"(?i)past paper analysis",

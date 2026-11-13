@@ -303,6 +303,50 @@ check(not not_tectonic,
 print(f"\nCP1 items: {len(cp1_items)}, "
       f"{len(not_tectonic)} of them not about a tectonic event")
 
+# ------------------------------------- the feed gates must name the HAZARD
+#
+# A gate is a list of words that make a story belong to the feed's topic.
+# The UNDRR feed is gated for CP1 and CP2, and the gate has to name the
+# TECTONIC hazard. "multi-hazard" and "hazard management" describe the
+# warning system built around a hazard, not the hazard itself, so they
+# let general disaster-preparedness reporting into the CP1 index - which is
+# exactly the complaint David raised about the CP1 index being wrong.
+#
+# This asserts the gate terms themselves, so the loose ones cannot creep
+# back in with the next feed edit.
+UNDrr_GATE = next(f for f in CN.FEEDS if f["name"].startswith("UNDRR"))
+LOOSE_GATE_TERMS = {"multi-hazard", "hazard management", "early warning",
+                     "resilience", "resilient", "disaster preparedness"}
+for term in LOOSE_GATE_TERMS:
+    check(term not in [g.lower() for g in UNDrr_GATE.get("gate", [])],
+          f"the UNDRR gate still contains the loose term {term!r} - it lets "
+          f"general disaster-preparedness stories into the CP1 index")
+print(f"\nUNDRR gate terms: {len(UNDrr_GATE.get('gate', []))}, "
+      f"none of them a loose warning-system term")
+
+# --------------------------------- a hazard word used as a METAPHOR
+#
+# "Jensen Huang's looming ouster triggers an AI earthquake" was tagged
+# CP1.4 (tectonic hazards) and reached the CP1 index. The hazard word is
+# real English, but the thing that moved was not the Earth. The same
+# applies to "market earthquake", "tech tsunami", "political landslide".
+#
+# These must be rejected by the tagger, so the title must come back with
+# no elective at all.
+METAPHOR_TITLES = [
+    "Jensen Huang's looming ouster triggers an AI earthquake",
+    "Tech earthquake hits the semiconductor sector",
+    "A market earthquake leaves investors reeling",
+    "Political landslide in the primaries",
+    "A blue wave sweeps the polls",
+    "Election tsunami hits the campaign trail",
+]
+for title in METAPHOR_TITLES:
+    got = CN.tag_item(title, "")
+    ok = not got
+    check(ok, f"the metaphor {title!r} was tagged {got} - it is not geography")
+    print(f"  {'ok ' if ok else 'FAIL'} {title[:56]}")
+
 # ------------------------------------------- the feed's dates must be dates
 #
 # A malformed date sorts to the end of the feed and is then truncated away.
