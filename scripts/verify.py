@@ -1,4 +1,4 @@
-import json, os, pathlib, re, sys
+import json, os, pathlib, re, subprocess, sys
 
 root = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(root))
@@ -464,5 +464,24 @@ for _el in _cur.get("electives", []):
             f"elective's concept notes are never used"
         )
 print("Curriculum: no elective collapses onto a single note")
+
+# 17. Every option letter an MC explanation names must still name the
+#     option it named before the answer letters were shuffled.
+#
+# The shuffle moved the options and updated the `answer` field, but the
+# letters inside the explanation text were left behind, so "B is incorrect"
+# could end up naming the very option that had become the answer. The
+# check compares the explanation with the pre-shuffle one character by
+# character: only letters may differ, and each one must be the letter its
+# own option now carries.
+_mc_check = subprocess.run(
+    [sys.executable, str(root / "scripts" / "check_mc_explanation_letters.py")],
+    capture_output=True, text=True, cwd=str(root),
+)
+assert _mc_check.returncode == 0, (
+    "an MC explanation names an option it does not mean:\n"
+    + _mc_check.stdout[-2000:]
+)
+print("MC bank: every explanation letter names the option it names")
 
 print("\nALL CHECKS PASSED")

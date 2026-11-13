@@ -382,7 +382,8 @@
 
     $("#mcList").innerHTML = qs.map((q, i) => `
       <div class="mc-q" data-i="${i}">
-        ${q.official ? `<div class="mc-official">Official HKDSE exam question &middot; ${esc(q.source || "")}</div>` : ""}
+        ${q.official ? `<div class="mc-official">Official HKDSE exam question &middot; ${esc(q.source || "")}</div>`
+          : `<div class="mc-drafted">Practice question &middot; answer key drafted by the assistant &mdash; check it against your textbook</div>`}
         ${q.map_extract
           ? `<div class="mc-mapextract"><a href="${ATTACH}${esc(q.map_extract)}" target="_blank" rel="noopener">Open the map extract for this paper (${esc(q.map_extract.split("/").pop())})</a></div>`
           : ""}
@@ -434,6 +435,7 @@
       });
       fb.style.display = "block";
       fb.innerHTML = `<span class="ans">Answer: ${correct}</span>` +
+        (q.official ? "" : `<div class="key-caveat">Drafted answer key &mdash; not an official marking scheme</div>`) +
         (q.explanation ? `<div class="why">${esc(q.explanation)}</div>` : "");
       stats.asked++;
       if (picked === correct) stats.correct++;

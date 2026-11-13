@@ -189,6 +189,31 @@ button.primary:disabled{opacity:.55;cursor:not-allowed}
   margin-bottom: 7px;
 }
 
+/* The drafted-key badge for the practice questions. Deliberately a warmer,
+   less confident colour than the green official badge: the answer beside
+   it was written by the assistant, not taken from a marking scheme. */
+.mc-drafted {
+  display: inline-block;
+  font-size: .74rem;
+  font-weight: 600;
+  letter-spacing: .02em;
+  color: #7a5312;
+  background: #fdf3e0;
+  border: 1px solid #e7cf9e;
+  border-radius: 999px;
+  padding: 2px 9px;
+  margin-bottom: 7px;
+}
+
+/* The same warning, but next to the answer itself - that is the line the
+   student actually reads when checking their work. */
+.key-caveat {
+  margin-top: 4px;
+  font-size: .76rem;
+  font-weight: 600;
+  color: #7a5312;
+}
+
 /* The official HKEAA questions arrive as images: one for the stem, one for
    each option, and a map extract for the paper. The map link sits above
    the question because the student may need it to answer. */
