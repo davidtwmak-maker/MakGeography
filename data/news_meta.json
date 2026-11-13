@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-13 04:05 UTC",
+ "updated_at": "2026-11-13 04:21 UTC",
  "n_items": 300,
  "feeds": [
   {
@@ -252,7 +252,7 @@
    "url": "https://news.google.com/rss/search?q=(Hong+Kong+OR+China+OR+Asia+OR+%22Silicon+Valley%22)+AND+(deindustrialisation+OR+deindustrialization+OR+%22industrial+relocation%22+OR+%22transnational+corporation%22+OR+%22industrial+location%22+OR+agglomeration)+when:30d&hl=en-HK&gl=HK&ceid=HK:en",
    "ok": true,
    "error": "",
-   "items": 7
+   "items": 8
   },
   {
    "feed": "Search — Hong Kong geology & slope safety",
@@ -280,7 +280,7 @@
    "url": "https://news.google.com/rss/search?q=(Hong+Kong+OR+Singapore+OR+Seoul+OR+Tokyo)+AND+(%22urban+renewal%22+OR+%22public+housing%22+OR+%22redevelopment%22+OR+%22urban+planning%22+OR+%22master+plan%22)+when:30d&hl=en-HK&gl=HK&ceid=HK:en",
    "ok": true,
    "error": "",
-   "items": 17
+   "items": 16
   },
   {
    "feed": "Search — Hong Kong geology & landslides",
